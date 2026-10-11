@@ -37,7 +37,7 @@ export const SKILL_CATEGORIES = [
     id: "security",
     title: "امنیت",
     titleEn: "Security",
-    description: "امنیت فرانت‌اند، احراز هویت، هدرها، آپلود و پرداخت امن",
+    description: "امنیت فرانت و بک‌اند، احراز هویت، API، آپلود و پرداخت امن",
   },
   {
     id: "persian-product",
@@ -569,6 +569,58 @@ export const skills: Skill[] = [
     source: {
       name: "MiladJoodi",
       url: "https://github.com/MiladJoodi/skills/tree/main/skills/frontend-security",
+    },
+  },
+  {
+    slug: "backend-security",
+    category: "security",
+    title: "امنیت بک‌اند",
+    titleEn: "Backend Security",
+    summary:
+      "API، احراز هویت، مجوزدهی، تزریق، SSRF، وب‌هوک و منطق کسب‌وکار را در لایهٔ سرور امن می‌نویسد و بازبینی می‌کند.",
+    description:
+      "خیلی از نفوذها از جایی شروع می‌شن که سرور به ورودی کاربر اعتماد می‌کنه، دسترسی به یک آبجکت را درست چک نمی‌کنه، یا درخواست خروجی را بدون محدودیت می‌فرسته؛ چیزهایی که موقع پیاده‌سازی فیچر عادی ممکنه به چشم نیان.\n\nاین مهارت کمک می‌کنه کد بک‌اند را از دید امنیتی بررسی کنی، آسیب‌پذیری‌های رایج لایهٔ اپلیکیشن را بشناسی و قبل از انتشار، راه درست برطرف کردنشون رو پیدا کنی.",
+    useCases: [
+      "پیدا کردن آسیب‌پذیری‌های پنهان در API و سرویس‌های بک‌اند",
+      "امن‌سازی احراز هویت، سشن، JWT و OAuth",
+      "جلوگیری از تزریق، IDOR/BOLA، SSRF و mass assignment",
+      "بررسی ریسک وب‌هوک، آپلود فایل، race و منطق پرداخت",
+    ],
+    tags: ["امنیت", "API", "JWT", "SSRF", "IDOR", "احراز هویت"],
+    activationDescription:
+      "Secure-by-default guidance for writing, reviewing, and fixing backend application code: HTTP/REST/GraphQL APIs, authentication, authorization (BOLA/IDOR), sessions and JWT, OAuth/OIDC, password hashing, injection (SQL, NoSQL, command, template), SSRF, mass assignment, rate limiting, file uploads, secrets and crypto, webhooks, race conditions, business-logic abuse, logging, background jobs, and dependency hygiene. Use when the user mentions SQL injection, SSRF, IDOR, BOLA, JWT, sessions, OAuth, password hashing, rate limiting, mass assignment, file upload, secrets, webhooks, race conditions, API security, security review, or audit. Also use when implementing login, signup, password reset, roles and permissions, multi-tenant data access, database queries, outbound HTTP fetches, webhooks, queue workers, or payment endpoints.",
+    activationNote:
+      "این چند خط به AI می‌گوید کی این مهارت را باز کند. اگر جاهای دیگری هم لازم دارید، همین متن را عوض کنید.",
+    installCommand: "npx farsiui@latest add backend-security",
+    installTargets: [
+      {
+        id: "claude-code",
+        name: "Claude Code",
+        paths: [".claude/skills/backend-security/SKILL.md"],
+      },
+      {
+        id: "cursor",
+        name: "Cursor",
+        paths: [".cursor/skills/backend-security/SKILL.md"],
+      },
+      {
+        id: "codex",
+        name: "Codex",
+        paths: [".agents/skills/backend-security/SKILL.md"],
+      },
+      {
+        id: "other",
+        name: "سایر ابزارها",
+        paths: [".claude/skills/backend-security/SKILL.md"],
+      },
+    ],
+    agentsHint:
+      "For backend security reviews and secure API changes, read .claude/skills/backend-security/SKILL.md first, then only the matching file under references/.",
+    example:
+      "ممکنه یک endpoint لیست سفارش درست کار کنه، اما با عوض کردن id بشه سفارش کاربر دیگر را دید؛ یا یک fetch خروجی بدون allowlist راه SSRF باز کنه. این مهارت کمک می‌کنه چنین مشکلاتی رو شناسایی و اصولی برطرف کنی.",
+    source: {
+      name: "MiladJoodi",
+      url: "https://github.com/MiladJoodi/skills/tree/main/skills/backend-security",
     },
   },
   {

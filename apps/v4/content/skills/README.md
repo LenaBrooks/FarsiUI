@@ -48,6 +48,7 @@ Site catalog: `/skills`
 | Name | Slug | What it solves | When to use | Tags |
 | --- | --- | --- | --- | --- |
 | امنیت فرانت‌اند / Frontend Security | `frontend-security` | XSS، CSP، کوکی/CSRF، آپلود، پرداخت و OTP در React/Next | بازبینی امنیتی، نوشتن فیچر حساس، رفع آسیب‌پذیری | security، xss، csp، csrf |
+| امنیت بک‌اند / Backend Security | `backend-security` | API، احراز هویت، IDOR، تزریق، SSRF، وب‌هوک و منطق سرور | بازبینی امنیتی بک‌اند، نوشتن endpoint حساس، رفع آسیب‌پذیری | security، api، jwt، ssrf |
 
 ### Persian Product — محصول فارسی
 
@@ -94,7 +95,7 @@ Site catalog: `/skills`
 * **ui-library-mcp** stays separate from **mcp-builder** (product-specific vs general).
 * **open-graph-social-preview** stays separate from **persian-seo** (SEO points to OG skill for deep debugging).
 * **seo** + **web-quality-audit** from [Addy Osmani web-quality-skills](https://github.com/addyosmani/web-quality-skills); Persian-specific SEO stays in **persian-seo**.
-* **frontend-security** keeps topic references under `references/` (multi-file skill); install ships the whole folder.
+* **frontend-security** and **backend-security** keep topic references under `references/` (multi-file skills); install ships the whole folder.
 
 ---
 

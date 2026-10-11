@@ -21,6 +21,7 @@ import {
   resolveImportWithMetadata,
 } from "@/src/utils/resolve-import"
 import { spinner } from "@/src/utils/spinner"
+import { resolveSkillInstallFiles } from "@/src/utils/resolve-skill-install-files"
 import { isTargetAliasKey } from "@/src/utils/target-aliases"
 import { transform } from "@/src/utils/transformers"
 import { transformAsChild } from "@/src/utils/transformers/transform-aschild"
@@ -74,6 +75,20 @@ export async function updateFiles(
     isWorkspace: false,
     ...options,
   }
+
+  files = await resolveSkillInstallFiles(files, config.resolvedPaths.cwd, {
+    interactive: options.interactive,
+    silent: options.silent,
+  })
+
+  if (!files?.length) {
+    return {
+      filesCreated: [],
+      filesUpdated: [],
+      filesSkipped: [],
+    }
+  }
+
   const filesCreatedSpinner = spinner(`Updating files.`, {
     silent: options.silent,
   })?.start()

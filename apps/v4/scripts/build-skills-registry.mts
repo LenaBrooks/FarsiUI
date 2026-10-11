@@ -16,7 +16,14 @@ const SKILLS_DIR = path.join(ROOT, "content/skills")
 const OUTPUT_DIR = path.join(ROOT, "public/r/skills")
 const STYLES_ROOT = path.join(ROOT, "public/r/styles")
 const SCHEMA = "https://farsiui.ir/schema/registry-item.json"
-const SKILL_ROOTS = [".claude/skills", ".cursor/skills", ".agents/skills"] as const
+/** CLI install path for folder skills. Manual install on the site lists the others. */
+const SKILL_INSTALL_ROOT = ".cursor/skills"
+/** Agent skill roots that must never appear together in one registry item. */
+const AGENT_SKILL_ROOTS = [
+  ".claude/skills",
+  ".cursor/skills",
+  ".agents/skills",
+] as const
 
 type RegistryFile = {
   path: string
@@ -72,16 +79,35 @@ function isRulesStyleSkill(skill: Skill) {
   )
 }
 
-function uniqueTargets(skill: Skill) {
-  const paths = new Set<string>()
-  for (const target of skill.installTargets) {
-    if (target.id === "other") continue
-    for (const p of target.paths) {
-      if (p === "AGENTS.md") continue
-      paths.add(p)
+/** Cursor CLI target only — never ship Claude/Codex/docs copies in the same item. */
+function cursorInstallPaths(skill: Skill) {
+  const cursor = skill.installTargets.find((target) => target.id === "cursor")
+  if (!cursor) return []
+  return cursor.paths.filter((p) => p !== "AGENTS.md")
+}
+
+function agentSkillRootsInFiles(files: RegistryFile[]) {
+  const found = new Set<string>()
+  for (const file of files) {
+    const target = file.target.replace(/\\/g, "/")
+    for (const root of AGENT_SKILL_ROOTS) {
+      if (target === root || target.startsWith(`${root}/`)) {
+        found.add(root)
+      }
     }
   }
-  return [...paths]
+  return [...found]
+}
+
+function assertSingleAgentSkillRoot(skill: Skill, files: RegistryFile[]) {
+  const roots = agentSkillRootsInFiles(files)
+  if (roots.length > 1) {
+    throw new Error(
+      `Skill "${skill.slug}" ships multiple agent skill roots (${roots.join(
+        ", "
+      )}). CLI install must target exactly one root.`
+    )
+  }
 }
 
 async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
@@ -96,7 +122,7 @@ async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
   const files: RegistryFile[] = []
 
   if (isRulesStyleSkill(skill)) {
-    for (const target of uniqueTargets(skill)) {
+    for (const target of cursorInstallPaths(skill)) {
       files.push({
         path: `skills/${skill.slug}/${path.basename(target)}`,
         type: "registry:file",
@@ -113,14 +139,12 @@ async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
         .join("/")
       if (relative.startsWith(".") || relative.includes("/.")) continue
       const content = await fs.readFile(absolute, "utf8")
-      for (const root of SKILL_ROOTS) {
-        files.push({
-          path: `skills/${skill.slug}/${relative}`,
-          type: "registry:file",
-          target: `${root}/${skill.slug}/${relative}`,
-          content,
-        })
-      }
+      files.push({
+        path: `skills/${skill.slug}/${relative}`,
+        type: "registry:file",
+        target: `${SKILL_INSTALL_ROOT}/${skill.slug}/${relative}`,
+        content,
+      })
     }
   }
 
@@ -128,6 +152,8 @@ async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
     console.warn(`   ⚠️  no files for ${skill.slug}`)
     return null
   }
+
+  assertSingleAgentSkillRoot(skill, files)
 
   return {
     $schema: SCHEMA,

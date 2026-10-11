@@ -22,6 +22,7 @@ import { transformRtl } from "@/src/utils/transformers/transform-rtl"
 import { transformTwPrefixes } from "@/src/utils/transformers/transform-tw-prefix"
 import { transformCss } from "@/src/utils/updaters/update-css"
 import { transformCssVars } from "@/src/utils/updaters/update-css-vars"
+import { resolveSkillInstallFiles } from "@/src/utils/resolve-skill-install-files"
 import {
   findCommonRoot,
   getPlannedFilePaths,
@@ -137,7 +138,11 @@ async function processFiles(
   options: { overwrite?: boolean },
   supportedFontMarkers: string[]
 ) {
-  const files = tree.files
+  const files = await resolveSkillInstallFiles(
+    tree.files,
+    config.resolvedPaths.cwd,
+    { interactive: false, silent: true }
+  )
   if (!files?.length) {
     return
   }

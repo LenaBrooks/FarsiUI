@@ -1,23 +1,39 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
-import { BadgeCheck, Check, Copy, Download } from "lucide-react"
+import { BadgeCheck, Check, ChevronDown, Copy, Download } from "lucide-react"
 
 import { type Skill, type SkillSource } from "@/lib/skills-data"
 import { copyToClipboardWithMeta } from "@/components/copy-button"
 import { SkillAgentPathRow, SkillCopyCommand } from "@/components/skill-copy"
 import { Button } from "@/registry/new-york-v4/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/registry/new-york-v4/ui/dropdown-menu"
+
+export type SkillFileView = {
+  path: string
+  content: string
+  highlighted: string
+}
 
 export function SkillDetail({
   skill,
-  markdown,
-  highlightedMarkdown,
+  files,
 }: {
   skill: Skill
-  markdown: string
-  highlightedMarkdown: string
+  files: SkillFileView[]
 }) {
+  const [activePath, setActivePath] = React.useState(
+    files[0]?.path ?? "SKILL.md"
+  )
+  const active =
+    files.find((file) => file.path === activePath) ?? files[0] ?? null
+  const hasCompanions = files.length > 1
+
   return (
     <div
       data-slot="docs"
@@ -31,9 +47,16 @@ export function SkillDetail({
           <h1 className="docs-page-title scroll-m-24 font-semibold tracking-tight">
             {skill.title}
           </h1>
-          <p className="docs-page-description text-pretty text-muted-foreground">
-            {skill.summary}
-          </p>
+          {(skill.description ?? skill.summary)
+            .split(/\n\n+/)
+            .map((paragraph) => (
+              <p
+                key={paragraph.slice(0, 48)}
+                className="docs-page-description text-pretty text-muted-foreground"
+              >
+                {paragraph}
+              </p>
+            ))}
           <SkillSourceMeta source={skill.source} />
         </header>
 
@@ -52,43 +75,102 @@ export function SkillDetail({
             </>
           ) : null}
 
-          <h2>فایل مهارت</h2>
-          <div data-not-typeset="" className="my-4 w-full">
-            <figure
-              data-rehype-pretty-code-figure=""
-              data-not-typeset=""
-              dir="ltr"
-              lang="en"
-              className="m-0! overflow-hidden rounded-xl border bg-code text-code-foreground md:mx-0!"
-            >
-              <figcaption className="flex h-9 shrink-0 items-center gap-2 border-b px-3 text-xs text-code-foreground">
-                <span dir="ltr" lang="en" className="truncate font-mono">
-                  SKILL.md
-                </span>
-                <div className="ms-auto flex items-center gap-0.5">
-                  <SkillFileCopyButton value={markdown} />
-                  <SkillFileDownloadButton content={markdown} />
-                </div>
-              </figcaption>
-              <div
-                className="max-h-72 overflow-auto text-start text-[length:var(--docs-code)] leading-[1.5] [&_pre]:max-h-none"
-                dangerouslySetInnerHTML={{ __html: highlightedMarkdown }}
-              />
-            </figure>
-          </div>
+          <h2>فایل‌های مهارت</h2>
+          {hasCompanions ? (
+            <p>
+              این مجموعه {files.length.toLocaleString("fa-IR")} فایل مهارت داره.
+              با فلش کنار نام هر فایل می‌تونی محتوای هرکدوم رو ببینی. نصب از طریق
+              CLI، همه فایل‌های مجموعه رو دریافت می‌کنه.
+            </p>
+          ) : null}
+
+          {active ? (
+            <div data-not-typeset="" className="my-4 w-full">
+              <figure
+                data-rehype-pretty-code-figure=""
+                data-not-typeset=""
+                dir="ltr"
+                lang="en"
+                className="m-0! overflow-hidden rounded-xl border bg-code text-code-foreground md:mx-0!"
+              >
+                <figcaption className="flex h-9 shrink-0 items-center gap-2 border-b px-3 text-xs text-code-foreground">
+                  {hasCompanions ? (
+                    <>
+                      <DropdownMenu modal={false}>
+                        <DropdownMenuTrigger
+                          className="inline-flex h-7 max-w-[min(100%,18rem)] cursor-pointer items-center gap-1 rounded-sm px-0.5 font-mono text-xs text-code-foreground outline-none hover:bg-muted/60 focus-visible:ring-2 focus-visible:ring-ring/40"
+                        >
+                          <span className="truncate">{active.path}</span>
+                          <ChevronDown
+                            className="size-3.5 shrink-0 opacity-70"
+                            aria-hidden
+                          />
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent
+                          dir="ltr"
+                          align="start"
+                          className="max-w-[min(100vw-2rem,24rem)] font-mono text-xs"
+                        >
+                          {files.map((file) => (
+                            <DropdownMenuItem
+                              key={file.path}
+                              className="cursor-pointer font-mono text-xs"
+                              onClick={() => setActivePath(file.path)}
+                            >
+                              <span className="min-w-0 flex-1 truncate">
+                                {file.path}
+                              </span>
+                              {file.path === active.path ? (
+                                <Check className="size-3.5 shrink-0 opacity-70" />
+                              ) : null}
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                      <span
+                        dir="rtl"
+                        lang="fa"
+                        className="shrink-0 rounded-md bg-muted px-1.5 py-0.5 font-sans text-[11px] leading-none text-muted-foreground tabular-nums"
+                      >
+                        {(
+                          files.findIndex((file) => file.path === active.path) +
+                          1
+                        ).toLocaleString("fa-IR")}
+                        {" از "}
+                        {files.length.toLocaleString("fa-IR")}
+                      </span>
+                    </>
+                  ) : (
+                    <span dir="ltr" lang="en" className="truncate font-mono">
+                      {active.path}
+                    </span>
+                  )}
+                  <div className="ms-auto flex shrink-0 items-center gap-0.5">
+                    <SkillFileCopyButton value={active.content} />
+                    <SkillFileDownloadButton
+                      content={active.content}
+                      filename={active.path.split("/").pop() ?? active.path}
+                    />
+                  </div>
+                </figcaption>
+                <div
+                  className="max-h-72 overflow-auto text-start text-[length:var(--docs-code)] leading-[1.5] [&_pre]:max-h-none"
+                  dangerouslySetInnerHTML={{ __html: active.highlighted }}
+                />
+              </figure>
+            </div>
+          ) : null}
 
           <h2>نصب</h2>
-          <p>
-            راهنمای کامل در <Link href="/skills/install">نحوه نصب</Link>.
-          </p>
 
           <h3>نصب سریع با CLI</h3>
           <SkillCopyCommand command={skill.installCommand} />
 
           <h3>نصب دستی</h3>
           <p>
-            فایل را دانلود کنید یا خودتان بسازید و در یکی از مسیرهای زیر
-            بگذارید:
+            {hasCompanions
+              ? "کل پوشهٔ مهارت (SKILL.md به‌همراه فایل‌های همراه) را در یکی از مسیرهای زیر بگذارید:"
+              : "فایل را دانلود کنید یا خودتان بسازید و در یکی از مسیرهای زیر بگذارید:"}
           </p>
           <div data-not-typeset="" className="my-4 space-y-2">
             {skill.installTargets
@@ -159,7 +241,13 @@ function SkillFileCopyButton({ value }: { value: string }) {
   )
 }
 
-function SkillFileDownloadButton({ content }: { content: string }) {
+function SkillFileDownloadButton({
+  content,
+  filename,
+}: {
+  content: string
+  filename: string
+}) {
   return (
     <Button
       type="button"
@@ -175,7 +263,7 @@ function SkillFileDownloadButton({ content }: { content: string }) {
         const url = URL.createObjectURL(blob)
         const anchor = document.createElement("a")
         anchor.href = url
-        anchor.download = "SKILL.md"
+        anchor.download = filename
         document.body.appendChild(anchor)
         anchor.click()
         anchor.remove()

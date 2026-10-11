@@ -14,6 +14,7 @@ export const SKILL_REGISTRY_SLUGS = new Set<string>([
   "web-quality-audit",
   "persian-seo",
   "seo",
+  "frontend-security",
   "iran-validation",
   "jalali-calendar",
   "persian-rtl-ui",

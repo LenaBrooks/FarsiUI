@@ -2,11 +2,7 @@ import { siteConfig } from "@/lib/config"
 import { type Metadata } from "next"
 import { notFound } from "next/navigation"
 
-import {
-  getSkill,
-  getSkillMarkdown,
-  getSkillSlugs,
-} from "@/lib/skills"
+import { getSkill, getSkillFiles, getSkillSlugs } from "@/lib/skills"
 import { highlightCode } from "@/lib/highlight-code"
 import { SkillDetail } from "@/components/skill-detail"
 
@@ -59,19 +55,19 @@ export default async function SkillPage({
 }) {
   const { slug } = await params
   const skill = getSkill(slug)
-  const markdown = getSkillMarkdown(slug)
+  const files = getSkillFiles(slug)
 
-  if (!skill || !markdown) {
+  if (!skill || files.length === 0) {
     notFound()
   }
 
-  const highlightedMarkdown = await highlightCode(markdown, "markdown")
-
-  return (
-    <SkillDetail
-      skill={skill}
-      markdown={markdown}
-      highlightedMarkdown={highlightedMarkdown}
-    />
+  const skillFiles = await Promise.all(
+    files.map(async (file) => ({
+      path: file.path,
+      content: file.content,
+      highlighted: await highlightCode(file.content, "markdown"),
+    }))
   )
+
+  return <SkillDetail skill={skill} files={skillFiles} />
 }

@@ -43,6 +43,12 @@ Site catalog: `/skills`
 | سئوی فنی سایت / SEO | `seo` | مشکلات فنی مؤثر بر دیده‌شدن در موتورهای جست‌وجو | meta، structured data، robots، sitemap، canonical | seo، lighthouse |
 | بررسی کیفیت و عملکرد سایت / Web Quality Audit | `web-quality-audit` | بررسی سرعت، دسترس‌پذیری، سئو و استانداردهای وب بر اساس شواهد | ممیزی صفحه/سایت، Lighthouse، پیش از انتشار | audit، lighthouse، quality |
 
+### Security — امنیت
+
+| Name | Slug | What it solves | When to use | Tags |
+| --- | --- | --- | --- | --- |
+| امنیت فرانت‌اند / Frontend Security | `frontend-security` | XSS، CSP، کوکی/CSRF، آپلود، پرداخت و OTP در React/Next | بازبینی امنیتی، نوشتن فیچر حساس، رفع آسیب‌پذیری | security، xss، csp، csrf |
+
 ### Persian Product — محصول فارسی
 
 | Name | Slug | What it solves | When to use | Tags |
@@ -88,6 +94,7 @@ Site catalog: `/skills`
 * **ui-library-mcp** stays separate from **mcp-builder** (product-specific vs general).
 * **open-graph-social-preview** stays separate from **persian-seo** (SEO points to OG skill for deep debugging).
 * **seo** + **web-quality-audit** from [Addy Osmani web-quality-skills](https://github.com/addyosmani/web-quality-skills); Persian-specific SEO stays in **persian-seo**.
+* **frontend-security** keeps topic references under `references/` (multi-file skill); install ships the whole folder.
 
 ---
 
@@ -98,6 +105,7 @@ Content stays flat for install paths and loaders:
 ```text
 content/skills/
   <skill-slug>/SKILL.md
+  <skill-slug>/references/...   # optional multi-file skills
   README.md
 ```
 

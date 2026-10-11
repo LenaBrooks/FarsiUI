@@ -34,6 +34,12 @@ export const SKILL_CATEGORIES = [
     description: "سئوی فنی و محتوایی، متادیتا و ممیزی کیفیت برای جستجو",
   },
   {
+    id: "security",
+    title: "امنیت",
+    titleEn: "Security",
+    description: "امنیت فرانت‌اند، احراز هویت، هدرها، آپلود و پرداخت امن",
+  },
+  {
     id: "persian-product",
     title: "محصول فارسی",
     titleEn: "Persian Product",
@@ -67,7 +73,13 @@ export type Skill = {
   title: string
   /** Short English label for the sidebar/list title pair (falls back to slug). */
   titleEn?: string
+  /** Short blurb for catalog cards and meta description. */
   summary: string
+  /**
+   * Optional longer intro for the detail page (paragraphs separated by blank lines).
+   * Falls back to `summary` when omitted.
+   */
+  description?: string
   /** Catalog category for sidebar grouping */
   category: SkillCategoryId
   useCases: string[]
@@ -505,6 +517,58 @@ export const skills: Skill[] = [
     source: {
       name: "web-quality-audit",
       url: "https://github.com/addyosmani/web-quality-skills/tree/main/skills/web-quality-audit",
+    },
+  },
+  {
+    slug: "frontend-security",
+    category: "security",
+    title: "امنیت فرانت‌اند",
+    titleEn: "Frontend Security",
+    summary:
+      "کد React و Next.js را از نظر XSS، CSP، کوکی و CSRF، آپلود، پرداخت و OTP به‌صورت امن می‌نویسد و بازبینی می‌کند.",
+    description:
+      "امنیت فقط به بک‌اند مربوط نیست. خیلی از مشکلات امنیتی از جایی شروع می‌شن که داده‌های کاربر نمایش داده می‌شن، درخواست‌ها ارسال می‌شن یا اطلاعات حساس توی فرانت‌اند مدیریت می‌شن؛ چیزهایی که ممکنه موقع توسعه عادی به چشم نیان.\n\nاین مهارت کمک می‌کنه کدهای React و Next.js رو از دید امنیتی بررسی کنی، آسیب‌پذیری‌های رایج رو بشناسی و قبل از انتشار، راه درست برطرف کردنشون رو پیدا کنی.",
+    useCases: [
+      "پیدا کردن آسیب‌پذیری‌های پنهان در کد فرانت‌اند",
+      "جلوگیری از XSS و بررسی CSP و هدرهای امنیتی",
+      "امن‌سازی ورود، سشن، کوکی و Server Actions",
+      "بررسی ریسک‌های امنیتی پرداخت، OTP و آپلود فایل",
+    ],
+    tags: ["امنیت", "XSS", "CSP", "CSRF", "Next.js", "احراز هویت"],
+    activationDescription:
+      "Secure-by-default guidance for writing, reviewing, and fixing frontend code in React and Next.js (App Router): XSS and unsafe HTML, dangerouslySetInnerHTML, DOMPurify, URL and redirect validation, Content Security Policy with nonces, security headers, CORS, cookies and token storage, CSRF, Server Action and Route Handler hardening, third-party scripts and SRI, npm supply-chain risk, form and input validation, file uploads, payment verification and webhooks, and OTP/SMS login. Use when the user mentions XSS, CSP, CSRF, CORS, cookies, JWT or token storage, sanitizing HTML, security headers, secure login, payment callbacks, uploads, or asks for a security review or audit of frontend code. Also use when writing code that renders user-controlled content, handles sessions or auth, or accepts payments.",
+    activationNote:
+      "این چند خط به AI می‌گوید کی این مهارت را باز کند. اگر جاهای دیگری هم لازم دارید، همین متن را عوض کنید.",
+    installCommand: "npx farsiui@latest add frontend-security",
+    installTargets: [
+      {
+        id: "claude-code",
+        name: "Claude Code",
+        paths: [".claude/skills/frontend-security/SKILL.md"],
+      },
+      {
+        id: "cursor",
+        name: "Cursor",
+        paths: [".cursor/skills/frontend-security/SKILL.md"],
+      },
+      {
+        id: "codex",
+        name: "Codex",
+        paths: [".agents/skills/frontend-security/SKILL.md"],
+      },
+      {
+        id: "other",
+        name: "سایر ابزارها",
+        paths: [".claude/skills/frontend-security/SKILL.md"],
+      },
+    ],
+    agentsHint:
+      "For frontend security reviews and secure React/Next.js changes, read .claude/skills/frontend-security/SKILL.md first, then only the matching file under references/.",
+    example:
+      "ممکنه یک فرم ورود درست کار کنه، اما در برابر درخواست جعلی محافظت نشده باشه؛ یا نمایش محتوای کاربر راهی برای اجرای کد مخرب باز کنه. این مهارت کمک می‌کنه چنین مشکلاتی رو شناسایی و اصولی برطرف کنی.",
+    source: {
+      name: "MiladJoodi",
+      url: "https://github.com/MiladJoodi/skills/tree/main/skills/frontend-security",
     },
   },
   {

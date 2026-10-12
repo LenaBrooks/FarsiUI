@@ -520,6 +520,7 @@ body[class*="theme-"],
   [data-slot="docs"] .typeset {
     --typeset-size: var(--docs-body);
     --typeset-leading: 1.7;
+    /* Keep typeset.css flow — do not bump --typeset-flow here. */
     font-size: var(--docs-body);
     line-height: 1.7;
   }
@@ -530,8 +531,8 @@ body[class*="theme-"],
     }
   }
 
-  /* Size only — margins come from typeset.css. Never target .not-typeset
-     (DocsCollapsible titles) or gaps explode between collapsed sections. */
+  /* Size only — margins come from typeset.css. Never set heading
+     margin-block-start here (beats first-child reset; gaps explode). */
   [data-slot="docs"] .typeset :where(h1):not(:where(.not-typeset *, [data-not-typeset] *)) {
     font-size: var(--docs-h1);
     line-height: 1.3;
@@ -545,6 +546,11 @@ body[class*="theme-"],
   [data-slot="docs"] .typeset :where(h3):not(:where(.not-typeset *, [data-not-typeset] *)) {
     font-size: var(--docs-h3);
     line-height: 1.3;
+  }
+
+  /* Beat any stale docs heading-margin rules still in the cascade. */
+  [data-slot="docs"] .typeset > :where(:first-child) {
+    margin-block-start: 0;
   }
 
   [data-slot="docs"] .docs-page-title {

@@ -154,7 +154,7 @@ export default async function Page(props: {
           className={
             isComponentsIndex
               ? "mx-auto flex w-full max-w-6xl min-w-0 flex-1 flex-col px-4 pb-8 text-foreground md:px-6 dark:text-foreground"
-              : "mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-6 px-4 py-6 text-foreground md:px-0 lg:py-8 dark:text-foreground"
+              : "mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-3 px-4 py-6 text-foreground md:px-0 lg:py-8 dark:text-foreground"
           }
         >
           {!isComponentsIndex ? (

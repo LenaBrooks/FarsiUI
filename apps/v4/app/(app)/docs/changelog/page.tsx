@@ -55,7 +55,7 @@ export default function ChangelogPage() {
     >
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="h-(--top-spacing) shrink-0" />
-        <div className="mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-6 px-4 py-6 text-foreground md:px-0 lg:py-8 dark:text-foreground">
+        <div className="mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-3 px-4 py-6 text-foreground md:px-0 lg:py-8 dark:text-foreground">
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-between">
               <h1 className="docs-page-title scroll-m-24 font-semibold tracking-tight">

@@ -1,0 +1,27 @@
+{
+  "title": "سایر",
+  "pages": [
+    "!index",
+    "[فایل components.json](/docs/components-json)",
+    "[وارد کردن پکیج](/docs/package-imports)",
+    "[تم‌دهی](/docs/theming)",
+    "[ارقام فارسی](/docs/persian-digits)",
+    "[حالت تاریک](/docs/dark-mode/next)",
+    "[مونوریپو](/docs/monorepo)",
+    "[جاوااسکریپت](/docs/javascript)",
+    "[بلوک‌ها](/docs/blocks)",
+    "[فیگما](/docs/figma)",
+    "[llms.txt](/llms.txt)",
+    "[پیمایشگر پیام (Message Scroller)](/docs/react/message-scroller)",
+    "[پرسشنامه (Questionnaire)](/docs/react/questionnaire)",
+    "[AI SDK](/docs/helpers/ai-sdk)",
+    "[TanStack AI](/docs/helpers/tanstack-ai)",
+    "[فرم‌ها](/docs/forms)",
+    "[Next.js](/docs/forms/next)",
+    "[React Hook Form](/docs/forms/react-hook-form)",
+    "[TanStack Form](/docs/forms/tanstack-form)",
+    "[Formisch](/docs/forms/formisch)",
+    "[محو اسکرول](/docs/utils/scroll-fade)",
+    "[شیمر](/docs/utils/shimmer)"
+  ]
+}

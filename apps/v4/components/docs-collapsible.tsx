@@ -81,7 +81,7 @@ export function DocsCollapsible({
         <CollapsibleTrigger
           aria-label={`${title} — باز و بسته کردن`}
           className={cn(
-            "flex w-full items-center gap-2 rounded-md py-1 text-start outline-none",
+            "flex w-full cursor-pointer items-center gap-2 rounded-md py-1 text-start outline-none",
             "hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring"
           )}
         >

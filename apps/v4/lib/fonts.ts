@@ -77,12 +77,14 @@ export function getUiFontCssVar(fontId: UiFontId) {
 /** Inline style values for --font-sans / heading / ar / he. */
 export function getUiFontStyle(fontId: UiFontId = DEFAULT_UI_FONT): CSSProperties {
   const cssVar = getUiFontCssVar(fontId)
+  // Explicit fallbacks help mobile Safari when a font face is still loading.
+  const stack = `var(${cssVar}), ui-sans-serif, system-ui, sans-serif`
   return {
-    "--font-sans": `var(${cssVar})`,
-    "--font-heading": `var(${cssVar})`,
-    "--font-ar": `var(${cssVar})`,
-    "--font-he": `var(${cssVar})`,
-    "--font-mono": "var(--font-geist-mono)",
+    "--font-sans": stack,
+    "--font-heading": stack,
+    "--font-ar": stack,
+    "--font-he": stack,
+    "--font-mono": "var(--font-geist-mono), ui-monospace, monospace",
   } as CSSProperties
 }
 
@@ -123,10 +125,11 @@ export const UI_FONT_BOOTSTRAP_SCRIPT = `
     document.cookie = cookieName + '=' + font + ';path=/;max-age=31536000;samesite=lax';
     try { localStorage.setItem('${UI_FONT_STORAGE_KEY}', font); } catch (_) {}
     var cssVar = fontMap[font];
+    var stack = 'var(' + cssVar + '), ui-sans-serif, system-ui, sans-serif';
     var root = document.documentElement;
-    root.style.setProperty('--font-sans', 'var(' + cssVar + ')');
-    root.style.setProperty('--font-heading', 'var(' + cssVar + ')');
-    root.style.setProperty('--font-ar', 'var(' + cssVar + ')');
-    root.style.setProperty('--font-he', 'var(' + cssVar + ')');
+    root.style.setProperty('--font-sans', stack);
+    root.style.setProperty('--font-heading', stack);
+    root.style.setProperty('--font-ar', stack);
+    root.style.setProperty('--font-he', stack);
   } catch (_) {}
 `

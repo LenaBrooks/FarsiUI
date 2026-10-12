@@ -4,6 +4,8 @@ import { TypesetSkeleton } from "@/app/(app)/(typeset)/components/typeset-skelet
 import { TypesetHistoryProvider } from "@/app/(app)/(typeset)/hooks/use-history"
 import { LocksProvider } from "@/app/(app)/(typeset)/hooks/use-locks"
 
+import "@/app/(app)/(typeset)/typeset.css"
+
 export default function TypesetLayout({
   children,
 }: {

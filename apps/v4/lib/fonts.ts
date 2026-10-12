@@ -1,17 +1,10 @@
 import type { CSSProperties } from "react"
-import {
-  Lalezar,
-  Markazi_Text,
-  Noto_Kufi_Arabic,
-  Noto_Sans_Arabic,
-  Vazirmatn,
-} from "next/font/google"
 import localFont from "next/font/local"
 import { cn } from "cn"
 
 /**
  * Runtime UI font options for the docs site font switcher.
- * Estedad is self-hosted (not on Google Fonts); the rest come from next/font/google.
+ * Estedad (+ mono) ship with the shell; other faces load via fonts-extras.
  */
 export const UI_FONTS = [
   {
@@ -93,46 +86,10 @@ export function getUiFontStyle(fontId: UiFontId = DEFAULT_UI_FONT): CSSPropertie
   } as CSSProperties
 }
 
-const fontVazirmatn = Vazirmatn({
-  subsets: ["arabic", "latin"],
-  variable: "--font-vazirmatn",
-  display: "swap",
-  adjustFontFallback: false,
-})
-
 const fontEstedad = localFont({
   src: "../app/fonts/estedad-wght.woff2",
   variable: "--font-estedad",
   weight: "100 900",
-  display: "swap",
-  adjustFontFallback: false,
-})
-
-const fontNotoSansArabic = Noto_Sans_Arabic({
-  subsets: ["arabic", "latin"],
-  variable: "--font-noto-sans-arabic",
-  display: "swap",
-  adjustFontFallback: false,
-})
-
-const fontNotoKufiArabic = Noto_Kufi_Arabic({
-  subsets: ["arabic", "latin"],
-  variable: "--font-noto-kufi-arabic",
-  display: "swap",
-  adjustFontFallback: false,
-})
-
-const fontLalezar = Lalezar({
-  subsets: ["arabic", "latin"],
-  weight: "400",
-  variable: "--font-lalezar",
-  display: "swap",
-  adjustFontFallback: false,
-})
-
-const fontMarkaziText = Markazi_Text({
-  subsets: ["arabic", "latin"],
-  variable: "--font-markazi-text",
   display: "swap",
   adjustFontFallback: false,
 })
@@ -145,15 +102,8 @@ const fontMono = localFont({
   adjustFontFallback: false,
 })
 
-export const fontVariables = cn(
-  fontVazirmatn.variable,
-  fontEstedad.variable,
-  fontNotoSansArabic.variable,
-  fontNotoKufiArabic.variable,
-  fontLalezar.variable,
-  fontMarkaziText.variable,
-  fontMono.variable
-)
+/** Shell fonts only — extras load via `lib/fonts-extras`. */
+export const fontVariables = cn(fontEstedad.variable, fontMono.variable)
 
 /** Inline script: apply saved font + cookie sync before paint. */
 export const UI_FONT_BOOTSTRAP_SCRIPT = `

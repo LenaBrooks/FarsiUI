@@ -103,13 +103,6 @@ export async function ComponentPreview({
       hideCode={hideCode}
       name={name}
       component={React.createElement(Component)}
-      source={
-        <ComponentSource
-          name={name}
-          collapsible={false}
-          styleName={styleName}
-        />
-      }
       sourcePreview={
         <ComponentSource
           name={name}

@@ -29,6 +29,11 @@ function isIndexableDocsUrl(url: string) {
   if (!url.startsWith("/docs")) return false
   if (url.startsWith("/docs/components/radix/")) return false
   if (url.startsWith("/docs/components/aria/")) return false
+  // Legacy / CLI-only surfaces — keep live, keep out of the index.
+  if (url === "/docs/new" || url.startsWith("/docs/new/")) return false
+  if (url === "/docs/react-19" || url.startsWith("/docs/react-19/")) return false
+  if (url === "/docs/tailwind-v4" || url.startsWith("/docs/tailwind-v4/"))
+    return false
   return true
 }
 

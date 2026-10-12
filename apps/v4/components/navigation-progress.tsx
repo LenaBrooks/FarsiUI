@@ -63,8 +63,8 @@ export function NavigationProgress() {
     schedule(() => setProgress(72), 600)
     schedule(() => setProgress(86), 1200)
     schedule(() => setProgress(92), 2200)
-    // Late escape only — do not fake a completed navigation at 10s.
-    schedule(() => abort(), 60_000)
+    // Soft abort when navigation stalls (soft nav cancel / hung RSC).
+    schedule(() => abort(), 8_000)
   }
 
   useEffect(() => {
@@ -102,8 +102,16 @@ export function NavigationProgress() {
       start()
     }
 
+    const onPopState = () => {
+      start()
+    }
+
     document.addEventListener("click", onClick, true)
-    return () => document.removeEventListener("click", onClick, true)
+    window.addEventListener("popstate", onPopState)
+    return () => {
+      document.removeEventListener("click", onClick, true)
+      window.removeEventListener("popstate", onPopState)
+    }
   }, [])
 
   // Finish only when the route actually changes — not on the click itself.
@@ -112,6 +120,17 @@ export function NavigationProgress() {
     routeKeyRef.current = routeKey
     if (loadingRef.current) finish()
   }, [routeKey])
+
+  // If the tab is hidden mid-nav, clear the stuck bar.
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.visibilityState === "hidden" && loadingRef.current) {
+        abort()
+      }
+    }
+    document.addEventListener("visibilitychange", onVisibility)
+    return () => document.removeEventListener("visibilitychange", onVisibility)
+  }, [])
 
   useEffect(() => () => clearTimers(), [])
 

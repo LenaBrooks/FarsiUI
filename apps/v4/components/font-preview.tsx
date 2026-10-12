@@ -65,12 +65,22 @@ export function FontPreviewProvider({
   const [hydrated, setHydrated] = useState(false)
 
   useLayoutEffect(() => {
+    let cancelled = false
     const stored = window.localStorage.getItem(UI_FONT_STORAGE_KEY)
     const next = normalizeUiFontId(stored)
-    setFontIdState(next)
-    persistUiFontId(next)
-    applyUiFontToDocument(next)
-    setHydrated(true)
+
+    void import("@/lib/fonts-extras").then(async ({ ensureFontFaces }) => {
+      await ensureFontFaces(next)
+      if (cancelled) return
+      setFontIdState(next)
+      persistUiFontId(next)
+      applyUiFontToDocument(next)
+      setHydrated(true)
+    })
+
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   useEffect(() => {
@@ -82,8 +92,11 @@ export function FontPreviewProvider({
   const setFontId = useCallback((id: UiFontId) => {
     if (!isUiFontId(id)) return
     persistUiFontId(id)
-    applyUiFontToDocument(id)
-    setFontIdState(id)
+    void import("@/lib/fonts-extras").then(async ({ ensureFontFaces }) => {
+      await ensureFontFaces(id)
+      applyUiFontToDocument(id)
+      setFontIdState(id)
+    })
   }, [])
 
   return (

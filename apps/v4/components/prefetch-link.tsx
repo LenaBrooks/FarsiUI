@@ -47,6 +47,7 @@ export const PrefetchLink = React.forwardRef<
         onFocus?.(event)
       }}
       {...props}
+      prefetch={false}
     />
   )
 })

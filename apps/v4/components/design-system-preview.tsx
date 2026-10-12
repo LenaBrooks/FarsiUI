@@ -21,10 +21,14 @@ import {
   THEME_BEFORE_DARK_DS_KEY,
   type DesignSystemCookieId,
 } from "@/lib/design-system"
+import {
+  isDesignSystemStyleLoaded,
+  loadDesignSystemStyle,
+} from "@/lib/design-system-style-loader"
 
 /**
  * Site Design System picker — maps to real installable registry styles.
- * Picker CSS ships eagerly with the app shell; switching is a sync class swap.
+ * Nova CSS ships with the shell; other recipes load on demand before class swap.
  */
 export const DESIGN_SYSTEM_PRESETS = [
   {
@@ -95,7 +99,7 @@ type DesignSystemPreviewContextType = {
   styleName: string
   styleRootClass: string
   presets: typeof DESIGN_SYSTEM_PRESETS
-  /** Always true — picker CSS is in the shell. */
+  /** False while a non-nova recipe CSS chunk is still loading. */
   styleReady: boolean
 }
 
@@ -146,6 +150,9 @@ export function DesignSystemPreviewProvider({
   const [designSystemId, setDesignSystemIdState] =
     useState<DesignSystemId>(bootId)
   const [hydrated, setHydrated] = useState(false)
+  const [styleReady, setStyleReady] = useState(() =>
+    isDesignSystemStyleLoaded(bootId)
+  )
   const designSystemIdRef = useRef(designSystemId)
   const { setTheme, theme } = useTheme()
   const themeRef = useRef(theme)
@@ -195,27 +202,62 @@ export function DesignSystemPreviewProvider({
 
   // Before paint: reconcile localStorage vs cookie boot, apply class sync.
   useLayoutEffect(() => {
-    const raw = window.localStorage.getItem(DESIGN_SYSTEM_STORAGE_KEY)
-    if (raw === "aether") {
-      window.localStorage.setItem(DESIGN_SYSTEM_STORAGE_KEY, "glass")
+    let cancelled = false
+
+    const boot = async () => {
+      const raw = window.localStorage.getItem(DESIGN_SYSTEM_STORAGE_KEY)
+      if (raw === "aether") {
+        window.localStorage.setItem(DESIGN_SYSTEM_STORAGE_KEY, "glass")
+      }
+      const next = normalizeDesignSystemId(raw) as DesignSystemId
+      const preset = resolvePreset(next)
+
+      setStyleReady(false)
+      try {
+        await loadDesignSystemStyle(next)
+      } catch {
+        // Keep previous class if chunk fails.
+      }
+      if (cancelled) return
+
+      setDesignSystemIdState(next)
+      persistDesignSystemId(next as DesignSystemCookieId)
+      applyStyleRootClass(preset.styleRootClass)
+      setStyleReady(true)
+
+      // Do not force dark here — فیروزه/نیلی only switch to dark when selected
+      // (syncColorModeForDesignSystem). Respect ModeSwitcher after that.
+
+      setHydrated(true)
     }
-    const next = normalizeDesignSystemId(raw) as DesignSystemId
-    const preset = resolvePreset(next)
 
-    setDesignSystemIdState(next)
-    persistDesignSystemId(next as DesignSystemCookieId)
-    applyStyleRootClass(preset.styleRootClass)
-
-    // Do not force dark here — فیروزه/نیلی only switch to dark when selected
-    // (syncColorModeForDesignSystem). Respect ModeSwitcher after that.
-
-    setHydrated(true)
+    void boot()
+    return () => {
+      cancelled = true
+    }
   }, [])
 
   useEffect(() => {
     if (!hydrated) return
-    persistDesignSystemId(designSystemId as DesignSystemCookieId)
-    applyStyleRootClass(resolvePreset(designSystemId).styleRootClass)
+    let cancelled = false
+
+    const sync = async () => {
+      setStyleReady(isDesignSystemStyleLoaded(designSystemId))
+      try {
+        await loadDesignSystemStyle(designSystemId)
+      } catch {
+        return
+      }
+      if (cancelled) return
+      persistDesignSystemId(designSystemId as DesignSystemCookieId)
+      applyStyleRootClass(resolvePreset(designSystemId).styleRootClass)
+      setStyleReady(true)
+    }
+
+    void sync()
+    return () => {
+      cancelled = true
+    }
   }, [designSystemId, hydrated])
 
   // Sync style root onto lazy-loaded same-origin preview iframes.
@@ -294,9 +336,17 @@ export function DesignSystemPreviewProvider({
       if (!DESIGN_SYSTEM_PRESETS.some((preset) => preset.id === id)) return
       const prevId = designSystemIdRef.current
       persistDesignSystemId(id as DesignSystemCookieId)
-      applyStyleRootClass(resolvePreset(id).styleRootClass)
-      setDesignSystemIdState(id)
-      syncColorModeForDesignSystem(id, prevId)
+      setStyleReady(isDesignSystemStyleLoaded(id))
+      void loadDesignSystemStyle(id)
+        .then(() => {
+          applyStyleRootClass(resolvePreset(id).styleRootClass)
+          setDesignSystemIdState(id)
+          setStyleReady(true)
+          syncColorModeForDesignSystem(id, prevId)
+        })
+        .catch(() => {
+          setStyleReady(true)
+        })
     },
     [syncColorModeForDesignSystem]
   )
@@ -311,7 +361,7 @@ export function DesignSystemPreviewProvider({
         styleName: preset.styleName,
         styleRootClass: preset.styleRootClass,
         presets: DESIGN_SYSTEM_PRESETS,
-        styleReady: true,
+        styleReady,
       }}
     >
       {children}

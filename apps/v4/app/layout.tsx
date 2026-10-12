@@ -24,25 +24,18 @@ import {
   UI_FONT_COOKIE,
 } from "@/lib/fonts"
 import { ActiveThemeProvider } from "@/components/active-theme"
-import { DesignSystemPreviewProvider } from "@/components/design-system-preview"
-import { FontPreviewProvider } from "@/components/font-preview"
 import { Analytics } from "@/components/analytics"
+import { DesignSystemPreviewProvider } from "@/components/design-system-preview"
+import { DesignSystemStyles } from "@/components/design-system-styles"
+import { FontPreviewProvider } from "@/components/font-preview"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import { TooltipProvider as BaseTooltipProvider } from "@/registry/bases/base/ui/tooltip"
 import { Toaster } from "@/registry/bases/radix/ui/sonner"
 import { TooltipProvider as RadixTooltipProvider } from "@/registry/bases/radix/ui/tooltip"
-import { Toaster as BaseToaster } from "@/styles/base-nova/ui/toast"
 
 import "@/app/globals.css"
-/* All picker design systems ship with the shell — no lazy CSS FOUC on restore/switch. */
+/* Default design system only — other picker recipes load on demand. */
 import "@/app/styles/chunk-nova.css"
-import "@/app/styles/chunk-vega.css"
-import "@/app/styles/chunk-glass.css"
-import "@/app/styles/chunk-rose.css"
-import "@/app/styles/chunk-nili.css"
-import "@/app/styles/chunk-khesht.css"
-import "@/app/(app)/(typeset)/typeset.css"
 
 export async function generateMetadata(): Promise<Metadata> {
   const metadataBase = getMetadataBase(await headers())
@@ -133,12 +126,20 @@ export default async function RootLayout({
   const styleRootClass = DESIGN_SYSTEM_STYLE_CLASS[initialDesignSystem]
   const themeClass = `theme-${initialActiveTheme}`
 
+  const extraFontClass =
+    initialFontId !== "estedad"
+      ? (await import("@/lib/fonts-extras")).getExtraUiFontClassName(
+          initialFontId
+        )
+      : undefined
+
   return (
     <html
       lang="fa"
       suppressHydrationWarning
       className={cn(
         fontVariables,
+        extraFontClass,
         "font-sans",
         "[--header-height:calc(var(--spacing)*14)] lg:[--header-height:calc(var(--spacing)*16)]"
       )}
@@ -177,6 +178,7 @@ export default async function RootLayout({
           initialActiveTheme.endsWith("-scaled") && "theme-scaled"
         )}
       >
+        <DesignSystemStyles id={initialDesignSystem} />
         {/* Sync localStorage → body classes before first paint (body exists here). */}
         <script
           dangerouslySetInnerHTML={{
@@ -219,13 +221,10 @@ export default async function RootLayout({
             >
               <FontPreviewProvider initialFontId={initialFontId}>
                 <NuqsAdapter>
-                  <BaseTooltipProvider delay={0}>
-                    <RadixTooltipProvider delayDuration={0}>
-                      {children}
-                      <Toaster position="top-center" dir="rtl" />
-                      <BaseToaster />
-                    </RadixTooltipProvider>
-                  </BaseTooltipProvider>
+                  <RadixTooltipProvider delayDuration={0}>
+                    {children}
+                    <Toaster position="top-center" dir="rtl" />
+                  </RadixTooltipProvider>
                 </NuqsAdapter>
                 <TailwindIndicator />
                 <Analytics />

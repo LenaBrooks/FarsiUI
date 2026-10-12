@@ -64,6 +64,11 @@ export async function generateMetadata(props: {
     (slug[1] === "aria" || slug[1] === "radix") &&
     Boolean(slug[2])
 
+  const isNoindexDocs =
+    slug[0] === "new" ||
+    slug[0] === "react-19" ||
+    slug[0] === "tailwind-v4"
+
   const canonicalPath = isMirroredComponent
     ? `/docs/components/base/${slug[2]}`
     : page.url
@@ -74,9 +79,10 @@ export async function generateMetadata(props: {
     alternates: {
       canonical: canonicalPath,
     },
-    robots: isMirroredComponent
-      ? { index: false, follow: true }
-      : undefined,
+    robots:
+      isMirroredComponent || isNoindexDocs
+        ? { index: false, follow: true }
+        : undefined,
     openGraph: {
       title,
       description,

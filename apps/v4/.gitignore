@@ -48,6 +48,9 @@ next-env.d.ts
 .source
 .devtools
 
+# lazy design-system CSS (built by pnpm ds:css)
+/public/ds/
+
 # generated registry output (rebuilt by registry:build on every deploy).
 # index.json, default and new-york are NOT build outputs: index.json is a
 # static contract older CLIs fetch, and default/new-york are frozen v3

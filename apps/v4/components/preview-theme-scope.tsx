@@ -101,11 +101,35 @@ export function PreviewThemeIframe({
     useDesignSystemPreview()
   const theme = activeTheme === "default" ? "neutral" : activeTheme
   const resolvedSrc = resolveDesignSystemViewSrc(src, designSystemStyleName)
-  const ref = React.useRef<HTMLIFrameElement>(null)
+  const hostRef = React.useRef<HTMLDivElement>(null)
+  const iframeRef = React.useRef<HTMLIFrameElement>(null)
+  const [shouldLoad, setShouldLoad] = React.useState(false)
+
+  React.useEffect(() => {
+    const host = hostRef.current
+    if (!host || shouldLoad) return
+
+    if (typeof IntersectionObserver === "undefined") {
+      setShouldLoad(true)
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setShouldLoad(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: "200px 0px", threshold: 0.01 }
+    )
+    observer.observe(host)
+    return () => observer.disconnect()
+  }, [shouldLoad])
 
   const sync = React.useCallback(() => {
     try {
-      const body = ref.current?.contentDocument?.body
+      const body = iframeRef.current?.contentDocument?.body
       if (!body) return
 
       Array.from(body.classList)
@@ -128,17 +152,25 @@ export function PreviewThemeIframe({
   }, [styleRootClass, theme])
 
   React.useEffect(() => {
+    if (!shouldLoad) return
     sync()
-  }, [sync])
+  }, [shouldLoad, sync])
 
   return (
-    <iframe
-      key={`${resolvedSrc}:${styleRootClass}:${theme}`}
-      ref={ref}
-      src={resolvedSrc}
-      className={className}
-      onLoad={sync}
-      title="Component preview"
-    />
+    <div ref={hostRef} className={cn("size-full", className)}>
+      {shouldLoad ? (
+        <iframe
+          key={`${resolvedSrc}:${styleRootClass}:${theme}`}
+          ref={iframeRef}
+          src={resolvedSrc}
+          className="size-full border-0"
+          onLoad={sync}
+          title="Component preview"
+          loading="lazy"
+        />
+      ) : (
+        <div aria-hidden className="size-full animate-pulse bg-muted/40" />
+      )}
+    </div>
   )
 }

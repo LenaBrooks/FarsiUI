@@ -5,6 +5,7 @@ import * as React from "react"
 import { cn } from "cn"
 import { I18nProvider } from "react-aria-components"
 
+import { ComponentSourceLazy } from "@/components/component-source-lazy"
 import { useDesignSystemPreview } from "@/components/design-system-preview"
 import { ExampleDependencies } from "@/components/example-dependencies"
 import {
@@ -42,7 +43,8 @@ export function ComponentPreviewTabs({
   /** Demo/registry item name — used to load the active Design System bake. */
   name?: string
   component: React.ReactNode
-  source: React.ReactNode
+  /** @deprecated Prefer lazy full source via `name` after expand. */
+  source?: React.ReactNode
   sourcePreview?: React.ReactNode
   dependencies?: string[]
   direction?: "ltr" | "rtl"
@@ -115,7 +117,14 @@ export function ComponentPreviewTabs({
             className="relative overflow-hidden **:data-[slot=copy-button]:right-4 **:data-[slot=copy-button]:hidden data-[mobile-code-visible=true]:**:data-[slot=copy-button]:flex [&_[data-rehype-pretty-code-figure]]:m-0! [&_[data-rehype-pretty-code-figure]]:rounded-t-none [&_[data-rehype-pretty-code-figure]]:border-t [&_pre]:max-h-72"
           >
             {isMobileCodeVisible ? (
-              <>{source}</>
+              name ? (
+                <ComponentSourceLazy
+                  name={name}
+                  styleName={previewStyleName}
+                />
+              ) : (
+                <>{source}</>
+              )
             ) : (
               <div className="relative">
                 {sourcePreview}

@@ -61,7 +61,7 @@ export async function highlightCode(code: string, language: string = "tsx") {
   // Create cache key from code content and language.
   // Prefix bumps when Persian wrapping / highlighting output shape changes.
   const cacheKey = createHash("sha256")
-    .update(`fa-wrap-v2-vscode:${language}:${code}`)
+    .update(`fa-wrap-v3-scrollbar-soft:${language}:${code}`)
     .digest("hex")
 
   // Check cache first.
@@ -81,7 +81,7 @@ export async function highlightCode(code: string, language: string = "tsx") {
       {
         pre(node) {
           node.properties["class"] =
-            "no-scrollbar min-w-0 overflow-x-auto overflow-y-auto overscroll-x-contain overscroll-y-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 !bg-transparent"
+            "scrollbar-soft min-w-0 overflow-x-auto overflow-y-auto overscroll-x-contain overscroll-y-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 !bg-transparent"
         },
         code(node) {
           node.properties["data-line-numbers"] = ""

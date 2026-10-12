@@ -212,7 +212,7 @@ function CustomizerCode({ themeName }: { themeName: string }) {
               <Icons.css className="fill-foreground" />
               app/globals.css
             </figcaption>
-            <pre className="no-scrollbar max-h-[300px] min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
+            <pre className="scrollbar-soft max-h-[300px] min-w-0 overflow-x-auto overflow-y-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
               <Button
                 data-slot="copy-button"
                 size="icon"
@@ -292,7 +292,7 @@ function CustomizerCode({ themeName }: { themeName: string }) {
               <Icons.css className="fill-foreground" />
               app/globals.css
             </figcaption>
-            <pre className="no-scrollbar max-h-[300px] min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
+            <pre className="scrollbar-soft max-h-[300px] min-w-0 overflow-x-auto overflow-y-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
               <Button
                 data-slot="copy-button"
                 size="icon"
@@ -376,7 +376,7 @@ function CustomizerCode({ themeName }: { themeName: string }) {
               <Icons.css className="fill-foreground" />
               app/globals.css
             </figcaption>
-            <pre className="no-scrollbar max-h-[300px] min-w-0 overflow-x-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
+            <pre className="scrollbar-soft max-h-[300px] min-w-0 overflow-x-auto overflow-y-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 md:max-h-[450px]">
               <Button
                 data-slot="copy-button"
                 size="icon"

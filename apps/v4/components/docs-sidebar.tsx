@@ -45,7 +45,12 @@ const GROUP_TRIGGER_CLASS =
 const SIDEBAR_EN_CLASS =
   "shrink-0 font-sans text-[12px] font-normal tracking-normal text-muted-foreground"
 
-const TOP_LEVEL_SECTIONS = [
+const TOP_LEVEL_SECTIONS: Array<{
+  name: string
+  href: string
+  /** Green status dot — e.g. live updates feed. */
+  statusDot?: "green"
+}> = [
   { name: "مقدمه", href: "/docs" },
   {
     name: "نصب",
@@ -58,6 +63,11 @@ const TOP_LEVEL_SECTIONS = [
   {
     name: "سرور MCP",
     href: "/docs/mcp",
+  },
+  {
+    name: "بروزرسانی‌ها",
+    href: "/docs/updates",
+    statusDot: "green",
   },
 ]
 const EXCLUDED_SECTIONS = ["installation", "dark-mode", "changelog", "rtl"]
@@ -377,7 +387,7 @@ function DocsSidebarBody({
           <SidebarGroup className="p-1 pt-1">
             <SidebarGroupContent>
               <SidebarMenu className="gap-0.5">
-                {filteredSections.map(({ name, href }) => (
+                {filteredSections.map(({ name, href, statusDot }) => (
                   <SidebarMenuItem key={name}>
                     <SidebarMenuButton
                       size="sm"
@@ -391,13 +401,22 @@ function DocsSidebarBody({
                     >
                       <PrefetchLink href={href}>
                         <span className="absolute inset-0 flex w-(--sidebar-menu-width) bg-transparent" />
-                        {name}
-                        {PAGES_NEW.includes(href) && (
-                          <span
-                            className="flex size-2 rounded-full bg-primary"
-                            title="New"
-                          />
-                        )}
+                        <span className="relative z-10 inline-flex items-center gap-1.5">
+                          {name}
+                          {statusDot === "green" ? (
+                            <span
+                              className="size-2 shrink-0 rounded-full bg-emerald-500"
+                              title="به‌روز"
+                              aria-label="به‌روز"
+                            />
+                          ) : null}
+                          {PAGES_NEW.includes(href) ? (
+                            <span
+                              className="size-2 shrink-0 rounded-full bg-primary"
+                              title="New"
+                            />
+                          ) : null}
+                        </span>
                       </PrefetchLink>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -465,8 +484,10 @@ function DocsSidebarBody({
               className="group/docs-folder"
             >
               <CollapsibleTrigger className={GROUP_TRIGGER_CLASS}>
-                <ChevronDownIcon className="size-3.5 shrink-0 opacity-60 transition-transform group-data-[state=closed]/docs-folder:rotate-90" />
-                <span>{group.name}</span>
+                <span className="min-w-0 flex-1 truncate text-start">
+                  {group.name}
+                </span>
+                <ChevronDownIcon className="size-3.5 shrink-0 opacity-50 transition-transform duration-200 group-data-[state=open]/docs-folder:rotate-180" />
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <SidebarGroupContent>

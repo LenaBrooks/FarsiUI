@@ -78,7 +78,10 @@ export function ComponentSourceLazy({
 
   return (
     <div className={cn("relative", className)}>
-      <figure data-rehype-pretty-code-figure="" className="[&>pre]:max-h-96">
+      <figure
+        data-rehype-pretty-code-figure=""
+        className="[&>pre]:max-h-96 [&>pre]:overflow-auto [&>pre]:scrollbar-soft"
+      >
         <CopyButton value={data.code} />
         <div
           data-not-typeset

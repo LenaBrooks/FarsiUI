@@ -66,12 +66,18 @@ function ChartContainer({
         data-chart={chartId}
         dir={dir}
         className={cn(
-          "cn-chart flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-axis-tick_text]:text-[11px] [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/40 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border/80 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border/50 [&_.recharts-radial-bar-background-sector]:fill-muted/60 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted/40 [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector]:outline-hidden [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-surface]:outline-hidden",
+          "cn-chart flex aspect-video justify-center font-sans text-xs [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-axis-tick_text]:font-sans [&_.recharts-cartesian-axis-tick_text]:text-[11px] [&_.recharts-cartesian-axis-tick_text]:[font-family:var(--font-sans)]  [&_.recharts-legend-item-text]:font-sans [&_.recharts-legend-item-text]:[font-family:var(--font-sans)] [&_.recharts-text]:[font-family:var(--font-sans)] [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/40 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border/80 [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border/50 [&_.recharts-radial-bar-background-sector]:fill-muted/60 [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted/40 [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector]:outline-hidden [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-surface]:outline-hidden",
           className
         )}
         {...props}
       >
         <ChartStyle id={chartId} config={config} />
+        {/* RTL on the chart flips SVG text-anchor start toward the Y axis line. */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `[data-chart=${chartId}] .recharts-yAxis-tick-labels,[data-chart=${chartId}] .recharts-xAxis-tick-labels{direction:ltr;unicode-bidi:isolate}`,
+          }}
+        />
         <RechartsPrimitive.ResponsiveContainer
           initialDimension={initialDimension}
         >
@@ -193,7 +199,8 @@ function ChartTooltipContent({
     <div
       dir="rtl"
       className={cn(
-        "cn-chart-tooltip grid min-w-[8rem] items-start gap-1.5 text-start rounded-lg border border-border/50 bg-background px-2.5 py-1.5 text-xs shadow-xl",
+        // Force Persian UI font for every tooltip node (incl. custom formatters / font-mono).
+        "cn-chart-tooltip grid min-w-[8rem] items-start gap-1.5 rounded-lg border border-border/50 bg-background px-2.5 py-1.5 font-sans text-xs text-start shadow-xl [font-family:var(--font-sans)] [&_*]:[font-family:inherit]",
         className
       )}
     >
@@ -255,7 +262,7 @@ function ChartTooltipContent({
                         </span>
                       </div>
                       {item.value != null && (
-                        <span className="font-medium tracking-normal [letter-spacing:0] text-foreground">
+                        <span className="font-sans font-medium tracking-normal text-foreground [font-family:var(--font-sans)] [letter-spacing:0]">
                           {typeof item.value === "number"
                             ? item.value.toLocaleString("fa-IR")
                             : String(item.value)}

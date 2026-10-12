@@ -1,0 +1,18 @@
+"use client"
+
+/**
+ * Default gauge — https://martin36.github.io/react-gauge-chart/
+ * Traffic-light colors (same mid yellow as custom-arcs) so yellow reads on light theme.
+ */
+
+import { Chart2Gauge, GAUGE_TRAFFIC_COLORS } from "./gauge-shared"
+
+export default function GaugeDefaultDemo() {
+  return (
+    <Chart2Gauge
+      id="chart2-gauge-default"
+      colors={[...GAUGE_TRAFFIC_COLORS]}
+      caption="گیج پیش‌فرض — سبز / زرد / قرمز (#5BE12C, #F5CD19, #EA4228)"
+    />
+  )
+}

@@ -96,7 +96,10 @@ function ComponentCode({
   title: string | undefined
 }) {
   return (
-    <figure data-rehype-pretty-code-figure="" className="[&>pre]:max-h-96">
+    <figure
+      data-rehype-pretty-code-figure=""
+      className="[&>pre]:max-h-96 [&>pre]:overflow-auto [&>pre]:scrollbar-soft"
+    >
       {title && (
         <figcaption
           data-rehype-pretty-code-title=""

@@ -1,0 +1,78 @@
+"use client"
+
+import type { CSSProperties, ComponentProps } from "react"
+import GaugeChart from "react-gauge-chart"
+
+import { useChart2ToolbarStart } from "@/components/chart2-live"
+import { toPersianDigits } from "@/lib/chart2-fa"
+
+/** Fixed height avoids the known resize bug in react-gauge-chart. */
+export const gaugeChartStyle: CSSProperties = {
+  width: "100%",
+  height: 250,
+  maxWidth: 420,
+}
+
+/** Needle/text defaults from the library demo — readable on light surfaces. */
+export const GAUGE_NEEDLE = "#464A4F"
+
+/**
+ * Traffic-light palette from the library demo (custom arcs).
+ * Mid yellow #F5CD19 stays readable on light backgrounds (unlike #00FF00→#FF0000 HSL).
+ */
+export const GAUGE_TRAFFIC_COLORS = ["#5BE12C", "#F5CD19", "#EA4228"] as const
+
+/** Build n arc colors green → gold → red so mid yellow stays visible in light theme. */
+export function gaugeTrafficRamp(levels: number): string[] {
+  if (levels <= 1) return [GAUGE_TRAFFIC_COLORS[0]]
+  if (levels === 2) return [GAUGE_TRAFFIC_COLORS[0], GAUGE_TRAFFIC_COLORS[2]]
+  if (levels === 3) return [...GAUGE_TRAFFIC_COLORS]
+
+  const [green, yellow, red] = GAUGE_TRAFFIC_COLORS
+  const mid = Math.floor((levels - 1) / 2)
+  const mix = (a: string, b: string, t: number) => {
+    const parse = (hex: string) =>
+      [1, 3, 5].map((i) => Number.parseInt(hex.slice(i, i + 2), 16))
+    const [ar, ag, ab] = parse(a)
+    const [br, bg, bb] = parse(b)
+    const ch = (x: number) =>
+      Math.round(x).toString(16).padStart(2, "0")
+    return `#${ch(ar + (br - ar) * t)}${ch(ag + (bg - ag) * t)}${ch(ab + (bb - ab) * t)}`
+  }
+
+  return Array.from({ length: levels }, (_, i) => {
+    if (i <= mid) return mix(green, yellow, mid === 0 ? 1 : i / mid)
+    return mix(yellow, red, (i - mid) / (levels - 1 - mid))
+  })
+}
+
+export function formatGaugePercent(value: string) {
+  return `${toPersianDigits(value)}٪`
+}
+
+export function Chart2Gauge(
+  props: ComponentProps<typeof GaugeChart> & { caption?: string }
+) {
+  const { caption, textColor = GAUGE_NEEDLE, ...gaugeProps } = props
+
+  useChart2ToolbarStart(
+    () =>
+      caption ? (
+        <p className="min-w-0 max-w-full text-start text-[12px] leading-snug text-muted-foreground">
+          {caption}
+        </p>
+      ) : null,
+    [caption]
+  )
+
+  return (
+    <div className="flex w-full max-w-[420px] justify-center font-sans">
+      <GaugeChart
+        style={gaugeChartStyle}
+        textColor={textColor}
+        formatTextValue={formatGaugePercent}
+        {...gaugeProps}
+      />
+    </div>
+  )
+}

@@ -1,0 +1,67 @@
+"use client"
+
+import { Pie, PieChart } from "recharts"
+
+import { FA_CHART, formatChart2Number } from "@/lib/chart2-fa"
+import {
+  ChartContainer,
+  ChartLegend,
+  ChartLegendContent,
+  ChartTooltip,
+  ChartTooltipContent,
+  type ChartConfig,
+} from "@/registry/new-york-v4/ui/chart"
+
+const data = [
+  { name: "tehran", value: 400, fill: "var(--color-tehran)" },
+  { name: "isfahan", value: 300, fill: "var(--color-isfahan)" },
+  { name: "fars", value: 300, fill: "var(--color-fars)" },
+  { name: "khorasan", value: 200, fill: "var(--color-khorasan)" },
+]
+
+const chartConfig = {
+  value: { label: FA_CHART.sales },
+  tehran: { label: FA_CHART.tehran, color: "var(--chart-1)" },
+  isfahan: { label: FA_CHART.isfahan, color: "var(--chart-2)" },
+  fars: { label: FA_CHART.fars, color: "var(--chart-3)" },
+  khorasan: { label: FA_CHART.khorasan, color: "var(--chart-4)" },
+} satisfies ChartConfig
+
+export default function PieChartWithPaddingAngleDemo({
+  isAnimationActive = true,
+}: {
+  isAnimationActive?: boolean
+}) {
+  return (
+    <ChartContainer
+      config={chartConfig}
+      className="mx-auto aspect-square h-auto w-full max-w-[500px] max-h-[80vh] font-sans text-xs"
+    >
+      <PieChart accessibilityLayer>
+        <ChartTooltip
+          content={
+            <ChartTooltipContent
+              nameKey="name"
+              hideLabel
+              formatter={(value) => formatChart2Number(value as number)}
+            />
+          }
+        />
+        <Pie
+          data={data}
+          dataKey="value"
+          nameKey="name"
+          innerRadius="80%"
+          outerRadius="100%"
+          cornerRadius="50%"
+          paddingAngle={5}
+          isAnimationActive={isAnimationActive}
+        />
+        <ChartLegend
+          content={<ChartLegendContent nameKey="name" />}
+          className="-translate-y-2 flex-wrap gap-2 *:basis-1/4 *:justify-center"
+        />
+      </PieChart>
+    </ChartContainer>
+  )
+}

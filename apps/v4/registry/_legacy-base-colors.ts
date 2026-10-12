@@ -28,11 +28,11 @@ export const baseColors = [
         input: "240 5.9% 90%",
         ring: "240 5.9% 10%",
         radius: "0.5rem",
-        "chart-1": "12 76% 61%",
-        "chart-2": "173 58% 39%",
-        "chart-3": "197 37% 24%",
-        "chart-4": "43 74% 66%",
-        "chart-5": "27 87% 67%",
+        "chart-1": "217 91% 60%",
+        "chart-2": "160 84% 39%",
+        "chart-3": "43 96% 56%",
+        "chart-4": "258 90% 66%",
+        "chart-5": "347 77% 50%",
       },
       dark: {
         background: "240 10% 3.9%",
@@ -54,11 +54,11 @@ export const baseColors = [
         border: "240 3.7% 15.9%",
         input: "240 3.7% 15.9%",
         ring: "240 4.9% 83.9%",
-        "chart-1": "220 70% 50%",
-        "chart-2": "160 60% 45%",
-        "chart-3": "30 80% 55%",
-        "chart-4": "280 65% 60%",
-        "chart-5": "340 75% 55%",
+        "chart-1": "213 94% 68%",
+        "chart-2": "160 84% 45%",
+        "chart-3": "43 96% 64%",
+        "chart-4": "255 92% 76%",
+        "chart-5": "350 89% 68%",
       },
     },
   },
@@ -154,11 +154,11 @@ export const baseColors = [
         input: "20 5.9% 90%",
         ring: "20 14.3% 4.1%",
         radius: "0.95rem",
-        "chart-1": "12 76% 61%",
-        "chart-2": "173 58% 39%",
-        "chart-3": "197 37% 24%",
-        "chart-4": "43 74% 66%",
-        "chart-5": "27 87% 67%",
+        "chart-1": "217 91% 60%",
+        "chart-2": "160 84% 39%",
+        "chart-3": "43 96% 56%",
+        "chart-4": "258 90% 66%",
+        "chart-5": "347 77% 50%",
       },
       dark: {
         background: "20 14.3% 4.1%",
@@ -180,11 +180,11 @@ export const baseColors = [
         border: "12 6.5% 15.1%",
         input: "12 6.5% 15.1%",
         ring: "24 5.7% 82.9%",
-        "chart-1": "220 70% 50%",
-        "chart-2": "160 60% 45%",
-        "chart-3": "30 80% 55%",
-        "chart-4": "280 65% 60%",
-        "chart-5": "340 75% 55%",
+        "chart-1": "213 94% 68%",
+        "chart-2": "160 84% 45%",
+        "chart-3": "43 96% 64%",
+        "chart-4": "255 92% 76%",
+        "chart-5": "350 89% 68%",
       },
     },
   },
@@ -279,11 +279,11 @@ export const baseColors = [
         border: "0 0% 89.8%",
         input: "0 0% 89.8%",
         ring: "0 0% 3.9%",
-        "chart-1": "12 76% 61%",
-        "chart-2": "173 58% 39%",
-        "chart-3": "197 37% 24%",
-        "chart-4": "43 74% 66%",
-        "chart-5": "27 87% 67%",
+        "chart-1": "217 91% 60%",
+        "chart-2": "160 84% 39%",
+        "chart-3": "43 96% 56%",
+        "chart-4": "258 90% 66%",
+        "chart-5": "347 77% 50%",
       },
       dark: {
         background: "0 0% 3.9%",
@@ -305,11 +305,11 @@ export const baseColors = [
         border: "0 0% 14.9%",
         input: "0 0% 14.9%",
         ring: "0 0% 83.1%",
-        "chart-1": "220 70% 50%",
-        "chart-2": "160 60% 45%",
-        "chart-3": "30 80% 55%",
-        "chart-4": "280 65% 60%",
-        "chart-5": "340 75% 55%",
+        "chart-1": "213 94% 68%",
+        "chart-2": "160 84% 45%",
+        "chart-3": "43 96% 64%",
+        "chart-4": "255 92% 76%",
+        "chart-5": "350 89% 68%",
       },
     },
   },
@@ -776,11 +776,11 @@ export const baseColorsV4 = {
       border: "oklch(0.923 0.003 48.717)", // --color-stone-200
       input: "oklch(0.923 0.003 48.717)", // --color-stone-200
       ring: "oklch(0.709 0.01 56.259)", // --color-stone-400
-      "chart-1": "oklch(0.646 0.222 41.116)", // --color-orange-600
-      "chart-2": "oklch(0.6 0.118 184.704)", // --color-teal-600
-      "chart-3": "oklch(0.398 0.07 227.392)", // --color-cyan-900
-      "chart-4": "oklch(0.828 0.189 84.429)", // --color-amber-400
-      "chart-5": "oklch(0.769 0.188 70.08)", // --color-amber-500
+      "chart-1": "oklch(0.623 0.214 259.815)", // Tremor blue
+      "chart-2": "oklch(0.696 0.17 162.48)", // Tremor emerald
+      "chart-3": "oklch(0.769 0.188 70.08)", // amber
+      "chart-4": "oklch(0.606 0.25 292.717)", // violet
+      "chart-5": "oklch(0.645 0.246 16.439)", // rose
       radius: "0.625rem",
       sidebar: "oklch(0.985 0.001 106.423)", // --color-stone-50
       "sidebar-foreground": "oklch(0.147 0.004 49.25)", // --color-stone-950
@@ -810,11 +810,11 @@ export const baseColorsV4 = {
       border: "oklch(1 0 0 / 10%)", // --color-white
       input: "oklch(1 0 0 / 15%)", // --color-white
       ring: "oklch(0.553 0.013 58.071)", // --color-stone-500
-      "chart-1": "oklch(0.488 0.243 264.376)", // --color-blue-700
-      "chart-2": "oklch(0.696 0.17 162.48)", // --color-emerald-500
-      "chart-3": "oklch(0.769 0.188 70.08)", // --color-amber-500
-      "chart-4": "oklch(0.627 0.265 303.9)", // --color-purple-500
-      "chart-5": "oklch(0.645 0.246 16.439)", // --color-rose-500
+      "chart-1": "oklch(0.707 0.165 254.624)", // Tremor blue
+      "chart-2": "oklch(0.765 0.177 163.223)", // Tremor emerald
+      "chart-3": "oklch(0.828 0.189 84.429)", // amber
+      "chart-4": "oklch(0.702 0.183 293.541)", // violet
+      "chart-5": "oklch(0.712 0.194 13.428)", // rose
       sidebar: "oklch(0.216 0.006 56.043)", // --color-stone-900
       "sidebar-foreground": "oklch(0.985 0.001 106.423)", // --color-stone-50
       "sidebar-primary": "oklch(0.488 0.243 264.376)", // --color-blue-700
@@ -845,11 +845,11 @@ export const baseColorsV4 = {
       border: "oklch(0.92 0.004 286.32)", // --color-zinc-200
       input: "oklch(0.92 0.004 286.32)", // --color-zinc-200
       ring: "oklch(0.705 0.015 286.067)", // --color-zinc-400
-      "chart-1": "oklch(0.646 0.222 41.116)", // --color-orange-600
-      "chart-2": "oklch(0.6 0.118 184.704)", // --color-teal-600
-      "chart-3": "oklch(0.398 0.07 227.392)", // --color-cyan-900
-      "chart-4": "oklch(0.828 0.189 84.429)", // --color-amber-400
-      "chart-5": "oklch(0.769 0.188 70.08)", // --color-amber-500
+      "chart-1": "oklch(0.623 0.214 259.815)", // Tremor blue
+      "chart-2": "oklch(0.696 0.17 162.48)", // Tremor emerald
+      "chart-3": "oklch(0.769 0.188 70.08)", // amber
+      "chart-4": "oklch(0.606 0.25 292.717)", // violet
+      "chart-5": "oklch(0.645 0.246 16.439)", // rose
       radius: "0.625rem",
       sidebar: "oklch(0.985 0 0)", // --color-zinc-50
       "sidebar-foreground": "oklch(0.141 0.005 285.823)", // --color-zinc-950
@@ -879,11 +879,11 @@ export const baseColorsV4 = {
       border: "oklch(1 0 0 / 10%)", // --color-white
       input: "oklch(1 0 0 / 15%)", // --color-white
       ring: "oklch(0.552 0.016 285.938)", // --color-zinc-500
-      "chart-1": "oklch(0.488 0.243 264.376)", // --color-blue-700
-      "chart-2": "oklch(0.696 0.17 162.48)", // --color-emerald-500
-      "chart-3": "oklch(0.769 0.188 70.08)", // --color-amber-500
-      "chart-4": "oklch(0.627 0.265 303.9)", // --color-purple-500
-      "chart-5": "oklch(0.645 0.246 16.439)", // --color-rose-500
+      "chart-1": "oklch(0.707 0.165 254.624)", // Tremor blue
+      "chart-2": "oklch(0.765 0.177 163.223)", // Tremor emerald
+      "chart-3": "oklch(0.828 0.189 84.429)", // amber
+      "chart-4": "oklch(0.702 0.183 293.541)", // violet
+      "chart-5": "oklch(0.712 0.194 13.428)", // rose
       sidebar: "oklch(0.21 0.006 285.885)", // --color-zinc-900
       "sidebar-foreground": "oklch(0.985 0 0)", // --color-zinc-50
       "sidebar-primary": "oklch(0.488 0.243 264.376)", // --color-blue-700
@@ -914,11 +914,11 @@ export const baseColorsV4 = {
       border: "oklch(0.922 0 0)", // --color-neutral-200
       input: "oklch(0.922 0 0)", // --color-neutral-200
       ring: "oklch(0.708 0 0)", // --color-neutral-400
-      "chart-1": "oklch(0.646 0.222 41.116)", // --color-orange-600
-      "chart-2": "oklch(0.6 0.118 184.704)", // --color-teal-600
-      "chart-3": "oklch(0.398 0.07 227.392)", // --color-cyan-900
-      "chart-4": "oklch(0.828 0.189 84.429)", // --color-amber-400
-      "chart-5": "oklch(0.769 0.188 70.08)", // --color-amber-500
+      "chart-1": "oklch(0.623 0.214 259.815)", // Tremor blue
+      "chart-2": "oklch(0.696 0.17 162.48)", // Tremor emerald
+      "chart-3": "oklch(0.769 0.188 70.08)", // amber
+      "chart-4": "oklch(0.606 0.25 292.717)", // violet
+      "chart-5": "oklch(0.645 0.246 16.439)", // rose
       radius: "0.625rem",
       sidebar: "oklch(0.985 0 0)", // --color-neutral-50
       "sidebar-foreground": "oklch(0.145 0 0)", // --color-neutral-950
@@ -948,11 +948,11 @@ export const baseColorsV4 = {
       border: "oklch(1 0 0 / 10%)", // --color-white
       input: "oklch(1 0 0 / 15%)", // --color-white
       ring: "oklch(0.556 0 0)", // --color-neutral-500
-      "chart-1": "oklch(0.488 0.243 264.376)", // --color-blue-700
-      "chart-2": "oklch(0.696 0.17 162.48)", // --color-emerald-500
-      "chart-3": "oklch(0.769 0.188 70.08)", // --color-amber-500
-      "chart-4": "oklch(0.627 0.265 303.9)", // --color-purple-500
-      "chart-5": "oklch(0.645 0.246 16.439)", // --color-rose-500
+      "chart-1": "oklch(0.707 0.165 254.624)", // Tremor blue
+      "chart-2": "oklch(0.765 0.177 163.223)", // Tremor emerald
+      "chart-3": "oklch(0.828 0.189 84.429)", // amber
+      "chart-4": "oklch(0.702 0.183 293.541)", // violet
+      "chart-5": "oklch(0.712 0.194 13.428)", // rose
       sidebar: "oklch(0.205 0 0)", // --color-neutral-900
       "sidebar-foreground": "oklch(0.985 0 0)", // --color-neutral-50
       "sidebar-primary": "oklch(0.488 0.243 264.376)", // --color-blue-700

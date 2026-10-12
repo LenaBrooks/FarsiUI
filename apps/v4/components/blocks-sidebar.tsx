@@ -167,13 +167,13 @@ function BlocksNavBody({ showSearch = true }: { showSearch?: boolean }) {
                   >
                     <SidebarMenuItem>
                       <CollapsibleTrigger className="flex h-10 w-full cursor-pointer items-center gap-1.5 rounded-md px-2 text-[13px] font-medium text-muted-foreground outline-none hover:bg-sidebar-accent hover:text-sidebar-accent-foreground lg:h-8">
-                        <ChevronDownIcon className="size-3.5 shrink-0 opacity-60 transition-transform group-data-[state=closed]/blocks-cat:rotate-90" />
-                        <span className="flex min-w-0 flex-1 items-center justify-between gap-2">
-                          <span className="truncate">{category.title}</span>
-                          <span className="shrink-0 text-[12px] font-normal tracking-normal text-muted-foreground/80">
-                            {count.toLocaleString("fa-IR")}
-                          </span>
+                        <span className="min-w-0 flex-1 truncate text-start">
+                          {category.title}
                         </span>
+                        <span className="shrink-0 text-[12px] font-normal tracking-normal text-muted-foreground/80">
+                          {count.toLocaleString("fa-IR")}
+                        </span>
+                        <ChevronDownIcon className="size-3.5 shrink-0 opacity-50 transition-transform duration-200 group-data-[state=open]/blocks-cat:rotate-180" />
                       </CollapsibleTrigger>
                       <CollapsibleContent>
                         <SidebarMenu className="ms-3 gap-0.5 border-none pe-1 ps-0">

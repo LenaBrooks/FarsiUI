@@ -12,7 +12,11 @@ import {
 } from "recharts"
 
 import { useChart2Caption } from "@/components/chart2-live"
-import { chart2ContainerClassName, toPersianDigits } from "@/lib/chart2-fa"
+import {
+  chart2BarContainerClassName,
+  chart2DashedGridClassName,
+  toPersianDigits,
+} from "@/lib/chart2-fa"
 import {
   generateMockMarketData,
   type MarketCandle,
@@ -74,7 +78,7 @@ export default function StockWithVolumeDemo({
     <div className="flex w-full max-w-[700px] flex-col gap-2 font-sans">
       <ChartContainer
         config={priceConfig}
-        className={`${chart2ContainerClassName} aspect-[2/1] max-h-[280px]`}
+        className={`${chart2BarContainerClassName} aspect-[2/1] max-h-[280px]`}
       >
         <BarChart
           accessibilityLayer
@@ -82,7 +86,7 @@ export default function StockWithVolumeDemo({
           syncId="stock-volume"
           margin={{ top: 8, right: 8, bottom: 0, left: 0 }}
         >
-          <CartesianGrid vertical={false} />
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
           <XAxis dataKey="time" reversed hide />
           <YAxis
             orientation="right"
@@ -106,7 +110,7 @@ export default function StockWithVolumeDemo({
 
       <ChartContainer
         config={volumeConfig}
-        className="aspect-[5/1] h-auto w-full max-w-[700px] font-sans text-xs"
+        className={`aspect-[5/1] h-auto w-full max-w-[700px] font-sans text-xs ${chart2DashedGridClassName}`}
       >
         <BarChart
           accessibilityLayer
@@ -114,7 +118,7 @@ export default function StockWithVolumeDemo({
           syncId="stock-volume"
           margin={{ top: 4, right: 8, bottom: 8, left: 0 }}
         >
-          <CartesianGrid vertical={false} />
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
           <XAxis
             dataKey="time"
             reversed

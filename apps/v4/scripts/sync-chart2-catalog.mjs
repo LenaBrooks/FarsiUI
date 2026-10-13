@@ -26,7 +26,6 @@ const CATEGORIES = [
   { id: "tooltip", title: "تولتیپ", en: "Tooltip", folder: "Tooltip" },
   { id: "legend", title: "راهنما", en: "Legend", folder: "Legend" },
   { id: "responsive", title: "واکنش‌گرا", en: "ResponsiveContainer", folder: "ResponsiveContainer" },
-  { id: "xaxis", title: "محور X", en: "XAxis", folder: "XAxis" },
   { id: "stock", title: "سهام و ترید", en: "Stock & Trade", folder: "StockChart" },
   { id: "gauge", title: "گیج", en: "GaugeChart", folder: "GaugeChart" },
 ]
@@ -248,8 +247,6 @@ const ID_BY_KEY = {
   AreaResponsiveContainer: "area-responsive-container",
   ComposedResponsiveContainer: "composed-responsive-container",
   PieResponsiveContainer: "pie-responsive-container",
-  MultiXAxisExample: "multi-x-axis",
-  XAxisAutoHeightExample: "x-axis-auto-height",
 }
 
 function parseIndexKeys(folder) {

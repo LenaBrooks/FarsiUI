@@ -10,6 +10,7 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_MONTHS,
   chart2ContainerClassName,
   formatChart2Number,
@@ -33,7 +34,7 @@ const data = [
 ]
 
 const chartConfig = {
-  b: { label: "روند", color: "var(--chart-1)" },
+  b: { label: "روند", color: CHART2_BAR_COLORS[0] },
   a: { label: "بازه", color: "var(--muted)" },
 } satisfies ChartConfig
 

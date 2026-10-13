@@ -1,23 +1,19 @@
 "use client"
 
-import { useCallback, useState } from "react"
+import { useCallback } from "react"
 import { CheckIcon, RotateCcwIcon } from "lucide-react"
 import { useTheme } from "next-themes"
 import { cn } from "cn"
 
 import { useThemeConfig } from "@/components/active-theme"
 import {
-  OWNED_ACCENT_SYSTEMS,
   useDesignSystemPreview,
   type DesignSystemId,
 } from "@/components/design-system-preview"
 import { useFontPreview } from "@/components/font-preview"
 import { DEFAULT_ACTIVE_THEME } from "@/lib/active-theme"
 import { THEME_BEFORE_DARK_DS_KEY } from "@/lib/design-system"
-import type { UiFontId } from "@/lib/fonts"
 import { THEME_LABELS, THEMES } from "@/lib/themes"
-
-type StudioTab = "style" | "font" | "color"
 
 function themeSwatch(themeName: string) {
   const theme = THEMES.find((item) => item.name === themeName) ?? THEMES[0]
@@ -93,27 +89,16 @@ export function DesignStudioPanel({
   hideColor = false,
 }: {
   className?: string
-  /** When true (e.g. /demos), never show the color tab. */
+  /** When true (e.g. /demos), never show primary color swatches. */
   hideColor?: boolean
 }) {
   const { designSystemId, setDesignSystemId, presets } =
     useDesignSystemPreview()
-  const { fontId, setFontId, fonts } = useFontPreview()
+  const { setFontId } = useFontPreview()
   const { activeTheme, setActiveTheme } = useThemeConfig()
   const { setTheme } = useTheme()
-  const ownedAccent = OWNED_ACCENT_SYSTEMS.has(designSystemId)
-  const showPrimaryColor = !hideColor && !ownedAccent
+  const showPrimaryColor = !hideColor && designSystemId === "default"
   const currentTheme = activeTheme === "default" ? "neutral" : activeTheme
-  const [tab, setTab] = useState<StudioTab>("style")
-
-  const tabs: { id: StudioTab; label: string }[] = [
-    { id: "style", label: "ظاهر" },
-    { id: "font", label: "فونت" },
-    ...(showPrimaryColor ? [{ id: "color" as const, label: "رنگ" }] : []),
-  ]
-
-  const visibleTab =
-    tab === "color" && !showPrimaryColor ? "style" : tab
 
   const resetToDefaults = useCallback(() => {
     try {
@@ -133,164 +118,93 @@ export function DesignStudioPanel({
       lang="fa"
       className={cn("flex flex-col gap-2.5", className)}
     >
-      <div className="flex items-center justify-between gap-2 border-b border-border/70">
-        <div
-          role="tablist"
-          aria-label="تنظیمات دیزاین"
-          className="flex min-w-0 items-stretch gap-0.5"
-        >
-          {tabs.map((item) => {
-            const selected = visibleTab === item.id
-            return (
-              <button
-                key={item.id}
-                type="button"
-                role="tab"
-                aria-selected={selected}
-                onClick={() => setTab(item.id)}
-                className={cn(
-                  "relative h-8 cursor-pointer px-2.5 text-[13px] font-medium transition-colors",
-                  selected
-                    ? "text-foreground after:absolute after:inset-x-2 after:bottom-0 after:h-0.5 after:rounded-full after:bg-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
-              >
-                {item.label}
-              </button>
-            )
-          })}
-        </div>
+      <div className="flex items-center justify-between gap-2">
+        {showPrimaryColor ? (
+          <div
+            role="listbox"
+            aria-label="رنگ اصلی"
+            className="flex min-w-0 flex-1 flex-wrap items-center gap-2.5 sm:gap-1"
+          >
+            {THEMES.map((theme) => {
+              const selected = currentTheme === theme.name
+              const label = THEME_LABELS[theme.name] ?? theme.label
+              return (
+                <button
+                  key={theme.name}
+                  type="button"
+                  role="option"
+                  aria-selected={selected}
+                  aria-label={label}
+                  title={label}
+                  onClick={() => setActiveTheme(theme.name)}
+                  className={cn(
+                    "relative flex size-9 shrink-0 cursor-pointer touch-manipulation items-center justify-center rounded-full transition-shadow sm:size-5",
+                    selected &&
+                      "ring-2 ring-primary ring-offset-1 ring-offset-background"
+                  )}
+                >
+                  <span
+                    className="pointer-events-none size-4 rounded-full ring-1 ring-foreground/10 sm:size-3.5"
+                    style={{ backgroundColor: themeSwatch(theme.name) }}
+                  />
+                </button>
+              )
+            })}
+          </div>
+        ) : (
+          <p className="text-[13px] font-medium text-foreground">ظاهر</p>
+        )}
         <button
           type="button"
           onClick={resetToDefaults}
-          aria-label="بازنشانی به پیشفرض، استعداد و خاکستری"
+          aria-label="بازنشانی به پیشفرض و خاکستری"
           title="بازنشانی"
-          className="mb-0.5 inline-flex size-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-muted-foreground/70 transition-colors hover:bg-muted hover:text-foreground"
+          className="inline-flex size-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-muted-foreground/70 transition-colors hover:bg-muted hover:text-foreground"
         >
           <RotateCcwIcon className="size-3" />
         </button>
       </div>
 
-      {visibleTab === "style" ? (
-        <section className="grid gap-2">
-          <div
-            role="listbox"
-            aria-label="سیستم طراحی"
-            className="grid grid-cols-2 gap-2"
-          >
-            {presets.map((preset) => {
-              const selected = designSystemId === preset.id
-              return (
-                <button
-                  key={preset.id}
-                  type="button"
-                  role="option"
-                  aria-selected={selected}
-                  onClick={() =>
-                    setDesignSystemId(preset.id as DesignSystemId)
-                  }
-                  className={cn(
-                    "flex cursor-pointer flex-col gap-1.5 rounded-lg p-1.5 text-start transition-colors",
-                    "hover:bg-muted/50 active:bg-muted/70",
-                    selected && "bg-muted/40"
-                  )}
-                >
-                  <span className="flex min-h-4 items-center gap-1 px-0.5">
-                    <span className="min-w-0 flex-1 truncate text-sm font-medium leading-none">
-                      {preset.label}
-                    </span>
-                    {selected ? (
-                      <CheckIcon
-                        className="size-3.5 shrink-0 text-emerald-600 dark:text-emerald-400"
-                        aria-hidden
-                      />
-                    ) : (
-                      <span className="size-3.5 shrink-0" aria-hidden />
-                    )}
-                  </span>
-                  <StyleThumb id={preset.id} />
-                </button>
-              )
-            })}
-          </div>
-          {ownedAccent && !hideColor ? (
-            <p className="text-[11px] leading-snug text-muted-foreground">
-              رنگ این ظاهر ثابت است.
-            </p>
-          ) : null}
-        </section>
-      ) : null}
-
-      {visibleTab === "font" ? (
-        <section
-          role="listbox"
-          aria-label="فونت"
-          className="flex flex-col gap-1"
-        >
-          {fonts.map((font) => {
-            const selected = fontId === font.id
-            return (
-              <button
-                key={font.id}
-                type="button"
-                role="option"
-                aria-selected={selected}
-                onClick={() => setFontId(font.id as UiFontId)}
-                className="flex cursor-pointer items-center gap-2 rounded-xl border border-border/70 px-3 py-2 text-start transition-colors hover:bg-muted/40 active:bg-muted/60"
-              >
-                <span
-                  className="min-w-0 flex-1 truncate text-sm font-medium"
-                  style={{ fontFamily: `var(${font.cssVar})` }}
-                >
-                  {font.label}
+      <section
+        role="listbox"
+        aria-label="سیستم طراحی"
+        className="grid grid-cols-2 gap-2"
+      >
+        {presets.map((preset) => {
+          const selected = designSystemId === preset.id
+          return (
+            <button
+              key={preset.id}
+              type="button"
+              role="option"
+              aria-selected={selected}
+              onClick={() =>
+                setDesignSystemId(preset.id as DesignSystemId)
+              }
+              className={cn(
+                "flex cursor-pointer flex-col gap-1.5 rounded-lg p-1.5 text-start transition-colors",
+                "hover:bg-muted/50 active:bg-muted/70",
+                selected && "bg-muted/40"
+              )}
+            >
+              <span className="flex min-h-4 items-center gap-1 px-0.5">
+                <span className="min-w-0 flex-1 truncate text-sm font-medium leading-none">
+                  {preset.label}
                 </span>
                 {selected ? (
                   <CheckIcon
                     className="size-3.5 shrink-0 text-emerald-600 dark:text-emerald-400"
                     aria-hidden
                   />
-                ) : null}
-              </button>
-            )
-          })}
-        </section>
-      ) : null}
-
-      {visibleTab === "color" && showPrimaryColor ? (
-        <section
-          role="listbox"
-          aria-label="رنگ اصلی"
-          className="grid grid-cols-4 gap-2"
-        >
-          {THEMES.map((theme) => {
-            const selected = currentTheme === theme.name
-            const label = THEME_LABELS[theme.name] ?? theme.label
-            return (
-              <button
-                key={theme.name}
-                type="button"
-                role="option"
-                aria-selected={selected}
-                aria-label={label}
-                title={label}
-                onClick={() => setActiveTheme(theme.name)}
-                className="relative flex cursor-pointer items-center justify-center rounded-xl border border-border/70 py-2.5 transition-colors hover:bg-muted/40 active:bg-muted/60"
-              >
-                <span
-                  className="size-7 rounded-full shadow-sm ring-1 ring-foreground/10"
-                  style={{ backgroundColor: themeSwatch(theme.name) }}
-                />
-                {selected ? (
-                  <CheckIcon
-                    className="absolute end-1.5 top-1.5 size-3 text-emerald-600 dark:text-emerald-400"
-                    aria-hidden
-                  />
-                ) : null}
-              </button>
-            )
-          })}
-        </section>
-      ) : null}
+                ) : (
+                  <span className="size-3.5 shrink-0" aria-hidden />
+                )}
+              </span>
+              <StyleThumb id={preset.id} />
+            </button>
+          )
+        })}
+      </section>
     </div>
   )
 }

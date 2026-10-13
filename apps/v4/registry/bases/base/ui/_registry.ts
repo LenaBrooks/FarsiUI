@@ -925,6 +925,67 @@ export const ui: Registry["items"] = [
     },
   },
   {
+    name: "rich-text-editor",
+    type: "registry:ui",
+    dependencies: [
+      "@tiptap/react",
+      "@tiptap/starter-kit",
+      "@tiptap/extension-text-style",
+      "@tiptap/extension-highlight",
+      "@tiptap/extension-text-align",
+      "@tiptap/extension-subscript",
+      "@tiptap/extension-superscript",
+      "@tiptap/extension-table",
+      "@tiptap/extension-task-list",
+      "@tiptap/extension-task-item",
+      "@tiptap/extension-typography",
+      "@tiptap/extension-underline",
+      "@tiptap/extension-link",
+      "@tiptap/extension-image",
+      "@tiptap/extension-placeholder",
+    ],
+    registryDependencies: [
+      "button",
+      "toggle-group",
+      "separator",
+      "tooltip",
+      "dialog",
+      "input",
+      "label",
+      "dropdown-menu",
+      "popover",
+    ],
+    files: [
+      {
+        path: "ui/rich-text-editor.tsx",
+        type: "registry:ui",
+      },
+      {
+        path: "ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+      },
+      {
+        path: "hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+      },
+      {
+        path: "lib/rich-text-editor.ts",
+        type: "registry:lib",
+      },
+      {
+        path: "lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
+        examples:
+          "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
+      },
+    },
+  },
+  {
     name: "toast",
     type: "registry:ui",
     dependencies: ["@base-ui/react"],

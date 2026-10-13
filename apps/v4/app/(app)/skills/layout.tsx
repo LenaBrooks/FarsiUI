@@ -7,6 +7,8 @@ import {
 } from "@/components/skills-sidebar"
 import { SidebarProvider } from "@/registry/new-york-v4/ui/sidebar"
 
+import "@/app/(app)/(typeset)/typeset.css"
+
 const title = "مهارت‌ها"
 const description =
   "دستورالعمل‌های آماده برای وقتی با هوش مصنوعی فارسی می‌نویسید یا محصول فارسی می‌سازید — مناسب Cursor، Claude و Codex."

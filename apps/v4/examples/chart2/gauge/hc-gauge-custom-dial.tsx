@@ -16,6 +16,14 @@ import {
 
 const options: Options = {
   chart: { type: "gauge" },
+  tooltip: {
+    useHTML: true,
+    style: {
+      direction: "rtl",
+      textAlign: "right",
+      fontFamily: "inherit",
+    },
+  },
   pane: {
     startAngle: -120,
     endAngle: 120,
@@ -55,7 +63,7 @@ const options: Options = {
       data: [75],
       tooltip: {
         pointFormatter() {
-          return `<span style="font-size:0.9em">${this.series.name}</span><br/><b>${faTooltipValue(this.y ?? 0, " از ۱۰۰")}</b>`
+          return `<div dir="rtl" style="text-align:right;font-family:inherit"><span style="font-size:0.9em">${this.series.name}</span><br/><b>${faTooltipValue(this.y ?? 0, " از ۱۰۰")}</b></div>`
         },
       },
       dial: {

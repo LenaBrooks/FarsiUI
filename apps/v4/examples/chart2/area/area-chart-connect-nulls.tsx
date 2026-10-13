@@ -6,6 +6,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import {
   FA_CHART,
   FA_MONTHS,
+  chart2DashedGridClassName,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -58,7 +59,7 @@ const stackConfig = {
 } satisfies ChartConfig
 
 const panelClass =
-  "aspect-[1.618] h-auto w-full max-w-[700px] max-h-[30vh] font-sans"
+  `aspect-[1.618] h-auto w-full max-w-[700px] max-h-[30vh] font-sans ${chart2DashedGridClassName}`
 
 function BaseChart({
   data,
@@ -78,7 +79,7 @@ function BaseChart({
         data={data}
         margin={{ top: 10, right: 12, left: 0, bottom: 0 }}
       >
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis
           dataKey="name"
           reversed

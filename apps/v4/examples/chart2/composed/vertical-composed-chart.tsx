@@ -12,7 +12,7 @@ import {
 
 import { usePersianMockData } from "@/components/chart2-live"
 import {
-  chart2MockConfig,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -28,7 +28,7 @@ export default function VerticalComposedChartDemo() {
 
   return (
     <ChartContainer
-      config={chart2MockConfig}
+      config={chart2BarMockConfig}
       className="aspect-[1/1.618] h-auto w-full max-w-[320px] max-h-[70vh] overflow-visible font-sans text-xs"
     >
       <ComposedChart

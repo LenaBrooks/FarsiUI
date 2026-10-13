@@ -3,6 +3,7 @@
 import { useMemo } from "react"
 
 import { useChart2RandomSeed } from "@/components/chart2-live"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
 
 import {
   CalendarHeatmap,
@@ -27,7 +28,7 @@ export default function HeatmapCalendarDemo() {
       data={data}
       unit="سفارش"
       holidays={SAMPLE_HOLIDAYS}
-      color="var(--chart-1)"
+      color={CHART2_BAR_COLORS[0]}
       caption="تقویم یک‌ساله شمسی — هفته از شنبه، ماه‌های جلالی، حاشیهٔ قرمز برای تعطیل"
     />
   )

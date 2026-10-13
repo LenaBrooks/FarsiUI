@@ -14,7 +14,6 @@ import {
   MessageSquareIcon,
   PieChartIcon,
   RadarIcon,
-  StretchHorizontalIcon,
   SunIcon,
   TagsIcon,
 } from "lucide-react"
@@ -51,7 +50,6 @@ const ICON_BY_CATEGORY: Record<string, LucideIcon> = {
   tooltip: MessageSquareIcon,
   legend: TagsIcon,
   responsive: Maximize2Icon,
-  xaxis: StretchHorizontalIcon,
   stock: CandlestickChartIcon,
   gauge: GaugeIcon,
   heatmap: Grid3x3Icon,
@@ -142,6 +140,7 @@ const CHART2_FEATURED_IDS = new Set([
   "legend-effect-opacity",
   // stock
   "candlestick",
+  "candlestick-dashboard",
   "candlestick-bar",
   "candlestick-line",
   "sparklines",
@@ -151,6 +150,14 @@ const CHART2_FEATURED_IDS = new Set([
   "stock-trendline",
   "tremor-area-charts",
   "realtime-mountain-chart",
+  "heikin-ashi",
+  "renko-chart",
+  "volume-profile",
+  "order-book-depth",
+  "drawdown-chart",
+  "bollinger-bands",
+  "candlestick-indicators",
+  "multi-timeframe",
   // gauge
   "gauge-custom-arcs",
   "gauge-custom-colors",

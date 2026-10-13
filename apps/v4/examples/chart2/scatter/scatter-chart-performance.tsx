@@ -11,8 +11,9 @@ import {
 
 import { between, random } from "@/lib/chart2-mock-data"
 import {
+  CHART2_BAR_COLORS,
   chart2ContainerClassName,
-  formatChart2Number,
+  chart2DashedGridClassName,
   toPersianDigits,
 } from "@/lib/chart2-fa"
 import {
@@ -21,6 +22,8 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
+
+import { ScatterXUnitTick, ScatterYUnitTick } from "./scatter-fa-shared"
 
 const gen = random(42)
 const countOfScatterElements = 100
@@ -40,36 +43,36 @@ const datasets = Array.from({ length: countOfScatterElements }, (_1, i) => {
 })
 
 const chartConfig = {
-  passed: { label: "قبول", color: "var(--chart-2)" },
+  passed: { label: "قبول", color: CHART2_BAR_COLORS[0] },
   failed: { label: "رد", color: "var(--destructive)" },
 } satisfies ChartConfig
 
 export default function ScatterPerformanceDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={`${chart2ContainerClassName} ${chart2DashedGridClassName}`}>
       <ScatterChart
         accessibilityLayer
-        margin={{ top: 20, right: 8, bottom: 8, left: 0 }}
+        margin={{ top: 20, right: 8, bottom: 16, left: 0 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis
           dataKey="x"
           type="number"
-          unit=" م"
+          unit=" متر"
           domain={[0, 100]}
           reversed
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
+          tickMargin={12}
+          tick={(props) => <ScatterXUnitTick {...props} unit="متر" />}
         />
         <YAxis
           dataKey="y"
           type="number"
-          unit=" م"
+          unit=" متر"
           domain={[0, 100]}
           orientation="right"
-          width={48}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={56}
+          tickMargin={20}
+          tick={(props) => <ScatterYUnitTick {...props} unit="متر" />}
         />
         <ZAxis dataKey="z" range={[0, 100]} />
         <ChartTooltip content={<ChartTooltipContent />} />

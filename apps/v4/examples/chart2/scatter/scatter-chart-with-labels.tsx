@@ -12,7 +12,9 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   chart2ContainerClassName,
+  chart2DashedGridClassName,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -21,6 +23,8 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
+
+import { ScatterXUnitTick, ScatterYUnitTick } from "./scatter-fa-shared"
 
 const data = [
   { x: 100, y: 200, z: 200 },
@@ -32,7 +36,7 @@ const data = [
 ]
 
 const chartConfig = {
-  schoolA: { label: "مدرسهٔ الف", color: "var(--chart-1)" },
+  schoolA: { label: "مدرسهٔ الف", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function ScatterChartWithLabelsDemo({
@@ -41,32 +45,35 @@ export default function ScatterChartWithLabelsDemo({
   defaultIndex?: TooltipIndex
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer
+      config={chartConfig}
+      className={`${chart2ContainerClassName} ${chart2DashedGridClassName} overflow-visible`}
+    >
       <ScatterChart
         accessibilityLayer
-        margin={{ top: 20, right: 8, bottom: 8, left: 0 }}
+        margin={{ top: 48, right: 12, bottom: 16, left: 0 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis
           type="number"
           dataKey="x"
           name="قد"
-          unit=" س‌م"
+          unit=" سانتی‌متر"
           reversed
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
+          tickMargin={12}
+          tick={(props) => <ScatterXUnitTick {...props} unit="سانتی‌متر" />}
         />
         <YAxis
           type="number"
           dataKey="y"
           name="وزن"
-          unit=" ک‌گ"
+          unit=" کیلوگرم"
           orientation="right"
-          width={56}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={72}
+          tickMargin={20}
+          tick={(props) => <ScatterYUnitTick {...props} unit="کیلوگرم" />}
         />
-        <ZAxis range={[900, 4000]} dataKey="z" />
+        <ZAxis range={[1200, 2800]} dataKey="z" />
         <ChartTooltip
           defaultIndex={defaultIndex}
           content={<ChartTooltipContent />}
@@ -75,13 +82,19 @@ export default function ScatterChartWithLabelsDemo({
           name="schoolA"
           data={data}
           fill="var(--color-schoolA)"
-          activeShape={{ fill: "var(--chart-2)" }}
+          activeShape={{ fill: CHART2_BAR_COLORS[1] }}
         >
           <LabelList
             dataKey="x"
+            position="center"
             formatter={(v: number) => formatChart2Number(v)}
-            style={{ fontFamily: "var(--font-sans)", fontSize: 11 }}
-            fill="var(--foreground)"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontSize: 11,
+              fontWeight: 600,
+              pointerEvents: "none",
+            }}
+            fill="#fff"
           />
         </Scatter>
       </ScatterChart>

@@ -7,7 +7,6 @@ import { ChevronDownIcon } from "lucide-react"
 
 import {
   getSkillCategory,
-  getSkillTitleEn,
   getSkills,
   getSkillsNavCategoryId,
   getSkillsNavCurrent,
@@ -15,6 +14,7 @@ import {
   type Skill,
   type SkillCategoryId,
 } from "@/lib/skills-data"
+import { cn } from "cn"
 import { ListIndexNav } from "@/components/list-index-nav"
 import {
   matchesNavQuery,
@@ -43,9 +43,6 @@ const SIDEBAR_CLASS =
 
 const ACTIVE_ITEM_CLASS =
   "relative h-10 w-full overflow-visible border border-transparent pe-1.5 text-[14px] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-primary/20 data-[active=true]:bg-primary/10 data-[active=true]:text-primary lg:h-8"
-
-const SIDEBAR_EN_CLASS =
-  "min-w-0 max-w-[42%] shrink truncate font-sans text-[12px] font-normal tracking-normal text-muted-foreground"
 
 const SEARCH_DEBOUNCE_MS = 200
 
@@ -197,40 +194,43 @@ function SkillsNavBody({ showSearch = true }: { showSearch?: boolean }) {
                         <ChevronDownIcon className="size-3.5 shrink-0 opacity-50 transition-transform duration-200 group-data-[state=open]/skills-cat:rotate-180" />
                       </CollapsibleTrigger>
                       <CollapsibleContent>
-                        <SidebarMenu className="ms-3 gap-0.5 border-none pe-1 ps-0">
-                          {group.skills.map((skill) => (
-                            <SidebarMenuItem key={skill.slug}>
-                              <SidebarMenuButton
-                                asChild
-                                isActive={
-                                  pathname === `/skills/${skill.slug}`
-                                }
-                                className={`${ACTIVE_ITEM_CLASS} ps-2`}
+                        <div className="mt-0.5 mb-1 ms-2 flex flex-col gap-0.5 border-s border-border/50 ps-2">
+                          {group.skills.map((skill) => {
+                            const active =
+                              pathname === `/skills/${skill.slug}`
+                            const featured = !skill.source
+                            return (
+                              <Link
+                                key={skill.slug}
+                                href={`/skills/${skill.slug}`}
+                                title={skill.slug}
+                                className={cn(
+                                  "flex h-8 w-full min-w-0 cursor-pointer items-center gap-2 rounded-md px-2 text-start outline-none transition-colors",
+                                  "focus-visible:ring-2 focus-visible:ring-ring",
+                                  active
+                                    ? "bg-primary/10 text-primary"
+                                    : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+                                )}
                               >
-                                <Link
-                                  href={`/skills/${skill.slug}`}
-                                  className="flex w-full min-w-0 items-center gap-2"
-                                >
-                                  <span className="shrink-0 whitespace-nowrap">
-                                    {skill.title}
-                                  </span>
+                                {featured ? (
+                                  <span
+                                    className="size-1.5 shrink-0 rounded-full bg-emerald-500"
+                                    title="پیشنهادی"
+                                    aria-label="پیشنهادی"
+                                  />
+                                ) : (
                                   <span
                                     aria-hidden
-                                    className="mb-0.5 min-w-0 flex-1 border-b border-dashed border-border/60"
+                                    className="size-1 shrink-0 rounded-full bg-current opacity-40"
                                   />
-                                  <span
-                                    dir="ltr"
-                                    lang="en"
-                                    title={skill.slug}
-                                    className={SIDEBAR_EN_CLASS}
-                                  >
-                                    {getSkillTitleEn(skill)}
-                                  </span>
-                                </Link>
-                              </SidebarMenuButton>
-                            </SidebarMenuItem>
-                          ))}
-                        </SidebarMenu>
+                                )}
+                                <span className="truncate text-[12.5px] font-medium leading-snug">
+                                  {skill.title}
+                                </span>
+                              </Link>
+                            )
+                          })}
+                        </div>
                       </CollapsibleContent>
                     </SidebarMenuItem>
                   </Collapsible>

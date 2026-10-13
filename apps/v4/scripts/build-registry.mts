@@ -1,6 +1,6 @@
 import { spawn } from "child_process"
 import { createHash } from "crypto"
-import { promises as fs } from "fs"
+import { existsSync, promises as fs } from "fs"
 import { createRequire } from "module"
 import { availableParallelism } from "os"
 import path from "path"
@@ -1410,13 +1410,40 @@ export const Index: Record<string, Record<string, any>> = {`
             path: `registry/${style.name}/${file.path}`,
           }))
 
-      const componentPath = files[0]?.path
-        ? styleCombination
-          ? isStyledOutputFile(files[0].path)
-            ? `@/styles/${style.name}/${stripFileExtension(files[0].path)}`
-            : `@/registry/bases/${styleCombination.base.name}/${stripFileExtension(files[0].path)}`
-          : `@/registry/${style.name}/${stripFileExtension(files[0].path)}`
-        : ""
+      // Prefer the generated styles/ copy when it exists. Fall back to the
+      // authored registry/bases source so newly registered UI components (or
+      // Turbopack cold starts before `registry:build --style`) don't emit
+      // module-not-found for missing styles/<combo>/ui/* files.
+      //
+      // rich-text-editor: always load the authored base source. Turbopack has
+      // failed to resolve freshly generated styles/*/ui/rich-text-editor even
+      // when the files exist on disk; the registry source is stable for docs.
+      let componentPath = ""
+      if (files[0]?.path) {
+        if (styleCombination) {
+          const baseImport = `@/registry/bases/${styleCombination.base.name}/${stripFileExtension(files[0].path)}`
+          const forceBaseSource = item.name === "rich-text-editor"
+          if (isStyledOutputFile(files[0].path) && !forceBaseSource) {
+            const stylesImport = `@/styles/${style.name}/${stripFileExtension(files[0].path)}`
+            const stylesFile = path.join(
+              getPersistentStyleRoot(style.name),
+              `${stripFileExtension(files[0].path)}.tsx`
+            )
+            const stylesFileTs = path.join(
+              getPersistentStyleRoot(style.name),
+              `${stripFileExtension(files[0].path)}.ts`
+            )
+            componentPath =
+              existsSync(stylesFile) || existsSync(stylesFileTs)
+                ? stylesImport
+                : baseImport
+          } else {
+            componentPath = baseImport
+          }
+        } else {
+          componentPath = `@/registry/${style.name}/${stripFileExtension(files[0].path)}`
+        }
+      }
 
       index += `
     "${item.name}": {

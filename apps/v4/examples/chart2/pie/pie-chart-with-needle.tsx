@@ -7,7 +7,7 @@ import {
   type PieSectorDataItem,
 } from "recharts"
 
-import { FA_CHART } from "@/lib/chart2-fa"
+import { CHART2_BAR_COLORS, FA_CHART } from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartTooltip,
@@ -23,12 +23,12 @@ const chartData = [
 const chartConfig = {
   value: { label: FA_CHART.sales },
   low: { label: "کم", color: "var(--destructive)" },
-  mid: { label: "متوسط", color: "var(--chart-2)" },
-  high: { label: "زیاد", color: "var(--chart-1)" },
+  mid: { label: "متوسط", color: CHART2_BAR_COLORS[1] },
+  high: { label: "زیاد", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 const NEEDLE_BASE_RADIUS_PX = 5
-const NEEDLE_COLOR = "var(--chart-3)"
+const NEEDLE_COLOR = CHART2_BAR_COLORS[2]
 
 function Needle({
   cx,

@@ -3,6 +3,7 @@
 import { RadialBar, RadialBarChart } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   formatChart2Number,
   toPersianDigits,
@@ -28,13 +29,13 @@ const data = [
 
 const chartConfig = {
   uv: { label: FA_CHART.visitors },
-  age18: { label: `${toPersianDigits("18")}–${toPersianDigits("24")}`, color: "var(--chart-1)" },
-  age25: { label: `${toPersianDigits("25")}–${toPersianDigits("29")}`, color: "var(--chart-2)" },
-  age30: { label: `${toPersianDigits("30")}–${toPersianDigits("34")}`, color: "var(--chart-3)" },
-  age35: { label: `${toPersianDigits("35")}–${toPersianDigits("39")}`, color: "var(--chart-4)" },
-  age40: { label: `${toPersianDigits("40")}–${toPersianDigits("49")}`, color: "var(--chart-5)" },
-  age50: { label: `${toPersianDigits("50")}+`, color: "var(--chart-1)" },
-  unknown: { label: "نامشخص", color: "var(--chart-2)" },
+  age18: { label: `${toPersianDigits("18")}–${toPersianDigits("24")}`, color: CHART2_BAR_COLORS[0] },
+  age25: { label: `${toPersianDigits("25")}–${toPersianDigits("29")}`, color: CHART2_BAR_COLORS[1] },
+  age30: { label: `${toPersianDigits("30")}–${toPersianDigits("34")}`, color: CHART2_BAR_COLORS[2] },
+  age35: { label: `${toPersianDigits("35")}–${toPersianDigits("39")}`, color: CHART2_BAR_COLORS[3] },
+  age40: { label: `${toPersianDigits("40")}–${toPersianDigits("49")}`, color: CHART2_BAR_COLORS[4] },
+  age50: { label: `${toPersianDigits("50")}+`, color: CHART2_BAR_COLORS[0] },
+  unknown: { label: "نامشخص", color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 export default function SimpleRadialBarChartDemo() {

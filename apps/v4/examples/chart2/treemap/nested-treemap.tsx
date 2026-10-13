@@ -11,10 +11,10 @@ import {
 } from "@/registry/new-york-v4/ui/chart"
 
 import { TREEMAP_DATA_NESTED } from "./data"
-import { treemapColorAt } from "./treemap-colors"
+import { TREEMAP_COLORS, treemapColorAt } from "./treemap-colors"
 
 const chartConfig = {
-  size: { label: "اندازه", color: "#8fa0c4" },
+  size: { label: "اندازه", color: TREEMAP_COLORS[0] },
 } satisfies ChartConfig
 
 function TreemapContent(props: TreemapNode) {

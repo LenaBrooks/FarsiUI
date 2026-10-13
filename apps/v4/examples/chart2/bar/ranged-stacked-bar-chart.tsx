@@ -3,8 +3,9 @@
 import { Bar, BarChart, BarStack, CartesianGrid, XAxis, YAxis, type TooltipIndex } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2BarContainerClassName,
   formatChart2Number,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -25,9 +26,9 @@ const rangedStackedBarData = [
 ]
 
 const chartConfig = {
-  value1: { label: "بازهٔ ۱", color: "var(--chart-1)" },
-  value2: { label: "بازهٔ ۲", color: "var(--chart-2)" },
-  value3: { label: "بازهٔ ۳", color: "var(--chart-3)" },
+  value1: { label: "بازهٔ ۱", color: CHART2_BAR_COLORS[0] },
+  value2: { label: "بازهٔ ۲", color: CHART2_BAR_COLORS[1] },
+  value3: { label: "بازهٔ ۳", color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
 export default function RangedStackedBarChartDemo({
@@ -38,13 +39,13 @@ export default function RangedStackedBarChartDemo({
   defaultIndex?: TooltipIndex
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={rangedStackedBarData}
         margin={{ top: 20, right: 12, bottom: 20, left: 8 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"

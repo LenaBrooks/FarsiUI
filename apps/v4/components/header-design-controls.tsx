@@ -48,10 +48,13 @@ function DesignStudioSkeleton() {
       aria-busy="true"
       aria-label="در حال بارگذاری دیزاین"
     >
-      <div className="flex items-center gap-2 border-b border-border/70 pb-0.5">
-        <Skeleton className="h-3 w-10 rounded-sm" />
-        <Skeleton className="h-3 w-8 rounded-sm" />
-        <Skeleton className="h-3 w-8 rounded-sm" />
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-1">
+          {Array.from({ length: 8 }).map((_, index) => (
+            <Skeleton key={index} className="size-3.5 shrink-0 rounded-full" />
+          ))}
+        </div>
+        <Skeleton className="size-6 rounded-md" />
       </div>
       <div className="grid grid-cols-2 gap-2">
         {Array.from({ length: 6 }).map((_, index) => (
@@ -145,7 +148,7 @@ function MobileDesignStudio({
         <DrawerHeader className="pb-2 text-start">
           <DrawerTitle className="text-base">دیزاین</DrawerTitle>
           <DrawerDescription className="sr-only">
-            ظاهر، فونت و رنگ
+            ظاهر و رنگ
           </DrawerDescription>
         </DrawerHeader>
         <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-6 scrollbar-soft">

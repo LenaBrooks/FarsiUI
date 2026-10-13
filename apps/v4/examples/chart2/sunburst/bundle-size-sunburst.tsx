@@ -3,7 +3,11 @@
 import { SunburstChart, type SunburstData } from "recharts"
 
 import { useChart2Caption } from "@/components/chart2-live"
-import { formatChart2Number, toPersianDigits } from "@/lib/chart2-fa"
+import {
+  CHART2_BAR_COLORS,
+  formatChart2Number,
+  toPersianDigits,
+} from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartTooltip,
@@ -11,13 +15,15 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
+import { PersianSunburstDigits } from "./sunburst-fa"
+
 const data: SunburstData = {
   name: "باندل",
   value: 9728,
   children: [
     {
       name: "وابستگی‌ها",
-      fill: "var(--chart-1)",
+      fill: CHART2_BAR_COLORS[0],
       value: 4096,
       children: [
         { name: "react-redux", value: 2304 },
@@ -26,7 +32,7 @@ const data: SunburstData = {
     },
     {
       name: "منبع",
-      fill: "var(--chart-2)",
+      fill: CHART2_BAR_COLORS[1],
       value: 4608,
       children: [
         { name: "Treemap.tsx", value: 1536 },
@@ -37,7 +43,7 @@ const data: SunburstData = {
     },
     {
       name: "خروجی",
-      fill: "var(--chart-3)",
+      fill: CHART2_BAR_COLORS[2],
       value: 1024,
       children: [{ name: "مستندات", value: 1024 }],
     },
@@ -45,7 +51,7 @@ const data: SunburstData = {
 }
 
 const chartConfig = {
-  value: { label: "حجم", color: "var(--chart-1)" },
+  value: { label: "حجم", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function SunburstBundleSizeDemo() {
@@ -58,25 +64,27 @@ export default function SunburstBundleSizeDemo() {
 
   return (
     <div className="w-full max-w-[720px] font-sans">
-      <ChartContainer
-        config={chartConfig}
-        className="mx-auto aspect-square h-[420px] w-full max-w-[420px] font-sans text-xs"
-      >
-        <SunburstChart
-          accessibilityLayer
-          data={data}
-          dataKey="value"
-          isAnimationActive
+      <PersianSunburstDigits className="mx-auto w-full max-w-[420px]">
+        <ChartContainer
+          config={chartConfig}
+          className="mx-auto aspect-square h-[420px] w-full max-w-[420px] font-sans text-xs"
         >
-          <ChartTooltip
-            content={
-              <ChartTooltipContent
-                formatter={(value) => formatChart2Number(value as number)}
-              />
-            }
-          />
-        </SunburstChart>
-      </ChartContainer>
+          <SunburstChart
+            accessibilityLayer
+            data={data}
+            dataKey="value"
+            isAnimationActive
+          >
+            <ChartTooltip
+              content={
+                <ChartTooltipContent
+                  formatter={(value) => formatChart2Number(value as number)}
+                />
+              }
+            />
+          </SunburstChart>
+        </ChartContainer>
+      </PersianSunburstDigits>
     </div>
   )
 }

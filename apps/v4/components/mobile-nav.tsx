@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import {
   BookOpenIcon,
   ChartAreaIcon,
+  ExternalLinkIcon,
   LayoutGridIcon,
   LayoutTemplateIcon,
   MailIcon,
@@ -17,6 +18,7 @@ import {
 } from "lucide-react"
 import { cn } from "cn"
 
+import type { SiteNavItem } from "@/lib/config"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
   Popover,
@@ -32,6 +34,7 @@ const NAV_ICONS: Record<string, LucideIcon> = {
   "/skills": WandSparklesIcon,
   "/charts": ChartAreaIcon,
   "/contact": MailIcon,
+  "https://tarhak.ir/": ExternalLinkIcon,
 }
 
 const CONTACT_ITEM = {
@@ -44,21 +47,23 @@ export function MobileNav({
   className,
 }: {
   tree?: unknown
-  items: { href: string; label: string }[]
+  items: SiteNavItem[]
   className?: string
 }) {
   const [open, setOpen] = React.useState(false)
   const pathname = usePathname()
   const menuItems = React.useMemo(
-    () => [...items, CONTACT_ITEM],
+    () => [...items, CONTACT_ITEM] as SiteNavItem[],
     [items]
   )
   const activeHref = React.useMemo(() => {
     return menuItems
-      .filter((item) =>
-        item.href === "/"
-          ? pathname === "/"
-          : pathname === item.href || pathname.startsWith(`${item.href}/`)
+      .filter(
+        (item) =>
+          !("external" in item && item.external) &&
+          (item.href === "/"
+            ? pathname === "/"
+            : pathname === item.href || pathname.startsWith(`${item.href}/`))
       )
       .sort((a, b) => b.href.length - a.href.length)[0]?.href
   }, [menuItems, pathname])
@@ -97,12 +102,14 @@ export function MobileNav({
           </div>
           {menuItems.map((item) => {
             const Icon = NAV_ICONS[item.href]
+            const isExternal = "external" in item && item.external
             return (
               <MobileLink
                 key={item.href}
                 href={item.href}
                 onOpenChange={setOpen}
-                active={item.href === activeHref}
+                active={!isExternal && item.href === activeHref}
+                external={isExternal}
               >
                 {Icon ? (
                   <Icon className="size-4 shrink-0 opacity-70" aria-hidden />
@@ -123,25 +130,44 @@ function MobileLink({
   className,
   children,
   active,
-  ...props
-}: LinkProps & {
+  external,
+}: {
+  href: LinkProps["href"]
   onOpenChange?: (open: boolean) => void
   children: React.ReactNode
   className?: string
   active?: boolean
+  external?: boolean
 }) {
+  const classNames = cn(
+    "flex h-10 items-center gap-2.5 rounded-md px-2 text-sm font-medium text-foreground/90 transition-colors hover:bg-muted hover:text-foreground",
+    active && "bg-primary/10 text-primary",
+    className
+  )
+
+  if (external) {
+    return (
+      <a
+        href={typeof href === "string" ? href : String(href)}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        onClick={() => {
+          onOpenChange?.(false)
+        }}
+        className={classNames}
+      >
+        {children}
+      </a>
+    )
+  }
+
   return (
     <Link
       href={href}
       onClick={() => {
         onOpenChange?.(false)
       }}
-      className={cn(
-        "flex h-10 items-center gap-2.5 rounded-md px-2 text-sm font-medium text-foreground/90 transition-colors hover:bg-muted hover:text-foreground",
-        active && "bg-primary/10 text-primary",
-        className
-      )}
-      {...props}
+      className={classNames}
     >
       {children}
     </Link>

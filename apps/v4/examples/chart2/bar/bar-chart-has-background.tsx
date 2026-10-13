@@ -4,8 +4,8 @@ import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
+  chart2BarContainerClassName,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -24,13 +24,13 @@ export default function BarChartHasBackgroundDemo({
   const data = usePersianMockData(6, 2387)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chart2BarMockConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data}
         margin={{ top: 25, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="label" reversed tickMargin={8} />
         <YAxis
           orientation="right"

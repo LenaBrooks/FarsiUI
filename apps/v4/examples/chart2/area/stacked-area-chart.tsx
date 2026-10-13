@@ -4,7 +4,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
 import {
-  chart2ContainerClassName,
+  chart2AreaContainerClassName,
   chart2MockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
@@ -20,13 +20,13 @@ export default function StackedAreaChartDemo() {
   const data = usePersianMockData(6, 351905)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chart2MockConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}
         margin={{ top: 20, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="label" reversed tickMargin={8} />
         <YAxis
           orientation="right"

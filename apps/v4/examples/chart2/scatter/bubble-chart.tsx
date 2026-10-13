@@ -11,6 +11,7 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   formatChart2Number,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -56,7 +57,7 @@ const DAYS = [
 ] as const
 
 const chartConfig = {
-  value: { label: "مقدار", color: "var(--chart-1)" },
+  value: { label: "مقدار", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 const domain = [
@@ -134,7 +135,10 @@ export default function BubbleChartDemo({
         >
           <DayChart>
             <BubbleAxes showXTicks={row.showXTicks} />
-            <Scatter data={row.data} fill="var(--color-value)" />
+            <Scatter
+              data={row.data}
+              fill={CHART2_BAR_COLORS[i % CHART2_BAR_COLORS.length]}
+            />
             <ChartTooltip
               defaultIndex={i === 0 ? defaultIndex : undefined}
               content={

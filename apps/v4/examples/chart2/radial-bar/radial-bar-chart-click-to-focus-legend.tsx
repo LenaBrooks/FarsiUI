@@ -9,21 +9,25 @@ import {
   type DefaultLegendContentProps,
   type LegendPayload,
   type RadialBarSectorProps,
+  type SectorProps,
 } from "recharts"
 
-import { generatePersianMockData } from "@/lib/chart2-fa"
+import {
+  CHART2_BAR_COLORS,
+  generatePersianMockData,
+} from "@/lib/chart2-fa"
 import {
   ChartContainer,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
 const COLORS = [
-  "var(--chart-1)",
-  "var(--chart-2)",
-  "var(--chart-3)",
-  "var(--chart-4)",
-  "var(--chart-5)",
-  "var(--chart-1)",
+  CHART2_BAR_COLORS[0],
+  CHART2_BAR_COLORS[1],
+  CHART2_BAR_COLORS[2],
+  CHART2_BAR_COLORS[3],
+  CHART2_BAR_COLORS[4],
+  CHART2_BAR_COLORS[0],
 ]
 
 const data = generatePersianMockData(6, 134).map((row, i) => ({
@@ -32,27 +36,41 @@ const data = generatePersianMockData(6, 134).map((row, i) => ({
 }))
 
 const chartConfig = {
-  x: { label: "مقدار", color: "var(--chart-1)" },
+  x: { label: "مقدار", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 type SelectedLabelState = {
   selectedLabel: string | undefined
-  setSelectedLabel: (label: string | undefined) => void
+  toggleLabel: (label: string) => void
+  clearSelection: () => void
 }
 
 const SelectedLabelContext = createContext<SelectedLabelState>({
   selectedLabel: undefined,
-  setSelectedLabel: () => {},
+  toggleLabel: () => {},
+  clearSelection: () => {},
 })
 
+function resolveLabel(payload: unknown): string | undefined {
+  if (payload == null || typeof payload !== "object") return undefined
+  const row = payload as { label?: unknown; payload?: { label?: unknown } }
+  if (typeof row.label === "string") return row.label
+  if (typeof row.payload?.label === "string") return row.payload.label
+  return undefined
+}
+
 function CustomSector(props: RadialBarSectorProps) {
-  const { selectedLabel, setSelectedLabel } = useContext(SelectedLabelContext)
-  const isSelected =
-    props.payload.label === selectedLabel || selectedLabel == null
+  const { selectedLabel, toggleLabel } = useContext(SelectedLabelContext)
+  const label = resolveLabel(props.payload) ?? data[props.index]?.label
+  const isSelected = label === selectedLabel || selectedLabel == null
+
   return (
     <Sector
       {...props}
-      onClick={() => setSelectedLabel(props.payload.label)}
+      onClick={(event) => {
+        event.stopPropagation()
+        if (label) toggleLabel(label)
+      }}
       fill={COLORS[props.index % COLORS.length]}
       opacity={isSelected ? 1 : 0.2}
       style={{ transition: "opacity 0.3s ease", cursor: "pointer" }}
@@ -60,15 +78,32 @@ function CustomSector(props: RadialBarSectorProps) {
   )
 }
 
+function BackgroundSector(props: SectorProps) {
+  const { clearSelection } = useContext(SelectedLabelContext)
+  return (
+    <Sector
+      {...props}
+      onClick={(event) => {
+        event.stopPropagation()
+        clearSelection()
+      }}
+      style={{ cursor: "pointer" }}
+    />
+  )
+}
+
 function LegendItem({ entry }: { entry: LegendPayload }) {
-  const { selectedLabel, setSelectedLabel } = useContext(SelectedLabelContext)
-  // @ts-expect-error label is always present on mock payload
-  const l = entry.payload.label as string
-  const isSelected = selectedLabel === l || selectedLabel == null
+  const { selectedLabel, toggleLabel } = useContext(SelectedLabelContext)
+  const label = resolveLabel(entry.payload) ?? String(entry.value ?? "")
+  const isSelected = selectedLabel === label || selectedLabel == null
+
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-noninteractive-element-interactions
     <li
-      onClick={() => setSelectedLabel(l)}
+      onClick={(event) => {
+        event.stopPropagation()
+        if (label) toggleLabel(label)
+      }}
       className="cursor-pointer font-sans text-sm text-foreground transition-opacity duration-300"
       style={{ opacity: isSelected ? 1 : 0.2 }}
     >
@@ -76,7 +111,7 @@ function LegendItem({ entry }: { entry: LegendPayload }) {
         className="me-2 inline-block size-2.5 rounded-[2px] align-middle"
         style={{ backgroundColor: entry.color }}
       />
-      {l}
+      {label}
     </li>
   )
 }
@@ -99,10 +134,9 @@ export default function RadialBarChartClickToFocusLegendDemo() {
   const providerValue = useMemo(
     () => ({
       selectedLabel: selectedRadialBar,
-      setSelectedLabel: (newLabel: string | undefined) =>
-        setSelectedRadialBar((curr) =>
-          curr === newLabel ? undefined : newLabel
-        ),
+      toggleLabel: (label: string) =>
+        setSelectedRadialBar((curr) => (curr === label ? undefined : label)),
+      clearSelection: () => setSelectedRadialBar(undefined),
     }),
     [selectedRadialBar]
   )
@@ -118,9 +152,10 @@ export default function RadialBarChartClickToFocusLegendDemo() {
           data={data}
           innerRadius="15%"
           outerRadius="100%"
+          onClick={providerValue.clearSelection}
         >
           <RadialBar
-            background
+            background={BackgroundSector}
             dataKey="x"
             name="x"
             shape={CustomSector}

@@ -12,7 +12,8 @@ import {
 } from "recharts"
 
 import {
-  chart2ContainerClassName,
+  CHART2_BAR_COLORS,
+  chart2BarContainerClassName,
   formatPersianNumber,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -75,12 +76,12 @@ const rawData: ReadonlyArray<RawEntry> = [
 const waterfallData = computeWaterfallData(rawData)
 
 const chartConfig = {
-  waterfallRange: { label: "مقدار", color: "var(--chart-1)" },
+  waterfallRange: { label: "مقدار", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 function getBarColor(entry: WaterfallDatum): string {
-  if (entry.isTotal) return "var(--chart-1)"
-  return entry.value >= 0 ? "var(--chart-2)" : "var(--destructive)"
+  if (entry.isTotal) return CHART2_BAR_COLORS[0]
+  return entry.value >= 0 ? CHART2_BAR_COLORS[1] : "var(--destructive)"
 }
 
 function WaterfallBar(props: BarShapeProps) {
@@ -110,13 +111,13 @@ function WaterfallTooltip({ active, payload }: TooltipContentProps) {
 
 export default function WaterfallDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={waterfallData}
         margin={{ top: 20, right: 12, bottom: 5, left: 8 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"

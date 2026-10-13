@@ -12,7 +12,8 @@ import {
 } from "recharts"
 
 import {
-  chart2ContainerClassName,
+  CHART2_BAR_COLORS,
+  chart2BarContainerClassName,
   toPersianDigits,
 } from "@/lib/chart2-fa"
 import {
@@ -90,14 +91,14 @@ const data: Array<TimelineDataType> = [
 ]
 
 const chartConfig = {
-  firstCycle: { label: "چرخهٔ اول", color: "var(--chart-1)" },
-  secondCycle: { label: "چرخهٔ دوم", color: "var(--chart-2)" },
+  firstCycle: { label: "چرخهٔ اول", color: CHART2_BAR_COLORS[0] },
+  secondCycle: { label: "چرخهٔ دوم", color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 function getBarColor(outcome: TimelineDataType["outcome"]) {
   switch (outcome) {
     case "success":
-      return "var(--chart-1)"
+      return CHART2_BAR_COLORS[0]
     case "error":
       return "var(--destructive)"
     default:
@@ -112,7 +113,7 @@ function CustomFillRectangle(props: BarShapeProps) {
   return (
     <Rectangle
       {...props}
-      stroke={isActive ? "var(--chart-3)" : barColor}
+      stroke={isActive ? CHART2_BAR_COLORS[2] : barColor}
       strokeWidth={isActive ? 3 : 1}
       fill={barColor}
     />
@@ -137,14 +138,14 @@ export default function TimelineDemo({
   defaultIndex?: number
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         layout="vertical"
         data={data}
         margin={{ top: 8, right: 12, left: 8, bottom: 28 }}
       >
-        <CartesianGrid strokeDasharray="2 2" />
+        <CartesianGrid horizontal={false} strokeDasharray="3 3" />
         <ChartTooltip
           shared={false}
           defaultIndex={defaultIndex}

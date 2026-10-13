@@ -170,90 +170,125 @@ export function BlockCard({
         onValueChange={(value) => setTab(value as "preview" | "code")}
         className="w-full gap-2"
       >
-        <div className="flex flex-wrap items-center gap-2">
-          <a
-            href={`#${item.name}`}
-            className="min-w-0 flex-1 truncate text-start text-sm font-medium underline-offset-2 hover:underline"
-          >
-            {item.description?.replace(/\.$/, "") || item.name}
-          </a>
-          <div className="ms-auto flex h-8 max-w-full items-center gap-0.5 rounded-lg border bg-muted p-1">
-            <TabsList className="grid h-auto! w-fit grid-cols-2 gap-0.5 rounded-none bg-transparent p-0 shadow-none *:data-[slot=tabs-trigger]:h-6 *:data-[slot=tabs-trigger]:rounded-sm *:data-[slot=tabs-trigger]:px-2.5 *:data-[slot=tabs-trigger]:text-xs">
-              <TabsTrigger value="preview">مشاهده</TabsTrigger>
-              <TabsTrigger value="code">کد</TabsTrigger>
-            </TabsList>
-            <Separator orientation="vertical" className="mx-0.5 h-4!" />
-            <ToggleGroup
-              type="single"
-              value={previewViewport}
-              onValueChange={(value) => {
-                if (!value || value === viewport) return
-                setViewport(value as Viewport)
-                setTab("preview")
-              }}
-              className="hidden gap-0.5 md:flex *:data-[slot=toggle-group-item]:size-6! *:data-[slot=toggle-group-item]:cursor-pointer! *:data-[slot=toggle-group-item]:rounded-sm!"
+        <div className="flex w-full min-w-0 flex-col gap-2">
+          <div className="flex min-w-0 flex-wrap items-center gap-2">
+            <a
+              href={`#${item.name}`}
+              className="min-w-0 flex-1 truncate text-start text-sm font-medium underline-offset-2 hover:underline"
             >
-              <ToggleGroupItem value="100%" title="دسکتاپ">
-                <Monitor className="size-3.5" />
-              </ToggleGroupItem>
-              <ToggleGroupItem value="60%" title="تبلت">
-                <Tablet className="size-3.5" />
-              </ToggleGroupItem>
-              <ToggleGroupItem
-                value="30%"
-                title="موبایل"
-                className="hidden lg:inline-flex!"
+              {item.description?.replace(/\.$/, "") || item.name}
+            </a>
+            <div className="ms-auto flex h-8 shrink-0 items-center gap-0.5 rounded-lg border bg-muted p-1">
+              <TabsList className="grid h-auto! w-fit grid-cols-2 gap-0.5 rounded-none bg-transparent p-0 shadow-none *:data-[slot=tabs-trigger]:h-6 *:data-[slot=tabs-trigger]:rounded-sm *:data-[slot=tabs-trigger]:px-2.5 *:data-[slot=tabs-trigger]:text-xs">
+                <TabsTrigger value="preview">مشاهده</TabsTrigger>
+                <TabsTrigger value="code">کد</TabsTrigger>
+              </TabsList>
+              <Separator orientation="vertical" className="mx-0.5 h-4!" />
+              <ToggleGroup
+                type="single"
+                value={previewViewport}
+                onValueChange={(value) => {
+                  if (!value || value === viewport) return
+                  setViewport(value as Viewport)
+                  setTab("preview")
+                }}
+                className="hidden gap-0.5 md:flex *:data-[slot=toggle-group-item]:size-6! *:data-[slot=toggle-group-item]:cursor-pointer! *:data-[slot=toggle-group-item]:rounded-sm!"
               >
-                <Smartphone className="size-3.5" />
-              </ToggleGroupItem>
-            </ToggleGroup>
-            <Separator
-              orientation="vertical"
-              className="mx-0.5 hidden h-4! md:block"
-            />
-            <Button
-              asChild
-              size="icon"
-              variant="ghost"
-              className="size-6 cursor-pointer rounded-sm"
-              title="باز کردن در تب جدید"
-            >
-              <Link
-                href={withViewColorMode(
-                  `/view/${previewStyleName}/${item.name}`,
-                  colorMode
+                <ToggleGroupItem value="100%" title="دسکتاپ">
+                  <Monitor className="size-3.5" />
+                </ToggleGroupItem>
+                <ToggleGroupItem value="60%" title="تبلت">
+                  <Tablet className="size-3.5" />
+                </ToggleGroupItem>
+                <ToggleGroupItem
+                  value="30%"
+                  title="موبایل"
+                  className="hidden lg:inline-flex!"
+                >
+                  <Smartphone className="size-3.5" />
+                </ToggleGroupItem>
+              </ToggleGroup>
+              <Separator
+                orientation="vertical"
+                className="mx-0.5 hidden h-4! md:block"
+              />
+              <Button
+                asChild
+                size="icon"
+                variant="ghost"
+                className="size-6 cursor-pointer rounded-sm"
+                title="باز کردن در تب جدید"
+              >
+                <Link
+                  href={withViewColorMode(
+                    `/view/${previewStyleName}/${item.name}`,
+                    colorMode
+                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Fullscreen className="size-3.5" />
+                  <span className="sr-only">باز کردن در تب جدید</span>
+                </Link>
+              </Button>
+              <Separator
+                orientation="vertical"
+                className="mx-0.5 hidden h-4! md:block"
+              />
+              <Button
+                variant="ghost"
+                size="sm"
+                className="hidden h-6 min-w-0 max-w-[18rem] cursor-pointer gap-1.5 rounded-sm px-2 shadow-none md:inline-flex"
+                title="کپی دستور نصب"
+                onClick={() => {
+                  installCopy.copyToClipboard(installCommand)
+                  trackEvent({
+                    name: "copy_registry_add_command",
+                    properties: { name: item.name },
+                  })
+                }}
+              >
+                {installCopy.isCopied ? (
+                  <Check className="size-3.5 shrink-0" />
+                ) : (
+                  <Copy className="size-3.5 shrink-0" />
                 )}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Fullscreen className="size-3.5" />
-                <span className="sr-only">باز کردن در تب جدید</span>
-              </Link>
-            </Button>
-            <Separator orientation="vertical" className="mx-0.5 h-4!" />
-            <Button
-              variant="ghost"
-              size="sm"
-              className="h-6 w-fit max-w-[min(100%,18rem)] cursor-pointer gap-1.5 rounded-sm px-2 shadow-none"
-              title="کپی دستور نصب"
-              onClick={() => {
-                installCopy.copyToClipboard(installCommand)
-                trackEvent({
-                  name: "copy_registry_add_command",
-                  properties: { name: item.name },
-                })
-              }}
-            >
-              {installCopy.isCopied ? (
-                <Check className="size-3.5" />
-              ) : (
-                <Copy className="size-3.5" />
-              )}
-              <span dir="ltr" lang="en" className="truncate font-mono text-xs">
-                {installCommand}
-              </span>
-            </Button>
+                <span
+                  dir="ltr"
+                  lang="en"
+                  className="min-w-0 truncate font-mono text-xs"
+                >
+                  {installCommand}
+                </span>
+              </Button>
+            </div>
           </div>
+          <Button
+            variant="outline"
+            size="sm"
+            className="h-7 w-full min-w-0 justify-start gap-1.5 px-2 font-normal md:hidden"
+            title="کپی دستور نصب"
+            onClick={() => {
+              installCopy.copyToClipboard(installCommand)
+              trackEvent({
+                name: "copy_registry_add_command",
+                properties: { name: item.name },
+              })
+            }}
+          >
+            {installCopy.isCopied ? (
+              <Check className="size-3.5 shrink-0" />
+            ) : (
+              <Copy className="size-3.5 shrink-0" />
+            )}
+            <span
+              dir="ltr"
+              lang="en"
+              className="min-w-0 flex-1 truncate text-start font-mono text-xs"
+            >
+              {installCommand}
+            </span>
+          </Button>
         </div>
 
         <div className="relative w-full" style={{ height: iframeHeight }}>

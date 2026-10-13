@@ -1,25 +1,27 @@
 ﻿"use client"
 
-import { usePersianMockData } from "@/components/chart2-live"
-import { CartesianGrid,
-  Curve,
-  Line,
-  LineChart,
-  XAxis,
-  YAxis } from "recharts"
+import { CartesianGrid, Curve, Line, LineChart, XAxis, YAxis } from "recharts"
 
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
-  formatChart2Number,
-} from "@/lib/chart2-fa"
+  CHART_TOMAN_AXIS_WIDTH,
+  formatPersianMonthTick,
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
   ChartContainer,
   ChartTooltip,
-  ChartTooltipContent,
 } from "@/registry/new-york-v4/ui/chart"
 
-/** Fade-in custom line shape (entrance animation proxy for older Recharts). */
+import {
+  LINE_CHART_CLASS,
+  LINE_TOOLTIP_CURSOR,
+  LineSalesTooltipContent,
+  LineShell,
+  lineSalesConfig,
+  useLineSalesCaption,
+  useSalesData,
+} from "./line-fa-shared"
+
 function OpacityFadeShape(props: Record<string, unknown>) {
   const { animationElapsedTime = 1, isEntrance = false, ...rest } = props as {
     animationElapsedTime?: number
@@ -30,40 +32,50 @@ function OpacityFadeShape(props: Record<string, unknown>) {
 }
 
 export default function LineAnimatesOpacityDemo() {
-  const data = usePersianMockData(7, 100)
+  const data = useSalesData(100)
+  useLineSalesCaption("انیمیشن شفافیت")
+
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
-      <LineChart
-        accessibilityLayer
-        data={data}
-        margin={{ top: 10, right: 12, left: 12, bottom: 0 }}
-      >
-        <CartesianGrid />
-        <XAxis
-          dataKey="label"
-          reversed
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-        />
-        <YAxis
-          orientation="right"
-          width={48}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
-        />
-        <ChartTooltip content={<ChartTooltipContent />} />
-        <Line
-          type="monotone"
-          dataKey="y"
-          stroke="var(--color-y)"
-          strokeWidth={3}
-          shape={OpacityFadeShape}
-          animationDuration={500}
-        />
-      </LineChart>
-    </ChartContainer>
+    <LineShell>
+      <ChartContainer config={lineSalesConfig} className={LINE_CHART_CLASS}>
+        <LineChart
+          accessibilityLayer
+          data={data}
+          margin={{ top: 18, right: 12, left: 4, bottom: 0 }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="month"
+            reversed
+            tickLine={false}
+            axisLine={false}
+            tickMargin={12}
+            tickFormatter={formatPersianMonthTick}
+          />
+          <YAxis
+            orientation="right"
+            width={CHART_TOMAN_AXIS_WIDTH}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            tick={TomanAxisTick}
+          />
+          <ChartTooltip
+            cursor={LINE_TOOLTIP_CURSOR}
+            content={<LineSalesTooltipContent />}
+          />
+          <Line
+            type="monotone"
+            dataKey="store"
+            name="store"
+            stroke="var(--color-store)"
+            strokeWidth={3}
+            shape={OpacityFadeShape}
+            animationDuration={500}
+            dot={false}
+          />
+        </LineChart>
+      </ChartContainer>
+    </LineShell>
   )
 }

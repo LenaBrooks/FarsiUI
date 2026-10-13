@@ -1,70 +1,83 @@
-"use client"
+﻿"use client"
 
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
-import { usePersianMockData } from "@/components/chart2-live"
-import {
-  chart2MockConfig,
-  formatChart2Number,
-} from "@/lib/chart2-fa"
+import { TomanXAxisTick } from "@/lib/chart-toman-tick"
 import {
   ChartContainer,
-  ChartLegend,
-  ChartLegendContent,
   ChartTooltip,
-  ChartTooltipContent,
 } from "@/registry/new-york-v4/ui/chart"
+
+import {
+  LINE_TOOLTIP_CURSOR,
+  LineSalesTooltipContent,
+  LineShell,
+  VERTICAL_LINE_CHART_CLASS,
+  lineSalesConfig,
+  useLineSalesCaption,
+  useSalesData,
+} from "./line-fa-shared"
 
 export default function VerticalLineChartDemo(props: {
   isAnimationActive?: boolean
 }) {
-  const data = usePersianMockData(6, 294213)
+  const data = useSalesData(294213)
+  useLineSalesCaption("عمودی")
 
   return (
-    <ChartContainer
-      config={chart2MockConfig}
-      className="aspect-[1/1.618] h-auto w-full max-w-[320px] max-h-[70vh] overflow-visible font-sans"
-    >
-      <LineChart
-        accessibilityLayer
-        layout="vertical"
-        data={data}
-        margin={{ top: 12, right: 8, left: 12, bottom: 12 }}
+    <LineShell className="max-w-[320px]">
+      <ChartContainer
+        config={lineSalesConfig}
+        className={VERTICAL_LINE_CHART_CLASS}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis
-          type="number"
-          height={52}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={18}
-          padding={{ left: 28, right: 20 }}
-          tick={{ dy: 4 }}
-          tickFormatter={formatChart2Number}
-        />
-        <YAxis
-          dataKey="label"
-          type="category"
-          orientation="right"
-          width={96}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={18}
-          tick={{ dx: 4 }}
-        />
-        <ChartTooltip content={<ChartTooltipContent />} />
-        <ChartLegend content={<ChartLegendContent />} />
-        <Line
-          dataKey="x"
-          stroke="var(--color-x)"
-          isAnimationActive={props.isAnimationActive}
-        />
-        <Line
-          dataKey="y"
-          stroke="var(--color-y)"
-          isAnimationActive={props.isAnimationActive}
-        />
-      </LineChart>
-    </ChartContainer>
+        <LineChart
+          accessibilityLayer
+          layout="vertical"
+          data={data}
+          margin={{ top: 8, right: 4, left: 8, bottom: 4 }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            type="number"
+            height={44}
+            tickCount={4}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={6}
+            padding={{ left: 0, right: 0 }}
+            tick={TomanXAxisTick}
+          />
+          <YAxis
+            dataKey="month"
+            type="category"
+            orientation="right"
+            width={72}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={10}
+            interval={0}
+            padding={{ top: 0, bottom: 0 }}
+          />
+          <ChartTooltip
+            cursor={LINE_TOOLTIP_CURSOR}
+            content={<LineSalesTooltipContent />}
+          />
+          <Line
+            dataKey="store"
+            name="store"
+            stroke="var(--color-store)"
+            strokeWidth={2.5}
+            isAnimationActive={props.isAnimationActive}
+          />
+          <Line
+            dataKey="online"
+            name="online"
+            stroke="var(--color-online)"
+            strokeWidth={2.25}
+            isAnimationActive={props.isAnimationActive}
+          />
+        </LineChart>
+      </ChartContainer>
+    </LineShell>
   )
 }

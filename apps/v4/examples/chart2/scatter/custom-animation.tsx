@@ -11,8 +11,9 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   chart2ContainerClassName,
-  formatChart2Number,
+  chart2DashedGridClassName,
   generatePersianMockData,
 } from "@/lib/chart2-fa"
 import {
@@ -22,11 +23,13 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
+import { ScatterXUnitTick, ScatterYUnitTick } from "./scatter-fa-shared"
+
 const dataA = generatePersianMockData(10, 42)
 const dataB = generatePersianMockData(10, 99)
 
 const chartConfig = {
-  series: { label: "سری", color: "var(--chart-1)" },
+  series: { label: "سری", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function ScatterCustomAnimationDemo() {
@@ -42,28 +45,33 @@ export default function ScatterCustomAnimationDemo() {
   const data = dataSet === "a" ? dataA : dataB
 
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer
+      config={chartConfig}
+      className={`${chart2ContainerClassName} ${chart2DashedGridClassName}`}
+    >
       <ScatterChart
         accessibilityLayer
-        margin={{ top: 20, right: 12, bottom: 10, left: 0 }}
+        margin={{ top: 20, right: 12, bottom: 16, left: 8 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis
           type="number"
           dataKey="x"
-          name="محور افقی"
+          name="قد"
+          unit=" سانتی‌متر"
           reversed
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
+          tickMargin={12}
+          tick={(props) => <ScatterXUnitTick {...props} unit="سانتی‌متر" />}
         />
         <YAxis
           type="number"
           dataKey="y"
-          name="محور عمودی"
+          name="وزن"
+          unit=" کیلوگرم"
           orientation="right"
-          width={52}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={72}
+          tickMargin={20}
+          tick={(props) => <ScatterYUnitTick {...props} unit="کیلوگرم" />}
         />
         <ZAxis type="number" dataKey="z" range={[60, 400]} />
         <ChartTooltip

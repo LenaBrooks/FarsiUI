@@ -42,6 +42,7 @@ export const UI_COMPONENTS = [
   "progress",
   "radio-group",
   "resizable",
+  "rich-text-editor",
   "scroll-area",
   "select",
   "separator",

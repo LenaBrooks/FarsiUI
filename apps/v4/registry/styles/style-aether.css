@@ -1,4 +1,4 @@
-.style-aether {
+﻿.style-aether {
   /* Density tokens (SoT: registry/densities.ts - aether) */
   --control-h-xs: 1.625rem;
   --control-h-sm: 2rem;
@@ -795,7 +795,7 @@
   }
 
   .cn-input-otp-slot {
-    @apply dark:bg-input/25 border-input data-[active=true]:border-ring data-[active=true]:ring-ring/40 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive size-(--control-h-md) border-y border-r text-(length:--text-control) font-medium shadow-xs transition-[color,border-color,box-shadow] duration-200 outline-none first:rounded-l-lg first:border-l last:rounded-r-lg data-[active=true]:ring-2 data-[active=true]:ring-offset-1 data-[active=true]:ring-offset-background;
+    @apply dark:bg-input/25 border-input data-[active=true]:border-ring data-[active=true]:ring-ring/40 data-[active=true]:aria-invalid:ring-destructive/20 dark:data-[active=true]:aria-invalid:ring-destructive/40 aria-invalid:border-destructive data-[active=true]:aria-invalid:border-destructive size-(--control-h-md) border-y border-r text-(length:--text-control) font-medium shadow-xs transition-[color,border-color,box-shadow] duration-200 outline-none first:rounded-s-lg first:border-l last:rounded-e-lg data-[active=true]:ring-2 data-[active=true]:ring-offset-1 data-[active=true]:ring-offset-background;
   }
 
   .cn-input-otp-caret-line {
@@ -1531,7 +1531,7 @@
   }
 
   .cn-toggle-group-item {
-    @apply group-data-[spacing=0]/toggle-group:rounded-none group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg;
+    @apply group-data-[spacing=0]/toggle-group:rounded-none group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-s-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-e-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg;
   }
 
   /* MARK: Tooltip */

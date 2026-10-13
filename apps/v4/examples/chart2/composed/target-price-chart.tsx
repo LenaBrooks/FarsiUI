@@ -14,10 +14,11 @@ import {
   type MouseHandlerDataParam,
 } from "recharts"
 
+import { JalaliDayMonthTick } from "@/lib/chart-jalali-tick"
 import {
+  CHART2_BAR_COLORS,
   chart2ContainerClassName,
   formatChart2Number,
-  formatJalaliDate,
 } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -127,10 +128,10 @@ export const chartData = [
 ]
 
 const chartConfig = {
-  lowHigh: { label: "بازه", color: "var(--chart-3)" },
-  low: { label: "کف", color: "var(--chart-3)" },
-  price: { label: "قیمت", color: "var(--chart-1)" },
-  targetPrice: { label: "قیمت هدف", color: "var(--chart-2)" },
+  lowHigh: { label: "بازه", color: CHART2_BAR_COLORS[2] },
+  low: { label: "کف", color: CHART2_BAR_COLORS[2] },
+  price: { label: "قیمت", color: CHART2_BAR_COLORS[0] },
+  targetPrice: { label: "قیمت هدف", color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 function ActiveLabel(props: LabelProps) {
@@ -146,10 +147,6 @@ function ActiveLabel(props: LabelProps) {
       {formatChart2Number(Number(props.value))}
     </text>
   )
-}
-
-function tickFormatter(value: string | number): string {
-  return formatJalaliDate(value, { year: "numeric", month: "short", day: "numeric" })
 }
 
 function useActiveIndexState(defaultValue?: number) {
@@ -198,7 +195,7 @@ export default function TargetPriceChartDemo({
           reversed
           interval="preserveStartEnd"
           domain={["dataMin", "dataMax"]}
-          tickFormatter={tickFormatter}
+          tick={JalaliDayMonthTick}
           tickMargin={8}
           minTickGap={40}
         />

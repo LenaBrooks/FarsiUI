@@ -11,8 +11,9 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
-  chart2ContainerClassName,
+  chart2BarContainerClassName,
   formatChart2Number,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -68,19 +69,19 @@ const data = [
 ]
 
 const chartConfig = {
-  pv: { label: FA_CHART.online, color: "var(--chart-1)" },
-  uv: { label: FA_CHART.store, color: "var(--chart-2)" },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[0] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 export default function BrushBarChartDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data}
         margin={{ top: 5, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"

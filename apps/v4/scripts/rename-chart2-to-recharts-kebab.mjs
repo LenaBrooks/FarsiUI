@@ -28,7 +28,6 @@ const CATEGORIES = [
   { id: "tooltip", title: "تولتیپ", en: "Tooltip", folder: "Tooltip" },
   { id: "legend", title: "راهنما", en: "Legend", folder: "Legend" },
   { id: "responsive", title: "واکنش‌گرا", en: "ResponsiveContainer", folder: "ResponsiveContainer" },
-  { id: "xaxis", title: "محور X", en: "XAxis", folder: "XAxis" },
 ]
 
 const oldCatalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"))

@@ -1,10 +1,21 @@
 "use client"
 
 import { useState } from "react"
-import { Bar, BarChart, Rectangle, type BarRectangleItem, type BarShapeProps } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Rectangle,
+  type BarRectangleItem,
+  type BarShapeProps,
+} from "recharts"
 
 import { useChart2Caption } from "@/components/chart2-live"
-import { FA_MONTHS, chart2MockConfig } from "@/lib/chart2-fa"
+import {
+  FA_MONTHS,
+  chart2DashedGridClassName,
+  chart2BarMockConfig,
+} from "@/lib/chart2-fa"
 import { ChartContainer } from "@/registry/new-york-v4/ui/chart"
 
 const data = [
@@ -35,10 +46,11 @@ export default function BarChartWithCustomizedEventDemo() {
   return (
     <div className="flex w-full flex-col font-sans [font-family:var(--font-sans)]">
       <ChartContainer
-        config={chart2MockConfig}
-        className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[30vh] font-sans"
+        config={chart2BarMockConfig}
+        className={`aspect-[1.618] h-auto w-full max-w-[700px] max-h-[30vh] font-sans ${chart2DashedGridClassName}`}
       >
         <BarChart accessibilityLayer data={data}>
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
           <Bar
             dataKey="uv"
             onClick={(bri: BarRectangleItem, index, event) => {

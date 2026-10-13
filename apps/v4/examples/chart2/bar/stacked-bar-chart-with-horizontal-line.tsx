@@ -12,8 +12,9 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2BarContainerClassName,
   formatChart2Number,
   formatPersianNumber,
 } from "@/lib/chart2-fa"
@@ -37,9 +38,9 @@ const data = [
 ]
 
 const chartConfig = {
-  data1: { label: "سری ۱", color: "var(--chart-1)" },
-  data2: { label: "سری ۲", color: "var(--chart-2)" },
-  data3: { label: "سری ۳", color: "var(--chart-3)" },
+  data1: { label: "سری ۱", color: CHART2_BAR_COLORS[0] },
+  data2: { label: "سری ۲", color: CHART2_BAR_COLORS[1] },
+  data3: { label: "سری ۳", color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
 const THRESHOLD = 18000
@@ -86,13 +87,13 @@ function StackTotalLabel(props: LabelProps) {
 
 export default function StackedBarChartWithHorizontalLineDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data}
         margin={{ top: 40, right: 8, left: 8, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"

@@ -2,7 +2,11 @@
 
 import { Pie, PieChart } from "recharts"
 
-import { FA_CHART, formatChart2Number } from "@/lib/chart2-fa"
+import {
+  CHART2_BAR_COLORS,
+  FA_CHART,
+  formatChart2Number,
+} from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartLegend,
@@ -21,10 +25,10 @@ const data = [
 
 const chartConfig = {
   value: { label: FA_CHART.sales },
-  tehran: { label: FA_CHART.tehran, color: "var(--chart-1)" },
-  isfahan: { label: FA_CHART.isfahan, color: "var(--chart-2)" },
-  fars: { label: FA_CHART.fars, color: "var(--chart-3)" },
-  khorasan: { label: FA_CHART.khorasan, color: "var(--chart-4)" },
+  tehran: { label: FA_CHART.tehran, color: CHART2_BAR_COLORS[0] },
+  isfahan: { label: FA_CHART.isfahan, color: CHART2_BAR_COLORS[1] },
+  fars: { label: FA_CHART.fars, color: CHART2_BAR_COLORS[2] },
+  khorasan: { label: FA_CHART.khorasan, color: CHART2_BAR_COLORS[3] },
 } satisfies ChartConfig
 
 export default function PieResponsiveContainerDemo() {

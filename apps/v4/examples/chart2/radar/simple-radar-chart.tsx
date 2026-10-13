@@ -8,6 +8,7 @@ import {
   RadarChart,
 } from "recharts"
 
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartTooltip,
@@ -25,7 +26,7 @@ const data = [
 ]
 
 const chartConfig = {
-  A: { label: "علی", color: "var(--chart-1)" },
+  A: { label: "علی", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function SimpleRadarChartDemo() {

@@ -2,11 +2,14 @@
 
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
+import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2ContainerClassName,
-  formatChart2Number,
+  chart2DashedGridClassName,
 } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -28,8 +31,8 @@ const data = [
 ]
 
 const chartConfig = {
-  pv: { label: FA_CHART.online, color: "var(--chart-1)" },
-  uv: { label: FA_CHART.store, color: "var(--chart-2)" },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[0] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 export default function LegendDemo({
@@ -38,7 +41,10 @@ export default function LegendDemo({
   isAnimationActive?: boolean
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer
+      config={chartConfig}
+      className={`${chart2ContainerClassName} ${chart2DashedGridClassName}`}
+    >
       <LineChart
         accessibilityLayer
         data={data}
@@ -47,16 +53,18 @@ export default function LegendDemo({
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"
-          width={52}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={CHART_TOMAN_AXIS_WIDTH}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tick={TomanAxisTick}
         />
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend
           content={<ChartLegendContent />}
           verticalAlign="top"
-          className="pb-3"
+          className="pb-4"
         />
         <Line
           type="monotone"

@@ -1,9 +1,18 @@
 "use client"
 
-import { Bar, BarChart, XAxis, YAxis } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Rectangle,
+  XAxis,
+  YAxis,
+  type BarShapeProps,
+} from "recharts"
 
 import {
-  chart2ContainerClassName,
+  CHART2_BAR_COLORS,
+  chart2BarContainerClassName,
   toPersianDigits,
 } from "@/lib/chart2-fa"
 import {
@@ -54,7 +63,7 @@ const totalPopulation = rawData.reduce(
   0
 )
 
-/** مرد منفی → چپ، زن مثبت → راست (محور LTR). */
+/** مرد منفی → چپ (آبی)، زن مثبت → راست (صورتی). */
 const percentageData = rawData.map((entry) => ({
   age: entry.age,
   male: (entry.male / totalPopulation) * -100,
@@ -62,8 +71,8 @@ const percentageData = rawData.map((entry) => ({
 }))
 
 const chartConfig = {
-  female: { label: "زن", color: "#ed7485" },
-  male: { label: "مرد", color: "#6ea1c7" },
+  female: { label: "زن", color: CHART2_BAR_COLORS[1] },
+  male: { label: "مرد", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 function formatPercent(val: unknown) {
@@ -106,6 +115,36 @@ function EndLabel({
   )
 }
 
+/** Round the outward tip; normalize geometry so negative-width bars don’t flip corners. */
+function PyramidBar(props: BarShapeProps) {
+  const x = Number(props.x) || 0
+  const y = Number(props.y) || 0
+  const width = Number(props.width) || 0
+  const height = Number(props.height) || 0
+  const dataKey = String((props as { dataKey?: string }).dataKey ?? "")
+  const payload = (props as { payload?: Record<string, number> }).payload
+  const signed =
+    dataKey && payload && typeof payload[dataKey] === "number"
+      ? payload[dataKey]
+      : width
+
+  const left = Math.min(x, x + width)
+  const bw = Math.abs(width)
+  // Negative series (male) → tip faces left; positive (female) → tip faces right.
+  const tipLeft = signed < 0
+
+  return (
+    <Rectangle
+      {...props}
+      x={left}
+      y={y}
+      width={bw}
+      height={height}
+      radius={tipLeft ? [5, 0, 0, 5] : [0, 5, 5, 0]}
+    />
+  )
+}
+
 export default function PopulationPyramidDemo({
   defaultIndex,
 }: {
@@ -115,7 +154,7 @@ export default function PopulationPyramidDemo({
     <ChartContainer
       config={chartConfig}
       dir="ltr"
-      className={`${chart2ContainerClassName} aspect-square max-w-[700px]`}
+      className={`${chart2BarContainerClassName} aspect-square max-w-[700px]`}
     >
       <BarChart
         accessibilityLayer
@@ -125,6 +164,7 @@ export default function PopulationPyramidDemo({
         barCategoryGap={1}
         margin={{ top: 8, right: 52, left: 52, bottom: 28 }}
       >
+        <CartesianGrid horizontal={false} strokeDasharray="3 3" />
         <XAxis
           type="number"
           domain={[-10, 10]}
@@ -145,7 +185,7 @@ export default function PopulationPyramidDemo({
           dataKey="female"
           fill="var(--color-female)"
           stroke="none"
-          radius={[0, 5, 5, 0]}
+          shape={PyramidBar}
           label={(props) => <EndLabel {...props} fill="#b84d5c" />}
         />
         <Bar
@@ -153,7 +193,7 @@ export default function PopulationPyramidDemo({
           dataKey="male"
           fill="var(--color-male)"
           stroke="none"
-          radius={[5, 0, 0, 5]}
+          shape={PyramidBar}
           label={(props) => <EndLabel {...props} fill="#3d6f94" />}
         />
         <ChartTooltip

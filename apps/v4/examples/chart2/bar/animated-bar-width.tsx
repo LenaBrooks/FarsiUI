@@ -1,11 +1,11 @@
 "use client"
 
-import { Bar, BarChart, Rectangle, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, Rectangle, XAxis, YAxis } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
+  chart2BarContainerClassName,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -40,13 +40,14 @@ export default function BarAnimatedWidthDemo() {
   const data = usePersianMockData(15, 5)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chart2BarMockConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data}
         barCategoryGap={4}
         margin={{ top: 8, right: 8, left: 0, bottom: 8 }}
       >
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="label" reversed mirror padding={{ right: 30 }} interval={1} />
         <YAxis
           orientation="right"

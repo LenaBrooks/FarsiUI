@@ -3,6 +3,7 @@
 import { useMemo } from "react"
 
 import { useChart2RandomSeed } from "@/components/chart2-live"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
 
 import {
   FA_WEEKDAYS_FULL,
@@ -21,7 +22,7 @@ export default function HeatmapMatrixValuesDemo() {
       rows={[...FA_WEEKDAYS_FULL]}
       cols={HOURS}
       values={values}
-      color="var(--chart-3)"
+      color={CHART2_BAR_COLORS[2]}
       showValues
       caption="ماتریس با عدد داخل سلول — وقتی عرض کافی باشد"
     />

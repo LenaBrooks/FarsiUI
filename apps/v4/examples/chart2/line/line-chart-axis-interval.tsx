@@ -1,6 +1,5 @@
 ﻿"use client"
 
-import { usePersianMockData } from "@/components/chart2-live"
 import type { AxisInterval } from "recharts"
 import {
   CartesianGrid,
@@ -11,16 +10,22 @@ import {
   YAxis,
 } from "recharts"
 
+import { usePersianMockData, useChart2Caption } from "@/components/chart2-live"
 import {
-  chart2MockConfig,
-  formatChart2Number,
+  CHART_TOMAN_AXIS_WIDTH,
   toPersianDigits,
-} from "@/lib/chart2-fa"
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
   ChartContainer,
   ChartTooltip,
-  ChartTooltipContent,
 } from "@/registry/new-york-v4/ui/chart"
+
+import {
+  LINE_TOOLTIP_CURSOR,
+  LineSalesTooltipContent,
+  lineSalesConfig,
+} from "./line-fa-shared"
 
 function intervalLabel(interval: AxisInterval) {
   if (typeof interval === "number") {
@@ -43,17 +48,18 @@ function MyChart({
   length?: number
 }) {
   const raw = usePersianMockData(length, 22813)
-  // Compact numeric labels — full «دوره N» strings crush the axis when dense.
+  // Dense axis demo: numeric Persian indices; values remapped to toman scale.
   const data = raw.map((row, i) => ({
-    ...row,
-    label: toPersianDigits(i + 1),
+    month: toPersianDigits(i + 1),
+    store: Math.round(row.x * 40_000),
+    online: Math.round(row.y * 40_000),
   }))
   const dense = typeof interval === "number"
 
   return (
     <ChartContainer
-      config={chart2MockConfig}
-      className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[40vh] font-sans"
+      config={lineSalesConfig}
+      className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[40vh] font-sans [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
     >
       <LineChart
         accessibilityLayer
@@ -65,9 +71,9 @@ function MyChart({
           bottom: dense ? 36 : 12,
         }}
       >
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis
-          dataKey="label"
+          dataKey="month"
           reversed
           interval={interval}
           tickLine={false}
@@ -81,22 +87,34 @@ function MyChart({
         <YAxis
           orientation="right"
           interval={interval}
-          width={52}
+          width={CHART_TOMAN_AXIS_WIDTH}
           tickLine={false}
           axisLine={false}
           tickMargin={10}
           minTickGap={16}
-          tickFormatter={formatChart2Number}
+          tick={TomanAxisTick}
         />
-        <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartTooltip
+          cursor={LINE_TOOLTIP_CURSOR}
+          content={<LineSalesTooltipContent />}
+        />
         <Line
           type="monotone"
-          dataKey="x"
-          stroke="var(--color-x)"
-          strokeWidth={2}
-          activeDot={{ r: 8 }}
+          dataKey="online"
+          name="online"
+          stroke="var(--color-online)"
+          strokeWidth={2.25}
+          dot={false}
         />
-        <Line type="monotone" dataKey="y" stroke="var(--color-y)" strokeWidth={2} />
+        <Line
+          type="monotone"
+          dataKey="store"
+          name="store"
+          stroke="var(--color-store)"
+          strokeWidth={2.5}
+          activeDot={{ r: 6, strokeWidth: 2, stroke: "var(--background)" }}
+          dot={false}
+        />
         <Label
           position="insideBottom"
           offset={dense ? 36 : 8}
@@ -109,13 +127,14 @@ function MyChart({
 }
 
 export default function LineChartAxisIntervalDemo() {
+  useChart2Caption(() => "فاصلهٔ تیک محور · تومان · ارقام فارسی", [])
+
   return (
-    <div className="flex w-full max-w-[700px] flex-col gap-6">
+    <div dir="rtl" className="flex w-full max-w-[700px] flex-col gap-6 font-sans">
       <MyChart interval="preserveStart" />
       <MyChart interval="preserveEnd" />
       <MyChart interval="preserveStartEnd" />
       <MyChart interval="equidistantPreserveStart" />
-      {/* Fewer points so interval={1} stays readable with Persian digits. */}
       <MyChart interval={1} length={20} />
     </div>
   )

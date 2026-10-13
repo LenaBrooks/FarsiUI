@@ -1,23 +1,23 @@
 "use client"
 
-import { usePersianMockData } from "@/components/chart2-live"
-import { Line,
-  LineChart } from "recharts"
+import { Line, LineChart } from "recharts"
 
-import { chart2MockConfig } from "@/lib/chart2-fa"
 import { ChartContainer } from "@/registry/new-york-v4/ui/chart"
 
+import { lineSalesConfig, useSalesData } from "./line-fa-shared"
+
 export default function TinyLineChartDemo() {
-  const data = usePersianMockData(6, 22123)
+  const data = useSalesData(22123)
+
   return (
     <ChartContainer
-      config={chart2MockConfig}
+      config={lineSalesConfig}
       className="aspect-[1.618] h-[50px] w-full max-w-[100px] font-sans"
     >
       <LineChart accessibilityLayer data={data}>
         <Line
-          dataKey="x"
-          stroke="var(--color-x)"
+          dataKey="store"
+          stroke="var(--color-store)"
           strokeWidth={2}
           dot={false}
           isAnimationActive={false}

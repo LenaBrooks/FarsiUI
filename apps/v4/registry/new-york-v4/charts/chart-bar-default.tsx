@@ -9,8 +9,8 @@ import {
   FA_MONTHLY_SALES,
   formatPersianMonthTick,
   formatToman,
-  formatTomanAxis,
 } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
   Card,
   CardContent,
@@ -52,7 +52,7 @@ export function ChartBarDefault() {
           <BarChart
             accessibilityLayer
             data={chartData}
-            margin={{ left: 4, right: 8 }}
+            margin={{ top: 18, left: 4, right: 8, bottom: 4 }}
           >
             <CartesianGrid vertical={false} strokeDasharray="3 3" />
             <XAxis
@@ -67,7 +67,7 @@ export function ChartBarDefault() {
               axisLine={false}
               tickMargin={8}
               width={CHART_TOMAN_AXIS_WIDTH}
-              tickFormatter={formatTomanAxis}
+              tick={TomanAxisTick}
             />
             <ChartTooltip
               cursor={false}

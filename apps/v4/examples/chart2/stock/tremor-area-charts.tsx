@@ -1,8 +1,7 @@
 "use client"
 
 /**
- * Tremor-inspired Area Chart variants (practical set), stacked like synchronized demos.
- * Patterns adapted from https://www.tremor.so/charts — rebuilt with FarsiUI chart primitives.
+ * Tremor-inspired area charts — polished like the sparklines portfolio demo.
  */
 
 import * as React from "react"
@@ -10,15 +9,23 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
-  Label,
   XAxis,
   YAxis,
+  type TooltipContentProps,
 } from "recharts"
 
+import { useChart2Caption } from "@/components/chart2-live"
 import {
+  CHART_TOMAN_AXIS_WIDTH,
+  formatToman,
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
+import {
+  chart2BarContainerClassName,
+  chart2DashedGridClassName,
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS_FULL,
-  formatPersianNumber,
   toPersianDigits,
 } from "@/lib/chart2-fa"
 import {
@@ -26,347 +33,154 @@ import {
   ChartLegend,
   ChartLegendContent,
   ChartTooltip,
-  ChartTooltipContent,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
-const chartData = FA_MONTHS_FULL.map((month, i) => {
-  const store = [2890, 2756, 3322, 3470, 3475, 3129, 3490, 2903, 2643, 2837, 2954, 3239][i]!
-  const online = [2338, 2103, 2194, 2108, 1812, 1726, 1982, 2012, 2342, 2473, 3848, 3736][i]!
+import { CANDLE_DOWN, CANDLE_UP } from "./stock-shared"
+
+type MonthRow = {
+  month: string
+  store: number
+  online: number
+}
+
+const chartData: MonthRow[] = FA_MONTHS_FULL.map((month, i) => {
+  const store = [
+    2_890_000, 2_756_000, 3_322_000, 3_470_000, 3_475_000, 3_129_000, 3_490_000,
+    2_903_000, 2_643_000, 2_837_000, 2_954_000, 3_239_000,
+  ][i]!
+  const online = [
+    2_338_000, 2_103_000, 2_194_000, 2_108_000, 1_812_000, 1_726_000, 1_982_000,
+    2_012_000, 2_342_000, 2_473_000, 2_848_000, 2_736_000,
+  ][i]!
   return { month, store, online }
 })
 
-/** Uses theme chart tokens (Default = Tremor-like blue / emerald). */
+const STORE_COLOR = CANDLE_UP
+const ONLINE_COLOR = CANDLE_DOWN
+
 const chartConfig = {
-  store: {
-    label: FA_CHART.store,
-    color: "var(--chart-1)",
-  },
-  online: {
-    label: FA_CHART.online,
-    color: "var(--chart-2)",
-  },
+  store: { label: FA_CHART.store, color: STORE_COLOR },
+  online: { label: FA_CHART.online, color: ONLINE_COLOR },
 } satisfies ChartConfig
 
-const panelClass =
-  "aspect-[2] h-auto w-full max-w-[700px] max-h-[28vh] font-sans"
+function pctChange(first: number, last: number) {
+  if (first === 0) return 0
+  return ((last - first) / first) * 100
+}
 
-function Section({
-  title,
-  hint,
-  children,
+function formatPct(value: number) {
+  const sign = value > 0 ? "+" : ""
+  return `${sign}${toPersianDigits(value.toFixed(1))}٪`
+}
+
+function formatMoney(value: number) {
+  return formatToman(value, { compact: true }).replace(/ /g, "\u00A0")
+}
+
+const storeTotal = chartData.reduce((s, r) => s + r.store, 0)
+const onlineTotal = chartData.reduce((s, r) => s + r.online, 0)
+const yearTotal = storeTotal + onlineTotal
+
+const storeChange = pctChange(chartData[0]!.store, chartData[chartData.length - 1]!.store)
+const onlineChange = pctChange(
+  chartData[0]!.online,
+  chartData[chartData.length - 1]!.online
+)
+const yearChange = pctChange(
+  chartData[0]!.store + chartData[0]!.online,
+  chartData[chartData.length - 1]!.store + chartData[chartData.length - 1]!.online
+)
+
+const kpiCards = [
+  {
+    id: "store",
+    label: FA_CHART.store,
+    value: storeTotal,
+    change: storeChange,
+    color: STORE_COLOR,
+    series: chartData.map((r) => r.store),
+  },
+  {
+    id: "online",
+    label: FA_CHART.online,
+    value: onlineTotal,
+    change: onlineChange,
+    color: ONLINE_COLOR,
+    series: chartData.map((r) => r.online),
+  },
+  {
+    id: "total",
+    label: "جمع فروش",
+    value: yearTotal,
+    change: yearChange,
+    color: CHART2_BAR_COLORS[0],
+    series: chartData.map((r) => r.store + r.online),
+  },
+] as const
+
+function KpiMiniArea({
+  id,
+  label,
+  value,
+  change,
+  color,
+  series,
 }: {
-  title: string
-  hint?: string
-  children: React.ReactNode
+  id: string
+  label: string
+  value: number
+  change: number
+  color: string
+  series: readonly number[]
 }) {
-  return (
-    <section className="flex w-full flex-col gap-2">
-      <div className="px-1">
-        <h3 className="text-sm font-medium text-foreground">{title}</h3>
-        {hint ? (
-          <p className="text-xs text-muted-foreground">{hint}</p>
-        ) : null}
-      </div>
-      {children}
-    </section>
-  )
-}
-
-function TremorAxes({
-  percent,
-  startEndOnly,
-  xLabel,
-  yLabel,
-  yFormatter,
-}: {
-  percent?: boolean
-  startEndOnly?: boolean
-  xLabel?: string
-  yLabel?: string
-  yFormatter?: (v: number) => string
-}) {
-  const ticks = startEndOnly
-    ? [chartData[0]!.month, chartData[chartData.length - 1]!.month]
-    : undefined
+  const good = change >= 0
+  const data = series.map((v, i) => ({ i, value: v }))
+  const config = {
+    value: { label, color },
+  } satisfies ChartConfig
+  const gradId = `tremor-kpi-${id}`
 
   return (
-    <>
-      <CartesianGrid vertical={false} />
-      <XAxis
-        dataKey="month"
-        reversed
-        ticks={ticks}
-        interval={startEndOnly ? "preserveStartEnd" : 0}
-        tickLine={false}
-        axisLine={false}
-        tickMargin={8}
-        minTickGap={startEndOnly ? 0 : 12}
-      >
-        {xLabel ? (
-          <Label
-            value={xLabel}
-            position="insideBottom"
-            offset={-12}
-            className="fill-foreground text-[11px] font-medium"
-          />
-        ) : null}
-      </XAxis>
-      <YAxis
-        orientation="right"
-        width={yLabel ? 56 : 48}
-        tickLine={false}
-        axisLine={false}
-        tickMargin={10}
-        tickFormatter={
-          percent
-            ? (v: number) => `${toPersianDigits(Math.round(v * 100))}٪`
-            : yFormatter ?? ((v: number) => formatPersianNumber(v))
-        }
-      >
-        {yLabel ? (
-          <Label
-            value={yLabel}
-            angle={90}
-            position="insideRight"
-            offset={8}
-            className="fill-foreground text-[11px] font-medium"
-          />
-        ) : null}
-      </YAxis>
-      <ChartTooltip content={<ChartTooltipContent />} />
-    </>
-  )
-}
-
-function AreaGradients({ idPrefix }: { idPrefix: string }) {
-  return (
-    <defs>
-      <linearGradient id={`${idPrefix}-store`} x1="0" y1="0" x2="0" y2="1">
-        <stop offset="5%" stopColor="var(--color-store)" stopOpacity={0.35} />
-        <stop offset="95%" stopColor="var(--color-store)" stopOpacity={0} />
-      </linearGradient>
-      <linearGradient id={`${idPrefix}-online`} x1="0" y1="0" x2="0" y2="1">
-        <stop offset="5%" stopColor="var(--color-online)" stopOpacity={0.35} />
-        <stop offset="95%" stopColor="var(--color-online)" stopOpacity={0} />
-      </linearGradient>
-    </defs>
-  )
-}
-
-function DefaultArea() {
-  return (
-    <ChartContainer config={chartConfig} className={panelClass}>
-      <AreaChart
-        accessibilityLayer
-        data={chartData}
-        margin={{ top: 12, right: 8, left: 0, bottom: 8 }}
-      >
-        <AreaGradients idPrefix="tremor-default" />
-        <TremorAxes />
-        <ChartLegend content={<ChartLegendContent />} />
-        <Area
-          type="linear"
-          dataKey="store"
-          stroke="var(--color-store)"
-          strokeWidth={2}
-          fill="url(#tremor-default-store)"
-          isAnimationActive={false}
-        />
-        <Area
-          type="linear"
-          dataKey="online"
-          stroke="var(--color-online)"
-          strokeWidth={2}
-          fill="url(#tremor-default-online)"
-          isAnimationActive={false}
-        />
-      </AreaChart>
-    </ChartContainer>
-  )
-}
-
-function StackedArea() {
-  return (
-    <ChartContainer config={chartConfig} className={panelClass}>
-      <AreaChart
-        accessibilityLayer
-        data={chartData}
-        margin={{ top: 12, right: 8, left: 0, bottom: 8 }}
-      >
-        <AreaGradients idPrefix="tremor-stacked" />
-        <TremorAxes />
-        <ChartLegend content={<ChartLegendContent />} />
-        <Area
-          type="linear"
-          dataKey="store"
-          stackId="a"
-          stroke="var(--color-store)"
-          strokeWidth={2}
-          fill="url(#tremor-stacked-store)"
-          isAnimationActive={false}
-        />
-        <Area
-          type="linear"
-          dataKey="online"
-          stackId="a"
-          stroke="var(--color-online)"
-          strokeWidth={2}
-          fill="url(#tremor-stacked-online)"
-          isAnimationActive={false}
-        />
-      </AreaChart>
-    </ChartContainer>
-  )
-}
-
-function PercentArea() {
-  return (
-    <ChartContainer config={chartConfig} className={panelClass}>
-      <AreaChart
-        accessibilityLayer
-        data={chartData}
-        stackOffset="expand"
-        margin={{ top: 12, right: 8, left: 0, bottom: 8 }}
-      >
-        <defs>
-          <linearGradient id="tremor-percent-store" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="var(--color-store)" stopOpacity={0.7} />
-            <stop offset="95%" stopColor="var(--color-store)" stopOpacity={0.2} />
-          </linearGradient>
-          <linearGradient id="tremor-percent-online" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="var(--color-online)" stopOpacity={0.7} />
-            <stop offset="95%" stopColor="var(--color-online)" stopOpacity={0.2} />
-          </linearGradient>
-        </defs>
-        <TremorAxes percent />
-        <ChartLegend content={<ChartLegendContent />} />
-        <Area
-          type="linear"
-          dataKey="store"
-          stackId="a"
-          stroke="var(--color-store)"
-          strokeWidth={2}
-          fill="url(#tremor-percent-store)"
-          isAnimationActive={false}
-        />
-        <Area
-          type="linear"
-          dataKey="online"
-          stackId="a"
-          stroke="var(--color-online)"
-          strokeWidth={2}
-          fill="url(#tremor-percent-online)"
-          isAnimationActive={false}
-        />
-      </AreaChart>
-    </ChartContainer>
-  )
-}
-
-function AxisTitlesArea() {
-  return (
-    <ChartContainer config={chartConfig} className={panelClass}>
-      <AreaChart
-        accessibilityLayer
-        data={chartData}
-        margin={{ top: 12, right: 28, left: 0, bottom: 28 }}
-      >
-        <defs>
-          <linearGradient id="tremor-axis-store" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="var(--color-store)" stopOpacity={0.45} />
-            <stop offset="95%" stopColor="var(--color-store)" stopOpacity={0.15} />
-          </linearGradient>
-        </defs>
-        <TremorAxes xLabel="ماه" yLabel="فروش" />
-        <Area
-          type="linear"
-          dataKey="store"
-          stroke="var(--color-store)"
-          strokeWidth={2}
-          fill="url(#tremor-axis-store)"
-          isAnimationActive={false}
-        />
-      </AreaChart>
-    </ChartContainer>
-  )
-}
-
-function StartEndLabelsArea() {
-  return (
-    <ChartContainer config={chartConfig} className={panelClass}>
-      <AreaChart
-        accessibilityLayer
-        data={chartData}
-        margin={{ top: 12, right: 8, left: 0, bottom: 8 }}
-      >
-        <AreaGradients idPrefix="tremor-ends" />
-        <TremorAxes startEndOnly />
-        <ChartLegend content={<ChartLegendContent />} />
-        <Area
-          type="linear"
-          dataKey="store"
-          stroke="var(--color-store)"
-          strokeWidth={2}
-          fill="url(#tremor-ends-store)"
-          isAnimationActive={false}
-        />
-        <Area
-          type="linear"
-          dataKey="online"
-          stroke="var(--color-online)"
-          strokeWidth={2}
-          fill="url(#tremor-ends-online)"
-          isAnimationActive={false}
-        />
-      </AreaChart>
-    </ChartContainer>
-  )
-}
-
-function TooltipCallbackArea() {
-  const [activeMonth, setActiveMonth] = React.useState(chartData[0]!.month)
-  const active = chartData.find((row) => row.month === activeMonth) ?? chartData[0]!
-  const total = active.store + active.online
-
-  return (
-    <div className="flex w-full flex-col gap-3">
-      <div className="px-1">
-        <p className="text-xs text-muted-foreground">درآمد ماه</p>
-        <p className="font-sans text-2xl font-semibold tracking-tight text-foreground [font-family:var(--font-sans)]">
-          {formatPersianNumber(total)} تومان
-        </p>
-        <p className="text-xs text-muted-foreground">{activeMonth}</p>
-      </div>
-      <ChartContainer config={chartConfig} className={panelClass}>
-        <AreaChart
-          accessibilityLayer
-          data={chartData}
-          margin={{ top: 12, right: 8, left: 0, bottom: 8 }}
-          onMouseMove={(state) => {
-            const label = state?.activeLabel
-            if (typeof label === "string" && label !== activeMonth) {
-              setActiveMonth(label)
-            }
+    <div className="min-w-0 flex-1 overflow-hidden rounded-xl border border-border/60 bg-background">
+      <div className="flex items-start justify-between gap-2 px-3.5 pt-3.5">
+        <div className="min-w-0">
+          <p className="text-muted-foreground text-[11px] font-medium tracking-wide">
+            {label}
+          </p>
+          <p className="mt-0.5 whitespace-nowrap text-[13px] font-semibold tracking-tight sm:text-sm">
+            {formatMoney(value)}
+          </p>
+        </div>
+        <span
+          className="shrink-0 rounded-md px-1.5 py-0.5 text-[11px] font-medium"
+          style={{
+            color: good ? CANDLE_UP : CANDLE_DOWN,
+            background: good ? `${CANDLE_UP}18` : `${CANDLE_DOWN}18`,
           }}
         >
-          <AreaGradients idPrefix="tremor-callback" />
-          <TremorAxes />
-          <ChartLegend content={<ChartLegendContent />} />
+          {formatPct(change)}
+        </span>
+      </div>
+      <ChartContainer
+        config={config}
+        className="aspect-auto h-[72px] w-full font-sans"
+      >
+        <AreaChart data={data} margin={{ top: 6, right: 0, bottom: 0, left: 0 }}>
+          <defs>
+            <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={color} stopOpacity={0.4} />
+              <stop offset="100%" stopColor={color} stopOpacity={0.02} />
+            </linearGradient>
+          </defs>
           <Area
-            type="linear"
-            dataKey="store"
-            stroke="var(--color-store)"
+            type="monotone"
+            dataKey="value"
+            stroke={color}
+            fill={`url(#${gradId})`}
             strokeWidth={2}
-            fill="url(#tremor-callback-store)"
-            isAnimationActive={false}
-          />
-          <Area
-            type="linear"
-            dataKey="online"
-            stroke="var(--color-online)"
-            strokeWidth={2}
-            fill="url(#tremor-callback-online)"
+            dot={false}
+            activeDot={false}
             isAnimationActive={false}
           />
         </AreaChart>
@@ -375,45 +189,314 @@ function TooltipCallbackArea() {
   )
 }
 
-export default function TremorAreaChartsDemo() {
+function RevenueTooltip({ active, payload }: TooltipContentProps) {
+  if (!(active && payload?.length)) return null
+  const row = payload[0]?.payload as MonthRow | undefined
+  if (!row) return null
+  const total = row.store + row.online
+
   return (
-    <div className="flex w-full flex-col gap-10">
-      <Section
-        title="ناحیه‌ای ساده"
-        hint="دو سری فروش — الگوی پیش‌فرض Tremor"
+    <div className="min-w-[10rem] rounded-lg border bg-background px-3 py-2.5 text-xs shadow-xl font-sans">
+      <p className="mb-2 font-medium">{row.month}</p>
+      <div className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-muted-foreground">
+        <span className="flex items-center gap-1.5">
+          <span
+            className="size-1.5 rounded-full"
+            style={{ background: STORE_COLOR }}
+          />
+          {FA_CHART.store}
+        </span>
+        <span className="text-end text-foreground">{formatMoney(row.store)}</span>
+        <span className="flex items-center gap-1.5">
+          <span
+            className="size-1.5 rounded-full"
+            style={{ background: ONLINE_COLOR }}
+          />
+          {FA_CHART.online}
+        </span>
+        <span className="text-end text-foreground">{formatMoney(row.online)}</span>
+      </div>
+      <p className="mt-2 border-t pt-1.5 text-end font-medium text-foreground">
+        جمع: {formatMoney(total)}
+      </p>
+    </div>
+  )
+}
+
+function AreaGradients({ idPrefix }: { idPrefix: string }) {
+  return (
+    <defs>
+      <linearGradient id={`${idPrefix}-store`} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor={STORE_COLOR} stopOpacity={0.36} />
+        <stop offset="100%" stopColor={STORE_COLOR} stopOpacity={0.02} />
+      </linearGradient>
+      <linearGradient id={`${idPrefix}-online`} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor={ONLINE_COLOR} stopOpacity={0.36} />
+        <stop offset="100%" stopColor={ONLINE_COLOR} stopOpacity={0.02} />
+      </linearGradient>
+    </defs>
+  )
+}
+
+function HeroArea() {
+  const [activeMonth, setActiveMonth] = React.useState(
+    chartData[chartData.length - 1]!.month
+  )
+  const active =
+    chartData.find((row) => row.month === activeMonth) ??
+    chartData[chartData.length - 1]!
+  const total = active.store + active.online
+
+  return (
+    <div className="overflow-hidden rounded-xl border border-border/60 bg-background">
+      <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border/50 px-4 py-3">
+        <div>
+          <p className="text-muted-foreground text-[11px] font-medium">
+            درآمد ماه
+          </p>
+          <p className="mt-0.5 whitespace-nowrap text-xl font-semibold tracking-tight">
+            {formatMoney(total)}
+          </p>
+          <p className="text-muted-foreground mt-0.5 text-[11px]">
+            {active.month}
+          </p>
+        </div>
+        <div className="flex gap-4 text-[11px]">
+          <span className="flex items-center gap-1.5 text-muted-foreground">
+            <span
+              className="size-2 rounded-[2px]"
+              style={{ background: STORE_COLOR }}
+            />
+            {FA_CHART.store}
+          </span>
+          <span className="flex items-center gap-1.5 text-muted-foreground">
+            <span
+              className="size-2 rounded-[2px]"
+              style={{ background: ONLINE_COLOR }}
+            />
+            {FA_CHART.online}
+          </span>
+        </div>
+      </div>
+      <ChartContainer
+        config={chartConfig}
+        className={`${chart2BarContainerClassName} max-h-[320px] max-w-none`}
       >
-        <DefaultArea />
-      </Section>
-      <Section
-        title="دسته‌های روی‌هم"
-        hint="type=stacked — مجموع انباشته"
+        <AreaChart
+          accessibilityLayer
+          data={chartData}
+          margin={{ top: 16, right: 8, left: 4, bottom: 4 }}
+          onMouseMove={(state) => {
+            const label = state?.activeLabel
+            if (typeof label === "string" && label !== activeMonth) {
+              setActiveMonth(label)
+            }
+          }}
+        >
+          <AreaGradients idPrefix="tremor-hero" />
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
+          <XAxis
+            dataKey="month"
+            reversed
+            tickLine={false}
+            axisLine={false}
+            tickMargin={10}
+            minTickGap={18}
+          />
+          <YAxis
+            orientation="right"
+            width={CHART_TOMAN_AXIS_WIDTH}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={6}
+            tickCount={5}
+            tick={TomanAxisTick}
+          />
+          <ChartTooltip
+            cursor={{ stroke: STORE_COLOR, strokeOpacity: 0.35 }}
+            content={RevenueTooltip}
+          />
+          <Area
+            type="monotone"
+            dataKey="store"
+            stroke={STORE_COLOR}
+            strokeWidth={2}
+            fill="url(#tremor-hero-store)"
+            isAnimationActive={false}
+          />
+          <Area
+            type="monotone"
+            dataKey="online"
+            stroke={ONLINE_COLOR}
+            strokeWidth={2}
+            fill="url(#tremor-hero-online)"
+            isAnimationActive={false}
+          />
+        </AreaChart>
+      </ChartContainer>
+    </div>
+  )
+}
+
+function VariantCard({
+  title,
+  hint,
+  children,
+}: {
+  title: string
+  hint: string
+  children: React.ReactNode
+}) {
+  return (
+    <div className="min-w-0 flex-1 overflow-hidden rounded-xl border border-border/60 bg-background">
+      <div className="border-b border-border/50 px-3.5 py-2.5">
+        <p className="text-sm font-medium">{title}</p>
+        <p className="text-muted-foreground text-[11px]">{hint}</p>
+      </div>
+      <div className="px-1 pb-1 pt-2">{children}</div>
+    </div>
+  )
+}
+
+function StackedVariant() {
+  return (
+    <ChartContainer
+      config={chartConfig}
+      className={`aspect-auto h-[200px] w-full font-sans ${chart2DashedGridClassName}`}
+    >
+      <AreaChart
+        accessibilityLayer
+        data={chartData}
+        margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
       >
-        <StackedArea />
-      </Section>
-      <Section
-        title="درصدی"
-        hint="type=percent — سهم نسبی هر سری"
+        <AreaGradients idPrefix="tremor-stack" />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          reversed
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          minTickGap={28}
+          interval="preserveStartEnd"
+        />
+        <YAxis hide domain={[0, "auto"]} />
+        <ChartTooltip content={RevenueTooltip} />
+        <ChartLegend content={<ChartLegendContent />} />
+        <Area
+          type="monotone"
+          dataKey="store"
+          stackId="a"
+          stroke={STORE_COLOR}
+          strokeWidth={1.75}
+          fill="url(#tremor-stack-store)"
+          isAnimationActive={false}
+        />
+        <Area
+          type="monotone"
+          dataKey="online"
+          stackId="a"
+          stroke={ONLINE_COLOR}
+          strokeWidth={1.75}
+          fill="url(#tremor-stack-online)"
+          isAnimationActive={false}
+        />
+      </AreaChart>
+    </ChartContainer>
+  )
+}
+
+function PercentVariant() {
+  return (
+    <ChartContainer
+      config={chartConfig}
+      className={`aspect-auto h-[200px] w-full font-sans ${chart2DashedGridClassName}`}
+    >
+      <AreaChart
+        accessibilityLayer
+        data={chartData}
+        stackOffset="expand"
+        margin={{ top: 8, right: 8, left: 0, bottom: 0 }}
       >
-        <PercentArea />
-      </Section>
-      <Section
-        title="با عنوان محور"
-        hint="برچسب محور X/Y برای داشبورد"
-      >
-        <AxisTitlesArea />
-      </Section>
-      <Section
-        title="فقط ابتدا و انتها"
-        hint="startEndOnly — محور X خلوت"
-      >
-        <StartEndLabelsArea />
-      </Section>
-      <Section
-        title="تولتیپ با متریک زنده"
-        hint="با حرکت موس، مجموع ماه بالا به‌روز می‌شود"
-      >
-        <TooltipCallbackArea />
-      </Section>
+        <defs>
+          <linearGradient id="tremor-pct-store" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={STORE_COLOR} stopOpacity={0.55} />
+            <stop offset="100%" stopColor={STORE_COLOR} stopOpacity={0.12} />
+          </linearGradient>
+          <linearGradient id="tremor-pct-online" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={ONLINE_COLOR} stopOpacity={0.55} />
+            <stop offset="100%" stopColor={ONLINE_COLOR} stopOpacity={0.12} />
+          </linearGradient>
+        </defs>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          reversed
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          minTickGap={28}
+          interval="preserveStartEnd"
+        />
+        <YAxis
+          orientation="right"
+          width={36}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={4}
+          tickFormatter={(v: number) =>
+            `${toPersianDigits(Math.round(v * 100))}٪`
+          }
+        />
+        <ChartTooltip content={RevenueTooltip} />
+        <Area
+          type="monotone"
+          dataKey="store"
+          stackId="a"
+          stroke={STORE_COLOR}
+          strokeWidth={1.75}
+          fill="url(#tremor-pct-store)"
+          isAnimationActive={false}
+        />
+        <Area
+          type="monotone"
+          dataKey="online"
+          stackId="a"
+          stroke={ONLINE_COLOR}
+          strokeWidth={1.75}
+          fill="url(#tremor-pct-online)"
+          isAnimationActive={false}
+        />
+      </AreaChart>
+    </ChartContainer>
+  )
+}
+
+export default function TremorAreaChartsDemo() {
+  useChart2Caption(() => (
+    <>
+      داشبورد ناحیه‌ای به سبک Tremor — KPI، گرادیان نرم و متریک زنده با هاور
+    </>
+  ))
+
+  return (
+    <div className="w-full max-w-[760px] space-y-4 font-sans">
+      <div className="grid gap-3 sm:grid-cols-3">
+        {kpiCards.map((card) => (
+          <KpiMiniArea key={card.id} {...card} />
+        ))}
+      </div>
+
+      <HeroArea />
+
+      <div className="flex flex-col gap-3 sm:flex-row">
+        <VariantCard title="انباشته" hint="مجموع روی‌هم فروش حضوری و آنلاین">
+          <StackedVariant />
+        </VariantCard>
+        <VariantCard title="سهم نسبی" hint="درصد هر کانال از فروش ماه">
+          <PercentVariant />
+        </VariantCard>
+      </div>
     </div>
   )
 }

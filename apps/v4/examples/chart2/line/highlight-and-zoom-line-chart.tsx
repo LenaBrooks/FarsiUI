@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { useCallback, useState } from "react"
 import {
@@ -12,13 +12,20 @@ import {
 import type { MouseHandlerDataParam } from "recharts"
 
 import { useChart2ToolbarStart } from "@/components/chart2-live"
-import { formatChart2Number, toPersianDigits } from "@/lib/chart2-fa"
+import {
+  CHART2_BAR_COLORS,
+  formatChart2Number,
+  toPersianDigits,
+} from "@/lib/chart2-fa"
 import {
   ChartContainer,
+  ChartLegend,
+  ChartLegendContent,
   ChartTooltip,
   ChartTooltipContent,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
+
 type Impressions = { name: number; cost: number; impression: number }
 
 const impressionsData: Impressions[] = [
@@ -71,8 +78,8 @@ const initialState: ZoomAndHighlightState = {
 }
 
 const chartConfig = {
-  cost: { label: "هزینه", color: "var(--chart-1)" },
-  impression: { label: "بازدید", color: "var(--chart-2)" },
+  cost: { label: "هزینه", color: CHART2_BAR_COLORS[0] },
+  impression: { label: "بازدید", color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 const getAxisYDomain = (
@@ -187,17 +194,21 @@ export default function HighlightAndZoomLineChartDemo() {
     <div className="w-full" style={{ userSelect: "none" }}>
       <ChartContainer
         config={chartConfig}
-        className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] font-sans"
+        className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] font-sans [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
       >
         <LineChart
           accessibilityLayer
           data={impressionsData}
-          margin={{ top: 8, right: 8, left: 8, bottom: 12 }}
+          margin={{ top: 8, right: 12, left: 12, bottom: 36 }}
           onMouseDown={onMouseDown}
           onMouseMove={onMouseMove}
           onMouseUp={zoom}
         >
-          <CartesianGrid />
+          <CartesianGrid strokeDasharray="3 3" />
+          <ChartLegend
+            verticalAlign="top"
+            content={<ChartLegendContent className="pt-0 pb-3" />}
+          />
           <XAxis
             allowDataOverflow
             dataKey="name"
@@ -206,9 +217,15 @@ export default function HighlightAndZoomLineChartDemo() {
             reversed
             tickLine={false}
             axisLine={false}
-            tickMargin={12}
+            tickMargin={10}
             minTickGap={28}
             tickFormatter={(v) => toPersianDigits(v)}
+            label={{
+              value: "روز کمپین",
+              position: "insideBottom",
+              offset: -22,
+              style: { fontFamily: "var(--font-sans)", fontSize: 11 },
+            }}
           />
           <YAxis
             allowDataOverflow
@@ -216,11 +233,22 @@ export default function HighlightAndZoomLineChartDemo() {
             type="number"
             yAxisId="1"
             orientation="right"
-            width={52}
+            width={56}
             tickLine={false}
             axisLine={false}
             tickMargin={10}
             tickFormatter={formatChart2Number}
+            label={{
+              value: "هزینه",
+              angle: -90,
+              position: "insideRight",
+              offset: 0,
+              style: {
+                textAnchor: "middle",
+                fontFamily: "var(--font-sans)",
+                fontSize: 11,
+              },
+            }}
           />
           <YAxis
             orientation="left"
@@ -228,28 +256,43 @@ export default function HighlightAndZoomLineChartDemo() {
             domain={[bottom2, top2]}
             type="number"
             yAxisId="2"
-            width={52}
+            width={56}
             tickLine={false}
             axisLine={false}
             tickMargin={10}
             tickFormatter={formatChart2Number}
+            label={{
+              value: "بازدید",
+              angle: -90,
+              position: "insideLeft",
+              offset: 0,
+              style: {
+                textAnchor: "middle",
+                fontFamily: "var(--font-sans)",
+                fontSize: 11,
+              },
+            }}
           />
           <ChartTooltip content={<ChartTooltipContent />} />
           <Line
             yAxisId="1"
             type="natural"
             dataKey="cost"
+            name="هزینه"
             stroke="var(--color-cost)"
-            strokeWidth={2}
+            strokeWidth={2.75}
             animationDuration={300}
+            dot={false}
           />
           <Line
             yAxisId="2"
             type="natural"
             dataKey="impression"
+            name="بازدید"
             stroke="var(--color-impression)"
-            strokeWidth={2}
+            strokeWidth={2.25}
             animationDuration={300}
+            dot={false}
           />
           {refAreaLeft && refAreaRight ? (
             <ReferenceArea

@@ -11,6 +11,7 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2ContainerClassName,
@@ -35,9 +36,9 @@ const data = [
 ]
 
 const chartConfig = {
-  amt: { label: FA_CHART.orders, color: "var(--chart-1)" },
-  pv: { label: FA_CHART.online, color: "var(--chart-2)" },
-  uv: { label: FA_CHART.store, color: "var(--chart-3)" },
+  amt: { label: FA_CHART.orders, color: CHART2_BAR_COLORS[0] },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[1] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
 export default function ComposedChartWithAxisLabelsDemo() {

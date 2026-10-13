@@ -46,11 +46,11 @@ export function formatToman(
 
   let formatted: string
   if (compact && Math.abs(n) >= 1_000_000_000) {
-    formatted = `${formatPersianNumber(n / 1_000_000_000, { useGrouping: true })} میلیارد`
+    formatted = `${formatPersianNumber(+(n / 1_000_000_000).toFixed(2), { useGrouping: true })} میلیارد`
   } else if (compact && Math.abs(n) >= 1_000_000) {
-    formatted = `${formatPersianNumber(n / 1_000_000, { useGrouping: true })} میلیون`
+    formatted = `${formatPersianNumber(+(n / 1_000_000).toFixed(2), { useGrouping: true })} میلیون`
   } else if (compact && Math.abs(n) >= 1_000) {
-    formatted = `${formatPersianNumber(n / 1_000, { useGrouping: true })} هزار`
+    formatted = `${formatPersianNumber(+(n / 1_000).toFixed(1), { useGrouping: true })} هزار`
   } else {
     formatted = formatPersianNumber(n)
   }
@@ -60,14 +60,52 @@ export function formatToman(
 
 /**
  * Axis tick formatter for toman scales (compact, no «تومان» on every tick).
- * Prefer with {@link CHART_TOMAN_AXIS_WIDTH} and ChartContainer `dir="ltr"`.
+ * Prefer {@link splitTomanCompact} + stacked tick UI when RTL reorders «۲۵ میلیون».
  */
 export function formatTomanAxis(value: number | string) {
   return formatToman(value, { compact: true, suffix: false })
 }
 
-/** Y-axis gutter wide enough for ticks like «۳۲۰ میلیون». */
-export const CHART_TOMAN_AXIS_WIDTH = 78
+/** Split compact toman into amount + unit for stacked axis ticks (number above unit). */
+export function splitTomanCompact(value: number | string): {
+  amount: string
+  unit: string
+} {
+  const n =
+    typeof value === "number" ? value : Number(String(value).replace(/,/g, ""))
+  if (!Number.isFinite(n)) {
+    return { amount: formatPersianNumber(value), unit: "" }
+  }
+  const abs = Math.abs(n)
+  if (abs >= 1_000_000_000) {
+    return {
+      amount: formatPersianNumber(+(n / 1_000_000_000).toFixed(2), {
+        useGrouping: true,
+      }),
+      unit: "میلیارد تومان",
+    }
+  }
+  if (abs >= 1_000_000) {
+    return {
+      amount: formatPersianNumber(+(n / 1_000_000).toFixed(2), {
+        useGrouping: true,
+      }),
+      unit: "میلیون تومان",
+    }
+  }
+  if (abs >= 1_000) {
+    return {
+      amount: formatPersianNumber(+(n / 1_000).toFixed(1), {
+        useGrouping: true,
+      }),
+      unit: "هزار تومان",
+    }
+  }
+  return { amount: formatPersianNumber(n), unit: "تومان" }
+}
+
+/** Y-axis gutter for stacked «۲۵» / «میلیون تومان». */
+export const CHART_TOMAN_AXIS_WIDTH = 64
 
 export const FA_CHART = {
   // Footers / trends
@@ -76,7 +114,7 @@ export const FA_CHART = {
   visitorsLast6Months: "مجموع فروش ۶ ماه گذشته",
   visitorsLast3Months: "مجموع فروش ۳ ماه گذشته",
   trendingUp: "رشد ۵٫۲٪ در این ماه",
-  rangeFarvardinShahrivar: "فروردین — شهریور ۱۴۰۳",
+  rangeFarvardinShahrivar: "فروردین — شهریور ۱۴۰۵",
 
   // Channel series (replaces desktop / mobile)
   store: "فروش حضوری",

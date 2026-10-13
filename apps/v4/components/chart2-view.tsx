@@ -126,14 +126,14 @@ export function Chart2View({
         )}
       >
         <Chart2LiveProvider>
-          <div className="rounded-xl border border-border/60">
-            <div className="flex min-h-9 flex-wrap items-center justify-start gap-2 rounded-t-xl border-b border-border/50 bg-muted/10 px-3 py-2">
+          <div className="overflow-visible rounded-xl border border-border/60 bg-muted/20">
+            <div className="flex min-h-9 items-center gap-2 border-b border-border/40 px-2.5 py-1">
               <Chart2ToolbarStart />
-              <div className="ms-auto flex shrink-0 items-center gap-0.5">
+              <div className="ms-auto shrink-0">
                 <Chart2RandomizeButton />
               </div>
             </div>
-            <div className="flex items-center justify-center overflow-visible rounded-b-xl bg-muted/20 p-4 md:p-6">
+            <div className="flex items-center justify-center p-4 md:p-6">
               <Chart2DemoPreview id={example.id} />
             </div>
           </div>
@@ -189,7 +189,7 @@ export function Chart2View({
           </Tabs>
 
           <DocsHeading id="استفاده">استفاده</DocsHeading>
-          <div data-not-typeset className="space-y-4">
+          <div data-not-typeset className="min-w-0 max-w-full space-y-4">
             {usageFigures}
           </div>
         </div>

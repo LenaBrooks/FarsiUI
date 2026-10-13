@@ -9,7 +9,9 @@ import {
   YAxis,
 } from "recharts"
 
-import { formatChart2Number } from "@/lib/chart2-fa"
+import { useChart2Caption } from "@/components/chart2-live"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
+import { formatPersianNumber } from "@/lib/chart-locale"
 import {
   ChartContainer,
   ChartTooltip,
@@ -37,75 +39,79 @@ const minY = Math.min(...data.map((d) => d.y))
 const chartConfig = {
   y: {
     label: "مقدار Y",
-    color: "var(--chart-1)",
+    color: CHART2_BAR_COLORS[0],
   },
 } satisfies ChartConfig
 
 export default function LineChartNegativeValuesWithReferenceLinesDemo() {
+  useChart2Caption(() => "مقادیر منفی با خطوط مرجع · ارقام فارسی", [])
+
   return (
-    <ChartContainer
-      config={chartConfig}
-      className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] font-sans"
-    >
-      <LineChart
-        accessibilityLayer
-        margin={{ top: 8, right: 8, left: 8, bottom: 8 }}
+    <div dir="rtl" className="w-full max-w-[700px] font-sans">
+      <ChartContainer
+        config={chartConfig}
+        className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] font-sans [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <YAxis
-          dataKey="y"
-          domain={["auto", "auto"]}
-          type="number"
-          interval={0}
-          orientation="right"
-          allowDataOverflow
-          strokeWidth={minX < 0 ? 0 : 1}
-          width={48}
-          tickFormatter={formatChart2Number}
-          label={{
-            value: "محور Y",
-            style: {
-              textAnchor: "middle",
-              fontFamily: "var(--font-sans)",
-            },
-            angle: -90,
-            position: "insideRight",
-            offset: 0,
-          }}
-        />
-        <XAxis
-          dataKey="x"
-          domain={["auto", "auto"]}
-          interval={0}
-          type="number"
-          reversed
-          allowDataOverflow
-          strokeWidth={minY < 0 ? 0 : 1}
-          tickFormatter={formatChart2Number}
-          label={{
-            key: "xAxisLabel",
-            value: "محور X",
-            position: "bottom",
-            style: { fontFamily: "var(--font-sans)" },
-          }}
-        />
-        {minY < 0 ? (
-          <ReferenceLine y={0} strokeWidth={1.5} strokeOpacity={0.65} />
-        ) : null}
-        {minX < 0 ? (
-          <ReferenceLine x={0} strokeWidth={1.5} strokeOpacity={0.65} />
-        ) : null}
-        <ChartTooltip content={<ChartTooltipContent />} />
-        <Line
-          strokeWidth={2}
-          data={data}
-          dot={false}
-          type="monotone"
-          dataKey="y"
-          stroke="var(--color-y)"
-          tooltipType="none"
-        />
-      </LineChart>
-    </ChartContainer>
+        <LineChart
+          accessibilityLayer
+          margin={{ top: 18, right: 8, left: 8, bottom: 8 }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <YAxis
+            dataKey="y"
+            domain={["auto", "auto"]}
+            type="number"
+            interval={0}
+            orientation="right"
+            allowDataOverflow
+            strokeWidth={minX < 0 ? 0 : 1}
+            width={52}
+            tickFormatter={(v) => formatPersianNumber(v)}
+            label={{
+              value: "محور Y",
+              style: {
+                textAnchor: "middle",
+                fontFamily: "var(--font-sans)",
+              },
+              angle: -90,
+              position: "insideRight",
+              offset: 0,
+            }}
+          />
+          <XAxis
+            dataKey="x"
+            domain={["auto", "auto"]}
+            interval={0}
+            type="number"
+            reversed
+            allowDataOverflow
+            strokeWidth={minY < 0 ? 0 : 1}
+            tickFormatter={(v) => formatPersianNumber(v)}
+            label={{
+              key: "xAxisLabel",
+              value: "محور X",
+              position: "bottom",
+              style: { fontFamily: "var(--font-sans)" },
+            }}
+          />
+          {minY < 0 ? (
+            <ReferenceLine y={0} strokeWidth={1.5} strokeOpacity={0.65} />
+          ) : null}
+          {minX < 0 ? (
+            <ReferenceLine x={0} strokeWidth={1.5} strokeOpacity={0.65} />
+          ) : null}
+          <ChartTooltip content={<ChartTooltipContent />} />
+          <Line
+            strokeWidth={2.5}
+            data={data}
+            dot={false}
+            type="monotone"
+            dataKey="y"
+            stroke="var(--color-y)"
+            tooltipType="none"
+          />
+        </LineChart>
+      </ChartContainer>
+    </div>
   )
 }

@@ -13,9 +13,10 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2BarContainerClassName,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -26,13 +27,13 @@ import {
 } from "@/registry/new-york-v4/ui/chart"
 
 const colors = [
-  "var(--chart-1)",
-  "var(--chart-2)",
-  "var(--chart-3)",
-  "var(--chart-4)",
-  "var(--chart-5)",
-  "var(--chart-1)",
-  "var(--chart-2)",
+  CHART2_BAR_COLORS[0],
+  CHART2_BAR_COLORS[1],
+  CHART2_BAR_COLORS[2],
+  CHART2_BAR_COLORS[3],
+  CHART2_BAR_COLORS[4],
+  CHART2_BAR_COLORS[0],
+  CHART2_BAR_COLORS[1],
 ]
 
 const data = [
@@ -46,7 +47,7 @@ const data = [
 ]
 
 const chartConfig = {
-  uv: { label: FA_CHART.store, color: "var(--chart-1)" },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 function getPath(x: number, y: number, width: number, height: number) {
@@ -84,13 +85,13 @@ function CustomColorLabel(props: LabelProps) {
 
 export default function CustomShapeBarChartDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data}
         margin={{ top: 20, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <ChartTooltip cursor={{ fillOpacity: 0.5 }} content={<ChartTooltipContent />} />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis

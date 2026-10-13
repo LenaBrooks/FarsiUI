@@ -8,6 +8,7 @@ import {
   RadarChart,
 } from "recharts"
 
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartLegend,
@@ -27,7 +28,7 @@ const data = [
 ]
 
 const chartConfig = {
-  A: { label: "سقف بازه", color: "var(--chart-1)" },
+  A: { label: "سقف بازه", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function RadarRangeCustomAnimationDemo() {

@@ -9,10 +9,13 @@ import {
   YAxis,
 } from "recharts"
 
+import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
-  formatChart2Number,
+  chart2AreaContainerClassName,
 } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -32,7 +35,7 @@ const data = [
 ]
 
 const chartConfig = {
-  uv: { label: FA_CHART.store, color: "var(--chart-1)" },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function ResponsiveContainerDemo({
@@ -43,43 +46,67 @@ export default function ResponsiveContainerDemo({
   return (
     <ChartContainer
       config={chartConfig}
-      className="aspect-[1.618] h-auto w-full max-h-[500px] font-sans text-xs"
+      className={`${chart2AreaContainerClassName} max-h-[420px]`}
     >
       <AreaChart
         accessibilityLayer
         data={data}
-        margin={{ top: 20, right: 8, left: 0, bottom: 0 }}
+        margin={{ top: 20, right: 8, left: 12, bottom: 4 }}
       >
-        <XAxis dataKey="name" reversed tickMargin={8} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="name"
+          reversed
+          tickLine={false}
+          axisLine={false}
+          tickMargin={10}
+        />
         <YAxis
           orientation="right"
-          width={52}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={CHART_TOMAN_AXIS_WIDTH}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tick={TomanAxisTick}
+          tickCount={4}
+          // ۰ / ۲هزار / ۴هزار / ۶هزار — سقف ۴هزار وسط فضای خالی می‌ماند
+          domain={[0, 6000]}
         />
-        <CartesianGrid vertical={false} />
-        <ChartTooltip content={<ChartTooltipContent />} />
+        <ChartTooltip
+          cursor={{ stroke: CHART2_BAR_COLORS[0], strokeOpacity: 0.35 }}
+          content={<ChartTooltipContent />}
+        />
         <ReferenceLine
           x={FA_MONTHS[2]}
-          stroke="var(--chart-2)"
+          stroke={CHART2_BAR_COLORS[1]}
+          strokeDasharray="4 4"
           label={{
             value: "حداقل ماه",
             position: "insideTopLeft",
-            fill: "var(--chart-2)",
+            fill: CHART2_BAR_COLORS[1],
             fontFamily: "var(--font-sans)",
             fontSize: 11,
           }}
         />
         <ReferenceLine
           y={4000}
-          stroke="var(--destructive)"
-          strokeDasharray="3 3"
-          label={{
-            value: "حداکثر",
-            position: "insideTopRight",
-            fill: "var(--destructive)",
-            fontFamily: "var(--font-sans)",
-            fontSize: 11,
+          stroke={CHART2_BAR_COLORS[3]}
+          strokeDasharray="4 4"
+          label={({ viewBox }) => {
+            if (!viewBox || !("y" in viewBox) || !("x" in viewBox)) return null
+            const vb = viewBox as { x: number; y: number }
+            return (
+              <text
+                x={vb.x + 10}
+                y={vb.y - 8}
+                fill={CHART2_BAR_COLORS[3]}
+                fontSize={11}
+                fontFamily="var(--font-sans)"
+                textAnchor="start"
+              >
+                سقف هدف
+              </text>
+            )
           }}
         />
         <Area
@@ -87,7 +114,8 @@ export default function ResponsiveContainerDemo({
           dataKey="uv"
           stroke="var(--color-uv)"
           fill="var(--color-uv)"
-          fillOpacity={0.35}
+          fillOpacity={0.28}
+          strokeWidth={2}
           isAnimationActive={isAnimationActive}
         />
       </AreaChart>

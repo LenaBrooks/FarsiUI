@@ -113,8 +113,8 @@ export function Chart2RandomizeButton() {
       type="button"
       variant="ghost"
       size="icon-sm"
-      aria-label="داده تصادفی"
-      className="size-7 text-muted-foreground/60 hover:bg-transparent hover:text-muted-foreground"
+      aria-label="بارگذاری دوباره"
+      className="size-7 cursor-pointer text-muted-foreground/60 hover:bg-transparent hover:text-muted-foreground"
       onClick={live.randomize}
     >
       <RotateCcwIcon className="size-3.5" />

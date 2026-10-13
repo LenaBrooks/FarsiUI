@@ -81,7 +81,8 @@ export async function highlightCode(code: string, language: string = "tsx") {
       {
         pre(node) {
           node.properties["class"] =
-            "scrollbar-soft min-w-0 overflow-x-auto overflow-y-auto overscroll-x-contain overscroll-y-auto px-4 py-3.5 outline-none has-[[data-highlighted-line]]:px-0 has-[[data-line-numbers]]:px-0 has-[[data-slot=tabs]]:p-0 !bg-transparent"
+            // pe-12: جا برای دکمهٔ کپی؛ با line-numbers فقط شروع صفر شود نه پایان
+            "scrollbar-soft min-w-0 overflow-x-auto overflow-y-auto overscroll-x-contain overscroll-y-auto ps-4 pe-12 py-3.5 outline-none has-[[data-highlighted-line]]:ps-0 has-[[data-line-numbers]]:ps-0 has-[[data-slot=tabs]]:p-0 !bg-transparent"
         },
         code(node) {
           node.properties["data-line-numbers"] = ""

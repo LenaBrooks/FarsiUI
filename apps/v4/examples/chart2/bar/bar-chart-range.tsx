@@ -3,8 +3,9 @@
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2BarContainerClassName,
   formatChart2Number,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -30,7 +31,7 @@ const rangeData = [
 const chartConfig = {
   temperature: {
     label: "بازهٔ دما",
-    color: "var(--chart-1)",
+    color: CHART2_BAR_COLORS[0],
   },
 } satisfies ChartConfig
 
@@ -40,13 +41,13 @@ export default function BarChartRangeDemo({
   isAnimationActive?: boolean
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={rangeData}
         margin={{ top: 20, right: 12, bottom: 20, left: 8 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="day" reversed tickMargin={8} />
         <YAxis
           orientation="right"

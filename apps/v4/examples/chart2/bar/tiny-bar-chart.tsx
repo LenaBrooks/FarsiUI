@@ -3,7 +3,7 @@
 import { Bar, BarChart } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
-import { chart2MockConfig } from "@/lib/chart2-fa"
+import { chart2BarMockConfig } from "@/lib/chart2-fa"
 import { ChartContainer } from "@/registry/new-york-v4/ui/chart"
 
 export default function TinyBarChartDemo() {
@@ -11,7 +11,7 @@ export default function TinyBarChartDemo() {
 
   return (
     <ChartContainer
-      config={chart2MockConfig}
+      config={chart2BarMockConfig}
       className="aspect-[1.618] h-[100px] w-full max-w-[300px] font-sans"
     >
       <BarChart accessibilityLayer data={data}>

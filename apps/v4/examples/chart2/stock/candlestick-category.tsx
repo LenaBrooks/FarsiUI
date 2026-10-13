@@ -11,7 +11,7 @@ import {
 } from "recharts"
 
 import { useChart2Caption } from "@/components/chart2-live"
-import { chart2ContainerClassName } from "@/lib/chart2-fa"
+import { chart2BarContainerClassName } from "@/lib/chart2-fa"
 import {
   generateMockMarketData,
   type MarketCandle,
@@ -60,13 +60,13 @@ export default function CandlestickCategoryDemo({
 
   return (
     <div className="w-full max-w-[700px] font-sans">
-      <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+      <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
         <BarChart
           accessibilityLayer
           data={data}
           margin={{ top: 28, right: 8, bottom: 8, left: 0 }}
         >
-          <CartesianGrid vertical={false} />
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
           <XAxis
             dataKey="label"
             type="category"

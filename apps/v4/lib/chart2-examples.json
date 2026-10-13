@@ -66,11 +66,6 @@
       "en": "ResponsiveContainer"
     },
     {
-      "id": "xaxis",
-      "title": "محور X",
-      "en": "XAxis"
-    },
-    {
       "id": "stock",
       "title": "سهام و ترید",
       "en": "Stock & Trade"
@@ -712,93 +707,135 @@
       "category": "responsive"
     },
     {
-      "id": "multi-x-axis",
-      "title": "چند محور X",
-      "en": "Multiple X Axes",
-      "category": "xaxis"
-    },
-    {
-      "id": "x-axis-auto-height",
-      "title": "ارتفاع خودکار محور X",
-      "en": "Automatic X Axis Height",
-      "category": "xaxis"
-    },
-    {
       "id": "candlestick",
-      "title": "کندل ساده",
-      "en": "Basic Candlestick",
+      "title": "نمودار کندل‌استیک",
+      "en": "Candlestick Chart",
+      "category": "stock"
+    },
+    {
+      "id": "candlestick-dashboard",
+      "title": "داشبورد کندل",
+      "en": "Candlestick Dashboard",
       "category": "stock"
     },
     {
       "id": "candlestick-bar",
-      "title": "کندل و میله",
+      "title": "کندل‌استیک و میله‌ای",
       "en": "Candlestick + Bar",
       "category": "stock"
     },
     {
       "id": "candlestick-category",
-      "title": "کندل با محور دسته‌ای",
-      "en": "Category X-Axis",
+      "title": "کندل‌استیک با محور دسته‌ای",
+      "en": "Candlestick Category Axis",
       "category": "stock"
     },
     {
       "id": "candlestick-line",
-      "title": "کندل و خط",
+      "title": "کندل‌استیک و خطی",
       "en": "Candlestick + Line",
       "category": "stock"
     },
     {
       "id": "sparklines",
-      "title": "اسپارک‌لاین",
-      "en": "Sparklines",
+      "title": "اسپارک‌لاین قیمت",
+      "en": "Price Sparklines",
       "category": "stock"
     },
     {
       "id": "stock-ohlc",
-      "title": "میلهٔ OHLC",
-      "en": "OHLC Bar",
+      "title": "نمودار میله‌ای OHLC",
+      "en": "OHLC Bar Chart",
       "category": "stock"
     },
     {
       "id": "stock-line",
-      "title": "خط قیمت",
-      "en": "Stock Line",
+      "title": "نمودار خط قیمت",
+      "en": "Price Line Chart",
       "category": "stock"
     },
     {
       "id": "stock-column",
-      "title": "ستون قیمت",
-      "en": "Stock Column",
+      "title": "نمودار ستونی قیمت",
+      "en": "Price Column Chart",
       "category": "stock"
     },
     {
       "id": "stock-with-volume",
-      "title": "قیمت و حجم",
+      "title": "نمودار قیمت و حجم معاملات",
       "en": "Price & Volume",
       "category": "stock"
     },
     {
       "id": "stock-multi-series",
-      "title": "چند نماد",
-      "en": "Multi-Series Stock",
+      "title": "مقایسه چند نماد",
+      "en": "Multi-Symbol Compare",
       "category": "stock"
     },
     {
       "id": "stock-trendline",
-      "title": "خط روند",
-      "en": "Stock Trendline",
+      "title": "نمودار خط روند",
+      "en": "Trendline Chart",
       "category": "stock"
     },
     {
       "id": "tremor-area-charts",
-      "title": "ناحیه‌ای Tremor",
-      "en": "Tremor Area",
+      "title": "نمودار ناحیه‌ای",
+      "en": "Area Chart",
       "category": "stock"
     },
     {
       "id": "realtime-mountain-chart",
-      "title": "کوهستانی زنده",
-      "en": "Realtime Mountain",
+      "title": "نمودار ناحیه‌ای زنده",
+      "en": "Live Area Chart",
+      "category": "stock"
+    },
+    {
+      "id": "heikin-ashi",
+      "title": "هیکن‌آشی",
+      "en": "Heikin-Ashi",
+      "category": "stock"
+    },
+    {
+      "id": "renko-chart",
+      "title": "نمودار رنکو",
+      "en": "Renko Chart",
+      "category": "stock"
+    },
+    {
+      "id": "volume-profile",
+      "title": "پروفایل حجم",
+      "en": "Volume Profile",
+      "category": "stock"
+    },
+    {
+      "id": "order-book-depth",
+      "title": "عمق بازار",
+      "en": "Order Book Depth",
+      "category": "stock"
+    },
+    {
+      "id": "drawdown-chart",
+      "title": "نمودار افت سرمایه",
+      "en": "Drawdown Chart",
+      "category": "stock"
+    },
+    {
+      "id": "bollinger-bands",
+      "title": "باندهای بولینگر",
+      "en": "Bollinger Bands",
+      "category": "stock"
+    },
+    {
+      "id": "candlestick-indicators",
+      "title": "کندل‌استیک با اندیکاتور",
+      "en": "Candlestick + Indicators",
+      "category": "stock"
+    },
+    {
+      "id": "multi-timeframe",
+      "title": "چند بازهٔ زمانی",
+      "en": "Multi-Timeframe",
       "category": "stock"
     },
     {

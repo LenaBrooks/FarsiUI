@@ -1,11 +1,13 @@
-/** پالت ملایم برای درخت‌نقشه — نزدیک نمونهٔ Recharts، بدون رنگ جیغ. */
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
+
+/** Same soft palette as bar / pie / radial demos. */
 export const TREEMAP_COLORS = [
-  "#8899c9",
-  "#7eaf8a",
-  "#d4b85c",
-  "#c98b6e",
-  "#7aabbf",
-  "#a88fbf",
+  CHART2_BAR_COLORS[0],
+  CHART2_BAR_COLORS[1],
+  CHART2_BAR_COLORS[2],
+  CHART2_BAR_COLORS[3],
+  CHART2_BAR_COLORS[4],
+  CHART2_BAR_COLORS[0],
 ] as const
 
 export function treemapColorAt(index: number, count = TREEMAP_COLORS.length) {

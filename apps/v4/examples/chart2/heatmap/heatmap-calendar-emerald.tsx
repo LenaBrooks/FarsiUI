@@ -3,13 +3,14 @@
 import { useMemo } from "react"
 
 import { useChart2RandomSeed } from "@/components/chart2-live"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
 
 import {
   CalendarHeatmap,
   generateCalendarHeatData,
 } from "./heatmap-shared"
 
-/** GitHub-like emerald ramp via a vivid chart token. */
+/** تقویم با سبز نرم پالت chart2. */
 export default function HeatmapCalendarEmeraldDemo() {
   const seed = useChart2RandomSeed(9107)
   const data = useMemo(() => generateCalendarHeatData(365, seed), [seed])
@@ -18,9 +19,9 @@ export default function HeatmapCalendarEmeraldDemo() {
     <CalendarHeatmap
       data={data}
       unit="کامیت"
-      color="#30a14e"
+      color={CHART2_BAR_COLORS[2]}
       days={365}
-      caption="پالت زمردی گیت‌هاب‌مانند — مناسب تم روشن و تیره"
+      caption="پالت سبز نرم chart2 — مناسب تم روشن و تیره"
     />
   )
 }

@@ -37,7 +37,7 @@ export function SkillCopyCommand({
     <figure
       data-rehype-pretty-code-figure=""
       data-not-typeset=""
-      className={cn("relative m-0! md:mx-0!", className)}
+      className={cn("relative mx-0! mt-5 mb-0 md:mx-0!", className)}
     >
       <CodeBlockCommand
         __npm__={npm}

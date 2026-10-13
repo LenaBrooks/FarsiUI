@@ -30,9 +30,12 @@ import {
 import { Spinner } from "@/registry/new-york-v4/ui/spinner"
 
 export function CommandMenu({
-  ...props
-}: React.ComponentProps<typeof Dialog> & {
-  /** Kept for call-site compatibility; unused — search-only menu. */
+  // Call-site props kept for compatibility; search menu does not use them.
+  tree: _tree,
+  colors: _colors,
+  blocks: _blocks,
+  navItems: _navItems,
+}: {
   tree?: typeof source.pageTree
   colors?: ColorPalette[]
   blocks?: { name: string; description: string; categories: string[] }[]
@@ -118,7 +121,6 @@ export function CommandMenu({
             "relative h-8 w-full justify-start rounded-lg border-none bg-muted ps-3 text-foreground shadow-none transition-colors hover:bg-muted/50 md:w-48 lg:w-40 xl:w-64 dark:bg-card"
           )}
           onClick={() => setOpen(true)}
-          {...props}
         >
           <span className="hidden xl:inline-flex">جستجو در مستندات...</span>
           <span className="inline-flex xl:hidden">جستجو...</span>

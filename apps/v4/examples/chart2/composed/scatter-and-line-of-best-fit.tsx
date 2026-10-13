@@ -10,6 +10,7 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   chart2ContainerClassName,
   formatChart2Number,
 } from "@/lib/chart2-fa"
@@ -34,10 +35,10 @@ const data = [
 ]
 
 const chartConfig = {
-  red: { label: "سری قرمز", color: "var(--chart-1)" },
-  blue: { label: "سری آبی", color: "var(--chart-2)" },
-  redLine: { label: "روند قرمز", color: "var(--chart-1)" },
-  blueLine: { label: "روند آبی", color: "var(--chart-2)" },
+  red: { label: "سری صورتی", color: CHART2_BAR_COLORS[1] },
+  blue: { label: "سری آبی", color: CHART2_BAR_COLORS[0] },
+  redLine: { label: "روند صورتی", color: CHART2_BAR_COLORS[1] },
+  blueLine: { label: "روند آبی", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 function isTooltipValue(value: unknown) {

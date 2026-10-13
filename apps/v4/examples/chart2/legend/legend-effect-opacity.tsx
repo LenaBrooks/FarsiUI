@@ -11,11 +11,14 @@ import {
   type LegendPayload,
 } from "recharts"
 
+import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2ContainerClassName,
-  formatChart2Number,
+  chart2DashedGridClassName,
 } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -36,8 +39,8 @@ const data = [
 ]
 
 const chartConfig = {
-  pv: { label: FA_CHART.online, color: "var(--chart-1)" },
-  uv: { label: FA_CHART.store, color: "var(--chart-2)" },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[0] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 export default function LegendEffectOpacityDemo() {
@@ -65,25 +68,37 @@ export default function LegendEffectOpacityDemo() {
   }
 
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer
+      config={chartConfig}
+      className={`${chart2ContainerClassName} ${chart2DashedGridClassName} [&_.recharts-legend-item]:inline-flex [&_.recharts-legend-item]:items-center [&_.recharts-legend-item]:gap-2`}
+    >
       <LineChart
         accessibilityLayer
         data={data}
-        margin={{ top: 20, right: 8, left: 0, bottom: 0 }}
+        margin={{ top: 20, right: 8, left: 0, bottom: 36 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"
-          width={52}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={CHART_TOMAN_AXIS_WIDTH}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tick={TomanAxisTick}
         />
         <ChartTooltip content={<ChartTooltipContent />} />
         <ChartLegend
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          wrapperStyle={{ fontFamily: "var(--font-sans)", direction: "rtl" }}
+          verticalAlign="bottom"
+          wrapperStyle={{
+            fontFamily: "var(--font-sans)",
+            direction: "rtl",
+            marginTop: 16,
+            paddingTop: 4,
+          }}
+          iconSize={14}
         />
         <Line
           type="monotone"

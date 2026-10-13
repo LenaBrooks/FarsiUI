@@ -10,6 +10,7 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2ContainerClassName,
@@ -34,7 +35,7 @@ const data = [
 ]
 
 const chartConfig = {
-  uv: { label: FA_CHART.store, color: "var(--chart-1)" },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function SameDataComposedChartDemo() {
@@ -64,7 +65,7 @@ export default function SameDataComposedChartDemo() {
         <Line
           type="monotone"
           dataKey="uv"
-          stroke="var(--chart-2)"
+          stroke={CHART2_BAR_COLORS[1]}
           strokeWidth={2}
           dot={false}
           legendType="none"

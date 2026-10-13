@@ -1,27 +1,27 @@
 ﻿"use client"
 
-import { usePersianMockData } from "@/components/chart2-live"
-import { CartesianGrid,
-  Line,
-  LineChart,
-  XAxis,
-  YAxis } from "recharts"
-import type { LabelProps,
-  XAxisTickContentProps } from "recharts"
+import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
+import type { LabelProps, XAxisTickContentProps } from "recharts"
 
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
-  formatChart2Number,
-  toPersianDigits,
-} from "@/lib/chart2-fa"
+  CHART_TOMAN_AXIS_WIDTH,
+  formatToman,
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
   ChartContainer,
-  ChartLegend,
-  ChartLegendContent,
   ChartTooltip,
-  ChartTooltipContent,
 } from "@/registry/new-york-v4/ui/chart"
+
+import {
+  LINE_CHART_CLASS,
+  LINE_TOOLTIP_CURSOR,
+  LineSalesTooltipContent,
+  LineShell,
+  lineSalesConfig,
+  useLineSalesCaption,
+  useSalesData,
+} from "./line-fa-shared"
 
 function CustomizedLabel({ x, y, stroke, value }: LabelProps) {
   return (
@@ -33,8 +33,9 @@ function CustomizedLabel({ x, y, stroke, value }: LabelProps) {
       fontSize={10}
       textAnchor="middle"
       fontFamily="var(--font-sans)"
+      className="tracking-[0]"
     >
-      {formatChart2Number(Number(value))}
+      {formatToman(Number(value), { compact: true, suffix: false })}
     </text>
   )
 }
@@ -51,49 +52,62 @@ function CustomizedAxisTick({ x, y, payload, fill }: XAxisTickContentProps) {
         transform="rotate(-35)"
         fontFamily="var(--font-sans)"
       >
-        {toPersianDigits(String(payload.value))}
+        {String(payload.value)}
       </text>
     </g>
   )
 }
 
 export default function CustomizedLabelLineChartDemo() {
-  const data = usePersianMockData(6, 2213)
+  const data = useSalesData(2213)
+  useLineSalesCaption("برچسب سفارشی")
+
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
-      <LineChart
-        accessibilityLayer
-        data={data}
-        margin={{ top: 20, right: 16, left: 16, bottom: 12 }}
-      >
-        <CartesianGrid />
-        <XAxis
-          dataKey="label"
-          reversed
-          height={60}
-          tick={CustomizedAxisTick}
-          tickLine={false}
-          axisLine={false}
-        />
-        <YAxis
-          orientation="right"
-          width={48}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
-        />
-        <ChartTooltip content={<ChartTooltipContent />} />
-        <ChartLegend content={<ChartLegendContent />} />
-        <Line
-          type="monotone"
-          dataKey="x"
-          stroke="var(--color-x)"
-          strokeWidth={2}
-          label={CustomizedLabel}
-        />
-        <Line type="monotone" dataKey="y" stroke="var(--color-y)" strokeWidth={2} />
-      </LineChart>
-    </ChartContainer>
+    <LineShell>
+      <ChartContainer config={lineSalesConfig} className={LINE_CHART_CLASS}>
+        <LineChart
+          accessibilityLayer
+          data={data}
+          margin={{ top: 20, right: 16, left: 16, bottom: 12 }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="month"
+            reversed
+            height={60}
+            tick={CustomizedAxisTick}
+            tickLine={false}
+            axisLine={false}
+          />
+          <YAxis
+            orientation="right"
+            width={CHART_TOMAN_AXIS_WIDTH}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            tick={TomanAxisTick}
+          />
+          <ChartTooltip
+            cursor={LINE_TOOLTIP_CURSOR}
+            content={<LineSalesTooltipContent />}
+          />
+          <Line
+            type="monotone"
+            dataKey="store"
+            name="store"
+            stroke="var(--color-store)"
+            strokeWidth={2.5}
+            label={CustomizedLabel}
+          />
+          <Line
+            type="monotone"
+            dataKey="online"
+            name="online"
+            stroke="var(--color-online)"
+            strokeWidth={2.25}
+          />
+        </LineChart>
+      </ChartContainer>
+    </LineShell>
   )
 }

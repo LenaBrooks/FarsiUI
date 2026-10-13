@@ -1,6 +1,5 @@
 ﻿"use client"
 
-import { usePersianMockData } from "@/components/chart2-live"
 import {
   CartesianGrid,
   Line,
@@ -8,79 +7,104 @@ import {
   ReferenceLine,
   XAxis,
   YAxis,
-  } from "recharts"
+} from "recharts"
 
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
+  CHART_TOMAN_AXIS_WIDTH,
   FA_MONTHS,
-  formatChart2Number,
-  toPersianDigits,
-} from "@/lib/chart2-fa"
+  formatPersianMonthTick,
+  formatToman,
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
   ChartContainer,
-  ChartLegend,
-  ChartLegendContent,
   ChartTooltip,
-  ChartTooltipContent,
 } from "@/registry/new-york-v4/ui/chart"
 
+import {
+  LINE_CHART_CLASS,
+  LINE_TOOLTIP_CURSOR,
+  LineSalesTooltipContent,
+  LineShell,
+  lineSalesConfig,
+  useLineSalesCaption,
+  useSalesData,
+} from "./line-fa-shared"
+
 const referenceMonth = FA_MONTHS[2]!
+const referenceY = 200_000_000
 
 export default function LineChartWithReferenceLinesDemo() {
-  const data = usePersianMockData(6, 984)
+  const data = useSalesData(984)
+  useLineSalesCaption("خطوط مرجع")
+
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
-      <LineChart
-        accessibilityLayer
-        data={data}
-        margin={{ top: 20, right: 8, left: 8, bottom: 8 }}
-      >
-        <CartesianGrid />
-        <XAxis
-          dataKey="label"
-          reversed
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-        />
-        <YAxis
-          orientation="right"
-          width={48}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
-        />
-        <ChartTooltip content={<ChartTooltipContent />} />
-        <ChartLegend content={<ChartLegendContent />} />
-        <ReferenceLine
-          x={referenceMonth}
-          stroke="var(--destructive)"
-          label={{
-            value: "نمونه برچسب",
-            fill: "var(--destructive)",
-            // Match upstream insideBottomRight (end of vertical line). angle -90
-            // so RTL/Persian text grows up into the plot instead of under the axis.
-            position: "insideBottomRight",
-            angle: -90,
-            dx: 20,
-            fontFamily: "var(--font-sans)",
-          }}
-        />
-        <ReferenceLine
-          y={500}
-          stroke="var(--destructive)"
-          label={{
-            value: toPersianDigits(500),
-            fill: "var(--destructive)",
-            position: "insideTopLeft",
-            fontFamily: "var(--font-sans)",
-          }}
-        />
-        <Line type="monotone" dataKey="x" stroke="var(--color-x)" strokeWidth={2} />
-        <Line type="monotone" dataKey="y" stroke="var(--color-y)" strokeWidth={2} />
-      </LineChart>
-    </ChartContainer>
+    <LineShell>
+      <ChartContainer config={lineSalesConfig} className={LINE_CHART_CLASS}>
+        <LineChart
+          accessibilityLayer
+          data={data}
+          margin={{ top: 20, right: 8, left: 8, bottom: 4 }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="month"
+            reversed
+            tickLine={false}
+            axisLine={false}
+            tickMargin={12}
+            tickFormatter={formatPersianMonthTick}
+          />
+          <YAxis
+            orientation="right"
+            width={CHART_TOMAN_AXIS_WIDTH}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            tick={TomanAxisTick}
+          />
+          <ChartTooltip
+            cursor={LINE_TOOLTIP_CURSOR}
+            content={<LineSalesTooltipContent />}
+          />
+          <ReferenceLine
+            x={referenceMonth}
+            stroke="var(--destructive)"
+            label={{
+              value: "مرجع ماه",
+              fill: "var(--destructive)",
+              position: "insideBottomRight",
+              angle: -90,
+              dx: 20,
+              fontFamily: "var(--font-sans)",
+            }}
+          />
+          <ReferenceLine
+            y={referenceY}
+            stroke="var(--destructive)"
+            label={{
+              value: formatToman(referenceY, { compact: true, suffix: false }),
+              fill: "var(--destructive)",
+              position: "insideTopLeft",
+              fontFamily: "var(--font-sans)",
+            }}
+          />
+          <Line
+            type="monotone"
+            dataKey="online"
+            name="online"
+            stroke="var(--color-online)"
+            strokeWidth={2.25}
+          />
+          <Line
+            type="monotone"
+            dataKey="store"
+            name="store"
+            stroke="var(--color-store)"
+            strokeWidth={2.75}
+          />
+        </LineChart>
+      </ChartContainer>
+    </LineShell>
   )
 }

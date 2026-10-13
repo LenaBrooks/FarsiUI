@@ -4,8 +4,8 @@ import * as React from "react"
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
+  chart2BarContainerClassName,
+  chart2BarMockConfig,
   formatChart2Number,
   generatePersianMockData,
 } from "@/lib/chart2-fa"
@@ -36,13 +36,13 @@ export default function BarAnimatedSeriesDemo() {
   const data = getCircularWindowData(windowStart)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chart2BarMockConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data}
         margin={{ top: 20, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="label" reversed tickMargin={8} />
         <YAxis
           orientation="right"

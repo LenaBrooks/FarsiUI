@@ -28,8 +28,8 @@ export default function SkillsInstallPage() {
       lang="fa"
       className="flex scroll-mt-24 items-stretch pb-8 text-base leading-[1.7] xl:w-full"
     >
-      <div className="mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-6 px-4 py-6 text-foreground md:px-0 lg:py-8 dark:text-foreground">
-        <header className="flex flex-col gap-2">
+      <div className="mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-8 px-4 py-6 text-foreground md:px-0 lg:py-8 dark:text-foreground">
+        <header className="flex flex-col gap-2.5">
           <h1 className="docs-page-title scroll-m-24 font-semibold tracking-tight">
             نحوه نصب
           </h1>

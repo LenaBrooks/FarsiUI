@@ -10,10 +10,13 @@ import {
   YAxis,
 } from "recharts"
 
+import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
-  formatChart2Number,
+  chart2BarContainerClassName,
 } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -34,55 +37,67 @@ const data = [
 ]
 
 const chartConfig = {
-  amt: { label: FA_CHART.orders, color: "var(--chart-1)" },
-  pv: { label: FA_CHART.online, color: "var(--chart-2)" },
-  uv: { label: FA_CHART.store, color: "var(--chart-3)" },
+  amt: { label: FA_CHART.orders, color: CHART2_BAR_COLORS[0] },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[1] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
 export default function ComposedResponsiveContainerDemo() {
   return (
-    <div className="h-[300px] w-full font-sans">
-      <ChartContainer
-        config={chartConfig}
-        className="h-full w-full aspect-auto font-sans text-xs"
+    <ChartContainer
+      config={chartConfig}
+      className={`${chart2BarContainerClassName} max-h-[380px] max-w-none`}
+    >
+      <ComposedChart
+        accessibilityLayer
+        data={data}
+        margin={{ top: 16, right: 8, bottom: 8, left: 0 }}
       >
-        <ComposedChart
-          accessibilityLayer
-          data={data}
-          margin={{ top: 20, right: 8, bottom: 20, left: 0 }}
-        >
-          <CartesianGrid vertical={false} />
-          <XAxis dataKey="name" scale="band" reversed tickMargin={8} />
-          <YAxis
-            orientation="right"
-            width={52}
-            tickMargin={12}
-            tickFormatter={formatChart2Number}
-          />
-          <ChartTooltip content={<ChartTooltipContent />} />
-          <ChartLegend content={<ChartLegendContent />} />
-          <Area
-            type="monotone"
-            dataKey="amt"
-            fill="var(--color-amt)"
-            stroke="var(--color-amt)"
-            fillOpacity={0.25}
-          />
-          <Bar
-            dataKey="pv"
-            barSize={20}
-            fill="var(--color-pv)"
-            radius={[3, 3, 0, 0]}
-          />
-          <Line
-            type="monotone"
-            dataKey="uv"
-            stroke="var(--color-uv)"
-            strokeWidth={2}
-            dot={false}
-          />
-        </ComposedChart>
-      </ChartContainer>
-    </div>
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="name"
+          scale="band"
+          reversed
+          tickLine={false}
+          axisLine={false}
+          tickMargin={10}
+        />
+        <YAxis
+          orientation="right"
+          width={CHART_TOMAN_AXIS_WIDTH}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tick={TomanAxisTick}
+        />
+        <ChartTooltip
+          cursor={{ fill: "var(--muted)", fillOpacity: 0.35 }}
+          content={<ChartTooltipContent />}
+        />
+        <ChartLegend content={<ChartLegendContent />} />
+        <Area
+          type="monotone"
+          dataKey="amt"
+          fill="var(--color-amt)"
+          stroke="var(--color-amt)"
+          fillOpacity={0.22}
+          strokeWidth={1.5}
+        />
+        <Bar
+          dataKey="pv"
+          barSize={22}
+          fill="var(--color-pv)"
+          radius={[4, 4, 0, 0]}
+        />
+        <Line
+          type="monotone"
+          dataKey="uv"
+          stroke="var(--color-uv)"
+          strokeWidth={2.25}
+          dot={false}
+          activeDot={{ r: 4 }}
+        />
+      </ComposedChart>
+    </ChartContainer>
   )
 }

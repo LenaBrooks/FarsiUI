@@ -4,7 +4,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
 import {
-  chart2ContainerClassName,
+  chart2AreaContainerClassName,
   chart2MockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
@@ -18,7 +18,7 @@ export default function PreventRightClickAreaDemo() {
   const data = usePersianMockData(6, 4390435)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chart2MockConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}
@@ -31,7 +31,7 @@ export default function PreventRightClickAreaDemo() {
             <stop offset="95%" stopColor="var(--color-y)" stopOpacity={0.05} />
           </linearGradient>
         </defs>
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="label" reversed tickMargin={8} />
         <YAxis
           orientation="right"

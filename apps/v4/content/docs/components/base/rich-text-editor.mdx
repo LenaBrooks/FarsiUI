@@ -1,0 +1,187 @@
+---
+title: ویرایشگر متن (Rich Text Editor)
+description: ویرایشگر متن با Tiptap برای محتوای فارسی و راست‌چین.
+base: base
+component: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="switcher"
+  examples={[
+    { name: "rich-text-editor-advanced", label: "پیشرفته", sizeable: false },
+    { name: "rich-text-editor-demo", label: "ساده", sizeable: false },
+  ]}
+/>
+
+## نصب
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">دستور</TabsTrigger>
+  <TabsTrigger value="manual">دستی</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx farsiui@latest add rich-text-editor
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>کد زیر را در پروژه خود قرار دهید.</Step>
+
+<ComponentSource
+  name="rich-text-editor"
+  title="components/ui/rich-text-editor.tsx"
+  styleName="base-nova"
+/>
+
+<Step>مسیرهای import را متناسب با ساختار پروژه خود تنظیم کنید.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## استفاده
+
+```tsx
+import { RichTextEditor } from "@/components/ui/rich-text-editor"
+```
+
+```tsx
+<RichTextEditor
+  dir="rtl"
+  lang="fa"
+  placeholder="متن را بنویسید…"
+/>
+```
+
+پیش‌فرض `variant="simple"` است: عنوان، درشت/مورب/زیرخط/خط‌خورده، فهرست، نقل‌قول، لینک، تصویر و واگرد. برای همهٔ امکانات از `variant="advanced"` استفاده کنید. هسته [Tiptap](https://tiptap.dev/) است و `dir="rtl"` / `lang="fa"` پیش‌فرض‌اند.
+
+<div className="hidden">
+
+## ساده و پیشرفته
+
+</div>
+
+<DocsCollapsible title="ساده و پیشرفته">
+
+```tsx
+{/* ساده — پیش‌فرض */}
+<RichTextEditor variant="simple" />
+
+{/* پیشرفته */}
+<RichTextEditor variant="advanced" />
+```
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## کنترل‌شده
+
+</div>
+
+<DocsCollapsible title="کنترل‌شده">
+
+با `value` و `onChange` محتوا را از والد کنترل کنید. `onChange` هم HTML و هم JSON Tiptap را برمی‌گرداند.
+
+```tsx
+const [value, setValue] = React.useState("<p>سلام</p>")
+
+<RichTextEditor
+  value={value}
+  onChange={({ html }) => setValue(html)}
+/>
+```
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## غیرفعال
+
+</div>
+
+<DocsCollapsible title="غیرفعال">
+
+با prop به نام `disabled` ویرایشگر و نوار ابزار را غیرفعال کنید.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="rich-text-editor-disabled"
+  direction="rtl"
+  previewClassName="*:max-w-2xl"
+/>
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## فقط‌خواندنی
+
+</div>
+
+<DocsCollapsible title="فقط‌خواندنی">
+
+با `readOnly` محتوا فقط خواندنی می‌شود.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="rich-text-editor-readonly"
+  direction="rtl"
+  previewClassName="*:max-w-2xl"
+/>
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## نامعتبر
+
+</div>
+
+<DocsCollapsible title="نامعتبر">
+
+با `aria-invalid` حلقهٔ خطا را روی ناحیهٔ ویرایش فعال کنید.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="rich-text-editor-invalid"
+  direction="rtl"
+  previewClassName="*:max-w-2xl"
+/>
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## امکانات نوار ابزار
+
+</div>
+
+<DocsCollapsible title="امکانات نوار ابزار">
+
+در `variant="advanced"` ابزارهای پرتکرار در ردیف اول‌اند؛ با دکمهٔ سه‌نقطه در انتهای نوار، ردیف بعدی داخل همان نوار اضافه می‌شود (قلم، رنگ، جدول، …). تراز از راست‌چین شروع می‌شود.
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## تصویر و لینک
+
+</div>
+
+<DocsCollapsible title="تصویر و لینک">
+
+لینک از نوار ابزار اضافه می‌شود؛ فقط `http://` و `https://` پذیرفته می‌شود. برای تصویر می‌توانید URL بدهید یا با `onUploadImage` فایل را آپلود کنید و نشانی برگردانید. خروجی HTML را قبل از `dangerouslySetInnerHTML` sanitize کنید.
+
+</DocsCollapsible>

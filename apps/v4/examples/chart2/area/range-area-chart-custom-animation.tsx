@@ -4,7 +4,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2AreaContainerClassName,
   formatChart2Number,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -34,7 +34,7 @@ const chartConfig = {
 
 export default function AreaRangeCustomAnimationDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}
@@ -46,7 +46,7 @@ export default function AreaRangeCustomAnimationDemo() {
             <stop offset="95%" stopColor="var(--color-range)" stopOpacity={0.1} />
           </linearGradient>
         </defs>
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"

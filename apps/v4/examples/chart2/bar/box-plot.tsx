@@ -16,7 +16,8 @@ import {
 } from "recharts"
 
 import {
-  chart2ContainerClassName,
+  CHART2_BAR_COLORS,
+  chart2BarContainerClassName,
   formatPersianNumber,
 } from "@/lib/chart2-fa"
 import {
@@ -59,7 +60,7 @@ const outliers: ReadonlyArray<OutlierDatum> = [
 ]
 
 const chartConfig = {
-  box: { label: "بازهٔ میان‌چارکی", color: "var(--chart-1)" },
+  box: { label: "بازهٔ میان‌چارکی", color: CHART2_BAR_COLORS[0] },
   outlier: { label: "نقطهٔ پرت", color: "var(--destructive)" },
 } satisfies ChartConfig
 
@@ -133,7 +134,7 @@ export default function BoxPlotDemo({
   defaultIndex?: TooltipIndex
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart accessibilityLayer data={data as BoxPlotDatum[]}>
         <XAxis
           dataKey="category"
@@ -147,7 +148,7 @@ export default function BoxPlotDemo({
           tickMargin={10}
           tickFormatter={(v) => formatPersianNumber(v)}
         />
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <Bar dataKey={boxDataKey} shape={BoxShape} fillOpacity={1}>
           <ErrorBar
             dataKey={whiskerDataKey}

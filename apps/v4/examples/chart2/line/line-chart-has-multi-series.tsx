@@ -3,7 +3,15 @@
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 import type { LineProps } from "recharts"
 
-import { formatChart2Number } from "@/lib/chart2-fa"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
+import {
+  CHART_TOMAN_AXIS_WIDTH,
+  FA_MONTHS,
+  formatPersianMonthTick,
+  formatToman,
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
+import { useChart2Caption } from "@/components/chart2-live"
 import {
   ChartContainer,
   ChartLegend,
@@ -13,52 +21,60 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
+import { LINE_CHART_CLASS, LINE_TOOLTIP_CURSOR } from "./line-fa-shared"
+
 const series = [
   {
-    name: "سری ۱",
+    name: "شعبه تهران",
     dataKey: "s1",
     data: [
-      { category: "الف", value: 0.1 },
-      { category: "ب", value: 0.2 },
-      { category: "پ", value: 0.3 },
+      { category: FA_MONTHS[0], value: 120_000_000 },
+      { category: FA_MONTHS[1], value: 180_000_000 },
+      { category: FA_MONTHS[2], value: 150_000_000 },
     ],
   },
   {
-    name: "سری ۲",
+    name: "شعبه اصفهان",
     dataKey: "s2",
     data: [
-      { category: "ب", value: 0.4 },
-      { category: "پ", value: 0.5 },
-      { category: "ت", value: 0.6 },
+      { category: FA_MONTHS[1], value: 90_000_000 },
+      { category: FA_MONTHS[2], value: 140_000_000 },
+      { category: FA_MONTHS[3], value: 160_000_000 },
     ],
   },
   {
-    name: "سری ۳",
+    name: "شعبه شیراز",
     dataKey: "s3",
     data: [
-      { category: "پ", value: 0.7 },
-      { category: "ت", value: 0.8 },
-      { category: "ث", value: 0.9 },
+      { category: FA_MONTHS[2], value: 70_000_000 },
+      { category: FA_MONTHS[3], value: 110_000_000 },
+      { category: FA_MONTHS[4], value: 130_000_000 },
     ],
   },
 ]
 
 const chartConfig = {
-  s1: { label: "سری ۱", color: "var(--chart-1)" },
-  s2: { label: "سری ۲", color: "var(--chart-2)" },
-  s3: { label: "سری ۳", color: "var(--chart-3)" },
+  s1: { label: "شعبه تهران", color: CHART2_BAR_COLORS[0] },
+  s2: { label: "شعبه اصفهان", color: CHART2_BAR_COLORS[1] },
+  s3: { label: "شعبه شیراز", color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
+
+const COLORS = [
+  CHART2_BAR_COLORS[0],
+  CHART2_BAR_COLORS[1],
+  CHART2_BAR_COLORS[2],
+]
 
 function MyLine(props: LineProps & { index: number }) {
   const { index, ...rest } = props
-  const colors = [
-    "var(--chart-1)",
-    "var(--chart-2)",
-    "var(--chart-3)",
-    "var(--chart-4)",
-    "var(--chart-5)",
-  ]
-  return <Line stroke={colors[index % colors.length]} strokeWidth={2} {...rest} />
+  return (
+    <Line
+      stroke={COLORS[index % COLORS.length]}
+      strokeWidth={2.4}
+      dot={false}
+      {...rest}
+    />
+  )
 }
 
 export default function LineChartHasMultiSeriesDemo({
@@ -66,46 +82,71 @@ export default function LineChartHasMultiSeriesDemo({
 }: {
   defaultIndex?: number
 }) {
+  useChart2Caption(() => "چند سری · فروش شعب · ماه‌های شمسی", [])
+
   return (
-    <ChartContainer
-      config={chartConfig}
-      className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] font-sans"
-    >
-      <LineChart accessibilityLayer>
-        <CartesianGrid />
-        <XAxis
-          dataKey="category"
-          type="category"
-          allowDuplicatedCategory={false}
-          reversed
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-        />
-        <YAxis
-          dataKey="value"
-          orientation="right"
-          width={48}
-          tickLine={false}
-          axisLine={false}
-          tickMargin={8}
-          tickFormatter={formatChart2Number}
-        />
-        <ChartTooltip
-          defaultIndex={defaultIndex}
-          content={<ChartTooltipContent />}
-        />
-        <ChartLegend content={<ChartLegendContent />} />
-        {series.map((s, index) => (
-          <MyLine
-            key={s.name}
-            dataKey="value"
-            data={s.data}
-            name={s.name}
-            index={index}
+    <div dir="rtl" className="w-full max-w-[700px] font-sans">
+      <ChartContainer config={chartConfig} className={LINE_CHART_CLASS}>
+        <LineChart accessibilityLayer>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            dataKey="category"
+            type="category"
+            allowDuplicatedCategory={false}
+            reversed
+            tickLine={false}
+            axisLine={false}
+            tickMargin={12}
+            tickFormatter={formatPersianMonthTick}
           />
-        ))}
-      </LineChart>
-    </ChartContainer>
+          <YAxis
+            orientation="right"
+            width={CHART_TOMAN_AXIS_WIDTH}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            tick={TomanAxisTick}
+          />
+          <ChartTooltip
+            defaultIndex={defaultIndex}
+            cursor={LINE_TOOLTIP_CURSOR}
+            content={
+              <ChartTooltipContent
+                className="min-w-[12rem]"
+                labelFormatter={(label) => (
+                  <span className="text-muted-foreground">ماه {label}</span>
+                )}
+                formatter={(value, name) => {
+                  const key = String(name)
+                  const label =
+                    chartConfig[key as keyof typeof chartConfig]?.label ?? key
+                  return (
+                    <div className="flex w-full flex-1 items-center justify-between gap-6">
+                      <span className="text-muted-foreground">{label}</span>
+                      <span className="font-medium tracking-[0]">
+                        {formatToman(Number(value), { compact: true })}
+                      </span>
+                    </div>
+                  )
+                }}
+              />
+            }
+          />
+          <ChartLegend content={<ChartLegendContent />} />
+          {series.map((s, index) => (
+            <MyLine
+              key={s.dataKey}
+              dataKey={s.dataKey}
+              data={s.data.map((d) => ({
+                category: d.category,
+                [s.dataKey]: d.value,
+              }))}
+              name={s.name}
+              index={index}
+            />
+          ))}
+        </LineChart>
+      </ChartContainer>
+    </div>
   )
 }

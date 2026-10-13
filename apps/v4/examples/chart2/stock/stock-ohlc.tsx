@@ -11,7 +11,7 @@ import {
   type TooltipIndex,
 } from "recharts"
 
-import { chart2ContainerClassName } from "@/lib/chart2-fa"
+import { chart2BarContainerClassName } from "@/lib/chart2-fa"
 import {
   generateMockMarketData,
   type MarketCandle,
@@ -99,13 +99,13 @@ export default function StockOhlcDemo({
   defaultIndex?: TooltipIndex
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
       <BarChart
         accessibilityLayer
         data={data as MarketCandle[]}
         margin={{ top: 12, right: 8, bottom: 8, left: 0 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis
           dataKey="time"
           reversed

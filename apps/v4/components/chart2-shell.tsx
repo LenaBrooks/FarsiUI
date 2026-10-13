@@ -115,7 +115,7 @@ function GalleryCategoryNav({
       </div>
       <nav
         aria-label="انواع نمودار"
-        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1"
+        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-16"
       >
         {filteredCategories.length === 0 ? (
           <div className="px-2 py-6 text-center text-[13px] text-muted-foreground">
@@ -238,7 +238,7 @@ function DetailCategoryNav({
       </div>
       <nav
         aria-label="انواع و نمونه‌های نمودار"
-        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1"
+        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-16"
       >
         {filteredGroups.length === 0 ? (
           <div className="px-2 py-6 text-center text-[13px] text-muted-foreground">

@@ -11,17 +11,10 @@ import {
 } from "@/registry/new-york-v4/ui/chart"
 
 import { TREEMAP_DATA_NESTED } from "./data"
-
-const COLORS = [
-  "var(--chart-1)",
-  "var(--chart-2)",
-  "var(--chart-3)",
-  "var(--chart-4)",
-  "var(--chart-5)",
-]
+import { TREEMAP_COLORS, treemapColorAt } from "./treemap-colors"
 
 const chartConfig = {
-  size: { label: "اندازه", color: "var(--chart-1)" },
+  size: { label: "اندازه", color: TREEMAP_COLORS[0] },
 } satisfies ChartConfig
 
 export function renderNodeGapAndPaddingContent(props: TreemapNode) {
@@ -38,7 +31,7 @@ export function renderNodeGapAndPaddingContent(props: TreemapNode) {
         style={{
           fill:
             depth < 2
-              ? COLORS[Math.floor((index / (root?.children?.length ?? 1)) * 5)]
+              ? treemapColorAt(index, root?.children?.length ?? 1)
               : "#ffffff00",
           stroke: "var(--background)",
           strokeWidth: 1,

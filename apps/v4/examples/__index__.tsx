@@ -4,7 +4,7 @@
 import "server-only"
 
 export const ExamplesIndex: Record<string, Record<string, any>> = {
-  base: {
+  "base": {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/base/accordion-basic.tsx",
@@ -1557,6 +1557,30 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "resizable-vertical",
       filePath: "examples/base/resizable-vertical.tsx",
     },
+    "rich-text-editor-controlled": {
+      name: "rich-text-editor-controlled",
+      filePath: "examples/base/rich-text-editor-controlled.tsx",
+    },
+    "rich-text-editor-advanced": {
+      name: "rich-text-editor-advanced",
+      filePath: "examples/base/rich-text-editor-advanced.tsx",
+    },
+    "rich-text-editor-demo": {
+      name: "rich-text-editor-demo",
+      filePath: "examples/base/rich-text-editor-demo.tsx",
+    },
+    "rich-text-editor-disabled": {
+      name: "rich-text-editor-disabled",
+      filePath: "examples/base/rich-text-editor-disabled.tsx",
+    },
+    "rich-text-editor-invalid": {
+      name: "rich-text-editor-invalid",
+      filePath: "examples/base/rich-text-editor-invalid.tsx",
+    },
+    "rich-text-editor-readonly": {
+      name: "rich-text-editor-readonly",
+      filePath: "examples/base/rich-text-editor-readonly.tsx",
+    },
     "scroll-area-demo": {
       name: "scroll-area-demo",
       filePath: "examples/base/scroll-area-demo.tsx",
@@ -2086,7 +2110,7 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       filePath: "examples/base/typography-table.tsx",
     },
   },
-  aria: {
+  "aria": {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/aria/accordion-basic.tsx",
@@ -4096,7 +4120,7 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       filePath: "examples/aria/typography-table.tsx",
     },
   },
-  radix: {
+  "radix": {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/radix/accordion-basic.tsx",

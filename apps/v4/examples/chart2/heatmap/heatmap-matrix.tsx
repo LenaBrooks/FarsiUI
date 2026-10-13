@@ -3,6 +3,7 @@
 import { useMemo } from "react"
 
 import { useChart2RandomSeed } from "@/components/chart2-live"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
 
 import {
   FA_WEEKDAYS_FULL,
@@ -21,7 +22,7 @@ export default function HeatmapMatrixDemo() {
       rows={[...FA_WEEKDAYS_FULL]}
       cols={HOURS}
       values={values}
-      color="var(--chart-2)"
+      color={CHART2_BAR_COLORS[0]}
       caption="ماتریس روز × ساعت — ستون‌ها از راست به چپ (۰ تا ۲۳)"
     />
   )

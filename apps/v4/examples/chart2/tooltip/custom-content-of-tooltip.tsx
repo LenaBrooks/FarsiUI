@@ -1,11 +1,22 @@
 "use client"
 
-import { Bar, BarChart, CartesianGrid, XAxis, YAxis, type TooltipContentProps, type TooltipIndex } from "recharts"
-
 import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  type TooltipContentProps,
+  type TooltipIndex,
+} from "recharts"
+
+import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
+import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2BarContainerClassName,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -27,8 +38,8 @@ const data = [
 ]
 
 const chartConfig = {
-  pv: { label: FA_CHART.online, color: "var(--chart-1)" },
-  uv: { label: FA_CHART.store, color: "var(--chart-2)" },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[0] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 const intros: Record<string, string> = {
@@ -42,8 +53,7 @@ const intros: Record<string, string> = {
 }
 
 function CustomTooltip({ active, payload, label }: TooltipContentProps) {
-  const firstPayload = payload?.[0]
-  const isVisible = active && firstPayload != null
+  const isVisible = Boolean(active && payload?.length)
   const key = String(label ?? "")
 
   return (
@@ -54,15 +64,25 @@ function CustomTooltip({ active, payload, label }: TooltipContentProps) {
     >
       {isVisible ? (
         <>
-          <p className="mb-1 font-medium text-foreground">
-            {label}: {formatChart2Number(Number(firstPayload.value))}
-          </p>
-          <p className="mb-1 text-muted-foreground leading-relaxed">
+          <p className="mb-1 font-medium text-foreground">{label}</p>
+          <p className="mb-2 text-muted-foreground leading-relaxed">
             {intros[key] ?? ""}
           </p>
-          <p className="text-muted-foreground/80">
-            هر محتوایی که بخواهید اینجا نمایش داده می‌شود.
-          </p>
+          {payload!.map((item) => {
+            const seriesKey = String(item.dataKey ?? "")
+            const series =
+              chartConfig[seriesKey as keyof typeof chartConfig]?.label ??
+              seriesKey
+            return (
+              <p
+                key={seriesKey}
+                className="mb-0.5 last:mb-0"
+                style={{ color: item.color ?? "var(--foreground)" }}
+              >
+                {series}: {formatChart2Number(Number(item.value))}
+              </p>
+            )
+          })}
         </>
       ) : null}
     </div>
@@ -79,20 +99,22 @@ export default function CustomContentOfTooltipDemo({
   return (
     <ChartContainer
       config={chartConfig}
-      className={`${chart2ContainerClassName} max-w-[300px]`}
+      className={`${chart2BarContainerClassName} max-w-[500px]`}
     >
       <BarChart
         accessibilityLayer
         data={data}
-        margin={{ top: 5, right: 8, left: 0, bottom: 0 }}
+        margin={{ top: 10, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"
-          width={52}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={CHART_TOMAN_AXIS_WIDTH}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tick={TomanAxisTick}
         />
         <ChartTooltip
           content={CustomTooltip}
@@ -102,8 +124,13 @@ export default function CustomContentOfTooltipDemo({
         <ChartLegend content={<ChartLegendContent />} />
         <Bar
           dataKey="pv"
-          fill="var(--color-pv)"
-          barSize={20}
+          fill={CHART2_BAR_COLORS[0]}
+          radius={[4, 4, 0, 0]}
+          isAnimationActive={isAnimationActive}
+        />
+        <Bar
+          dataKey="uv"
+          fill={CHART2_BAR_COLORS[1]}
           radius={[4, 4, 0, 0]}
           isAnimationActive={isAnimationActive}
         />

@@ -4,9 +4,12 @@ import type { CSSProperties } from "react"
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
+import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
-  chart2ContainerClassName,
-  chart2MockConfig,
+  CHART2_BAR_COLORS,
+  chart2BarContainerClassName,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -16,7 +19,7 @@ import {
 
 const customContentStyles: CSSProperties = {
   backgroundColor: "var(--background)",
-  border: "2px solid var(--chart-1)",
+  border: `2px solid ${CHART2_BAR_COLORS[0]}`,
   borderRadius: 8,
   color: "var(--foreground)",
   fontFamily: "var(--font-sans)",
@@ -25,7 +28,7 @@ const customContentStyles: CSSProperties = {
 }
 
 const customItemStyles: CSSProperties = {
-  color: "var(--chart-1)",
+  color: CHART2_BAR_COLORS[0],
   fontWeight: "bold",
   fontSize: 14,
   paddingTop: 6,
@@ -35,7 +38,7 @@ const customItemStyles: CSSProperties = {
 }
 
 const customLabelStyles: CSSProperties = {
-  color: "var(--chart-2)",
+  color: CHART2_BAR_COLORS[1],
   fontWeight: "bold",
   fontSize: 16,
   fontFamily: "var(--font-sans)",
@@ -46,22 +49,24 @@ export default function TooltipStylesDemo() {
 
   return (
     <ChartContainer
-      config={chart2MockConfig}
-      className={`${chart2ContainerClassName} max-w-[500px]`}
+      config={chart2BarMockConfig}
+      className={`${chart2BarContainerClassName} max-w-[500px]`}
     >
       <BarChart
         accessibilityLayer
         data={data}
         margin={{ top: 10, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid vertical={false} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
         <XAxis dataKey="label" reversed tickMargin={8} />
         <YAxis
           orientation="right"
-          width={52}
-          tickMargin={12}
+          width={CHART_TOMAN_AXIS_WIDTH}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
           domain={[0, "dataMax + 20"]}
-          tickFormatter={formatChart2Number}
+          tick={TomanAxisTick}
         />
         <ChartTooltip
           // Keep tooltip visible after mouseOut to make it easy to inspect
@@ -76,13 +81,13 @@ export default function TooltipStylesDemo() {
         <Bar
           dataKey="x"
           fill="var(--color-x)"
-          name={chart2MockConfig.x.label}
+          name={chart2BarMockConfig.x.label}
           radius={[4, 4, 0, 0]}
         />
         <Bar
           dataKey="y"
           fill="var(--color-y)"
-          name={chart2MockConfig.y.label}
+          name={chart2BarMockConfig.y.label}
           radius={[4, 4, 0, 0]}
         />
       </BarChart>

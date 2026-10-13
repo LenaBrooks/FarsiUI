@@ -40,7 +40,6 @@ const CATEGORIES = [
     en: "ResponsiveContainer",
     folder: "ResponsiveContainer",
   },
-  { id: "xaxis", title: "محور X", en: "XAxis", folder: "XAxis" },
 ]
 
 const FA_BY_EN = {

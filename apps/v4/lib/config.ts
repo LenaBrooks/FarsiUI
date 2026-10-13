@@ -63,8 +63,15 @@ export const siteConfig = {
       href: "/charts",
       label: "نمودارها",
     },
+    {
+      href: "https://tarhak.ir/",
+      label: "انیمیشن",
+      external: true,
+    },
   ],
 }
+
+export type SiteNavItem = (typeof siteConfig.navItems)[number]
 
 export const META_THEME_COLORS = {
   light: "#ffffff",

@@ -239,15 +239,23 @@ function BlockViewerToolbar({ styleName }: { styleName: Style["name"] }) {
         <Button
           variant="ghost"
           data-slot="copy-button"
-          className="h-6 w-fit max-w-[min(100%,18rem)] cursor-pointer gap-1.5 rounded-sm px-2 shadow-none"
+          className="h-6 min-w-0 max-w-[18rem] cursor-pointer gap-1.5 rounded-sm px-2 shadow-none"
           size="sm"
           title="کپی دستور نصب"
           onClick={() => {
             copyToClipboard(installCommand)
           }}
         >
-          {isCopied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
-          <span dir="ltr" lang="en" className="truncate font-mono text-xs">
+          {isCopied ? (
+            <Check className="size-3.5 shrink-0" />
+          ) : (
+            <Copy className="size-3.5 shrink-0" />
+          )}
+          <span
+            dir="ltr"
+            lang="en"
+            className="min-w-0 truncate font-mono text-xs"
+          >
             {installCommand}
           </span>
         </Button>
@@ -347,20 +355,28 @@ function BlockViewerMobile({ children }: { children: React.ReactNode }) {
   const installCommand = `npx farsiui@latest add ${item.name}`
 
   return (
-    <div dir="rtl" lang="fa" className="flex flex-col gap-2 lg:hidden">
-      <div className="flex flex-wrap items-center gap-2 px-2">
-        <div className="line-clamp-1 min-w-0 flex-1 text-sm font-medium">
+    <div dir="rtl" lang="fa" className="flex min-w-0 flex-col gap-2 lg:hidden">
+      <div className="flex min-w-0 flex-col gap-2 px-2">
+        <div className="line-clamp-1 min-w-0 text-sm font-medium">
           {item.description}
         </div>
         <Button
           variant="outline"
           size="sm"
-          className="h-7 max-w-full gap-1.5 px-2 font-normal"
+          className="h-7 w-full min-w-0 justify-start gap-1.5 px-2 font-normal"
           title="کپی دستور نصب"
           onClick={() => copyToClipboard(installCommand)}
         >
-          {isCopied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
-          <span dir="ltr" lang="en" className="truncate font-mono text-xs">
+          {isCopied ? (
+            <Check className="size-3.5 shrink-0" />
+          ) : (
+            <Copy className="size-3.5 shrink-0" />
+          )}
+          <span
+            dir="ltr"
+            lang="en"
+            className="min-w-0 flex-1 truncate text-start font-mono text-xs"
+          >
             {installCommand}
           </span>
         </Button>

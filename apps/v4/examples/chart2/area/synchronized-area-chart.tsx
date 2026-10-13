@@ -4,6 +4,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
 import {
+  chart2DashedGridClassName,
   chart2MockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
@@ -14,12 +15,12 @@ import {
 } from "@/registry/new-york-v4/ui/chart"
 
 const syncClassName =
-  "aspect-[1.618] h-auto w-full max-w-[700px] max-h-[20vh] font-sans"
+  `aspect-[1.618] h-auto w-full max-w-[700px] max-h-[20vh] font-sans ${chart2DashedGridClassName}`
 
 function SyncAxes() {
   return (
     <>
-      <CartesianGrid />
+      <CartesianGrid strokeDasharray="3 3" />
       <XAxis
         dataKey="label"
         reversed

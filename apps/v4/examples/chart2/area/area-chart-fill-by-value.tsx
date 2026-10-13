@@ -13,7 +13,7 @@ import {
 import {
   FA_CHART,
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2AreaContainerClassName,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -68,13 +68,13 @@ function SplitGradient() {
 
 export default function AreaChartFillByValueDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}
         margin={{ top: 10, right: 8, left: 0, bottom: 5 }}
       >
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" reversed tickMargin={8} />
         <YAxis
           orientation="right"

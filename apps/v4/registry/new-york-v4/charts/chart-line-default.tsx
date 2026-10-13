@@ -9,8 +9,8 @@ import {
   FA_MONTHLY_SALES,
   formatPersianMonthTick,
   formatToman,
-  formatTomanAxis,
 } from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {
   Card,
   CardContent,
@@ -53,8 +53,10 @@ export function ChartLineDefault() {
             accessibilityLayer
             data={chartData}
             margin={{
+              top: 18,
               left: 4,
               right: 8,
+              bottom: 4,
             }}
           >
             <CartesianGrid vertical={false} strokeDasharray="3 3" />
@@ -70,7 +72,7 @@ export function ChartLineDefault() {
               axisLine={false}
               tickMargin={8}
               width={CHART_TOMAN_AXIS_WIDTH}
-              tickFormatter={formatTomanAxis}
+              tick={TomanAxisTick}
             />
             <ChartTooltip
               cursor={false}

@@ -4,7 +4,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
   FA_MONTHS,
-  chart2ContainerClassName,
+  chart2AreaContainerClassName,
   formatChart2Number,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -40,13 +40,13 @@ export default function AreaChartRangeDemo({
   isAnimationActive?: boolean
 }) {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer config={chartConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={rangeData}
         margin={{ top: 20, right: 8, left: 0, bottom: 20 }}
       >
-        <CartesianGrid />
+        <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="day" reversed tickMargin={8} />
         <YAxis
           orientation="right"

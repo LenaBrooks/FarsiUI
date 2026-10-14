@@ -210,7 +210,6 @@ const ID_BY_KEY = {
   CustomActiveShapePieChart: "custom-active-shape-pie-chart",
   PieChartWithCustomizedLabel: "pie-chart-with-customized-label",
   PieChartWithPaddingAngle: "pie-chart-with-padding-angle",
-  PieChartWithNeedle: "pie-chart-with-needle",
   PieChartInGrid: "pie-chart-in-grid",
   PieWithGradient: "pie-with-gradient",
   SimpleRadarChart: "simple-radar-chart",

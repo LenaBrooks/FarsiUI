@@ -161,7 +161,6 @@ const CHART2_FEATURED_IDS = new Set([
   "gauge-custom-arcs",
   "gauge-custom-colors",
   "gauge-levels",
-  "pie-chart-with-needle",
   "hc-gauge-default",
   "hc-gauge-rounded-ends",
   "hc-gauge-semicircle",

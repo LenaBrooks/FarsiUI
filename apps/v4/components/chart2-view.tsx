@@ -109,7 +109,7 @@ export function Chart2View({
   embedded?: boolean
 }) {
   const addCommand = `farsiui@latest add ${example.id}`
-  const backHref = `/chart2#chart-type-${example.category}`
+  const backHref = `/charts#chart-type-${example.category}`
   const nextExample = getChart2NextExample(example.id)
 
   return (
@@ -165,7 +165,7 @@ export function Chart2View({
             size="sm"
             className="ms-2 h-8 shrink-0 gap-1.5 px-2 text-muted-foreground me-0.5"
           >
-            <Link href={`/chart2/view/${nextExample.id}`}>
+            <Link href={`/charts/view/${nextExample.id}`}>
               بعدی
               <ArrowLeftIcon className="size-3.5" />
             </Link>

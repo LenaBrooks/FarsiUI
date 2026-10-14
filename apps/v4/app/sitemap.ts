@@ -6,8 +6,6 @@ import { getSkillSlugs } from "@/lib/skills-data"
 /** Always the public origin — never rely on mis-set env for sitemap locs. */
 const SITE_ORIGIN = "https://farsiui.ir"
 
-const chartTypes = ["area", "bar", "line", "pie", "radar", "radial", "tooltip"]
-
 const staticRoutes = [
   "/",
   "/blocks",
@@ -68,10 +66,6 @@ function collectPaths(): string[] {
     }
   } catch {
     // ignore
-  }
-
-  for (const type of chartTypes) {
-    urls.push(`/charts/${type}`)
   }
 
   try {

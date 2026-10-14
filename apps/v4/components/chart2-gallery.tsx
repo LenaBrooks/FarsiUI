@@ -53,7 +53,7 @@ function ExampleCard({
     <button
       type="button"
       aria-label={`${title} — ${en}`}
-      onClick={() => router.push(`/chart2/view/${id}`)}
+      onClick={() => router.push(`/charts/view/${id}`)}
       className={cn(
         "group flex w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-border/50 bg-background text-start outline-none",
         "transition-[border-color,background-color] hover:border-border hover:bg-muted/20",

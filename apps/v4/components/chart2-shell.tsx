@@ -206,7 +206,7 @@ function GalleryCategoryNav({
         {filteredCategories.map((item) => {
           const Icon = item.icon
           const active = item.id === activeId
-          const href = `/chart2#chart-type-${item.id}`
+          const href = `/charts#chart-type-${item.id}`
           return (
             <PrefetchLink
               key={item.id}
@@ -395,7 +395,7 @@ function DetailCategoryNav({
                       <PrefetchLink
                         key={example.id}
                         ref={active ? activeExampleRef : undefined}
-                        href={`/chart2/view/${example.id}`}
+                        href={`/charts/view/${example.id}`}
                         title={example.en}
                         onClick={() => {
                           const container = navRef.current
@@ -455,7 +455,7 @@ export function Chart2Shell({
         onSelectCategory(id)
         return
       }
-      router.push(`/chart2#chart-type-${id}`)
+      router.push(`/charts#chart-type-${id}`)
     },
     [onSelectCategory, router]
   )
@@ -516,9 +516,9 @@ export function Chart2Shell({
                 const first = getChart2Examples(item.id)[0]
                 const href = detailMode
                   ? first
-                    ? `/chart2/view/${first.id}`
-                    : `/chart2#chart-type-${item.id}`
-                  : `/chart2#chart-type-${item.id}`
+                    ? `/charts/view/${first.id}`
+                    : `/charts#chart-type-${item.id}`
+                  : `/charts#chart-type-${item.id}`
                 return (
                   <PrefetchLink
                     key={item.id}

@@ -78,11 +78,8 @@ export function Chart2DemoPreview({ id }: { id: string }) {
   }
 
   return (
-    <div
-      className="flex w-full min-w-0 justify-center font-sans"
-      dir="rtl"
-      lang="fa"
-    >
+    // Block host (not flex): bare ChartContainer + aspect-video collapses to 0×0 in flex.
+    <div className="w-full min-w-0 font-sans" dir="rtl" lang="fa">
       <Demo key={live?.nonce ?? 0} />
     </div>
   )

@@ -1,5 +1,5 @@
-import { Chart2Gallery } from "@/components/chart2-gallery"
+import { redirect } from "next/navigation"
 
-export default function Chart2Page() {
-  return <Chart2Gallery />
+export default function Chart2RedirectPage() {
+  redirect("/charts")
 }

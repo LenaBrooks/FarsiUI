@@ -190,6 +190,17 @@ const nextConfig = {
         destination: "/docs/components/base/:name.md",
         permanent: false,
       },
+      // Chart2 gallery moved to /charts.
+      {
+        source: "/chart2",
+        destination: "/charts",
+        permanent: true,
+      },
+      {
+        source: "/chart2/view/:id",
+        destination: "/charts/view/:id",
+        permanent: true,
+      },
       // Other redirects.
       {
         source: "/components",

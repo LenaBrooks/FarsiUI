@@ -1,105 +1,30 @@
-import { type Metadata } from "next"
-import { notFound } from "next/navigation"
-import { cn } from "cn"
+"use client"
 
-import {
-  ChartDisplay,
-  getCachedRegistryItem,
-  getChartHighlightedCode,
-} from "@/components/chart-display"
-import {
-  chartCatalog,
-  chartTypes,
-  getChartTypeMeta,
-  type ChartType,
-} from "@/app/(app)/charts/chart-catalog"
+import { useEffect } from "react"
+import { useParams, useRouter } from "next/navigation"
 
-/** Chart demos live in the legacy new-york-v4 registry shard. */
-const CHARTS_STYLE = "new-york-v4" as const
-
-export const revalidate = false
-export const dynamic = "force-static"
-export const dynamicParams = false
-
-interface ChartPageProps {
-  params: Promise<{
-    type: string
-  }>
+/** Legacy /charts/{area|bar|…} hubs → unified gallery section. */
+const TYPE_TO_CATEGORY: Record<string, string> = {
+  area: "area",
+  bar: "bar",
+  line: "line",
+  pie: "pie",
+  radar: "radar",
+  radial: "radial-bar",
+  tooltip: "tooltip",
 }
 
-export async function generateStaticParams() {
-  return chartTypes.map((type) => ({
-    type,
-  }))
-}
+export default function LegacyChartTypeRedirect() {
+  const params = useParams<{ type: string }>()
+  const router = useRouter()
+  const type = typeof params.type === "string" ? params.type : params.type?.[0]
+  const category = type ? TYPE_TO_CATEGORY[type] : undefined
 
-export async function generateMetadata({ params }: ChartPageProps) {
-  const { type } = await params
-  const meta = getChartTypeMeta(type)
-
-  if (!meta) {
-    return notFound()
-  }
-
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates: {
-      canonical: meta.href,
-    },
-  } satisfies Metadata
-}
-
-export default async function ChartPage({ params }: ChartPageProps) {
-  const { type } = await params
-  const meta = getChartTypeMeta(type)
-
-  if (!meta || !chartTypes.includes(type as ChartType)) {
-    notFound()
-  }
-
-  const chartType = type as ChartType
-  const chartList = chartCatalog[chartType]
-
-  const chartDataPromises = chartList.map(async (chart) => {
-    const registryItem = await getCachedRegistryItem(chart.id, CHARTS_STYLE)
-    if (!registryItem) return null
-
-    const highlightedCode = await getChartHighlightedCode(
-      registryItem.files?.[0]?.content ?? ""
+  useEffect(() => {
+    router.replace(
+      category ? `/charts#chart-type-${category}` : "/charts"
     )
-    if (!highlightedCode) return null
+  }, [category, router])
 
-    return {
-      ...registryItem,
-      highlightedCode,
-      fullWidth: chart.fullWidth,
-    }
-  })
-
-  const prefetchedCharts = (await Promise.all(chartDataPromises)).filter(
-    (chart): chart is NonNullable<typeof chart> => chart != null
-  )
-
-  return (
-    <div
-      dir="rtl"
-      lang="fa"
-      className="mx-auto flex w-full max-w-6xl min-w-0 flex-col gap-8 px-4 pb-8 md:px-6"
-    >
-      <h1 className="sr-only">{meta.title}</h1>
-
-      <div className="grid flex-1 scroll-mt-20 items-stretch gap-10 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-10">
-        {prefetchedCharts.map((chart, index) => (
-          <ChartDisplay
-            key={chart.name}
-            chart={chart}
-            styleName={CHARTS_STYLE}
-            priority={index < 2}
-            className={cn(chart.fullWidth && "md:col-span-2 lg:col-span-3")}
-          />
-        ))}
-      </div>
-    </div>
-  )
+  return null
 }

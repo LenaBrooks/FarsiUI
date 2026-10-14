@@ -1,16 +1,8 @@
-import { type Metadata } from "next"
-
-import { ChartsShowcase } from "@/components/charts-showcase"
+import { Chart2Gallery } from "@/components/chart2-gallery"
 
 export const dynamic = "force-static"
 export const revalidate = false
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/charts",
-  },
-}
-
 export default function ChartsPage() {
-  return <ChartsShowcase />
+  return <Chart2Gallery />
 }

@@ -5,7 +5,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import { usePersianMockData } from "@/components/chart2-live"
 import {
   chart2AreaContainerClassName,
-  chart2MockConfig,
+  chart2BarMockConfig,
   formatPersianNumber,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -25,7 +25,7 @@ export default function PercentAreaChartDemo() {
   const data = usePersianMockData(6, 198905)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2AreaContainerClassName}>
+    <ChartContainer config={chart2BarMockConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}
@@ -50,7 +50,7 @@ export default function PercentAreaChartDemo() {
                 const n = typeof value === "number" ? value : Number(value)
                 const pct = total > 0 ? n / total : 0
                 const label =
-                  chart2MockConfig[name as keyof typeof chart2MockConfig]
+                  chart2BarMockConfig[name as keyof typeof chart2BarMockConfig]
                     ?.label ?? String(name)
                 return (
                   <div className="flex w-full items-center justify-between gap-3 font-sans [font-family:var(--font-sans)]">

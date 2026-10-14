@@ -1,0 +1,37 @@
+---
+title: ورودی کارت بانکی (Bank Card)
+description: ورود شماره کارت با قالب‌بندی، الگوریتم Luhn و تشخیص بانک صادرکننده.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[
+    { name: "bank-card-input-demo", label: "پیش‌فرض", sizeable: false },
+  ]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add bank-card-input
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { BankCardInput } from "@/components/ui/bank-card-input"
+
+export function Example() {
+  return (
+    <BankCardInput
+      onValueChange={(digits, { valid, bank }) => {
+        console.log(digits, valid, bank)
+      }}
+    />
+  )
+}
+```

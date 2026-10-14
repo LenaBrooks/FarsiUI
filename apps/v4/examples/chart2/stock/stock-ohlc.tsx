@@ -40,7 +40,7 @@ const chartConfig = {
   ohlc: { label: "OHLC", color: "var(--chart-1)" },
 } satisfies ChartConfig
 
-/** میلهٔ OHLC کلاسیک: خط عمودی H–L و تیک افقی باز/بسته. */
+/** میله OHLC کلاسیک: خط عمودی H–L و تیک افقی باز/بسته. */
 function OhlcBar(props: BarShapeProps) {
   const {
     x = 0,

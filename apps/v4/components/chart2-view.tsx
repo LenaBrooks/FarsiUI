@@ -8,9 +8,14 @@ import { cn } from "cn"
 import { type Chart2Example } from "@/lib/chart2-catalog"
 import { Chart2DemoPreview } from "@/components/chart2-demo-preview"
 import {
+  Chart2GridToggleButton,
   Chart2LiveProvider,
   Chart2RandomizeButton,
   Chart2ToolbarStart,
+  chart2GridHiddenClass,
+  useChart2GridBaselines,
+  useChart2HasGrid,
+  useChart2Live,
 } from "@/components/chart2-live"
 import { CodeBlockCommand } from "@/components/code-block-command"
 import { Button } from "@/registry/new-york-v4/ui/button"
@@ -52,6 +57,34 @@ function DocsHeading({
         </span>
       </a>
     </h2>
+  )
+}
+
+function Chart2ViewStage({ exampleId }: { exampleId: string }) {
+  const live = useChart2Live()
+  const stageRef = React.useRef<HTMLDivElement>(null)
+  const hasGrid = useChart2HasGrid(stageRef, [exampleId])
+  useChart2GridBaselines(stageRef, hasGrid ? live?.showGrid : true)
+
+  return (
+    <div
+      ref={stageRef}
+      className={cn(
+        "overflow-visible rounded-xl border border-border/60 bg-muted/20",
+        hasGrid ? chart2GridHiddenClass(live?.showGrid) : undefined
+      )}
+    >
+      <div className="flex min-h-9 items-center gap-2 border-b border-border/40 px-2.5 py-1">
+        <Chart2ToolbarStart />
+        <div className="ms-auto flex shrink-0 items-center gap-0.5">
+          {hasGrid ? <Chart2GridToggleButton /> : null}
+          <Chart2RandomizeButton />
+        </div>
+      </div>
+      <div className="flex items-center justify-center p-4 md:p-6">
+        <Chart2DemoPreview id={exampleId} />
+      </div>
+    </div>
   )
 }
 
@@ -126,17 +159,7 @@ export function Chart2View({
         )}
       >
         <Chart2LiveProvider>
-          <div className="overflow-visible rounded-xl border border-border/60 bg-muted/20">
-            <div className="flex min-h-9 items-center gap-2 border-b border-border/40 px-2.5 py-1">
-              <Chart2ToolbarStart />
-              <div className="ms-auto shrink-0">
-                <Chart2RandomizeButton />
-              </div>
-            </div>
-            <div className="flex items-center justify-center p-4 md:p-6">
-              <Chart2DemoPreview id={example.id} />
-            </div>
-          </div>
+          <Chart2ViewStage exampleId={example.id} />
         </Chart2LiveProvider>
 
         <div className="typeset mt-10">

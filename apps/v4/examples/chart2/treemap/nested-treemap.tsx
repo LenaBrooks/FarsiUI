@@ -2,6 +2,7 @@
 
 import { Treemap, type TreemapNode } from "recharts"
 
+import { useChart2Caption } from "@/components/chart2-live"
 import { formatChart2Number } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -10,78 +11,54 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
-import { TREEMAP_DATA_NESTED } from "./data"
-import { TREEMAP_COLORS, treemapColorAt } from "./treemap-colors"
+import { TREEMAP_DATA_GALLERY } from "./data"
+import { NestedTreemapContent } from "./treemap-content"
+import { TREEMAP_COLORS } from "./treemap-colors"
 
 const chartConfig = {
   size: { label: "اندازه", color: TREEMAP_COLORS[0] },
 } satisfies ChartConfig
 
-function TreemapContent(props: TreemapNode) {
-  const { root, depth, x, y, width, height, index, name } = props
-  if (depth !== 1) return null
-
-  const fill = treemapColorAt(index, root?.children?.length ?? 1)
-  const showLabel = width > 44 && height > 28
-
-  return (
-    <g>
-      <rect
-        x={x}
-        y={y}
-        width={width}
-        height={height}
-        style={{
-          fill,
-          stroke: "var(--background)",
-          strokeWidth: 2,
-        }}
-      />
-      {showLabel ? (
-        <text
-          x={x + width / 2}
-          y={y + height / 2}
-          textAnchor="middle"
-          dominantBaseline="central"
-          fill="#1f2937"
-          fontSize={width > 70 ? 12 : 10}
-          style={{ fontFamily: "var(--font-sans)", direction: "rtl" }}
-        >
-          {name}
-        </text>
-      ) : null}
-    </g>
-  )
+function nestBreadcrumb(item: TreemapNode, index: number) {
+  const raw = item?.name
+  const label =
+    !raw || raw === "root" || raw === "Root" ? "همه" : String(raw)
+  return index === 0 ? `↑ ${label}` : label
 }
 
-/**
- * با type="nest"، کلیک روی گرهٔ والد بزرگ‌نمایی می‌کند و فرزندان را نشان می‌دهد.
- * برای برگشت، از مسیر ناوبری پایین نمودار استفاده کنید.
- */
 export default function NestedTreemapDemo() {
+  useChart2Caption(() => (
+    <>
+      روی دسته کلیک کنید تا وارد شوید؛ برای برگشت از نوار پایین (مثلاً «↑ همه»)
+      استفاده کنید
+    </>
+  ))
+
   return (
-    <ChartContainer
-      config={chartConfig}
-      dir="ltr"
-      className="mx-auto aspect-[4/3] h-auto w-full max-w-[500px] max-h-[80vh] font-sans text-xs"
-    >
-      <Treemap
-        data={TREEMAP_DATA_NESTED}
-        dataKey="size"
-        nameKey="name"
-        aspectRatio={4 / 3}
-        type="nest"
-        content={TreemapContent}
-        isAnimationActive
+    <div className="w-full max-w-[720px] font-sans" dir="rtl">
+      <ChartContainer
+        config={chartConfig}
+        dir="ltr"
+        className="aspect-[1.618] h-auto w-full overflow-visible font-sans text-xs [&_.recharts-responsive-container]:overflow-visible [&_.recharts-treemap-nest-index-wrapper]:mt-2 [&_.recharts-treemap-nest-index-wrapper]:flex [&_.recharts-treemap-nest-index-wrapper]:flex-wrap [&_.recharts-treemap-nest-index-wrapper]:justify-center [&_.recharts-treemap-nest-index-wrapper]:gap-1.5 [&_.recharts-treemap-nest-index-wrapper]:text-center [&_.recharts-treemap-nest-index-box]:!m-0 [&_.recharts-treemap-nest-index-box]:rounded-md [&_.recharts-treemap-nest-index-box]:!bg-primary [&_.recharts-treemap-nest-index-box]:px-2.5 [&_.recharts-treemap-nest-index-box]:py-1 [&_.recharts-treemap-nest-index-box]:!text-primary-foreground [&_.recharts-treemap-nest-index-box]:text-xs [&_.recharts-treemap-nest-index-box]:font-medium"
       >
-        <ChartTooltip
-          content={
-            <ChartTooltipContent
-              formatter={(value) => formatChart2Number(value as number)}
-            />
-          }
-        />
-      </Treemap>
-    </ChartContainer>
+        <Treemap
+          data={TREEMAP_DATA_GALLERY}
+          dataKey="size"
+          nameKey="name"
+          type="nest"
+          content={NestedTreemapContent}
+          nestIndexContent={nestBreadcrumb}
+          isAnimationActive
+        >
+          <ChartTooltip
+            content={
+              <ChartTooltipContent
+                formatter={(value) => formatChart2Number(value as number)}
+              />
+            }
+          />
+        </Treemap>
+      </ChartContainer>
+    </div>
   )
 }

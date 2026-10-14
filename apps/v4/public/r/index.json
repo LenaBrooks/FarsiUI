@@ -29,6 +29,32 @@
     }
   },
   {
+    "name": "address-form",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "field",
+      "input",
+      "textarea",
+      "native-select",
+      "label",
+      "iran",
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/address-form.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/address-form"
+        }
+      }
+    }
+  },
+  {
     "name": "alert",
     "type": "registry:ui",
     "files": [
@@ -184,6 +210,28 @@
         "radix": {
           "docs": "https://farsiui.ir/docs/components/radix/badge",
           "examples": "https://farsiui.ir/code/apps/v4/registry/bases/radix/examples/badge-example.tsx"
+        }
+      }
+    }
+  },
+  {
+    "name": "bank-card-input",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "input",
+      "iran",
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/bank-card-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/bank-card-input"
         }
       }
     }
@@ -647,6 +695,23 @@
     }
   },
   {
+    "name": "drag-scroll",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/drag-scroll.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/drag-scroll"
+        }
+      }
+    }
+  },
+  {
     "name": "drawer",
     "type": "registry:ui",
     "dependencies": [
@@ -759,6 +824,28 @@
         "radix": {
           "docs": "https://farsiui.ir/docs/components/radix/field",
           "examples": "https://farsiui.ir/code/apps/v4/registry/bases/radix/examples/field-example.tsx"
+        }
+      }
+    }
+  },
+  {
+    "name": "file-upload",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "button",
+      "progress",
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/file-upload.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/file-upload"
         }
       }
     }
@@ -890,6 +977,32 @@
           "docs": "https://farsiui.ir/docs/components/radix/input-otp",
           "examples": "https://farsiui.ir/code/apps/v4/registry/bases/radix/examples/input-otp-example.tsx",
           "api": "https://input-otp.rodz.dev"
+        }
+      }
+    }
+  },
+  {
+    "name": "iran-division-picker",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "field",
+      "native-select",
+      "label"
+    ],
+    "files": [
+      {
+        "path": "ui/iran-division-picker.tsx",
+        "type": "registry:ui"
+      },
+      {
+        "path": "lib/iran-geo.ts",
+        "type": "registry:lib"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/iran-division-picker"
         }
       }
     }
@@ -1067,6 +1180,28 @@
     }
   },
   {
+    "name": "national-code-input",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "input",
+      "iran",
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/national-code-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/national-code-input"
+        }
+      }
+    }
+  },
+  {
     "name": "native-select",
     "type": "registry:ui",
     "files": [
@@ -1159,6 +1294,28 @@
     ]
   },
   {
+    "name": "phone-input",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "input",
+      "iran",
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/phone-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/phone-input"
+        }
+      }
+    }
+  },
+  {
     "name": "popover",
     "type": "registry:ui",
     "files": [
@@ -1183,6 +1340,29 @@
           "docs": "https://farsiui.ir/docs/components/radix/popover",
           "examples": "https://farsiui.ir/code/apps/v4/registry/bases/radix/examples/popover-example.tsx",
           "api": "https://www.radix-ui.com/docs/primitives/components/popover.md"
+        }
+      }
+    }
+  },
+  {
+    "name": "price-input",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "input",
+      "button",
+      "iran",
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/price-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/price-input"
         }
       }
     }
@@ -1282,6 +1462,33 @@
     }
   },
   {
+    "name": "relative-time",
+    "type": "registry:ui",
+    "dependencies": [
+      "date-fns-jalali"
+    ],
+    "registryDependencies": [
+      "digits"
+    ],
+    "files": [
+      {
+        "path": "ui/relative-time.tsx",
+        "type": "registry:ui"
+      },
+      {
+        "path": "lib/relative-time.ts",
+        "type": "registry:lib"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/relative-time"
+        }
+      }
+    }
+  },
+  {
     "name": "resizable",
     "type": "registry:ui",
     "dependencies": [
@@ -1319,6 +1526,15 @@
     "dependencies": [
       "@tiptap/react",
       "@tiptap/starter-kit",
+      "@tiptap/extension-text-style",
+      "@tiptap/extension-highlight",
+      "@tiptap/extension-text-align",
+      "@tiptap/extension-subscript",
+      "@tiptap/extension-superscript",
+      "@tiptap/extension-table",
+      "@tiptap/extension-task-list",
+      "@tiptap/extension-task-item",
+      "@tiptap/extension-typography",
       "@tiptap/extension-underline",
       "@tiptap/extension-link",
       "@tiptap/extension-image",
@@ -1332,7 +1548,8 @@
       "dialog",
       "input",
       "label",
-      "dropdown-menu"
+      "dropdown-menu",
+      "popover"
     ],
     "files": [
       {
@@ -1349,6 +1566,10 @@
       },
       {
         "path": "lib/rich-text-editor.ts",
+        "type": "registry:lib"
+      },
+      {
+        "path": "lib/rich-text-editor-presets.ts",
         "type": "registry:lib"
       }
     ],
@@ -1448,6 +1669,27 @@
     }
   },
   {
+    "name": "sheba-input",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "input",
+      "iran"
+    ],
+    "files": [
+      {
+        "path": "ui/sheba-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/sheba-input"
+        }
+      }
+    }
+  },
+  {
     "name": "sheet",
     "type": "registry:ui",
     "registryDependencies": [
@@ -1510,6 +1752,26 @@
         "radix": {
           "docs": "https://farsiui.ir/docs/components/radix/sidebar",
           "examples": "https://farsiui.ir/code/apps/v4/registry/bases/radix/examples/sidebar-example.tsx"
+        }
+      }
+    }
+  },
+  {
+    "name": "signature-pad",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "button"
+    ],
+    "files": [
+      {
+        "path": "ui/signature-pad.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "meta": {
+      "links": {
+        "base": {
+          "docs": "https://farsiui.ir/docs/components/base/signature-pad"
         }
       }
     }

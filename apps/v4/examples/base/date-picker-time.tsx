@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import { ChevronDownIcon } from "lucide-react"
-import { faIR as faIRDayPicker } from "react-day-picker/locale"
 
 import { Button } from "@/registry/bases/base/ui/button"
 import { Calendar } from "@/registry/bases/base/ui/calendar"
@@ -15,7 +14,7 @@ import {
 } from "@/registry/bases/base/ui/popover"
 
 function formatDate(date: Date) {
-  return date.toLocaleDateString("fa-IR", {
+  return date.toLocaleDateString("fa-IR-u-ca-persian", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -50,8 +49,6 @@ export default function DatePickerTime() {
               selected={date}
               captionLayout="dropdown"
               defaultMonth={date}
-              locale={faIRDayPicker}
-              dir="rtl"
               onSelect={(next) => {
                 setDate(next)
                 setOpen(false)

@@ -5,7 +5,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import { usePersianMockData } from "@/components/chart2-live"
 import {
   chart2AreaContainerClassName,
-  chart2MockConfig,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -20,7 +20,7 @@ export default function CardinalAreaChartDemo() {
   const data = usePersianMockData(6, 9823)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2AreaContainerClassName}>
+    <ChartContainer config={chart2BarMockConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}

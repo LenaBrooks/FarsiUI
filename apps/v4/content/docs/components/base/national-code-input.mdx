@@ -1,0 +1,31 @@
+---
+title: ورودی کد ملی (National Code)
+description: ورود کد ملی با گروه‌بندی کارت و اعتبارسنجی رقم کنترلی.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[
+    { name: "national-code-input-demo", label: "پیش‌فرض", sizeable: false },
+  ]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add national-code-input
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { NationalCodeInput } from "@/components/ui/national-code-input"
+
+export function Example() {
+  return <NationalCodeInput onValueChange={(digits, valid) => {}} />
+}
+```

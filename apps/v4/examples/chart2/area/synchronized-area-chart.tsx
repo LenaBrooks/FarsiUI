@@ -5,7 +5,7 @@ import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import { usePersianMockData } from "@/components/chart2-live"
 import {
   chart2DashedGridClassName,
-  chart2MockConfig,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -46,7 +46,7 @@ export default function SynchronizedAreaChartDemo() {
 
   return (
     <div className="flex w-full flex-col gap-3">
-      <ChartContainer config={chart2MockConfig} className={syncClassName}>
+      <ChartContainer config={chart2BarMockConfig} className={syncClassName}>
         <AreaChart
           accessibilityLayer
           data={data}
@@ -64,7 +64,7 @@ export default function SynchronizedAreaChartDemo() {
         </AreaChart>
       </ChartContainer>
 
-      <ChartContainer config={chart2MockConfig} className={syncClassName}>
+      <ChartContainer config={chart2BarMockConfig} className={syncClassName}>
         <AreaChart
           accessibilityLayer
           data={data}
@@ -84,7 +84,7 @@ export default function SynchronizedAreaChartDemo() {
         </AreaChart>
       </ChartContainer>
 
-      <ChartContainer config={chart2MockConfig} className={syncClassName}>
+      <ChartContainer config={chart2BarMockConfig} className={syncClassName}>
         <AreaChart
           accessibilityLayer
           data={data}

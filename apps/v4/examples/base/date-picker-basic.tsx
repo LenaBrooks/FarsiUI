@@ -1,11 +1,10 @@
 "use client"
 
 import * as React from "react"
-import { faIR as faIRDayPicker } from "react-day-picker/locale"
+import { ChevronDownIcon } from "lucide-react"
 
 import { Button } from "@/registry/bases/base/ui/button"
 import { Calendar } from "@/registry/bases/base/ui/calendar"
-import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
 import {
   Popover,
   PopoverContent,
@@ -13,30 +12,30 @@ import {
 } from "@/registry/bases/base/ui/popover"
 
 function formatDate(date: Date) {
-  return date.toLocaleDateString("fa-IR", {
+  return date.toLocaleDateString("fa-IR-u-ca-persian", {
     day: "numeric",
     month: "long",
     year: "numeric",
   })
 }
 
-export default function DatePickerSimple() {
+export default function DatePickerBasic() {
   const [date, setDate] = React.useState<Date>()
 
   return (
-    <Field className="mx-auto w-44" dir="rtl">
-      <FieldLabel htmlFor="date-picker-simple">تاریخ</FieldLabel>
+    <div dir="rtl">
       <Popover>
         <PopoverTrigger
           render={
             <Button
-              variant="outline"
-              id="date-picker-simple"
-              className="justify-start font-normal"
+              variant={"outline"}
+              data-empty={!date}
+              className="w-[212px] justify-between text-start font-normal data-[empty=true]:text-muted-foreground"
             />
           }
         >
           {date ? formatDate(date) : <span>انتخاب تاریخ</span>}
+          <ChevronDownIcon data-icon="inline-end" />
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0" align="start">
           <Calendar
@@ -44,11 +43,9 @@ export default function DatePickerSimple() {
             selected={date}
             onSelect={setDate}
             defaultMonth={date}
-            locale={faIRDayPicker}
-            dir="rtl"
           />
         </PopoverContent>
       </Popover>
-    </Field>
+    </div>
   )
 }

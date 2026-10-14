@@ -37,7 +37,7 @@
     },
     {
       "id": "radial-bar",
-      "title": "میلهٔ شعاعی",
+      "title": "میله شعاعی",
       "en": "RadialBarChart"
     },
     {
@@ -104,12 +104,6 @@
       "id": "biaxial-line-chart",
       "title": "نمودار خطی دو‌محوره",
       "en": "Biaxial Line Chart",
-      "category": "line"
-    },
-    {
-      "id": "vertical-line-chart-with-specified-domain",
-      "title": "نمودار خطی عمودی با دامنهٔ مشخص",
-      "en": "Vertical Line Chart With Specified Domain",
       "category": "line"
     },
     {
@@ -318,7 +312,7 @@
     },
     {
       "id": "animated-bar-width",
-      "title": "عرض میلهٔ متحرک",
+      "title": "عرض میله متحرک",
       "en": "Animated Bar Width",
       "category": "bar"
     },
@@ -348,7 +342,7 @@
     },
     {
       "id": "positive-and-negative-bar-chart",
-      "title": "میلهٔ مثبت و منفی",
+      "title": "میله مثبت و منفی",
       "en": "Positive and Negative Bar Chart",
       "category": "bar"
     },
@@ -360,25 +354,13 @@
     },
     {
       "id": "bar-chart-with-customized-event",
-      "title": "میله با رویداد سفارشی",
+      "title": "انتخاب میله با کلیک",
       "en": "Bar Chart With Customized Event",
       "category": "bar"
     },
     {
-      "id": "bar-chart-with-min-height",
-      "title": "میله با حداقل ارتفاع",
-      "en": "Bar Chart With Min Height",
-      "category": "bar"
-    },
-    {
-      "id": "bar-chart-stacked-by-sign",
-      "title": "انباشته بر اساس علامت",
-      "en": "Bar Chart Stacked By Sign",
-      "category": "bar"
-    },
-    {
       "id": "biaxial-bar-chart",
-      "title": "میلهٔ دو‌محوره",
+      "title": "میله دو‌محوره",
       "en": "Biaxial Bar Chart",
       "category": "bar"
     },
@@ -395,80 +377,80 @@
       "category": "bar"
     },
     {
-      "id": "bar-chart-with-multi-x-axis",
-      "title": "میله با چند محور X",
-      "en": "Bar Chart With Multi X Axis",
-      "category": "bar"
-    },
-    {
       "id": "ranged-stacked-bar-chart",
-      "title": "میلهٔ انباشتهٔ بازه‌ای",
+      "title": "مراحل سفارش به‌صورت بازه",
       "en": "Ranged Stacked Bar Chart",
       "category": "bar"
     },
     {
       "id": "bar-chart-range",
-      "title": "میلهٔ بازه‌ای",
+      "title": "میله بازه‌ای",
       "en": "Ranged Bar Chart",
       "category": "bar"
     },
     {
       "id": "tiny-bar-chart",
-      "title": "میلهٔ فشرده",
+      "title": "میله فشرده",
       "en": "Tiny Bar Chart",
       "category": "bar"
     },
     {
-      "id": "scroll-animate-bar-chart",
-      "title": "انیمیشن با اسکرول",
-      "en": "Animate by Scroll",
-      "category": "bar"
-    },
-    {
       "id": "stacked-bar-chart-with-horizontal-line",
-      "title": "میلهٔ انباشته با خط افقی",
+      "title": "فروش در برابر هدف",
       "en": "Stacked Bar Chart with Horizontal Line",
       "category": "bar"
     },
     {
+      "id": "asset-returns",
+      "title": "مقایسه بازدهی دارایی‌ها",
+      "en": "Asset Returns Comparison",
+      "category": "stock"
+    },
+    {
+      "id": "monthly-savings",
+      "title": "پس‌انداز ماه‌به‌ماه",
+      "en": "Monthly Savings Balance",
+      "category": "stock"
+    },
+    {
       "id": "line-bar-area-composed-chart",
-      "title": "ترکیب خط، میله و ناحیه",
+      "title": "فروش کانال‌ها (ترکیبی)",
       "en": "Line Bar Area Composed Chart",
       "category": "composed"
     },
     {
       "id": "same-data-composed-chart",
-      "title": "ترکیبی با دادهٔ یکسان",
+      "title": "فروش با خط روند",
       "en": "Same Data Composed Chart",
       "category": "composed"
     },
     {
       "id": "vertical-composed-chart",
-      "title": "ترکیبی عمودی",
+      "title": "مقایسهٔ استان‌ها",
       "en": "Vertical Composed Chart",
       "category": "composed"
     },
     {
       "id": "composed-chart-with-axis-labels",
-      "title": "ترکیبی با برچسب محور",
+      "title": "درآمد و حاشیه با برچسب محور",
       "en": "Composed Chart With Axis Labels",
       "category": "composed"
     },
     {
       "id": "scatter-and-line-of-best-fit",
-      "title": "پراکندگی و خط برازش",
+      "title": "تبلیغات و فروش",
       "en": "Scatter And Line Of Best Fit",
       "category": "composed"
     },
     {
       "id": "banded-chart",
-      "title": "نمودار نواری",
+      "title": "فروش با بازهٔ اطمینان",
       "en": "Banded Chart",
       "category": "composed"
     },
     {
       "id": "target-price-chart",
-      "title": "قیمت هدف با برچسب فعال",
+      "title": "قیمت و هدف تحلیلگران",
       "en": "Target Price Chart with active Label",
       "category": "composed"
     },
@@ -476,12 +458,6 @@
       "id": "simple-scatter-chart",
       "title": "پراکندگی ساده",
       "en": "Simple Scatter Chart",
-      "category": "scatter"
-    },
-    {
-      "id": "three-dim-scatter-chart",
-      "title": "پراکندگی سه‌محوره",
-      "en": "Three Dim Scatter Chart",
       "category": "scatter"
     },
     {
@@ -563,12 +539,6 @@
       "category": "pie"
     },
     {
-      "id": "pie-chart-in-flexbox",
-      "title": "دایره‌ای در Flexbox",
-      "en": "Pie Chart in Flexbox",
-      "category": "pie"
-    },
-    {
       "id": "pie-chart-in-grid",
       "title": "دایره‌ای در Grid",
       "en": "Pie Chart in Grid",
@@ -576,7 +546,7 @@
     },
     {
       "id": "pie-with-gradient",
-      "title": "دایره‌ای گرادیانی",
+      "title": "سهم کانال با گرادیان",
       "en": "Pie Chart with Gradient",
       "category": "pie"
     },
@@ -600,13 +570,13 @@
     },
     {
       "id": "simple-radial-bar-chart",
-      "title": "میلهٔ شعاعی ساده",
+      "title": "میله شعاعی ساده",
       "en": "Simple Radial Bar Chart",
       "category": "radial-bar"
     },
     {
       "id": "radial-bar-chart-click-to-focus-legend",
-      "title": "میلهٔ شعاعی با فوکوس راهنما",
+      "title": "میله شعاعی با فوکوس راهنما",
       "en": "Radial Bar Chart with Click to Focus Legend",
       "category": "radial-bar"
     },

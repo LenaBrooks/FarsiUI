@@ -1,0 +1,35 @@
+---
+title: اسکرول کشیدنی (Drag Scroll)
+description: کانتینر اسکرول افقی با لمس موبایل و کشیدن با موس روی دسکتاپ.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "drag-scroll-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add drag-scroll
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { DragScroll } from "@/components/ui/drag-scroll"
+
+export function Example() {
+  return (
+    <DragScroll>
+      <div className="flex w-max gap-2">{/* chips / cards */}</div>
+    </DragScroll>
+  )
+}
+```
+
+روی موبایل اسکرول لمسی؛ روی دسکتاپ با کلیک‌نگه‌داشتن و کشیدن.

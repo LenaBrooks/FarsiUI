@@ -131,13 +131,6 @@ Carousel
 
 برای تنظیم اندازهٔ آیتم‌ها، از کلاس `basis` روی `<CarouselItem />` استفاده کنید.
 
-<ComponentPreview
-  styleName="base-nova"
-  name="carousel-size"
-  direction="rtl"
-  previewClassName="h-auto! min-h-0 py-6 px-6"
-/>
-
 ```tsx showLineNumbers {4-6}
 // ۳۳٪ از عرض کاروسل
 <Carousel>
@@ -172,13 +165,6 @@ Carousel
 
 برای فاصله بین آیتم‌ها، روی `<CarouselItem />` از `ps-[VALUE]` و روی `<CarouselContent />` از حاشیهٔ منفی `-ms-[VALUE]` استفاده کنید.
 
-<ComponentPreview
-  styleName="base-nova"
-  name="carousel-spacing"
-  direction="rtl"
-  previewClassName="h-auto! min-h-0 py-6 px-6"
-/>
-
 ```tsx showLineNumbers /-ms-4/ /ps-4/
 <Carousel>
   <CarouselContent className="-ms-4">
@@ -210,13 +196,6 @@ Carousel
 <DocsCollapsible title="جهت">
 
 با prop به نام `orientation` جهت کاروسل را تنظیم کنید.
-
-<ComponentPreview
-  styleName="base-nova"
-  name="carousel-orientation"
-  direction="rtl"
-  previewClassName="h-auto! min-h-0 px-6 py-14"
-/>
 
 ```tsx showLineNumbers /vertical | horizontal/
 <Carousel orientation="vertical | horizontal">
@@ -266,13 +245,6 @@ Carousel
 <DocsCollapsible title="API">
 
 با یک state و prop به نام `setApi` می‌توانید به نمونهٔ API کاروسل دسترسی داشته باشید.
-
-<ComponentPreview
-  styleName="base-nova"
-  name="carousel-api"
-  direction="rtl"
-  previewClassName="h-auto! min-h-0 py-6 px-6 sm:h-[32rem]"
-/>
 
 ```tsx showLineNumbers {1,4,22}
 import { type CarouselApi } from "@/components/ui/carousel"
@@ -378,13 +350,6 @@ export function Example() {
   )
 }
 ```
-
-<ComponentPreview
-  styleName="base-nova"
-  name="carousel-plugin"
-  direction="rtl"
-  previewClassName="h-auto! min-h-0 py-6 px-6 sm:h-[32rem]"
-/>
 
 </DocsCollapsible>
 

@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { useRouter } from "next/navigation"
-import { ChevronDownIcon, MenuIcon } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 import { cn } from "cn"
 
 import {
@@ -11,11 +11,25 @@ import {
   isChart2Featured,
   type Chart2CategoryId,
 } from "@/lib/chart2-catalog"
+import { PrefetchLink } from "@/components/prefetch-link"
 import {
   matchesNavQuery,
   normalizeNavSearch,
   SidebarNavSearch,
 } from "@/components/sidebar-nav-search"
+import {
+  SIDEBAR_COLLAPSIBLE_CONTENT_CLASS,
+  SIDEBAR_EMPTY_CLASS,
+  SIDEBAR_GROUP_TRIGGER_CLASS,
+  SIDEBAR_ITEM_ACTIVE,
+  SIDEBAR_NESTED_ITEM_CLASS,
+  SIDEBAR_NESTED_LABEL_CLASS,
+  SIDEBAR_NESTED_RAIL_CLASS,
+  SIDEBAR_SEARCH_INPUT_CLASS,
+  SidebarNavBullet,
+  SidebarNavChevron,
+  sidebarItemStateClass,
+} from "@/components/sidebar-nav-ui"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
   Collapsible,
@@ -32,13 +46,74 @@ import {
 const SIDEBAR_EN_CLASS =
   "max-w-[42%] shrink-0 truncate font-sans text-[11px] font-normal tracking-normal text-muted-foreground"
 
-const COLLAPSIBLE_CONTENT_CLASS = cn(
-  "overflow-hidden",
-  "data-[state=open]:animate-[docs-collapsible-down_300ms_ease-out]",
-  "data-[state=closed]:animate-[docs-collapsible-up_250ms_ease-out]"
-)
-
 const SEARCH_DEBOUNCE_MS = 200
+const CHART2_DETAIL_SCROLL_KEY = "chart2-sidebar-detail-scroll"
+const CHART2_DETAIL_OPEN_KEY = "chart2-sidebar-detail-open"
+const CHART2_GALLERY_SCROLL_KEY = "chart2-sidebar-gallery-scroll"
+
+function readSessionJson<T>(key: string): T | null {
+  try {
+    return JSON.parse(sessionStorage.getItem(key) ?? "") as T
+  } catch {
+    return null
+  }
+}
+
+function writeSessionJson(key: string, value: unknown) {
+  try {
+    sessionStorage.setItem(key, JSON.stringify(value))
+  } catch {
+    // ignore quota / private mode
+  }
+}
+
+/** Keep sidebar scroll across /chart2/view/* remounts. */
+function usePersistedNavScroll(
+  storageKey: string,
+  activeKey: string,
+  activeRef: React.RefObject<HTMLElement | null>
+) {
+  const navRef = React.useRef<HTMLElement>(null)
+
+  React.useLayoutEffect(() => {
+    const container = navRef.current
+    if (!container) return
+
+    const saved = readSessionJson<{ scrollTop: number }>(storageKey)
+    if (saved && typeof saved.scrollTop === "number") {
+      container.scrollTop = saved.scrollTop
+    }
+
+    const active = activeRef.current
+    if (!active) return
+
+    const containerRect = container.getBoundingClientRect()
+    const activeRect = active.getBoundingClientRect()
+    const fullyVisible =
+      activeRect.top >= containerRect.top &&
+      activeRect.bottom <= containerRect.bottom
+    if (fullyVisible) return
+
+    // Only nudge if the active item left the viewport after restore.
+    container.scrollTop +=
+      activeRect.top -
+      containerRect.top -
+      (container.clientHeight - activeRect.height) / 2
+  }, [storageKey, activeKey, activeRef])
+
+  React.useEffect(() => {
+    const container = navRef.current
+    if (!container) return
+
+    const onScroll = () => {
+      writeSessionJson(storageKey, { scrollTop: container.scrollTop })
+    }
+    container.addEventListener("scroll", onScroll, { passive: true })
+    return () => container.removeEventListener("scroll", onScroll)
+  }, [storageKey])
+
+  return navRef
+}
 
 function useDebouncedNavQuery(searchValue: string) {
   const [debouncedQuery, setDebouncedQuery] = React.useState("")
@@ -81,7 +156,12 @@ function GalleryCategoryNav({
   onSelect: (id: Chart2CategoryId) => void
   className?: string
 }) {
-  const activeRef = React.useRef<HTMLButtonElement>(null)
+  const activeRef = React.useRef<HTMLAnchorElement>(null)
+  const navRef = usePersistedNavScroll(
+    CHART2_GALLERY_SCROLL_KEY,
+    activeId,
+    activeRef
+  )
   const [searchValue, setSearchValue] = React.useState("")
   const { debouncedQuery, clearSearch } = useDebouncedNavQuery(searchValue)
 
@@ -99,10 +179,6 @@ function GalleryCategoryNav({
     clearSearch()
   }, [clearSearch])
 
-  React.useEffect(() => {
-    activeRef.current?.scrollIntoView({ block: "nearest" })
-  }, [activeId])
-
   return (
     <div className={cn("flex min-h-0 flex-1 flex-col", className)}>
       <div className="shrink-0 pe-1 pb-3">
@@ -110,38 +186,48 @@ function GalleryCategoryNav({
           value={searchValue}
           onValueChange={setSearchValue}
           onClear={clearAll}
-          inputClassName="text-[13px]"
+          inputClassName={SIDEBAR_SEARCH_INPUT_CLASS}
         />
       </div>
       <nav
+        ref={navRef}
         aria-label="انواع نمودار"
         className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-16"
       >
         {filteredCategories.length === 0 ? (
-          <div className="px-2 py-6 text-center text-[13px] text-muted-foreground">
-            نتیجه‌ای پیدا نشد.
-          </div>
+          <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
         ) : null}
         {filteredCategories.map((item) => {
           const Icon = item.icon
           const active = item.id === activeId
+          const href = `/chart2#chart-type-${item.id}`
           return (
-            <button
+            <PrefetchLink
               key={item.id}
               ref={active ? activeRef : undefined}
-              type="button"
-              onClick={() => onSelect(item.id)}
+              href={href}
+              onClick={(event) => {
+                // Same-tab: keep in-page scroll handler. Modified clicks use href.
+                if (
+                  event.metaKey ||
+                  event.ctrlKey ||
+                  event.shiftKey ||
+                  event.altKey ||
+                  event.button !== 0
+                ) {
+                  return
+                }
+                event.preventDefault()
+                onSelect(item.id)
+              }}
               className={cn(
-                "flex h-9 w-full min-w-0 cursor-pointer items-center gap-2 rounded-md px-2 text-[13px] font-medium outline-none transition-colors",
-                "focus-visible:ring-2 focus-visible:ring-ring",
-                active
-                  ? "bg-primary/10 text-primary"
-                  : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+                SIDEBAR_GROUP_TRIGGER_CLASS,
+                active ? SIDEBAR_ITEM_ACTIVE : undefined
               )}
             >
               <Icon className="size-3.5 shrink-0 opacity-80" aria-hidden />
               <CategoryFaEn title={item.title} en={item.en} />
-            </button>
+            </PrefetchLink>
           )
         })}
       </nav>
@@ -152,20 +238,32 @@ function GalleryCategoryNav({
 function DetailCategoryNav({
   activeCategoryId,
   activeExampleId,
-  onSelectExample,
+  onNavigate,
   className,
 }: {
   activeCategoryId: Chart2CategoryId
   activeExampleId: string
-  onSelectExample: (id: string) => void
+  /** Close mobile sheet / side effects after a same-tab navigate. */
+  onNavigate?: () => void
   className?: string
 }) {
   const [openGroups, setOpenGroups] = React.useState<Record<string, boolean>>(
-    () => ({ [activeCategoryId]: true })
+    () => {
+      const saved = readSessionJson<Record<string, boolean>>(CHART2_DETAIL_OPEN_KEY)
+      return {
+        ...(saved ?? {}),
+        [activeCategoryId]: true,
+      }
+    }
   )
   const [searchValue, setSearchValue] = React.useState("")
   const { debouncedQuery, clearSearch } = useDebouncedNavQuery(searchValue)
-  const activeExampleRef = React.useRef<HTMLButtonElement>(null)
+  const activeExampleRef = React.useRef<HTMLAnchorElement>(null)
+  const navRef = usePersistedNavScroll(
+    CHART2_DETAIL_SCROLL_KEY,
+    activeExampleId,
+    activeExampleRef
+  )
 
   const filteredGroups = React.useMemo(() => {
     return chart2Categories
@@ -198,9 +296,12 @@ function DetailCategoryNav({
   }, [debouncedQuery])
 
   React.useEffect(() => {
-    setOpenGroups((prev) =>
-      prev[activeCategoryId] ? prev : { ...prev, [activeCategoryId]: true }
-    )
+    setOpenGroups((prev) => {
+      if (prev[activeCategoryId]) return prev
+      const next = { ...prev, [activeCategoryId]: true }
+      writeSessionJson(CHART2_DETAIL_OPEN_KEY, next)
+      return next
+    })
   }, [activeCategoryId])
 
   React.useEffect(() => {
@@ -210,21 +311,26 @@ function DetailCategoryNav({
       for (const group of filteredGroups) {
         next[group.item.id] = true
       }
+      writeSessionJson(CHART2_DETAIL_OPEN_KEY, next)
       return next
     })
   }, [debouncedQuery, filteredGroups])
-
-  React.useEffect(() => {
-    activeExampleRef.current?.scrollIntoView({
-      block: "nearest",
-      behavior: "smooth",
-    })
-  }, [activeExampleId])
 
   const clearAll = React.useCallback(() => {
     setSearchValue("")
     clearSearch()
   }, [clearSearch])
+
+  const setGroupOpen = React.useCallback(
+    (id: string, next: boolean) => {
+      setOpenGroups((prev) => {
+        const updated = { ...prev, [id]: next }
+        writeSessionJson(CHART2_DETAIL_OPEN_KEY, updated)
+        return updated
+      })
+    },
+    []
+  )
 
   return (
     <div className={cn("flex min-h-0 flex-1 flex-col", className)}>
@@ -233,17 +339,16 @@ function DetailCategoryNav({
           value={searchValue}
           onValueChange={setSearchValue}
           onClear={clearAll}
-          inputClassName="text-[13px]"
+          inputClassName={SIDEBAR_SEARCH_INPUT_CLASS}
         />
       </div>
       <nav
+        ref={navRef}
         aria-label="انواع و نمونه‌های نمودار"
         className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-16"
       >
         {filteredGroups.length === 0 ? (
-          <div className="px-2 py-6 text-center text-[13px] text-muted-foreground">
-            نتیجه‌ای پیدا نشد.
-          </div>
+          <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
         ) : null}
         {filteredGroups.map(({ item, examples }) => {
           const Icon = item.icon
@@ -254,67 +359,52 @@ function DetailCategoryNav({
             <Collapsible
               key={item.id}
               open={open}
-              onOpenChange={(next) =>
-                setOpenGroups((prev) => ({ ...prev, [item.id]: next }))
-              }
+              onOpenChange={(next) => setGroupOpen(item.id, next)}
               className="group/chart2-folder"
             >
               <CollapsibleTrigger
                 className={cn(
-                  "flex h-9 w-full min-w-0 cursor-pointer items-center gap-1.5 rounded-md px-2 text-[13px] font-medium outline-none transition-colors",
-                  "focus-visible:ring-2 focus-visible:ring-ring",
-                  categoryActive
-                    ? "bg-primary/10 text-primary"
-                    : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+                  SIDEBAR_GROUP_TRIGGER_CLASS,
+                  categoryActive ? SIDEBAR_ITEM_ACTIVE : undefined
                 )}
               >
                 <Icon className="size-3.5 shrink-0 opacity-80" aria-hidden />
                 <CategoryFaEn title={item.title} en={item.en} />
-                <ChevronDownIcon
-                  className={cn(
-                    "size-3.5 shrink-0 opacity-50 transition-transform duration-200",
-                    "group-data-[state=open]/chart2-folder:rotate-180"
-                  )}
-                  aria-hidden
-                />
+                <SidebarNavChevron group="chart2-folder" />
               </CollapsibleTrigger>
 
-              <CollapsibleContent className={COLLAPSIBLE_CONTENT_CLASS}>
-                <div className="mt-0.5 mb-1 ms-2 flex flex-col gap-0.5 border-s border-border/50 ps-2">
+              <CollapsibleContent
+                className={SIDEBAR_COLLAPSIBLE_CONTENT_CLASS}
+              >
+                <div className={SIDEBAR_NESTED_RAIL_CLASS}>
                   {examples.map((example) => {
                     const active = example.id === activeExampleId
                     const featured = isChart2Featured(example.id)
                     return (
-                      <button
+                      <PrefetchLink
                         key={example.id}
                         ref={active ? activeExampleRef : undefined}
-                        type="button"
-                        onClick={() => onSelectExample(example.id)}
+                        href={`/chart2/view/${example.id}`}
                         title={example.en}
+                        onClick={() => {
+                          const container = navRef.current
+                          if (container) {
+                            writeSessionJson(CHART2_DETAIL_SCROLL_KEY, {
+                              scrollTop: container.scrollTop,
+                            })
+                          }
+                          onNavigate?.()
+                        }}
                         className={cn(
-                          "flex h-8 w-full min-w-0 cursor-pointer items-center gap-2 rounded-md px-2 text-start outline-none transition-colors",
-                          "focus-visible:ring-2 focus-visible:ring-ring",
-                          active
-                            ? "bg-primary/10 text-primary"
-                            : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+                          SIDEBAR_NESTED_ITEM_CLASS,
+                          sidebarItemStateClass(active)
                         )}
                       >
-                        {featured ? (
-                          <span
-                            className="size-1.5 shrink-0 rounded-full bg-emerald-500"
-                            title="پیشنهادی"
-                            aria-label="پیشنهادی"
-                          />
-                        ) : (
-                          <span
-                            aria-hidden
-                            className="size-1 shrink-0 rounded-full bg-current opacity-40"
-                          />
-                        )}
-                        <span className="truncate text-[12.5px] font-medium leading-snug">
+                        <SidebarNavBullet featured={featured} />
+                        <span className={SIDEBAR_NESTED_LABEL_CLASS}>
                           {example.title}
                         </span>
-                      </button>
+                      </PrefetchLink>
                     )
                   })}
                 </div>
@@ -359,19 +449,15 @@ export function Chart2Shell({
     [onSelectCategory, router]
   )
 
-  const selectExample = React.useCallback(
-    (id: string) => {
-      setSheetOpen(false)
-      router.push(`/chart2/view/${id}`)
-    },
-    [router]
-  )
+  const closeMobileNav = React.useCallback(() => {
+    setSheetOpen(false)
+  }, [])
 
   const nav = detailMode ? (
     <DetailCategoryNav
       activeCategoryId={activeCategoryId}
       activeExampleId={activeExampleId!}
-      onSelectExample={selectExample}
+      onNavigate={closeMobileNav}
     />
   ) : (
     <GalleryCategoryNav
@@ -416,17 +502,30 @@ export function Chart2Shell({
               {chart2Categories.map((item) => {
                 const active = item.id === activeCategoryId
                 const ChipIcon = item.icon
+                const first = getChart2Examples(item.id)[0]
+                const href = detailMode
+                  ? first
+                    ? `/chart2/view/${first.id}`
+                    : `/chart2#chart-type-${item.id}`
+                  : `/chart2#chart-type-${item.id}`
                 return (
-                  <button
+                  <PrefetchLink
                     key={item.id}
-                    type="button"
-                    onClick={() => {
-                      if (!detailMode) {
-                        selectCategory(item.id)
+                    href={href}
+                    onClick={(event) => {
+                      if (
+                        event.metaKey ||
+                        event.ctrlKey ||
+                        event.shiftKey ||
+                        event.altKey ||
+                        event.button !== 0
+                      ) {
                         return
                       }
-                      const first = getChart2Examples(item.id)[0]
-                      if (first) selectExample(first.id)
+                      if (!detailMode) {
+                        event.preventDefault()
+                        selectCategory(item.id)
+                      }
                     }}
                     className={cn(
                       "inline-flex shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 text-[12px] font-medium whitespace-nowrap",
@@ -437,7 +536,7 @@ export function Chart2Shell({
                   >
                     <ChipIcon className="size-3 opacity-70" aria-hidden />
                     {item.title}
-                  </button>
+                  </PrefetchLink>
                 )
               })}
             </div>

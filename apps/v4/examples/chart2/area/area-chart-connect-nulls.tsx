@@ -4,6 +4,7 @@ import type { ReactNode } from "react"
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2DashedGridClassName,
@@ -49,13 +50,13 @@ const stackedWithGaps = [
 ]
 
 const uvConfig = {
-  uv: { label: FA_CHART.store, color: "var(--chart-1)" },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 const stackConfig = {
-  uv: { label: FA_CHART.store, color: "var(--chart-1)" },
-  pv: { label: FA_CHART.online, color: "var(--chart-2)" },
-  amt: { label: FA_CHART.orders, color: "var(--chart-3)" },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[0] },
+  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[1] },
+  amt: { label: FA_CHART.orders, color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
 const panelClass =

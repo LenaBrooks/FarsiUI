@@ -194,7 +194,7 @@ export default function HighlightAndZoomLineChartDemo() {
     <div className="w-full" style={{ userSelect: "none" }}>
       <ChartContainer
         config={chartConfig}
-        className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] font-sans [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
+        className="aspect-[1.618] h-auto w-full max-w-[700px] max-h-[70vh] overflow-hidden font-sans [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38 [&_.recharts-surface]:overflow-hidden"
       >
         <LineChart
           accessibilityLayer
@@ -276,7 +276,7 @@ export default function HighlightAndZoomLineChartDemo() {
           <ChartTooltip content={<ChartTooltipContent />} />
           <Line
             yAxisId="1"
-            type="natural"
+            type="monotone"
             dataKey="cost"
             name="هزینه"
             stroke="var(--color-cost)"
@@ -286,7 +286,7 @@ export default function HighlightAndZoomLineChartDemo() {
           />
           <Line
             yAxisId="2"
-            type="natural"
+            type="monotone"
             dataKey="impression"
             name="بازدید"
             stroke="var(--color-impression)"

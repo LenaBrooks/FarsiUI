@@ -30,7 +30,8 @@ export default function LineChartWithXAxisPaddingDemo() {
     <LineShell>
       <ChartContainer config={lineSalesConfig} className={LINE_CHART_CLASS}>
         <LineChart accessibilityLayer data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
+          {/* No vertical grid: with X padding the last-month line sits as a thin orphan column. */}
+          <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis
             dataKey="month"
             reversed

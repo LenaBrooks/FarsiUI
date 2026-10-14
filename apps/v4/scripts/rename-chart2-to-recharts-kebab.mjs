@@ -22,7 +22,7 @@ const CATEGORIES = [
   { id: "scatter", title: "پراکندگی", en: "ScatterChart", folder: "ScatterChart" },
   { id: "pie", title: "دایره‌ای", en: "PieChart", folder: "PieChart" },
   { id: "radar", title: "راداری", en: "RadarChart", folder: "RadarChart" },
-  { id: "radial-bar", title: "میلهٔ شعاعی", en: "RadialBarChart", folder: "RadialBarChart" },
+  { id: "radial-bar", title: "میله شعاعی", en: "RadialBarChart", folder: "RadialBarChart" },
   { id: "treemap", title: "درخت‌نقشه", en: "TreeMap", folder: "TreeMap" },
   { id: "sunburst", title: "خورشیدسان", en: "SunburstChart", folder: "SunburstChart" },
   { id: "tooltip", title: "تولتیپ", en: "Tooltip", folder: "Tooltip" },

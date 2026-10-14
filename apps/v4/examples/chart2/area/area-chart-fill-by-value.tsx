@@ -11,6 +11,7 @@ import {
 } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2AreaContainerClassName,
@@ -36,7 +37,7 @@ const data = [
 const chartConfig = {
   uv: {
     label: FA_CHART.store,
-    color: "var(--chart-1)",
+    color: CHART2_BAR_COLORS[2],
   },
 } satisfies ChartConfig
 
@@ -57,10 +58,18 @@ function SplitGradient() {
         y2={height}
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stopColor="var(--chart-2)" stopOpacity={1} />
-        <stop offset={`${ratio}`} stopColor="var(--chart-2)" stopOpacity={0.15} />
-        <stop offset={`${ratio}`} stopColor="var(--chart-5)" stopOpacity={0.15} />
-        <stop offset="1" stopColor="var(--chart-5)" stopOpacity={1} />
+        <stop offset="0" stopColor={CHART2_BAR_COLORS[2]} stopOpacity={1} />
+        <stop
+          offset={`${ratio}`}
+          stopColor={CHART2_BAR_COLORS[2]}
+          stopOpacity={0.15}
+        />
+        <stop
+          offset={`${ratio}`}
+          stopColor={CHART2_BAR_COLORS[1]}
+          stopOpacity={0.15}
+        />
+        <stop offset="1" stopColor={CHART2_BAR_COLORS[1]} stopOpacity={1} />
       </linearGradient>
     </defs>
   )

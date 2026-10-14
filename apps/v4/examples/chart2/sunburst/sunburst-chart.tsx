@@ -1,8 +1,10 @@
 "use client"
 
+import * as React from "react"
 import { SunburstChart, type SunburstData } from "recharts"
 
-import { CHART2_BAR_COLORS, formatChart2Number } from "@/lib/chart2-fa"
+import { useChart2Caption } from "@/components/chart2-live"
+import { formatChart2Number } from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartTooltip,
@@ -10,100 +12,119 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
-import { PersianSunburstDigits } from "./sunburst-fa"
+import {
+  CHART2_BAR_COLORS,
+  SunburstFrame,
+  SunburstNameLabels,
+  colorizeTree,
+  flattenSunburstNames,
+  sunburstTextOptions,
+  type SunburstActive,
+} from "./sunburst-shared"
 
-const hierarchy: SunburstData = {
+const children = colorizeTree([
+  {
+    name: "تهران",
+    value: 40,
+    children: [
+      { name: "فروش حضوری", value: 16 },
+      { name: "آنلاین", value: 14 },
+      {
+        name: "انبار",
+        value: 10,
+        children: [
+          { name: "مرکزی", value: 6 },
+          { name: "محلی", value: 4 },
+        ],
+      },
+    ],
+  },
+  {
+    name: "اصفهان",
+    value: 22,
+    children: [
+      { name: "حضوری", value: 12 },
+      { name: "آنلاین", value: 10 },
+    ],
+  },
+  {
+    name: "مشهد",
+    value: 20,
+    children: [
+      { name: "ویترین", value: 11 },
+      { name: "انبار", value: 9 },
+    ],
+  },
+  {
+    name: "شیراز",
+    value: 18,
+    children: [
+      { name: "حضوری", value: 10 },
+      { name: "آنلاین", value: 8 },
+    ],
+  },
+])
+
+const TOTAL = 100
+const names = flattenSunburstNames(children)
+
+const data: SunburstData = {
   name: "کل فروش",
-  value: 100,
-  children: [
-    {
-      name: "شعبه تهران",
-      fill: CHART2_BAR_COLORS[0],
-      value: 30,
-      children: [
-        { name: "طبقهٔ اول", value: 10 },
-        { name: "طبقهٔ دوم", value: 5 },
-        {
-          name: "انبار",
-          value: 15,
-          children: [
-            { name: "بخش آ", value: 5 },
-            { name: "بخش ب", value: 5 },
-            {
-              name: "بخش ج",
-              value: 5,
-              children: [{ name: "قفسه", value: 2 }],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      name: "شعبه اصفهان",
-      fill: CHART2_BAR_COLORS[1],
-      value: 20,
-      children: [
-        { name: "فروش حضوری", value: 10 },
-        {
-          name: "فروش آنلاین",
-          value: 10,
-          children: [
-            { name: "درگاه", value: 5 },
-            { name: "کیف پول", value: 3 },
-            { name: "کارت", value: 2 },
-          ],
-        },
-      ],
-    },
-    {
-      name: "شعبه شیراز",
-      fill: CHART2_BAR_COLORS[2],
-      value: 20,
-    },
-    {
-      name: "شعبه مشهد",
-      fill: CHART2_BAR_COLORS[3],
-      value: 10,
-      children: [
-        { name: "ویترین", value: 5 },
-        { name: "انبار محلی", value: 5 },
-      ],
-    },
-    {
-      name: "سایر شعب",
-      fill: CHART2_BAR_COLORS[4],
-      value: 20,
-    },
-  ],
+  value: TOTAL,
+  children,
 }
 
 const chartConfig = {
-  value: { label: "مقدار", color: CHART2_BAR_COLORS[0] },
+  value: { label: "سهم", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
 export default function SunburstChartDemo() {
+  const [active, setActive] = React.useState<SunburstActive>(null)
+
+  useChart2Caption(() => <>سهم فروش شعب و کانال‌ها</>)
+
   return (
-    <PersianSunburstDigits className="mx-auto w-full max-w-[450px]">
-      <ChartContainer
-        config={chartConfig}
-        className="mx-auto aspect-square h-[450px] w-full max-w-[450px] font-sans text-xs"
-      >
-        <SunburstChart
-          accessibilityLayer
-          startAngle={90}
-          endAngle={270}
-          data={hierarchy}
-          dataKey="value"
+    <SunburstFrame
+      active={active}
+      total={TOTAL}
+      totalLabel="کل فروش"
+      unit="درصد"
+    >
+      <SunburstNameLabels names={names} className="w-full">
+        <ChartContainer
+          config={chartConfig}
+          className="aspect-square h-auto w-full max-w-[400px] max-h-[70vh] font-sans text-xs [&_.recharts-sector]:cursor-pointer [&_.recharts-sector]:outline-none"
         >
-          <ChartTooltip
-            content={
-              <ChartTooltipContent
-                formatter={(value) => formatChart2Number(value as number)}
-              />
-            }
-          />
-        </SunburstChart>
-      </ChartContainer>
-    </PersianSunburstDigits>
+          <SunburstChart
+            accessibilityLayer
+            data={data}
+            dataKey="value"
+            nameKey="name"
+            innerRadius={72}
+            padding={2}
+            ringPadding={2}
+            stroke="var(--background)"
+            textOptions={sunburstTextOptions}
+            isAnimationActive
+            onMouseEnter={(node) => {
+              setActive({
+                name: String(node.name ?? ""),
+                value: Number(node.value ?? 0),
+                fill: typeof node.fill === "string" ? node.fill : undefined,
+              })
+            }}
+            onMouseLeave={() => setActive(null)}
+          >
+            <ChartTooltip
+              content={
+                <ChartTooltipContent
+                  formatter={(value) => formatChart2Number(value as number)}
+                />
+              }
+            />
+          </SunburstChart>
+        </ChartContainer>
+      </SunburstNameLabels>
+    </SunburstFrame>
   )
 }

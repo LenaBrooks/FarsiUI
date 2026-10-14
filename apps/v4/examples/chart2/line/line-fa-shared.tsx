@@ -53,9 +53,9 @@ export const LINE_CHART_CLASS = cn(
   "[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
 )
 
-/** Shared box for vertical line demos — keep both gallery cards the same size. */
+/** Vertical line demos — portrait plot with room for month + toman ticks. */
 export const VERTICAL_LINE_CHART_CLASS = cn(
-  "aspect-[1/1.618] h-auto w-full max-w-[320px] max-h-[70vh] overflow-visible font-sans",
+  "aspect-[4/5] h-auto w-full max-w-[460px] max-h-[72vh] overflow-visible font-sans",
   "[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
 )
 

@@ -1,0 +1,64 @@
+---
+title: انتخاب تقسیمات کشوری (Iran Division Picker)
+description: انتخاب مرحله‌ای استان، شهرستان، بخش، شهر، دهستان و روستا بر اساس داده‌های رسمی تقسیمات کشوری سال ۱۴۰۴.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="switcher"
+  examples={[
+    { name: "iran-division-picker-demo", label: "کامل", sizeable: false },
+    {
+      name: "iran-division-picker-levels-demo",
+      label: "سطوح محدود",
+      sizeable: false,
+    },
+  ]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add iran-division-picker
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { IranDivisionPicker } from "@/components/ui/iran-division-picker"
+
+export function Example() {
+  return (
+    <IranDivisionPicker
+      onValueChange={(selection) => {
+        console.log(selection)
+      }}
+    />
+  )
+}
+```
+
+## سطوح قابل تنظیم
+
+با `levels` مشخص کنید کدام سطوح نمایش داده شوند:
+
+```tsx showLineNumbers
+<IranDivisionPicker levels={["province", "county", "city"]} />
+```
+
+## مقدار خروجی
+
+هر سطح انتخاب‌شده شامل `code`، `fullCode` و `name` است:
+
+```tsx showLineNumbers
+{
+  province: { code: "23", fullCode: "23", name: "تهران" },
+  county: { code: "01", fullCode: "2301", name: "تهران" },
+  // ...
+}
+```
+
+**نکته:** فایل‌های دادهٔ تقسیمات کشوری باید در پوشهٔ `public/r/geo/iran` پروژه قرار داشته باشند تا کامپوننت بتواند آن‌ها را بارگذاری کند.

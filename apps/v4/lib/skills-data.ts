@@ -92,6 +92,12 @@ export type Skill = {
   /** Short plain example for the detail page; omit when too technical. */
   example?: string
   source?: SkillSource
+  /**
+   * When set, the detail page hides the multi-file browser and offers this
+   * ZIP instead (direct download URL, e.g. GitHub `/raw/` link).
+   * Registry build embeds only SKILL.md for these skills.
+   */
+  bundleZipUrl?: string
 }
 
 /** English half of the catalog title pair (title | titleEn). */
@@ -1206,6 +1212,66 @@ export const skills: Skill[] = [
     ],
     agentsHint:
       "For Zarinpal payments, apply the rules from docs/zarinpal-payment.md.",
+  },
+  {
+    slug: "neshan-maps",
+    category: "integrations",
+    title: "نقشه نشان",
+    titleEn: "Neshan Maps",
+    summary:
+      "مستندات رسمی سرویس‌ها و SDKهای نشان را درست به کار می‌برد و از اشتباهات lat/lng، کلید API و endpoint قدیمی جلوگیری می‌کند.",
+    description:
+      "نشان یک سرویس ایرانی برای نقشه، مسیریابی و خدمات مکان‌محوره. این Skill به ایجنت کمک می‌کنه مستندات رسمی سرویس‌ها و SDKهای نشان رو درست استفاده کنه و از اشتباهاتی مثل جابه‌جا نوشتن `lat` و `lng`، انتخاب کلید API اشتباه یا استفاده از endpointهای قدیمی جلوگیری کنه.\n\nمستندات هر سرویس در فایل‌های جداگانه نگهداری می‌شن تا ایجنت قبل از نوشتن کد، مرجع مرتبط رو بررسی کنه و پارامترها رو حدس نزنه.",
+    useCases: [
+      "نمایش نقشه نشان در وب با MapLibre یا Leaflet",
+      "مسیریابی با ترافیک زنده، بدون ترافیک و پیاده",
+      "جستجوی مکان و تبدیل آدرس به مختصات و برعکس",
+      "استفاده از SDKهای اندروید و iOS و افزونه وردپرس",
+    ],
+    tags: [
+      "نقشه",
+      "نشان",
+      "Neshan",
+      "مسیریابی",
+      "ژئوکدینگ",
+      "MapLibre",
+      "ایران",
+    ],
+    activationDescription:
+      "Complete guide to the Neshan Maps Platform (platform.neshan.org, نقشه نشان, Iranian/Persian maps): REST APIs (routing with live traffic, no-traffic, predictive, typical, pedestrian, TSP, distance matrix, isochrone, map matching, logistics/VRP, search, geocoding, reverse geocoding, nearby, POI, region, static map, account) and SDKs (web MapLibre/Leaflet/OpenLayers/Mapbox, React, Vue, Android, iOS, WordPress). Use whenever the user mentions Neshan/نشان, api.neshan.org, static.neshan.org, @neshan-maps-platform, or wants Iran maps, routing with traffic, geocoding or place search (مسیریابی، ترافیک، ژئوکدینگ، نقشه فارسی). Read the matching reference file before writing code; never answer endpoint or parameter details from memory.",
+    activationNote:
+      "این چند خط به AI می‌گوید کی این مهارت را باز کند. اگر جاهای دیگری هم لازم دارید، همین متن را عوض کنید.",
+    installCommand: "npx farsiui@latest add neshan-maps",
+    installTargets: [
+      {
+        id: "claude-code",
+        name: "Claude Code",
+        paths: [".claude/skills/neshan-maps/SKILL.md"],
+      },
+      {
+        id: "cursor",
+        name: "Cursor",
+        paths: [".cursor/skills/neshan-maps/SKILL.md"],
+      },
+      {
+        id: "codex",
+        name: "Codex",
+        paths: [".agents/skills/neshan-maps/SKILL.md"],
+      },
+      {
+        id: "other",
+        name: "سایر ابزارها",
+        paths: [".claude/skills/neshan-maps/SKILL.md"],
+      },
+    ],
+    agentsHint:
+      "For Neshan Maps APIs or SDKs, read .claude/skills/neshan-maps/SKILL.md first, then only the matching file under references/.",
+    example:
+      "هنگام پیاده‌سازی مسیریابی یا تبدیل مختصات به آدرس، ایجنت ابتدا مستندات مربوط به همان سرویس رو بررسی می‌کنه تا پارامترها، ترتیب مختصات و نوع کلید API رو درست به کار ببره و از endpointهای قدیمی فقط در صورت نیاز استفاده کنه.",
+    source: {
+      name: "مشاهده Skill در گیت‌هاب",
+      url: "https://github.com/MiladJoodi/skills/tree/main/skills/neshan-maps",
+    },
   },
   {
     slug: "nextjs-multi-design-system",

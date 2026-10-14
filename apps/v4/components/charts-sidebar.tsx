@@ -14,6 +14,18 @@ import {
   normalizeNavSearch,
   SidebarNavSearch,
 } from "@/components/sidebar-nav-search"
+import {
+  SIDEBAR_EMPTY_CLASS,
+  SIDEBAR_NESTED_ITEM_CLASS,
+  SIDEBAR_NESTED_LABEL_CLASS,
+  SIDEBAR_SEARCH_INPUT_CLASS,
+  SIDEBAR_SEARCH_WRAP_CLASS,
+  SIDEBAR_SHELL_CLASS,
+  SIDEBAR_TOP_LINK_CLASS,
+  SidebarNavBullet,
+  sidebarItemStateClass,
+} from "@/components/sidebar-nav-ui"
+import { cn } from "cn"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 import {
   Sidebar,
@@ -21,19 +33,9 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
 } from "@/registry/new-york-v4/ui/sidebar"
-
-const SIDEBAR_CLASS =
-  "sticky top-[calc(var(--header-height)+0.6rem)] z-30 hidden h-[calc(100svh-10rem)] overflow-hidden overscroll-none bg-transparent [--sidebar-menu-width:--spacing(56)] lg:flex"
-
-const ACTIVE_ITEM_CLASS =
-  "relative h-10 w-full overflow-visible border border-transparent pe-1.5 text-[14px] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-primary/20 data-[active=true]:bg-primary/10 data-[active=true]:text-primary lg:h-8"
-
-const SIDEBAR_EN_CLASS =
-  "min-w-0 shrink truncate font-sans text-[12px] font-normal tracking-normal text-muted-foreground"
 
 const SEARCH_DEBOUNCE_MS = 200
 
@@ -75,12 +77,12 @@ function ChartsNavBody({ showSearch = true }: { showSearch?: boolean }) {
   return (
     <>
       {showSearch ? (
-        <div className="shrink-0 pe-2 pt-2 pb-3">
+        <div className={SIDEBAR_SEARCH_WRAP_CLASS}>
           <SidebarNavSearch
             value={searchValue}
             onValueChange={setSearchValue}
             onClear={clearSearch}
-            inputClassName="text-[14px]"
+            inputClassName={SIDEBAR_SEARCH_INPUT_CLASS}
           />
         </div>
       ) : null}
@@ -92,55 +94,47 @@ function ChartsNavBody({ showSearch = true }: { showSearch?: boolean }) {
         <SidebarGroup className="pt-1">
           <SidebarGroupContent>
             {!hasResults ? (
-              <div className="px-2 py-6 text-center text-[14px] text-muted-foreground">
-                نتیجه‌ای پیدا نشد.
-              </div>
+              <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
             ) : null}
 
             <SidebarMenu className="gap-0.5">
               {introVisible ? (
                 <SidebarMenuItem>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === "/charts"}
-                    className={ACTIVE_ITEM_CLASS}
+                  <PrefetchLink
+                    href="/charts"
+                    className={cn(
+                      SIDEBAR_TOP_LINK_CLASS,
+                      sidebarItemStateClass(pathname === "/charts")
+                    )}
                   >
-                    <PrefetchLink href="/charts">معرفی</PrefetchLink>
-                  </SidebarMenuButton>
+                    <SidebarNavBullet featured />
+                    <span className={SIDEBAR_NESTED_LABEL_CLASS}>معرفی</span>
+                  </PrefetchLink>
                 </SidebarMenuItem>
               ) : null}
 
-              {filteredTypes.map((item) => (
-                <SidebarMenuItem key={item.type}>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={
-                      pathname === item.href ||
-                      pathname.startsWith(`${item.href}/`)
-                    }
-                    className={`${ACTIVE_ITEM_CLASS} ps-2`}
-                  >
+              {filteredTypes.map((item, index) => {
+                const active =
+                  pathname === item.href ||
+                  pathname.startsWith(`${item.href}/`)
+                return (
+                  <SidebarMenuItem key={item.type}>
                     <PrefetchLink
                       href={item.href}
-                      className="flex w-full min-w-0 items-center gap-2"
+                      title={item.en}
+                      className={cn(
+                        SIDEBAR_NESTED_ITEM_CLASS,
+                        sidebarItemStateClass(active)
+                      )}
                     >
-                      <span className="truncate">{item.title}</span>
-                      <span
-                        aria-hidden
-                        className="mb-0.5 min-w-3 flex-1 border-b border-dashed border-border/60"
-                      />
-                      <span
-                        dir="ltr"
-                        lang="en"
-                        title={item.en}
-                        className={SIDEBAR_EN_CLASS}
-                      >
-                        {item.en}
+                      <SidebarNavBullet featured={index === 0} />
+                      <span className={SIDEBAR_NESTED_LABEL_CLASS}>
+                        {item.title}
                       </span>
                     </PrefetchLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
+                  </SidebarMenuItem>
+                )
+              })}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
@@ -173,7 +167,7 @@ export function ChartsSidebar({
   return (
     <PersianDigits>
       <Sidebar
-        className={SIDEBAR_CLASS}
+        className={SIDEBAR_SHELL_CLASS}
         collapsible="none"
         dir="rtl"
         lang="fa"

@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import { CalendarIcon } from "lucide-react"
-import { faIR as faIRDayPicker } from "react-day-picker/locale"
 
 import { Calendar } from "@/registry/bases/base/ui/calendar"
 import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
@@ -23,7 +22,7 @@ function formatDate(date: Date | undefined) {
     return ""
   }
 
-  return date.toLocaleDateString("fa-IR", {
+  return date.toLocaleDateString("fa-IR-u-ca-persian", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -52,7 +51,7 @@ export default function DatePickerInput() {
         <InputGroupInput
           id="date-required"
           value={value}
-          placeholder="۱ ژوئن ۲۰۲۵"
+          placeholder="۱۱ خرداد ۱۴۰۴"
           onChange={(e) => {
             const date = new Date(e.target.value)
             setValue(e.target.value)
@@ -94,8 +93,6 @@ export default function DatePickerInput() {
                 selected={date}
                 month={month}
                 onMonthChange={setMonth}
-                locale={faIRDayPicker}
-                dir="rtl"
                 onSelect={(date) => {
                   setDate(date)
                   setValue(formatDate(date))

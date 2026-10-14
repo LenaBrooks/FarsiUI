@@ -51,15 +51,24 @@ function renderActiveShape({
   value,
 }: PieSectorDataItem) {
   const RADIAN = Math.PI / 180
-  const sin = Math.sin(-RADIAN * (midAngle ?? 1))
-  const cos = Math.cos(-RADIAN * (midAngle ?? 1))
-  const sx = (cx ?? 0) + ((outerRadius ?? 0) + 14) * cos
-  const sy = (cy ?? 0) + ((outerRadius ?? 0) + 14) * sin
-  const mx = (cx ?? 0) + ((outerRadius ?? 0) + 52) * cos
-  const my = (cy ?? 0) + ((outerRadius ?? 0) + 52) * sin
-  const ex = mx + (cos >= 0 ? 1 : -1) * 28
+  const angle = midAngle ?? 0
+  const sin = Math.sin(-RADIAN * angle)
+  const cos = Math.cos(-RADIAN * angle)
+  const or = outerRadius ?? 0
+  const centerX = cx ?? 0
+  const centerY = cy ?? 0
+  const onRight = cos >= 0
+  const side = onRight ? 1 : -1
+
+  const sx = centerX + (or + 12) * cos
+  const sy = centerY + (or + 12) * sin
+  const mx = centerX + (or + 36) * cos
+  const my = centerY + (or + 36) * sin
+  // نوک خط — متن با فاصلهٔ واضح بعد از آن می‌آید
+  const ex = mx + side * 18
   const ey = my
-  const textAnchor = cos >= 0 ? "start" : "end"
+  const textX = ex + side * 10
+  const textAnchor = onRight ? "start" : "end"
   const key = String(payload?.name ?? "")
   const label =
     chartConfig[key as keyof typeof chartConfig]?.label ?? payload?.name
@@ -67,12 +76,12 @@ function renderActiveShape({
   return (
     <g>
       <text
-        x={cx}
-        y={cy}
-        dy={8}
+        x={centerX}
+        y={centerY}
+        dy={5}
         textAnchor="middle"
         fill={fill}
-        style={{ fontFamily: "var(--font-sans)", fontSize: 14 }}
+        style={{ fontFamily: "var(--font-sans)", fontSize: 14, letterSpacing: 0 }}
       >
         {label}
       </text>
@@ -90,31 +99,49 @@ function renderActiveShape({
         cy={cy}
         startAngle={startAngle}
         endAngle={endAngle}
-        innerRadius={(outerRadius ?? 0) + 6}
-        outerRadius={(outerRadius ?? 0) + 10}
+        innerRadius={or + 6}
+        outerRadius={or + 10}
         fill={fill}
       />
-      <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`} stroke={fill} fill="none" />
-      <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
-      <text
-        x={ex + (cos >= 0 ? 1 : -1) * 14}
-        y={ey}
-        textAnchor={textAnchor}
-        fill="var(--foreground)"
-        style={{ fontFamily: "var(--font-sans)", fontSize: 12 }}
-      >
-        {`مقدار ${formatChart2Number(Number(value))}`}
-      </text>
-      <text
-        x={ex + (cos >= 0 ? 1 : -1) * 14}
-        y={ey}
-        dy={18}
-        textAnchor={textAnchor}
-        fill="var(--muted-foreground)"
-        style={{ fontFamily: "var(--font-sans)", fontSize: 11 }}
-      >
-        {`(سهم ${toPersianDigits(((percent ?? 0) * 100).toFixed(2))}٪)`}
-      </text>
+      <path
+        d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
+        stroke={fill}
+        strokeWidth={1.25}
+        fill="none"
+      />
+      <circle cx={ex} cy={ey} r={2.5} fill={fill} stroke="none" />
+      {/* direction:ltr تا در RTL متن روی خط برنگردد */}
+      <g style={{ direction: "ltr" }}>
+        <text
+          x={textX}
+          y={ey}
+          dy={-6}
+          textAnchor={textAnchor}
+          fill="var(--foreground)"
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 12,
+            fontWeight: 600,
+            letterSpacing: 0,
+          }}
+        >
+          {formatChart2Number(Number(value))}
+        </text>
+        <text
+          x={textX}
+          y={ey}
+          dy={12}
+          textAnchor={textAnchor}
+          fill="var(--muted-foreground)"
+          style={{
+            fontFamily: "var(--font-sans)",
+            fontSize: 11,
+            letterSpacing: 0,
+          }}
+        >
+          {toPersianDigits(((percent ?? 0) * 100).toFixed(0))}٪
+        </text>
+      </g>
     </g>
   )
 }

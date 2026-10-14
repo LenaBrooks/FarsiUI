@@ -23,17 +23,32 @@ import {
   useSalesData,
 } from "./line-fa-shared"
 
-function CustomizedLabel({ x, y, stroke, value }: LabelProps) {
+function CustomizedLabel({ x, y, stroke, value, index }: LabelProps) {
+  if (x == null || y == null || value == null) return null
+  const px = Number(x)
+  const py = Number(y)
+  if (!Number.isFinite(px) || !Number.isFinite(py)) return null
+
+  // Alternate above/below so labels stay clear of the stroke and neighbors.
+  const above = typeof index !== "number" || index % 2 === 0
+  const dy = above ? -14 : 18
+
   return (
     <text
-      x={x}
-      y={y}
-      dy={-4}
+      x={px}
+      y={py}
+      dy={dy}
       fill={stroke}
       fontSize={10}
       textAnchor="middle"
       fontFamily="var(--font-sans)"
       className="tracking-[0]"
+      style={{
+        paintOrder: "stroke",
+        stroke: "var(--background)",
+        strokeWidth: 3,
+        strokeLinejoin: "round",
+      }}
     >
       {formatToman(Number(value), { compact: true, suffix: false })}
     </text>
@@ -68,7 +83,7 @@ export default function CustomizedLabelLineChartDemo() {
         <LineChart
           accessibilityLayer
           data={data}
-          margin={{ top: 20, right: 16, left: 16, bottom: 12 }}
+          margin={{ top: 28, right: 16, left: 16, bottom: 12 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis

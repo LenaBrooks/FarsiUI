@@ -22,4 +22,15 @@ export const lib: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "iran",
+    type: "registry:lib",
+    registryDependencies: ["digits"],
+    files: [
+      {
+        path: "lib/iran.ts",
+        type: "registry:lib",
+      },
+    ],
+  },
 ]

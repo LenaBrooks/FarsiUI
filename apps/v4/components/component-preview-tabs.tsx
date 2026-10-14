@@ -140,7 +140,7 @@ export function ComponentPreviewTabs({
                     type="button"
                     size="sm"
                     variant="outline"
-                    className="relative z-10 gap-1.5 rounded-lg border border-border bg-white font-sans text-foreground shadow-none hover:bg-muted dark:bg-background dark:text-foreground dark:hover:bg-muted"
+                    className="relative z-10 cursor-pointer gap-1.5 rounded-lg border border-border bg-white font-sans text-foreground shadow-none hover:bg-muted dark:bg-background dark:text-foreground dark:hover:bg-muted"
                     onClick={() => {
                       setIsMobileCodeVisible(true)
                     }}

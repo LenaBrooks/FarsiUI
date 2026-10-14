@@ -3,7 +3,6 @@
 import * as React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ChevronDownIcon } from "lucide-react"
 
 import {
   getSkillCategory,
@@ -21,6 +20,22 @@ import {
   normalizeNavSearch,
   SidebarNavSearch,
 } from "@/components/sidebar-nav-search"
+import {
+  SIDEBAR_COLLAPSIBLE_CONTENT_CLASS,
+  SIDEBAR_EMPTY_CLASS,
+  SIDEBAR_GROUP_COUNT_CLASS,
+  SIDEBAR_GROUP_TRIGGER_CLASS,
+  SIDEBAR_NESTED_ITEM_CLASS,
+  SIDEBAR_NESTED_LABEL_CLASS,
+  SIDEBAR_NESTED_RAIL_CLASS,
+  SIDEBAR_SEARCH_INPUT_CLASS,
+  SIDEBAR_SEARCH_WRAP_CLASS,
+  SIDEBAR_SHELL_CLASS,
+  SIDEBAR_TOP_LINK_CLASS,
+  SidebarNavBullet,
+  SidebarNavChevron,
+  sidebarItemStateClass,
+} from "@/components/sidebar-nav-ui"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 import {
   Collapsible,
@@ -33,16 +48,9 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
 } from "@/registry/new-york-v4/ui/sidebar"
-
-const SIDEBAR_CLASS =
-  "sticky top-[calc(var(--header-height)+0.6rem)] z-30 hidden h-[calc(100svh-10rem)] overflow-hidden overscroll-none bg-transparent [--sidebar-menu-width:--spacing(56)] lg:flex"
-
-const ACTIVE_ITEM_CLASS =
-  "relative h-10 w-full overflow-visible border border-transparent pe-1.5 text-[14px] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-primary/20 data-[active=true]:bg-primary/10 data-[active=true]:text-primary lg:h-8"
 
 const SEARCH_DEBOUNCE_MS = 200
 
@@ -130,12 +138,12 @@ function SkillsNavBody({ showSearch = true }: { showSearch?: boolean }) {
   return (
     <>
       {showSearch ? (
-        <div className="shrink-0 pe-2 pt-2 pb-3">
+        <div className={SIDEBAR_SEARCH_WRAP_CLASS}>
           <SidebarNavSearch
             value={searchValue}
             onValueChange={setSearchValue}
             onClear={clearSearch}
-            inputClassName="text-[14px]"
+            inputClassName={SIDEBAR_SEARCH_INPUT_CLASS}
           />
         </div>
       ) : null}
@@ -147,21 +155,22 @@ function SkillsNavBody({ showSearch = true }: { showSearch?: boolean }) {
         <SidebarGroup className="pt-1">
           <SidebarGroupContent>
             {!hasResults ? (
-              <div className="px-2 py-6 text-center text-[14px] text-muted-foreground">
-                نتیجه‌ای پیدا نشد.
-              </div>
+              <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
             ) : null}
 
             <SidebarMenu className="gap-0.5">
               {introVisible ? (
                 <SidebarMenuItem>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === "/skills"}
-                    className={ACTIVE_ITEM_CLASS}
+                  <Link
+                    href="/skills"
+                    className={cn(
+                      SIDEBAR_TOP_LINK_CLASS,
+                      sidebarItemStateClass(pathname === "/skills")
+                    )}
                   >
-                    <Link href="/skills">معرفی</Link>
-                  </SidebarMenuButton>
+                    <SidebarNavBullet featured />
+                    <span className={SIDEBAR_NESTED_LABEL_CLASS}>معرفی</span>
+                  </Link>
                 </SidebarMenuItem>
               ) : null}
 
@@ -184,17 +193,21 @@ function SkillsNavBody({ showSearch = true }: { showSearch?: boolean }) {
                     className="group/skills-cat"
                   >
                     <SidebarMenuItem>
-                      <CollapsibleTrigger className="flex h-10 w-full cursor-pointer items-center gap-1.5 rounded-md px-2 text-[13px] font-medium text-muted-foreground outline-none hover:bg-sidebar-accent hover:text-sidebar-accent-foreground lg:h-8">
+                      <CollapsibleTrigger
+                        className={SIDEBAR_GROUP_TRIGGER_CLASS}
+                      >
                         <span className="min-w-0 flex-1 truncate text-start">
                           {group.title}
                         </span>
-                        <span className="shrink-0 text-[12px] font-normal tracking-normal text-muted-foreground/80">
+                        <span className={SIDEBAR_GROUP_COUNT_CLASS}>
                           {count.toLocaleString("fa-IR")}
                         </span>
-                        <ChevronDownIcon className="size-3.5 shrink-0 opacity-50 transition-transform duration-200 group-data-[state=open]/skills-cat:rotate-180" />
+                        <SidebarNavChevron group="skills-cat" />
                       </CollapsibleTrigger>
-                      <CollapsibleContent>
-                        <div className="mt-0.5 mb-1 ms-2 flex flex-col gap-0.5 border-s border-border/50 ps-2">
+                      <CollapsibleContent
+                        className={SIDEBAR_COLLAPSIBLE_CONTENT_CLASS}
+                      >
+                        <div className={SIDEBAR_NESTED_RAIL_CLASS}>
                           {group.skills.map((skill) => {
                             const active =
                               pathname === `/skills/${skill.slug}`
@@ -205,26 +218,12 @@ function SkillsNavBody({ showSearch = true }: { showSearch?: boolean }) {
                                 href={`/skills/${skill.slug}`}
                                 title={skill.slug}
                                 className={cn(
-                                  "flex h-8 w-full min-w-0 cursor-pointer items-center gap-2 rounded-md px-2 text-start outline-none transition-colors",
-                                  "focus-visible:ring-2 focus-visible:ring-ring",
-                                  active
-                                    ? "bg-primary/10 text-primary"
-                                    : "text-muted-foreground hover:bg-muted/50 hover:text-foreground"
+                                  SIDEBAR_NESTED_ITEM_CLASS,
+                                  sidebarItemStateClass(active)
                                 )}
                               >
-                                {featured ? (
-                                  <span
-                                    className="size-1.5 shrink-0 rounded-full bg-emerald-500"
-                                    title="پیشنهادی"
-                                    aria-label="پیشنهادی"
-                                  />
-                                ) : (
-                                  <span
-                                    aria-hidden
-                                    className="size-1 shrink-0 rounded-full bg-current opacity-40"
-                                  />
-                                )}
-                                <span className="truncate text-[12.5px] font-medium leading-snug">
+                                <SidebarNavBullet featured={featured} />
+                                <span className={SIDEBAR_NESTED_LABEL_CLASS}>
                                   {skill.title}
                                 </span>
                               </Link>
@@ -265,7 +264,7 @@ export function SkillsSidebar({
   return (
     <PersianDigits>
       <Sidebar
-        className={SIDEBAR_CLASS}
+        className={SIDEBAR_SHELL_CLASS}
         collapsible="none"
         dir="rtl"
         lang="fa"

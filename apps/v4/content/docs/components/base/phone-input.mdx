@@ -1,0 +1,37 @@
+---
+title: ورودی موبایل (Phone Input)
+description: ورود و اعتبارسنجی شماره موبایل ایران با فرمت ۰۹۱۲ و ارقام فارسی.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "phone-input-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add phone-input
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { PhoneInput } from "@/components/ui/phone-input"
+
+export function Example() {
+  return (
+    <PhoneInput
+      onValueChange={(digits, valid) => {
+        console.log(digits, valid)
+      }}
+    />
+  )
+}
+```
+
+مقدار منطقی همیشه ۱۱ رقم ASCII به شکل `09xxxxxxxxx` است.

@@ -14,6 +14,27 @@ links:
   previewClassName="h-auto! min-h-0 items-start py-4 px-4 md:px-8"
 />
 
+## خروجی Excel
+
+با `toExcelCsv` و `downloadExcelCsv` از `@/components/ui` / `lib/iran` می‌توانید ردیف‌های جدول را به‌صورت CSV سازگار با Excel (UTF-8 BOM) دانلود کنید.
+
+<ComponentPreview
+  styleName="base-nova"
+  name="data-table-excel-demo"
+  direction="rtl"
+  previewClassName="h-auto! min-h-0 items-start py-4 px-4 md:px-8"
+/>
+
+```tsx showLineNumbers
+import { downloadExcelCsv, toExcelCsv } from "@/lib/iran"
+
+const csv = toExcelCsv(rows, [
+  { key: "name", header: "نام" },
+  { key: "amount", header: "مبلغ" },
+])
+downloadExcelCsv("export.csv", csv)
+```
+
 <div className="hidden">
 
 ## درباره

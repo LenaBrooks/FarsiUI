@@ -1,0 +1,35 @@
+---
+title: فرم آدرس (Address Form)
+description: ثبت آدرس با انتخاب استان، شهر، کد پستی و جزئیات آدرس.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "address-form-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add address-form
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { AddressForm } from "@/components/ui/address-form"
+
+export function Example() {
+  return (
+    <AddressForm
+      onValueChange={(address) => {
+        console.log(address)
+      }}
+    />
+  )
+}
+```

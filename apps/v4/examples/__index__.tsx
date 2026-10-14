@@ -33,6 +33,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "accordion-rtl",
       filePath: "examples/base/accordion-rtl.tsx",
     },
+    "address-form-demo": {
+      name: "address-form-demo",
+      filePath: "examples/base/address-form-demo.tsx",
+    },
     "ai-sdk-helper-demo": {
       name: "ai-sdk-helper-demo",
       filePath: "examples/base/ai-sdk-helper-demo.tsx",
@@ -200,6 +204,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "badge-variants": {
       name: "badge-variants",
       filePath: "examples/base/badge-variants.tsx",
+    },
+    "bank-card-input-demo": {
+      name: "bank-card-input-demo",
+      filePath: "examples/base/bank-card-input-demo.tsx",
     },
     "breadcrumb-basic": {
       name: "breadcrumb-basic",
@@ -709,6 +717,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "data-table-demo",
       filePath: "examples/base/data-table-demo.tsx",
     },
+    "data-table-excel-demo": {
+      name: "data-table-excel-demo",
+      filePath: "examples/base/data-table-excel-demo.tsx",
+    },
     "data-table-rtl": {
       name: "data-table-rtl",
       filePath: "examples/base/data-table-rtl.tsx",
@@ -768,6 +780,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "dialog-sticky-footer": {
       name: "dialog-sticky-footer",
       filePath: "examples/base/dialog-sticky-footer.tsx",
+    },
+    "drag-scroll-demo": {
+      name: "drag-scroll-demo",
+      filePath: "examples/base/drag-scroll-demo.tsx",
     },
     "drawer-demo": {
       name: "drawer-demo",
@@ -936,6 +952,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "field-textarea": {
       name: "field-textarea",
       filePath: "examples/base/field-textarea.tsx",
+    },
+    "file-upload-demo": {
+      name: "file-upload-demo",
+      filePath: "examples/base/file-upload-demo.tsx",
     },
     "file-upload-list": {
       name: "file-upload-list",
@@ -1153,6 +1173,14 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "input-rtl",
       filePath: "examples/base/input-rtl.tsx",
     },
+    "iran-division-picker-demo": {
+      name: "iran-division-picker-demo",
+      filePath: "examples/base/iran-division-picker-demo.tsx",
+    },
+    "iran-division-picker-levels-demo": {
+      name: "iran-division-picker-levels-demo",
+      filePath: "examples/base/iran-division-picker-levels-demo.tsx",
+    },
     "item-avatar": {
       name: "item-avatar",
       filePath: "examples/base/item-avatar.tsx",
@@ -1369,6 +1397,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "muted-item-group",
       filePath: "examples/base/muted-item-group.tsx",
     },
+    "national-code-input-demo": {
+      name: "national-code-input-demo",
+      filePath: "examples/base/national-code-input-demo.tsx",
+    },
     "native-select-demo": {
       name: "native-select-demo",
       filePath: "examples/base/native-select-demo.tsx",
@@ -1417,6 +1449,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "pagination-simple",
       filePath: "examples/base/pagination-simple.tsx",
     },
+    "phone-input-demo": {
+      name: "phone-input-demo",
+      filePath: "examples/base/phone-input-demo.tsx",
+    },
     "popover-alignments": {
       name: "popover-alignments",
       filePath: "examples/base/popover-alignments.tsx",
@@ -1436,6 +1472,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "popover-rtl": {
       name: "popover-rtl",
       filePath: "examples/base/popover-rtl.tsx",
+    },
+    "price-input-demo": {
+      name: "price-input-demo",
+      filePath: "examples/base/price-input-demo.tsx",
     },
     "progress-controlled": {
       name: "progress-controlled",
@@ -1541,6 +1581,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "radio-group-rtl",
       filePath: "examples/base/radio-group-rtl.tsx",
     },
+    "relative-time-demo": {
+      name: "relative-time-demo",
+      filePath: "examples/base/relative-time-demo.tsx",
+    },
     "resizable-demo": {
       name: "resizable-demo",
       filePath: "examples/base/resizable-demo.tsx",
@@ -1557,13 +1601,13 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       name: "resizable-vertical",
       filePath: "examples/base/resizable-vertical.tsx",
     },
-    "rich-text-editor-controlled": {
-      name: "rich-text-editor-controlled",
-      filePath: "examples/base/rich-text-editor-controlled.tsx",
-    },
     "rich-text-editor-advanced": {
       name: "rich-text-editor-advanced",
       filePath: "examples/base/rich-text-editor-advanced.tsx",
+    },
+    "rich-text-editor-controlled": {
+      name: "rich-text-editor-controlled",
+      filePath: "examples/base/rich-text-editor-controlled.tsx",
     },
     "rich-text-editor-demo": {
       name: "rich-text-editor-demo",
@@ -1668,6 +1712,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "separator-vertical": {
       name: "separator-vertical",
       filePath: "examples/base/separator-vertical.tsx",
+    },
+    "sheba-input-demo": {
+      name: "sheba-input-demo",
+      filePath: "examples/base/sheba-input-demo.tsx",
     },
     "sheet-demo": {
       name: "sheet-demo",
@@ -1776,6 +1824,10 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "sidebar-rtl": {
       name: "sidebar-rtl",
       filePath: "examples/base/sidebar-rtl.tsx",
+    },
+    "signature-pad-demo": {
+      name: "signature-pad-demo",
+      filePath: "examples/base/signature-pad-demo.tsx",
     },
     "skeleton-avatar": {
       name: "skeleton-avatar",

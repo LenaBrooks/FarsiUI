@@ -41,6 +41,11 @@ export const Components: Record<string, any> = {
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "accordion-rtl"
         return { default: mod.default || mod[exportName] }
       }),
+  "address-form-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/address-form-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "address-form-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "ai-sdk-helper-demo": React.lazy(async () => {
         const mod = await import("@/examples/base/ai-sdk-helper-demo")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "ai-sdk-helper-demo"
@@ -249,6 +254,11 @@ export const Components: Record<string, any> = {
   "badge-variants": React.lazy(async () => {
         const mod = await import("@/examples/base/badge-variants")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "badge-variants"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "bank-card-input-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/bank-card-input-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bank-card-input-demo"
         return { default: mod.default || mod[exportName] }
       }),
   "breadcrumb-basic": React.lazy(async () => {
@@ -886,6 +896,11 @@ export const Components: Record<string, any> = {
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "data-table-demo"
         return { default: mod.default || mod[exportName] }
       }),
+  "data-table-excel-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/data-table-excel-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "data-table-excel-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "data-table-rtl": React.lazy(async () => {
         const mod = await import("@/examples/base/data-table-rtl")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "data-table-rtl"
@@ -959,6 +974,11 @@ export const Components: Record<string, any> = {
   "dialog-sticky-footer": React.lazy(async () => {
         const mod = await import("@/examples/base/dialog-sticky-footer")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dialog-sticky-footer"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "drag-scroll-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/drag-scroll-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "drag-scroll-demo"
         return { default: mod.default || mod[exportName] }
       }),
   "drawer-demo": React.lazy(async () => {
@@ -1169,6 +1189,11 @@ export const Components: Record<string, any> = {
   "field-textarea": React.lazy(async () => {
         const mod = await import("@/examples/base/field-textarea")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "file-upload-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/file-upload-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "file-upload-demo"
         return { default: mod.default || mod[exportName] }
       }),
   "file-upload-list": React.lazy(async () => {
@@ -1441,6 +1466,16 @@ export const Components: Record<string, any> = {
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-rtl"
         return { default: mod.default || mod[exportName] }
       }),
+  "iran-division-picker-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/iran-division-picker-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "iran-division-picker-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "iran-division-picker-levels-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/iran-division-picker-levels-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "iran-division-picker-levels-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-avatar": React.lazy(async () => {
         const mod = await import("@/examples/base/item-avatar")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-avatar"
@@ -1711,6 +1746,11 @@ export const Components: Record<string, any> = {
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "muted-item-group"
         return { default: mod.default || mod[exportName] }
       }),
+  "national-code-input-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/national-code-input-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "national-code-input-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "native-select-demo": React.lazy(async () => {
         const mod = await import("@/examples/base/native-select-demo")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "native-select-demo"
@@ -1771,6 +1811,11 @@ export const Components: Record<string, any> = {
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pagination-simple"
         return { default: mod.default || mod[exportName] }
       }),
+  "phone-input-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/phone-input-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "phone-input-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "popover-alignments": React.lazy(async () => {
         const mod = await import("@/examples/base/popover-alignments")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "popover-alignments"
@@ -1794,6 +1839,11 @@ export const Components: Record<string, any> = {
   "popover-rtl": React.lazy(async () => {
         const mod = await import("@/examples/base/popover-rtl")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "popover-rtl"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "price-input-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/price-input-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "price-input-demo"
         return { default: mod.default || mod[exportName] }
       }),
   "progress-controlled": React.lazy(async () => {
@@ -1924,6 +1974,11 @@ export const Components: Record<string, any> = {
   "radio-group-rtl": React.lazy(async () => {
         const mod = await import("@/examples/base/radio-group-rtl")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radio-group-rtl"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "relative-time-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/relative-time-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "relative-time-demo"
         return { default: mod.default || mod[exportName] }
       }),
   "resizable-demo": React.lazy(async () => {
@@ -2086,6 +2141,11 @@ export const Components: Record<string, any> = {
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "separator-vertical"
         return { default: mod.default || mod[exportName] }
       }),
+  "sheba-input-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/sheba-input-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sheba-input-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sheet-demo": React.lazy(async () => {
         const mod = await import("@/examples/base/sheet-demo")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sheet-demo"
@@ -2219,6 +2279,11 @@ export const Components: Record<string, any> = {
   "sidebar-rtl": React.lazy(async () => {
         const mod = await import("@/examples/base/sidebar-rtl")
         const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-rtl"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "signature-pad-demo": React.lazy(async () => {
+        const mod = await import("@/examples/base/signature-pad-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "signature-pad-demo"
         return { default: mod.default || mod[exportName] }
       }),
   "skeleton-avatar": React.lazy(async () => {

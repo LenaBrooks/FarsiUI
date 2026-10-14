@@ -60,16 +60,13 @@ const chartConfig = {
   value: { label: "مقدار", color: CHART2_BAR_COLORS[0] },
 } satisfies ChartConfig
 
-const domain = [
+const zDomain = [
   0,
-  Math.max(
-    Math.max(...VALUES_01),
-    Math.max(...VALUES_02)
-  ),
+  Math.max(Math.max(...VALUES_01), Math.max(...VALUES_02)),
 ] as [number, number]
 
-const range = [16, 225] as const
-const margin = { top: 6, right: 4, bottom: 0, left: 4 }
+/** اندازهٔ حباب — محدود تا از ردیف نزند */
+const BUBBLE_RANGE: [number, number] = [20, 90]
 
 function BubbleAxes({ showXTicks = false }: { showXTicks?: boolean }) {
   return (
@@ -80,31 +77,52 @@ function BubbleAxes({ showXTicks = false }: { showXTicks?: boolean }) {
         name="ساعت"
         reversed
         interval={0}
-        tick={showXTicks ? { fontSize: 10, fontFamily: "var(--font-sans)" } : { fontSize: 0 }}
-        tickLine={{ transform: "translate(0, -6)" }}
+        tick={
+          showXTicks
+            ? { fontSize: 10, fontFamily: "var(--font-sans)" }
+            : false
+        }
+        tickLine={false}
+        axisLine={false}
+        height={showXTicks ? 22 : 1}
       />
       <YAxis
         type="number"
         dataKey="index"
-        height={10}
+        domain={[0, 2]}
         width={1}
         orientation="right"
         tick={false}
         tickLine={false}
         axisLine={false}
       />
-      <ZAxis type="number" dataKey="value" domain={domain} range={range} />
+      <ZAxis
+        type="number"
+        dataKey="value"
+        domain={zDomain}
+        range={BUBBLE_RANGE}
+      />
     </>
   )
 }
 
-function DayChart({ children }: { children: ReactNode }) {
+function DayChart({
+  children,
+  tall,
+}: {
+  children: ReactNode
+  tall?: boolean
+}) {
   return (
     <ChartContainer
       config={chartConfig}
-      className="h-[56px] w-full aspect-auto font-sans text-xs"
+      className="!aspect-auto w-full max-w-none overflow-hidden font-sans text-xs"
+      style={{ height: tall ? 78 : 58 }}
     >
-      <ScatterChart accessibilityLayer margin={margin}>
+      <ScatterChart
+        accessibilityLayer
+        margin={{ top: 6, right: 4, bottom: tall ? 4 : 2, left: 4 }}
+      >
         {children}
       </ScatterChart>
     </ChartContainer>
@@ -116,7 +134,11 @@ export default function BubbleChartDemo({
 }: {
   defaultIndex?: TooltipIndex
 }) {
-  const rows: Array<{ day: string; data: typeof data01; showXTicks?: boolean }> = [
+  const rows: Array<{
+    day: string
+    data: typeof data01
+    showXTicks?: boolean
+  }> = [
     { day: DAYS[0], data: data01 },
     { day: DAYS[1], data: data02 },
     { day: DAYS[2], data: data01 },
@@ -127,17 +149,21 @@ export default function BubbleChartDemo({
   ]
 
   return (
-    <div className="w-full max-w-[900px] space-y-0 font-sans" dir="ltr">
+    <div className="w-full max-w-[900px] font-sans" dir="rtl">
       {rows.map((row, i) => (
         <div
           key={row.day}
-          className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2"
+          className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-2 overflow-hidden"
         >
-          <DayChart>
-            <BubbleAxes showXTicks={row.showXTicks} />
+          <span className="w-14 shrink-0 text-end text-[11px] leading-none text-muted-foreground">
+            {row.day}
+          </span>
+          <DayChart tall={row.showXTicks}>
+            <BubbleAxes showXTicks={Boolean(row.showXTicks)} />
             <Scatter
               data={row.data}
               fill={CHART2_BAR_COLORS[i % CHART2_BAR_COLORS.length]}
+              fillOpacity={0.9}
             />
             <ChartTooltip
               defaultIndex={i === 0 ? defaultIndex : undefined}
@@ -153,9 +179,6 @@ export default function BubbleChartDemo({
               }
             />
           </DayChart>
-          <span className="text-muted-foreground whitespace-nowrap text-[11px] leading-none">
-            {row.day}
-          </span>
         </div>
       ))}
     </div>

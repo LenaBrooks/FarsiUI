@@ -1036,6 +1036,13 @@
     ]
   },
   {
+    "name": "datetime-picker-06",
+    "description": "انتخاب تاریخ شمسی با چرخ روز، ماه و سال.",
+    "categories": [
+      "datetime-picker"
+    ]
+  },
+  {
     "name": "document-verification-01",
     "description": "بارگذاری مدرک با پیش‌نمایش و پیشرفت آپلود.",
     "categories": [

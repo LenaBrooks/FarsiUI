@@ -1199,4 +1199,196 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       },
     ],
   },
+  {
+    name: "price-input",
+    type: "registry:ui",
+    registryDependencies: ["input", "button", "iran", "digits"],
+    files: [
+      {
+        path: "ui/price-input.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/price-input",
+      },
+    },
+  },
+  {
+    name: "phone-input",
+    type: "registry:ui",
+    registryDependencies: ["input", "iran", "digits"],
+    files: [
+      {
+        path: "ui/phone-input.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/phone-input",
+      },
+    },
+  },
+  {
+    name: "national-code-input",
+    type: "registry:ui",
+    registryDependencies: ["input", "iran", "digits"],
+    files: [
+      {
+        path: "ui/national-code-input.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/national-code-input",
+      },
+    },
+  },
+  {
+    name: "sheba-input",
+    type: "registry:ui",
+    registryDependencies: ["input", "iran"],
+    files: [
+      {
+        path: "ui/sheba-input.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/sheba-input",
+      },
+    },
+  },
+  {
+    name: "bank-card-input",
+    type: "registry:ui",
+    registryDependencies: ["input", "iran", "digits"],
+    files: [
+      {
+        path: "ui/bank-card-input.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/bank-card-input",
+      },
+    },
+  },
+  {
+    name: "address-form",
+    type: "registry:ui",
+    registryDependencies: [
+      "field",
+      "input",
+      "textarea",
+      "native-select",
+      "label",
+      "iran",
+      "digits",
+    ],
+    files: [
+      {
+        path: "ui/address-form.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/address-form",
+      },
+    },
+  },
+  {
+    name: "file-upload",
+    type: "registry:ui",
+    registryDependencies: ["button", "progress", "digits"],
+    files: [
+      {
+        path: "ui/file-upload.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/file-upload",
+      },
+    },
+  },
+  {
+    name: "relative-time",
+    type: "registry:ui",
+    dependencies: ["date-fns-jalali"],
+    registryDependencies: ["digits"],
+    files: [
+      {
+        path: "ui/relative-time.tsx",
+        type: "registry:ui",
+      },
+      {
+        path: "lib/relative-time.ts",
+        type: "registry:lib",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/relative-time",
+      },
+    },
+  },
+  {
+    name: "drag-scroll",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/drag-scroll.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/drag-scroll",
+      },
+    },
+  },
+  {
+    name: "signature-pad",
+    type: "registry:ui",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "ui/signature-pad.tsx",
+        type: "registry:ui",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/signature-pad",
+      },
+    },
+  },
+  {
+    name: "iran-division-picker",
+    type: "registry:ui",
+    registryDependencies: ["field", "native-select", "label"],
+    files: [
+      {
+        path: "ui/iran-division-picker.tsx",
+        type: "registry:ui",
+      },
+      {
+        path: "lib/iran-geo.ts",
+        type: "registry:lib",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
+      },
+    },
+  },
 ]

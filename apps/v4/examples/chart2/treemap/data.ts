@@ -144,6 +144,48 @@ export const TREEMAP_DATA_NESTED: TreemapBranch[] = TREEMAP_DATA.filter(
   (b) => b.name !== "عملیات"
 )
 
+/**
+ * دادهٔ خوانا برای گالری — سلول‌های درشت‌تر، مثل درخت‌نقشهٔ حجم باندل.
+ * برای simple / custom / nested / gaps استفاده می‌شود.
+ */
+export const TREEMAP_DATA_GALLERY: TreemapBranch[] = [
+  {
+    name: "شعب",
+    children: [
+      { name: "تهران", size: 24593 },
+      { name: "اصفهان", size: 9703 },
+      { name: "مشهد", size: 6520 },
+      { name: "شیراز", size: 4302 },
+    ],
+  },
+  {
+    name: "کانال‌ها",
+    children: [
+      { name: "فروش حضوری", size: 8435 },
+      { name: "فروش آنلاین", size: 7862 },
+      { name: "درگاه", size: 5222 },
+      { name: "پیک", size: 3896 },
+    ],
+  },
+  {
+    name: "محصولات",
+    children: [
+      { name: "الکترونیک", size: 15544 },
+      { name: "پوشاک", size: 12788 },
+      { name: "خوراکی", size: 9382 },
+      { name: "خانه", size: 7275 },
+    ],
+  },
+  {
+    name: "رویدادها",
+    children: [
+      { name: "حراج", size: 7313 },
+      { name: "جشنواره", size: 5880 },
+      { name: "پیشنهاد ویژه", size: 3701 },
+    ],
+  },
+]
+
 export const TREEMAP_BUNDLE_DATA: TreemapBranch[] = [
   {
     name: "وابستگی‌ها",

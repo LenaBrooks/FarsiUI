@@ -3,7 +3,6 @@
 import * as React from "react"
 import { PrefetchLink } from "@/components/prefetch-link"
 import { usePathname } from "next/navigation"
-import { ChevronDownIcon } from "lucide-react"
 
 import { isComponentsDocsPath, PAGES_NEW, splitDocTitle } from "@/lib/docs"
 import { DOCS_SIDEBAR_SCROLL_STORAGE_KEY } from "@/lib/docs-sidebar-scroll"
@@ -16,6 +15,22 @@ import {
   normalizeNavSearch,
   SidebarNavSearch,
 } from "@/components/sidebar-nav-search"
+import {
+  SIDEBAR_COLLAPSIBLE_CONTENT_CLASS,
+  SIDEBAR_EMPTY_CLASS,
+  SIDEBAR_GROUP_TRIGGER_CLASS,
+  SIDEBAR_NESTED_ITEM_CLASS,
+  SIDEBAR_NESTED_LABEL_CLASS,
+  SIDEBAR_NESTED_RAIL_CLASS,
+  SIDEBAR_SEARCH_INPUT_CLASS,
+  SIDEBAR_SEARCH_WRAP_CLASS,
+  SIDEBAR_SHELL_CLASS,
+  SIDEBAR_TOP_LINK_CLASS,
+  SidebarNavBullet,
+  SidebarNavChevron,
+  sidebarItemStateClass,
+} from "@/components/sidebar-nav-ui"
+import { cn } from "cn"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 import {
   Collapsible,
@@ -28,22 +43,9 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
 } from "@/registry/new-york-v4/ui/sidebar"
-
-const ACTIVE_ITEM_CLASS =
-  "relative h-10 w-full overflow-visible border border-transparent py-0 pe-1.5 ps-2 text-[14px] font-medium after:absolute after:inset-x-0 after:inset-y-0 after:z-0 after:rounded-md data-[active=true]:border-primary/20 data-[active=true]:bg-primary/10 data-[active=true]:text-primary lg:h-8"
-
-const ACTIVE_SECTION_CLASS =
-  "relative h-10 w-fit overflow-visible border border-transparent py-0 text-[14px] font-medium after:absolute after:inset-x-0 after:inset-y-0 after:z-0 after:rounded-md data-[active=true]:border-primary/20 data-[active=true]:bg-primary/10 data-[active=true]:text-primary lg:h-8 3xl:fixed:w-full 3xl:fixed:max-w-48"
-
-const GROUP_TRIGGER_CLASS =
-  "flex h-10 w-full cursor-pointer items-center gap-1.5 rounded-md px-2 text-[13px] font-medium text-muted-foreground outline-none hover:text-foreground lg:h-8"
-
-const SIDEBAR_EN_CLASS =
-  "shrink-0 font-sans text-[12px] font-normal tracking-normal text-muted-foreground"
 
 const TOP_LEVEL_SECTIONS: Array<{
   name: string
@@ -300,6 +302,22 @@ function DocsSidebarBody({
     setOpenGroups((prev) => ({ ...prev, [id]: open }))
   }, [])
 
+  React.useEffect(() => {
+    setOpenGroups((prev) => {
+      let next = prev
+      for (const group of filteredGroups) {
+        if (group.isComponents) continue
+        if (
+          group.pages.some((page) => page.url === pathname) &&
+          !next[group.id]
+        ) {
+          next = { ...next, [group.id]: true }
+        }
+      }
+      return next
+    })
+  }, [pathname, filteredGroups])
+
   const hasResults =
     filteredSections.length > 0 || filteredGroups.length > 0
 
@@ -364,110 +382,80 @@ function DocsSidebarBody({
       className="flex min-h-0 flex-1 flex-col overflow-hidden"
     >
       {showSearch ? (
-        <div className="shrink-0 pe-2 pt-2 pb-3">
+        <div className={SIDEBAR_SEARCH_WRAP_CLASS}>
           <SidebarNavSearch
             value={searchValue}
             onValueChange={setSearchValue}
             onClear={clearSearch}
-            inputClassName="text-[14px]"
+            inputClassName={SIDEBAR_SEARCH_INPUT_CLASS}
           />
         </div>
       ) : null}
       <SidebarContent
         ref={contentRef}
         data-docs-sidebar-content=""
-        className="min-h-0 w-full scroll-fade scrollbar-soft overflow-x-hidden overflow-y-auto pe-2 [--scroll-fade-t-size:0px]"
+        className="min-h-0 w-full scroll-fade scrollbar-soft overflow-x-hidden overflow-y-auto pe-1 [--scroll-fade-t-size:0px]"
       >
         {!hasResults ? (
-          <div className="px-2 py-6 text-center text-[14px] text-muted-foreground">
-            نتیجه‌ای پیدا نشد.
-          </div>
+          <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
         ) : null}
         {filteredSections.length > 0 ? (
-          <SidebarGroup className="p-1 pt-1">
+          <SidebarGroup className="pt-1">
             <SidebarGroupContent>
               <SidebarMenu className="gap-0.5">
-                {filteredSections.map(({ name, href, statusDot }) => (
-                  <SidebarMenuItem key={name}>
-                    <SidebarMenuButton
-                      size="sm"
-                      asChild
-                      isActive={
-                        href === "/docs"
-                          ? pathname === href
-                          : pathname.startsWith(href)
-                      }
-                      className={ACTIVE_SECTION_CLASS}
-                    >
-                      <PrefetchLink href={href}>
-                        <span className="absolute inset-0 flex w-(--sidebar-menu-width) bg-transparent" />
-                        <span className="relative z-10 inline-flex items-center gap-1.5">
+                {filteredSections.map(({ name, href, statusDot }) => {
+                  const active =
+                    href === "/docs"
+                      ? pathname === href
+                      : pathname === href || pathname.startsWith(`${href}/`)
+                  const featured =
+                    statusDot === "green" || PAGES_NEW.includes(href)
+
+                  return (
+                    <SidebarMenuItem key={name}>
+                      <PrefetchLink
+                        href={href}
+                        data-active={active ? "true" : undefined}
+                        className={cn(
+                          SIDEBAR_TOP_LINK_CLASS,
+                          sidebarItemStateClass(active)
+                        )}
+                      >
+                        <SidebarNavBullet featured={featured} />
+                        <span className={SIDEBAR_NESTED_LABEL_CLASS}>
                           {name}
-                          {statusDot === "green" ? (
-                            <span
-                              className="size-2 shrink-0 rounded-full bg-emerald-500"
-                              title="به‌روز"
-                              aria-label="به‌روز"
-                            />
-                          ) : null}
-                          {PAGES_NEW.includes(href) ? (
-                            <span
-                              className="size-2 shrink-0 rounded-full bg-primary"
-                              title="New"
-                            />
-                          ) : null}
                         </span>
                       </PrefetchLink>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
+                    </SidebarMenuItem>
+                  )
+                })}
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
         ) : null}
 
         {componentsOnly && componentGroup ? (
-          <SidebarGroup className="p-1 pt-1">
+          <SidebarGroup className="pt-1">
             <SidebarGroupContent>
               <SidebarMenu className="gap-0.5">
                 {componentGroup.pages.map((page) => {
-                  const { fa, en } = splitDocTitle(String(page.name))
-                  const isNew = PAGES_NEW.includes(page.url)
+                  const { fa } = splitDocTitle(String(page.name))
+                  const active = page.url === pathname
+                  const featured = PAGES_NEW.includes(page.url)
 
                   return (
                     <SidebarMenuItem key={page.url}>
-                      <SidebarMenuButton
-                        size="sm"
-                        asChild
-                        isActive={page.url === pathname}
-                        className={ACTIVE_ITEM_CLASS}
+                      <PrefetchLink
+                        href={page.url}
+                        data-active={active ? "true" : undefined}
+                        className={cn(
+                          SIDEBAR_NESTED_ITEM_CLASS,
+                          sidebarItemStateClass(active)
+                        )}
                       >
-                        <PrefetchLink
-                          href={page.url}
-                          className="flex w-full min-w-0 items-center gap-2"
-                        >
-                          <span className="flex min-w-0 shrink items-center gap-1.5">
-                            <span className="truncate">{fa}</span>
-                            {isNew ? (
-                              <span
-                                className="flex size-2 shrink-0 rounded-full bg-primary"
-                                title="New"
-                              />
-                            ) : null}
-                          </span>
-                          {en ? (
-                            <>
-                              <span
-                                aria-hidden
-                                className="mb-0.5 min-w-3 flex-1 border-b border-dashed border-border/60"
-                              />
-                              <span dir="ltr" lang="en" className={SIDEBAR_EN_CLASS}>
-                                {en}
-                              </span>
-                            </>
-                          ) : null}
-                        </PrefetchLink>
-                      </SidebarMenuButton>
+                        <SidebarNavBullet featured={featured} />
+                        <span className={SIDEBAR_NESTED_LABEL_CLASS}>{fa}</span>
+                      </PrefetchLink>
                     </SidebarMenuItem>
                   )
                 })}
@@ -477,64 +465,43 @@ function DocsSidebarBody({
         ) : null}
 
         {otherGroups.map((group) => (
-          <SidebarGroup key={group.id} className="p-1">
+          <SidebarGroup key={group.id} className="pt-0.5">
             <Collapsible
               open={isGroupOpen(group.id)}
               onOpenChange={(open) => setGroupOpen(group.id, open)}
               className="group/docs-folder"
             >
-              <CollapsibleTrigger className={GROUP_TRIGGER_CLASS}>
+              <CollapsibleTrigger className={SIDEBAR_GROUP_TRIGGER_CLASS}>
                 <span className="min-w-0 flex-1 truncate text-start">
                   {group.name}
                 </span>
-                <ChevronDownIcon className="size-3.5 shrink-0 opacity-50 transition-transform duration-200 group-data-[state=open]/docs-folder:rotate-180" />
+                <SidebarNavChevron group="docs-folder" />
               </CollapsibleTrigger>
-              <CollapsibleContent>
-                <SidebarGroupContent>
-                  <SidebarMenu className="gap-0.5">
-                    {group.pages.map((page) => {
-                      const { fa, en } = splitDocTitle(String(page.name))
-                      const isNew = PAGES_NEW.includes(page.url)
+              <CollapsibleContent
+                className={SIDEBAR_COLLAPSIBLE_CONTENT_CLASS}
+              >
+                <div className={SIDEBAR_NESTED_RAIL_CLASS}>
+                  {group.pages.map((page) => {
+                    const { fa } = splitDocTitle(String(page.name))
+                    const active = page.url === pathname
+                    const featured = PAGES_NEW.includes(page.url)
 
-                      return (
-                        <SidebarMenuItem key={page.url}>
-                          <SidebarMenuButton
-                            size="sm"
-                            asChild
-                            isActive={page.url === pathname}
-                            className={ACTIVE_ITEM_CLASS}
-                          >
-                            <PrefetchLink
-                              href={page.url}
-                              className="flex w-full min-w-0 items-center gap-2"
-                            >
-                              <span className="flex min-w-0 shrink items-center gap-1.5">
-                                <span className="truncate">{fa}</span>
-                                {isNew ? (
-                                  <span
-                                    className="flex size-2 shrink-0 rounded-full bg-primary"
-                                    title="New"
-                                  />
-                                ) : null}
-                              </span>
-                              {en ? (
-                                <>
-                                  <span
-                                    aria-hidden
-                                    className="mb-0.5 min-w-3 flex-1 border-b border-dashed border-border/60"
-                                  />
-                                  <span dir="ltr" lang="en" className={SIDEBAR_EN_CLASS}>
-                                    {en}
-                                  </span>
-                                </>
-                              ) : null}
-                            </PrefetchLink>
-                          </SidebarMenuButton>
-                        </SidebarMenuItem>
-                      )
-                    })}
-                  </SidebarMenu>
-                </SidebarGroupContent>
+                    return (
+                      <PrefetchLink
+                        key={page.url}
+                        href={page.url}
+                        data-active={active ? "true" : undefined}
+                        className={cn(
+                          SIDEBAR_NESTED_ITEM_CLASS,
+                          sidebarItemStateClass(active)
+                        )}
+                      >
+                        <SidebarNavBullet featured={featured} />
+                        <span className={SIDEBAR_NESTED_LABEL_CLASS}>{fa}</span>
+                      </PrefetchLink>
+                    )
+                  })}
+                </div>
               </CollapsibleContent>
             </Collapsible>
           </SidebarGroup>
@@ -577,11 +544,12 @@ export function DocsSidebar({
   return (
     <PersianDigits>
       <Sidebar
-        className="sticky top-[calc(var(--header-height)+0.6rem)] z-30 hidden h-[calc(100svh-10rem)] overflow-hidden overscroll-none bg-transparent [--sidebar-menu-width:--spacing(56)] lg:flex"
+        className={SIDEBAR_SHELL_CLASS}
         collapsible="none"
+        dir="rtl"
+        lang="fa"
         {...props}
       >
-        <div className="absolute top-12 bottom-0 left-2 hidden h-full w-px bg-[linear-gradient(to_bottom,transparent_0%,var(--border)_10%,var(--border)_90%,transparent_100%)] lg:flex" />
         <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
           <DocsSidebarBody tree={tree} />
         </div>

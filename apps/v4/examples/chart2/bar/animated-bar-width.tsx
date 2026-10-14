@@ -63,11 +63,12 @@ export default function BarAnimatedWidthDemo() {
           activeBar={AnimatedShape}
           shape={AnimatedShape}
           label={{
-            fill: "var(--primary-foreground)",
+            fill: "var(--foreground)",
             position: "insideTopRight",
             angle: 90,
             textAnchor: "start",
             fontFamily: "var(--font-sans)",
+            formatter: (value: number | string) => formatChart2Number(value),
           }}
         />
         <ChartTooltip cursor={false} content={<ChartTooltipContent hideLabel />} />

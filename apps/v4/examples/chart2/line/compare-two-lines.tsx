@@ -1,89 +1,210 @@
 // @ts-nocheck — adapted from Recharts upstream for recharts@3.8
 "use client"
 
-import { FC, useMemo, useState } from "react"
+import { type FC, type ReactNode, useMemo, useState } from "react"
 import {
+  CartesianGrid,
   Line,
   LineChart,
   ReferenceLine,
   Tooltip,
-  TooltipContentProps,
+  type TooltipContentProps,
   XAxis,
   YAxis,
-  MouseHandlerDataParam,
+  type MouseHandlerDataParam,
 } from "recharts"
 
-import { formatJalaliDate, formatPersianNumber } from "@/lib/chart-locale"
+import { useChart2Caption } from "@/components/chart2-live"
+import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"
+import {
+  CHART_TOMAN_AXIS_WIDTH,
+  formatJalaliDate,
+  formatToman,
+} from "@/lib/chart-locale"
+import { TomanAxisTick } from "@/lib/chart-toman-tick"
+import { cn } from "@/lib/utils"
+import { ChartContainer, type ChartConfig } from "@/registry/new-york-v4/ui/chart"
+
+import { LINE_CHART_CLASS } from "./line-fa-shared"
 
 // #region sample data and types
-/** Number + «تومان» under it as SVG (same tick text style as other charts). */
-const CurrencyYTick = ({
-  x,
-  y,
-  payload,
-}: {
-  x?: number
-  y?: number
-  payload?: { value?: number }
-}) => {
-  if (x == null || y == null || payload?.value == null) return null
-  const value = formatPersianNumber(Math.round(payload.value), { useGrouping: true })
-  return (
-    <text
-      x={x}
-      y={y}
-      textAnchor="start"
-      direction="ltr"
-      className="recharts-text recharts-cartesian-axis-tick-value fill-muted-foreground"
-      style={{
-        userSelect: "none",
-        direction: "ltr",
-        unicodeBidi: "isolate",
-        fontFamily: "var(--font-sans)",
-        fontSize: 11,
-      }}
-    >
-      <tspan x={x} dy="1em">
-        {value}
-      </tspan>
-      <tspan x={x} dy="1.15em" fontSize={10} fillOpacity={0.8}>
-        تومان
-      </tspan>
-    </text>
-  )
-}
-
 interface DataPoint {
-  date: number;
-  close: number;
-  maxClose?: number;
-  reinvestClose?: number;
-  netDeposits?: number;
+  date: number
+  close: number
+  maxClose?: number
+  reinvestClose?: number
+  netDeposits?: number
 }
 
-const getDataKeyClose = (point: DataPoint) => point.close;
-const getDataKeyNetDeposits = (point: DataPoint) => point.netDeposits;
-const getDataKeyReinvestClose = (point: DataPoint) => point.reinvestClose;
+const getDataKeyClose = (point: DataPoint) => point.close
+const getDataKeyNetDeposits = (point: DataPoint) => point.netDeposits
+const getDataKeyReinvestClose = (point: DataPoint) => point.reinvestClose
 
-const CustomTooltip: FC<TooltipContentProps<any, any>> = ({ active, payload }) => {
-  const activePayload = payload?.[0]?.payload;
-  if (!active || !activePayload || !activePayload.date) {
-    return null;
-  }
+const PORTFOLIO = CHART2_BAR_COLORS[0]
+const COMPARE = CHART2_BAR_COLORS[1]
+const DEPOSITS = "color-mix(in oklab, var(--muted-foreground) 72%, transparent)"
+
+const compareChartConfig = {
+  close: { label: "پول شما", color: PORTFOLIO },
+  reinvestClose: { label: "با سرمایه‌گذاری مجدد", color: COMPARE },
+  netDeposits: { label: "پولی که گذاشته‌اید", color: DEPOSITS },
+} satisfies ChartConfig
+
+const moneyStyle = {
+  letterSpacing: 0,
+  fontVariantNumeric: "normal",
+} as const
+
+function MoneyText({
+  children,
+  className,
+}: {
+  children: ReactNode
+  className?: string
+}) {
   return (
     <span
       dir="rtl"
       lang="fa"
-      className="flex -translate-x-1/2 select-none font-sans text-xs text-muted-foreground [font-family:var(--font-sans)]"
+      className={cn("font-medium text-foreground", className)}
+      style={moneyStyle}
     >
-      {formatJalaliDate(activePayload.date, {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })}
+      {children}
     </span>
-  );
-};
+  )
+}
+
+function CompareTooltip({ active, payload }: TooltipContentProps<number, string>) {
+  const row = payload?.[0]?.payload as DataPoint | undefined
+  if (!active || !row?.date) return null
+
+  const compare = row.reinvestClose
+  const delta =
+    compare != null && Number.isFinite(compare) ? compare - row.close : null
+
+  return (
+    <div
+      dir="rtl"
+      lang="fa"
+      className="min-w-[12.5rem] rounded-lg border border-border/60 bg-background/95 px-3 py-2.5 shadow-md backdrop-blur-sm"
+    >
+      <p className="mb-2 border-b border-border/50 pb-1.5 text-[11px] text-muted-foreground">
+        {formatJalaliDate(row.date, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </p>
+      <div className="flex flex-col gap-1.5 text-[12px]">
+        <TooltipRow
+          color={PORTFOLIO}
+          label="پول شما الان"
+          value={formatToman(row.close, { compact: true })}
+        />
+        {compare != null ? (
+          <TooltipRow
+            color={COMPARE}
+            label="با سرمایه‌گذاری مجدد"
+            value={formatToman(compare, { compact: true })}
+            dashed
+          />
+        ) : null}
+        {row.netDeposits != null ? (
+          <TooltipRow
+            color={DEPOSITS}
+            label="فقط اصل پول"
+            value={formatToman(row.netDeposits, { compact: true })}
+          />
+        ) : null}
+        {delta != null ? (
+          <div
+            className={cn(
+              "mt-1 rounded-md px-2 py-1.5 text-[11px] font-medium",
+              delta >= 0
+                ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                : "bg-rose-500/10 text-rose-700 dark:text-rose-400"
+            )}
+          >
+            <span className="text-muted-foreground">یعنی </span>
+            <MoneyText className="text-inherit">
+              {delta >= 0 ? "حدود " : "حدود "}
+              {formatToman(Math.abs(delta), { compact: true })}
+              {delta >= 0 ? " بیشتر" : " کمتر"}
+            </MoneyText>
+          </div>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
+function TooltipRow({
+  color,
+  label,
+  value,
+  dashed,
+}: {
+  color: string
+  label: string
+  value: string
+  dashed?: boolean
+}) {
+  return (
+    <div className="flex items-start justify-between gap-4">
+      <span className="inline-flex items-center gap-1.5 whitespace-nowrap text-muted-foreground">
+        <span
+          className={cn(
+            "shrink-0 rounded-full",
+            dashed ? "h-0.5 w-4" : "size-2"
+          )}
+          style={
+            dashed
+              ? {
+                  background: `repeating-linear-gradient(90deg, ${color} 0 3px, transparent 3px 5px)`,
+                }
+              : { background: color }
+          }
+          aria-hidden
+        />
+        {label}
+      </span>
+      <MoneyText className="shrink-0">{value}</MoneyText>
+    </div>
+  )
+}
+
+function CompareLegend() {
+  return (
+    <div className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-[11px] text-muted-foreground">
+      <span className="inline-flex items-center gap-1.5">
+        <span
+          className="size-2.5 shrink-0 rounded-full"
+          style={{ background: PORTFOLIO }}
+          aria-hidden
+        />
+        پول شما
+      </span>
+      <span className="inline-flex items-center gap-1.5">
+        <span
+          className="h-0.5 w-5 shrink-0 rounded-full"
+          style={{
+            background: `repeating-linear-gradient(90deg, ${COMPARE} 0 3px, transparent 3px 5px)`,
+          }}
+          aria-hidden
+        />
+        با سرمایه‌گذاری مجدد
+      </span>
+      <span className="inline-flex items-center gap-1.5">
+        <span
+          className="h-0.5 w-5 shrink-0 rounded-full"
+          style={{ background: DEPOSITS }}
+          aria-hidden
+        />
+        اصل پول
+      </span>
+    </div>
+  )
+}
 
 const data: DataPoint[] = [
   {
@@ -781,188 +902,270 @@ const data: DataPoint[] = [
 ];
 // #endregion
 
-const color = "var(--color-chart-1)"
-const compareColor = "var(--color-chart-5)"
-
 const { yAxisMin, yAxisMax } = data.reduce(
   (acc, val) => {
-    const mc = val.maxClose ?? 0;
-    const nd = val.netDeposits ?? 0;
-
+    const mc = val.maxClose ?? 0
+    const nd = val.netDeposits ?? 0
     return {
       yAxisMin: Math.min(acc.yAxisMin, mc, nd),
       yAxisMax: Math.max(acc.yAxisMax, mc, nd),
-    };
+    }
   },
-  { yAxisMin: Infinity, yAxisMax: 0 },
-);
+  { yAxisMin: Infinity, yAxisMax: 0 }
+)
 
-const yAxisDomain = [Math.max(0, 0.75 * yAxisMin), 1.25 * yAxisMax];
+const yAxisDomain = [Math.max(0, 0.75 * yAxisMin), 1.25 * yAxisMax]
 
-const compareHoverDenominator = data.filter(d => !!d.reinvestClose).length;
+const compareHoverDenominator = data.filter((d) => !!d.reinvestClose).length
 
 const App: FC = () => {
-  const [hoverIndex, setHoverIndex] = useState(-1);
+  const [hoverIndex, setHoverIndex] = useState(-1)
+  useChart2Caption(
+    () =>
+      "خط آبی پول الانِ شماست؛ خط صورتی می‌گوید اگر سود را دوباره سرمایه‌گذاری می‌کردید چقدر می‌شد",
+    []
+  )
 
-  const isHovering = hoverIndex !== -1;
+  const isHovering = hoverIndex !== -1
+  const hoverPoint = hoverIndex >= 0 ? data[hoverIndex] : null
 
-  const invalidCompareValueLength = data.slice(0, hoverIndex).filter(d => !d.reinvestClose).length;
-  const compareHoverNumerator = hoverIndex - invalidCompareValueLength;
+  const invalidCompareValueLength = data
+    .slice(0, hoverIndex)
+    .filter((d) => !d.reinvestClose).length
+  const compareHoverNumerator = hoverIndex - invalidCompareValueLength
   const compareHoverPercentage =
-    // eslint-disable-next-line no-nested-ternary
     compareHoverDenominator > 0
       ? hoverIndex >= 0
         ? (compareHoverNumerator / compareHoverDenominator) * 100
         : 100
-      : // handle the case of no valid data points. This only happens when the
-        // chart has only 2 data points.
-        compareHoverNumerator === 0
+      : compareHoverNumerator === 0
         ? 0
-        : 100;
-  const invalidNetDepositsLength = data.slice(0, hoverIndex).filter(d => !d.netDeposits).length;
+        : 100
+  const invalidNetDepositsLength = data
+    .slice(0, hoverIndex)
+    .filter((d) => !d.netDeposits).length
   const netDepositHoverPercentage =
     hoverIndex >= 0
-      ? ((hoverIndex - invalidNetDepositsLength) / (data.filter(d => !!d.netDeposits).length - 1)) * 100
-      : 100;
-  const hoverPercentage = hoverIndex >= 0 ? (hoverIndex / (data.filter(d => !!d.date).length - 1)) * 100 : 100;
-  const compareValue = data[hoverIndex]?.reinvestClose;
+      ? ((hoverIndex - invalidNetDepositsLength) /
+          (data.filter((d) => !!d.netDeposits).length - 1)) *
+        100
+      : 100
+  const hoverPercentage =
+    hoverIndex >= 0
+      ? (hoverIndex / (data.filter((d) => !!d.date).length - 1)) * 100
+      : 100
+  const compareValue = hoverPoint?.reinvestClose
 
-  const handleMouseLeave = useMemo(() => () => setHoverIndex(-1), []);
+  const hoverDelta =
+    hoverPoint && compareValue != null ? compareValue - hoverPoint.close : null
+
+  const handleMouseLeave = useMemo(() => () => setHoverIndex(-1), [])
   const handleMouseMove = useMemo(
     () =>
       ({ activeIndex }: MouseHandlerDataParam) =>
         setHoverIndex(Number(activeIndex ?? -1)),
-    [],
-  );
+    []
+  )
 
   const referenceLineSegment = useMemo(
     () =>
       [
         {
-          x: data[hoverIndex]?.date ?? '',
-          y: compareValue ?? data[hoverIndex]?.close ?? 0,
+          x: hoverPoint?.date ?? "",
+          y: compareValue ?? hoverPoint?.close ?? 0,
         },
         {
-          x: data[hoverIndex]?.date ?? '',
-          y: data[hoverIndex]?.close ?? compareValue ?? 0,
+          x: hoverPoint?.date ?? "",
+          y: hoverPoint?.close ?? compareValue ?? 0,
         },
       ] as const,
-    [hoverIndex, compareValue],
-  );
+    [hoverPoint, compareValue]
+  )
 
   return (
     <div
       dir="rtl"
       lang="fa"
-      className="w-full font-sans [font-family:var(--font-sans)] [&_.recharts-surface]:overflow-visible [&_.recharts-yAxis-tick-labels]:[direction:ltr] [&_.recharts-yAxis-tick-labels]:[unicode-bidi:isolate]"
+      className="flex w-full max-w-[700px] flex-col gap-2.5 font-sans"
     >
-    <LineChart
-      style={{ width: '100%', height: 300 }}
-      responsive
-      data={data}
-      margin={{ left: 8, right: 12, top: 24, bottom: 28 }}
-      onMouseLeave={handleMouseLeave}
-      onMouseMove={handleMouseMove}
-    >
-      <defs>
-        <linearGradient id="portfolioColor" x1="0%" y1="0" x2="100%" y2="0">
-          <stop offset="0%" stopColor={color} stopOpacity={1} />
-          <stop offset={`${hoverPercentage}%`} stopColor={color} stopOpacity={1} />
-          <stop offset={`${hoverPercentage}%`} stopColor={color} stopOpacity={0.3} />
-          <stop offset="100%" stopColor={color} stopOpacity={0.3} />
-        </linearGradient>
-        <linearGradient id="netDepositsColor" x1="0%" y1="0" x2="100%" y2="0">
-          <stop offset="0%" stopColor="#8c9699" stopOpacity={1} />
-          <stop offset={`${netDepositHoverPercentage}%`} stopColor="#8c9699" stopOpacity={1} />
-          <stop offset={`${netDepositHoverPercentage}%`} stopColor="#8c9699" stopOpacity={0.3} />
-          <stop offset="100%" stopColor="#8c9699" stopOpacity={0.3} />
-        </linearGradient>
-        <linearGradient id="compareValueColor" x1="0%" y1="0" x2="100%" y2="0">
-          <stop offset="0%" stopColor={compareColor} stopOpacity={1} />
-          <stop offset={`${compareHoverPercentage}%`} stopColor={compareColor} stopOpacity={1} />
-          <stop offset={`${compareHoverPercentage}%`} stopColor={compareColor} stopOpacity={0.3} />
-          <stop offset="100%" stopColor={compareColor} stopOpacity={0.3} />
-        </linearGradient>
-      </defs>
-      <YAxis
-        style={{
-          userSelect: 'none',
-        }}
-        dataKey={getDataKeyClose}
-        tickCount={3} // 3 ticks only: 0, half of max, max = portfolio value rounded to nearest 50k
-        orientation="right"
-        width={112}
-        tickMargin={20}
-        tickLine={false}
-        axisLine
-        type="number"
-        name="ارزش سبد"
-        tick={CurrencyYTick}
-        domain={yAxisDomain}
-      />
-      {/** XAxis is required to show the lowest tick on the y-axis */}
-      <XAxis dataKey="date" axisLine={false} tickLine={false} tick={false} tickSize={0} tickMargin={0} />
-      <Tooltip
-        offset={10}
-        cursor={isHovering ? { stroke: 'var(--color-border-2)', strokeWidth: 1 } : false}
-        allowEscapeViewBox={{ x: true, y: true }}
-        wrapperStyle={{
-          top: '-24px',
-          outline: 'none',
-          fontSize: '12px',
-          zIndex: 1,
-        }}
-        content={CustomTooltip}
-        position={{
-          y: 30,
-        }}
-        animationDuration={0}
-      />
-      {/* tracking error line */}
-      <ReferenceLine
-        stroke="#000AFF"
-        strokeOpacity={0.4}
-        strokeWidth={12}
-        strokeLinecap="round"
-        opacity={isHovering ? 1 : 0}
-        segment={referenceLineSegment}
-      />
-      <Line
-        type="linear"
-        dataKey={getDataKeyNetDeposits}
-        name="واریز خالص"
-        dot={false}
-        activeDot={false}
-        stroke="url(#netDepositsColor)"
-        strokeWidth={2}
-        opacity={isHovering ? 1 : 0}
-        animationDuration={700}
-      />
-      <Line
-        type="linear"
-        dataKey={getDataKeyReinvestClose}
-        name="مقدار مقایسه"
-        dot={false}
-        activeDot={{ fill: compareColor, stroke: 'var(--color-surface-base)' }}
-        stroke="url(#compareValueColor)"
-        strokeDasharray="0.1 4"
-        strokeLinecap="round"
-        strokeWidth={2}
-        strokeOpacity={isHovering ? 1 : 0}
-        animationDuration={900}
-      />
-      <Line
-        type="linear"
-        dataKey={getDataKeyClose}
-        name="ارزش سبد"
-        stroke="var(--color-chart-1)"
-        activeDot={{ fill: color, stroke: 'var(--color-surface-base)' }}
-        dot={false}
-        animationDuration={500}
-      />
-    </LineChart>
-    </div>
-  );
-};
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <CompareLegend />
+        <div
+          className={cn(
+            "ms-auto min-h-8 rounded-full px-3 py-1 text-[11px] font-medium transition-opacity",
+            isHovering && hoverDelta != null
+              ? hoverDelta >= 0
+                ? "bg-emerald-500/12 text-emerald-700 opacity-100 dark:text-emerald-400"
+                : "bg-rose-500/12 text-rose-700 opacity-100 dark:text-rose-400"
+              : "opacity-0"
+          )}
+          aria-live="polite"
+        >
+          {isHovering && hoverDelta != null ? (
+            <MoneyText className="text-inherit">
+              {hoverDelta >= 0 ? "بیشتر: " : "کمتر: "}
+              {formatToman(Math.abs(hoverDelta), { compact: true })}
+            </MoneyText>
+          ) : (
+            "—"
+          )}
+        </div>
+      </div>
 
-export default App;
+      <ChartContainer config={compareChartConfig} className={LINE_CHART_CLASS}>
+        <LineChart
+          accessibilityLayer
+          data={data}
+          margin={{ left: 4, right: 8, top: 18, bottom: 8 }}
+          onMouseLeave={handleMouseLeave}
+          onMouseMove={handleMouseMove}
+        >
+          <defs>
+            <linearGradient id="portfolioColor" x1="0%" y1="0" x2="100%" y2="0">
+              <stop offset="0%" stopColor={PORTFOLIO} stopOpacity={1} />
+              <stop
+                offset={`${hoverPercentage}%`}
+                stopColor={PORTFOLIO}
+                stopOpacity={1}
+              />
+              <stop
+                offset={`${hoverPercentage}%`}
+                stopColor={PORTFOLIO}
+                stopOpacity={0.28}
+              />
+              <stop offset="100%" stopColor={PORTFOLIO} stopOpacity={0.28} />
+            </linearGradient>
+            <linearGradient id="netDepositsColor" x1="0%" y1="0" x2="100%" y2="0">
+              <stop offset="0%" stopColor={DEPOSITS} stopOpacity={1} />
+              <stop
+                offset={`${netDepositHoverPercentage}%`}
+                stopColor={DEPOSITS}
+                stopOpacity={1}
+              />
+              <stop
+                offset={`${netDepositHoverPercentage}%`}
+                stopColor={DEPOSITS}
+                stopOpacity={0.25}
+              />
+              <stop offset="100%" stopColor={DEPOSITS} stopOpacity={0.25} />
+            </linearGradient>
+            <linearGradient
+              id="compareValueColor"
+              x1="0%"
+              y1="0"
+              x2="100%"
+              y2="0"
+            >
+              <stop offset="0%" stopColor={COMPARE} stopOpacity={1} />
+              <stop
+                offset={`${compareHoverPercentage}%`}
+                stopColor={COMPARE}
+                stopOpacity={1}
+              />
+              <stop
+                offset={`${compareHoverPercentage}%`}
+                stopColor={COMPARE}
+                stopOpacity={0.28}
+              />
+              <stop offset="100%" stopColor={COMPARE} stopOpacity={0.28} />
+            </linearGradient>
+          </defs>
+
+          <CartesianGrid strokeDasharray="3 3" vertical={false} />
+          <XAxis
+            dataKey="date"
+            axisLine={false}
+            tickLine={false}
+            tick={false}
+            tickSize={0}
+            tickMargin={0}
+          />
+          <YAxis
+            dataKey={getDataKeyClose}
+            tickCount={4}
+            orientation="right"
+            width={CHART_TOMAN_AXIS_WIDTH}
+            tickMargin={8}
+            tickLine={false}
+            axisLine={false}
+            type="number"
+            name="ارزش سبد"
+            tick={TomanAxisTick}
+            domain={yAxisDomain}
+          />
+          <Tooltip
+            offset={12}
+            cursor={
+              isHovering
+                ? {
+                    stroke:
+                      "color-mix(in oklab, var(--foreground) 28%, transparent)",
+                    strokeWidth: 1.25,
+                    strokeDasharray: "4 4",
+                  }
+                : false
+            }
+            allowEscapeViewBox={{ x: true, y: true }}
+            wrapperStyle={{ outline: "none", zIndex: 1 }}
+            content={CompareTooltip}
+            animationDuration={0}
+          />
+          <ReferenceLine
+            stroke={COMPARE}
+            strokeOpacity={0.35}
+            strokeWidth={10}
+            strokeLinecap="round"
+            opacity={isHovering ? 1 : 0}
+            segment={referenceLineSegment}
+          />
+          <Line
+            type="linear"
+            dataKey={getDataKeyNetDeposits}
+            name="netDeposits"
+            dot={false}
+            activeDot={false}
+            stroke="url(#netDepositsColor)"
+            strokeWidth={1.75}
+            opacity={isHovering ? 1 : 0}
+            animationDuration={700}
+          />
+          <Line
+            type="linear"
+            dataKey={getDataKeyReinvestClose}
+            name="reinvestClose"
+            dot={false}
+            activeDot={{
+              r: 5,
+              fill: COMPARE,
+              stroke: "var(--background)",
+              strokeWidth: 2,
+            }}
+            stroke="url(#compareValueColor)"
+            strokeDasharray="0.1 5"
+            strokeLinecap="round"
+            strokeWidth={2.25}
+            strokeOpacity={isHovering ? 1 : 0}
+            animationDuration={900}
+          />
+          <Line
+            type="linear"
+            dataKey={getDataKeyClose}
+            name="close"
+            stroke="url(#portfolioColor)"
+            strokeWidth={2.75}
+            activeDot={{
+              r: 6,
+              fill: PORTFOLIO,
+              stroke: "var(--background)",
+              strokeWidth: 2,
+            }}
+            dot={false}
+            animationDuration={550}
+          />
+        </LineChart>
+      </ChartContainer>
+    </div>
+  )
+}
+
+export default App

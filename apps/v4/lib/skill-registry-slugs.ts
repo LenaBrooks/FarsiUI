@@ -31,5 +31,6 @@ export const SKILL_REGISTRY_SLUGS = new Set<string>([
   "improve-codebase-architecture",
   "ui-library-mcp",
   "parspack-s3-upload",
-  "zarinpal-payment"
+  "zarinpal-payment",
+  "neshan-maps"
 ])

@@ -3,7 +3,7 @@
 import { Area, AreaChart } from "recharts"
 
 import { usePersianMockData } from "@/components/chart2-live"
-import { chart2MockConfig } from "@/lib/chart2-fa"
+import { chart2BarMockConfig } from "@/lib/chart2-fa"
 import { ChartContainer } from "@/registry/new-york-v4/ui/chart"
 
 export default function TinyAreaChartDemo() {
@@ -11,7 +11,7 @@ export default function TinyAreaChartDemo() {
 
   return (
     <ChartContainer
-      config={chart2MockConfig}
+      config={chart2BarMockConfig}
       className="aspect-[1.618] h-[50px] w-full max-w-[200px] font-sans"
     >
       <AreaChart accessibilityLayer data={data} margin={{ top: 5, right: 0, left: 0, bottom: 5 }}>

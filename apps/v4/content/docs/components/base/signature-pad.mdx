@@ -1,0 +1,42 @@
+---
+title: پد امضا (Signature Pad)
+description: ثبت امضای دستی با موس یا لمس و خروجی PNG / SVG.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "signature-pad-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add signature-pad
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { useRef } from "react"
+import {
+  SignaturePad,
+  type SignaturePadHandle,
+} from "@/components/ui/signature-pad"
+
+export function Example() {
+  const ref = useRef<SignaturePadHandle>(null)
+
+  return (
+    <SignaturePad
+      ref={ref}
+      onEnd={(png) => console.log(png)}
+    />
+  )
+}
+```
+
+با `ref.current.toDataURL()` یا `toSvg()` خروجی بگیرید.

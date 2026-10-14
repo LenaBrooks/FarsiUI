@@ -1,13 +1,10 @@
 "use client"
 
+import * as React from "react"
 import { SunburstChart, type SunburstData } from "recharts"
 
 import { useChart2Caption } from "@/components/chart2-live"
-import {
-  CHART2_BAR_COLORS,
-  formatChart2Number,
-  toPersianDigits,
-} from "@/lib/chart2-fa"
+import { formatChart2Number, toPersianDigits } from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartTooltip,
@@ -15,39 +12,49 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
-import { PersianSunburstDigits } from "./sunburst-fa"
+import {
+  CHART2_BAR_COLORS,
+  SunburstFrame,
+  SunburstNameLabels,
+  colorizeTree,
+  flattenSunburstNames,
+  sunburstTextOptions,
+  type SunburstActive,
+} from "./sunburst-shared"
+
+const children = colorizeTree([
+  {
+    name: "وابستگی‌ها",
+    value: 4096,
+    children: [
+      { name: "react-redux", value: 2304 },
+      { name: "victory-vendor", value: 1792 },
+    ],
+  },
+  {
+    name: "منبع",
+    value: 4608,
+    children: [
+      { name: "Treemap", value: 1536 },
+      { name: "Sunburst", value: 1280 },
+      { name: "Tooltip", value: 1152 },
+      { name: "ChartUtils", value: 640 },
+    ],
+  },
+  {
+    name: "خروجی",
+    value: 1024,
+    children: [{ name: "مستندات", value: 1024 }],
+  },
+])
+
+const TOTAL = 9728
+const names = flattenSunburstNames(children)
 
 const data: SunburstData = {
   name: "باندل",
-  value: 9728,
-  children: [
-    {
-      name: "وابستگی‌ها",
-      fill: CHART2_BAR_COLORS[0],
-      value: 4096,
-      children: [
-        { name: "react-redux", value: 2304 },
-        { name: "victory-vendor", value: 1792 },
-      ],
-    },
-    {
-      name: "منبع",
-      fill: CHART2_BAR_COLORS[1],
-      value: 4608,
-      children: [
-        { name: "Treemap.tsx", value: 1536 },
-        { name: "SunburstChart.tsx", value: 1280 },
-        { name: "Tooltip.tsx", value: 1152 },
-        { name: "ChartUtils.ts", value: 640 },
-      ],
-    },
-    {
-      name: "خروجی",
-      fill: CHART2_BAR_COLORS[2],
-      value: 1024,
-      children: [{ name: "مستندات", value: 1024 }],
-    },
-  ],
+  value: TOTAL,
+  children,
 }
 
 const chartConfig = {
@@ -55,25 +62,45 @@ const chartConfig = {
 } satisfies ChartConfig
 
 export default function SunburstBundleSizeDemo() {
+  const [active, setActive] = React.useState<SunburstActive>(null)
+
   useChart2Caption(() => (
     <>
-      خورشیدسان حجم باندل — نمونهٔ جایگزین (درخت tree-shaken حدود{" "}
-      {toPersianDigits("9.50")} کیلوبایت)
+      ترکیب حجم باندل tree-shaken — حدود {toPersianDigits("9.50")} کیلوبایت
     </>
   ))
 
   return (
-    <div className="w-full max-w-[720px] font-sans">
-      <PersianSunburstDigits className="mx-auto w-full max-w-[420px]">
+    <SunburstFrame
+      active={active}
+      total={TOTAL}
+      totalLabel="حجم کل"
+      unit="بایت"
+    >
+      <SunburstNameLabels names={names} className="w-full">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square h-[420px] w-full max-w-[420px] font-sans text-xs"
+          className="aspect-square h-auto w-full max-w-[400px] max-h-[70vh] font-sans text-xs [&_.recharts-sector]:cursor-pointer [&_.recharts-sector]:outline-none"
         >
           <SunburstChart
             accessibilityLayer
             data={data}
             dataKey="value"
+            nameKey="name"
+            innerRadius={72}
+            padding={2}
+            ringPadding={2}
+            stroke="var(--background)"
+            textOptions={sunburstTextOptions}
             isAnimationActive
+            onMouseEnter={(node) => {
+              setActive({
+                name: String(node.name ?? ""),
+                value: Number(node.value ?? 0),
+                fill: typeof node.fill === "string" ? node.fill : undefined,
+              })
+            }}
+            onMouseLeave={() => setActive(null)}
           >
             <ChartTooltip
               content={
@@ -84,7 +111,7 @@ export default function SunburstBundleSizeDemo() {
             />
           </SunburstChart>
         </ChartContainer>
-      </PersianSunburstDigits>
-    </div>
+      </SunburstNameLabels>
+    </SunburstFrame>
   )
 }

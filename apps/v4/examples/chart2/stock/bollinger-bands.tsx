@@ -26,9 +26,10 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
+import { between, random } from "@/lib/chart2-mock-data"
+
 import {
   formatToman,
-  generateNaturalCandles,
   JalaliDayTick,
   sma,
   stdev,
@@ -37,17 +38,61 @@ import {
 
 const PERIOD = 20
 const MULT = 2
-const candles = generateNaturalCandles(60, 6612)
-const closes = candles.map((c) => c.close)
+
+/**
+ * قیمت با فازهای مشخص (روند، ریزش، رالی، خنثی) تا باند بولینگر جمع/باز شود
+ * و خط قیمت صاف نماند.
+ */
+function generateBbSeries(length = 80, seed = 7721, startPrice = 2_380_000) {
+  const gen = random(seed)
+  const dayMs = 24 * 60 * 60 * 1000
+  const startTime = Date.UTC(2025, 8, 1)
+  const points: { time: number; close: number }[] = []
+  let price = startPrice
+
+  for (let i = 0; i < length; i++) {
+    const t = i / Math.max(length - 1, 1)
+    let drift: number
+    let noiseScale: number
+    if (t < 0.18) {
+      drift = 0.006
+      noiseScale = 0.008
+    } else if (t < 0.32) {
+      drift = -0.014
+      noiseScale = 0.016
+    } else if (t < 0.55) {
+      drift = 0.011
+      noiseScale = 0.012
+    } else if (t < 0.72) {
+      drift = between(gen, -3, 3) / 1000
+      noiseScale = 0.006
+    } else {
+      drift = 0.008
+      noiseScale = 0.014
+    }
+    const noise = between(gen, -100, 100) / 100 * noiseScale
+    const shock =
+      between(gen, 0, 100) > 90 ? between(gen, -35, 35) / 1000 : 0
+    price = Math.max(
+      800_000,
+      Math.round(price * (1 + drift + noise + shock))
+    )
+    points.push({ time: startTime + i * dayMs, close: price })
+  }
+  return points
+}
+
+const series = generateBbSeries()
+const closes = series.map((p) => p.close)
 const mid = sma(closes, PERIOD)
 const sd = stdev(closes, PERIOD)
 
-const data = candles.map((c, i) => {
+const data = series.map((p, i) => {
   const m = mid[i]
   const s = sd[i]
   return {
-    time: c.time,
-    close: c.close,
+    time: p.time,
+    close: p.close,
     mid: m,
     upper: m != null && s != null ? m + MULT * s : null,
     lower: m != null && s != null ? m - MULT * s : null,

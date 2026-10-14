@@ -3,6 +3,7 @@
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_MONTHS,
   chart2AreaContainerClassName,
   formatChart2Number,
@@ -28,7 +29,7 @@ const data = [
 const chartConfig = {
   range: {
     label: "بازه",
-    color: "var(--chart-1)",
+    color: CHART2_BAR_COLORS[0],
   },
 } satisfies ChartConfig
 

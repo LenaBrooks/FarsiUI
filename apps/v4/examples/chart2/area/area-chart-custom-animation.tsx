@@ -3,6 +3,7 @@
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
+  CHART2_BAR_COLORS,
   FA_CHART,
   FA_MONTHS,
   chart2AreaContainerClassName,
@@ -23,7 +24,7 @@ const data = FA_MONTHS.map((name, i) => ({
 const chartConfig = {
   uv: {
     label: FA_CHART.store,
-    color: "var(--chart-1)",
+    color: CHART2_BAR_COLORS[2],
   },
 } satisfies ChartConfig
 

@@ -3,7 +3,6 @@
 import * as React from "react"
 import { PrefetchLink } from "@/components/prefetch-link"
 import { usePathname } from "next/navigation"
-import { ChevronDownIcon } from "lucide-react"
 
 import { getNavCategoryBlockCounts } from "@/lib/blocks-counts"
 import {
@@ -17,6 +16,23 @@ import {
   normalizeNavSearch,
   SidebarNavSearch,
 } from "@/components/sidebar-nav-search"
+import {
+  SIDEBAR_COLLAPSIBLE_CONTENT_CLASS,
+  SIDEBAR_EMPTY_CLASS,
+  SIDEBAR_GROUP_COUNT_CLASS,
+  SIDEBAR_GROUP_TRIGGER_CLASS,
+  SIDEBAR_NESTED_ITEM_CLASS,
+  SIDEBAR_NESTED_LABEL_CLASS,
+  SIDEBAR_NESTED_RAIL_CLASS,
+  SIDEBAR_SEARCH_INPUT_CLASS,
+  SIDEBAR_SEARCH_WRAP_CLASS,
+  SIDEBAR_SHELL_CLASS,
+  SIDEBAR_TOP_LINK_CLASS,
+  SidebarNavBullet,
+  SidebarNavChevron,
+  sidebarItemStateClass,
+} from "@/components/sidebar-nav-ui"
+import { cn } from "cn"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 import {
   Collapsible,
@@ -29,19 +45,9 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarMenu,
-  SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
 } from "@/registry/new-york-v4/ui/sidebar"
-
-const SIDEBAR_CLASS =
-  "sticky top-[calc(var(--header-height)+0.6rem)] z-30 hidden h-[calc(100svh-10rem)] overflow-hidden overscroll-none bg-transparent [--sidebar-menu-width:--spacing(56)] lg:flex"
-
-const ACTIVE_ITEM_CLASS =
-  "relative h-10 w-full overflow-visible border border-transparent pe-1.5 text-[14px] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-primary/20 data-[active=true]:bg-primary/10 data-[active=true]:text-primary lg:h-8"
-
-const SIDEBAR_EN_CLASS =
-  "shrink-0 font-sans text-[12px] font-normal tracking-normal text-muted-foreground"
 
 const SEARCH_DEBOUNCE_MS = 200
 
@@ -112,11 +118,12 @@ function BlocksNavBody({ showSearch = true }: { showSearch?: boolean }) {
   return (
     <>
       {showSearch ? (
-        <div className="shrink-0 pe-2 pt-2 pb-3">
+        <div className={SIDEBAR_SEARCH_WRAP_CLASS}>
           <SidebarNavSearch
             value={searchValue}
             onValueChange={setSearchValue}
             onClear={clearSearch}
+            inputClassName={SIDEBAR_SEARCH_INPUT_CLASS}
           />
         </div>
       ) : null}
@@ -128,21 +135,22 @@ function BlocksNavBody({ showSearch = true }: { showSearch?: boolean }) {
         <SidebarGroup className="pt-1">
           <SidebarGroupContent>
             {!hasResults ? (
-              <div className="px-2 py-6 text-center text-[14px] text-muted-foreground">
-                نتیجه‌ای پیدا نشد.
-              </div>
+              <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
             ) : null}
 
             <SidebarMenu className="gap-0.5">
               {introVisible ? (
                 <SidebarMenuItem>
-                  <SidebarMenuButton
-                    asChild
-                    isActive={pathname === "/blocks"}
-                    className={ACTIVE_ITEM_CLASS}
+                  <PrefetchLink
+                    href="/blocks"
+                    className={cn(
+                      SIDEBAR_TOP_LINK_CLASS,
+                      sidebarItemStateClass(pathname === "/blocks")
+                    )}
                   >
-                    <PrefetchLink href="/blocks">معرفی</PrefetchLink>
-                  </SidebarMenuButton>
+                    <SidebarNavBullet featured />
+                    <span className={SIDEBAR_NESTED_LABEL_CLASS}>معرفی</span>
+                  </PrefetchLink>
                 </SidebarMenuItem>
               ) : null}
 
@@ -166,48 +174,43 @@ function BlocksNavBody({ showSearch = true }: { showSearch?: boolean }) {
                     className="group/blocks-cat"
                   >
                     <SidebarMenuItem>
-                      <CollapsibleTrigger className="flex h-10 w-full cursor-pointer items-center gap-1.5 rounded-md px-2 text-[13px] font-medium text-muted-foreground outline-none hover:bg-sidebar-accent hover:text-sidebar-accent-foreground lg:h-8">
+                      <CollapsibleTrigger
+                        className={SIDEBAR_GROUP_TRIGGER_CLASS}
+                      >
                         <span className="min-w-0 flex-1 truncate text-start">
                           {category.title}
                         </span>
-                        <span className="shrink-0 text-[12px] font-normal tracking-normal text-muted-foreground/80">
+                        <span className={SIDEBAR_GROUP_COUNT_CLASS}>
                           {count.toLocaleString("fa-IR")}
                         </span>
-                        <ChevronDownIcon className="size-3.5 shrink-0 opacity-50 transition-transform duration-200 group-data-[state=open]/blocks-cat:rotate-180" />
+                        <SidebarNavChevron group="blocks-cat" />
                       </CollapsibleTrigger>
-                      <CollapsibleContent>
-                        <SidebarMenu className="ms-3 gap-0.5 border-none pe-1 ps-0">
-                          {category.items.map((item) => (
-                            <SidebarMenuItem key={item.href}>
-                              <SidebarMenuButton
-                                asChild
-                                isActive={
-                                  pathname === item.href ||
-                                  pathname.startsWith(`${item.href}/`)
-                                }
-                                className={`${ACTIVE_ITEM_CLASS} ps-2`}
+                      <CollapsibleContent
+                        className={SIDEBAR_COLLAPSIBLE_CONTENT_CLASS}
+                      >
+                        <div className={SIDEBAR_NESTED_RAIL_CLASS}>
+                          {category.items.map((item, index) => {
+                            const active =
+                              pathname === item.href ||
+                              pathname.startsWith(`${item.href}/`)
+                            return (
+                              <PrefetchLink
+                                key={item.href}
+                                href={item.href}
+                                title={item.en}
+                                className={cn(
+                                  SIDEBAR_NESTED_ITEM_CLASS,
+                                  sidebarItemStateClass(active)
+                                )}
                               >
-                                <PrefetchLink
-                                  href={item.href}
-                                  className="flex w-full min-w-0 items-center gap-2"
-                                >
-                                  <span className="truncate">{item.title}</span>
-                                  <span
-                                    aria-hidden
-                                    className="mb-0.5 min-w-3 flex-1 border-b border-dashed border-border/60"
-                                  />
-                                  <span
-                                    dir="ltr"
-                                    lang="en"
-                                    className={SIDEBAR_EN_CLASS}
-                                  >
-                                    {item.en}
-                                  </span>
-                                </PrefetchLink>
-                              </SidebarMenuButton>
-                            </SidebarMenuItem>
-                          ))}
-                        </SidebarMenu>
+                                <SidebarNavBullet featured={index === 0} />
+                                <span className={SIDEBAR_NESTED_LABEL_CLASS}>
+                                  {item.title}
+                                </span>
+                              </PrefetchLink>
+                            )
+                          })}
+                        </div>
                       </CollapsibleContent>
                     </SidebarMenuItem>
                   </Collapsible>
@@ -227,7 +230,6 @@ export function BlocksListIndex() {
     () => findBlocksNavMatch(pathname),
     [pathname]
   )
-  // Intro page: only "فهرست بلوک‌ها" — no trailing "/ معرفی".
   const current = pathname === "/blocks" ? null : (match?.item.title ?? null)
 
   return (
@@ -247,7 +249,7 @@ export function BlocksSidebar({
   return (
     <PersianDigits>
       <Sidebar
-        className={SIDEBAR_CLASS}
+        className={SIDEBAR_SHELL_CLASS}
         collapsible="none"
         dir="rtl"
         lang="fa"

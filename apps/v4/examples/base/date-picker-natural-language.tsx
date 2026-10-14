@@ -3,7 +3,6 @@
 import * as React from "react"
 import { parseDate } from "chrono-node"
 import { CalendarIcon } from "lucide-react"
-import { faIR as faIRDayPicker } from "react-day-picker/locale"
 
 import { Calendar } from "@/registry/bases/base/ui/calendar"
 import { Field, FieldLabel } from "@/registry/bases/base/ui/field"
@@ -24,7 +23,7 @@ function formatDate(date: Date | undefined) {
     return ""
   }
 
-  return date.toLocaleDateString("fa-IR", {
+  return date.toLocaleDateString("fa-IR-u-ca-persian", {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -85,8 +84,6 @@ export default function DatePickerNaturalLanguage() {
                 selected={date}
                 captionLayout="dropdown"
                 defaultMonth={date}
-                locale={faIRDayPicker}
-                dir="rtl"
                 onSelect={(next) => {
                   setDate(next)
                   setValue(formatDate(next))

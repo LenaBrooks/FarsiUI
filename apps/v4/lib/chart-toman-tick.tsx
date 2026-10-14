@@ -1,16 +1,28 @@
 "use client"
 
+import type { ReactNode } from "react"
+import type {
+  XAxisTickContentProps,
+  YAxisTickContentProps,
+} from "recharts"
+
 import { splitTomanCompact } from "@/lib/chart-locale"
 
-type TomanAxisTickProps = {
-  x?: number
-  y?: number
-  payload?: { value?: number }
-  textAnchor?: "start" | "middle" | "end"
+type TomanAxisTickFields = {
+  x?: string | number
+  y?: string | number
+  payload?: { value?: unknown }
+  textAnchor?: string
   index?: number
   visibleTicksCount?: number
   /** `y` = vertical value axis (default). `x` = horizontal value axis (vertical charts). */
   axis?: "x" | "y"
+}
+
+function toFiniteNumber(value: unknown) {
+  if (value == null || value === "") return null
+  const n = typeof value === "number" ? value : Number(value)
+  return Number.isFinite(n) ? n : null
 }
 
 /**
@@ -19,7 +31,7 @@ type TomanAxisTickProps = {
  * X-axis: all ticks sit below the axis — never reuse Y edge shifts (they shove the
  * last tick into the footer).
  */
-export function TomanAxisTick({
+function TomanAxisTickImpl({
   x,
   y,
   payload,
@@ -27,28 +39,50 @@ export function TomanAxisTick({
   index = 0,
   visibleTicksCount,
   axis = "y",
-}: TomanAxisTickProps) {
-  if (x == null || y == null || payload?.value == null) return null
-  const { amount, unit } = splitTomanCompact(payload.value)
+}: TomanAxisTickFields): ReactNode {
+  const px = toFiniteNumber(x)
+  const py = toFiniteNumber(y)
+  const raw = toFiniteNumber(payload?.value)
+  if (px == null || py == null || raw == null) return null
+  const { amount, unit: rawUnit } = splitTomanCompact(raw)
+  // Zero needs no unit label — “۰ تومان” is noisy and collides on vertical charts.
+  const unit = raw === 0 ? "" : rawUnit
+
+  const count = visibleTicksCount ?? 0
+  const isFirst = count > 0 && index === 0
+  const isLast = count > 0 && index === count - 1
 
   let amountDy = "0.35em"
+  let anchor: "start" | "middle" | "end" =
+    textAnchor === "start" || textAnchor === "middle" || textAnchor === "end"
+      ? textAnchor
+      : "start"
+  let tickX = px
+
   if (axis === "x") {
     // Keep the whole stack under the axis line for every tick.
-    amountDy = "0.9em"
+    amountDy = "0.95em"
+    // Edge ticks: pin inward so “۰” / max don’t collide with the Y rail.
+    if (isFirst) {
+      anchor = "start"
+      tickX = px + 2
+    } else if (isLast) {
+      anchor = "end"
+      tickX = px - 2
+    } else {
+      anchor = "middle"
+    }
   } else {
-    const count = visibleTicksCount ?? 0
     // Y-axis: index 0 ≈ bottom, last ≈ top.
-    const isTop = count > 0 && index === count - 1
-    const isBottom = count > 0 && index === 0
-    if (isTop) amountDy = "0.95em"
-    else if (isBottom) amountDy = "-1.15em"
+    if (isLast) amountDy = "0.95em"
+    else if (isFirst) amountDy = "-1.15em"
   }
 
   return (
     <text
-      x={x}
-      y={y}
-      textAnchor={textAnchor}
+      x={tickX}
+      y={py}
+      textAnchor={anchor}
       direction="ltr"
       className="recharts-text recharts-cartesian-axis-tick-value fill-muted-foreground"
       style={{
@@ -59,11 +93,11 @@ export function TomanAxisTick({
         fontSize: 11,
       }}
     >
-      <tspan x={x} dy={amountDy} style={{ letterSpacing: 0 }}>
+      <tspan x={tickX} dy={amountDy} style={{ letterSpacing: 0 }}>
         {amount}
       </tspan>
       {unit ? (
-        <tspan x={x} dy="1.15em" fontSize={9} fillOpacity={0.8}>
+        <tspan x={tickX} dy="1.15em" fontSize={9} fillOpacity={0.8}>
           {unit}
         </tspan>
       ) : null}
@@ -71,7 +105,13 @@ export function TomanAxisTick({
   )
 }
 
+/** Compatible with Recharts `YAxis` / `XAxis` `tick` render props. */
+export const TomanAxisTick = TomanAxisTickImpl as (
+  props: YAxisTickContentProps
+) => ReactNode
+
 /** Horizontal value axis (vertical layout charts). */
-export function TomanXAxisTick(props: Omit<TomanAxisTickProps, "axis">) {
-  return <TomanAxisTick {...props} axis="x" />
-}
+export const TomanXAxisTick = ((props: XAxisTickContentProps) =>
+  TomanAxisTickImpl({ ...props, axis: "x" })) as (
+  props: XAxisTickContentProps
+) => ReactNode

@@ -130,6 +130,14 @@ async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
         content: skillMd,
       })
     }
+  } else if (skill.bundleZipUrl) {
+    // Large bundled skills ship companions via ZIP; registry keeps SKILL.md only.
+    files.push({
+      path: `skills/${skill.slug}/SKILL.md`,
+      type: "registry:file",
+      target: `${SKILL_INSTALL_ROOT}/${skill.slug}/SKILL.md`,
+      content: skillMd,
+    })
   } else {
     const diskFiles = await walkFiles(skillDir)
     for (const absolute of diskFiles) {
@@ -138,6 +146,8 @@ async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
         .split(path.sep)
         .join("/")
       if (relative.startsWith(".") || relative.includes("/.")) continue
+      // Skip binary archives if present in the skill folder.
+      if (relative.endsWith(".zip")) continue
       const content = await fs.readFile(absolute, "utf8")
       files.push({
         path: `skills/${skill.slug}/${relative}`,
@@ -165,6 +175,7 @@ async function buildSkillItem(skill: Skill): Promise<RegistryItem | null> {
     meta: {
       links: {
         docs: `https://farsiui.ir/skills/${skill.slug}`,
+        ...(skill.bundleZipUrl ? { bundleZip: skill.bundleZipUrl } : {}),
       },
       tags: skill.tags,
     },

@@ -1,97 +1,140 @@
 "use client"
 
-import * as React from "react"
 import {
   Area,
   Bar,
   CartesianGrid,
   ComposedChart,
   Line,
-  Scatter,
   XAxis,
   YAxis,
+  type TooltipContentProps,
 } from "recharts"
 
 import {
   CHART2_BAR_COLORS,
-  FA_CHART,
   FA_MONTHS,
   chart2ContainerClassName,
-  formatChart2Number,
+  chart2DashedGridClassName,
+  toPersianDigits,
 } from "@/lib/chart2-fa"
 import {
   ChartContainer,
   ChartLegend,
   ChartLegendContent,
   ChartTooltip,
-  ChartTooltipContent,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
-const data = [
-  { month: FA_MONTHS[0], uv: 590, pv: 800, amt: 1400, cnt: 490 },
-  { month: FA_MONTHS[1], uv: 868, pv: 967, amt: 1506, cnt: 590 },
-  { month: FA_MONTHS[2], uv: 1397, pv: 1098, amt: 989, cnt: 350 },
-  { month: FA_MONTHS[3], uv: 1480, pv: 1200, amt: 1228, cnt: 480 },
-  { month: FA_MONTHS[4], uv: 1520, pv: 1108, amt: 1100, cnt: 460 },
-  { month: FA_MONTHS[5], uv: 1400, pv: 680, amt: 1700, cnt: 380 },
+type Row = {
+  month: string
+  orders: number
+  online: number
+  store: number
+}
+
+/** میلیون تومان / هزار سفارش */
+const data: Row[] = [
+  { month: FA_MONTHS[0], orders: 12.4, online: 8.2, store: 5.9 },
+  { month: FA_MONTHS[1], orders: 13.1, online: 9.1, store: 6.4 },
+  { month: FA_MONTHS[2], orders: 11.8, online: 10.4, store: 7.1 },
+  { month: FA_MONTHS[3], orders: 14.6, online: 11.2, store: 7.8 },
+  { month: FA_MONTHS[4], orders: 15.2, online: 10.8, store: 8.2 },
+  { month: FA_MONTHS[5], orders: 16.0, online: 12.4, store: 7.6 },
 ]
 
 const chartConfig = {
-  month: { label: "ماه" },
-  amt: { label: FA_CHART.orders, color: CHART2_BAR_COLORS[0] },
-  pv: { label: FA_CHART.online, color: CHART2_BAR_COLORS[1] },
-  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[2] },
-  cnt: { label: "تعداد", color: CHART2_BAR_COLORS[3] },
+  orders: { label: "سفارش (هزار)", color: CHART2_BAR_COLORS[0] },
+  online: { label: "آنلاین", color: CHART2_BAR_COLORS[1] },
+  store: { label: "حضوری", color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
-function ComposedTooltipContent(
-  props: React.ComponentProps<typeof ChartTooltipContent>
-) {
-  // Scatter adds the X-axis category as its own tooltip row; drop it.
-  const payload = props.payload?.filter((item) => {
-    const key = String(item.dataKey ?? item.name ?? "")
-    return key !== "month" && typeof item.value === "number"
-  })
-  return <ChartTooltipContent {...props} payload={payload} />
+function TooltipContent({ active, payload, label }: TooltipContentProps) {
+  if (!(active && payload?.length)) return null
+  return (
+    <div className="min-w-[10.5rem] rounded-lg border bg-background px-3 py-2.5 text-xs shadow-md font-sans tracking-[0]">
+      <p className="mb-2 font-medium text-foreground">{String(label)}</p>
+      <ul className="space-y-1">
+        {payload.map((item) => {
+          const key = String(item.dataKey)
+          const cfg = chartConfig[key as keyof typeof chartConfig]
+          if (!cfg || typeof item.value !== "number") return null
+          return (
+            <li key={key} className="flex items-center justify-between gap-4">
+              <span className="inline-flex items-center gap-1.5 text-muted-foreground">
+                <span
+                  className="size-2 rounded-full"
+                  style={{ background: cfg.color }}
+                />
+                {cfg.label}
+              </span>
+              <span className="font-medium text-foreground">
+                {toPersianDigits(item.value.toFixed(1))}
+                {key === "orders" ? "" : " م"}
+              </span>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
 }
 
 export default function LineBarAreaComposedChartDemo() {
   return (
-    <ChartContainer config={chartConfig} className={chart2ContainerClassName}>
+    <ChartContainer
+      config={chartConfig}
+      className={`${chart2ContainerClassName} ${chart2DashedGridClassName} max-w-none`}
+    >
       <ComposedChart
         accessibilityLayer
         data={data}
-        margin={{ top: 20, right: 8, bottom: 8, left: 0 }}
+        margin={{ top: 12, right: 8, bottom: 4, left: 4 }}
       >
-        <CartesianGrid vertical={false} />
-        <XAxis dataKey="month" scale="band" reversed tickMargin={8} />
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="month"
+          scale="band"
+          reversed
+          tickLine={false}
+          axisLine={false}
+          tickMargin={10}
+          tick={{ fontSize: 12, fontFamily: "var(--font-sans)", letterSpacing: 0 }}
+        />
         <YAxis
           orientation="right"
-          width={52}
-          tickMargin={12}
-          tickFormatter={formatChart2Number}
+          width={36}
+          tickLine={false}
+          axisLine={false}
+          tickMargin={8}
+          tickFormatter={(v) => toPersianDigits(v)}
+          tick={{ fontSize: 11, fontFamily: "var(--font-sans)", letterSpacing: 0 }}
         />
-        <ChartTooltip
-          content={(props) => <ComposedTooltipContent {...props} />}
-        />
+        <ChartTooltip content={TooltipContent} />
         <ChartLegend content={<ChartLegendContent />} />
         <Area
           type="monotone"
-          dataKey="amt"
-          fill="var(--color-amt)"
-          stroke="var(--color-amt)"
-          fillOpacity={0.25}
-        />
-        <Bar dataKey="pv" barSize={20} fill="var(--color-pv)" radius={[3, 3, 0, 0]} />
-        <Line
-          type="monotone"
-          dataKey="uv"
-          stroke="var(--color-uv)"
-          strokeWidth={2}
+          dataKey="orders"
+          fill="var(--color-orders)"
+          stroke="var(--color-orders)"
+          fillOpacity={0.18}
+          strokeWidth={1.5}
           dot={false}
         />
-        <Scatter dataKey="cnt" fill="var(--color-cnt)" />
+        <Bar
+          dataKey="online"
+          barSize={22}
+          fill="var(--color-online)"
+          radius={[3, 3, 0, 0]}
+        />
+        <Line
+          type="monotone"
+          dataKey="store"
+          stroke="var(--color-store)"
+          strokeWidth={2}
+          dot={{ r: 3, fill: "var(--color-store)", strokeWidth: 0 }}
+          activeDot={{ r: 4 }}
+        />
       </ComposedChart>
     </ChartContainer>
   )

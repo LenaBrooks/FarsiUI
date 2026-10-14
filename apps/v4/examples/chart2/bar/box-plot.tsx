@@ -2,10 +2,11 @@
 
 import {
   Bar,
-  BarChart,
   CartesianGrid,
+  ComposedChart,
   DefaultZIndexes,
   ErrorBar,
+  LabelList,
   Rectangle,
   Scatter,
   XAxis,
@@ -15,11 +16,14 @@ import {
   type TooltipIndex,
 } from "recharts"
 
+import { useChart2Caption } from "@/components/chart2-live"
 import {
   CHART2_BAR_COLORS,
   chart2BarContainerClassName,
   formatPersianNumber,
+  toPersianDigits,
 } from "@/lib/chart2-fa"
+import { cn } from "@/lib/utils"
 import {
   ChartContainer,
   ChartTooltip,
@@ -35,12 +39,12 @@ type BoxPlotDatum = {
   max: number
 }
 
+/** نمره از ۰ تا ۲۰ — هر ستون پراکندگی نمرات یک درس را نشان می‌دهد. */
 const data: ReadonlyArray<BoxPlotDatum> = [
-  { category: "گروه الف", min: 16, q1: 20, median: 24, q3: 29, max: 35 },
-  { category: "گروه ب", min: 12, q1: 15, median: 18, q3: 21, max: 27 },
-  { category: "گروه ج", min: 22, q1: 26, median: 30, q3: 34, max: 49 },
-  { category: "گروه د", min: 9, q1: 13, median: 17, q3: 20, max: 26 },
-  { category: "گروه هـ", min: 18, q1: 22, median: 25, q3: 28, max: 32 },
+  { category: "ریاضی", min: 8, q1: 12, median: 15, q3: 17, max: 19 },
+  { category: "فیزیک", min: 6, q1: 10, median: 13, q3: 16, max: 18 },
+  { category: "شیمی", min: 9, q1: 13, median: 16, q3: 18, max: 20 },
+  { category: "زبان", min: 7, q1: 11, median: 14, q3: 17, max: 20 },
 ]
 
 type OutlierDatum = {
@@ -48,20 +52,17 @@ type OutlierDatum = {
   value: number
 }
 
+/** نمره‌های خیلی دور از بقیه */
 const outliers: ReadonlyArray<OutlierDatum> = [
-  { category: "گروه الف", value: 10 },
-  { category: "گروه الف", value: 11 },
-  { category: "گروه الف", value: 12 },
-  { category: "گروه الف", value: 5 },
-  { category: "گروه ب", value: 0 },
-  { category: "گروه الف", value: 40 },
-  { category: "گروه د", value: 8 },
-  { category: "گروه هـ", value: 33 },
+  { category: "ریاضی", value: 3 },
+  { category: "فیزیک", value: 2 },
+  { category: "شیمی", value: 4 },
+  { category: "زبان", value: 1 },
 ]
 
 const chartConfig = {
-  box: { label: "بازهٔ میان‌چارکی", color: CHART2_BAR_COLORS[0] },
-  outlier: { label: "نقطهٔ پرت", color: "var(--destructive)" },
+  box: { label: "نیمهٔ میانی نمرات", color: CHART2_BAR_COLORS[0] },
+  outlier: { label: "نمرهٔ غیرعادی", color: CHART2_BAR_COLORS[1] },
 } satisfies ChartConfig
 
 const boxDataKey = (entry: BoxPlotDatum): [number, number] => [
@@ -86,45 +87,113 @@ function BoxShape(props: BarShapeProps) {
 
   return (
     <g>
-      <Rectangle {...props} fill="var(--color-box)" />
+      <Rectangle
+        x={props.x}
+        y={props.y}
+        width={props.width}
+        height={props.height}
+        fill="var(--color-box)"
+        radius={3}
+      />
       <line
         x1={props.x}
         x2={Number(props.x) + Number(props.width)}
         y1={medianY}
         y2={medianY}
         stroke="var(--foreground)"
-        strokeWidth={2}
+        strokeWidth={2.5}
       />
     </g>
   )
 }
 
+function medianLabel(props: {
+  x?: string | number
+  y?: string | number
+  width?: string | number
+  height?: string | number
+  value?: string | number
+  index?: number
+}) {
+  const entry = data[props.index ?? -1]
+  if (!entry) return null
+  const x = Number(props.x) + Number(props.width) / 2
+  const h = Number(props.height)
+  const quartileRange = entry.q3 - entry.q1
+  const medianOffset =
+    quartileRange === 0 ? h / 2 : ((entry.q3 - entry.median) / quartileRange) * h
+  const y = Number(props.y) + medianOffset - 8
+  return (
+    <text
+      x={x}
+      y={y}
+      textAnchor="middle"
+      className="fill-foreground text-[11px] font-medium"
+      style={{ fontFamily: "var(--font-sans)" }}
+    >
+      وسط: {toPersianDigits(entry.median)}
+    </text>
+  )
+}
+
 function TooltipContent(props: TooltipContentProps) {
   const { active, payload } = props
-  if (!(active && payload && payload.length)) return null
-  const firstPayload = payload[0]
-  if (firstPayload == null) return null
-  const entry = firstPayload.payload as BoxPlotDatum
+  if (!(active && payload?.length)) return null
+  const entry = payload[0]?.payload as BoxPlotDatum | undefined
   if (!entry?.category || entry.median == null) return null
+
+  const rows = [
+    { label: "کمترین", value: entry.min },
+    { label: "یک‌چهارم پایین", value: entry.q1 },
+    { label: "نمرهٔ وسط", value: entry.median },
+    { label: "یک‌چهارم بالا", value: entry.q3 },
+    { label: "بیشترین", value: entry.max },
+  ]
+
   return (
-    <div className="rounded-lg border bg-background px-3 py-2 text-xs shadow-xl font-sans">
-      <p className="mb-1 font-medium">{entry.category}</p>
-      <p className="text-muted-foreground">
-        کمینه: {formatPersianNumber(entry.min)}
-      </p>
-      <p className="text-muted-foreground">
-        چارک اول: {formatPersianNumber(entry.q1)}
-      </p>
-      <p className="text-muted-foreground">
-        میانه: {formatPersianNumber(entry.median)}
-      </p>
-      <p className="text-muted-foreground">
-        چارک سوم: {formatPersianNumber(entry.q3)}
-      </p>
-      <p className="text-muted-foreground">
-        بیشینه: {formatPersianNumber(entry.max)}
-      </p>
+    <div className="min-w-[10.5rem] rounded-lg border bg-background px-3 py-2.5 text-xs shadow-md font-sans">
+      <p className="mb-2 font-medium text-foreground">{entry.category}</p>
+      <ul className="space-y-1">
+        {rows.map((row) => (
+          <li
+            key={row.label}
+            className="flex items-center justify-between gap-4"
+          >
+            <span className="text-muted-foreground">{row.label}</span>
+            <span className="font-medium tabular-nums text-foreground">
+              {toPersianDigits(row.value)}
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
+  )
+}
+
+function KeyLegend() {
+  return (
+    <ul className="mx-auto flex max-w-[26rem] flex-col gap-1.5 text-[12px] leading-relaxed text-muted-foreground sm:max-w-none sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-5">
+      <li className="inline-flex items-center gap-2">
+        <span
+          className="h-3 w-5 shrink-0 rounded-sm"
+          style={{ background: CHART2_BAR_COLORS[0] }}
+          aria-hidden
+        />
+        جعبه آبی = جایی که بیشتر نمرات جمع شده
+      </li>
+      <li className="inline-flex items-center gap-2">
+        <span className="h-0.5 w-5 shrink-0 bg-foreground" aria-hidden />
+        خط تیره = نمرهٔ وسط کلاس
+      </li>
+      <li className="inline-flex items-center gap-2">
+        <span
+          className="size-2 shrink-0 rounded-full"
+          style={{ background: CHART2_BAR_COLORS[1] }}
+          aria-hidden
+        />
+        نقطهٔ صورتی = نمرهٔ خیلی پرت
+      </li>
+    </ul>
   )
 }
 
@@ -133,37 +202,70 @@ export default function BoxPlotDemo({
 }: {
   defaultIndex?: TooltipIndex
 }) {
+  useChart2Caption(
+    () =>
+      "هر ستون یک درس است. جعبه آبی جایی است که بیشتر بچه‌ها نمره گرفته‌اند؛ خط تیره = نمرهٔ وسط؛ نقطهٔ صورتی = نمرهٔ خیلی پرت."
+  )
+
   return (
-    <ChartContainer config={chartConfig} className={chart2BarContainerClassName}>
-      <BarChart accessibilityLayer data={data as BoxPlotDatum[]}>
-        <XAxis
-          dataKey="category"
-          reversed
-          allowDuplicatedCategory={false}
-          tickMargin={8}
-        />
-        <YAxis
-          orientation="right"
-          width={44}
-          tickMargin={10}
-          tickFormatter={(v) => formatPersianNumber(v)}
-        />
-        <CartesianGrid vertical={false} strokeDasharray="3 3" />
-        <Bar dataKey={boxDataKey} shape={BoxShape} fillOpacity={1}>
-          <ErrorBar
-            dataKey={whiskerDataKey}
-            width={0}
-            zIndex={DefaultZIndexes.bar - 1}
+    <div
+      dir="rtl"
+      className="flex w-full max-w-[700px] flex-col gap-3 font-sans"
+    >
+      <p className="text-center text-sm font-medium text-foreground">
+        پراکندگی نمرات کلاس (از ۰ تا ۲۰)
+      </p>
+      <ChartContainer
+        config={chartConfig}
+        className={cn(chart2BarContainerClassName, "max-w-none aspect-[1.55]")}
+      >
+        <ComposedChart
+          accessibilityLayer
+          data={data as BoxPlotDatum[]}
+          margin={{ top: 28, right: 8, left: 4, bottom: 4 }}
+        >
+          <CartesianGrid vertical={false} strokeDasharray="3 3" />
+          <XAxis
+            dataKey="category"
+            type="category"
+            allowDuplicatedCategory={false}
+            reversed
+            tickLine={false}
+            axisLine={false}
+            tickMargin={10}
+            tick={{ fontSize: 12, fontFamily: "var(--font-sans)" }}
           />
-        </Bar>
-        <Scatter
-          data={outliers as OutlierDatum[]}
-          dataKey="value"
-          fill="var(--color-outlier)"
-          stroke="none"
-        />
-        <ChartTooltip content={TooltipContent} defaultIndex={defaultIndex} />
-      </BarChart>
-    </ChartContainer>
+          <YAxis
+            orientation="right"
+            domain={[0, 20]}
+            width={36}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            tickFormatter={(v) => formatPersianNumber(v)}
+          />
+          <Bar dataKey={boxDataKey} shape={BoxShape} fillOpacity={1} isAnimationActive={false}>
+            <LabelList content={medianLabel} />
+            <ErrorBar
+              dataKey={whiskerDataKey}
+              width={14}
+              stroke="var(--muted-foreground)"
+              strokeWidth={1.5}
+              zIndex={DefaultZIndexes.bar - 1}
+            />
+          </Bar>
+          <Scatter
+            data={outliers as OutlierDatum[]}
+            dataKey="value"
+            fill="var(--color-outlier)"
+            stroke="none"
+            r={4}
+            isAnimationActive={false}
+          />
+          <ChartTooltip content={TooltipContent} defaultIndex={defaultIndex} />
+        </ComposedChart>
+      </ChartContainer>
+      <KeyLegend />
+    </div>
   )
 }

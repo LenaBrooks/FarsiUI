@@ -167,7 +167,7 @@ export const FA_CHART = {
 
   // Titles
   titleMonthlySales: "فروش ماهانه شعب",
-  titleSalesTrend: "روند فروش شمسی",
+  titleSalesTrend: "روند فروش",
   titleProvinceShare: "سهم استان‌ها از فروش",
   titlePaymentShare: "سهم روش‌های پرداخت",
 } as const

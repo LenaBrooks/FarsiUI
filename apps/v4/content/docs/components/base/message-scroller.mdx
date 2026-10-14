@@ -219,13 +219,6 @@ import {
 
 در نمونهٔ زیر پیام کاربر لنگر است. وقتی پیام جدید می‌فرستید، ویوپورت آن را نزدیک بالا لنگر می‌کند و پاسخ دستیار را زیر آن اضافه می‌کند. لنگر را به پیام دستیار ببرید تا تفاوت را ببینید.
 
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-anchoring"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
-
 </DocsCollapsible>
 
 <div className="hidden">
@@ -250,13 +243,6 @@ import {
 </MessageScrollerItem>
 ```
 
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-group-chat"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
-
 </DocsCollapsible>
 
 <div className="hidden">
@@ -279,13 +265,6 @@ import {
 ```
 
 مقدار peek را در نمونهٔ زیر تنظیم کنید تا اثرش روی گفتگو را ببینید.
-
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-previous-context"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
 
 </DocsCollapsible>
 
@@ -314,13 +293,6 @@ import {
 </MessageScrollerProvider>
 ```
 
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-streaming"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
-
 فراخوانی `scrollToEnd` یا فشردن `MessageScrollerButton` وقتی `autoScroll` فعال است
 دوباره دنبال‌کردن خروجی را درگیر می‌کند تا خواننده‌ای که دور شده بتواند به لبهٔ
 زنده برگردد و دنبال کند. ریشه و ویوپورت هنگام آن اسکرول برنامه‌ای به جدیدترین
@@ -348,14 +320,6 @@ import {
   <MessageScroller>{/* رونوشت */}</MessageScroller>
 </MessageScrollerProvider>
 ```
-
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-opening-position"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-  hideCode
-/>
 
 `"last-anchor"` روی `scrollAnchor` کلید می‌خورد، نه نقش پیام. اگر لنگر نباشد،
 یا آخرین نوبت لنگرشده از قبل در ویوپورت جا شود، به `"end"` برمی‌گردد.
@@ -428,13 +392,6 @@ const scrollToEndScript = `(function () {
 
 این رفتار به‌صورت پیش‌فرض با `preserveScrollOnPrepend` فعال است.
 
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-load-history"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
-
 برای ردیف‌های پیام از `messageId` پایدار استفاده کنید. به اسکرولر ردیف مشخصی
 برای حفظ می‌دهد به‌جای حدس از هر پیکسلی که روی لبهٔ ویوپورت نشسته.
 
@@ -459,13 +416,6 @@ transform و opacity استفاده کنید.
 ```tsx
 const MotionMessageScrollerItem = motion.create(MessageScrollerItem)
 ```
-
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-animation"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
 
 برای ورود ردیف از پویانمایی height، margin یا padding پرهیز کنید؛ آن تغییرات
 می‌توانند با کار موقعیت‌یابی اسکرولر بجنگند. اگر خواننده حرکت کمتر را ترجیح
@@ -494,14 +444,6 @@ import { useMessageScroller } from "@/components/ui/message-scroller"
 ```tsx
 const { scrollToMessage, scrollToEnd, scrollToStart } = useMessageScroller()
 ```
-
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-commands"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-  hideCode
-/>
 
 `scrollToMessage` به `messageId` روی `MessageScrollerItem` هدف می‌زند؛ پس
 ردیف‌هایی که باید آدرس‌پذیر باشند باید id پایدار داشته باشند. وقتی هدف mount
@@ -532,14 +474,6 @@ import { useMessageScrollerVisibility } from "@/components/ui/message-scroller"
 ```tsx
 const { currentAnchorId, visibleMessageIds } = useMessageScrollerVisibility()
 ```
-
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-visibility"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-  hideCode
-/>
 
 `currentAnchorId` به «کجا هستم» جواب می‌دهد با گزارش نوبت لنگرشدهٔ فعلی، و بعد
 از اسکرول آن لنگر به بالای ویوپورت هم می‌ماند. `visibleMessageIds` به «چه چیزی
@@ -572,13 +506,6 @@ import { useMessageScrollerScrollable } from "@/components/ui/message-scroller"
 ```tsx
 const { start, end } = useMessageScrollerScrollable()
 ```
-
-<ComponentPreview
-  styleName="base-rhea"
-  name="message-scroller-scrollable"
-  className="rounded-[34px] sm:rounded-4xl"
-  previewClassName="h-auto theme-blue bg-surface dark:bg-background p-4 min-[480px]:p-8 min-[560px]:p-10 sm:px-10 sm:py-16"
-/>
 
 </DocsCollapsible>
 

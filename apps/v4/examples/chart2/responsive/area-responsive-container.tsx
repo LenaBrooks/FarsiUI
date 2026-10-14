@@ -35,7 +35,7 @@ const data = [
 ]
 
 const chartConfig = {
-  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[0] },
+  uv: { label: FA_CHART.store, color: CHART2_BAR_COLORS[2] },
 } satisfies ChartConfig
 
 export default function ResponsiveContainerDemo({
@@ -73,7 +73,7 @@ export default function ResponsiveContainerDemo({
           domain={[0, 6000]}
         />
         <ChartTooltip
-          cursor={{ stroke: CHART2_BAR_COLORS[0], strokeOpacity: 0.35 }}
+          cursor={{ stroke: CHART2_BAR_COLORS[2], strokeOpacity: 0.35 }}
           content={<ChartTooltipContent />}
         />
         <ReferenceLine

@@ -1,0 +1,35 @@
+---
+title: بارگذاری فایل (File Upload)
+description: آپلود فایل با درگ‌اند‌دراپ، پیش‌نمایش، پیشرفت و محدودیت نوع و حجم.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "file-upload-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add file-upload
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { FileUpload } from "@/components/ui/file-upload"
+
+export function Example() {
+  return (
+    <FileUpload
+      accept="image/*,.pdf"
+      maxSize={2 * 1024 * 1024}
+      onValueChange={(files) => console.log(files)}
+    />
+  )
+}
+```

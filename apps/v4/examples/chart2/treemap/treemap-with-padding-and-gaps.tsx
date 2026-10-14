@@ -1,7 +1,8 @@
 "use client"
 
-import { Treemap, type TreemapNode } from "recharts"
+import { Treemap } from "recharts"
 
+import { useChart2Caption } from "@/components/chart2-live"
 import { formatChart2Number } from "@/lib/chart2-fa"
 import {
   ChartContainer,
@@ -10,72 +11,43 @@ import {
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
 
-import { TREEMAP_DATA_NESTED } from "./data"
-import { TREEMAP_COLORS, treemapColorAt } from "./treemap-colors"
+import { TREEMAP_DATA_GALLERY } from "./data"
+import { GapsTreemapContent } from "./treemap-content"
+import { TREEMAP_COLORS } from "./treemap-colors"
 
 const chartConfig = {
   size: { label: "اندازه", color: TREEMAP_COLORS[0] },
 } satisfies ChartConfig
 
-export function renderNodeGapAndPaddingContent(props: TreemapNode) {
-  const { root, depth, x, y, width, height, index, name, children } = props
-  const isLeaf = !children || children.length === 0
-
-  return (
-    <g>
-      <rect
-        x={x}
-        y={y}
-        width={width}
-        height={height}
-        style={{
-          fill:
-            depth < 2
-              ? treemapColorAt(index, root?.children?.length ?? 1)
-              : "#ffffff00",
-          stroke: "var(--background)",
-          strokeWidth: 1,
-        }}
-      />
-      {isLeaf && width > 36 && height > 18 ? (
-        <text
-          x={x + width / 2}
-          y={y + height / 2 + 4}
-          textAnchor="middle"
-          fill="var(--primary-foreground)"
-          fontSize={12}
-          style={{ fontFamily: "var(--font-sans)" }}
-        >
-          {name}
-        </text>
-      ) : null}
-    </g>
-  )
-}
-
 export default function TreemapWithPaddingAndGapsDemo() {
+  useChart2Caption(() => (
+    <>درخت‌نقشه با فاصله بین سلول‌ها برای خوانایی بیشتر</>
+  ))
+
   return (
-    <ChartContainer
-      config={chartConfig}
-      className="mx-auto aspect-[4/3] h-auto w-full max-w-[500px] max-h-[80vh] font-sans text-xs"
-    >
-      <Treemap
-        data={TREEMAP_DATA_NESTED}
-        dataKey="size"
-        nameKey="name"
-        aspectRatio={4 / 3}
-        nodeGap={6}
-        content={renderNodeGapAndPaddingContent}
-        isAnimationActive
+    <div className="w-full max-w-[720px] font-sans">
+      <ChartContainer
+        config={chartConfig}
+        dir="ltr"
+        className="aspect-[1.618] h-auto w-full font-sans text-xs"
       >
-        <ChartTooltip
-          content={
-            <ChartTooltipContent
-              formatter={(value) => formatChart2Number(value as number)}
-            />
-          }
-        />
-      </Treemap>
-    </ChartContainer>
+        <Treemap
+          data={TREEMAP_DATA_GALLERY}
+          dataKey="size"
+          nameKey="name"
+          nodeGap={6}
+          content={GapsTreemapContent}
+          isAnimationActive
+        >
+          <ChartTooltip
+            content={
+              <ChartTooltipContent
+                formatter={(value) => formatChart2Number(value as number)}
+              />
+            }
+          />
+        </Treemap>
+      </ChartContainer>
+    </div>
   )
 }

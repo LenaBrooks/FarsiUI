@@ -55,9 +55,18 @@ export default async function SkillPage({
 }) {
   const { slug } = await params
   const skill = getSkill(slug)
-  const files = getSkillFiles(slug)
 
-  if (!skill || files.length === 0) {
+  if (!skill) {
+    notFound()
+  }
+
+  // Zip-bundled skills: no in-page file preview — download ZIP only.
+  if (skill.bundleZipUrl) {
+    return <SkillDetail skill={skill} files={[]} />
+  }
+
+  const files = getSkillFiles(slug)
+  if (files.length === 0) {
     notFound()
   }
 

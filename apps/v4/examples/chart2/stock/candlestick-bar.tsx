@@ -76,7 +76,7 @@ export default function CandlestickBarDemo({
 }) {
   useChart2Caption(() => (
     <>
-      کندل به‌همراه میلهٔ تغییر قیمت — مشابه{" "}
+      کندل به‌همراه میله تغییر قیمت — مشابه{" "}
       <span dir="ltr">Candlestick + Bar</span> در ApexCharts
     </>
   ))

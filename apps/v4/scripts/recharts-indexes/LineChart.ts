@@ -11,7 +11,6 @@ import SynchronizedLineChart from './SynchronizedLineChart';
 import SynchronizedDifferentData from './SynchronizedDifferentData';
 import TinyLineChart from './TinyLineChart';
 import VerticalLineChart from './VerticalLineChart';
-import VerticalLineChartWithSpecifiedDomain from './VerticalLineChartWithSpecifiedDomain';
 import HighlightAndZoomLineChart from './HighlightAndZoomLineChart';
 import LineChartHasMultiSeries from './LineChartHasMultiSeries';
 import LineChartAxisInterval from './LineChartAxisInterval';
@@ -28,7 +27,6 @@ import synchronizedLineChartSource from './SynchronizedLineChart?raw';
 import synchronizedDifferentDataSource from './SynchronizedDifferentData?raw';
 import tinyLineChartSource from './TinyLineChart?raw';
 import verticalLineChartSource from './VerticalLineChart?raw';
-import verticalLineChartWithSpecifiedDomainSource from './VerticalLineChartWithSpecifiedDomain?raw';
 import highlightAndZoomLineChartSource from './HighlightAndZoomLineChart?raw';
 import lineChartHasMultiSeriesSource from './LineChartHasMultiSeries?raw';
 import lineChartAxisIntervalSource from './LineChartAxisInterval?raw';
@@ -74,12 +72,6 @@ export const lineChartExamples = {
     sourceCode: biaxialLineChartSource,
     name: 'Biaxial Line Chart',
     description: 'Line chart with two Y axes (left and right) for comparing datasets with different scales.',
-  },
-  VerticalLineChartWithSpecifiedDomain: {
-    Component: VerticalLineChartWithSpecifiedDomain,
-    sourceCode: verticalLineChartWithSpecifiedDomainSource,
-    name: 'Vertical Line Chart With Specified Domain',
-    description: 'Vertical line chart with a custom X axis domain',
   },
   LineChartConnectNulls: {
     Component: LineChartConnectNulls,

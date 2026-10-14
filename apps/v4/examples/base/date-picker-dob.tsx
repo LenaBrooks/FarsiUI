@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { faIR as faIRDayPicker } from "react-day-picker/locale"
 
 import { Button } from "@/registry/bases/base/ui/button"
 import { Calendar } from "@/registry/bases/base/ui/calendar"
@@ -30,7 +29,7 @@ export default function DatePickerSimple() {
           }
         >
           {date
-            ? date.toLocaleDateString("fa-IR", {
+            ? date.toLocaleDateString("fa-IR-u-ca-persian", {
                 day: "numeric",
                 month: "long",
                 year: "numeric",
@@ -43,8 +42,6 @@ export default function DatePickerSimple() {
             selected={date}
             defaultMonth={date}
             captionLayout="dropdown"
-            locale={faIRDayPicker}
-            dir="rtl"
             onSelect={(date) => {
               setDate(date)
               setOpen(false)

@@ -714,7 +714,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu"],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
       files: [{
         path: "registry/bases/base/ui/rich-text-editor.tsx",
         type: "registry:ui",
@@ -729,6 +729,10 @@ export const Index: Record<string, Record<string, any>> = {
         target: ""
       },{
         path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
         type: "registry:lib",
         target: ""
       }],
@@ -916,6 +920,168 @@ export const Index: Record<string, Record<string, any>> = {
       }],
       categories: undefined,
       meta: undefined,
+    },
+    "price-input": {
+      name: "price-input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input","button","iran","digits"],
+      files: [{
+        path: "registry/bases/base/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
+    },
+    "phone-input": {
+      name: "phone-input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input","iran","digits"],
+      files: [{
+        path: "registry/bases/base/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
+    },
+    "national-code-input": {
+      name: "national-code-input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input","iran","digits"],
+      files: [{
+        path: "registry/bases/base/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
+    },
+    "sheba-input": {
+      name: "sheba-input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "registry/bases/base/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
+    },
+    "bank-card-input": {
+      name: "bank-card-input",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input","iran","digits"],
+      files: [{
+        path: "registry/bases/base/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
+    },
+    "address-form": {
+      name: "address-form",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "registry/bases/base/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
+    },
+    "file-upload": {
+      name: "file-upload",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "registry/bases/base/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
+    },
+    "relative-time": {
+      name: "relative-time",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["digits"],
+      files: [{
+        path: "registry/bases/base/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
+    },
+    "drag-scroll": {
+      name: "drag-scroll",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/bases/base/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "signature-pad": {
+      name: "signature-pad",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/bases/base/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
+    },
+    "iran-division-picker": {
+      name: "iran-division-picker",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "registry/bases/base/ui/iran-division-picker.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/iran-geo.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
     "accordion-example": {
       name: "accordion-example",
@@ -1877,6 +2043,20 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: undefined,
       files: [{
         path: "registry/bases/base/lib/digits.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      meta: undefined,
+    },
+    "iran": {
+      name: "iran",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: ["digits"],
+      files: [{
+        path: "registry/bases/base/lib/iran.ts",
         type: "registry:lib",
         target: ""
       }],
@@ -9290,6 +9470,24 @@ export const Index: Record<string, Record<string, any>> = {
       }],
       categories: ["datetime-picker"],
       meta: {"iframeHeight":"1200px"},
+    },
+    "datetime-picker-06": {
+      name: "datetime-picker-06",
+      title: "Date & Time Picker 06",
+      description: "انتخاب تاریخ شمسی با چرخ روز، ماه و سال.",
+      type: "registry:block",
+      registryDependencies: ["button","card"],
+      files: [{
+        path: "registry/bases/base/blocks/datetime-picker-06/page.tsx",
+        type: "registry:page",
+        target: "app/datetime-picker/page.tsx"
+      },{
+        path: "registry/bases/base/blocks/datetime-picker-06/components/datetime-picker.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["datetime-picker"],
+      meta: {"iframeHeight":"700px"},
     },
     "booking-01": {
       name: "booking-01",

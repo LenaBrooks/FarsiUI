@@ -1,0 +1,31 @@
+---
+title: ورودی قیمت (Price Input)
+description: ورود مبلغ با جداکننده هزارگان، ارقام فارسی، تبدیل تومان/ریال و نمایش مبلغ به حروف.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "price-input-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add price-input
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { PriceInput } from "@/components/ui/price-input"
+
+export function Example() {
+  return <PriceInput defaultValue="10000000" defaultCurrency="toman" />
+}
+```
+
+زیر فیلد، مبلغ به حروف نمایش داده می‌شود؛ مثلاً `۱۰۰۰۰۰۰۰` → **ده میلیون تومان**. با سوییچ تومان/ریال مقدار با ضریب ۱۰ تبدیل می‌شود.

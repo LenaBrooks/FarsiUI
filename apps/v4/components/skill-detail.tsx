@@ -33,6 +33,7 @@ export function SkillDetail({
   const active =
     files.find((file) => file.path === activePath) ?? files[0] ?? null
   const hasCompanions = files.length > 1
+  const bundleZipUrl = skill.bundleZipUrl
 
   return (
     <div
@@ -75,16 +76,20 @@ export function SkillDetail({
             </>
           ) : null}
 
-          <h2>فایل‌های مهارت</h2>
-          {hasCompanions ? (
-            <p>
-              این مجموعه {files.length.toLocaleString("fa-IR")} فایل مهارت داره.
-              با فلش کنار نام هر فایل می‌تونی محتوای هرکدوم رو ببینی. نصب از طریق
-              CLI، همه فایل‌های مجموعه رو دریافت می‌کنه.
-            </p>
-          ) : null}
+          {bundleZipUrl ? null : (
+            <>
+              <h2>فایل‌های مهارت</h2>
+              {hasCompanions ? (
+                <p>
+                  این مجموعه {files.length.toLocaleString("fa-IR")} فایل مهارت
+                  داره. با فلش کنار نام هر فایل می‌تونی محتوای هرکدوم رو ببینی.
+                  نصب از طریق CLI، همه فایل‌های مجموعه رو دریافت می‌کنه.
+                </p>
+              ) : null}
+            </>
+          )}
 
-          {active ? (
+          {!bundleZipUrl && active ? (
             <div data-not-typeset="" className="mt-5 mb-8 w-full">
               <figure
                 data-rehype-pretty-code-figure=""
@@ -164,14 +169,47 @@ export function SkillDetail({
           <h2>نصب</h2>
 
           <h3>نصب سریع با CLI</h3>
+          {bundleZipUrl ? (
+            <p>
+              CLI فقط{" "}
+              <code dir="ltr" lang="en">
+                SKILL.md
+              </code>{" "}
+              را می‌گذارد؛ برای کل مرجع‌ها از نصب دستی و ZIP استفاده کنید.
+            </p>
+          ) : null}
           <SkillCopyCommand command={skill.installCommand} />
 
           <h3>نصب دستی</h3>
-          <p>
-            {hasCompanions
-              ? "کل پوشهٔ مهارت (SKILL.md به‌همراه فایل‌های همراه) را در یکی از مسیرهای زیر بگذارید:"
-              : "فایل را دانلود کنید یا خودتان بسازید و در یکی از مسیرهای زیر بگذارید:"}
-          </p>
+          {bundleZipUrl ? (
+            <>
+              <p>
+                فایل ZIP را دانلود کنید، از حالت فشرده خارج کنید و پوشهٔ{" "}
+                <code dir="ltr" lang="en">
+                  {skill.slug}
+                </code>{" "}
+                را در یکی از مسیرهای زیر بگذارید:
+              </p>
+              <div
+                data-not-typeset=""
+                className="mt-4 mb-4 flex flex-wrap gap-2"
+              >
+                <Button asChild variant="outline">
+                  <a href={bundleZipUrl} download={`${skill.slug}.zip`}>
+                    <Download className="size-4" />
+                    دانلود ZIP
+                  </a>
+                </Button>
+                <SkillZipCopyLink url={bundleZipUrl} />
+              </div>
+            </>
+          ) : (
+            <p>
+              {hasCompanions
+                ? "کل پوشهٔ مهارت (SKILL.md به‌همراه فایل‌های همراه) را در یکی از مسیرهای زیر بگذارید:"
+                : "فایل را دانلود کنید یا خودتان بسازید و در یکی از مسیرهای زیر بگذارید:"}
+            </p>
+          )}
           <div data-not-typeset="" className="mt-4 mb-2 space-y-2">
             {skill.installTargets
               .filter((target) => target.id !== "other")
@@ -210,6 +248,30 @@ function SkillSourceMeta({ source }: { source?: SkillSource }) {
         <span>{resolved.name}</span>
       )}
     </p>
+  )
+}
+
+function SkillZipCopyLink({ url }: { url: string }) {
+  const [copied, setCopied] = React.useState(false)
+
+  React.useEffect(() => {
+    if (!copied) return
+    const timer = setTimeout(() => setCopied(false), 1800)
+    return () => clearTimeout(timer)
+  }, [copied])
+
+  return (
+    <Button
+      type="button"
+      variant="outline"
+      onClick={async () => {
+        const ok = await copyToClipboardWithMeta(url)
+        if (ok) setCopied(true)
+      }}
+    >
+      {copied ? <Check className="size-4" /> : <Copy className="size-4" />}
+      {copied ? "لینک کپی شد" : "کپی لینک دانلود"}
+    </Button>
   )
 }
 

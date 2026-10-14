@@ -13,7 +13,7 @@ import {
 import { usePersianMockData } from "@/components/chart2-live"
 import {
   chart2AreaContainerClassName,
-  chart2MockConfig,
+  chart2BarMockConfig,
   formatChart2Number,
 } from "@/lib/chart2-fa"
 import {
@@ -26,7 +26,7 @@ export default function AreaWithCustomEventsDemo() {
   const data = usePersianMockData(20, 456)
 
   return (
-    <ChartContainer config={chart2MockConfig} className={chart2AreaContainerClassName}>
+    <ChartContainer config={chart2BarMockConfig} className={chart2AreaContainerClassName}>
       <AreaChart
         accessibilityLayer
         data={data}

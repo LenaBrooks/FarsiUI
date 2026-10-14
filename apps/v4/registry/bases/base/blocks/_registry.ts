@@ -7379,6 +7379,27 @@ export const blocks: Registry["items"] = [
     meta: { iframeHeight: "1200px" },
   },
   {
+    name: "datetime-picker-06",
+    title: "Date & Time Picker 06",
+    description: "انتخاب تاریخ شمسی با چرخ روز، ماه و سال.",
+    type: "registry:block",
+    dependencies: ["date-fns-jalali"],
+    registryDependencies: ["button", "card"],
+    files: [
+      {
+        path: "blocks/datetime-picker-06/page.tsx",
+        target: "app/datetime-picker/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/datetime-picker-06/components/datetime-picker.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["datetime-picker"],
+    meta: { iframeHeight: "700px" },
+  },
+  {
     name: "booking-01",
     title: "Booking 01",
     description: "رزرو ساده با تقویم شمسی و اسلات ساعت.",

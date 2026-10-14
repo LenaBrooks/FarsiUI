@@ -1,0 +1,29 @@
+---
+title: ورودی شبا (Sheba Input)
+description: ورود شماره شبا (IBAN ایران) با قالب‌بندی و اعتبارسنجی mod-97.
+base: base
+component: true
+featured: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="centered"
+  examples={[{ name: "sheba-input-demo", label: "پیش‌فرض", sizeable: false }]}
+/>
+
+## نصب
+
+```bash
+npx farsiui@latest add sheba-input
+```
+
+## استفاده
+
+```tsx showLineNumbers
+import { ShebaInput } from "@/components/ui/sheba-input"
+
+export function Example() {
+  return <ShebaInput onValueChange={(sheba, valid) => {}} />
+}
+```

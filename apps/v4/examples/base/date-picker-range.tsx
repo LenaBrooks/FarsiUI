@@ -4,7 +4,6 @@ import * as React from "react"
 import { addDays } from "date-fns"
 import { CalendarIcon } from "lucide-react"
 import { type DateRange } from "react-day-picker"
-import { faIR as faIRDayPicker } from "react-day-picker/locale"
 
 import { Button } from "@/registry/bases/base/ui/button"
 import { Calendar } from "@/registry/bases/base/ui/calendar"
@@ -16,7 +15,7 @@ import {
 } from "@/registry/bases/base/ui/popover"
 
 function formatDate(date: Date) {
-  return date.toLocaleDateString("fa-IR", {
+  return date.toLocaleDateString("fa-IR-u-ca-persian", {
     day: "numeric",
     month: "short",
     year: "numeric",
@@ -62,8 +61,6 @@ export default function DatePickerWithRange() {
             selected={date}
             onSelect={setDate}
             numberOfMonths={2}
-            locale={faIRDayPicker}
-            dir="rtl"
           />
         </PopoverContent>
       </Popover>

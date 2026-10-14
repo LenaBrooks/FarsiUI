@@ -149,6 +149,7 @@ const CHART2_FEATURED_IDS = new Set([
   "monthly-savings",
   "tremor-area-charts",
   "realtime-mountain-chart",
+  "realtime-candlestick",
   "heikin-ashi",
   "renko-chart",
   "volume-profile",
@@ -190,4 +191,19 @@ export function getChart2Examples(categoryId: Chart2CategoryId) {
 
 export function getChart2Example(id: string) {
   return chart2Examples.find((item) => item.id === id)
+}
+
+/** Flat gallery order: categories in sidebar order, examples within each. */
+function getChart2FlatExamples() {
+  return chart2Categories.flatMap((category) =>
+    getChart2Examples(category.id)
+  )
+}
+
+/** Next example across categories (gallery order), or undefined on the last item. */
+export function getChart2NextExample(id: string) {
+  const flat = getChart2FlatExamples()
+  const index = flat.findIndex((item) => item.id === id)
+  if (index < 0 || index >= flat.length - 1) return undefined
+  return flat[index + 1]
 }

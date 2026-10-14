@@ -2,11 +2,15 @@
 
 import type { TreemapNode } from "recharts"
 
-import { formatChart2Number, toPersianDigits } from "@/lib/chart2-fa"
+import {
+  CHART2_LABEL_INK,
+  formatChart2Number,
+  toPersianDigits,
+} from "@/lib/chart2-fa"
 
 import { treemapColorAt } from "./treemap-colors"
 
-const LABEL_FILL = "#1f2937"
+const LABEL_FILL = CHART2_LABEL_INK
 
 function labelFontSize(width: number, height: number) {
   if (width > 120 && height > 56) return 13

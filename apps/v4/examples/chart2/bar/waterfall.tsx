@@ -13,6 +13,7 @@ import {
 
 import {
   CHART2_BAR_COLORS,
+  CHART2_DOWN,
   chart2BarContainerClassName,
   formatPersianNumber,
   toPersianDigits,
@@ -81,7 +82,7 @@ const chartConfig = {
 
 function getBarColor(entry: WaterfallDatum): string {
   if (entry.isTotal) return CHART2_BAR_COLORS[0]
-  return entry.value >= 0 ? CHART2_BAR_COLORS[1] : "var(--destructive)"
+  return entry.value >= 0 ? CHART2_BAR_COLORS[1] : CHART2_DOWN
 }
 
 function WaterfallBar(props: BarShapeProps) {

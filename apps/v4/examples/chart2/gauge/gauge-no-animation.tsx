@@ -13,8 +13,8 @@ export default function GaugeNoAnimationDemo() {
       animate={false}
       nrOfLevels={15}
       percent={0.56}
-      needleColor="#345243"
-      needleBaseColor="#345243"
+      needleColor="#5a6169"
+      needleBaseColor="#5a6169"
       caption="پانزده سطح بدون انیمیشن عقربه"
     />
   )

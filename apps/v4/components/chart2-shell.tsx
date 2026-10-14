@@ -52,6 +52,7 @@ const CHART2_DETAIL_OPEN_KEY = "chart2-sidebar-detail-open"
 const CHART2_GALLERY_SCROLL_KEY = "chart2-sidebar-gallery-scroll"
 
 function readSessionJson<T>(key: string): T | null {
+  if (typeof window === "undefined") return null
   try {
     return JSON.parse(sessionStorage.getItem(key) ?? "") as T
   } catch {
@@ -67,21 +68,26 @@ function writeSessionJson(key: string, value: unknown) {
   }
 }
 
-/** Keep sidebar scroll across /chart2/view/* remounts. */
+/** Keep sidebar scroll across navigations without yanking on every active change. */
 function usePersistedNavScroll(
   storageKey: string,
   activeKey: string,
   activeRef: React.RefObject<HTMLElement | null>
 ) {
   const navRef = React.useRef<HTMLElement>(null)
+  const didRestoreRef = React.useRef(false)
 
   React.useLayoutEffect(() => {
     const container = navRef.current
     if (!container) return
 
-    const saved = readSessionJson<{ scrollTop: number }>(storageKey)
-    if (saved && typeof saved.scrollTop === "number") {
-      container.scrollTop = saved.scrollTop
+    // Restore saved scroll only once per mount (layout may persist across ids).
+    if (!didRestoreRef.current) {
+      const saved = readSessionJson<{ scrollTop: number }>(storageKey)
+      if (saved && typeof saved.scrollTop === "number") {
+        container.scrollTop = saved.scrollTop
+      }
+      didRestoreRef.current = true
     }
 
     const active = activeRef.current
@@ -90,11 +96,11 @@ function usePersistedNavScroll(
     const containerRect = container.getBoundingClientRect()
     const activeRect = active.getBoundingClientRect()
     const fullyVisible =
-      activeRect.top >= containerRect.top &&
-      activeRect.bottom <= containerRect.bottom
+      activeRect.top >= containerRect.top + 4 &&
+      activeRect.bottom <= containerRect.bottom - 4
     if (fullyVisible) return
 
-    // Only nudge if the active item left the viewport after restore.
+    // Soft nudge only when the active link left the viewport.
     container.scrollTop +=
       activeRect.top -
       containerRect.top -
@@ -192,7 +198,7 @@ function GalleryCategoryNav({
       <nav
         ref={navRef}
         aria-label="انواع نمودار"
-        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-16"
+        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-32"
       >
         {filteredCategories.length === 0 ? (
           <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
@@ -247,14 +253,9 @@ function DetailCategoryNav({
   onNavigate?: () => void
   className?: string
 }) {
+  // SSR + first client paint must match — restore session after mount.
   const [openGroups, setOpenGroups] = React.useState<Record<string, boolean>>(
-    () => {
-      const saved = readSessionJson<Record<string, boolean>>(CHART2_DETAIL_OPEN_KEY)
-      return {
-        ...(saved ?? {}),
-        [activeCategoryId]: true,
-      }
-    }
+    () => ({ [activeCategoryId]: true })
   )
   const [searchValue, setSearchValue] = React.useState("")
   const { debouncedQuery, clearSearch } = useDebouncedNavQuery(searchValue)
@@ -264,6 +265,16 @@ function DetailCategoryNav({
     activeExampleId,
     activeExampleRef
   )
+
+  React.useLayoutEffect(() => {
+    const saved = readSessionJson<Record<string, boolean>>(CHART2_DETAIL_OPEN_KEY)
+    setOpenGroups({
+      ...(saved ?? {}),
+      [activeCategoryId]: true,
+    })
+    // Only restore once on mount; activeCategoryId handled below.
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount restore
+  }, [])
 
   const filteredGroups = React.useMemo(() => {
     return chart2Categories
@@ -345,7 +356,7 @@ function DetailCategoryNav({
       <nav
         ref={navRef}
         aria-label="انواع و نمونه‌های نمودار"
-        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-16"
+        className="scrollbar-soft flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto overscroll-contain pe-1 pb-32"
       >
         {filteredGroups.length === 0 ? (
           <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>

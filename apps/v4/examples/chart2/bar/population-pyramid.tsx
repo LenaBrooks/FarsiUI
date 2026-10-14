@@ -13,6 +13,7 @@ import {
 import {
   CHART2_BAR_COLORS,
   chart2BarContainerClassName,
+  chart2Shade,
   toPersianDigits,
 } from "@/lib/chart2-fa"
 import {
@@ -186,7 +187,9 @@ export default function PopulationPyramidDemo({
           fill="var(--color-female)"
           stroke="none"
           shape={PyramidBar}
-          label={(props) => <EndLabel {...props} fill="#b84d5c" />}
+          label={(props) => (
+            <EndLabel {...props} fill={chart2Shade(CHART2_BAR_COLORS[1], -48)} />
+          )}
         />
         <Bar
           stackId="age"
@@ -194,7 +197,9 @@ export default function PopulationPyramidDemo({
           fill="var(--color-male)"
           stroke="none"
           shape={PyramidBar}
-          label={(props) => <EndLabel {...props} fill="#3d6f94" />}
+          label={(props) => (
+            <EndLabel {...props} fill={chart2Shade(CHART2_BAR_COLORS[0], -48)} />
+          )}
         />
         <ChartTooltip
           defaultIndex={defaultIndex}

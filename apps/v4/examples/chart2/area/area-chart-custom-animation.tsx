@@ -1,5 +1,6 @@
 "use client"
 
+import { useId } from "react"
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
 import {
@@ -29,17 +30,24 @@ const chartConfig = {
 } satisfies ChartConfig
 
 export default function AreaCustomAnimationDemo() {
+  const uid = useId().replace(/:/g, "")
+  const gradId = `chart2AreaCustomAnim-${uid}`
+  const fill = chartConfig.uv.color
+
   return (
-    <ChartContainer config={chartConfig} className={chart2AreaContainerClassName}>
+    <ChartContainer
+      config={chartConfig}
+      className={chart2AreaContainerClassName}
+    >
       <AreaChart
         accessibilityLayer
         data={data}
         margin={{ top: 10, right: 8, left: 0, bottom: 5 }}
       >
         <defs>
-          <linearGradient id="chart2AreaCustomAnim" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="var(--color-uv)" stopOpacity={0.8} />
-            <stop offset="95%" stopColor="var(--color-uv)" stopOpacity={0.05} />
+          <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor={fill} stopOpacity={0.8} />
+            <stop offset="95%" stopColor={fill} stopOpacity={0.05} />
           </linearGradient>
         </defs>
         <CartesianGrid strokeDasharray="3 3" />
@@ -54,8 +62,8 @@ export default function AreaCustomAnimationDemo() {
         <Area
           type="monotone"
           dataKey="uv"
-          stroke="var(--color-uv)"
-          fill="url(#chart2AreaCustomAnim)"
+          stroke={fill}
+          fill={`url(#${gradId})`}
           animationDuration={900}
           isAnimationActive
         />

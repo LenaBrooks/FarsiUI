@@ -24,6 +24,8 @@ import {
 } from "@/registry/new-york-v4/ui/chart"
 
 import {
+  CANDLE_DOWN,
+  CANDLE_UP,
   formatMoneyOneLine,
   formatPctChange,
   formatToman,
@@ -128,9 +130,9 @@ function MultiTooltip({ active, payload }: TooltipContentProps) {
                 {absolute ? formatToman(absolute[s.key]!) : "—"}
               </span>
               <span
-                className="tabular-nums"
+                className="fa-num"
                 style={{
-                  color: pct >= 0 ? "#5a9e7a" : "#d97986",
+                  color: pct >= 0 ? CANDLE_UP : CANDLE_DOWN,
                 }}
               >
                 {toPersianDigits(`${sign}${pct.toFixed(1)}٪`)}
@@ -168,12 +170,12 @@ export default function StockMultiSeriesDemo({
               </div>
               <span
                 className="text-[11px] font-medium"
-                style={{ color: s.up ? "#5a9e7a" : "#d97986" }}
+                style={{ color: s.up ? CANDLE_UP : CANDLE_DOWN }}
               >
                 {formatPctChange(s.change)}
               </span>
             </div>
-            <p className="mt-0.5 whitespace-nowrap text-[13px] font-semibold tracking-tight sm:text-sm">
+            <p className="mt-0.5 fa-num whitespace-nowrap text-[13px] font-semibold sm:text-sm">
               {formatMoneyOneLine(s.price)}
             </p>
           </div>

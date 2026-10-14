@@ -12,7 +12,7 @@ export default function GaugeDefaultDemo() {
     <Chart2Gauge
       id="chart2-gauge-default"
       colors={[...GAUGE_TRAFFIC_COLORS]}
-      caption="گیج پیش‌فرض — سبز / زرد / قرمز (#5BE12C, #F5CD19, #EA4228)"
+      caption="گیج پیش‌فرض — سبز / طلایی / قرمز نرم"
     />
   )
 }

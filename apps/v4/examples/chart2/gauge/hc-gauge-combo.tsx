@@ -38,9 +38,9 @@ const options: Options = {
     tickPositions: [0, 20, 40, 60, 80, 100],
     // Keep demo palette, but stop colors apply as the series color at VALUE.
     stops: [
-      [0.3, "#1abc9c"],
-      [0.6, "#2980b9"],
-      [0.9, "#8e44ad"],
+      [0.3, "#7eb8a0"],
+      [0.6, "#6ea1c7"],
+      [0.9, "#8b9dc3"],
     ],
   },
   plotOptions: {
@@ -72,7 +72,7 @@ const options: Options = {
     {
       type: "solidgauge",
       name: "مقدار",
-      data: [{ y: VALUE, color: "#2980b9" }],
+      data: [{ y: VALUE, color: "#6ea1c7" }],
       dataLabels: { enabled: false },
       enableMouseTracking: false,
       rounded: false,

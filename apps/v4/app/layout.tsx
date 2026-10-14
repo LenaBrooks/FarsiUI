@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { cookies, headers } from "next/headers"
+import Script from "next/script"
 import { cn } from "cn"
 import { NuqsAdapter } from "nuqs/adapters/next/app"
 
@@ -146,12 +147,16 @@ export default async function RootLayout({
       style={getUiFontStyle(initialFontId)}
     >
       <head>
-        <script
+        <Script
+          id="docs-sidebar-scroll-restore"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: DOCS_SIDEBAR_SCROLL_RESTORE_SCRIPT,
           }}
         />
-        <script
+        <Script
+          id="theme-color-bootstrap"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               try {
@@ -162,7 +167,9 @@ export default async function RootLayout({
             `,
           }}
         />
-        <script
+        <Script
+          id="ui-font-bootstrap"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: UI_FONT_BOOTSTRAP_SCRIPT,
           }}
@@ -180,18 +187,24 @@ export default async function RootLayout({
       >
         <DesignSystemStyles id={initialDesignSystem} />
         {/* Sync localStorage → body classes before first paint (body exists here). */}
-        <script
+        <Script
+          id="design-system-bootstrap"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: DESIGN_SYSTEM_BOOTSTRAP_SCRIPT,
           }}
         />
-        <script
+        <Script
+          id="active-theme-bootstrap"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: ACTIVE_THEME_BOOTSTRAP_SCRIPT,
           }}
         />
         {/* Dark toggle works before React hydrates the header ModeSwitcher. */}
-        <script
+        <Script
+          id="mode-switch-bootstrap"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               try {

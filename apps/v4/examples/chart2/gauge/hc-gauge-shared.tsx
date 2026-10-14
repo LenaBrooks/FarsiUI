@@ -11,9 +11,10 @@ import { useChart2ToolbarStart } from "@/components/chart2-live"
 import { toPersianDigits } from "@/lib/chart2-fa"
 
 /** Highcharts default series colors (v11+). */
-export const HC_COLOR_0 = "#2caffe"
-export const HC_COLOR_1 = "#544fc5"
-export const HC_COLOR_2 = "#00e272"
+/** Softened Highcharts defaults — closer to chart2 intensity on light. */
+export const HC_COLOR_0 = "#5aa8d4"
+export const HC_COLOR_1 = "#6b66b8"
+export const HC_COLOR_2 = "#5cb88a"
 
 /**
  * Always-visible needle on light/dark.

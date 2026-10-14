@@ -14,6 +14,7 @@ import { TriangleIcon } from "lucide-react"
 import {
   CHART2_BAR_COLORS,
   chart2DashedGridClassName,
+  chart2Shade,
   formatPersianNumber,
   toPersianDigits,
 } from "@/lib/chart2-fa"
@@ -79,7 +80,7 @@ const DATA_BY_RANGE: Record<RangeId, AssetRow[]> = {
 
 const BAR_COLOR = CHART2_BAR_COLORS[0]
 const ACCENT_COLOR = CHART2_BAR_COLORS[1]
-const BAR_LABEL_FILL = "#2f5470"
+const BAR_LABEL_FILL = chart2Shade(CHART2_BAR_COLORS[0], -55)
 
 const chartConfig = {
   returnPct: { label: "بازدهی", color: BAR_COLOR },

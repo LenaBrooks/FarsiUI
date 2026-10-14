@@ -909,6 +909,33 @@ body[class*="theme-"],
     @apply rounded-xl border-none bg-clip-padding shadow-2xl ring-4 ring-neutral-200/80 dark:bg-neutral-900 dark:ring-neutral-800;
   }
 
+  /* Chart SVG ticks inherit tracking / tnum and look gappy with Persian digits. */
+  [data-slot="chart"] text,
+  [data-slot="chart"] .recharts-text {
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  /*
+   * Estedad + Persian digits: Tailwind `tabular-nums` enables tnum, which pads
+   * short figures so values like «۴٪» / «۱۹٪» look letter-spaced. Keep the
+   * class for intent/alignment hooks, but render proportional glyphs.
+   * `!important` beats co-applied `tracking-tight` on the same node.
+   */
+  .tabular-nums {
+    letter-spacing: 0 !important;
+    font-variant-numeric: normal !important;
+    font-feature-settings: "tnum" 0, "pnum" 1 !important;
+  }
+
+  /* Explicit tight Persian / FA figure run (chips, KPIs, tooltips). */
+  .fa-num {
+    letter-spacing: 0;
+    font-variant-numeric: normal;
+    font-feature-settings: "tnum" 0, "pnum" 1;
+    white-space: nowrap;
+  }
 }
 
 @keyframes docs-collapsible-down {

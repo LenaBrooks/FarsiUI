@@ -13,14 +13,14 @@ export const gaugeChartStyle: CSSProperties = {
   maxWidth: 420,
 }
 
-/** Needle/text defaults from the library demo — readable on light surfaces. */
-export const GAUGE_NEEDLE = "#464A4F"
+/** Needle/text — soft charcoal, readable on light surfaces. */
+export const GAUGE_NEEDLE = "#5a6169"
 
 /**
- * Traffic-light palette from the library demo (custom arcs).
- * Mid yellow #F5CD19 stays readable on light backgrounds (unlike #00FF00→#FF0000 HSL).
+ * Soft traffic-light arcs (aligned with chart2 palette intensity).
+ * Mid gold stays readable on light backgrounds.
  */
-export const GAUGE_TRAFFIC_COLORS = ["#5BE12C", "#F5CD19", "#EA4228"] as const
+export const GAUGE_TRAFFIC_COLORS = ["#6cb87a", "#d4b45a", "#d96b5c"] as const
 
 /** Build n arc colors green → gold → red so mid yellow stays visible in light theme. */
 export function gaugeTrafficRamp(levels: number): string[] {

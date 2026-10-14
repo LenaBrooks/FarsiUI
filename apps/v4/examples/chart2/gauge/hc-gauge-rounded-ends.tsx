@@ -27,9 +27,9 @@ const options: Options = {
     tickWidth: 0,
     minorTickWidth: 0,
     plotBands: [
-      { from: 0, to: 60, color: "#85c1e9" },
-      { from: 60, to: 80, color: "#2980b9" },
-      { from: 80, to: 100, color: "#1a5276" },
+      { from: 0, to: 60, color: "#9bbfd4" },
+      { from: 60, to: 80, color: "#6ea1c7" },
+      { from: 80, to: 100, color: "#4a7a9a" },
     ],
   },
   series: [
@@ -49,7 +49,7 @@ const options: Options = {
       },
       dial: {
         radius: "80%",
-        backgroundColor: "#2980b9",
+        backgroundColor: "#6ea1c7",
         baseWidth: "5%",
         topWidth: "1%",
         rearLength: "0%",
@@ -57,7 +57,7 @@ const options: Options = {
       },
       pivot: {
         radius: "5%",
-        backgroundColor: "#2980b9",
+        backgroundColor: "#6ea1c7",
         borderWidth: 0,
       },
     },

@@ -29,6 +29,7 @@ import {
 
 import {
   CANDLE_DOWN,
+  CANDLE_UP,
   formatMoneyOneLine,
   formatPctChange,
   generateNaturalCandles,
@@ -93,7 +94,7 @@ export default function DrawdownChartDemo({
       <div className="grid gap-3 sm:grid-cols-3">
         <div className="rounded-xl border border-border/60 bg-background px-3.5 py-3">
           <p className="text-muted-foreground text-[11px]">ارزش فعلی</p>
-          <p className="mt-0.5 text-sm font-semibold tracking-tight">
+          <p className="mt-0.5 fa-num text-sm font-semibold">
             {formatMoneyOneLine(lastEquity)}
           </p>
         </div>
@@ -101,7 +102,7 @@ export default function DrawdownChartDemo({
           <p className="text-muted-foreground text-[11px]">بازدهی دوره</p>
           <p
             className="mt-0.5 text-sm font-semibold"
-            style={{ color: totalReturn >= 0 ? "#5a9e7a" : CANDLE_DOWN }}
+            style={{ color: totalReturn >= 0 ? CANDLE_UP : CANDLE_DOWN }}
           >
             {formatPctChange(totalReturn)}
           </p>

@@ -13,7 +13,7 @@ export default function StatNumber({
     <bdi
       dir="ltr"
       className={cn(
-        "inline-block whitespace-nowrap tracking-normal [letter-spacing:0]",
+        "fa-num inline-block whitespace-nowrap tracking-normal [letter-spacing:0]",
         className
       )}
     >

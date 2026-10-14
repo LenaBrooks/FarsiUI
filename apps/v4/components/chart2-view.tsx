@@ -2,12 +2,16 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { ArrowRightIcon } from "lucide-react"
+import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react"
 import { cn } from "cn"
 
-import { type Chart2Example } from "@/lib/chart2-catalog"
+import {
+  getChart2NextExample,
+  type Chart2Example,
+} from "@/lib/chart2-catalog"
 import { Chart2DemoPreview } from "@/components/chart2-demo-preview"
 import {
+  Chart2ExportPngButton,
   Chart2GridToggleButton,
   Chart2LiveProvider,
   Chart2RandomizeButton,
@@ -78,6 +82,10 @@ function Chart2ViewStage({ exampleId }: { exampleId: string }) {
         <Chart2ToolbarStart />
         <div className="ms-auto flex shrink-0 items-center gap-0.5">
           {hasGrid ? <Chart2GridToggleButton /> : null}
+          <Chart2ExportPngButton
+            containerRef={stageRef}
+            filename={exampleId}
+          />
           <Chart2RandomizeButton />
         </div>
       </div>
@@ -102,6 +110,7 @@ export function Chart2View({
 }) {
   const addCommand = `farsiui@latest add ${example.id}`
   const backHref = `/chart2#chart-type-${example.category}`
+  const nextExample = getChart2NextExample(example.id)
 
   return (
     <div
@@ -148,6 +157,20 @@ export function Chart2View({
             </span>
           ) : null}
         </div>
+
+        {nextExample ? (
+          <Button
+            asChild
+            variant="ghost"
+            size="sm"
+            className="ms-2 h-8 shrink-0 gap-1.5 px-2 text-muted-foreground me-0.5"
+          >
+            <Link href={`/chart2/view/${nextExample.id}`}>
+              بعدی
+              <ArrowLeftIcon className="size-3.5" />
+            </Link>
+          </Button>
+        ) : null}
       </header>
 
       <main

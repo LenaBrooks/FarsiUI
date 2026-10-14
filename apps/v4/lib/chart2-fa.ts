@@ -36,6 +36,8 @@ export const CHART2_SERIES_LABELS = {
 /**
  * Soft bar palette (population-pyramid blues/pinks + muted companions).
  * Prefer these over theme `--chart-*` so demos stay readable on gray skins.
+ * Light values are the source of truth; dark variants land via CSS vars later.
+ * Demos should consume CHART2_BAR_COLORS / chart2BarMockConfig — not hardcode hex.
  */
 export const CHART2_BAR_COLORS = [
   "#6ea1c7",
@@ -44,6 +46,27 @@ export const CHART2_BAR_COLORS = [
   "#c4a574",
   "#8b9dc3",
 ] as const
+
+/** Soft up/down — same family as palette greens/pinks (stock, waterfall, badges). */
+export const CHART2_UP = "#5a9e7a"
+export const CHART2_DOWN = "#d97986"
+
+/** Label ink on soft filled shapes (sunburst / treemap / bar end labels). */
+export const CHART2_LABEL_INK = "#1f2937"
+
+/** Darken/lighten a #rrggbb (or #rgb) for labels and nested sunburst shades. */
+export function chart2Shade(hex: string, amount: number) {
+  const raw = hex.replace("#", "")
+  const n = Number.parseInt(
+    raw.length === 3 ? raw.replace(/(.)/g, "$1$1") : raw,
+    16
+  )
+  const clamp = (v: number) => Math.min(255, Math.max(0, v))
+  const r = clamp(((n >> 16) & 0xff) + amount)
+  const g = clamp(((n >> 8) & 0xff) + amount)
+  const b = clamp((n & 0xff) + amount)
+  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, "0")}`
+}
 
 export const chart2MockConfig = {
   x: {
@@ -103,6 +126,13 @@ export function formatChart2Tick(value: unknown) {
 /** Soften Recharts default #ccc grid so dashed lines match theme (line/area). */
 export const chart2DashedGridClassName =
   "[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/32 dark:[&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-muted-foreground/38"
+
+/**
+ * Persian figure runs — no tnum padding / inherited tracking gaps («۴٪»).
+ * Prefer with formatPersianNumber / toPersianDigits output.
+ */
+export const chart2NumClassName =
+  "fa-num tracking-normal [letter-spacing:0] [font-variant-numeric:normal]"
 
 /** Shared ChartContainer sizing for gallery demos. */
 export const chart2ContainerClassName =

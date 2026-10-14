@@ -33,14 +33,14 @@ const options: Options = {
       {
         from: 0,
         to: 70,
-        color: "#d2b4de",
+        color: "#b8a8c8",
         outerRadius: "90%",
         innerRadius: "80%",
       },
       {
         from: 70,
         to: 100,
-        color: "#8e44ad",
+        color: "#8b9dc3",
         outerRadius: "90%",
         innerRadius: "80%",
       },

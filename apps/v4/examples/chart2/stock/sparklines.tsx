@@ -147,7 +147,7 @@ function SparkAreaCard({
           <p className="text-muted-foreground text-[11px] font-medium tracking-wide">
             {label}
           </p>
-          <p className="mt-0.5 whitespace-nowrap text-[13px] font-semibold tracking-tight sm:text-sm">
+          <p className="mt-0.5 fa-num whitespace-nowrap text-[13px] font-semibold sm:text-sm">
             {formatToman(value, { compact: true }).replace(/ /g, "\u00A0")}
           </p>
         </div>

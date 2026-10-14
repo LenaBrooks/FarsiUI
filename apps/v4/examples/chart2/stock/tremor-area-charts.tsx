@@ -148,7 +148,7 @@ function KpiMiniArea({
           <p className="text-muted-foreground text-[11px] font-medium tracking-wide">
             {label}
           </p>
-          <p className="mt-0.5 whitespace-nowrap text-[13px] font-semibold tracking-tight sm:text-sm">
+          <p className="mt-0.5 fa-num whitespace-nowrap text-[13px] font-semibold sm:text-sm">
             {formatMoney(value)}
           </p>
         </div>
@@ -254,7 +254,7 @@ function HeroArea() {
           <p className="text-muted-foreground text-[11px] font-medium">
             درآمد ماه
           </p>
-          <p className="mt-0.5 whitespace-nowrap text-xl font-semibold tracking-tight">
+          <p className="mt-0.5 fa-num whitespace-nowrap text-xl font-semibold">
             {formatMoney(total)}
           </p>
           <p className="text-muted-foreground mt-0.5 text-[11px]">

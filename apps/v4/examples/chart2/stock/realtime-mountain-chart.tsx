@@ -240,7 +240,7 @@ export default function RealtimeMountainChartDemo() {
             </p>
           </div>
           <div className="text-end">
-            <p className="whitespace-nowrap text-lg font-semibold tracking-tight">
+            <p className="fa-num whitespace-nowrap text-lg font-semibold">
               {last ? formatMoneyOneLine(last.price) : "—"}
             </p>
             <p className="text-muted-foreground text-[11px]">قیمت لحظه‌ای</p>

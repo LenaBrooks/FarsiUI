@@ -13,8 +13,8 @@ import {
   faTooltipValue,
 } from "./hc-gauge-shared"
 
-const TEAL = "#148f77"
-const TEAL_LIGHT = "#76d7c4"
+const TEAL = "#4a9e88"
+const TEAL_LIGHT = "#7eb8a0"
 
 const options: Options = {
   chart: { type: "gauge" },

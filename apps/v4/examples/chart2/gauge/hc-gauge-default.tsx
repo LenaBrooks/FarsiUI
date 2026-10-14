@@ -2,7 +2,7 @@
 
 /**
  * Highcharts Gauge Inspiration #1 — Default look
- * Colors: #55BF3B, #DDDF0D, #DF5353
+ * Soft traffic bands (chart2-aligned)
  */
 
 import type { Options } from "highcharts"
@@ -19,9 +19,9 @@ const options: Options = {
     min: 0,
     max: 100,
     plotBands: [
-      { from: 0, to: 50, color: "#55BF3B" },
-      { from: 50, to: 75, color: "#DDDF0D" },
-      { from: 75, to: 100, color: "#DF5353" },
+      { from: 0, to: 50, color: "#6cb87a" },
+      { from: 50, to: 75, color: "#d4b45a" },
+      { from: 75, to: 100, color: "#d96b5c" },
     ],
   },
   series: [
@@ -47,7 +47,7 @@ export default function HcGaugeDefaultDemo() {
   return (
     <Chart2HighchartsGauge
       options={options}
-      caption="ظاهر پیش‌فرض — سبز / زرد / قرمز (#55BF3B, #DDDF0D, #DF5353)"
+      caption="ظاهر پیش‌فرض — سبز / طلایی / قرمز نرم"
     />
   )
 }

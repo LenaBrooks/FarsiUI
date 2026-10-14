@@ -125,7 +125,7 @@ function FrameChart({
           <p className="text-sm font-medium">{label}</p>
           <ChangeBadge value={change} good={change >= 0} />
         </div>
-        <p className="text-[12px] font-semibold tracking-tight">
+        <p className="fa-num text-[12px] font-semibold">
           {formatMoneyOneLine(last.close)}
         </p>
       </div>

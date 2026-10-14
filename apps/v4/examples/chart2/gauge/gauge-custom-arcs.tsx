@@ -2,7 +2,7 @@
 
 /**
  * Custom arc lengths — traffic-light palette from the library demo.
- * colors: #5BE12C, #F5CD19, #EA4228
+ * Soft traffic arcs from GAUGE_TRAFFIC_COLORS
  */
 
 import { Chart2Gauge, GAUGE_TRAFFIC_COLORS } from "./gauge-shared"

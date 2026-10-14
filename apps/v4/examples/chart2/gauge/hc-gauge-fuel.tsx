@@ -2,7 +2,7 @@
 
 /**
  * Highcharts Gauge Inspiration #7 — Fuel level solidgauge
- * Stops: #DF5353, #DDDF0D, #55BF3B
+ * Soft fuel stops (rose → gold → green)
  */
 
 import type { Options } from "highcharts"
@@ -38,9 +38,9 @@ const options: Options = {
     min: 0,
     max: 100,
     stops: [
-      [0.1, "#DF5353"],
-      [0.5, "#DDDF0D"],
-      [0.9, "#55BF3B"],
+      [0.1, "#d96b5c"],
+      [0.5, "#d4b45a"],
+      [0.9, "#6cb87a"],
     ],
     tickAmount: 2,
     title: { text: undefined },
@@ -66,7 +66,7 @@ export default function HcGaugeFuelDemo() {
   return (
     <Chart2HighchartsGauge
       options={options}
-      caption="نیم‌دایره سوخت — قرمز / زرد / سبز (#DF5353 → #55BF3B)"
+      caption="نیم‌دایره سوخت — قرمز / طلایی / سبز نرم"
     />
   )
 }

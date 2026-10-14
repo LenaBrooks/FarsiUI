@@ -9,15 +9,20 @@ import {
   splitTomanCompact,
 } from "@/lib/chart-locale"
 import { JalaliDayMonthTick } from "@/lib/chart-jalali-tick"
-import { formatJalaliDate, toPersianDigits } from "@/lib/chart2-fa"
-
-/** نام قدیمی گالری سهام — همان JalaliDayMonthTick. */
-export const JalaliDayTick = JalaliDayMonthTick
+import {
+  CHART2_DOWN,
+  CHART2_UP,
+  formatJalaliDate,
+  toPersianDigits,
+} from "@/lib/chart2-fa"
 import {
   between,
   random,
   type MarketCandle,
 } from "@/lib/chart2-mock-data"
+
+/** نام قدیمی گالری سهام — همان JalaliDayMonthTick. */
+export const JalaliDayTick = JalaliDayMonthTick
 
 export function timestampToMinutes(timestamp: number) {
   const date = new Date(timestamp)
@@ -85,8 +90,8 @@ export function candleWhiskerKey(entry: MarketCandle): [number, number] {
 }
 
 /** رنگ نرم صعود/نزول — هم‌خانواده پالت chart2. */
-export const CANDLE_UP = "#5a9e7a"
-export const CANDLE_DOWN = "#d97986"
+export const CANDLE_UP = CHART2_UP
+export const CANDLE_DOWN = CHART2_DOWN
 
 /** @deprecated از CANDLE_UP استفاده کنید */
 export const BINANCE_CANDLE_UP = CANDLE_UP

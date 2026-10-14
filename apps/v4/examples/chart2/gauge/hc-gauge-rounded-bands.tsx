@@ -28,7 +28,7 @@ const options: Options = {
       {
         from: 0,
         to: 50,
-        color: "#a9cce3",
+        color: "#a8c4d8",
         borderWidth: 1,
         borderColor: "var(--background)",
         borderRadius: { radius: 4, scope: "individual", where: "all" },
@@ -36,7 +36,7 @@ const options: Options = {
       {
         from: 50,
         to: 75,
-        color: "#5dade2",
+        color: "#6ea1c7",
         borderWidth: 1,
         borderColor: "var(--background)",
         borderRadius: { radius: 4, scope: "individual", where: "all" },
@@ -44,7 +44,7 @@ const options: Options = {
       {
         from: 75,
         to: 100,
-        color: "#8e44ad",
+        color: "#8b9dc3",
         borderWidth: 1,
         borderColor: "var(--background)",
         borderRadius: { radius: 4, scope: "individual", where: "all" },

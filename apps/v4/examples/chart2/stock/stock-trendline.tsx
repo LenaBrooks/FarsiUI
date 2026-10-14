@@ -146,7 +146,7 @@ export default function StockTrendlineDemo({
             </p>
           </div>
           <div className="text-end">
-            <p className="whitespace-nowrap text-lg font-semibold tracking-tight">
+            <p className="fa-num whitespace-nowrap text-lg font-semibold">
               {formatMoneyOneLine(last.close)}
             </p>
             <p className="text-muted-foreground text-[11px]">

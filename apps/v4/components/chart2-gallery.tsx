@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { useRouter } from "next/navigation"
-import { LineChartIcon } from "lucide-react"
+import { useTheme } from "next-themes"
 import { cn } from "cn"
 
 import {
@@ -12,16 +12,42 @@ import {
 } from "@/lib/chart2-catalog"
 import { Chart2Shell } from "@/components/chart2-shell"
 
+/** Gallery thumbs: `public/chart2/{id}-light.webp` + `{id}-dark.webp`. */
+export function chart2ThumbSrc(id: string, theme: "light" | "dark") {
+  return `/chart2/${id}-${theme}.webp`
+}
+
+/** First viewport thumbs load eagerly; the rest stay lazy. */
+const CHART2_THUMB_EAGER_COUNT = 8
+
 function ExampleCard({
   id,
   title,
   en,
+  loading = "lazy",
 }: {
   id: string
   title: string
   en: string
+  loading?: "eager" | "lazy"
 }) {
   const router = useRouter()
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = React.useState(false)
+  const [thumbLoaded, setThumbLoaded] = React.useState(false)
+  const [thumbFailed, setThumbFailed] = React.useState(false)
+  const theme = resolvedTheme === "dark" ? "dark" : "light"
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  React.useEffect(() => {
+    setThumbLoaded(false)
+    setThumbFailed(false)
+  }, [id, theme])
+
+  const showSkeleton = !mounted || (!thumbLoaded && !thumbFailed)
 
   return (
     <button
@@ -36,13 +62,27 @@ function ExampleCard({
     >
       <div
         aria-hidden
-        className="relative flex aspect-16/10 w-full items-center justify-center bg-muted/40"
+        className="relative aspect-16/10 w-full overflow-hidden bg-muted/40"
       >
-        <LineChartIcon
-          absoluteStrokeWidth
-          strokeWidth={1.25}
-          className="pointer-events-none size-20 shrink-0 text-muted-foreground/80 transition-colors group-hover:text-muted-foreground md:size-24"
-        />
+        {showSkeleton ? (
+          <div className="absolute inset-0 animate-pulse bg-muted/50" />
+        ) : null}
+        {mounted && !thumbFailed ? (
+          <img
+            src={chart2ThumbSrc(id, theme)}
+            alt=""
+            className={cn(
+              "size-full object-cover object-center transition-[opacity,transform] duration-300 ease-out group-hover:scale-110",
+              thumbLoaded ? "opacity-100" : "opacity-0"
+            )}
+            loading={loading}
+            onLoad={() => setThumbLoaded(true)}
+            onError={() => {
+              setThumbFailed(true)
+              setThumbLoaded(false)
+            }}
+          />
+        ) : null}
       </div>
       <div className="flex min-w-0 flex-col gap-0.5 px-2.5 py-2 md:px-3 md:py-2.5">
         <span className="truncate text-[13px] font-medium text-foreground md:text-sm">
@@ -63,11 +103,24 @@ function ExampleCard({
 export function Chart2Gallery() {
   const [activeId, setActiveId] =
     React.useState<Chart2CategoryId>("line")
+  const activeIdRef = React.useRef(activeId)
+  activeIdRef.current = activeId
   const scrollRef = React.useRef<HTMLDivElement>(null)
   const sectionRefs = React.useRef<Map<Chart2CategoryId, HTMLElement>>(
     new Map()
   )
   const scrollingToRef = React.useRef<Chart2CategoryId | null>(null)
+
+  const eagerThumbIds = React.useMemo(() => {
+    const ids = new Set<string>()
+    for (const category of chart2Categories) {
+      for (const example of getChart2Examples(category.id)) {
+        if (ids.size >= CHART2_THUMB_EAGER_COUNT) return ids
+        ids.add(example.id)
+      }
+    }
+    return ids
+  }, [])
 
   const setSectionRef = React.useCallback(
     (id: Chart2CategoryId, node: HTMLElement | null) => {
@@ -139,11 +192,10 @@ export function Chart2Gallery() {
         }
       }
 
-      setActiveId((prev) => {
-        if (prev === current) return prev
-        window.history.replaceState(null, "", `#chart-type-${current}`)
-        return current
-      })
+      if (activeIdRef.current === current) return
+      activeIdRef.current = current
+      setActiveId(current)
+      window.history.replaceState(null, "", `#chart-type-${current}`)
     }
 
     scroller.addEventListener("scroll", updateActiveFromScroll, {
@@ -200,6 +252,9 @@ export function Chart2Gallery() {
                     id={example.id}
                     title={example.title}
                     en={example.en}
+                    loading={
+                      eagerThumbIds.has(example.id) ? "eager" : "lazy"
+                    }
                   />
                 ))}
               </div>

@@ -1,19 +1,14 @@
 {
   "categories": [
     {
-      "id": "line",
-      "title": "خطی",
-      "en": "LineChart"
-    },
-    {
-      "id": "area",
-      "title": "ناحیه‌ای",
-      "en": "AreaChart"
-    },
-    {
       "id": "bar",
       "title": "میله‌ای",
       "en": "BarChart"
+    },
+    {
+      "id": "line",
+      "title": "خطی",
+      "en": "LineChart"
     },
     {
       "id": "composed",
@@ -21,9 +16,19 @@
       "en": "ComposedChart"
     },
     {
-      "id": "scatter",
-      "title": "پراکندگی",
-      "en": "ScatterChart"
+      "id": "area",
+      "title": "ناحیه‌ای",
+      "en": "AreaChart"
+    },
+    {
+      "id": "stock",
+      "title": "سهام و ترید",
+      "en": "Stock & Trade"
+    },
+    {
+      "id": "heatmap",
+      "title": "نقشه‌ی حرارتی",
+      "en": "Heatmap"
     },
     {
       "id": "pie",
@@ -31,14 +36,9 @@
       "en": "PieChart"
     },
     {
-      "id": "radar",
-      "title": "راداری",
-      "en": "RadarChart"
-    },
-    {
-      "id": "radial-bar",
-      "title": "میله شعاعی",
-      "en": "RadialBarChart"
+      "id": "gauge",
+      "title": "گیج",
+      "en": "GaugeChart"
     },
     {
       "id": "treemap",
@@ -51,14 +51,19 @@
       "en": "SunburstChart"
     },
     {
-      "id": "tooltip",
-      "title": "تولتیپ",
-      "en": "Tooltip"
+      "id": "radar",
+      "title": "راداری",
+      "en": "RadarChart"
     },
     {
-      "id": "legend",
-      "title": "راهنما",
-      "en": "Legend"
+      "id": "radial-bar",
+      "title": "میله شعاعی",
+      "en": "RadialBarChart"
+    },
+    {
+      "id": "scatter",
+      "title": "پراکندگی",
+      "en": "ScatterChart"
     },
     {
       "id": "responsive",
@@ -66,19 +71,14 @@
       "en": "ResponsiveContainer"
     },
     {
-      "id": "stock",
-      "title": "سهام و ترید",
-      "en": "Stock & Trade"
+      "id": "legend",
+      "title": "راهنما",
+      "en": "Legend"
     },
     {
-      "id": "gauge",
-      "title": "گیج",
-      "en": "GaugeChart"
-    },
-    {
-      "id": "heatmap",
-      "title": "نقشه‌ی حرارتی",
-      "en": "Heatmap"
+      "id": "tooltip",
+      "title": "تولتیپ",
+      "en": "Tooltip"
     }
   ],
   "examples": [
@@ -758,6 +758,12 @@
       "id": "realtime-mountain-chart",
       "title": "نمودار ناحیه‌ای زنده",
       "en": "Live Area Chart",
+      "category": "stock"
+    },
+    {
+      "id": "realtime-candlestick",
+      "title": "کندل زنده",
+      "en": "Live Candlestick",
       "category": "stock"
     },
     {

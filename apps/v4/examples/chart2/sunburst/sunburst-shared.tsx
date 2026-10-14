@@ -5,24 +5,16 @@ import type { SunburstData } from "recharts"
 
 import {
   CHART2_BAR_COLORS,
+  CHART2_LABEL_INK,
+  chart2Shade,
   formatPersianNumber,
 } from "@/lib/chart2-fa"
 import { cn } from "cn"
 
 export { CHART2_BAR_COLORS }
 
-export function shade(hex: string, amount: number) {
-  const raw = hex.replace("#", "")
-  const n = Number.parseInt(
-    raw.length === 3 ? raw.replace(/(.)/g, "$1$1") : raw,
-    16
-  )
-  const clamp = (v: number) => Math.min(255, Math.max(0, v))
-  const r = clamp(((n >> 16) & 0xff) + amount)
-  const g = clamp(((n >> 8) & 0xff) + amount)
-  const b = clamp((n & 0xff) + amount)
-  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, "0")}`
-}
+/** @deprecated use chart2Shade from @/lib/chart2-fa */
+export const shade = chart2Shade
 
 /** Solid branch colors — children get lighter shades of the parent. */
 export function colorizeTree(
@@ -36,10 +28,10 @@ export function colorizeTree(
       fill: base,
       children: node.children?.map((child, j) => ({
         ...child,
-        fill: shade(base, 18 + j * 12),
+        fill: chart2Shade(base, 18 + j * 12),
         children: child.children?.map((grand, k) => ({
           ...grand,
-          fill: shade(base, 36 + k * 12),
+          fill: chart2Shade(base, 36 + k * 12),
         })),
       })),
     }
@@ -67,7 +59,7 @@ export const sunburstTextOptions = {
   fontWeight: 600,
   fontSize: "10px",
   stroke: "none",
-  fill: "#1f2937",
+  fill: CHART2_LABEL_INK,
   pointerEvents: "none" as const,
   letterSpacing: "0",
 }

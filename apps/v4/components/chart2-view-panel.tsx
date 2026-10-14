@@ -1,9 +1,9 @@
 "use client"
 
 import type { Chart2Example } from "@/lib/chart2-catalog"
-import { Chart2Shell } from "@/components/chart2-shell"
 import { Chart2View } from "@/components/chart2-view"
 
+/** Detail page body only — shell lives in `app/(app)/chart2/view/layout.tsx`. */
 export function Chart2ViewPanel({
   example,
   sourceFigure,
@@ -14,16 +14,11 @@ export function Chart2ViewPanel({
   usageFigures: React.ReactNode
 }) {
   return (
-    <Chart2Shell
-      activeCategoryId={example.category}
-      activeExampleId={example.id}
-    >
-      <Chart2View
-        example={example}
-        sourceFigure={sourceFigure}
-        usageFigures={usageFigures}
-        embedded
-      />
-    </Chart2Shell>
+    <Chart2View
+      example={example}
+      sourceFigure={sourceFigure}
+      usageFigures={usageFigures}
+      embedded
+    />
   )
 }

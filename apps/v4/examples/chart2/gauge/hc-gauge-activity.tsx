@@ -46,8 +46,8 @@ const options: Options = {
           color: {
             linearGradient: { x1: 0, y1: 0, x2: 1, y2: 0 },
             stops: [
-              [0, "#e91e8c"],
-              [1, "#ff6b6b"],
+              [0, "#c86b8f"],
+              [1, "#d97986"],
             ],
           },
           y: 79,
@@ -68,7 +68,7 @@ export default function HcGaugeActivityDemo() {
   return (
     <Chart2HighchartsGauge
       options={options}
-      caption="حلقهٔ فعالیت — گرادیان صورتی به قرمز (#e91e8c → #ff6b6b)"
+      caption="حلقهٔ فعالیت — گرادیان صورتی به رز نرم"
     />
   )
 }

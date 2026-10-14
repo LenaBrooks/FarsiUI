@@ -2,7 +2,7 @@
 
 /**
  * Highcharts Gauge Inspiration #11 — Threshold solidgauge
- * Stops: #DF5353 / #55BF3B around 0
+ * Soft threshold stops around 0
  */
 
 import type { Options } from "highcharts"
@@ -39,8 +39,8 @@ const options: Options = {
     max: 4,
     tickAmount: 2,
     stops: [
-      [0.4999, "#DF5353"],
-      [0.5, "#55BF3B"],
+      [0.4999, "#d96b5c"],
+      [0.5, "#6cb87a"],
     ],
     title: { text: undefined },
     plotLines: [

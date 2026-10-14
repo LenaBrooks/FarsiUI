@@ -102,7 +102,7 @@ export default function ScatterChartWithCellsDemo() {
               formatter={(value, name) => (
                 <div className="flex items-center justify-between gap-3 leading-none">
                   <span className="text-muted-foreground">{String(name)}</span>
-                  <span className="font-medium text-foreground tabular-nums">
+                  <span className="fa-num font-medium text-foreground">
                     {formatChart2Number(Number(value))}
                   </span>
                 </div>

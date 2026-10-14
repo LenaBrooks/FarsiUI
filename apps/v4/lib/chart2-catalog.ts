@@ -116,7 +116,6 @@ const CHART2_FEATURED_IDS = new Set([
   // pie
   "two-level-pie-chart",
   "custom-active-shape-pie-chart",
-  "pie-chart-with-needle",
   "pie-with-gradient",
   "pie-chart-with-padding-angle",
   // radar / radial
@@ -162,6 +161,7 @@ const CHART2_FEATURED_IDS = new Set([
   "gauge-custom-arcs",
   "gauge-custom-colors",
   "gauge-levels",
+  "pie-chart-with-needle",
   "hc-gauge-default",
   "hc-gauge-rounded-ends",
   "hc-gauge-semicircle",

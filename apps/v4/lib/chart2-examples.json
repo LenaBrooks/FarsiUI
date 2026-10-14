@@ -582,9 +582,9 @@
     },
     {
       "id": "pie-chart-with-needle",
-      "title": "دایره‌ای با عقربه",
-      "en": "Pie Chart With Needle",
-      "category": "pie"
+      "title": "گیج Recharts با عقربه",
+      "en": "Recharts Gauge Needle",
+      "category": "gauge"
     },
     {
       "id": "pie-chart-in-grid",

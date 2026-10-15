@@ -10,6 +10,7 @@ import {
   normalizeIranPhone,
 } from "@/registry/bases/base/lib/iran"
 import { toPersianDigits } from "@/registry/bases/base/lib/digits"
+import { useFormattedDigitsCaret } from "@/registry/bases/base/hooks/use-formatted-digits-caret"
 import { Input } from "@/registry/bases/base/ui/input"
 
 export type PhoneInputProps = Omit<
@@ -39,6 +40,10 @@ function PhoneInput({
   const complete = digits.length === 11
   const valid = isIranMobile(digits)
   const invalid = complete && !valid
+  const formatted = formatIranPhone(digits)
+  const displayFormatted = toPersianDigits(formatted)
+  const { inputRef, onChangeCaptureCaret } =
+    useFormattedDigitsCaret(displayFormatted)
 
   function set(next: string) {
     const d = normalizeIranPhone(next)
@@ -50,6 +55,8 @@ function PhoneInput({
     <div className={cn("relative w-full", className)} dir="ltr">
       <PhoneIcon className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
       <Input
+        {...props}
+        ref={inputRef}
         id={id}
         type="tel"
         inputMode="numeric"
@@ -58,12 +65,18 @@ function PhoneInput({
         lang="fa"
         persianDigits
         disabled={disabled}
-        value={formatIranPhone(digits)}
-        onChange={(e) => set(e.target.value)}
+        value={formatted}
+        onChange={(e) => {
+          onChangeCaptureCaret(e)
+          set(e.target.value)
+        }}
         placeholder={toPersianDigits("0912 345 6789")}
         aria-invalid={invalid || undefined}
-        className={cn("ps-9 pe-9 text-start tabular-nums", invalid && "border-destructive")}
-        {...props}
+        className={cn(
+          "ps-9 pe-9 text-start tabular-nums",
+          invalid && "border-destructive",
+          props.className
+        )}
       />
       {valid ? (
         <CheckIcon className="pointer-events-none absolute end-3 top-1/2 size-4 -translate-y-1/2 text-emerald-600 dark:text-emerald-400" />

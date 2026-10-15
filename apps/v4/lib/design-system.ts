@@ -26,6 +26,9 @@ export const DESIGN_SYSTEM_IDS = [
 
 export type DesignSystemCookieId = (typeof DESIGN_SYSTEM_IDS)[number]
 
+/** First visit / missing cookie — آرام (vega). */
+export const DEFAULT_DESIGN_SYSTEM_ID: DesignSystemCookieId = "comfort"
+
 export const DESIGN_SYSTEM_STYLE_CLASS: Record<DesignSystemCookieId, string> = {
   default: "style-nova",
   comfort: "style-vega",
@@ -38,11 +41,11 @@ export const DESIGN_SYSTEM_STYLE_CLASS: Record<DesignSystemCookieId, string> = {
 export function normalizeDesignSystemId(
   value: string | null | undefined
 ): DesignSystemCookieId {
-  if (!value) return "default"
+  if (!value) return DEFAULT_DESIGN_SYSTEM_ID
   const id = value === "aether" ? "glass" : value
   return (DESIGN_SYSTEM_IDS as readonly string[]).includes(id)
     ? (id as DesignSystemCookieId)
-    : "default"
+    : DEFAULT_DESIGN_SYSTEM_ID
 }
 
 /** Persist choice for SSR (cookie) + client restore (localStorage). */
@@ -66,11 +69,12 @@ export const DESIGN_SYSTEM_BOOTSTRAP_SCRIPT = `
   try {
     var key = '${DESIGN_SYSTEM_STORAGE_KEY}';
     var cookieName = '${DESIGN_SYSTEM_COOKIE}';
+    var fallback = '${DEFAULT_DESIGN_SYSTEM_ID}';
     var fromCookie = (document.cookie.match(new RegExp('(?:^|; )' + cookieName + '=([^;]*)')) || [])[1];
-    var ds = localStorage.getItem(key) || (fromCookie ? decodeURIComponent(fromCookie) : '') || 'default';
+    var ds = localStorage.getItem(key) || (fromCookie ? decodeURIComponent(fromCookie) : '') || fallback;
     if (ds === 'aether') { ds = 'glass'; localStorage.setItem(key, ds); }
     var map = { default: 'style-nova', comfort: 'style-vega', glass: 'style-glass', rose: 'style-rose', nili: 'style-nili', khesht: 'style-khesht' };
-    if (!map[ds]) ds = 'default';
+    if (!map[ds]) ds = fallback;
     document.cookie = cookieName + '=' + ds + ';path=/;max-age=31536000;samesite=lax';
     try { localStorage.setItem(key, ds); } catch (_) {}
     var styleClass = map[ds];

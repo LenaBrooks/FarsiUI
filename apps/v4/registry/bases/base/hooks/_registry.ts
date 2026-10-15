@@ -32,4 +32,14 @@ export const hooks: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "use-formatted-digits-caret",
+    type: "registry:hook",
+    files: [
+      {
+        path: "hooks/use-formatted-digits-caret.ts",
+        type: "registry:hook",
+      },
+    ],
+  },
 ]

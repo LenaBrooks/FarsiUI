@@ -1330,12 +1330,1696 @@ export const Components: Record<string, any> = {
       ) || "chart-tooltip-advanced"
     return { default: mod.default || mod[exportName] }
   }),
+  "simple-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/simple-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "simple-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "dashed-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/dashed-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "dashed-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "vertical-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/vertical-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "vertical-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "biaxial-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/biaxial-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "biaxial-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-connect-nulls": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-connect-nulls"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-connect-nulls"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-with-x-axis-padding": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-with-x-axis-padding"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-with-x-axis-padding"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-with-reference-lines": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-with-reference-lines"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-with-reference-lines"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "customized-dot-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/customized-dot-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "customized-dot-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "customized-label-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/customized-label-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "customized-label-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "synchronized-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/synchronized-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "synchronized-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "synchronized-different-data": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/synchronized-different-data"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "synchronized-different-data"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-custom-shape": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-custom-shape"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-custom-shape"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "highlight-and-zoom-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/highlight-and-zoom-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "highlight-and-zoom-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-has-multi-series": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-has-multi-series"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-has-multi-series"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-axis-interval": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-axis-interval"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-axis-interval"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-chart-negative-values-with-reference-lines": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-chart-negative-values-with-reference-lines"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-chart-negative-values-with-reference-lines"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "compare-two-lines": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/compare-two-lines"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "compare-two-lines"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "dynamic-z-index-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/dynamic-z-index-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "dynamic-z-index-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "tiny-line-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/tiny-line-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "tiny-line-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "animated-time-series": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/animated-time-series"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "animated-time-series"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-interactive": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-interactive"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-interactive"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-step": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/line/line-step"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-step"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stacked-area-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/stacked-area-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stacked-area-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-chart-range": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-chart-range"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-chart-range"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-chart-connect-nulls": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-chart-connect-nulls"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-chart-connect-nulls"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "cardinal-area-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/cardinal-area-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "cardinal-area-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "percent-area-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/percent-area-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "percent-area-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "synchronized-area-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/synchronized-area-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "synchronized-area-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "tiny-area-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/tiny-area-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "tiny-area-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-chart-fill-by-value": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-chart-fill-by-value"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-chart-fill-by-value"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-chart-custom-animation": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-chart-custom-animation"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-chart-custom-animation"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "range-area-chart-custom-animation": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/range-area-chart-custom-animation"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "range-area-chart-custom-animation"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-chart-with-custom-events": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-chart-with-custom-events"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-chart-with-custom-events"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "prevent-right-click": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/prevent-right-click"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "prevent-right-click"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-interactive": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-interactive"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-interactive"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-step": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-step"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-step"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-gradient": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/area-gradient"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-gradient"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "market-cards": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/area/market-cards"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "market-cards"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "simple-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/simple-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "simple-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stacked-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/stacked-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stacked-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "population-pyramid": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/population-pyramid"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "population-pyramid"
+    return { default: mod.default || mod[exportName] }
+  }),
+  timeline: React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/timeline"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "timeline"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "box-plot": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/box-plot"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "box-plot"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "animated-bar-width": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/animated-bar-width"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "animated-bar-width"
+    return { default: mod.default || mod[exportName] }
+  }),
+  waterfall: React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/waterfall"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "waterfall"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "animated-bar-time-series": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/animated-bar-time-series"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "animated-bar-time-series"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "mix-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/mix-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "mix-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "custom-shape-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/custom-shape-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "custom-shape-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "positive-and-negative-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/positive-and-negative-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "positive-and-negative-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "brush-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/brush-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "brush-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-chart-with-customized-event": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-with-customized-event"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-chart-with-customized-event"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "biaxial-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/biaxial-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "biaxial-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-chart-has-background": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-has-background"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-chart-has-background"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-chart-with-label-background": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-with-label-background"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-chart-with-label-background"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "ranged-stacked-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/ranged-stacked-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "ranged-stacked-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-chart-range": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-range"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-chart-range"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "tiny-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/tiny-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "tiny-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stacked-bar-chart-with-horizontal-line": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/stacked-bar-chart-with-horizontal-line"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stacked-bar-chart-with-horizontal-line"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-interactive": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-interactive"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-interactive"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-horizontal": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-horizontal"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-horizontal"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bar-active": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/bar/bar-active"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bar-active"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "asset-returns": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/asset-returns"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "asset-returns"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "monthly-savings": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/monthly-savings"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "monthly-savings"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "line-bar-area-composed-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/line-bar-area-composed-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "line-bar-area-composed-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "same-data-composed-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/same-data-composed-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "same-data-composed-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "vertical-composed-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/vertical-composed-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "vertical-composed-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "composed-chart-with-axis-labels": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/composed-chart-with-axis-labels"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "composed-chart-with-axis-labels"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "scatter-and-line-of-best-fit": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/scatter-and-line-of-best-fit"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "scatter-and-line-of-best-fit"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "banded-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/banded-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "banded-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "target-price-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/composed/target-price-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "target-price-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "simple-scatter-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/simple-scatter-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "simple-scatter-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "joint-line-scatter-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/joint-line-scatter-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "joint-line-scatter-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bubble-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/bubble-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bubble-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "custom-animation": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/custom-animation"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "custom-animation"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "scatter-chart-with-labels": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-labels"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "scatter-chart-with-labels"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "multiple-y-axes-scatter-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/multiple-y-axes-scatter-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "multiple-y-axes-scatter-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "scatter-chart-with-cells": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-cells"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "scatter-chart-with-cells"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "scatter-chart-performance": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-performance"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "scatter-chart-performance"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "two-level-pie-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/two-level-pie-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "two-level-pie-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "straight-angle-pie-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/straight-angle-pie-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "straight-angle-pie-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "custom-active-shape-pie-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/custom-active-shape-pie-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "custom-active-shape-pie-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-chart-with-customized-label": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-chart-with-customized-label"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-chart-with-customized-label"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-chart-with-padding-angle": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-chart-with-padding-angle"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-chart-with-padding-angle"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-chart-in-grid": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-chart-in-grid"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-chart-in-grid"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-with-gradient": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-with-gradient"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-with-gradient"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-donut-text": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-donut-text"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-donut-text"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-interactive": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-interactive"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-interactive"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-stacked": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/pie/pie-stacked"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-stacked"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "simple-radar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radar/simple-radar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "simple-radar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "specified-domain-radar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radar/specified-domain-radar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "specified-domain-radar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "range-radar-chart-custom-animation": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radar/range-radar-chart-custom-animation"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "range-radar-chart-custom-animation"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radar-lines-only": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radar/radar-lines-only"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radar-lines-only"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radar-icons": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radar/radar-icons"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radar-icons"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radar-multiple": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radar/radar-multiple"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radar-multiple"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "simple-radial-bar-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radial-bar/simple-radial-bar-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "simple-radial-bar-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radial-bar-chart-click-to-focus-legend": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radial-bar-chart-click-to-focus-legend"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radial-text": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-text"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radial-text"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radial-shape": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-shape"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radial-shape"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "radial-stacked": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-stacked"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "radial-stacked"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bundle-size-treemap": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/treemap/bundle-size-treemap"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bundle-size-treemap"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "simple-treemap": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/treemap/simple-treemap"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "simple-treemap"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "custom-content-treemap": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/treemap/custom-content-treemap"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "custom-content-treemap"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "nested-treemap": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/treemap/nested-treemap"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "nested-treemap"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "treemap-with-padding-and-gaps": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/treemap/treemap-with-padding-and-gaps"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "treemap-with-padding-and-gaps"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bundle-size-sunburst": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/sunburst/bundle-size-sunburst"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bundle-size-sunburst"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "sunburst-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/sunburst/sunburst-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "sunburst-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "sunburst-chart-theme-colors": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/sunburst/sunburst-chart-theme-colors"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "sunburst-chart-theme-colors"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "custom-content-of-tooltip": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/tooltip/custom-content-of-tooltip"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "custom-content-of-tooltip"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "tooltip-styles": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/tooltip/tooltip-styles"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "tooltip-styles"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "tooltip-advanced": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/tooltip/tooltip-advanced"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "tooltip-advanced"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "legend-effect-opacity": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/legend/legend-effect-opacity"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "legend-effect-opacity"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "legend-position": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/legend/legend-position"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "legend-position"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "legend-styles": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/legend/legend-styles"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "legend-styles"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "area-responsive-container": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/responsive/area-responsive-container"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "area-responsive-container"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "composed-responsive-container": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/responsive/composed-responsive-container"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "composed-responsive-container"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "pie-responsive-container": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/responsive/pie-responsive-container"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "pie-responsive-container"
+    return { default: mod.default || mod[exportName] }
+  }),
+  candlestick: React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/candlestick"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "candlestick"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "candlestick-dashboard": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/candlestick-dashboard"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "candlestick-dashboard"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "candlestick-bar": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/candlestick-bar"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "candlestick-bar"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "candlestick-category": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/candlestick-category"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "candlestick-category"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "candlestick-line": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/candlestick-line"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "candlestick-line"
+    return { default: mod.default || mod[exportName] }
+  }),
+  sparklines: React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/sparklines"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "sparklines"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stock-ohlc": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/stock-ohlc"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stock-ohlc"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stock-line": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/stock-line"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stock-line"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stock-column": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/stock-column"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stock-column"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stock-with-volume": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/stock-with-volume"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stock-with-volume"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stock-multi-series": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/stock-multi-series"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stock-multi-series"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "stock-trendline": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/stock-trendline"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "stock-trendline"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "tremor-area-charts": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/tremor-area-charts"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "tremor-area-charts"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "realtime-mountain-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/realtime-mountain-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "realtime-mountain-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "realtime-candlestick": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/realtime-candlestick"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "realtime-candlestick"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "heikin-ashi": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/heikin-ashi"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "heikin-ashi"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "renko-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/renko-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "renko-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "volume-profile": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/volume-profile"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "volume-profile"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "order-book-depth": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/order-book-depth"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "order-book-depth"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "drawdown-chart": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/drawdown-chart"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "drawdown-chart"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "bollinger-bands": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/bollinger-bands"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "bollinger-bands"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "candlestick-indicators": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/candlestick-indicators"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "candlestick-indicators"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "multi-timeframe": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/stock/multi-timeframe"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "multi-timeframe"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "gauge-default": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/gauge-default"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "gauge-default"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "gauge-levels": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/gauge-levels"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "gauge-levels"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "gauge-custom-colors": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/gauge-custom-colors"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "gauge-custom-colors"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "gauge-corner-radius": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/gauge-corner-radius"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "gauge-corner-radius"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "gauge-custom-arcs": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/gauge-custom-arcs"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "gauge-custom-arcs"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "gauge-no-animation": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/gauge-no-animation"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "gauge-no-animation"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-default": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-default"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-default"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-rounded-ends": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-ends"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-rounded-ends"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-thin-ring": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-thin-ring"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-thin-ring"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-semicircle": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-semicircle"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-semicircle"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-custom-pivot": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-pivot"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-custom-pivot"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-combo": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-combo"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-combo"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-fuel": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-fuel"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-fuel"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-activity": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-activity"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-activity"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-kpi": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-kpi"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-kpi"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-rounded-bands": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-bands"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-rounded-bands"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-threshold": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-threshold"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-threshold"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "hc-gauge-custom-dial": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-dial"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "hc-gauge-custom-dial"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "heatmap-calendar": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "heatmap-calendar"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "heatmap-calendar-emerald": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar-emerald"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "heatmap-calendar-emerald"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "heatmap-matrix": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "heatmap-matrix"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "heatmap-matrix-values": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix-values"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "heatmap-matrix-values"
+    return { default: mod.default || mod[exportName] }
+  }),
   utils: React.lazy(async () => {
     const mod = await import("@/registry/new-york-v4/lib/utils")
     const exportName =
       Object.keys(mod).find(
         (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
       ) || "utils"
+    return { default: mod.default || mod[exportName] }
+  }),
+  digits: React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/digits")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "digits"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "chart-locale": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/chart-locale")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "chart-locale"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "chart-mock-data": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/chart-mock-data")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "chart-mock-data"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "chart-fa": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/chart-fa")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "chart-fa"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "chart-toman-tick": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/chart-toman-tick")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "chart-toman-tick"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "chart-jalali-tick": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/chart-jalali-tick")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "chart-jalali-tick"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "chart-live": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/chart-live")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "chart-live"
+    return { default: mod.default || mod[exportName] }
+  }),
+  "use-market-neon": React.lazy(async () => {
+    const mod = await import("@/registry/new-york-v4/lib/use-market-neon")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "use-market-neon"
     return { default: mod.default || mod[exportName] }
   }),
   "use-media-query": React.lazy(async () => {

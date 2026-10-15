@@ -304,6 +304,18 @@
   ::selection {
     @apply bg-selection text-selection-foreground;
   }
+
+  /*
+   * Code boxes are always charcoal. Page selection (black in light / pale in dark)
+   * is nearly invisible there and forces selection-foreground over Shiki colors.
+   * Use a clear blue highlight and keep token colors as-is.
+   */
+  [data-rehype-pretty-code-figure] ::selection,
+  [data-rehype-pretty-code-figure] *::selection {
+    background-color: color-mix(in oklab, oklch(0.62 0.19 255) 55%, transparent);
+    color: inherit;
+  }
+
   body {
     position: relative;
     font-synthesis-weight: none;

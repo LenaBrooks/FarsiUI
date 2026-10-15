@@ -5668,4 +5668,14 @@ export const Components: Record<string, any> = {
       ) || "use-persian-digits-input"
     return { default: mod.default || mod[exportName] }
   }),
+  "use-formatted-digits-caret": React.lazy(async () => {
+    const mod = await import(
+      "@/registry/bases/base/hooks/use-formatted-digits-caret"
+    )
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "use-formatted-digits-caret"
+    return { default: mod.default || mod[exportName] }
+  }),
 }

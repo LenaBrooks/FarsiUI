@@ -13,6 +13,7 @@ import {
 import { useTheme } from "next-themes"
 
 import {
+  DEFAULT_DESIGN_SYSTEM_ID,
   DESIGN_SYSTEM_STORAGE_KEY,
   DESIGN_SYSTEM_STYLE_CLASS,
   isDarkDefaultDesignSystem,
@@ -95,7 +96,7 @@ export const OWNED_ACCENT_SYSTEMS = new Set<DesignSystemId>([
   "khesht",
 ])
 
-const DEFAULT_DESIGN_SYSTEM: DesignSystemId = "default"
+const DEFAULT_DESIGN_SYSTEM: DesignSystemId = DEFAULT_DESIGN_SYSTEM_ID
 
 type DesignSystemPreviewContextType = {
   designSystemId: DesignSystemId
@@ -114,6 +115,9 @@ const DesignSystemPreviewContext = createContext<
 function resolvePreset(id: string) {
   return (
     DESIGN_SYSTEM_PRESETS.find((preset) => preset.id === id) ??
+    DESIGN_SYSTEM_PRESETS.find(
+      (preset) => preset.id === DEFAULT_DESIGN_SYSTEM
+    ) ??
     DESIGN_SYSTEM_PRESETS[0]
   )
 }

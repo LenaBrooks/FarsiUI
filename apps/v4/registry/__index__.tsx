@@ -1777,7 +1777,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-axes.tsx",
@@ -1793,7 +1793,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-default.tsx",
@@ -1809,7 +1809,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-gradient.tsx",
@@ -1825,7 +1825,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-icons.tsx",
@@ -1841,7 +1841,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "select"],
+      registryDependencies: ["card", "chart", "select", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-interactive.tsx",
@@ -1857,7 +1857,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-legend.tsx",
@@ -1873,7 +1873,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-linear.tsx",
@@ -1889,7 +1889,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-stacked-expand.tsx",
@@ -1905,7 +1905,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-stacked.tsx",
@@ -1921,7 +1921,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-area-step.tsx",
@@ -1937,7 +1937,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-active.tsx",
@@ -1953,7 +1953,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: [
+        "card",
+        "chart",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-default.tsx",
@@ -1969,7 +1974,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-horizontal.tsx",
@@ -1985,7 +1990,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-interactive.tsx",
@@ -2001,7 +2006,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-label-custom.tsx",
@@ -2017,7 +2022,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-label.tsx",
@@ -2033,7 +2038,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-mixed.tsx",
@@ -2049,7 +2054,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-multiple.tsx",
@@ -2065,7 +2070,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-negative.tsx",
@@ -2081,7 +2086,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-bar-stacked.tsx",
@@ -2097,7 +2102,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: [
+        "card",
+        "chart",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-default.tsx",
@@ -2113,7 +2123,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-dots-colors.tsx",
@@ -2129,7 +2139,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-dots-custom.tsx",
@@ -2145,7 +2155,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-dots.tsx",
@@ -2161,7 +2171,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-interactive.tsx",
@@ -2177,7 +2187,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-label-custom.tsx",
@@ -2193,7 +2203,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-label.tsx",
@@ -2209,7 +2219,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-linear.tsx",
@@ -2225,7 +2235,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-multiple.tsx",
@@ -2241,7 +2251,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-line-step.tsx",
@@ -2257,7 +2267,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-donut-active.tsx",
@@ -2273,7 +2283,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-donut-text.tsx",
@@ -2289,7 +2299,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-donut.tsx",
@@ -2305,7 +2315,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-interactive.tsx",
@@ -2321,7 +2331,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-label-custom.tsx",
@@ -2337,7 +2347,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-label-list.tsx",
@@ -2353,7 +2363,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-label.tsx",
@@ -2369,7 +2379,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-legend.tsx",
@@ -2385,7 +2395,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-separator-none.tsx",
@@ -2401,7 +2411,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-simple.tsx",
@@ -2417,7 +2427,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-pie-stacked.tsx",
@@ -2433,7 +2443,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-default.tsx",
@@ -2449,7 +2459,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-dots.tsx",
@@ -2465,7 +2475,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-grid-circle-fill.tsx",
@@ -2481,7 +2491,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-grid-circle-no-lines.tsx",
@@ -2497,7 +2507,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-grid-circle.tsx",
@@ -2513,7 +2523,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-grid-custom.tsx",
@@ -2529,7 +2539,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-grid-fill.tsx",
@@ -2545,7 +2555,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-grid-none.tsx",
@@ -2561,7 +2571,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-icons.tsx",
@@ -2577,7 +2587,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-label-custom.tsx",
@@ -2593,7 +2603,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-legend.tsx",
@@ -2609,7 +2619,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-lines-only.tsx",
@@ -2625,7 +2635,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-multiple.tsx",
@@ -2641,7 +2651,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radar-radius.tsx",
@@ -2657,7 +2667,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radial-grid.tsx",
@@ -2673,7 +2683,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radial-label.tsx",
@@ -2689,7 +2699,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radial-shape.tsx",
@@ -2705,7 +2715,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radial-simple.tsx",
@@ -2721,7 +2731,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radial-stacked.tsx",
@@ -2737,7 +2747,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-radial-text.tsx",
@@ -2753,7 +2763,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-default.tsx",
@@ -2769,7 +2779,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-indicator-line.tsx",
@@ -2785,7 +2795,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-indicator-none.tsx",
@@ -2801,7 +2811,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-label-none.tsx",
@@ -2817,7 +2827,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-label-custom.tsx",
@@ -2833,7 +2843,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-label-formatter.tsx",
@@ -2849,7 +2859,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-formatter.tsx",
@@ -2865,7 +2875,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-icons.tsx",
@@ -2881,7 +2891,7 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart"],
+      registryDependencies: ["card", "chart", "chart-locale"],
       files: [
         {
           path: "registry/new-york-v4/charts/chart-tooltip-advanced.tsx",
@@ -2890,6 +2900,3484 @@ export const Index: Record<string, Record<string, any>> = {
         },
       ],
       categories: ["charts", "charts-tooltip"],
+      meta: undefined,
+    },
+    "simple-line-chart": {
+      name: "simple-line-chart",
+      title: "undefined",
+      description: "نمودار خطی ساده",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/simple-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "dashed-line-chart": {
+      name: "dashed-line-chart",
+      title: "undefined",
+      description: "نمودار خطی خط‌چین",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/dashed-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "vertical-line-chart": {
+      name: "vertical-line-chart",
+      title: "undefined",
+      description: "نمودار خطی عمودی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/vertical-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "biaxial-line-chart": {
+      name: "biaxial-line-chart",
+      title: "undefined",
+      description: "نمودار خطی دو‌محوره",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/biaxial-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-connect-nulls": {
+      name: "line-chart-connect-nulls",
+      title: "undefined",
+      description: "اتصال مقادیر تهی در خطی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-connect-nulls.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-with-x-axis-padding": {
+      name: "line-chart-with-x-axis-padding",
+      title: "undefined",
+      description: "خطی با فاصلهٔ محور X",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-with-x-axis-padding.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-with-reference-lines": {
+      name: "line-chart-with-reference-lines",
+      title: "undefined",
+      description: "خطی با خطوط مرجع",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-with-reference-lines.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "customized-dot-line-chart": {
+      name: "customized-dot-line-chart",
+      title: "undefined",
+      description: "خطی با نقطهٔ سفارشی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/customized-dot-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "customized-label-line-chart": {
+      name: "customized-label-line-chart",
+      title: "undefined",
+      description: "خطی با برچسب سفارشی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/customized-label-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "synchronized-line-chart": {
+      name: "synchronized-line-chart",
+      title: "undefined",
+      description: "نمودارهای خطی همگام",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/synchronized-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "synchronized-different-data": {
+      name: "synchronized-different-data",
+      title: "undefined",
+      description: "همگام با داده‌های متفاوت",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/synchronized-different-data.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-custom-shape": {
+      name: "line-chart-custom-shape",
+      title: "undefined",
+      description: "خط با انیمیشن شفافیت",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-custom-shape.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "highlight-and-zoom-line-chart": {
+      name: "highlight-and-zoom-line-chart",
+      title: "undefined",
+      description: "هایلایت و زوم خطی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/highlight-and-zoom-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-has-multi-series": {
+      name: "line-chart-has-multi-series",
+      title: "undefined",
+      description: "چند سری خطی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-has-multi-series.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-axis-interval": {
+      name: "line-chart-axis-interval",
+      title: "undefined",
+      description: "فاصلهٔ تیک محور خطی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-axis-interval.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-chart-negative-values-with-reference-lines": {
+      name: "line-chart-negative-values-with-reference-lines",
+      title: "undefined",
+      description: "مقادیر منفی با خطوط مرجع",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-chart-negative-values-with-reference-lines.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "compare-two-lines": {
+      name: "compare-two-lines",
+      title: "undefined",
+      description: "مقایسهٔ دو خط",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/compare-two-lines.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "dynamic-z-index-line-chart": {
+      name: "dynamic-z-index-line-chart",
+      title: "undefined",
+      description: "خطی با z-index پویا",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/dynamic-z-index-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "tiny-line-chart": {
+      name: "tiny-line-chart",
+      title: "undefined",
+      description: "نمودار خطی فشرده",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/tiny-line-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "animated-time-series": {
+      name: "animated-time-series",
+      title: "undefined",
+      description: "سری زمانی متحرک",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/animated-time-series.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-interactive": {
+      name: "line-interactive",
+      title: "undefined",
+      description: "خطی تعاملی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-interactive.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "line-step": {
+      name: "line-step",
+      title: "undefined",
+      description: "خطی پله‌ای",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-step.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-line"],
+      meta: undefined,
+    },
+    "area-chart": {
+      name: "area-chart",
+      title: "undefined",
+      description: "نمودار ناحیه‌ای ساده",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "stacked-area-chart": {
+      name: "stacked-area-chart",
+      title: "undefined",
+      description: "ناحیه‌ای انباشته",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/stacked-area-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-chart-range": {
+      name: "area-chart-range",
+      title: "undefined",
+      description: "ناحیه‌ای بازه‌ای",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-chart-range.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-chart-connect-nulls": {
+      name: "area-chart-connect-nulls",
+      title: "undefined",
+      description: "اتصال تهی در ناحیه‌ای",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-chart-connect-nulls.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "cardinal-area-chart": {
+      name: "cardinal-area-chart",
+      title: "undefined",
+      description: "ناحیه‌ای Cardinal",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/cardinal-area-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "percent-area-chart": {
+      name: "percent-area-chart",
+      title: "undefined",
+      description: "ناحیه‌ای درصدی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/percent-area-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "synchronized-area-chart": {
+      name: "synchronized-area-chart",
+      title: "undefined",
+      description: "ناحیه‌ای همگام",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/synchronized-area-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "tiny-area-chart": {
+      name: "tiny-area-chart",
+      title: "undefined",
+      description: "ناحیه‌ای فشرده",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/tiny-area-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-chart-fill-by-value": {
+      name: "area-chart-fill-by-value",
+      title: "undefined",
+      description: "پر شدن بر اساس مقدار",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-chart-fill-by-value.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-chart-custom-animation": {
+      name: "area-chart-custom-animation",
+      title: "undefined",
+      description: "انیمیشن سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-chart-custom-animation.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "range-area-chart-custom-animation": {
+      name: "range-area-chart-custom-animation",
+      title: "undefined",
+      description: "انیمیشن ناحیه‌ای بازه‌ای",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/range-area-chart-custom-animation.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-chart-with-custom-events": {
+      name: "area-chart-with-custom-events",
+      title: "undefined",
+      description: "ناحیه‌ای با رویداد سفارشی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-chart-with-custom-events.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "prevent-right-click": {
+      name: "prevent-right-click",
+      title: "undefined",
+      description: "جلوگیری از منوی راست‌کلیک",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/prevent-right-click.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-interactive": {
+      name: "area-interactive",
+      title: "undefined",
+      description: "ناحیه‌ای تعاملی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "select",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-interactive.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-step": {
+      name: "area-step",
+      title: "undefined",
+      description: "ناحیه‌ای پله‌ای",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-step.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "area-gradient": {
+      name: "area-gradient",
+      title: "undefined",
+      description: "ناحیه‌ای با گرادیان",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/area-gradient.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "market-cards": {
+      name: "market-cards",
+      title: "undefined",
+      description: "کارت‌های بازار",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "digits", "use-market-neon", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/area/market-cards.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/area/market-cards-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-area"],
+      meta: undefined,
+    },
+    "simple-bar-chart": {
+      name: "simple-bar-chart",
+      title: "undefined",
+      description: "نمودار میله‌ای ساده",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/simple-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "stacked-bar-chart": {
+      name: "stacked-bar-chart",
+      title: "undefined",
+      description: "میله‌ای انباشته",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/stacked-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "population-pyramid": {
+      name: "population-pyramid",
+      title: "undefined",
+      description: "هرم جمعیتی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/population-pyramid.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    timeline: {
+      name: "timeline",
+      title: "undefined",
+      description: "خط زمانی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/timeline.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "box-plot": {
+      name: "box-plot",
+      title: "undefined",
+      description: "نمودار جعبه‌ای",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/box-plot.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "animated-bar-width": {
+      name: "animated-bar-width",
+      title: "undefined",
+      description: "عرض میله متحرک",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/animated-bar-width.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    waterfall: {
+      name: "waterfall",
+      title: "undefined",
+      description: "آبشاری",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/waterfall.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "animated-bar-time-series": {
+      name: "animated-bar-time-series",
+      title: "undefined",
+      description: "سری میله‌ای متحرک",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/animated-bar-time-series.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "mix-bar-chart": {
+      name: "mix-bar-chart",
+      title: "undefined",
+      description: "میله‌ای ترکیبی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/mix-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "custom-shape-bar-chart": {
+      name: "custom-shape-bar-chart",
+      title: "undefined",
+      description: "میله با شکل سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/custom-shape-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "positive-and-negative-bar-chart": {
+      name: "positive-and-negative-bar-chart",
+      title: "undefined",
+      description: "میله مثبت و منفی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/positive-and-negative-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "brush-bar-chart": {
+      name: "brush-bar-chart",
+      title: "undefined",
+      description: "میله با برس",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/brush-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-chart-with-customized-event": {
+      name: "bar-chart-with-customized-event",
+      title: "undefined",
+      description: "انتخاب میله با کلیک",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-with-customized-event.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "biaxial-bar-chart": {
+      name: "biaxial-bar-chart",
+      title: "undefined",
+      description: "میله دو‌محوره",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/biaxial-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-chart-has-background": {
+      name: "bar-chart-has-background",
+      title: "undefined",
+      description: "میله با پس‌زمینه",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-has-background.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-chart-with-label-background": {
+      name: "bar-chart-with-label-background",
+      title: "undefined",
+      description: "میله با پس‌زمینهٔ برچسب",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-with-label-background.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "ranged-stacked-bar-chart": {
+      name: "ranged-stacked-bar-chart",
+      title: "undefined",
+      description: "مراحل سفارش به‌صورت بازه",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/ranged-stacked-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-chart-range": {
+      name: "bar-chart-range",
+      title: "undefined",
+      description: "میله بازه‌ای",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-range.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "tiny-bar-chart": {
+      name: "tiny-bar-chart",
+      title: "undefined",
+      description: "میله فشرده",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/tiny-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "stacked-bar-chart-with-horizontal-line": {
+      name: "stacked-bar-chart-with-horizontal-line",
+      title: "undefined",
+      description: "فروش در برابر هدف",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/stacked-bar-chart-with-horizontal-line.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-interactive": {
+      name: "bar-interactive",
+      title: "undefined",
+      description: "میله‌ای تعاملی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-interactive.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-horizontal": {
+      name: "bar-horizontal",
+      title: "undefined",
+      description: "میله‌ای افقی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-horizontal.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "bar-active": {
+      name: "bar-active",
+      title: "undefined",
+      description: "میله فعال",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/bar/bar-active.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-bar"],
+      meta: undefined,
+    },
+    "asset-returns": {
+      name: "asset-returns",
+      title: "undefined",
+      description: "مقایسه بازدهی دارایی‌ها",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/asset-returns.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "monthly-savings": {
+      name: "monthly-savings",
+      title: "undefined",
+      description: "پس‌انداز ماه‌به‌ماه",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/monthly-savings.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "line-bar-area-composed-chart": {
+      name: "line-bar-area-composed-chart",
+      title: "undefined",
+      description: "فروش کانال‌ها (ترکیبی)",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/line-bar-area-composed-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "same-data-composed-chart": {
+      name: "same-data-composed-chart",
+      title: "undefined",
+      description: "فروش با خط روند",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/same-data-composed-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "vertical-composed-chart": {
+      name: "vertical-composed-chart",
+      title: "undefined",
+      description: "مقایسهٔ استان‌ها",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/vertical-composed-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "composed-chart-with-axis-labels": {
+      name: "composed-chart-with-axis-labels",
+      title: "undefined",
+      description: "درآمد و حاشیه با برچسب محور",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/composed-chart-with-axis-labels.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "scatter-and-line-of-best-fit": {
+      name: "scatter-and-line-of-best-fit",
+      title: "undefined",
+      description: "تبلیغات و فروش",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/scatter-and-line-of-best-fit.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "banded-chart": {
+      name: "banded-chart",
+      title: "undefined",
+      description: "فروش با بازهٔ اطمینان",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/banded-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "target-price-chart": {
+      name: "target-price-chart",
+      title: "undefined",
+      description: "قیمت و هدف تحلیلگران",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/composed/target-price-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-composed"],
+      meta: undefined,
+    },
+    "simple-scatter-chart": {
+      name: "simple-scatter-chart",
+      title: "undefined",
+      description: "پراکندگی ساده",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/simple-scatter-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "joint-line-scatter-chart": {
+      name: "joint-line-scatter-chart",
+      title: "undefined",
+      description: "پراکندگی با خط اتصال",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/joint-line-scatter-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "bubble-chart": {
+      name: "bubble-chart",
+      title: "undefined",
+      description: "نمودار حبابی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/bubble-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "custom-animation": {
+      name: "custom-animation",
+      title: "undefined",
+      description: "انیمیشن سفارشی پراکندگی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/custom-animation.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "scatter-chart-with-labels": {
+      name: "scatter-chart-with-labels",
+      title: "undefined",
+      description: "پراکندگی با برچسب",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-labels.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "multiple-y-axes-scatter-chart": {
+      name: "multiple-y-axes-scatter-chart",
+      title: "undefined",
+      description: "پراکندگی با چند محور Y",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/multiple-y-axes-scatter-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "scatter-chart-with-cells": {
+      name: "scatter-chart-with-cells",
+      title: "undefined",
+      description: "پراکندگی با Cell",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-cells.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "scatter-chart-performance": {
+      name: "scatter-chart-performance",
+      title: "undefined",
+      description: "پراکندگی پرتراکم (عملکرد)",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-mock-data"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-performance.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-scatter"],
+      meta: undefined,
+    },
+    "two-level-pie-chart": {
+      name: "two-level-pie-chart",
+      title: "undefined",
+      description: "دایره‌ای دو سطحی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/two-level-pie-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "straight-angle-pie-chart": {
+      name: "straight-angle-pie-chart",
+      title: "undefined",
+      description: "دایره‌ای نیم‌دایره",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/straight-angle-pie-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "custom-active-shape-pie-chart": {
+      name: "custom-active-shape-pie-chart",
+      title: "undefined",
+      description: "دایره‌ای با شکل فعال سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/custom-active-shape-pie-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-chart-with-customized-label": {
+      name: "pie-chart-with-customized-label",
+      title: "undefined",
+      description: "دایره‌ای با برچسب سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-chart-with-customized-label.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-chart-with-padding-angle": {
+      name: "pie-chart-with-padding-angle",
+      title: "undefined",
+      description: "دایره‌ای با فاصله و گوشه گرد",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-chart-with-padding-angle.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-chart-in-grid": {
+      name: "pie-chart-in-grid",
+      title: "undefined",
+      description: "دایره‌ای در Grid",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-chart-in-grid.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-with-gradient": {
+      name: "pie-with-gradient",
+      title: "undefined",
+      description: "سهم کانال با گرادیان",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-with-gradient.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-donut-text": {
+      name: "pie-donut-text",
+      title: "undefined",
+      description: "دونات با متن مرکزی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-donut-text.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-interactive": {
+      name: "pie-interactive",
+      title: "undefined",
+      description: "دایره‌ای تعاملی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale", "select"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-interactive.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "pie-stacked": {
+      name: "pie-stacked",
+      title: "undefined",
+      description: "دایره‌ای انباشته",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/pie/pie-stacked.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-pie"],
+      meta: undefined,
+    },
+    "simple-radar-chart": {
+      name: "simple-radar-chart",
+      title: "undefined",
+      description: "راداری ساده",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radar/simple-radar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radar"],
+      meta: undefined,
+    },
+    "specified-domain-radar-chart": {
+      name: "specified-domain-radar-chart",
+      title: "undefined",
+      description: "راداری با دامنهٔ مشخص",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radar/specified-domain-radar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radar"],
+      meta: undefined,
+    },
+    "range-radar-chart-custom-animation": {
+      name: "range-radar-chart-custom-animation",
+      title: "undefined",
+      description: "راداری بازه‌ای با انیمیشن",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radar/range-radar-chart-custom-animation.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radar"],
+      meta: undefined,
+    },
+    "radar-lines-only": {
+      name: "radar-lines-only",
+      title: "undefined",
+      description: "راداری فقط خط",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radar/radar-lines-only.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radar"],
+      meta: undefined,
+    },
+    "radar-icons": {
+      name: "radar-icons",
+      title: "undefined",
+      description: "راداری با آیکون",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radar/radar-icons.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radar"],
+      meta: undefined,
+    },
+    "radar-multiple": {
+      name: "radar-multiple",
+      title: "undefined",
+      description: "راداری چندسری",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radar/radar-multiple.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radar"],
+      meta: undefined,
+    },
+    "simple-radial-bar-chart": {
+      name: "simple-radial-bar-chart",
+      title: "undefined",
+      description: "میله شعاعی ساده",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radial-bar/simple-radial-bar-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radial-bar"],
+      meta: undefined,
+    },
+    "radial-bar-chart-click-to-focus-legend": {
+      name: "radial-bar-chart-click-to-focus-legend",
+      title: "undefined",
+      description: "میله شعاعی با فوکوس راهنما",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radial-bar"],
+      meta: undefined,
+    },
+    "radial-text": {
+      name: "radial-text",
+      title: "undefined",
+      description: "میله شعاعی با متن",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-text.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radial-bar"],
+      meta: undefined,
+    },
+    "radial-shape": {
+      name: "radial-shape",
+      title: "undefined",
+      description: "میله شعاعی با شکل",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-shape.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radial-bar"],
+      meta: undefined,
+    },
+    "radial-stacked": {
+      name: "radial-stacked",
+      title: "undefined",
+      description: "میله شعاعی انباشته",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-stacked.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-radial-bar"],
+      meta: undefined,
+    },
+    "bundle-size-treemap": {
+      name: "bundle-size-treemap",
+      title: "undefined",
+      description: "درخت‌نقشهٔ حجم باندل",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/bundle-size-treemap.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-treemap"],
+      meta: undefined,
+    },
+    "simple-treemap": {
+      name: "simple-treemap",
+      title: "undefined",
+      description: "درخت‌نقشهٔ ساده",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/simple-treemap.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-treemap"],
+      meta: undefined,
+    },
+    "custom-content-treemap": {
+      name: "custom-content-treemap",
+      title: "undefined",
+      description: "درخت‌نقشه با محتوای سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/custom-content-treemap.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-treemap"],
+      meta: undefined,
+    },
+    "nested-treemap": {
+      name: "nested-treemap",
+      title: "undefined",
+      description: "درخت‌نقشهٔ تودرتو",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/nested-treemap.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-treemap"],
+      meta: undefined,
+    },
+    "treemap-with-padding-and-gaps": {
+      name: "treemap-with-padding-and-gaps",
+      title: "undefined",
+      description: "درخت‌نقشه با فاصله",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-with-padding-and-gaps.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+          type: "registry:component",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-treemap"],
+      meta: undefined,
+    },
+    "bundle-size-sunburst": {
+      name: "bundle-size-sunburst",
+      title: "undefined",
+      description: "خورشیدسان حجم باندل",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/sunburst/bundle-size-sunburst.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-sunburst"],
+      meta: undefined,
+    },
+    "sunburst-chart": {
+      name: "sunburst-chart",
+      title: "undefined",
+      description: "نمونهٔ خورشیدسان",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-sunburst"],
+      meta: undefined,
+    },
+    "sunburst-chart-theme-colors": {
+      name: "sunburst-chart-theme-colors",
+      title: "undefined",
+      description: "خورشیدسان با رنگ تم",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-chart-theme-colors.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-sunburst"],
+      meta: undefined,
+    },
+    "custom-content-of-tooltip": {
+      name: "custom-content-of-tooltip",
+      title: "undefined",
+      description: "محتوای سفارشی تولتیپ",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/tooltip/custom-content-of-tooltip.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-tooltip"],
+      meta: undefined,
+    },
+    "tooltip-styles": {
+      name: "tooltip-styles",
+      title: "undefined",
+      description: "سبک تولتیپ",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/tooltip/tooltip-styles.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-tooltip"],
+      meta: undefined,
+    },
+    "tooltip-advanced": {
+      name: "tooltip-advanced",
+      title: "undefined",
+      description: "تولتیپ پیشرفته",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa", "chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/tooltip/tooltip-advanced.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-tooltip"],
+      meta: undefined,
+    },
+    "legend-effect-opacity": {
+      name: "legend-effect-opacity",
+      title: "undefined",
+      description: "راهنما با شفافیت",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/legend/legend-effect-opacity.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-legend"],
+      meta: undefined,
+    },
+    "legend-position": {
+      name: "legend-position",
+      title: "undefined",
+      description: "موقعیت راهنما",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/legend/legend-position.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-legend"],
+      meta: undefined,
+    },
+    "legend-styles": {
+      name: "legend-styles",
+      title: "undefined",
+      description: "سبک سفارشی راهنما",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-live",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/legend/legend-styles.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-legend"],
+      meta: undefined,
+    },
+    "area-responsive-container": {
+      name: "area-responsive-container",
+      title: "undefined",
+      description: "ناحیه‌ای واکنش‌گرا",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/responsive/area-responsive-container.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-responsive"],
+      meta: undefined,
+    },
+    "composed-responsive-container": {
+      name: "composed-responsive-container",
+      title: "undefined",
+      description: "ترکیبی واکنش‌گرا",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-locale",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/responsive/composed-responsive-container.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-responsive"],
+      meta: undefined,
+    },
+    "pie-responsive-container": {
+      name: "pie-responsive-container",
+      title: "undefined",
+      description: "دایره‌ای واکنش‌گرا",
+      type: "registry:block",
+      registryDependencies: ["chart", "chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/responsive/pie-responsive-container.tsx",
+          type: "registry:block",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-responsive"],
+      meta: undefined,
+    },
+    candlestick: {
+      name: "candlestick",
+      title: "undefined",
+      description: "نمودار کندل‌استیک",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/candlestick.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "candlestick-dashboard": {
+      name: "candlestick-dashboard",
+      title: "undefined",
+      description: "داشبورد کندل",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/candlestick-dashboard.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "candlestick-bar": {
+      name: "candlestick-bar",
+      title: "undefined",
+      description: "کندل‌استیک و میله‌ای",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/candlestick-bar.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "candlestick-category": {
+      name: "candlestick-category",
+      title: "undefined",
+      description: "کندل‌استیک با محور دسته‌ای",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/candlestick-category.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "candlestick-line": {
+      name: "candlestick-line",
+      title: "undefined",
+      description: "کندل‌استیک و خطی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/candlestick-line.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    sparklines: {
+      name: "sparklines",
+      title: "undefined",
+      description: "اسپارک‌لاین قیمت",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/sparklines.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "stock-ohlc": {
+      name: "stock-ohlc",
+      title: "undefined",
+      description: "نمودار میله‌ای OHLC",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-locale",
+        "chart-mock-data",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-ohlc.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "stock-line": {
+      name: "stock-line",
+      title: "undefined",
+      description: "نمودار خط قیمت",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-line.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "stock-column": {
+      name: "stock-column",
+      title: "undefined",
+      description: "نمودار ستونی قیمت",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-locale",
+        "chart-mock-data",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-column.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "stock-with-volume": {
+      name: "stock-with-volume",
+      title: "undefined",
+      description: "نمودار قیمت و حجم معاملات",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-with-volume.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "stock-multi-series": {
+      name: "stock-multi-series",
+      title: "undefined",
+      description: "مقایسه چند نماد",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-multi-series.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "stock-trendline": {
+      name: "stock-trendline",
+      title: "undefined",
+      description: "نمودار خط روند",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-trendline.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "tremor-area-charts": {
+      name: "tremor-area-charts",
+      title: "undefined",
+      description: "نمودار ناحیه‌ای",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/tremor-area-charts.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "realtime-mountain-chart": {
+      name: "realtime-mountain-chart",
+      title: "undefined",
+      description: "نمودار ناحیه‌ای زنده",
+      type: "registry:block",
+      registryDependencies: [
+        "button",
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/realtime-mountain-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "realtime-candlestick": {
+      name: "realtime-candlestick",
+      title: "undefined",
+      description: "کندل زنده",
+      type: "registry:block",
+      registryDependencies: [
+        "button",
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/realtime-candlestick.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "heikin-ashi": {
+      name: "heikin-ashi",
+      title: "undefined",
+      description: "هیکن‌آشی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/heikin-ashi.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "renko-chart": {
+      name: "renko-chart",
+      title: "undefined",
+      description: "نمودار رنکو",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/renko-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "volume-profile": {
+      name: "volume-profile",
+      title: "undefined",
+      description: "پروفایل حجم",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/volume-profile.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "order-book-depth": {
+      name: "order-book-depth",
+      title: "undefined",
+      description: "عمق بازار",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/order-book-depth.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "drawdown-chart": {
+      name: "drawdown-chart",
+      title: "undefined",
+      description: "نمودار افت سرمایه",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/drawdown-chart.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "bollinger-bands": {
+      name: "bollinger-bands",
+      title: "undefined",
+      description: "باندهای بولینگر",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+        "use-market-neon",
+        "utils",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/bollinger-bands.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "candlestick-indicators": {
+      name: "candlestick-indicators",
+      title: "undefined",
+      description: "کندل‌استیک با اندیکاتور",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/candlestick-indicators.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "multi-timeframe": {
+      name: "multi-timeframe",
+      title: "undefined",
+      description: "چند بازهٔ زمانی",
+      type: "registry:block",
+      registryDependencies: [
+        "chart",
+        "chart-fa",
+        "chart-jalali-tick",
+        "chart-live",
+        "chart-locale",
+        "chart-mock-data",
+        "chart-toman-tick",
+      ],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/multi-timeframe.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-stock"],
+      meta: undefined,
+    },
+    "gauge-default": {
+      name: "gauge-default",
+      title: "undefined",
+      description: "گیج پیش‌فرض",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-default.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "gauge-levels": {
+      name: "gauge-levels",
+      title: "undefined",
+      description: "گیج چندسطحی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-levels.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "gauge-custom-colors": {
+      name: "gauge-custom-colors",
+      title: "undefined",
+      description: "گیج رنگی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-custom-colors.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "gauge-corner-radius": {
+      name: "gauge-corner-radius",
+      title: "undefined",
+      description: "گیج گوشه‌گرد",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-corner-radius.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "gauge-custom-arcs": {
+      name: "gauge-custom-arcs",
+      title: "undefined",
+      description: "گیج با کمان سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-custom-arcs.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "gauge-no-animation": {
+      name: "gauge-no-animation",
+      title: "undefined",
+      description: "گیج بدون انیمیشن",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-no-animation.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-default": {
+      name: "hc-gauge-default",
+      title: "undefined",
+      description: "گیج پیش‌فرض HC",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-default.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-rounded-ends": {
+      name: "hc-gauge-rounded-ends",
+      title: "undefined",
+      description: "گیج انتهای گرد",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-ends.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-thin-ring": {
+      name: "hc-gauge-thin-ring",
+      title: "undefined",
+      description: "گیج حلقهٔ نازک",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-thin-ring.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-semicircle": {
+      name: "hc-gauge-semicircle",
+      title: "undefined",
+      description: "گیج نیم‌دایره",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-semicircle.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-custom-pivot": {
+      name: "hc-gauge-custom-pivot",
+      title: "undefined",
+      description: "گیج محور سفارشی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-pivot.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-combo": {
+      name: "hc-gauge-combo",
+      title: "undefined",
+      description: "گیج ترکیبی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-combo.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-fuel": {
+      name: "hc-gauge-fuel",
+      title: "undefined",
+      description: "گیج سطح سوخت",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-fuel.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-activity": {
+      name: "hc-gauge-activity",
+      title: "undefined",
+      description: "گیج فعالیت",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-activity.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-kpi": {
+      name: "hc-gauge-kpi",
+      title: "undefined",
+      description: "گیج چندحلقهٔ KPI",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-kpi.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-rounded-bands": {
+      name: "hc-gauge-rounded-bands",
+      title: "undefined",
+      description: "گیج نوار گرد",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-bands.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-threshold": {
+      name: "hc-gauge-threshold",
+      title: "undefined",
+      description: "گیج آستانه",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-threshold.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "hc-gauge-custom-dial": {
+      name: "hc-gauge-custom-dial",
+      title: "undefined",
+      description: "گیج عقربهٔ نقطه‌ای",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-dial.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-gauge"],
+      meta: undefined,
+    },
+    "heatmap-calendar": {
+      name: "heatmap-calendar",
+      title: "undefined",
+      description: "تقویم حرارتی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-heatmap"],
+      meta: undefined,
+    },
+    "heatmap-calendar-emerald": {
+      name: "heatmap-calendar-emerald",
+      title: "undefined",
+      description: "تقویم زمردی",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar-emerald.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-heatmap"],
+      meta: undefined,
+    },
+    "heatmap-matrix": {
+      name: "heatmap-matrix",
+      title: "undefined",
+      description: "ماتریس روز و ساعت",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-heatmap"],
+      meta: undefined,
+    },
+    "heatmap-matrix-values": {
+      name: "heatmap-matrix-values",
+      title: "undefined",
+      description: "ماتریس با مقدار",
+      type: "registry:block",
+      registryDependencies: ["chart-fa", "chart-live", "utils"],
+      files: [
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix-values.tsx",
+          type: "registry:block",
+          target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+          type: "registry:component",
+          target: "",
+        },
+      ],
+      categories: ["charts", "charts-heatmap"],
       meta: undefined,
     },
     utils: {
@@ -2901,6 +6389,134 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/new-york-v4/lib/utils.ts",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    digits: {
+      name: "digits",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/new-york-v4/lib/digits.ts",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "chart-locale": {
+      name: "chart-locale",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: ["digits"],
+      files: [
+        {
+          path: "registry/new-york-v4/lib/chart-locale.ts",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "chart-mock-data": {
+      name: "chart-mock-data",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/new-york-v4/lib/chart-mock-data.ts",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "chart-fa": {
+      name: "chart-fa",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: ["chart-locale", "chart-mock-data", "chart"],
+      files: [
+        {
+          path: "registry/new-york-v4/lib/chart-fa.ts",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "chart-toman-tick": {
+      name: "chart-toman-tick",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: ["chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/lib/chart-toman-tick.tsx",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "chart-jalali-tick": {
+      name: "chart-jalali-tick",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: ["chart-locale"],
+      files: [
+        {
+          path: "registry/new-york-v4/lib/chart-jalali-tick.tsx",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "chart-live": {
+      name: "chart-live",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: ["chart-fa"],
+      files: [
+        {
+          path: "registry/new-york-v4/lib/chart-live.tsx",
+          type: "registry:lib",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "use-market-neon": {
+      name: "use-market-neon",
+      title: "undefined",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/new-york-v4/lib/use-market-neon.ts",
           type: "registry:lib",
           target: "",
         },
@@ -8320,7 +11936,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-vega/ui/price-input.tsx",
@@ -8338,7 +11960,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-vega/ui/phone-input.tsx",
@@ -8356,7 +11983,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-vega/ui/national-code-input.tsx",
@@ -8394,7 +12026,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-vega/ui/bank-card-input.tsx",
@@ -9996,7 +13633,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nova/ui/price-input.tsx",
@@ -10014,7 +13657,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nova/ui/phone-input.tsx",
@@ -10032,7 +13680,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nova/ui/national-code-input.tsx",
@@ -10070,7 +13723,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nova/ui/bank-card-input.tsx",
@@ -11672,7 +15330,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-glass/ui/price-input.tsx",
@@ -11690,7 +15354,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-glass/ui/phone-input.tsx",
@@ -11708,7 +15377,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-glass/ui/national-code-input.tsx",
@@ -11746,7 +15420,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-glass/ui/bank-card-input.tsx",
@@ -13348,7 +17027,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-rose/ui/price-input.tsx",
@@ -13366,7 +17051,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-rose/ui/phone-input.tsx",
@@ -13384,7 +17074,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-rose/ui/national-code-input.tsx",
@@ -13422,7 +17117,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-rose/ui/bank-card-input.tsx",
@@ -15024,7 +18724,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nili/ui/price-input.tsx",
@@ -15042,7 +18748,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nili/ui/phone-input.tsx",
@@ -15060,7 +18771,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nili/ui/national-code-input.tsx",
@@ -15098,7 +18814,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-nili/ui/bank-card-input.tsx",
@@ -16700,7 +20421,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-khesht/ui/price-input.tsx",
@@ -16718,7 +20445,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-khesht/ui/phone-input.tsx",
@@ -16736,7 +20468,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-khesht/ui/national-code-input.tsx",
@@ -16774,7 +20511,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "styles/base-khesht/ui/bank-card-input.tsx",

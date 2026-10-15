@@ -657,6 +657,7 @@ const shards: Record<
       "use-media-query",
       "use-mobile",
       "use-persian-digits-input",
+      "use-formatted-digits-caret",
     ]),
   },
   aria: {

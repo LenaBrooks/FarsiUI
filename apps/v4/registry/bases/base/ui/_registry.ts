@@ -1202,7 +1202,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   {
     name: "price-input",
     type: "registry:ui",
-    registryDependencies: ["input", "button", "iran", "digits"],
+    registryDependencies: [
+      "input",
+      "button",
+      "iran",
+      "digits",
+      "use-formatted-digits-caret",
+    ],
     files: [
       {
         path: "ui/price-input.tsx",
@@ -1218,7 +1224,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   {
     name: "phone-input",
     type: "registry:ui",
-    registryDependencies: ["input", "iran", "digits"],
+    registryDependencies: ["input", "iran", "digits", "use-formatted-digits-caret"],
     files: [
       {
         path: "ui/phone-input.tsx",
@@ -1234,7 +1240,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   {
     name: "national-code-input",
     type: "registry:ui",
-    registryDependencies: ["input", "iran", "digits"],
+    registryDependencies: ["input", "iran", "digits", "use-formatted-digits-caret"],
     files: [
       {
         path: "ui/national-code-input.tsx",
@@ -1266,7 +1272,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   {
     name: "bank-card-input",
     type: "registry:ui",
-    registryDependencies: ["input", "iran", "digits"],
+    registryDependencies: ["input", "iran", "digits", "use-formatted-digits-caret"],
     files: [
       {
         path: "ui/bank-card-input.tsx",

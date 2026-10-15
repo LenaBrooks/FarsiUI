@@ -10,6 +10,7 @@ import {
   normalizeNationalId,
 } from "@/registry/bases/base/lib/iran"
 import { toPersianDigits } from "@/registry/bases/base/lib/digits"
+import { useFormattedDigitsCaret } from "@/registry/bases/base/hooks/use-formatted-digits-caret"
 import { Input } from "@/registry/bases/base/ui/input"
 
 export type NationalCodeInputProps = Omit<
@@ -38,6 +39,10 @@ function NationalCodeInput({
   const complete = digits.length === 10
   const valid = isNationalId(digits)
   const invalid = complete && !valid
+  const formatted = formatNationalId(digits)
+  const displayFormatted = toPersianDigits(formatted)
+  const { inputRef, onChangeCaptureCaret } =
+    useFormattedDigitsCaret(displayFormatted)
 
   function set(next: string) {
     const d = normalizeNationalId(next)
@@ -49,6 +54,8 @@ function NationalCodeInput({
     <div className={cn("relative w-full", className)} dir="ltr">
       <IdCardIcon className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
       <Input
+        {...props}
+        ref={inputRef}
         id={id}
         inputMode="numeric"
         autoComplete="off"
@@ -56,12 +63,18 @@ function NationalCodeInput({
         lang="fa"
         persianDigits
         disabled={disabled}
-        value={formatNationalId(digits)}
-        onChange={(e) => set(e.target.value)}
+        value={formatted}
+        onChange={(e) => {
+          onChangeCaptureCaret(e)
+          set(e.target.value)
+        }}
         placeholder={toPersianDigits("001-234567-8")}
         aria-invalid={invalid || undefined}
-        className={cn("ps-9 pe-9 text-start tabular-nums", invalid && "border-destructive")}
-        {...props}
+        className={cn(
+          "ps-9 pe-9 text-start tabular-nums",
+          invalid && "border-destructive",
+          props.className
+        )}
       />
       {valid ? (
         <CheckIcon className="pointer-events-none absolute end-3 top-1/2 size-4 -translate-y-1/2 text-emerald-600 dark:text-emerald-400" />

@@ -46,11 +46,13 @@ function patchChangeEvent<T extends DigitFieldElement>(
   latinValue: string
 ): React.ChangeEvent<T> {
   const targetProxy = new Proxy(event.target, {
-    get(target, prop, receiver) {
+    get(target, prop) {
       if (prop === "value") {
         return latinValue
       }
-      const next = Reflect.get(target, prop, receiver)
+      // Use `target` as receiver — DOM getters like selectionStart throw when
+      // `this` is the Proxy (breaks formatted inputs that read caret position).
+      const next = Reflect.get(target, prop, target)
       return typeof next === "function" ? next.bind(target) : next
     },
   })

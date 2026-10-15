@@ -3,6 +3,7 @@
 import * as React from "react"
 import { cn } from "cn"
 
+import { toPersianDigits } from "@/registry/bases/base/lib/digits"
 import {
   amountToPersianCurrencyWords,
   convertPrice,
@@ -10,6 +11,7 @@ import {
   onlyDigits,
   type PriceCurrency,
 } from "@/registry/bases/base/lib/iran"
+import { useFormattedDigitsCaret } from "@/registry/bases/base/hooks/use-formatted-digits-caret"
 import { Button } from "@/registry/bases/base/ui/button"
 import { Input } from "@/registry/bases/base/ui/input"
 
@@ -56,6 +58,10 @@ function PriceInput({
   const digits =
     value !== undefined ? onlyDigits(value) : internalDigits
   const currency = currencyProp ?? internalCurrency
+  const grouped = groupDigits(digits)
+  const displayGrouped = toPersianDigits(grouped)
+  const { inputRef, onChangeCaptureCaret } =
+    useFormattedDigitsCaret(displayGrouped)
 
   function setDigits(next: string) {
     const d = onlyDigits(next)
@@ -83,18 +89,25 @@ function PriceInput({
     <div className={cn("flex w-full flex-col gap-1.5", className)} dir="rtl">
       <div className="flex items-center gap-2">
         <Input
+          {...props}
+          ref={inputRef}
           id={id}
           dir="ltr"
           lang="fa"
           inputMode="numeric"
           persianDigits
           disabled={disabled}
-          value={groupDigits(digits)}
-          onChange={(e) => setDigits(e.target.value)}
+          value={grouped}
+          onChange={(e) => {
+            onChangeCaptureCaret(e)
+            setDigits(e.target.value)
+          }}
           placeholder="1,000,000"
           aria-describedby={id && showWords ? `${id}-words` : undefined}
-          className="min-w-0 flex-1 text-start tabular-nums"
-          {...props}
+          className={cn(
+            "min-w-0 flex-1 text-start tabular-nums",
+            props.className
+          )}
         />
         {showCurrencyToggle ? (
           <div className="flex shrink-0 overflow-hidden rounded-lg border">

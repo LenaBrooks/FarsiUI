@@ -1458,7 +1458,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "button", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "button",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "registry/bases/base/ui/price-input.tsx",
@@ -1476,7 +1482,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "registry/bases/base/ui/phone-input.tsx",
@@ -1494,7 +1505,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "registry/bases/base/ui/national-code-input.tsx",
@@ -1532,7 +1548,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran", "digits"],
+      registryDependencies: [
+        "input",
+        "iran",
+        "digits",
+        "use-formatted-digits-caret",
+      ],
       files: [
         {
           path: "registry/bases/base/ui/bank-card-input.tsx",
@@ -15042,6 +15063,22 @@ export const Index: Record<string, Record<string, any>> = {
       files: [
         {
           path: "registry/bases/base/hooks/use-persian-digits-input.ts",
+          type: "registry:hook",
+          target: "",
+        },
+      ],
+      categories: undefined,
+      meta: undefined,
+    },
+    "use-formatted-digits-caret": {
+      name: "use-formatted-digits-caret",
+      title: "undefined",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [
+        {
+          path: "registry/bases/base/hooks/use-formatted-digits-caret.ts",
           type: "registry:hook",
           target: "",
         },

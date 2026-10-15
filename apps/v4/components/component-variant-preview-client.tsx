@@ -475,10 +475,8 @@ export function ComponentVariantPreviewClient({
                       setSelected(item.name)
                     }}
                     className={cn(
-                      "rounded-xl p-1 outline-none transition-shadow",
-                      "focus-within:ring-2 focus-within:ring-primary/40",
-                      isActive &&
-                        "ring-2 ring-primary ring-offset-2 ring-offset-background"
+                      "rounded-xl p-1 outline-none",
+                      !isActive && "opacity-70 hover:opacity-100"
                     )}
                   >
                     {livePreview}

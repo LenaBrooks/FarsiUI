@@ -11,6 +11,7 @@ import {
   normalizeCardNumber,
 } from "@/registry/bases/base/lib/iran"
 import { toPersianDigits } from "@/registry/bases/base/lib/digits"
+import { useFormattedDigitsCaret } from "@/registry/bases/base/hooks/use-formatted-digits-caret"
 import { Input } from "@/registry/bases/base/ui/input"
 
 export type BankCardInputProps = Omit<
@@ -45,6 +46,10 @@ function BankCardInput({
   const valid = isBankCard(digits)
   const bank = detectBankFromCard(digits)
   const invalid = complete && !valid
+  const formatted = formatCardNumber(digits)
+  const displayFormatted = toPersianDigits(formatted)
+  const { inputRef, onChangeCaptureCaret } =
+    useFormattedDigitsCaret(displayFormatted)
 
   function set(next: string) {
     const d = normalizeCardNumber(next)
@@ -60,6 +65,8 @@ function BankCardInput({
       <div className="relative" dir="ltr">
         <CreditCardIcon className="pointer-events-none absolute start-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
         <Input
+          {...props}
+          ref={inputRef}
           id={id}
           inputMode="numeric"
           autoComplete="cc-number"
@@ -67,15 +74,18 @@ function BankCardInput({
           lang="fa"
           persianDigits
           disabled={disabled}
-          value={formatCardNumber(digits)}
-          onChange={(e) => set(e.target.value)}
+          value={formatted}
+          onChange={(e) => {
+            onChangeCaptureCaret(e)
+            set(e.target.value)
+          }}
           placeholder={toPersianDigits("6037 9912 3456 7890")}
           aria-invalid={invalid || undefined}
           className={cn(
             "ps-9 pe-9 text-start tabular-nums",
-            invalid && "border-destructive"
+            invalid && "border-destructive",
+            props.className
           )}
-          {...props}
         />
         {valid ? (
           <CheckIcon className="pointer-events-none absolute end-3 top-1/2 size-4 -translate-y-1/2 text-emerald-600 dark:text-emerald-400" />

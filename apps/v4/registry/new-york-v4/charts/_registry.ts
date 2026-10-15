@@ -5,7 +5,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-axes",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-axes.tsx",
@@ -17,7 +17,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-default",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-default.tsx",
@@ -29,7 +29,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-gradient",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-gradient.tsx",
@@ -41,7 +41,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-icons",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-icons.tsx",
@@ -53,7 +53,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-interactive",
     type: "registry:block",
-    registryDependencies: ["card", "chart", "select"],
+    registryDependencies: ["card", "chart", "select", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-interactive.tsx",
@@ -65,7 +65,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-legend",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-legend.tsx",
@@ -77,7 +77,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-linear",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-linear.tsx",
@@ -89,7 +89,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-stacked-expand",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-stacked-expand.tsx",
@@ -101,7 +101,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-stacked",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-stacked.tsx",
@@ -113,7 +113,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-area-step",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-area-step.tsx",
@@ -127,7 +127,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-active",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-active.tsx",
@@ -139,7 +139,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-default",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/chart-bar-default.tsx",
@@ -151,7 +151,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-horizontal",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-horizontal.tsx",
@@ -163,7 +163,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-interactive",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-interactive.tsx",
@@ -175,7 +175,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-label-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-label-custom.tsx",
@@ -187,7 +187,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-label",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-label.tsx",
@@ -199,7 +199,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-mixed",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-mixed.tsx",
@@ -211,7 +211,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-multiple",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-multiple.tsx",
@@ -223,7 +223,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-negative",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-negative.tsx",
@@ -235,7 +235,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-bar-stacked",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-bar-stacked.tsx",
@@ -249,7 +249,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-default",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/chart-line-default.tsx",
@@ -261,7 +261,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-dots-colors",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-dots-colors.tsx",
@@ -273,7 +273,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-dots-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-dots-custom.tsx",
@@ -285,7 +285,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-dots",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-dots.tsx",
@@ -297,7 +297,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-interactive",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-interactive.tsx",
@@ -309,7 +309,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-label-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-label-custom.tsx",
@@ -321,7 +321,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-label",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-label.tsx",
@@ -333,7 +333,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-linear",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-linear.tsx",
@@ -345,7 +345,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-multiple",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-multiple.tsx",
@@ -357,7 +357,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-line-step",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-line-step.tsx",
@@ -371,7 +371,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-donut-active",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-donut-active.tsx",
@@ -383,7 +383,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-donut-text",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-donut-text.tsx",
@@ -395,7 +395,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-donut",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-donut.tsx",
@@ -407,7 +407,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-interactive",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-interactive.tsx",
@@ -419,7 +419,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-label-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-label-custom.tsx",
@@ -431,7 +431,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-label-list",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-label-list.tsx",
@@ -443,7 +443,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-label",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-label.tsx",
@@ -455,7 +455,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-legend",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-legend.tsx",
@@ -467,7 +467,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-separator-none",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-separator-none.tsx",
@@ -479,7 +479,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-simple",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-simple.tsx",
@@ -491,7 +491,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-pie-stacked",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-pie-stacked.tsx",
@@ -505,7 +505,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-default",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-default.tsx",
@@ -517,7 +517,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-dots",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-dots.tsx",
@@ -529,7 +529,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-grid-circle-fill",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-grid-circle-fill.tsx",
@@ -541,7 +541,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-grid-circle-no-lines",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-grid-circle-no-lines.tsx",
@@ -553,7 +553,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-grid-circle",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-grid-circle.tsx",
@@ -565,7 +565,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-grid-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-grid-custom.tsx",
@@ -577,7 +577,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-grid-fill",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-grid-fill.tsx",
@@ -589,7 +589,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-grid-none",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-grid-none.tsx",
@@ -601,7 +601,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-icons",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-icons.tsx",
@@ -613,7 +613,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-label-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-label-custom.tsx",
@@ -625,7 +625,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-legend",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-legend.tsx",
@@ -637,7 +637,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-lines-only",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-lines-only.tsx",
@@ -649,7 +649,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-multiple",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-multiple.tsx",
@@ -661,7 +661,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radar-radius",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radar-radius.tsx",
@@ -675,7 +675,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radial-grid",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radial-grid.tsx",
@@ -687,7 +687,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radial-label",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radial-label.tsx",
@@ -699,7 +699,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radial-shape",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radial-shape.tsx",
@@ -711,7 +711,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radial-simple",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radial-simple.tsx",
@@ -723,7 +723,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radial-stacked",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radial-stacked.tsx",
@@ -735,7 +735,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-radial-text",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-radial-text.tsx",
@@ -747,7 +747,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-default",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-default.tsx",
@@ -759,7 +759,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-indicator-line",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-indicator-line.tsx",
@@ -771,7 +771,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-indicator-none",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-indicator-none.tsx",
@@ -783,7 +783,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-label-none",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-label-none.tsx",
@@ -795,7 +795,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-label-custom",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-label-custom.tsx",
@@ -807,7 +807,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-label-formatter",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-label-formatter.tsx",
@@ -819,7 +819,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-formatter",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-formatter.tsx",
@@ -831,7 +831,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-icons",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-icons.tsx",
@@ -843,7 +843,7 @@ export const charts: Registry["items"] = [
   {
     name: "chart-tooltip-advanced",
     type: "registry:block",
-    registryDependencies: ["card", "chart"],
+    registryDependencies: ["card", "chart", "chart-locale"],
     files: [
       {
         path: "charts/chart-tooltip-advanced.tsx",
@@ -857,7 +857,7 @@ export const charts: Registry["items"] = [
     name: "simple-line-chart",
     type: "registry:block",
     description: "نمودار خطی ساده",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/simple-line-chart.tsx",
@@ -874,7 +874,7 @@ export const charts: Registry["items"] = [
     name: "dashed-line-chart",
     type: "registry:block",
     description: "نمودار خطی خط‌چین",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/dashed-line-chart.tsx",
@@ -891,7 +891,7 @@ export const charts: Registry["items"] = [
     name: "vertical-line-chart",
     type: "registry:block",
     description: "نمودار خطی عمودی",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/vertical-line-chart.tsx",
@@ -908,7 +908,7 @@ export const charts: Registry["items"] = [
     name: "biaxial-line-chart",
     type: "registry:block",
     description: "نمودار خطی دو‌محوره",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/biaxial-line-chart.tsx",
@@ -925,7 +925,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-connect-nulls",
     type: "registry:block",
     description: "اتصال مقادیر تهی در خطی",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/line-chart-connect-nulls.tsx",
@@ -942,7 +942,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-with-x-axis-padding",
     type: "registry:block",
     description: "خطی با فاصلهٔ محور X",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/line-chart-with-x-axis-padding.tsx",
@@ -959,7 +959,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-with-reference-lines",
     type: "registry:block",
     description: "خطی با خطوط مرجع",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/line-chart-with-reference-lines.tsx",
@@ -976,7 +976,7 @@ export const charts: Registry["items"] = [
     name: "customized-dot-line-chart",
     type: "registry:block",
     description: "خطی با نقطهٔ سفارشی",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/customized-dot-line-chart.tsx",
@@ -993,7 +993,7 @@ export const charts: Registry["items"] = [
     name: "customized-label-line-chart",
     type: "registry:block",
     description: "خطی با برچسب سفارشی",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/customized-label-line-chart.tsx",
@@ -1010,7 +1010,7 @@ export const charts: Registry["items"] = [
     name: "synchronized-line-chart",
     type: "registry:block",
     description: "نمودارهای خطی همگام",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/synchronized-line-chart.tsx",
@@ -1027,7 +1027,7 @@ export const charts: Registry["items"] = [
     name: "synchronized-different-data",
     type: "registry:block",
     description: "همگام با داده‌های متفاوت",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/synchronized-different-data.tsx",
@@ -1044,7 +1044,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-custom-shape",
     type: "registry:block",
     description: "خط با انیمیشن شفافیت",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/line-chart-custom-shape.tsx",
@@ -1061,7 +1061,7 @@ export const charts: Registry["items"] = [
     name: "highlight-and-zoom-line-chart",
     type: "registry:block",
     description: "هایلایت و زوم خطی",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/line/highlight-and-zoom-line-chart.tsx",
@@ -1074,7 +1074,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-has-multi-series",
     type: "registry:block",
     description: "چند سری خطی",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/line-chart-has-multi-series.tsx",
@@ -1091,7 +1091,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-axis-interval",
     type: "registry:block",
     description: "فاصلهٔ تیک محور خطی",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/line-chart-axis-interval.tsx",
@@ -1108,7 +1108,7 @@ export const charts: Registry["items"] = [
     name: "line-chart-negative-values-with-reference-lines",
     type: "registry:block",
     description: "مقادیر منفی با خطوط مرجع",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale"],
     files: [
       {
         path: "charts/gallery/line/line-chart-negative-values-with-reference-lines.tsx",
@@ -1121,7 +1121,7 @@ export const charts: Registry["items"] = [
     name: "compare-two-lines",
     type: "registry:block",
     description: "مقایسهٔ دو خط",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/compare-two-lines.tsx",
@@ -1138,7 +1138,7 @@ export const charts: Registry["items"] = [
     name: "dynamic-z-index-line-chart",
     type: "registry:block",
     description: "خطی با z-index پویا",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/dynamic-z-index-line-chart.tsx",
@@ -1155,7 +1155,7 @@ export const charts: Registry["items"] = [
     name: "tiny-line-chart",
     type: "registry:block",
     description: "نمودار خطی فشرده",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/tiny-line-chart.tsx",
@@ -1172,7 +1172,7 @@ export const charts: Registry["items"] = [
     name: "animated-time-series",
     type: "registry:block",
     description: "سری زمانی متحرک",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/line/animated-time-series.tsx",
@@ -1189,7 +1189,7 @@ export const charts: Registry["items"] = [
     name: "line-interactive",
     type: "registry:block",
     description: "خطی تعاملی",
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/line/line-interactive.tsx",
@@ -1203,7 +1203,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "خطی پله‌ای",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/line/line-step.tsx",
@@ -1216,7 +1216,7 @@ export const charts: Registry["items"] = [
     name: "area-chart",
     type: "registry:block",
     description: "نمودار ناحیه‌ای ساده",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-chart.tsx",
@@ -1229,7 +1229,7 @@ export const charts: Registry["items"] = [
     name: "stacked-area-chart",
     type: "registry:block",
     description: "ناحیه‌ای انباشته",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/stacked-area-chart.tsx",
@@ -1242,7 +1242,7 @@ export const charts: Registry["items"] = [
     name: "area-chart-range",
     type: "registry:block",
     description: "ناحیه‌ای بازه‌ای",
-    registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-chart-range.tsx",
@@ -1255,7 +1255,7 @@ export const charts: Registry["items"] = [
     name: "area-chart-connect-nulls",
     type: "registry:block",
     description: "اتصال تهی در ناحیه‌ای",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-chart-connect-nulls.tsx",
@@ -1268,7 +1268,7 @@ export const charts: Registry["items"] = [
     name: "cardinal-area-chart",
     type: "registry:block",
     description: "ناحیه‌ای Cardinal",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/cardinal-area-chart.tsx",
@@ -1281,7 +1281,7 @@ export const charts: Registry["items"] = [
     name: "percent-area-chart",
     type: "registry:block",
     description: "ناحیه‌ای درصدی",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/percent-area-chart.tsx",
@@ -1294,7 +1294,7 @@ export const charts: Registry["items"] = [
     name: "synchronized-area-chart",
     type: "registry:block",
     description: "ناحیه‌ای همگام",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/synchronized-area-chart.tsx",
@@ -1307,7 +1307,7 @@ export const charts: Registry["items"] = [
     name: "tiny-area-chart",
     type: "registry:block",
     description: "ناحیه‌ای فشرده",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/tiny-area-chart.tsx",
@@ -1320,7 +1320,7 @@ export const charts: Registry["items"] = [
     name: "area-chart-fill-by-value",
     type: "registry:block",
     description: "پر شدن بر اساس مقدار",
-    registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-chart-fill-by-value.tsx",
@@ -1333,7 +1333,7 @@ export const charts: Registry["items"] = [
     name: "area-chart-custom-animation",
     type: "registry:block",
     description: "انیمیشن سفارشی",
-    registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-chart-custom-animation.tsx",
@@ -1346,7 +1346,7 @@ export const charts: Registry["items"] = [
     name: "range-area-chart-custom-animation",
     type: "registry:block",
     description: "انیمیشن ناحیه‌ای بازه‌ای",
-    registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/range-area-chart-custom-animation.tsx",
@@ -1359,7 +1359,7 @@ export const charts: Registry["items"] = [
     name: "area-chart-with-custom-events",
     type: "registry:block",
     description: "ناحیه‌ای با رویداد سفارشی",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-chart-with-custom-events.tsx",
@@ -1372,7 +1372,7 @@ export const charts: Registry["items"] = [
     name: "prevent-right-click",
     type: "registry:block",
     description: "جلوگیری از منوی راست‌کلیک",
-    registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/prevent-right-click.tsx",
@@ -1385,7 +1385,7 @@ export const charts: Registry["items"] = [
     name: "area-interactive",
     type: "registry:block",
     description: "ناحیه‌ای تعاملی",
-    registryDependencies: ["chart","chart-fa","chart-locale","select","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "select", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-interactive.tsx",
@@ -1399,7 +1399,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "ناحیه‌ای پله‌ای",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-step.tsx",
@@ -1412,7 +1412,7 @@ export const charts: Registry["items"] = [
     name: "area-gradient",
     type: "registry:block",
     description: "ناحیه‌ای با گرادیان",
-    registryDependencies: ["chart","chart-fa","chart-locale","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/area-gradient.tsx",
@@ -1425,7 +1425,7 @@ export const charts: Registry["items"] = [
     name: "market-cards",
     type: "registry:block",
     description: "کارت‌های بازار",
-    registryDependencies: ["chart-fa","digits","use-market-neon","utils"],
+    registryDependencies: ["chart-fa", "digits", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/area/market-cards.tsx",
@@ -1442,7 +1442,7 @@ export const charts: Registry["items"] = [
     name: "simple-bar-chart",
     type: "registry:block",
     description: "نمودار میله‌ای ساده",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick", "utils"],
     files: [
       {
         path: "charts/gallery/bar/simple-bar-chart.tsx",
@@ -1459,7 +1459,7 @@ export const charts: Registry["items"] = [
     name: "stacked-bar-chart",
     type: "registry:block",
     description: "میله‌ای انباشته",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/bar/stacked-bar-chart.tsx",
@@ -1472,7 +1472,7 @@ export const charts: Registry["items"] = [
     name: "population-pyramid",
     type: "registry:block",
     description: "هرم جمعیتی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/population-pyramid.tsx",
@@ -1485,7 +1485,7 @@ export const charts: Registry["items"] = [
     name: "timeline",
     type: "registry:block",
     description: "خط زمانی",
-    registryDependencies: ["chart","chart-fa","chart-live","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/bar/timeline.tsx",
@@ -1498,7 +1498,7 @@ export const charts: Registry["items"] = [
     name: "box-plot",
     type: "registry:block",
     description: "نمودار جعبه‌ای",
-    registryDependencies: ["chart","chart-fa","chart-live","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/bar/box-plot.tsx",
@@ -1511,7 +1511,7 @@ export const charts: Registry["items"] = [
     name: "animated-bar-width",
     type: "registry:block",
     description: "عرض میله متحرک",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/bar/animated-bar-width.tsx",
@@ -1524,7 +1524,7 @@ export const charts: Registry["items"] = [
     name: "waterfall",
     type: "registry:block",
     description: "آبشاری",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/waterfall.tsx",
@@ -1537,7 +1537,7 @@ export const charts: Registry["items"] = [
     name: "animated-bar-time-series",
     type: "registry:block",
     description: "سری میله‌ای متحرک",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/animated-bar-time-series.tsx",
@@ -1550,7 +1550,7 @@ export const charts: Registry["items"] = [
     name: "mix-bar-chart",
     type: "registry:block",
     description: "میله‌ای ترکیبی",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/bar/mix-bar-chart.tsx",
@@ -1563,7 +1563,7 @@ export const charts: Registry["items"] = [
     name: "custom-shape-bar-chart",
     type: "registry:block",
     description: "میله با شکل سفارشی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/custom-shape-bar-chart.tsx",
@@ -1576,7 +1576,7 @@ export const charts: Registry["items"] = [
     name: "positive-and-negative-bar-chart",
     type: "registry:block",
     description: "میله مثبت و منفی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/positive-and-negative-bar-chart.tsx",
@@ -1589,7 +1589,7 @@ export const charts: Registry["items"] = [
     name: "brush-bar-chart",
     type: "registry:block",
     description: "میله با برس",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/brush-bar-chart.tsx",
@@ -1602,7 +1602,7 @@ export const charts: Registry["items"] = [
     name: "bar-chart-with-customized-event",
     type: "registry:block",
     description: "انتخاب میله با کلیک",
-    registryDependencies: ["chart","chart-fa","chart-locale","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "utils"],
     files: [
       {
         path: "charts/gallery/bar/bar-chart-with-customized-event.tsx",
@@ -1615,7 +1615,7 @@ export const charts: Registry["items"] = [
     name: "biaxial-bar-chart",
     type: "registry:block",
     description: "میله دو‌محوره",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/bar/biaxial-bar-chart.tsx",
@@ -1628,7 +1628,7 @@ export const charts: Registry["items"] = [
     name: "bar-chart-has-background",
     type: "registry:block",
     description: "میله با پس‌زمینه",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/bar/bar-chart-has-background.tsx",
@@ -1641,7 +1641,7 @@ export const charts: Registry["items"] = [
     name: "bar-chart-with-label-background",
     type: "registry:block",
     description: "میله با پس‌زمینهٔ برچسب",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/bar-chart-with-label-background.tsx",
@@ -1654,7 +1654,7 @@ export const charts: Registry["items"] = [
     name: "ranged-stacked-bar-chart",
     type: "registry:block",
     description: "مراحل سفارش به‌صورت بازه",
-    registryDependencies: ["chart","chart-fa","utils"],
+    registryDependencies: ["chart", "chart-fa", "utils"],
     files: [
       {
         path: "charts/gallery/bar/ranged-stacked-bar-chart.tsx",
@@ -1667,7 +1667,7 @@ export const charts: Registry["items"] = [
     name: "bar-chart-range",
     type: "registry:block",
     description: "میله بازه‌ای",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/bar/bar-chart-range.tsx",
@@ -1680,7 +1680,7 @@ export const charts: Registry["items"] = [
     name: "tiny-bar-chart",
     type: "registry:block",
     description: "میله فشرده",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/bar/tiny-bar-chart.tsx",
@@ -1693,7 +1693,7 @@ export const charts: Registry["items"] = [
     name: "stacked-bar-chart-with-horizontal-line",
     type: "registry:block",
     description: "فروش در برابر هدف",
-    registryDependencies: ["chart","chart-fa","chart-live","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/bar/stacked-bar-chart-with-horizontal-line.tsx",
@@ -1706,7 +1706,7 @@ export const charts: Registry["items"] = [
     name: "bar-interactive",
     type: "registry:block",
     description: "میله‌ای تعاملی",
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/bar/bar-interactive.tsx",
@@ -1719,7 +1719,7 @@ export const charts: Registry["items"] = [
     name: "bar-horizontal",
     type: "registry:block",
     description: "میله‌ای افقی",
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/bar/bar-horizontal.tsx",
@@ -1732,7 +1732,7 @@ export const charts: Registry["items"] = [
     name: "bar-active",
     type: "registry:block",
     description: "میله فعال",
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/bar/bar-active.tsx",
@@ -1746,7 +1746,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "مقایسه بازدهی دارایی‌ها",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","utils"],
+    registryDependencies: ["chart", "chart-fa", "utils"],
     files: [
       {
         path: "charts/gallery/stock/asset-returns.tsx",
@@ -1760,7 +1760,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "پس‌انداز ماه‌به‌ماه",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","utils"],
+    registryDependencies: ["chart", "chart-fa", "utils"],
     files: [
       {
         path: "charts/gallery/stock/monthly-savings.tsx",
@@ -1773,7 +1773,7 @@ export const charts: Registry["items"] = [
     name: "line-bar-area-composed-chart",
     type: "registry:block",
     description: "فروش کانال‌ها (ترکیبی)",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/line-bar-area-composed-chart.tsx",
@@ -1786,7 +1786,7 @@ export const charts: Registry["items"] = [
     name: "same-data-composed-chart",
     type: "registry:block",
     description: "فروش با خط روند",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/same-data-composed-chart.tsx",
@@ -1799,7 +1799,7 @@ export const charts: Registry["items"] = [
     name: "vertical-composed-chart",
     type: "registry:block",
     description: "مقایسهٔ استان‌ها",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/vertical-composed-chart.tsx",
@@ -1812,7 +1812,7 @@ export const charts: Registry["items"] = [
     name: "composed-chart-with-axis-labels",
     type: "registry:block",
     description: "درآمد و حاشیه با برچسب محور",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/composed-chart-with-axis-labels.tsx",
@@ -1825,7 +1825,7 @@ export const charts: Registry["items"] = [
     name: "scatter-and-line-of-best-fit",
     type: "registry:block",
     description: "تبلیغات و فروش",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/scatter-and-line-of-best-fit.tsx",
@@ -1838,7 +1838,7 @@ export const charts: Registry["items"] = [
     name: "banded-chart",
     type: "registry:block",
     description: "فروش با بازهٔ اطمینان",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/banded-chart.tsx",
@@ -1851,7 +1851,7 @@ export const charts: Registry["items"] = [
     name: "target-price-chart",
     type: "registry:block",
     description: "قیمت و هدف تحلیلگران",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/composed/target-price-chart.tsx",
@@ -1864,7 +1864,7 @@ export const charts: Registry["items"] = [
     name: "simple-scatter-chart",
     type: "registry:block",
     description: "پراکندگی ساده",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/simple-scatter-chart.tsx",
@@ -1881,7 +1881,7 @@ export const charts: Registry["items"] = [
     name: "joint-line-scatter-chart",
     type: "registry:block",
     description: "پراکندگی با خط اتصال",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/joint-line-scatter-chart.tsx",
@@ -1898,7 +1898,7 @@ export const charts: Registry["items"] = [
     name: "bubble-chart",
     type: "registry:block",
     description: "نمودار حبابی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/bubble-chart.tsx",
@@ -1911,7 +1911,7 @@ export const charts: Registry["items"] = [
     name: "custom-animation",
     type: "registry:block",
     description: "انیمیشن سفارشی پراکندگی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/custom-animation.tsx",
@@ -1928,7 +1928,7 @@ export const charts: Registry["items"] = [
     name: "scatter-chart-with-labels",
     type: "registry:block",
     description: "پراکندگی با برچسب",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/scatter-chart-with-labels.tsx",
@@ -1945,7 +1945,7 @@ export const charts: Registry["items"] = [
     name: "multiple-y-axes-scatter-chart",
     type: "registry:block",
     description: "پراکندگی با چند محور Y",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/multiple-y-axes-scatter-chart.tsx",
@@ -1962,7 +1962,7 @@ export const charts: Registry["items"] = [
     name: "scatter-chart-with-cells",
     type: "registry:block",
     description: "پراکندگی با Cell",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/scatter/scatter-chart-with-cells.tsx",
@@ -1979,7 +1979,7 @@ export const charts: Registry["items"] = [
     name: "scatter-chart-performance",
     type: "registry:block",
     description: "پراکندگی پرتراکم (عملکرد)",
-    registryDependencies: ["chart","chart-fa","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/scatter/scatter-chart-performance.tsx",
@@ -1996,7 +1996,7 @@ export const charts: Registry["items"] = [
     name: "two-level-pie-chart",
     type: "registry:block",
     description: "دایره‌ای دو سطحی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/two-level-pie-chart.tsx",
@@ -2009,7 +2009,7 @@ export const charts: Registry["items"] = [
     name: "straight-angle-pie-chart",
     type: "registry:block",
     description: "دایره‌ای نیم‌دایره",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/straight-angle-pie-chart.tsx",
@@ -2022,7 +2022,7 @@ export const charts: Registry["items"] = [
     name: "custom-active-shape-pie-chart",
     type: "registry:block",
     description: "دایره‌ای با شکل فعال سفارشی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/custom-active-shape-pie-chart.tsx",
@@ -2035,7 +2035,7 @@ export const charts: Registry["items"] = [
     name: "pie-chart-with-customized-label",
     type: "registry:block",
     description: "دایره‌ای با برچسب سفارشی",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/pie-chart-with-customized-label.tsx",
@@ -2048,7 +2048,7 @@ export const charts: Registry["items"] = [
     name: "pie-chart-with-padding-angle",
     type: "registry:block",
     description: "دایره‌ای با فاصله و گوشه گرد",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/pie-chart-with-padding-angle.tsx",
@@ -2061,7 +2061,7 @@ export const charts: Registry["items"] = [
     name: "pie-chart-in-grid",
     type: "registry:block",
     description: "دایره‌ای در Grid",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/pie-chart-in-grid.tsx",
@@ -2074,7 +2074,7 @@ export const charts: Registry["items"] = [
     name: "pie-with-gradient",
     type: "registry:block",
     description: "سهم کانال با گرادیان",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/pie/pie-with-gradient.tsx",
@@ -2088,7 +2088,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "دونات با متن مرکزی",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/pie/pie-donut-text.tsx",
@@ -2101,7 +2101,7 @@ export const charts: Registry["items"] = [
     name: "pie-interactive",
     type: "registry:block",
     description: "دایره‌ای تعاملی",
-    registryDependencies: ["chart","chart-fa","chart-locale","select"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "select"],
     files: [
       {
         path: "charts/gallery/pie/pie-interactive.tsx",
@@ -2115,7 +2115,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "دایره‌ای انباشته",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/pie/pie-stacked.tsx",
@@ -2128,7 +2128,7 @@ export const charts: Registry["items"] = [
     name: "simple-radar-chart",
     type: "registry:block",
     description: "راداری ساده",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/radar/simple-radar-chart.tsx",
@@ -2141,7 +2141,7 @@ export const charts: Registry["items"] = [
     name: "specified-domain-radar-chart",
     type: "registry:block",
     description: "راداری با دامنهٔ مشخص",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/radar/specified-domain-radar-chart.tsx",
@@ -2154,7 +2154,7 @@ export const charts: Registry["items"] = [
     name: "range-radar-chart-custom-animation",
     type: "registry:block",
     description: "راداری بازه‌ای با انیمیشن",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/radar/range-radar-chart-custom-animation.tsx",
@@ -2168,7 +2168,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "راداری فقط خط",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/radar/radar-lines-only.tsx",
@@ -2182,7 +2182,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "راداری با آیکون",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/radar/radar-icons.tsx",
@@ -2196,7 +2196,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "راداری چندسری",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/radar/radar-multiple.tsx",
@@ -2209,7 +2209,7 @@ export const charts: Registry["items"] = [
     name: "simple-radial-bar-chart",
     type: "registry:block",
     description: "میله شعاعی ساده",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/radial-bar/simple-radial-bar-chart.tsx",
@@ -2222,7 +2222,7 @@ export const charts: Registry["items"] = [
     name: "radial-bar-chart-click-to-focus-legend",
     type: "registry:block",
     description: "میله شعاعی با فوکوس راهنما",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend.tsx",
@@ -2236,7 +2236,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "میله شعاعی با متن",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/radial-bar/radial-text.tsx",
@@ -2250,7 +2250,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "میله شعاعی با شکل",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/radial-bar/radial-shape.tsx",
@@ -2264,7 +2264,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "میله شعاعی انباشته",
     dependencies: ["lucide-react"],
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/radial-bar/radial-stacked.tsx",
@@ -2277,7 +2277,7 @@ export const charts: Registry["items"] = [
     name: "bundle-size-treemap",
     type: "registry:block",
     description: "درخت‌نقشهٔ حجم باندل",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/treemap/bundle-size-treemap.tsx",
@@ -2302,7 +2302,7 @@ export const charts: Registry["items"] = [
     name: "simple-treemap",
     type: "registry:block",
     description: "درخت‌نقشهٔ ساده",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/treemap/simple-treemap.tsx",
@@ -2327,7 +2327,7 @@ export const charts: Registry["items"] = [
     name: "custom-content-treemap",
     type: "registry:block",
     description: "درخت‌نقشه با محتوای سفارشی",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/treemap/custom-content-treemap.tsx",
@@ -2352,7 +2352,7 @@ export const charts: Registry["items"] = [
     name: "nested-treemap",
     type: "registry:block",
     description: "درخت‌نقشهٔ تودرتو",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/treemap/nested-treemap.tsx",
@@ -2377,7 +2377,7 @@ export const charts: Registry["items"] = [
     name: "treemap-with-padding-and-gaps",
     type: "registry:block",
     description: "درخت‌نقشه با فاصله",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/treemap/treemap-with-padding-and-gaps.tsx",
@@ -2402,7 +2402,7 @@ export const charts: Registry["items"] = [
     name: "bundle-size-sunburst",
     type: "registry:block",
     description: "خورشیدسان حجم باندل",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/sunburst/bundle-size-sunburst.tsx",
@@ -2419,7 +2419,7 @@ export const charts: Registry["items"] = [
     name: "sunburst-chart",
     type: "registry:block",
     description: "نمونهٔ خورشیدسان",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/sunburst/sunburst-chart.tsx",
@@ -2436,7 +2436,7 @@ export const charts: Registry["items"] = [
     name: "sunburst-chart-theme-colors",
     type: "registry:block",
     description: "خورشیدسان با رنگ تم",
-    registryDependencies: ["chart","chart-fa","chart-live"],
+    registryDependencies: ["chart", "chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/sunburst/sunburst-chart-theme-colors.tsx",
@@ -2453,7 +2453,7 @@ export const charts: Registry["items"] = [
     name: "custom-content-of-tooltip",
     type: "registry:block",
     description: "محتوای سفارشی تولتیپ",
-    registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/tooltip/custom-content-of-tooltip.tsx",
@@ -2466,7 +2466,7 @@ export const charts: Registry["items"] = [
     name: "tooltip-styles",
     type: "registry:block",
     description: "سبک تولتیپ",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/tooltip/tooltip-styles.tsx",
@@ -2479,7 +2479,7 @@ export const charts: Registry["items"] = [
     name: "tooltip-advanced",
     type: "registry:block",
     description: "تولتیپ پیشرفته",
-    registryDependencies: ["chart","chart-fa","chart-locale"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale"],
     files: [
       {
         path: "charts/gallery/tooltip/tooltip-advanced.tsx",
@@ -2492,7 +2492,7 @@ export const charts: Registry["items"] = [
     name: "legend-effect-opacity",
     type: "registry:block",
     description: "راهنما با شفافیت",
-    registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/legend/legend-effect-opacity.tsx",
@@ -2505,7 +2505,7 @@ export const charts: Registry["items"] = [
     name: "legend-position",
     type: "registry:block",
     description: "موقعیت راهنما",
-    registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/legend/legend-position.tsx",
@@ -2518,7 +2518,7 @@ export const charts: Registry["items"] = [
     name: "legend-styles",
     type: "registry:block",
     description: "سبک سفارشی راهنما",
-    registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/legend/legend-styles.tsx",
@@ -2531,7 +2531,7 @@ export const charts: Registry["items"] = [
     name: "area-responsive-container",
     type: "registry:block",
     description: "ناحیه‌ای واکنش‌گرا",
-    registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/responsive/area-responsive-container.tsx",
@@ -2544,7 +2544,7 @@ export const charts: Registry["items"] = [
     name: "composed-responsive-container",
     type: "registry:block",
     description: "ترکیبی واکنش‌گرا",
-    registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-locale", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/responsive/composed-responsive-container.tsx",
@@ -2557,7 +2557,7 @@ export const charts: Registry["items"] = [
     name: "pie-responsive-container",
     type: "registry:block",
     description: "دایره‌ای واکنش‌گرا",
-    registryDependencies: ["chart","chart-fa"],
+    registryDependencies: ["chart", "chart-fa"],
     files: [
       {
         path: "charts/gallery/responsive/pie-responsive-container.tsx",
@@ -2570,7 +2570,7 @@ export const charts: Registry["items"] = [
     name: "candlestick",
     type: "registry:block",
     description: "نمودار کندل‌استیک",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/candlestick.tsx",
@@ -2587,7 +2587,7 @@ export const charts: Registry["items"] = [
     name: "candlestick-dashboard",
     type: "registry:block",
     description: "داشبورد کندل",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/candlestick-dashboard.tsx",
@@ -2604,7 +2604,7 @@ export const charts: Registry["items"] = [
     name: "candlestick-bar",
     type: "registry:block",
     description: "کندل‌استیک و میله‌ای",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/stock/candlestick-bar.tsx",
@@ -2621,7 +2621,7 @@ export const charts: Registry["items"] = [
     name: "candlestick-category",
     type: "registry:block",
     description: "کندل‌استیک با محور دسته‌ای",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/stock/candlestick-category.tsx",
@@ -2638,7 +2638,7 @@ export const charts: Registry["items"] = [
     name: "candlestick-line",
     type: "registry:block",
     description: "کندل‌استیک و خطی",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/candlestick-line.tsx",
@@ -2655,7 +2655,7 @@ export const charts: Registry["items"] = [
     name: "sparklines",
     type: "registry:block",
     description: "اسپارک‌لاین قیمت",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/sparklines.tsx",
@@ -2672,7 +2672,7 @@ export const charts: Registry["items"] = [
     name: "stock-ohlc",
     type: "registry:block",
     description: "نمودار میله‌ای OHLC",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-locale","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-locale", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/stock/stock-ohlc.tsx",
@@ -2689,7 +2689,7 @@ export const charts: Registry["items"] = [
     name: "stock-line",
     type: "registry:block",
     description: "نمودار خط قیمت",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/stock-line.tsx",
@@ -2706,7 +2706,7 @@ export const charts: Registry["items"] = [
     name: "stock-column",
     type: "registry:block",
     description: "نمودار ستونی قیمت",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-locale","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-locale", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/stock/stock-column.tsx",
@@ -2723,7 +2723,7 @@ export const charts: Registry["items"] = [
     name: "stock-with-volume",
     type: "registry:block",
     description: "نمودار قیمت و حجم معاملات",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/stock/stock-with-volume.tsx",
@@ -2740,7 +2740,7 @@ export const charts: Registry["items"] = [
     name: "stock-multi-series",
     type: "registry:block",
     description: "مقایسه چند نماد",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/stock-multi-series.tsx",
@@ -2757,7 +2757,7 @@ export const charts: Registry["items"] = [
     name: "stock-trendline",
     type: "registry:block",
     description: "نمودار خط روند",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/stock-trendline.tsx",
@@ -2774,7 +2774,7 @@ export const charts: Registry["items"] = [
     name: "tremor-area-charts",
     type: "registry:block",
     description: "نمودار ناحیه‌ای",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/tremor-area-charts.tsx",
@@ -2791,7 +2791,7 @@ export const charts: Registry["items"] = [
     name: "realtime-mountain-chart",
     type: "registry:block",
     description: "نمودار ناحیه‌ای زنده",
-    registryDependencies: ["button","chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+    registryDependencies: ["button", "chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/realtime-mountain-chart.tsx",
@@ -2808,7 +2808,7 @@ export const charts: Registry["items"] = [
     name: "realtime-candlestick",
     type: "registry:block",
     description: "کندل زنده",
-    registryDependencies: ["button","chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["button", "chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/realtime-candlestick.tsx",
@@ -2825,7 +2825,7 @@ export const charts: Registry["items"] = [
     name: "heikin-ashi",
     type: "registry:block",
     description: "هیکن‌آشی",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/heikin-ashi.tsx",
@@ -2842,7 +2842,7 @@ export const charts: Registry["items"] = [
     name: "renko-chart",
     type: "registry:block",
     description: "نمودار رنکو",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/renko-chart.tsx",
@@ -2859,7 +2859,7 @@ export const charts: Registry["items"] = [
     name: "volume-profile",
     type: "registry:block",
     description: "پروفایل حجم",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data"],
     files: [
       {
         path: "charts/gallery/stock/volume-profile.tsx",
@@ -2876,7 +2876,7 @@ export const charts: Registry["items"] = [
     name: "order-book-depth",
     type: "registry:block",
     description: "عمق بازار",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/order-book-depth.tsx",
@@ -2893,7 +2893,7 @@ export const charts: Registry["items"] = [
     name: "drawdown-chart",
     type: "registry:block",
     description: "نمودار افت سرمایه",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/drawdown-chart.tsx",
@@ -2910,7 +2910,7 @@ export const charts: Registry["items"] = [
     name: "bollinger-bands",
     type: "registry:block",
     description: "باندهای بولینگر",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick", "use-market-neon", "utils"],
     files: [
       {
         path: "charts/gallery/stock/bollinger-bands.tsx",
@@ -2927,7 +2927,7 @@ export const charts: Registry["items"] = [
     name: "candlestick-indicators",
     type: "registry:block",
     description: "کندل‌استیک با اندیکاتور",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/candlestick-indicators.tsx",
@@ -2944,7 +2944,7 @@ export const charts: Registry["items"] = [
     name: "multi-timeframe",
     type: "registry:block",
     description: "چند بازهٔ زمانی",
-    registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+    registryDependencies: ["chart", "chart-fa", "chart-jalali-tick", "chart-live", "chart-locale", "chart-mock-data", "chart-toman-tick"],
     files: [
       {
         path: "charts/gallery/stock/multi-timeframe.tsx",
@@ -2961,7 +2961,7 @@ export const charts: Registry["items"] = [
     name: "gauge-default",
     type: "registry:block",
     description: "گیج پیش‌فرض",
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/gauge-default.tsx",
@@ -2978,7 +2978,7 @@ export const charts: Registry["items"] = [
     name: "gauge-levels",
     type: "registry:block",
     description: "گیج چندسطحی",
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/gauge-levels.tsx",
@@ -2995,7 +2995,7 @@ export const charts: Registry["items"] = [
     name: "gauge-custom-colors",
     type: "registry:block",
     description: "گیج رنگی",
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/gauge-custom-colors.tsx",
@@ -3012,7 +3012,7 @@ export const charts: Registry["items"] = [
     name: "gauge-corner-radius",
     type: "registry:block",
     description: "گیج گوشه‌گرد",
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/gauge-corner-radius.tsx",
@@ -3029,7 +3029,7 @@ export const charts: Registry["items"] = [
     name: "gauge-custom-arcs",
     type: "registry:block",
     description: "گیج با کمان سفارشی",
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/gauge-custom-arcs.tsx",
@@ -3046,7 +3046,7 @@ export const charts: Registry["items"] = [
     name: "gauge-no-animation",
     type: "registry:block",
     description: "گیج بدون انیمیشن",
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/gauge-no-animation.tsx",
@@ -3064,7 +3064,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج پیش‌فرض HC",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-default.tsx",
@@ -3082,7 +3082,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج انتهای گرد",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-rounded-ends.tsx",
@@ -3100,7 +3100,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج حلقهٔ نازک",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-thin-ring.tsx",
@@ -3118,7 +3118,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج نیم‌دایره",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-semicircle.tsx",
@@ -3136,7 +3136,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج محور سفارشی",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-custom-pivot.tsx",
@@ -3154,7 +3154,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج ترکیبی",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-combo.tsx",
@@ -3172,7 +3172,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج سطح سوخت",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-fuel.tsx",
@@ -3190,7 +3190,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج فعالیت",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-activity.tsx",
@@ -3208,7 +3208,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج چندحلقهٔ KPI",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-kpi.tsx",
@@ -3226,7 +3226,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج نوار گرد",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-rounded-bands.tsx",
@@ -3244,7 +3244,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج آستانه",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-threshold.tsx",
@@ -3262,7 +3262,7 @@ export const charts: Registry["items"] = [
     type: "registry:block",
     description: "گیج عقربهٔ نقطه‌ای",
     dependencies: ["highcharts","highcharts-react-official"],
-    registryDependencies: ["chart-fa","chart-live"],
+    registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
         path: "charts/gallery/gauge/hc-gauge-custom-dial.tsx",
@@ -3279,7 +3279,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-calendar",
     type: "registry:block",
     description: "تقویم حرارتی",
-    registryDependencies: ["chart-fa","chart-live","utils"],
+    registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/heatmap/heatmap-calendar.tsx",
@@ -3296,7 +3296,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-calendar-emerald",
     type: "registry:block",
     description: "تقویم زمردی",
-    registryDependencies: ["chart-fa","chart-live","utils"],
+    registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/heatmap/heatmap-calendar-emerald.tsx",
@@ -3313,7 +3313,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-matrix",
     type: "registry:block",
     description: "ماتریس روز و ساعت",
-    registryDependencies: ["chart-fa","chart-live","utils"],
+    registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/heatmap/heatmap-matrix.tsx",
@@ -3330,7 +3330,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-matrix-values",
     type: "registry:block",
     description: "ماتریس با مقدار",
-    registryDependencies: ["chart-fa","chart-live","utils"],
+    registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
         path: "charts/gallery/heatmap/heatmap-matrix-values.tsx",

@@ -40,7 +40,7 @@ export default function TinyAreaChartDemo() {
     <ChartContainer
       config={chartConfig}
       className={cn(
-        "aspect-[1.618] h-[50px] w-full max-w-[200px] font-sans",
+        "mx-auto aspect-[1.618] h-[50px] w-full max-w-[200px] font-sans",
         neon && chartNeonOverflowClassName
       )}
     >

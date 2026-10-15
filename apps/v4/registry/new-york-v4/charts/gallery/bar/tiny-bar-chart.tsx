@@ -12,7 +12,7 @@ export default function TinyBarChartDemo() {
   return (
     <ChartContainer
       config={chartBarMockConfig}
-      className="aspect-[1.618] h-[100px] w-full max-w-[300px] font-sans"
+      className="mx-auto aspect-[1.618] h-[100px] w-full max-w-[300px] font-sans"
     >
       <BarChart accessibilityLayer data={data}>
         <Bar

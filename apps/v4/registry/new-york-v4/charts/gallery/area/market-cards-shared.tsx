@@ -244,7 +244,7 @@ export function MarketAssetCard({
       </div>
 
       <div className="mt-4 flex items-baseline justify-start gap-2">
-        <span className="text-[28px] font-semibold leading-none tracking-tight text-foreground tabular-nums">
+        <span className="fa-num text-[28px] font-semibold leading-none tracking-tight text-foreground">
           {formatPersianNumber(price, { useGrouping: true })}
         </span>
         <span className="text-[13px] text-muted-foreground">تومان</span>

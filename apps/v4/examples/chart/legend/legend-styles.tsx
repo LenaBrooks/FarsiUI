@@ -109,7 +109,7 @@ export default function LegendStylesDemo() {
   return (
     <ChartContainer
       config={chartBarMockConfig}
-      className={`${chartBarContainerClassName} max-w-[520px]`}
+      className={`${chartBarContainerClassName} mx-auto max-w-[520px]`}
     >
       <BarChart
         accessibilityLayer

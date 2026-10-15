@@ -218,7 +218,7 @@ export default function CustomShapeBarChartDemo({
         </div>
         <div className="text-end">
           <p className="text-[11px] text-muted-foreground">جمع</p>
-          <p className="text-sm font-bold tabular-nums text-foreground">
+          <p className="fa-num text-sm font-bold text-foreground">
             {toPersianDigits(total)}{" "}
             <span className="text-[11px] font-medium text-muted-foreground">
               م

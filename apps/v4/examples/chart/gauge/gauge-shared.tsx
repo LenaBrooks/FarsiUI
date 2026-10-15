@@ -66,7 +66,7 @@ export function ChartGauge(
   )
 
   return (
-    <div className="flex w-full max-w-[420px] justify-center font-sans">
+    <div className="mx-auto flex w-full max-w-[420px] justify-center font-sans">
       <GaugeChart
         style={gaugeChartStyle}
         textColor={textColor}

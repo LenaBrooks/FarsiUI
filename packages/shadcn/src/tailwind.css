@@ -627,3 +627,24 @@
     -webkit-text-fill-color: currentColor;
   }
 }
+
+/*
+ * Persian / Arabic-Indic digits + thousands separators: Tailwind `tabular-nums`
+ * enables OpenType tnum, which pads short figures so values like «۸۴۹٬۱۴۰»
+ * look letter-spaced — for Estedad, Vazirmatn, IRANSans, and most FA faces.
+ * Keep the class for intent/alignment hooks; render proportional glyphs.
+ * Font-agnostic: disables tnum / forces pnum rather than targeting one family.
+ */
+.tabular-nums {
+  letter-spacing: 0 !important;
+  font-variant-numeric: normal !important;
+  font-feature-settings: "tnum" 0, "pnum" 1 !important;
+}
+
+/* Explicit tight FA figure run (chips, KPIs, money, tooltips). */
+.fa-num {
+  letter-spacing: 0;
+  font-variant-numeric: normal;
+  font-feature-settings: "tnum" 0, "pnum" 1;
+  white-space: nowrap;
+}

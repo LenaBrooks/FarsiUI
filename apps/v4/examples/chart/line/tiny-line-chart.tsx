@@ -12,7 +12,7 @@ export default function TinyLineChartDemo() {
   return (
     <ChartContainer
       config={lineSalesConfig}
-      className="aspect-[1.618] h-[50px] w-full max-w-[100px] font-sans"
+      className="mx-auto aspect-[1.618] h-[50px] w-full max-w-[100px] font-sans"
     >
       <LineChart accessibilityLayer data={data}>
         <Line

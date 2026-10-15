@@ -215,21 +215,28 @@ export function ChartGallery() {
     const updateActiveFromScroll = () => {
       if (scrollingToRef.current) return
 
-      const rootRect = scroller.getBoundingClientRect()
-      const midpoint = rootRect.top + rootRect.height / 2
+      const lastId = chartCategories[chartCategories.length - 1]?.id
+      // Short final sections never reach the viewport midpoint; pin the last
+      // category once the scroller is at (or near) the bottom.
+      const atBottom =
+        Boolean(lastId) &&
+        scroller.scrollTop + scroller.clientHeight >=
+          scroller.scrollHeight - 24
 
       let current: ChartCategoryId = chartCategories[0].id
-      let bestDistance = Number.POSITIVE_INFINITY
+      if (atBottom && lastId) {
+        current = lastId
+      } else {
+        const rootRect = scroller.getBoundingClientRect()
+        // Active = last section whose top has crossed this marker line.
+        const marker = rootRect.top + Math.min(120, rootRect.height * 0.2)
 
-      for (const item of chartCategories) {
-        const node = sectionRefs.current.get(item.id)
-        if (!node) continue
-        const rect = node.getBoundingClientRect()
-        const sectionMid = rect.top + rect.height / 2
-        const distance = Math.abs(sectionMid - midpoint)
-        if (distance < bestDistance) {
-          bestDistance = distance
-          current = item.id
+        for (const item of chartCategories) {
+          const node = sectionRefs.current.get(item.id)
+          if (!node) continue
+          if (node.getBoundingClientRect().top <= marker) {
+            current = item.id
+          }
         }
       }
 
@@ -302,8 +309,8 @@ export function ChartGallery() {
             </section>
           )
         })}
-        {/* Room so the last category can scroll clear of the mobile edge. */}
-        <div aria-hidden className="h-[min(45svh,18rem)] shrink-0 md:h-24" />
+        {/* Room so the last category can scroll into the active marker zone. */}
+        <div aria-hidden className="h-[min(45svh,18rem)] shrink-0 md:h-[min(40svh,16rem)]" />
       </div>
     </ChartShell>
   )

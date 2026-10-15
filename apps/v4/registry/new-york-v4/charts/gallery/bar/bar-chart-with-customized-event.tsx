@@ -204,25 +204,25 @@ export default function BarChartWithCustomizedEventDemo() {
           <dl className="grid grid-cols-2 gap-x-4 gap-y-2.5 sm:grid-cols-4">
             <div>
               <dt className="text-[11px] text-muted-foreground">فروش</dt>
-              <dd className="text-sm font-medium tabular-nums text-foreground">
+              <dd className="fa-num text-sm font-medium text-foreground">
                 {formatToman(row.sales, { compact: true })}
               </dd>
             </div>
             <div>
               <dt className="text-[11px] text-muted-foreground">سفارش</dt>
-              <dd className="text-sm font-medium tabular-nums text-foreground">
+              <dd className="fa-num text-sm font-medium text-foreground">
                 {toPersianDigits(row.orders)}
               </dd>
             </div>
             <div>
               <dt className="text-[11px] text-muted-foreground">میانگین سبد</dt>
-              <dd className="text-sm font-medium tabular-nums text-foreground">
+              <dd className="fa-num text-sm font-medium text-foreground">
                 {formatToman(avgBasket, { compact: true })}
               </dd>
             </div>
             <div>
               <dt className="text-[11px] text-muted-foreground">سهم از کل</dt>
-              <dd className="text-sm font-medium tabular-nums text-foreground">
+              <dd className="fa-num text-sm font-medium text-foreground">
                 {toPersianDigits(share.toFixed(1))}٪
               </dd>
             </div>
@@ -266,7 +266,7 @@ function DeltaLine({
     <p className="text-xs">
       <span className="text-muted-foreground">{label}: </span>
       <span
-        className="font-medium tabular-nums"
+        className="fa-num font-medium"
         style={{ color: up ? CHART_BAR_COLORS[2] : CHART_BAR_COLORS[1] }}
       >
         {up ? "+" : "−"}

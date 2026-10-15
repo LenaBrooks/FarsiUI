@@ -24,7 +24,7 @@ import {
 import {
   LineSalesTooltipContent,
   useSalesData,
-} from "../line/line-fa-shared"
+} from "./line-fa-shared"
 
 const barSalesConfig = {
   store: {

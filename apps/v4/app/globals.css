@@ -935,10 +935,12 @@ body[class*="theme-"],
   }
 
   /*
-   * Estedad + Persian digits: Tailwind `tabular-nums` enables tnum, which pads
-   * short figures so values like «۴٪» / «۱۹٪» look letter-spaced. Keep the
-   * class for intent/alignment hooks, but render proportional glyphs.
+   * Persian / Arabic-Indic digits (any FA face: Estedad, Vazirmatn, IRANSans, …):
+   * Tailwind `tabular-nums` enables tnum, which pads short figures so values
+   * like «۴٪» / «۸۴۹٬۱۴۰» look letter-spaced. Keep the class for intent;
+   * render proportional glyphs. Font-agnostic — disables tnum / forces pnum.
    * `!important` beats co-applied `tracking-tight` on the same node.
+   * Also shipped to consumers via `farsiui/tailwind.css`.
    */
   .tabular-nums {
     letter-spacing: 0 !important;

@@ -50,7 +50,7 @@ export default function TooltipStylesDemo() {
   return (
     <ChartContainer
       config={chartBarMockConfig}
-      className={`${chartBarContainerClassName} max-w-[500px]`}
+      className={`${chartBarContainerClassName} mx-auto max-w-[500px]`}
     >
       <BarChart
         accessibilityLayer

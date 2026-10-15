@@ -160,7 +160,7 @@ function TooltipContent(props: TooltipContentProps) {
             className="flex items-center justify-between gap-4"
           >
             <span className="text-muted-foreground">{row.label}</span>
-            <span className="font-medium tabular-nums text-foreground">
+            <span className="fa-num font-medium text-foreground">
               {toPersianDigits(row.value)}
             </span>
           </li>

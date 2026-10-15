@@ -153,11 +153,11 @@ export function ChartHighchartsGauge({
   }, [height, options])
 
   if (!mounted) {
-    return <div className="w-full max-w-[420px]" style={{ height }} />
+    return <div className="mx-auto w-full max-w-[420px]" style={{ height }} />
   }
 
   return (
-    <div className="w-full max-w-[420px] font-sans" dir="ltr">
+    <div className="mx-auto w-full max-w-[420px] font-sans" dir="ltr">
       <HighchartsReact highcharts={Highcharts} options={merged} />
     </div>
   )

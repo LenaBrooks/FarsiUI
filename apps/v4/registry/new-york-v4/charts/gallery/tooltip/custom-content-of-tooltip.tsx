@@ -99,7 +99,7 @@ export default function CustomContentOfTooltipDemo({
   return (
     <ChartContainer
       config={chartConfig}
-      className={`${chartBarContainerClassName} max-w-[500px]`}
+      className={`${chartBarContainerClassName} mx-auto max-w-[500px]`}
     >
       <BarChart
         accessibilityLayer

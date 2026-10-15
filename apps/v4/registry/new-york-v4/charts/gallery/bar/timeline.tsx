@@ -246,7 +246,7 @@ export default function TimelineDemo({
                     <div className="flex w-full min-w-[10rem] flex-col gap-0.5 font-sans">
                       <div className="flex items-center justify-between gap-4">
                         <span className="text-muted-foreground">{cycleLabel}</span>
-                        <span className="font-medium tabular-nums text-foreground">
+                        <span className="fa-num font-medium text-foreground">
                           {range
                             ? `${formatSeconds(range[0])} — ${formatSeconds(range[1])}`
                             : formatSeconds(Number(value))}
@@ -254,7 +254,7 @@ export default function TimelineDemo({
                       </div>
                       <div className="flex items-center justify-between gap-4 text-[11px]">
                         <span className="text-muted-foreground">مدت</span>
-                        <span className="tabular-nums">
+                        <span className="fa-num">
                           {formatSeconds(duration)}
                         </span>
                       </div>

@@ -22,9 +22,9 @@ import {
   useChartLive,
 } from "@/components/chart-live"
 import { CodeBlockCommand } from "@/components/code-block-command"
+import { CodeTabs } from "@/components/code-tabs"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
-  Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
@@ -38,7 +38,7 @@ const docsTabsTriggerClass =
   "not-typeset rounded-none border-0 border-b-2 border-transparent bg-transparent px-0 pb-3 text-base text-muted-foreground hover:text-primary data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-foreground data-[state=active]:shadow-none! dark:data-[state=active]:border-primary dark:data-[state=active]:bg-transparent"
 
 const docsTabsContentClass =
-  "relative *:[figure]:first:mt-0 [&>.steps]:mt-6"
+  "relative [&_h3.font-heading]:text-base [&_h3.font-heading]:font-medium *:[figure]:first:mt-0 [&>.steps]:mt-6"
 
 function DocsHeading({
   id,
@@ -189,11 +189,7 @@ export function ChartView({
         <div className="typeset mt-10">
           <DocsHeading id="نصب">نصب</DocsHeading>
 
-          <Tabs
-            defaultValue="cli"
-            dir="rtl"
-            className="relative mt-6 w-full *:data-[slot=tabs-list]:ml-auto *:data-[slot=tabs-list]:gap-6 [&_[data-rehype-pretty-code-figure]]:dir-ltr [&_pre]:dir-ltr"
-          >
+          <CodeTabs>
             <TabsList className={docsTabsListClass}>
               <TabsTrigger value="cli" className={docsTabsTriggerClass}>
                 دستور
@@ -233,10 +229,10 @@ export function ChartView({
                 </h3>
               </div>
             </TabsContent>
-          </Tabs>
+          </CodeTabs>
 
           <DocsHeading id="استفاده">استفاده</DocsHeading>
-          <div data-not-typeset className="min-w-0 max-w-full space-y-4">
+          <div className="min-w-0 max-w-full space-y-4 *:[figure]:first:mt-0">
             {usageFigures}
           </div>
         </div>

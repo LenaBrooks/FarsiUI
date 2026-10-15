@@ -402,26 +402,6 @@ function cssColorToRgb(color: string): string | null {
   return `rgb(${r}, ${g}, ${b})`
 }
 
-function resolveThemeBackgroundRgb() {
-  const probe = document.createElement("div")
-  probe.style.cssText =
-    "position:fixed;left:-9999px;top:0;width:1px;height:1px;background-color:var(--background)"
-  document.body.appendChild(probe)
-  const rgb = cssColorToRgb(getComputedStyle(probe).backgroundColor)
-  probe.remove()
-  if (rgb) return rgb
-  // Fallback matching globals.css light / .dark --background
-  return document.documentElement.classList.contains("dark")
-    ? "rgb(37, 37, 37)"
-    : "rgb(255, 255, 255)"
-}
-
-function resolveOpaqueBackground(_start: HTMLElement) {
-  // Stage uses muted/20 (translucent). Always bake the theme `--background`
-  // so dark exports are actually dark (oklch → canvas rgb).
-  return resolveThemeBackgroundRgb()
-}
-
 function parseFontFamilyStack(stack: string) {
   const families: string[] = []
   const re = /"([^"]+)"|'([^']+)'|([^,]+)/g
@@ -825,8 +805,6 @@ export async function downloadChartPng(
   }
   clone.setAttribute("preserveAspectRatio", "xMidYMid meet")
 
-  const bg = resolveOpaqueBackground(root)
-
   // data: URI (not blob:) so Chromium applies embedded @font-face in SVG-as-image.
   const svgXml = new XMLSerializer().serializeToString(clone)
   const url = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgXml)}`
@@ -849,13 +827,13 @@ export async function downloadChartPng(
       window.setTimeout(() => r(), 50)
     })
 
+    // Leave canvas clear so PNG keeps alpha (transparent stage for gallery thumbs).
     const canvas = document.createElement("canvas")
     canvas.width = width
     canvas.height = height
     const ctx = canvas.getContext("2d")
     if (!ctx) return
-    ctx.fillStyle = bg
-    ctx.fillRect(0, 0, width, height)
+    ctx.clearRect(0, 0, width, height)
     ctx.drawImage(img, 0, 0, width, height)
 
     const a = document.createElement("a")
@@ -911,7 +889,9 @@ export function ChartExportPngButton({
           <DownloadIcon className="size-3.5" />
         </Button>
       </TooltipTrigger>
-      <TooltipContent>دانلود PNG ({CHART_EXPORT_SIZE.width}×{CHART_EXPORT_SIZE.height})</TooltipContent>
+          <TooltipContent>
+            دانلود PNG شفاف ({CHART_EXPORT_SIZE.width}×{CHART_EXPORT_SIZE.height})
+          </TooltipContent>
     </Tooltip>
   )
 }

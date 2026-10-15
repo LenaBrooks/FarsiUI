@@ -1,18 +1,19 @@
-import { ChartCardSkeleton } from "@/components/route-skeletons"
+import { Loader2Icon } from "lucide-react"
 
 export default function ChartsLoading() {
   return (
     <div
       dir="rtl"
       lang="fa"
-      className="mx-auto w-full max-w-6xl px-4 pb-8 md:px-6"
-      aria-hidden
+      className="flex min-h-[50svh] w-full flex-1 items-center justify-center"
+      aria-busy="true"
+      aria-live="polite"
     >
-      <div className="grid flex-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-4">
-        {Array.from({ length: 8 }).map((_, i) => (
-          <ChartCardSkeleton key={i} />
-        ))}
-      </div>
+      <span className="sr-only">در حال بارگذاری</span>
+      <Loader2Icon
+        className="size-5 animate-spin text-muted-foreground/50"
+        aria-hidden
+      />
     </div>
   )
 }

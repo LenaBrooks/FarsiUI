@@ -126,29 +126,19 @@ export function ComponentPreviewTabs({
                 <>{source}</>
               )
             ) : (
-              <div className="relative">
-                {sourcePreview}
-                <div className="absolute inset-0 flex items-center justify-center pb-4">
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      background:
-                        "linear-gradient(to top, var(--color-code), color-mix(in oklab, var(--color-code) 60%, transparent), transparent)",
-                    }}
-                  />
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant="outline"
-                    className="relative z-10 cursor-pointer gap-1.5 rounded-lg border border-border bg-background font-sans text-foreground shadow-none hover:bg-muted dark:bg-background dark:text-foreground dark:hover:bg-muted"
-                    onClick={() => {
-                      setIsMobileCodeVisible(true)
-                    }}
-                  >
-                    <Eye className="size-4" />
-                    مشاهده کد
-                  </Button>
-                </div>
+              <div className="relative flex h-16 items-center justify-center bg-muted/20">
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="outline"
+                  className="relative z-10 cursor-pointer gap-1.5 rounded-lg border border-border bg-background font-sans text-foreground shadow-none hover:bg-muted dark:bg-background dark:text-foreground dark:hover:bg-muted"
+                  onClick={() => {
+                    setIsMobileCodeVisible(true)
+                  }}
+                >
+                  <Eye className="size-4" />
+                  مشاهده کد
+                </Button>
               </div>
             )}
           </div>

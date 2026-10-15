@@ -51,12 +51,12 @@ export function CodeCollapsibleWrapper({
       </CollapsibleContent>
 
       {!isOpened ? (
-        <div className="absolute inset-x-0 bottom-0 z-10 flex h-24 items-center justify-center rounded-b-lg">
+        <div className="absolute inset-x-0 bottom-0 z-10 flex h-16 items-center justify-center rounded-b-lg bg-background/95 backdrop-blur-sm">
           <div
             className="absolute inset-0 rounded-b-lg"
             style={{
               background:
-                "linear-gradient(to top, var(--color-code), color-mix(in oklab, var(--color-code) 60%, transparent), transparent)",
+                "linear-gradient(to top, var(--background), color-mix(in oklab, var(--background) 75%, transparent), transparent)",
             }}
           />
           <CollapsibleTrigger asChild>

@@ -3,6 +3,8 @@ import { type Metadata } from "next"
 import { siteConfig } from "@/lib/config"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 
+import "@/app/(app)/(typeset)/typeset.css"
+
 const title = "نمودارها"
 const description =
   "گالری نمودارهای FarsiUI — میله‌ای، خطی، ناحیه‌ای، سهام، گیج و بیشتر."

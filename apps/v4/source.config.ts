@@ -11,11 +11,8 @@ export default defineConfig({
       plugins.push([
         rehypePrettyCode,
         {
-          theme: {
-            // VS Code Default Dark+ / Light+
-            dark: "dark-plus",
-            light: "light-plus",
-          },
+          // VS Code Default Dark+ only — same tokens in light and dark UI.
+          theme: "dark-plus",
           transformers,
         },
       ])

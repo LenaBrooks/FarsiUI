@@ -2,12 +2,14 @@
 
 import { useSyncExternalStore } from "react"
 
-import { useDesignSystemPreview } from "@/components/design-system-preview"
-
 function subscribeBodyClass(onChange: () => void) {
   const obs = new MutationObserver(onChange)
   obs.observe(document.body, { attributes: true, attributeFilter: ["class"] })
   return () => obs.disconnect()
+}
+
+function bodyHasStyleClass() {
+  return [...document.body.classList].some((c) => c.startsWith("style-"))
 }
 
 function bodyIsNova() {
@@ -16,15 +18,14 @@ function bodyIsNova() {
 
 /**
  * Neon market-card pattern on branded DS only — Nova (پیشفرض) stays raw.
- * Prefer live `style-*` on body so charts match what the user actually sees
- * (avoids soft palette stuck on while آرام/etc. CSS is already applied).
+ * Reads live `style-*` on body (docs picker or consumer layout).
+ * No DesignSystemPreviewProvider — safe to install via CLI.
+ * Without any `style-*` class, neon stays off (raw).
  */
 export function useMarketNeon() {
-  const { designSystemId } = useDesignSystemPreview()
-  const novaOnBody = useSyncExternalStore(
+  return useSyncExternalStore(
     subscribeBodyClass,
-    bodyIsNova,
-    () => designSystemId === "default"
+    () => bodyHasStyleClass() && !bodyIsNova(),
+    () => false
   )
-  return !novaOnBody
 }

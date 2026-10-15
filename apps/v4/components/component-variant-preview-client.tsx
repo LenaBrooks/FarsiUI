@@ -547,36 +547,17 @@ export function ComponentVariantPreviewClient({
             </figure>
           </div>
         ) : (
-          <div className="relative h-24" dir="ltr">
-            <figure
-              data-rehype-pretty-code-figure=""
-              className="pointer-events-none m-0! h-full select-none overflow-hidden opacity-60 [&_pre]:h-full [&_pre]:max-h-24 [&_pre]:overflow-hidden"
+          <div className="relative flex h-16 items-center justify-center bg-muted/20">
+            <ChromeButton
+              type="button"
+              size="sm"
+              variant="outline"
+              className="relative z-10 cursor-pointer gap-1.5 rounded-lg border border-border bg-background font-sans text-foreground shadow-none hover:bg-muted dark:bg-background dark:text-foreground dark:hover:bg-muted"
+              onClick={() => setCodeOpen(true)}
             >
-              <div
-                data-not-typeset
-                className="h-full overflow-hidden"
-                dangerouslySetInnerHTML={{ __html: activeHighlighted }}
-              />
-            </figure>
-            <div className="absolute inset-0 flex items-center justify-center pb-4">
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(to top, var(--color-code), color-mix(in oklab, var(--color-code) 60%, transparent), transparent)",
-                }}
-              />
-              <ChromeButton
-                type="button"
-                size="sm"
-                variant="outline"
-                className="relative z-10 cursor-pointer gap-1.5 rounded-lg border border-border bg-background font-sans text-foreground shadow-none hover:bg-muted dark:bg-background dark:text-foreground dark:hover:bg-muted"
-                onClick={() => setCodeOpen(true)}
-              >
-                <Eye className="size-4" />
-                مشاهده کد
-              </ChromeButton>
-            </div>
+              <Eye className="size-4" />
+              مشاهده کد
+            </ChromeButton>
           </div>
         )}
         </div>

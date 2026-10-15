@@ -1,8 +1,9 @@
 "use client"
 
 import * as React from "react"
-import { useRouter } from "next/navigation"
+import Link from "next/link"
 import { useTheme } from "next-themes"
+import { Loader2Icon } from "lucide-react"
 import { cn } from "cn"
 
 import {
@@ -15,6 +16,17 @@ import { ChartShell } from "@/components/chart-shell"
 /** Gallery thumbs: `public/chart/{id}-light.webp` + `{id}-dark.webp`. */
 export function chartThumbSrc(id: string, theme: "light" | "dark") {
   return `/chart/${id}-${theme}.webp`
+}
+
+/** Survives /charts ↔ /charts/view remounts so thumbs don’t flash loading again. */
+const loadedThumbSrcs = new Set<string>()
+
+function markThumbLoaded(src: string) {
+  loadedThumbSrcs.add(src)
+}
+
+function isThumbLoaded(src: string) {
+  return loadedThumbSrcs.has(src)
 }
 
 /** First viewport thumbs load eagerly; the rest stay lazy. */
@@ -31,52 +43,81 @@ function ExampleCard({
   en: string
   loading?: "eager" | "lazy"
 }) {
-  const router = useRouter()
   const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = React.useState(false)
-  const [thumbLoaded, setThumbLoaded] = React.useState(false)
-  const [thumbFailed, setThumbFailed] = React.useState(false)
   const theme = resolvedTheme === "dark" ? "dark" : "light"
+  const src = chartThumbSrc(id, theme)
+  const href = `/charts/view/${id}`
+  const [thumbLoaded, setThumbLoaded] = React.useState(() =>
+    isThumbLoaded(src)
+  )
+  const [thumbFailed, setThumbFailed] = React.useState(false)
 
   React.useEffect(() => {
     setMounted(true)
   }, [])
 
   React.useEffect(() => {
+    if (isThumbLoaded(src)) {
+      setThumbLoaded(true)
+      setThumbFailed(false)
+      return
+    }
     setThumbLoaded(false)
     setThumbFailed(false)
-  }, [id, theme])
+  }, [src])
 
-  const showSkeleton = !mounted || (!thumbLoaded && !thumbFailed)
+  const syncImgState = React.useCallback(
+    (img: HTMLImageElement | null) => {
+      if (!img || thumbFailed) return
+      if (img.complete && img.naturalWidth > 0) {
+        markThumbLoaded(src)
+        setThumbLoaded(true)
+      }
+    },
+    [src, thumbFailed]
+  )
+
+  const showLoading = mounted && !thumbLoaded && !thumbFailed
 
   return (
-    <button
-      type="button"
+    <Link
+      href={href}
       aria-label={`${title} — ${en}`}
-      onClick={() => router.push(`/charts/view/${id}`)}
       className={cn(
-        "group flex w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-border/50 bg-background text-start outline-none",
-        "transition-[border-color,background-color] hover:border-border hover:bg-muted/20",
+        "group flex w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-border/50 bg-transparent text-start no-underline outline-none",
+        "transition-[border-color,background-color] hover:border-border hover:bg-muted/15",
         "focus-visible:ring-2 focus-visible:ring-ring"
       )}
     >
+      {/* Soft stage under transparent thumbs — matches chart view muted stage. */}
       <div
         aria-hidden
-        className="relative aspect-16/10 w-full overflow-hidden bg-muted/40"
+        className="relative aspect-16/10 w-full overflow-hidden bg-muted/35 dark:bg-muted/25"
       >
-        {showSkeleton ? (
-          <div className="absolute inset-0 animate-pulse bg-muted/50" />
+        {showLoading ? (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Loader2Icon
+              className="size-4 animate-spin text-muted-foreground/45"
+              aria-hidden
+            />
+          </div>
         ) : null}
         {mounted && !thumbFailed ? (
           <img
-            src={chartThumbSrc(id, theme)}
+            ref={syncImgState}
+            src={src}
             alt=""
             className={cn(
-              "size-full object-cover object-center transition-[opacity,transform] duration-300 ease-out group-hover:scale-110",
+              "size-full origin-center object-contain object-center p-2.5 transition-[opacity,transform] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform md:p-3 group-hover:scale-110",
               thumbLoaded ? "opacity-100" : "opacity-0"
             )}
-            loading={loading}
-            onLoad={() => setThumbLoaded(true)}
+            loading={isThumbLoaded(src) ? "eager" : loading}
+            decoding="async"
+            onLoad={() => {
+              markThumbLoaded(src)
+              setThumbLoaded(true)
+            }}
             onError={() => {
               setThumbFailed(true)
               setThumbLoaded(false)
@@ -84,7 +125,7 @@ function ExampleCard({
           />
         ) : null}
       </div>
-      <div className="flex min-w-0 flex-col gap-0.5 px-2.5 py-2 md:px-3 md:py-2.5">
+      <div className="flex min-w-0 flex-col gap-0.5 bg-background/80 px-2.5 py-2 md:px-3 md:py-2.5">
         <span className="truncate text-[13px] font-medium text-foreground md:text-sm">
           {title}
         </span>
@@ -96,7 +137,7 @@ function ExampleCard({
           {en}
         </span>
       </div>
-    </button>
+    </Link>
   )
 }
 

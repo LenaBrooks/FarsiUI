@@ -1,19 +1,20 @@
-import { ChartCardSkeleton } from "@/components/route-skeletons"
+import { Loader2Icon } from "lucide-react"
 
-/** Chart-type gallery — card-frame skeletons only (not the shared route shell). */
+/** Chart-type route — small spinner (not a card-grid skeleton). */
 export default function ChartTypeLoading() {
   return (
     <div
       dir="rtl"
       lang="fa"
-      className="mx-auto flex w-full max-w-6xl min-w-0 flex-col gap-8 px-4 pb-8 md:px-6"
-      aria-hidden
+      className="flex min-h-[50svh] w-full flex-1 items-center justify-center"
+      aria-busy="true"
+      aria-live="polite"
     >
-      <div className="grid flex-1 items-stretch gap-10 md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:gap-10">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <ChartCardSkeleton key={i} />
-        ))}
-      </div>
+      <span className="sr-only">در حال بارگذاری</span>
+      <Loader2Icon
+        className="size-5 animate-spin text-muted-foreground/50"
+        aria-hidden
+      />
     </div>
   )
 }

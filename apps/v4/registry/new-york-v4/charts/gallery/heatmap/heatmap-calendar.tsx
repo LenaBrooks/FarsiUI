@@ -2,7 +2,7 @@
 
 import { useMemo } from "react"
 
-import { useChartRandomSeed } from "@/lib/chart-live"
+import { useChartRandomSeed } from "@/registry/new-york-v4/lib/chart-live"
 import { CHART_BAR_COLORS } from "@/lib/chart-fa"
 
 import {

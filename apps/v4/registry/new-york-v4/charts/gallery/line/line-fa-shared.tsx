@@ -5,7 +5,7 @@ import * as React from "react"
 import {
   useChartCaption,
   useChartRandomSeed,
-} from "@/lib/chart-live"
+} from "@/registry/new-york-v4/lib/chart-live"
 import {
   chartContainerClassName,
   CHART_BAR_COLORS,

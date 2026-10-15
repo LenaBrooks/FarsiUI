@@ -12,7 +12,7 @@ import {
   type TooltipContentProps,
 } from "recharts"
 
-import { useChartLive } from "@/lib/chart-live"
+import { useChartLive } from "@/registry/new-york-v4/lib/chart-live"
 import {
   CHART_BAR_COLORS,
   CHART_DOWN,

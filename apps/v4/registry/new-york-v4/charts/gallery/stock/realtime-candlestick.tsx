@@ -15,7 +15,7 @@ import {
   YAxis,
 } from "recharts"
 
-import { useChartToolbarStart } from "@/lib/chart-live"
+import { useChartToolbarStart } from "@/registry/new-york-v4/lib/chart-live"
 import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
 import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {

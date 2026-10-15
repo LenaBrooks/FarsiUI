@@ -3,7 +3,7 @@
 import type { CSSProperties, ComponentProps } from "react"
 import GaugeChart from "react-gauge-chart"
 
-import { useChartToolbarStart } from "@/lib/chart-live"
+import { useChartToolbarStart } from "@/registry/new-york-v4/lib/chart-live"
 import { toPersianDigits } from "@/lib/chart-fa"
 
 /** Fixed height avoids the known resize bug in react-gauge-chart. */

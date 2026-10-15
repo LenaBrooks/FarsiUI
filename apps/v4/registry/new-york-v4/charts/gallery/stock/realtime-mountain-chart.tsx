@@ -7,8 +7,8 @@
 import * as React from "react"
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
-import { useChartToolbarStart } from "@/lib/chart-live"
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useChartToolbarStart } from "@/registry/new-york-v4/lib/chart-live"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
 import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {

@@ -14,7 +14,7 @@ import {
   type MouseHandlerDataParam,
 } from "recharts"
 
-import { useChartCaption } from "@/lib/chart-live"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 import { CHART_BAR_COLORS } from "@/lib/chart-fa"
 import {
   CHART_TOMAN_AXIS_WIDTH,

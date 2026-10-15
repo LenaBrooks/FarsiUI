@@ -18,7 +18,7 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/registry/new-york-v4/ui/chart"
-import { useChartCaption } from "@/lib/chart-live"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 
 import { LINE_TOOLTIP_CURSOR } from "./line-fa-shared"
 

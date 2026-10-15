@@ -11,8 +11,8 @@ import {
   getRelativeCoordinate,
 } from "recharts"
 
-import { usePersianMockData } from "@/lib/chart-live"
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { usePersianMockData } from "@/registry/new-york-v4/lib/chart-live"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   CHART_BAR_COLORS,
   CHART_SERIES_LABELS,

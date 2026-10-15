@@ -11,7 +11,7 @@ import {
   useYAxisScale,
 } from "recharts"
 
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   CHART_BAR_COLORS,
   FA_CHART,

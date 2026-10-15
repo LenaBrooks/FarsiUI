@@ -2,7 +2,7 @@
 
 import { Bar, BarChart } from "recharts"
 
-import { usePersianMockData } from "@/lib/chart-live"
+import { usePersianMockData } from "@/registry/new-york-v4/lib/chart-live"
 import { chartBarMockConfig } from "@/lib/chart-fa"
 import { ChartContainer } from "@/registry/new-york-v4/ui/chart"
 

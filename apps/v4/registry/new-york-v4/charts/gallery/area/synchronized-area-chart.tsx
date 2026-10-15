@@ -3,8 +3,8 @@
 import { useId } from "react"
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
-import { useChartCaption, usePersianMockData } from "@/lib/chart-live"
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useChartCaption, usePersianMockData } from "@/registry/new-york-v4/lib/chart-live"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   CHART_BAR_COLORS,
   CHART_SERIES_LABELS,

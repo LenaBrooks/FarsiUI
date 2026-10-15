@@ -2,7 +2,7 @@
 
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
-import { usePersianMockData } from "@/lib/chart-live"
+import { usePersianMockData } from "@/registry/new-york-v4/lib/chart-live"
 import {
   chartBarContainerClassName,
   chartBarMockConfig,

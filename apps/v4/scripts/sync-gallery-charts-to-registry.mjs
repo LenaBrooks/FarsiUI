@@ -46,6 +46,7 @@ const LIB_SOURCES = [
   "chart-fa.ts",
   "chart-toman-tick.tsx",
   "chart-jalali-tick.tsx",
+  "use-market-neon.ts",
 ]
 
 /** Installable chart helper libs (live under new-york-v4; middleware rewrites). */
@@ -80,14 +81,23 @@ function writeFile(filePath, content) {
 }
 
 function rewriteInstallImports(content) {
+  // Site docs load registry sources directly; `@/lib/chart-live` does not
+  // resolve under Turbopack for those imports. Use the registry lib path
+  // (already resolvable). build-registry rewrites `@/registry/.../lib/` →
+  // `@/lib/` for published CLI payloads.
   return content
     .replaceAll(
       "@/components/chart-live",
-      "@/lib/chart-live"
+      "@/registry/new-york-v4/lib/chart-live"
     )
     .replaceAll(
       "@/examples/chart/area/use-market-neon",
-      "@/lib/use-market-neon"
+      "@/registry/new-york-v4/lib/use-market-neon"
+    )
+    .replaceAll("@/lib/chart-live", "@/registry/new-york-v4/lib/chart-live")
+    .replaceAll(
+      "@/lib/use-market-neon",
+      "@/registry/new-york-v4/lib/use-market-neon"
     )
 }
 
@@ -136,13 +146,15 @@ function copyLibSources() {
     writeFile(dest, fs.readFileSync(src, "utf8"))
   }
 
-  // chart-live stub + use-market-neon are authored in registry (not copied)
+  // chart-live stub is authored in registry (and mirrored at apps/v4/lib for site)
   if (!fs.existsSync(path.join(LIB_OUT, "chart-live.tsx"))) {
     throw new Error("Missing registry/new-york-v4/lib/chart-live.tsx stub")
   }
-  if (!fs.existsSync(path.join(LIB_OUT, "use-market-neon.ts"))) {
-    throw new Error("Missing registry/new-york-v4/lib/use-market-neon.ts")
-  }
+  // Keep site resolve target in sync with the installable stub
+  writeFile(
+    path.join(APP_ROOT, "lib", "chart-live.tsx"),
+    fs.readFileSync(path.join(LIB_OUT, "chart-live.tsx"), "utf8")
+  )
 }
 
 function writeLibRegistry() {
@@ -310,8 +322,18 @@ function inferRegistryDependencies(contents) {
   if (joined.includes("@/lib/chart-toman-tick")) deps.add("chart-toman-tick")
   if (joined.includes("@/lib/chart-jalali-tick")) deps.add("chart-jalali-tick")
   if (joined.includes("@/lib/chart-mock-data")) deps.add("chart-mock-data")
-  if (joined.includes("@/lib/chart-live")) deps.add("chart-live")
-  if (joined.includes("@/lib/use-market-neon")) deps.add("use-market-neon")
+  if (
+    joined.includes("@/lib/chart-live") ||
+    joined.includes("@/registry/new-york-v4/lib/chart-live")
+  ) {
+    deps.add("chart-live")
+  }
+  if (
+    joined.includes("@/lib/use-market-neon") ||
+    joined.includes("@/registry/new-york-v4/lib/use-market-neon")
+  ) {
+    deps.add("use-market-neon")
+  }
   if (joined.includes("@/lib/digits")) deps.add("digits")
   if (joined.includes("@/lib/utils")) deps.add("utils")
 
@@ -398,20 +420,31 @@ function syncGallery() {
     const rewrittenContents = []
     const files = []
 
+    const entryOutDir = path.join(GALLERY_OUT, category)
     for (const abs of [...graph].sort()) {
       const relFromExamples = path.relative(EXAMPLES_ROOT, abs)
-      const outAbs = path.join(GALLERY_OUT, relFromExamples)
+      const isEntry = abs === entryAbs
+      // Flattened ./basename imports require shared deps beside the entry.
+      // Keep the canonical path under examples/category, and also mirror
+      // cross-category deps into the entry folder for site + CLI.
+      const outAbs = isEntry
+        ? path.join(GALLERY_OUT, relFromExamples)
+        : path.join(entryOutDir, path.basename(abs))
       let content = fs.readFileSync(abs, "utf8")
       content = rewriteInstallImports(content)
       content = rewriteFlattenRelatives(content)
       assertNoParentRelatives(content, `${id}:${relFromExamples}`)
       writeFile(outAbs, content)
+      // Preserve original category path for line/* shared sources too
+      if (!isEntry) {
+        const canonicalOut = path.join(GALLERY_OUT, relFromExamples)
+        if (canonicalOut !== outAbs) writeFile(canonicalOut, content)
+      }
       rewrittenContents.push(content)
 
       const registryPath = path
-        .join("charts", "gallery", relFromExamples)
+        .join("charts", "gallery", path.relative(GALLERY_OUT, outAbs))
         .replaceAll("\\", "/")
-      const isEntry = abs === entryAbs
       files.push({
         path: registryPath,
         type: isEntry ? "registry:block" : "registry:component",
@@ -501,8 +534,18 @@ function inferLegacyLibDeps(content) {
   if (content.includes("@/lib/chart-fa")) deps.push("chart-fa")
   if (content.includes("@/lib/chart-jalali-tick")) deps.push("chart-jalali-tick")
   if (content.includes("@/lib/chart-mock-data")) deps.push("chart-mock-data")
-  if (content.includes("@/lib/chart-live")) deps.push("chart-live")
-  if (content.includes("@/lib/use-market-neon")) deps.push("use-market-neon")
+  if (
+    content.includes("@/lib/chart-live") ||
+    content.includes("@/registry/new-york-v4/lib/chart-live")
+  ) {
+    deps.push("chart-live")
+  }
+  if (
+    content.includes("@/lib/use-market-neon") ||
+    content.includes("@/registry/new-york-v4/lib/use-market-neon")
+  ) {
+    deps.push("use-market-neon")
+  }
   if (content.includes("@/lib/digits")) deps.push("digits")
   return deps
 }

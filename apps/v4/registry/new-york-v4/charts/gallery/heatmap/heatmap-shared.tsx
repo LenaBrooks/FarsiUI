@@ -3,7 +3,7 @@
 import * as React from "react"
 import { format } from "date-fns-jalali"
 
-import { useChartCaption } from "@/lib/chart-live"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 import {
   FA_MONTHS_FULL,
   formatJalaliDate,

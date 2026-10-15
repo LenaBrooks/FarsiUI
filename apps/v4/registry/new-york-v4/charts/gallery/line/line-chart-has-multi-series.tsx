@@ -11,7 +11,7 @@ import {
   formatToman,
 } from "@/lib/chart-locale"
 import { TomanAxisTick } from "@/lib/chart-toman-tick"
-import { useChartCaption } from "@/lib/chart-live"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 import {
   ChartContainer,
   ChartLegend,

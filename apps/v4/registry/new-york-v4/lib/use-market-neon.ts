@@ -18,7 +18,9 @@ function bodyIsNova() {
 
 /**
  * Neon market-card pattern on branded DS only — Nova (پیشفرض) stays raw.
- * Reads live `style-*` on body. Without any `style-*` class, neon stays off.
+ * Reads live `style-*` on body (docs picker or consumer layout).
+ * No DesignSystemPreviewProvider — safe to install via CLI.
+ * Without any `style-*` class, neon stays off (raw).
  */
 export function useMarketNeon() {
   return useSyncExternalStore(

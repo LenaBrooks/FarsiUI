@@ -3,7 +3,7 @@
 import { useId } from "react"
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   CHART_BAR_COLORS,
   FA_MONTHS,

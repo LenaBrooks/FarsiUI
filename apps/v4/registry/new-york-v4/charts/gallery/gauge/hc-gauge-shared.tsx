@@ -7,7 +7,7 @@ import "highcharts/esm/highcharts-more.js"
 import "highcharts/esm/modules/solid-gauge.js"
 import HighchartsReact from "highcharts-react-official"
 
-import { useChartToolbarStart } from "@/lib/chart-live"
+import { useChartToolbarStart } from "@/registry/new-york-v4/lib/chart-live"
 import { toPersianDigits } from "@/lib/chart-fa"
 
 /** Highcharts default series colors (v11+). */

@@ -10,7 +10,7 @@ import {
   YAxis,
 } from "recharts"
 
-import { usePersianMockData, useChartCaption } from "@/lib/chart-live"
+import { usePersianMockData, useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 import {
   CHART_TOMAN_AXIS_WIDTH,
   toPersianDigits,

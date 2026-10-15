@@ -4,7 +4,7 @@ import { Activity } from "lucide-react"
 import { useId } from "react"
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
 
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   formatPersianMonthTick,
   FA_CHART,

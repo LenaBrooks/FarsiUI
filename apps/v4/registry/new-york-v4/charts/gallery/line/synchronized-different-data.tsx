@@ -2,7 +2,7 @@
 
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
-import { useChartCaption } from "@/lib/chart-live"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 import { JalaliDayMonthTick } from "@/lib/chart-jalali-tick"
 import {
   CHART_TOMAN_AXIS_WIDTH,

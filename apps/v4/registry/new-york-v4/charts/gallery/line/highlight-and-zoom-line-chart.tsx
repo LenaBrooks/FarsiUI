@@ -11,7 +11,7 @@ import {
 } from "recharts"
 import type { MouseHandlerDataParam } from "recharts"
 
-import { useChartToolbarStart } from "@/lib/chart-live"
+import { useChartToolbarStart } from "@/registry/new-york-v4/lib/chart-live"
 import {
   CHART_BAR_COLORS,
   formatChartNumber,

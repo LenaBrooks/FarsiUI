@@ -3,7 +3,7 @@
 import type { CSSProperties } from "react"
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 
-import { usePersianMockData } from "@/lib/chart-live"
+import { usePersianMockData } from "@/registry/new-york-v4/lib/chart-live"
 import { CHART_TOMAN_AXIS_WIDTH } from "@/lib/chart-locale"
 import { TomanAxisTick } from "@/lib/chart-toman-tick"
 import {

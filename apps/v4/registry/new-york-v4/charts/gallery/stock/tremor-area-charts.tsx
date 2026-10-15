@@ -15,8 +15,8 @@ import {
   type TooltipContentProps,
 } from "recharts"
 
-import { useChartCaption } from "@/lib/chart-live"
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   CHART_TOMAN_AXIS_WIDTH,
   formatToman,

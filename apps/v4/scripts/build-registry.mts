@@ -1601,6 +1601,32 @@ async function buildRegistry(styleName: string) {
     })
     proc.on("error", reject)
   })
+
+  // Gallery sources import `@/registry/<style>/lib/*` so the docs site can
+  // resolve them; CLI payloads must ship `@/lib/*` instead.
+  await rewritePublishedRegistryLibImports(styleName)
+}
+
+async function rewritePublishedRegistryLibImports(styleName: string) {
+  const outputDir = path.join(process.cwd(), `public/r/styles/${styleName}`)
+  const from = `@/registry/${styleName}/lib/`
+  const to = "@/lib/"
+  let entries: string[]
+  try {
+    entries = await fs.readdir(outputDir)
+  } catch {
+    return
+  }
+  await Promise.all(
+    entries
+      .filter((name) => name.endsWith(".json"))
+      .map(async (name) => {
+        const filePath = path.join(outputDir, name)
+        const raw = await fs.readFile(filePath, "utf8")
+        if (!raw.includes(from)) return
+        await fs.writeFile(filePath, raw.replaceAll(from, to), "utf8")
+      })
+  )
 }
 
 async function buildBlocksIndex() {

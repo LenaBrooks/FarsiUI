@@ -1,6 +1,6 @@
 "use client"
 
-import { useMarketNeon } from "@/lib/use-market-neon"
+import { useMarketNeon } from "@/registry/new-york-v4/lib/use-market-neon"
 import {
   MARKET_DOWN,
   MARKET_MUTE,

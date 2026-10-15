@@ -3,7 +3,7 @@
 import * as React from "react"
 import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts"
 
-import { useChartRandomSeed } from "@/lib/chart-live"
+import { useChartRandomSeed } from "@/registry/new-york-v4/lib/chart-live"
 import {
   CHART_TOMAN_AXIS_WIDTH,
   FA_MONTHS_FULL,

@@ -10,7 +10,7 @@ import {
   type BarShapeProps,
 } from "recharts"
 
-import { useChartCaption } from "@/lib/chart-live"
+import { useChartCaption } from "@/registry/new-york-v4/lib/chart-live"
 import {
   CHART_BAR_COLORS,
   chartBarContainerClassName,

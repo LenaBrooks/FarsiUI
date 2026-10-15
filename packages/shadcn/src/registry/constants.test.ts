@@ -2,7 +2,9 @@ import { describe, expect, it } from "vitest"
 
 import {
   BUILTIN_REGISTRIES,
+  FALLBACK_STYLE,
   FARSIUI_URL,
+  LEGACY_REGISTRY_STYLES,
   REGISTRY_URL,
 } from "./constants"
 
@@ -13,6 +15,11 @@ describe("registry defaults", () => {
 
   it("exposes FARSIUI_URL derived from the registry origin", () => {
     expect(FARSIUI_URL).toBe("https://farsiui.ir")
+  })
+
+  it("uses base-nova as the canonical FALLBACK_STYLE", () => {
+    expect(FALLBACK_STYLE).toBe("base-nova")
+    expect(LEGACY_REGISTRY_STYLES.has("new-york-v4")).toBe(true)
   })
 
   it("registers @farsiui as the builtin namespace", () => {

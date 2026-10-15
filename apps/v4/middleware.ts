@@ -5,9 +5,11 @@ import { GALLERY_CHART_SLUGS } from "@/lib/gallery-chart-slugs"
 import { SKILL_REGISTRY_SLUGS } from "@/lib/skill-registry-slugs"
 
 /**
- * Skills are style-agnostic and live once under /r/skills/<slug>.json.
- * Gallery charts + chart helper libs live once under /r/styles/new-york-v4/<id>.json.
- * CLI always requests /r/styles/<style>/<name>.json — rewrite those names.
+ * One CLI surface regardless of components.json `style`:
+ * - Skills → /r/skills/<slug>.json
+ * - Gallery charts + chart libs → /r/styles/new-york-v4/<id>.json (single copy)
+ * - Newer UI missing from legacy styles is mirrored into new-york-v4 at build
+ *   time (see syncLegacyRegistryUiFromCanonicalBase); base-* remains canonical.
  */
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl

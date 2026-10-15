@@ -429,12 +429,15 @@ export function ComponentVariantPreviewClient({
         className="group relative flex flex-col overflow-hidden rounded-2xl border"
       >
         {layout === "switcher" ? (
-          <div data-slot="preview" className="relative p-4 sm:p-6">
+          <div
+            data-slot="preview"
+            className="relative p-4 sm:p-6 has-[[data-slot=rich-text-editor]]:p-0"
+          >
             <PreviewThemeScope>
               <DocsPreviewSwitcherStage
                 role="tabpanel"
                 dir={active.demo === "rtl" ? "rtl" : (active.direction ?? "rtl")}
-                className="w-full [&_[data-slot=accordion]]:max-w-lg [&_[data-slot=accordion]]:w-full [&_[data-slot=alert]]:max-w-md [&_[data-slot=alert]]:w-full [&_[data-slot=chart]]:w-full [&:has([data-slot=chart])]:items-stretch"
+                className="w-full [&_[data-slot=accordion]]:max-w-lg [&_[data-slot=accordion]]:w-full [&_[data-slot=alert]]:max-w-md [&_[data-slot=alert]]:w-full [&_[data-slot=chart]]:w-full [&:has([data-slot=chart])]:items-stretch [&:has([data-slot=rich-text-editor])]:items-stretch [&:has([data-slot=rich-text-editor])]:justify-start [&:has([data-slot=rich-text-editor])]:py-0 [&_[data-slot=rich-text-editor]]:rounded-none [&_[data-slot=rich-text-editor-toolbar]]:rounded-none [&_[data-slot=rich-text-editor-toolbar]]:border-x-0 [&_[data-slot=rich-text-editor-toolbar]]:border-t-0 [&_[data-slot=rich-text-editor-surface]]:rounded-none [&_[data-slot=rich-text-editor-surface]]:border-x-0 [&_[data-slot=rich-text-editor-surface]]:border-b-0"
               >
                 <DirectionProvider
                   direction={

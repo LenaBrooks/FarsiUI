@@ -8,8 +8,7 @@ function resolveStyleFromConfig(config: DeepPartial<Config>) {
     return FALLBACK_STYLE
   }
 
-  // Check if we should use new-york-v4 for Tailwind v4.
-  // We assume that if tailwind.config is empty, we're using Tailwind v4.
+  // Tailwind v4 projects (empty tailwind.config) use the canonical FALLBACK_STYLE.
   if (config.style === "new-york" && config.tailwind?.config === "") {
     return FALLBACK_STYLE
   }

@@ -14,30 +14,36 @@ import { RichTextEditorToolbar } from "@/registry/bases/base/ui/rich-text-editor
 const editorSurfaceClassName = cn(
   "rounded-b-md border border-input bg-transparent shadow-xs dark:bg-input/30",
   "aria-invalid:border-destructive",
-  "[&_[contenteditable]]:min-h-[var(--rte-min-height,12rem)]",
-  "md:[&_[contenteditable]]:min-h-[var(--rte-min-height,16rem)]",
-  "[&_[contenteditable]]:px-3 [&_[contenteditable]]:py-2",
-  "[&_[contenteditable]:focus]:outline-none",
-  "[&_.rich-text-editor-prose]:text-base md:[&_.rich-text-editor-prose]:text-sm",
-  "[&_.rich-text-editor-prose_h1]:mt-4 [&_.rich-text-editor-prose_h1]:mb-2 [&_.rich-text-editor-prose_h1]:text-2xl [&_.rich-text-editor-prose_h1]:font-bold",
-  "[&_.rich-text-editor-prose_h2]:mt-3 [&_.rich-text-editor-prose_h2]:mb-2 [&_.rich-text-editor-prose_h2]:text-xl [&_.rich-text-editor-prose_h2]:font-semibold",
-  "[&_.rich-text-editor-prose_h3]:mt-2 [&_.rich-text-editor-prose_h3]:mb-1 [&_.rich-text-editor-prose_h3]:text-lg [&_.rich-text-editor-prose_h3]:font-semibold",
-  "[&_.rich-text-editor-prose_p]:my-2 [&_.rich-text-editor-prose_p]:leading-relaxed",
-  "[&_.rich-text-editor-prose_ul]:my-2 [&_.rich-text-editor-prose_ul]:list-disc [&_.rich-text-editor-prose_ul]:ps-6",
-  "[&_.rich-text-editor-prose_ol]:my-2 [&_.rich-text-editor-prose_ol]:list-decimal [&_.rich-text-editor-prose_ol]:ps-6",
-  "[&_.rich-text-editor-prose_ul[data-type=taskList]]:list-none [&_.rich-text-editor-prose_ul[data-type=taskList]]:ps-0",
-  "[&_.rich-text-editor-prose_ul[data-type=taskList]_li]:flex [&_.rich-text-editor-prose_ul[data-type=taskList]_li]:items-start [&_.rich-text-editor-prose_ul[data-type=taskList]_li]:gap-2",
-  "[&_.rich-text-editor-prose_ul[data-type=taskList]_li_label]:mt-1",
-  "[&_.rich-text-editor-prose_blockquote]:my-2 [&_.rich-text-editor-prose_blockquote]:border-s-4 [&_.rich-text-editor-prose_blockquote]:border-border [&_.rich-text-editor-prose_blockquote]:ps-4 [&_.rich-text-editor-prose_blockquote]:text-muted-foreground",
-  "[&_.rich-text-editor-prose_pre]:my-2 [&_.rich-text-editor-prose_pre]:overflow-x-auto [&_.rich-text-editor-prose_pre]:rounded-md [&_.rich-text-editor-prose_pre]:bg-muted [&_.rich-text-editor-prose_pre]:p-3 [&_.rich-text-editor-prose_pre]:font-mono [&_.rich-text-editor-prose_pre]:text-sm",
-  "[&_.rich-text-editor-prose_code]:rounded-sm [&_.rich-text-editor-prose_code]:bg-muted [&_.rich-text-editor-prose_code]:px-1 [&_.rich-text-editor-prose_code]:py-0.5 [&_.rich-text-editor-prose_code]:font-mono [&_.rich-text-editor-prose_code]:text-[0.9em]",
-  "[&_.rich-text-editor-prose_hr]:my-4 [&_.rich-text-editor-prose_hr]:border-border",
-  "[&_.rich-text-editor-prose_table]:my-3 [&_.rich-text-editor-prose_table]:w-full [&_.rich-text-editor-prose_table]:border-collapse [&_.rich-text-editor-prose_table]:overflow-hidden [&_.rich-text-editor-prose_table]:rounded-md [&_.rich-text-editor-prose_table]:border [&_.rich-text-editor-prose_table]:border-border",
-  "[&_.rich-text-editor-prose_th]:border [&_.rich-text-editor-prose_th]:border-border [&_.rich-text-editor-prose_th]:bg-muted/50 [&_.rich-text-editor-prose_th]:px-2 [&_.rich-text-editor-prose_th]:py-1.5 [&_.rich-text-editor-prose_th]:text-start [&_.rich-text-editor-prose_th]:font-medium",
-  "[&_.rich-text-editor-prose_td]:border [&_.rich-text-editor-prose_td]:border-border [&_.rich-text-editor-prose_td]:px-2 [&_.rich-text-editor-prose_td]:py-1.5",
-  "[&_.rich-text-editor-prose_mark]:rounded-sm [&_.rich-text-editor-prose_mark]:px-0.5",
-  "[&_.rich-text-editor-prose_a]:text-primary [&_.rich-text-editor-prose_a]:underline",
-  "[&_.rich-text-editor-prose_img]:my-2 [&_.rich-text-editor-prose_img]:max-w-full [&_.rich-text-editor-prose_img]:rounded-md",
+  // Only the real editor root — never [contenteditable] alone (matches
+  // task-item labels with contenteditable="false" and blows min-height up).
+  "[&_.ProseMirror]:min-h-[var(--rte-min-height,16rem)]",
+  "[&_.ProseMirror]:px-3 [&_.ProseMirror]:py-2",
+  "[&_.ProseMirror]:outline-none",
+  "[&_.ProseMirror]:text-sm [&_.ProseMirror]:leading-relaxed",
+  "[&_.ProseMirror_h1]:mt-4 [&_.ProseMirror_h1]:mb-2 [&_.ProseMirror_h1]:text-2xl [&_.ProseMirror_h1]:font-bold",
+  "[&_.ProseMirror_h2]:mt-3 [&_.ProseMirror_h2]:mb-2 [&_.ProseMirror_h2]:text-xl [&_.ProseMirror_h2]:font-semibold",
+  "[&_.ProseMirror_h3]:mt-2 [&_.ProseMirror_h3]:mb-1 [&_.ProseMirror_h3]:text-lg [&_.ProseMirror_h3]:font-semibold",
+  "[&_.ProseMirror_p]:my-1.5",
+  "[&_.ProseMirror_ul]:my-1.5 [&_.ProseMirror_ul]:list-disc [&_.ProseMirror_ul]:ps-6",
+  "[&_.ProseMirror_ol]:my-1.5 [&_.ProseMirror_ol]:list-decimal [&_.ProseMirror_ol]:ps-6",
+  "[&_.ProseMirror_li]:my-0 [&_.ProseMirror_li_p]:my-0",
+  // Task list — compact checkbox + text on one line rhythm
+  "[&_.ProseMirror_ul[data-type=taskList]]:my-1.5 [&_.ProseMirror_ul[data-type=taskList]]:list-none [&_.ProseMirror_ul[data-type=taskList]]:ps-0",
+  "[&_.ProseMirror_ul[data-type=taskList]_li]:m-0 [&_.ProseMirror_ul[data-type=taskList]_li]:flex [&_.ProseMirror_ul[data-type=taskList]_li]:items-start [&_.ProseMirror_ul[data-type=taskList]_li]:gap-2 [&_.ProseMirror_ul[data-type=taskList]_li]:py-0.5",
+  "[&_.ProseMirror_ul[data-type=taskList]_li_label]:m-0 [&_.ProseMirror_ul[data-type=taskList]_li_label]:flex [&_.ProseMirror_ul[data-type=taskList]_li_label]:h-[1.375rem] [&_.ProseMirror_ul[data-type=taskList]_li_label]:shrink-0 [&_.ProseMirror_ul[data-type=taskList]_li_label]:items-center [&_.ProseMirror_ul[data-type=taskList]_li_label]:p-0",
+  "[&_.ProseMirror_ul[data-type=taskList]_li_label_input]:size-3.5 [&_.ProseMirror_ul[data-type=taskList]_li_label_input]:accent-primary",
+  "[&_.ProseMirror_ul[data-type=taskList]_li>div]:min-w-0 [&_.ProseMirror_ul[data-type=taskList]_li>div]:flex-1",
+  "[&_.ProseMirror_ul[data-type=taskList]_li_p]:my-0 [&_.ProseMirror_ul[data-type=taskList]_li_p]:leading-relaxed",
+  "[&_.ProseMirror_blockquote]:my-2 [&_.ProseMirror_blockquote]:border-s-4 [&_.ProseMirror_blockquote]:border-border [&_.ProseMirror_blockquote]:ps-4 [&_.ProseMirror_blockquote]:text-muted-foreground",
+  "[&_.ProseMirror_pre]:my-2 [&_.ProseMirror_pre]:overflow-x-auto [&_.ProseMirror_pre]:rounded-md [&_.ProseMirror_pre]:bg-muted [&_.ProseMirror_pre]:p-3 [&_.ProseMirror_pre]:font-mono [&_.ProseMirror_pre]:text-sm",
+  "[&_.ProseMirror_code]:rounded-sm [&_.ProseMirror_code]:bg-muted [&_.ProseMirror_code]:px-1 [&_.ProseMirror_code]:py-0.5 [&_.ProseMirror_code]:font-mono [&_.ProseMirror_code]:text-[0.9em]",
+  "[&_.ProseMirror_hr]:my-4 [&_.ProseMirror_hr]:border-border",
+  "[&_.ProseMirror_table]:my-3 [&_.ProseMirror_table]:w-full [&_.ProseMirror_table]:border-collapse [&_.ProseMirror_table]:overflow-hidden [&_.ProseMirror_table]:rounded-md [&_.ProseMirror_table]:border [&_.ProseMirror_table]:border-border",
+  "[&_.ProseMirror_th]:border [&_.ProseMirror_th]:border-border [&_.ProseMirror_th]:bg-muted/50 [&_.ProseMirror_th]:px-2 [&_.ProseMirror_th]:py-1.5 [&_.ProseMirror_th]:text-start [&_.ProseMirror_th]:font-medium",
+  "[&_.ProseMirror_td]:border [&_.ProseMirror_td]:border-border [&_.ProseMirror_td]:px-2 [&_.ProseMirror_td]:py-1.5",
+  "[&_.ProseMirror_mark]:rounded-sm [&_.ProseMirror_mark]:px-0.5",
+  "[&_.ProseMirror_a]:text-primary [&_.ProseMirror_a]:underline",
+  "[&_.ProseMirror_img]:my-2 [&_.ProseMirror_img]:max-w-full [&_.ProseMirror_img]:rounded-md",
   "data-[disabled=true]:cursor-not-allowed data-[disabled=true]:opacity-50"
 )
 
@@ -145,10 +151,11 @@ function RichTextEditorImpl({
       lang={lang}
       className={cn(
         "flex w-full flex-col rounded-md",
-        "has-[[contenteditable]:focus]:ring-[3px] has-[[contenteditable]:focus]:ring-ring/50",
-        "has-[[contenteditable]:focus]:[&_[data-slot=rich-text-editor-toolbar]]:border-ring",
-        "has-[[contenteditable]:focus]:[&_[data-slot=rich-text-editor-surface]]:border-ring",
-        "has-[[aria-invalid=true]]:ring-[3px] has-[[aria-invalid=true]]:ring-destructive/20 dark:has-[[aria-invalid=true]]:ring-destructive/40",
+        // ring-inset avoids layout jump when focus toggles
+        "has-[[contenteditable=true]:focus]:ring-2 has-[[contenteditable=true]:focus]:ring-inset has-[[contenteditable=true]:focus]:ring-ring/50",
+        "has-[[contenteditable=true]:focus]:[&_[data-slot=rich-text-editor-toolbar]]:border-ring",
+        "has-[[contenteditable=true]:focus]:[&_[data-slot=rich-text-editor-surface]]:border-ring",
+        "has-[[aria-invalid=true]]:ring-2 has-[[aria-invalid=true]]:ring-inset has-[[aria-invalid=true]]:ring-destructive/20 dark:has-[[aria-invalid=true]]:ring-destructive/40",
         "has-[[aria-invalid=true]]:[&_[data-slot=rich-text-editor-toolbar]]:border-destructive",
         className
       )}
@@ -182,9 +189,9 @@ function RichTextEditorImpl({
           editorSurfaceClassName,
           hideToolbar && "rounded-t-md",
           dir === "rtl" &&
-            "[&_.rich-text-editor-prose]:text-right [&_.rich-text-editor-prose]:[unicode-bidi:plaintext]",
+            "[&_.ProseMirror]:text-right [&_.ProseMirror]:[unicode-bidi:plaintext]",
           dir === "ltr" &&
-            "[&_.rich-text-editor-prose]:text-left [&_.rich-text-editor-prose]:[unicode-bidi:plaintext]",
+            "[&_.ProseMirror]:text-left [&_.ProseMirror]:[unicode-bidi:plaintext]",
           editorClassName
         )}
       >

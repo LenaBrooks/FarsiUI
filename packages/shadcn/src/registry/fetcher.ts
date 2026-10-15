@@ -3,6 +3,10 @@ import { promises as fs } from "fs"
 import { homedir } from "os"
 import path from "path"
 import { resolveRegistryUrl } from "@/src/registry/builder"
+import {
+  FALLBACK_STYLE,
+  LEGACY_REGISTRY_STYLES,
+} from "@/src/registry/constants"
 import { getRegistryHeadersFromContext } from "@/src/registry/context"
 import {
   RegistryFetchError,
@@ -16,6 +20,8 @@ import {
 import { fetchWithProxy } from "@/src/registry/proxy"
 import { registryItemSchema } from "@/src/schema"
 import { z } from "zod"
+
+const STYLE_ITEM_PATH_RE = /^styles\/([^/]+)\/([^/]+)\.json$/
 
 const registryCache = new Map<string, Promise<any>>()
 
@@ -92,6 +98,15 @@ export async function fetchRegistry(
             }
 
             if (response.status === 404) {
+              const fallbackUrl = legacyStyleUiFallbackUrl(path)
+              if (fallbackUrl && fallbackUrl !== url) {
+                const fallbackResponse = await fetchWithProxy(fallbackUrl, {
+                  headers: requestHeaders,
+                })
+                if (fallbackResponse.ok) {
+                  return fallbackResponse.json()
+                }
+              }
               throw new RegistryNotFoundError(url, messageFromServer)
             }
 
@@ -124,6 +139,17 @@ export async function fetchRegistry(
   } catch (error) {
     throw error
   }
+}
+
+/** Legacy new-york-v4 projects: newer UI lives under FALLBACK_STYLE (base-nova). */
+function legacyStyleUiFallbackUrl(registryPath: string): string | null {
+  const match = registryPath.match(STYLE_ITEM_PATH_RE)
+  if (!match) return null
+  const [, style, name] = match
+  if (!LEGACY_REGISTRY_STYLES.has(style) || style === FALLBACK_STYLE) {
+    return null
+  }
+  return resolveRegistryUrl(`styles/${FALLBACK_STYLE}/${name}.json`)
 }
 
 function getRegistryCacheKey(

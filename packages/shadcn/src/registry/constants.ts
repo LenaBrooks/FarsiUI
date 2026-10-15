@@ -11,7 +11,15 @@ export const FARSIUI_URL = REGISTRY_URL.replace(/\/r\/?$/, "")
 /** @deprecated Use FARSIUI_URL. Kept as an alias during migration. */
 export const SHADCN_URL = FARSIUI_URL
 
-export const FALLBACK_STYLE = "new-york-v4"
+/** Canonical install style: UI + blocks. Charts rewrite to new-york-v4 via middleware. */
+export const FALLBACK_STYLE = "base-nova"
+
+/** Legacy styles that may miss newer UI; CLI/middleware fall back to FALLBACK_STYLE. */
+export const LEGACY_REGISTRY_STYLES = new Set([
+  "new-york-v4",
+  "new-york",
+  "default",
+])
 
 export const BASE_COLORS = [
   {

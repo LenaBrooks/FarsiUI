@@ -100,9 +100,8 @@ function uiItem(name: string) {
 const CHAT_ITEM_URL = "https://v0.dev/chat/b/xyz"
 
 // Registered under both "new-york" (used by fixtures with a non-empty
-// tailwind.config, e.g. config-full) and "new-york-v4" (the fallback style
-// resolved by configWithDefaults whenever tailwind.config is "", which is
-// both createConfig's default and the vite-with-tailwind fixture's value).
+// tailwind.config, e.g. config-full), legacy "new-york-v4", and "base-nova"
+// (canonical FALLBACK_STYLE). Charts still resolve via new-york-v4 middleware.
 const STYLES = ["new-york", "new-york-v4", "base-nova"]
 
 function registerItem(name: string, body: Record<string, unknown>) {

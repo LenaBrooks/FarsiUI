@@ -90,20 +90,28 @@ import {
 const toolbarControlClassName = "cursor-pointer"
 const toolbarDropdownContentClassName =
   "[&_[data-slot=dropdown-menu-item]]:cursor-pointer"
+/** One horizontal row + scroll; avoid wrap so the «more» control stays aligned. */
 const toolbarScrollRowClassName = cn(
-  "flex min-w-0 flex-1 flex-nowrap items-center gap-0.5 overflow-x-auto overscroll-x-contain touch-pan-x scrollbar-none",
-  "md:flex-wrap md:overflow-visible md:touch-auto"
+  "flex min-w-0 flex-1 flex-nowrap items-center gap-0.5 overflow-x-auto overscroll-x-contain touch-pan-x scrollbar-none"
 )
+/**
+ * Compact toolbar controls — beat DS (vega) padding/radius on cn-button/toggle.
+ */
+const toolbarRadiusClassName = "[border-radius:0.375rem]!"
 const toolbarIconButtonClassName = cn(
-  "extend-touch-target shrink-0 max-md:size-9!",
+  "size-7! shrink-0 p-0!",
+  toolbarRadiusClassName,
   toolbarControlClassName
 )
 const toolbarDropdownTriggerClassName = cn(
-  "h-8 shrink-0 gap-1 px-2 extend-touch-target max-md:min-h-9 max-md:px-2.5",
+  "h-7 shrink-0 gap-0.5 px-1.5 text-xs",
+  toolbarRadiusClassName,
   toolbarControlClassName
 )
-const toolbarToggleItemClassName =
-  "extend-touch-target max-md:min-h-9 max-md:min-w-9"
+const toolbarToggleItemClassName = cn(
+  "size-7! min-w-7! shrink-0 px-0! py-0!",
+  toolbarRadiusClassName
+)
 
 function ToolbarGroup({
   label,
@@ -125,10 +133,7 @@ function ToolbarGroup({
 
 function ToolbarDivider() {
   return (
-    <Separator
-      orientation="vertical"
-      className="mx-1 h-6 shrink-0 max-md:h-7"
-    />
+    <Separator orientation="vertical" className="mx-0.5 h-5 shrink-0" />
   )
 }
 
@@ -502,8 +507,10 @@ export function RichTextEditorToolbar({
         aria-orientation="horizontal"
         aria-disabled={isDisabled || undefined}
         className={cn(
-          "flex w-full flex-col gap-1 border-b border-input bg-muted/30 p-1.5 touch-manipulation",
-          "[&_button]:cursor-pointer",
+          "flex w-full flex-col gap-0.5 border-b border-input bg-muted/30 p-1 touch-manipulation",
+          "[&_button]:cursor-pointer [&_button]:[border-radius:0.375rem]!",
+          "[&_[data-slot=toggle-group-item]]:[border-radius:0.375rem]!",
+          "[&_svg:not([class*='size-'])]:size-3.5",
           isDisabled && "pointer-events-none opacity-50",
           className
         )}
@@ -587,7 +594,12 @@ export function RichTextEditorToolbar({
           <ToolbarDivider />
 
           <ToolbarGroup label="قالب متن">
-            <ToggleGroup variant="outline" spacing={0} aria-label="سبک متن">
+            <ToggleGroup
+              variant="outline"
+              size="sm"
+              spacing={0}
+              aria-label="سبک متن"
+            >
               <ToggleGroupItem
                 value="bold"
                 aria-label="درشت"
@@ -637,6 +649,7 @@ export function RichTextEditorToolbar({
               <ToolbarGroup label="تراز">
                 <ToggleGroup
                   variant="outline"
+                  size="sm"
                   spacing={0}
                   aria-label="تراز متن"
                 >
@@ -758,7 +771,7 @@ export function RichTextEditorToolbar({
               size="icon-sm"
               disabled={isDisabled}
               className={cn(
-                "shrink-0 bg-muted/25 text-muted-foreground hover:bg-muted/50 hover:text-foreground",
+                "ms-0.5 shrink-0 self-center bg-muted/25 text-muted-foreground hover:bg-muted/50 hover:text-foreground",
                 toolbarIconButtonClassName,
                 moreOpen && "bg-muted/50 text-foreground"
               )}

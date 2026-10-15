@@ -82,7 +82,8 @@ const STYLE_COMBINATIONS = Array.from(BASES).flatMap((base) =>
 /**
  * Installable `public/r` registries on full deploy. Source folders for other
  * styles stay in the repo; they are skipped from CLI export to keep deploy fast.
- * Charts still use legacy new-york-v4.
+ * Charts are authored under new-york-v4; base-* requests rewrite via middleware.
+ * Newer UI is mirrored into new-york-v4 so legacy style installs stay complete.
  */
 const DEPLOY_REGISTRY_STYLE_NAMES = new Set([
   "new-york-v4",
@@ -813,6 +814,9 @@ async function runFullBuild() {
     }
   )
 
+  console.log("\n🔗 Syncing UI fallbacks into legacy new-york-v4...")
+  await syncLegacyRegistryUiFromCanonicalBase()
+
   console.log("\n🗂️ Building registry/__blocks__.json...")
   await buildBlocksIndex()
 
@@ -956,6 +960,9 @@ async function runTargetedRegistryBuild(target: "all" | string) {
       console.log(`   ✅ ${style.name}`)
     }
   )
+
+  console.log("\n🔗 Syncing UI fallbacks into legacy new-york-v4...")
+  await syncLegacyRegistryUiFromCanonicalBase()
 
   console.log("\n🧹 Cleaning up...")
   await cleanUpTemporaryFiles(targetStyles.map((style) => style.name))
@@ -1627,6 +1634,51 @@ async function rewritePublishedRegistryLibImports(styleName: string) {
         await fs.writeFile(filePath, raw.replaceAll(from, to), "utf8")
       })
   )
+}
+
+/**
+ * One install surface: charts stay authored under new-york-v4; newer UI lives
+ * under base-nova. Copy any base-nova item missing from new-york-v4 so legacy
+ * `components.json` style "new-york-v4" can still `add rich-text-editor` etc.
+ * Charts on base-* continue to rewrite via middleware → new-york-v4.
+ */
+async function syncLegacyRegistryUiFromCanonicalBase() {
+  const canonical = "base-nova"
+  const legacy = "new-york-v4"
+  const fromDir = path.join(process.cwd(), `public/r/styles/${canonical}`)
+  const toDir = path.join(process.cwd(), `public/r/styles/${legacy}`)
+
+  try {
+    await fs.access(fromDir)
+    await fs.access(toDir)
+  } catch {
+    console.log(
+      `   ⚠️ skip UI sync (${canonical} → ${legacy}): missing style output`
+    )
+    return
+  }
+
+  const fromNames = new Set(
+    (await fs.readdir(fromDir))
+      .filter((name) => name.endsWith(".json"))
+      .map((name) => name.slice(0, -".json".length))
+  )
+  const toNames = new Set(
+    (await fs.readdir(toDir))
+      .filter((name) => name.endsWith(".json"))
+      .map((name) => name.slice(0, -".json".length))
+  )
+
+  let copied = 0
+  for (const name of fromNames) {
+    if (name === "registry" || toNames.has(name)) continue
+    await fs.copyFile(
+      path.join(fromDir, `${name}.json`),
+      path.join(toDir, `${name}.json`)
+    )
+    copied++
+  }
+  console.log(`   ✅ mirrored ${copied} UI items ${canonical} → ${legacy}`)
 }
 
 async function buildBlocksIndex() {

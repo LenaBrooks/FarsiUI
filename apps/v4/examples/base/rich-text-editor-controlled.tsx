@@ -8,7 +8,7 @@ export default function RichTextEditorControlled() {
   const [html, setHtml] = React.useState("<p>محتوای کنترل‌شده از والد.</p>")
 
   return (
-    <div className="flex w-full max-w-2xl flex-col gap-4" dir="rtl" lang="fa">
+    <div className="flex w-full flex-col gap-4" dir="rtl" lang="fa">
       <RichTextEditor
         value={html}
         onChange={({ html: next }) => setHtml(next)}

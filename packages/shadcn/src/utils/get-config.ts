@@ -1,6 +1,6 @@
 import path from "path"
 import { parsePresetStyle, type PresetBase } from "@/src/preset/preset"
-import { BUILTIN_REGISTRIES } from "@/src/registry/constants"
+import { BUILTIN_REGISTRIES, FALLBACK_STYLE } from "@/src/registry/constants"
 import {
   configSchema,
   rawConfigSchema,
@@ -317,7 +317,9 @@ export function findCommonRoot(cwd: string, resolvedPath: string) {
 // TODO: Cache this call.
 export async function getTargetStyleFromConfig(cwd: string, fallback: string) {
   const projectInfo = await getProjectInfo(cwd)
-  return projectInfo?.tailwindVersion === "v4" ? "new-york-v4" : fallback
+  // Tailwind v4 projects use the canonical base-* style (FALLBACK_STYLE), not
+  // legacy new-york-v4. Charts remain installable via registry middleware.
+  return projectInfo?.tailwindVersion === "v4" ? FALLBACK_STYLE : fallback
 }
 
 export function getBase(style: string | undefined): PresetBase {

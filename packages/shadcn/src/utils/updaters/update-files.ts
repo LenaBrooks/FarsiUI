@@ -893,17 +893,16 @@ export function resolveModuleByProbablePath(
   // 6) If no matches, bail
   if (candidates.size === 0) return null
 
-  // 7) Sort by (1) extension priority, then (2) "strong" base match
+  // 7) Sort by (1) strong base match, then (2) extension priority.
+  // Strong path must win first: lib/foo.ts vs components/ui/foo.tsx share a
+  // basename; preferring .tsx would rewrite @/lib/foo → @/components/ui/foo.
   const sorted = Array.from(candidates).sort((a, b) => {
-    // a) extension order
-    const aExt = path.posix.extname(a)
-    const bExt = path.posix.extname(b)
-    const ord = tryExts.indexOf(aExt) - tryExts.indexOf(bExt)
-    if (ord !== 0) return ord
-    // b) strong match if path starts with relBase
     const aStrong = relBase && a.startsWith(relBase) ? -1 : 1
     const bStrong = relBase && b.startsWith(relBase) ? -1 : 1
-    return aStrong - bStrong
+    if (aStrong !== bStrong) return aStrong - bStrong
+    const aExt = path.posix.extname(a)
+    const bExt = path.posix.extname(b)
+    return tryExts.indexOf(aExt) - tryExts.indexOf(bExt)
   })
 
   // 8) Return the first (best) candidate

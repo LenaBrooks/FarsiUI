@@ -27,11 +27,15 @@ function ToggleGroup({
   spacing = 2,
   orientation = "horizontal",
   children,
+  type,
+  multiple,
   ...props
 }: ToggleGroupPrimitive.Props &
   VariantProps<typeof toggleVariants> & {
     spacing?: number
     orientation?: "horizontal" | "vertical"
+    /** Radix-compatible alias; maps to Base UI `multiple`. */
+    type?: "single" | "multiple"
   }) {
   return (
     <ToggleGroupPrimitive
@@ -45,6 +49,7 @@ function ToggleGroup({
         "cn-toggle-group group/toggle-group flex w-fit flex-row items-center gap-[--spacing(var(--gap))] data-vertical:flex-col data-vertical:items-stretch",
         className
       )}
+      multiple={multiple ?? type === "multiple"}
       {...props}
     >
       <ToggleGroupContext.Provider

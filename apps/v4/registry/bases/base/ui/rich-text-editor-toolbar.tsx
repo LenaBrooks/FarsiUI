@@ -244,15 +244,31 @@ function LinkDialog({
   initialUrl: string
   onSubmit: (url: string) => void
 }) {
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      {open ? (
+        <LinkDialogForm
+          key={initialUrl}
+          initialUrl={initialUrl}
+          onOpenChange={onOpenChange}
+          onSubmit={onSubmit}
+        />
+      ) : null}
+    </Dialog>
+  )
+}
+
+function LinkDialogForm({
+  initialUrl,
+  onOpenChange,
+  onSubmit,
+}: {
+  initialUrl: string
+  onOpenChange: (open: boolean) => void
+  onSubmit: (url: string) => void
+}) {
   const [url, setUrl] = React.useState(initialUrl)
   const [error, setError] = React.useState<string | null>(null)
-
-  React.useEffect(() => {
-    if (open) {
-      setUrl(initialUrl)
-      setError(null)
-    }
-  }, [open, initialUrl])
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
@@ -266,42 +282,40 @@ function LinkDialog({
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <form onSubmit={handleSubmit}>
-          <DialogHeader>
-            <DialogTitle>درج لینک</DialogTitle>
-            <DialogDescription>
-              آدرس صفحهٔ مقصد را وارد کنید.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="grid gap-3 py-2">
-            <div className="grid gap-1.5">
-              <Label htmlFor="rte-link-url">نشانی</Label>
-              <Input
-                id="rte-link-url"
-                dir="ltr"
-                placeholder="https://example.com"
-                value={url}
-                onChange={(e) => {
-                  setUrl(e.target.value)
-                  setError(null)
-                }}
-                aria-invalid={error ? true : undefined}
-              />
-              {error ? (
-                <p className="text-sm text-destructive">{error}</p>
-              ) : null}
-            </div>
+    <DialogContent className="sm:max-w-md">
+      <form onSubmit={handleSubmit}>
+        <DialogHeader>
+          <DialogTitle>درج لینک</DialogTitle>
+          <DialogDescription>
+            آدرس صفحهٔ مقصد را وارد کنید.
+          </DialogDescription>
+        </DialogHeader>
+        <div className="grid gap-3 py-2">
+          <div className="grid gap-1.5">
+            <Label htmlFor="rte-link-url">نشانی</Label>
+            <Input
+              id="rte-link-url"
+              dir="ltr"
+              placeholder="https://example.com"
+              value={url}
+              onChange={(e) => {
+                setUrl(e.target.value)
+                setError(null)
+              }}
+              aria-invalid={error ? true : undefined}
+            />
+            {error ? (
+              <p className="text-sm text-destructive">{error}</p>
+            ) : null}
           </div>
-          <DialogFooter>
-            <Button type="submit" className={toolbarControlClassName}>
-              اعمال
-            </Button>
-          </DialogFooter>
-        </form>
-      </DialogContent>
-    </Dialog>
+        </div>
+        <DialogFooter>
+          <Button type="submit" className={toolbarControlClassName}>
+            اعمال
+          </Button>
+        </DialogFooter>
+      </form>
+    </DialogContent>
   )
 }
 
@@ -316,18 +330,32 @@ function ImageDialog({
   onSubmitUrl: (url: string) => void
   onUploadImage?: (file: File) => Promise<string>
 }) {
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      {open ? (
+        <ImageDialogForm
+          onOpenChange={onOpenChange}
+          onSubmitUrl={onSubmitUrl}
+          onUploadImage={onUploadImage}
+        />
+      ) : null}
+    </Dialog>
+  )
+}
+
+function ImageDialogForm({
+  onOpenChange,
+  onSubmitUrl,
+  onUploadImage,
+}: {
+  onOpenChange: (open: boolean) => void
+  onSubmitUrl: (url: string) => void
+  onUploadImage?: (file: File) => Promise<string>
+}) {
   const [url, setUrl] = React.useState("")
   const [error, setError] = React.useState<string | null>(null)
   const [uploading, setUploading] = React.useState(false)
   const fileInputRef = React.useRef<HTMLInputElement>(null)
-
-  React.useEffect(() => {
-    if (open) {
-      setUrl("")
-      setError(null)
-      setUploading(false)
-    }
-  }, [open])
 
   const insertUrl = () => {
     const normalized = normalizeRichTextUrl(url)
@@ -359,62 +387,60 @@ function ImageDialog({
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle>درج تصویر</DialogTitle>
-          <DialogDescription>
-            نشانی تصویر را وارد کنید یا فایل را انتخاب کنید.
-          </DialogDescription>
-        </DialogHeader>
-        <div className="grid gap-3 py-2">
-          <div className="grid gap-1.5">
-            <Label htmlFor="rte-image-url">نشانی تصویر</Label>
-            <Input
-              id="rte-image-url"
-              dir="ltr"
-              placeholder="https://example.com/image.jpg"
-              value={url}
-              onChange={(e) => {
-                setUrl(e.target.value)
-                setError(null)
-              }}
-              aria-invalid={error ? true : undefined}
-            />
-          </div>
-          {onUploadImage ? (
-            <>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                className="sr-only"
-                onChange={(e) => void handleFile(e.target.files?.[0])}
-              />
-              <Button
-                type="button"
-                variant="outline"
-                disabled={uploading}
-                className={toolbarControlClassName}
-                onClick={() => fileInputRef.current?.click()}
-              >
-                {uploading ? "در حال آپلود…" : "انتخاب فایل"}
-              </Button>
-            </>
-          ) : null}
-          {error ? <p className="text-sm text-destructive">{error}</p> : null}
+    <DialogContent className="sm:max-w-md">
+      <DialogHeader>
+        <DialogTitle>درج تصویر</DialogTitle>
+        <DialogDescription>
+          نشانی تصویر را وارد کنید یا فایل را انتخاب کنید.
+        </DialogDescription>
+      </DialogHeader>
+      <div className="grid gap-3 py-2">
+        <div className="grid gap-1.5">
+          <Label htmlFor="rte-image-url">نشانی تصویر</Label>
+          <Input
+            id="rte-image-url"
+            dir="ltr"
+            placeholder="https://example.com/image.jpg"
+            value={url}
+            onChange={(e) => {
+              setUrl(e.target.value)
+              setError(null)
+            }}
+            aria-invalid={error ? true : undefined}
+          />
         </div>
-        <DialogFooter>
-          <Button
-            type="button"
-            className={toolbarControlClassName}
-            onClick={insertUrl}
-          >
-            درج از نشانی
-          </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+        {onUploadImage ? (
+          <>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              className="sr-only"
+              onChange={(e) => void handleFile(e.target.files?.[0])}
+            />
+            <Button
+              type="button"
+              variant="outline"
+              disabled={uploading}
+              className={toolbarControlClassName}
+              onClick={() => fileInputRef.current?.click()}
+            >
+              {uploading ? "در حال آپلود…" : "انتخاب فایل"}
+            </Button>
+          </>
+        ) : null}
+        {error ? <p className="text-sm text-destructive">{error}</p> : null}
+      </div>
+      <DialogFooter>
+        <Button
+          type="button"
+          className={toolbarControlClassName}
+          onClick={insertUrl}
+        >
+          درج از نشانی
+        </Button>
+      </DialogFooter>
+    </DialogContent>
   )
 }
 
@@ -593,13 +619,14 @@ export function RichTextEditorToolbar({
 
           <ToolbarDivider />
 
-          <ToolbarGroup label="قالب متن">
-            <ToggleGroup
-              variant="outline"
-              size="sm"
-              spacing={0}
-              aria-label="سبک متن"
-            >
+            <ToolbarGroup label="قالب متن">
+              <ToggleGroup
+                type="multiple"
+                variant="outline"
+                size="sm"
+                spacing={0}
+                aria-label="سبک متن"
+              >
               <ToggleGroupItem
                 value="bold"
                 aria-label="درشت"
@@ -646,13 +673,14 @@ export function RichTextEditorToolbar({
           {isAdvanced ? (
             <>
               <ToolbarDivider />
-              <ToolbarGroup label="تراز">
-                <ToggleGroup
-                  variant="outline"
-                  size="sm"
-                  spacing={0}
-                  aria-label="تراز متن"
-                >
+                <ToolbarGroup label="تراز">
+                  <ToggleGroup
+                    type="single"
+                    variant="outline"
+                    size="sm"
+                    spacing={0}
+                    aria-label="تراز متن"
+                  >
                   <ToggleGroupItem
                     value="right"
                     aria-label="راست‌چین"

@@ -22,10 +22,50 @@ npx farsiui@latest add national-code-input
 
 ## استفاده
 
+حداقلی — فقط نمایش فیلد:
+
 ```tsx showLineNumbers
 import { NationalCodeInput } from "@/components/ui/national-code-input"
 
 export function Example() {
-  return <NationalCodeInput onValueChange={(digits, valid) => {}} />
+  return <NationalCodeInput id="national-code" />
 }
 ```
+
+با `onValueChange` مقدار و اعتبارسنجی را بگیرید:
+
+```tsx showLineNumbers
+"use client"
+
+import * as React from "react"
+import { NationalCodeInput } from "@/components/ui/national-code-input"
+
+export function Example() {
+  const [digits, setDigits] = React.useState("")
+  const [valid, setValid] = React.useState(false)
+
+  return (
+    <div className="grid gap-2">
+      <NationalCodeInput
+        id="national-code"
+        onValueChange={(nextDigits, nextValid) => {
+          setDigits(nextDigits)
+          setValid(nextValid)
+        }}
+      />
+      <p className="text-sm text-muted-foreground">
+        {digits
+          ? valid
+            ? `کد ملی معتبر: ${digits}`
+            : `در حال ورود یا نامعتبر: ${digits}`
+          : "کد ملی را وارد کنید"}
+      </p>
+    </div>
+  )
+}
+```
+
+| آرگومان | نوع | معنی |
+| --- | --- | --- |
+| `digits` | `string` | فقط رقم‌های کد ملی (ASCII، حداکثر ۱۰ رقم، بدون خط تیره) — خروجی `normalizeNationalId` |
+| `valid` | `boolean` | `true` وقتی رقم کنترلی درست باشد (`isNationalId`)؛ تا کامل نشدن یا اشتباه بودن `false` است |

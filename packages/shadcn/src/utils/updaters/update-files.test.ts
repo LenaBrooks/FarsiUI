@@ -2301,6 +2301,25 @@ describe("resolveModuleByProbablePath", () => {
     ).toBe("components/button.tsx")
   })
 
+  it("should prefer strong path over basename when lib and ui share a name", () => {
+    const files = [
+      "lib/rich-text-editor.ts",
+      "components/ui/rich-text-editor.tsx",
+    ]
+    const config = {
+      resolvedPaths: {
+        cwd: "/foo/bar",
+      },
+    } as Config
+    expect(
+      resolveModuleByProbablePath(
+        "/foo/bar/lib/rich-text-editor",
+        files,
+        config
+      )
+    ).toBe("lib/rich-text-editor.ts")
+  })
+
   it("should preserve extension if specified in path", () => {
     const files = ["components/button.tsx", "components/button.css"]
     const config = {

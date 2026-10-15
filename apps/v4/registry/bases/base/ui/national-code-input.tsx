@@ -72,8 +72,7 @@ function NationalCodeInput({
         aria-invalid={invalid || undefined}
         className={cn(
           "ps-9 pe-9 text-start tabular-nums",
-          invalid && "border-destructive",
-          props.className
+          invalid && "border-destructive"
         )}
       />
       {valid ? (

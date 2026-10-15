@@ -44,6 +44,18 @@ type RegistryFetchOptions = {
   sourceCache?: Map<string, Promise<string>>
 }
 
+/** Items with `meta.installStyle` install from that style (e.g. base-nova demo). */
+export function getInstallStyleFromMeta(
+  meta: Record<string, unknown> | undefined | null
+): string | null {
+  const style = meta?.installStyle
+  return typeof style === "string" && style.length > 0 ? style : null
+}
+
+function withConfigStyle(config: Config, style: string): Config {
+  return { ...config, style }
+}
+
 export function resolveRegistryItemsFromRegistries(
   items: string[],
   config: Config
@@ -172,7 +184,31 @@ export async function resolveRegistryTree(
     }
   }
 
-  for (const [sourceName, item] of Array.from(resultMap.entries())) {
+  for (const [sourceName, rawItem] of Array.from(resultMap.entries())) {
+    let item = rawItem
+    const installStyle = getInstallStyleFromMeta(item.meta)
+    const depConfig =
+      installStyle && installStyle !== (config.style ?? FALLBACK_STYLE)
+        ? withConfigStyle(config, installStyle)
+        : config
+
+    // Re-fetch from the pinned style so file contents match the site demo.
+    if (installStyle && depConfig.style !== config.style) {
+      try {
+        const [canonical] = await fetchRegistryItems(
+          [sourceName],
+          depConfig,
+          options
+        )
+        if (canonical) {
+          item = canonical
+          resultMap.set(sourceName, canonical)
+        }
+      } catch {
+        // Keep the initially resolved item if the pinned style is unavailable.
+      }
+    }
+
     // Add source tracking
     const itemWithSource: z.infer<typeof registryItemWithSourceSchema> = {
       ...item,
@@ -185,7 +221,7 @@ export async function resolveRegistryTree(
       let resolvedDependencies = item.registryDependencies
 
       // Check for namespaced dependencies when no registries are configured
-      if (!config?.registries) {
+      if (!depConfig?.registries) {
         const namespacedDeps = item.registryDependencies.filter((dep: string) =>
           dep.startsWith("@")
         )
@@ -196,18 +232,48 @@ export async function resolveRegistryTree(
       } else {
         resolvedDependencies = resolveRegistryItemsFromRegistries(
           item.registryDependencies,
-          config
+          depConfig
         )
       }
 
       const { items, registryNames } = await resolveDependenciesRecursively(
         resolvedDependencies,
-        config,
+        depConfig,
         options,
         new Set(uniqueNames)
       )
       allDependencyItems.push(...items)
-      allDependencyRegistryNames.push(...registryNames)
+
+      if (installStyle) {
+        // Fetch plain deps under the pinned style so chrome matches the demo.
+        // Do not enqueue them for the project-style resolution below.
+        const pinnedUrls: string[] = []
+        for (const name of Array.from(new Set(registryNames))) {
+          if (name.startsWith("@") || isUrl(name) || isLocalFile(name)) {
+            allDependencyRegistryNames.push(name)
+            continue
+          }
+          const urls = await resolveRegistryDependencies(
+            name,
+            depConfig,
+            options
+          )
+          pinnedUrls.push(...urls)
+        }
+        if (pinnedUrls.length > 0) {
+          const uniquePinnedUrls = Array.from(new Set(pinnedUrls))
+          const pinnedResult = await fetchRegistry(uniquePinnedUrls, options)
+          const pinnedPayload = z.array(registryItemSchema).parse(pinnedResult)
+          allDependencyItems.push(
+            ...pinnedPayload.map((pinned) => ({
+              ...pinned,
+              _source: pinned.name,
+            }))
+          )
+        }
+      } else {
+        allDependencyRegistryNames.push(...registryNames)
+      }
     }
   }
 
@@ -555,12 +621,18 @@ async function resolveRegistryDependencies(
     new Set()
   )
 
-  const style = config.resolvedPaths?.cwd
-    ? await getTargetStyleFromConfig(config.resolvedPaths.cwd, config.style)
-    : config.style
+  // Prefer an explicit FALLBACK_STYLE pin (meta.installStyle) over TW remap.
+  const resolvedStyle =
+    config.style === FALLBACK_STYLE
+      ? FALLBACK_STYLE
+      : config.resolvedPaths?.cwd
+        ? await getTargetStyleFromConfig(config.resolvedPaths.cwd, config.style)
+        : (config.style ?? FALLBACK_STYLE)
 
   const urls = registryNames.map((name) =>
-    resolveRegistryUrl(isUrl(name) ? name : `styles/${style}/${name}.json`)
+    resolveRegistryUrl(
+      isUrl(name) ? name : `styles/${resolvedStyle}/${name}.json`
+    )
   )
 
   return Array.from(new Set(urls))

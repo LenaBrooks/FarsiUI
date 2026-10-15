@@ -2586,3 +2586,122 @@ describe("resolveRegistryTree - last wins behavior", async () => {
     })
   })
 })
+
+describe("resolveRegistryTree - meta.installStyle", () => {
+  const server = setupServer()
+
+  beforeAll(() => {
+    server.listen({ onUnhandledRequest: "bypass" })
+  })
+
+  afterAll(() => {
+    server.close()
+  })
+
+  beforeEach(() => {
+    server.resetHandlers()
+    vi.clearAllMocks()
+  })
+
+  it("pins item and registryDependencies to meta.installStyle", async () => {
+    const { REGISTRY_URL } = await import("./constants")
+
+    server.use(
+      http.get(`${REGISTRY_URL}/styles/new-york-v4/rich-text-editor.json`, () =>
+        HttpResponse.json({
+          name: "rich-text-editor",
+          type: "registry:ui",
+          registryDependencies: ["button"],
+          meta: { installStyle: "base-nova" },
+          files: [
+            {
+              path: "ui/rich-text-editor.tsx",
+              content: "export const RTE = 'from-new-york-v4'",
+              type: "registry:ui",
+            },
+          ],
+        })
+      ),
+      http.get(`${REGISTRY_URL}/styles/base-nova/rich-text-editor.json`, () =>
+        HttpResponse.json({
+          name: "rich-text-editor",
+          type: "registry:ui",
+          registryDependencies: ["button"],
+          meta: { installStyle: "base-nova" },
+          files: [
+            {
+              path: "ui/rich-text-editor.tsx",
+              content: "export const RTE = 'from-base-nova'",
+              type: "registry:ui",
+            },
+          ],
+        })
+      ),
+      http.get(`${REGISTRY_URL}/styles/new-york-v4/button.json`, () =>
+        HttpResponse.json({
+          name: "button",
+          type: "registry:ui",
+          files: [
+            {
+              path: "ui/button.tsx",
+              content: "export const Button = 'radix-button'",
+              type: "registry:ui",
+            },
+          ],
+        })
+      ),
+      http.get(`${REGISTRY_URL}/styles/base-nova/button.json`, () =>
+        HttpResponse.json({
+          name: "button",
+          type: "registry:ui",
+          files: [
+            {
+              path: "ui/button.tsx",
+              content: "export const Button = 'base-button'",
+              type: "registry:ui",
+            },
+          ],
+        })
+      ),
+      http.get(`${REGISTRY_URL}/index.json`, () => HttpResponse.json([]))
+    )
+
+    const result = await resolveRegistryTree(["rich-text-editor"], {
+      style: "new-york-v4",
+      rsc: true,
+      tsx: true,
+      tailwind: {
+        config: "tailwind.config.js",
+        css: "app/globals.css",
+        baseColor: "neutral",
+        cssVariables: true,
+      },
+      aliases: {
+        components: "@/components",
+        utils: "@/lib/utils",
+        ui: "@/components/ui",
+        lib: "@/lib",
+        hooks: "@/hooks",
+      },
+      resolvedPaths: {
+        cwd: "",
+        tailwindConfig: "",
+        tailwindCss: "",
+        utils: "",
+        components: "",
+        lib: "",
+        hooks: "",
+        ui: "",
+      },
+    } as any)
+
+    const rte = result?.files?.find((f) =>
+      f.path?.includes("rich-text-editor")
+    )
+    const button = result?.files?.find((f) => f.path?.includes("button"))
+
+    expect(rte?.content).toContain("from-base-nova")
+    expect(button?.content).toContain("base-button")
+    expect(button?.content).not.toContain("radix-button")
+  })
+})

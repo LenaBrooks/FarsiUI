@@ -978,6 +978,8 @@ export const ui: Registry["items"] = [
       },
     ],
     meta: {
+      /** Install this item + registryDependencies from base-nova (site demo). */
+      installStyle: "base-nova",
       links: {
         docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
         examples:

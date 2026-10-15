@@ -28,6 +28,7 @@ import {
   SIDEBAR_SEARCH_WRAP_CLASS,
   SIDEBAR_SHELL_CLASS,
   SIDEBAR_TOP_LINK_CLASS,
+  SidebarNavBilingualLabel,
   SidebarNavBullet,
   SidebarNavChevron,
   sidebarItemStateClass,
@@ -197,16 +198,21 @@ function BlocksNavBody({ showSearch = true }: { showSearch?: boolean }) {
                               <PrefetchLink
                                 key={item.href}
                                 href={item.href}
-                                title={item.en}
+                                aria-label={
+                                  item.en
+                                    ? `${item.title} — ${item.en}`
+                                    : item.title
+                                }
                                 className={cn(
                                   SIDEBAR_NESTED_ITEM_CLASS,
                                   sidebarItemStateClass(active)
                                 )}
                               >
                                 <SidebarNavBullet featured={index === 0} />
-                                <span className={SIDEBAR_NESTED_LABEL_CLASS}>
-                                  {item.title}
-                                </span>
+                                <SidebarNavBilingualLabel
+                                  fa={item.title}
+                                  en={item.en}
+                                />
                               </PrefetchLink>
                             )
                           })}

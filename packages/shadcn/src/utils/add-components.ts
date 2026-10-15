@@ -1,7 +1,10 @@
 import path from "path"
 import { getRegistryItems } from "@/src/registry/api"
 import { configWithDefaults } from "@/src/registry/config"
-import { resolveRegistryTree } from "@/src/registry/resolver"
+import {
+  getInstallStyleFromMeta,
+  resolveRegistryTree,
+} from "@/src/registry/resolver"
 import {
   configSchema,
   registryItemFileSchema,
@@ -121,10 +124,22 @@ async function addProjectComponents(
     })
   }
 
+  // Items with meta.installStyle (e.g. rich-text-editor → base-nova) must
+  // refresh dependency chrome so the install matches the site demo.
+  const shouldOverwrite =
+    options.overwrite ||
+    (await componentsHaveInstallStylePin(components, config, options))
+
+  if (shouldOverwrite && !options.overwrite && !options.silent) {
+    logger.info(
+      "Refreshing Base UI dependencies so the install matches the site demo."
+    )
+  }
+
   await updateFiles(tree.files, config, {
-    overwrite: options.overwrite,
+    overwrite: shouldOverwrite,
     silent: options.silent,
-    interactive: options.interactive,
+    interactive: shouldOverwrite ? false : options.interactive,
     path: options.path,
     supportedFontMarkers,
   })
@@ -447,6 +462,22 @@ async function shouldOverwriteCssVars(
       component.type === "registry:font" ||
       component.type === "registry:base"
   )
+}
+
+async function componentsHaveInstallStylePin(
+  components: string[],
+  config: z.infer<typeof configSchema>,
+  _options: AddComponentsOptions
+) {
+  try {
+    const result = await getRegistryItems(components, { config })
+    const payload = z.array(registryItemSchema).parse(result)
+    return payload.some((component) =>
+      Boolean(getInstallStyleFromMeta(component.meta))
+    )
+  } catch {
+    return false
+  }
 }
 
 export function validateFilesTarget(

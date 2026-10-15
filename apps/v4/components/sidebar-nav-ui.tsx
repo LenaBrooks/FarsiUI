@@ -43,12 +43,44 @@ export const SIDEBAR_NESTED_RAIL_CLASS =
   "mt-0.5 mb-1 ms-2 flex flex-col gap-0.5 border-s border-border/50 ps-2"
 
 export const SIDEBAR_NESTED_ITEM_CLASS = cn(
-  "flex h-8 w-full min-w-0 cursor-pointer items-center gap-2 rounded-md px-2 text-start outline-none transition-colors",
+  "flex h-8 w-full min-w-0 cursor-pointer items-center gap-1.5 rounded-md px-2 text-start outline-none transition-colors",
   "focus-visible:ring-2 focus-visible:ring-ring"
 )
 
 export const SIDEBAR_NESTED_LABEL_CLASS =
   "truncate text-[12.5px] font-medium leading-snug"
+
+/** Persian label + dashed leader + small English (docs / blocks sidebars). */
+export function SidebarNavBilingualLabel({
+  fa,
+  en,
+}: {
+  fa: string
+  en?: string | null
+}) {
+  if (!en) {
+    return <span className={SIDEBAR_NESTED_LABEL_CLASS}>{fa}</span>
+  }
+
+  return (
+    <span className="flex min-w-0 flex-1 items-baseline gap-1.5">
+      <span className="max-w-[58%] shrink-0 truncate text-[12.5px] font-medium leading-snug">
+        {fa}
+      </span>
+      <span
+        aria-hidden
+        className="mb-0.5 min-w-2 flex-1 border-b border-dashed border-muted-foreground/25"
+      />
+      <span
+        dir="ltr"
+        lang="en"
+        className="max-w-[42%] shrink-0 truncate text-[10.5px] font-normal tracking-wide text-muted-foreground/70"
+      >
+        {en}
+      </span>
+    </span>
+  )
+}
 
 export const SIDEBAR_COLLAPSIBLE_CONTENT_CLASS = cn(
   "overflow-hidden",

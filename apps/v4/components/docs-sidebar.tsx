@@ -26,10 +26,23 @@ import {
   SIDEBAR_SEARCH_WRAP_CLASS,
   SIDEBAR_SHELL_CLASS,
   SIDEBAR_TOP_LINK_CLASS,
+  SidebarNavBilingualLabel,
   SidebarNavBullet,
   SidebarNavChevron,
   sidebarItemStateClass,
 } from "@/components/sidebar-nav-ui"
+
+function sidebarPageLabel(page: { name: unknown; url: string }) {
+  const { fa, en } = splitDocTitle(String(page.name))
+  if (en) return { fa, en }
+  const slug = page.url.split("/").filter(Boolean).pop() ?? ""
+  const fromSlug = slug
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ")
+  return { fa, en: fromSlug || null }
+}
 import { cn } from "cn"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 import {
@@ -439,7 +452,7 @@ function DocsSidebarBody({
             <SidebarGroupContent>
               <SidebarMenu className="gap-0.5">
                 {componentGroup.pages.map((page) => {
-                  const { fa } = splitDocTitle(String(page.name))
+                  const { fa, en } = sidebarPageLabel(page)
                   const active = page.url === pathname
                   const featured = PAGES_NEW.includes(page.url)
 
@@ -448,13 +461,14 @@ function DocsSidebarBody({
                       <PrefetchLink
                         href={page.url}
                         data-active={active ? "true" : undefined}
+                        aria-label={en ? `${fa} — ${en}` : fa}
                         className={cn(
                           SIDEBAR_NESTED_ITEM_CLASS,
                           sidebarItemStateClass(active)
                         )}
                       >
                         <SidebarNavBullet featured={featured} />
-                        <span className={SIDEBAR_NESTED_LABEL_CLASS}>{fa}</span>
+                        <SidebarNavBilingualLabel fa={fa} en={en} />
                       </PrefetchLink>
                     </SidebarMenuItem>
                   )
@@ -482,7 +496,7 @@ function DocsSidebarBody({
               >
                 <div className={SIDEBAR_NESTED_RAIL_CLASS}>
                   {group.pages.map((page) => {
-                    const { fa } = splitDocTitle(String(page.name))
+                    const { fa, en } = sidebarPageLabel(page)
                     const active = page.url === pathname
                     const featured = PAGES_NEW.includes(page.url)
 
@@ -491,13 +505,14 @@ function DocsSidebarBody({
                         key={page.url}
                         href={page.url}
                         data-active={active ? "true" : undefined}
+                        aria-label={en ? `${fa} — ${en}` : fa}
                         className={cn(
                           SIDEBAR_NESTED_ITEM_CLASS,
                           sidebarItemStateClass(active)
                         )}
                       >
                         <SidebarNavBullet featured={featured} />
-                        <span className={SIDEBAR_NESTED_LABEL_CLASS}>{fa}</span>
+                        <SidebarNavBilingualLabel fa={fa} en={en} />
                       </PrefetchLink>
                     )
                   })}

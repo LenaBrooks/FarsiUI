@@ -4,7 +4,6 @@ import { redirect } from "next/navigation"
 
 import { getAllBlockIds } from "@/lib/blocks"
 import { getBlocksNavItem } from "@/lib/blocks-nav"
-import { registryCategories } from "@/lib/categories"
 import { getRegistryItem } from "@/lib/registry"
 import { BlockCardDisplay } from "@/components/block-card-display"
 import { getActiveStyle } from "@/registry/_legacy-styles"
@@ -14,19 +13,8 @@ const CATEGORY_REDIRECTS: Record<string, string> = {
   conversation: "chat",
 }
 
-export const revalidate = false
-export const dynamic = "force-static"
-export const dynamicParams = false
-
-export async function generateStaticParams() {
-  const categoryParams = registryCategories.map((category) => ({
-    categories: [category.slug],
-  }))
-  const redirectParams = Object.keys(CATEGORY_REDIRECTS).map((slug) => ({
-    categories: [slug],
-  }))
-  return [...categoryParams, ...redirectParams]
-}
+/** Follow design-system cookie via getActiveStyle (WYSIWYG). */
+export const dynamic = "force-dynamic"
 
 export async function generateMetadata({
   params,

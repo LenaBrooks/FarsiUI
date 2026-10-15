@@ -7,75 +7,75 @@ import { type PersianDigitsMode } from "@/lib/digits"
 import { usePersianDigitsInput } from "@/hooks/use-persian-digits-input"
 
 type TextareaProps = React.ComponentProps<"textarea"> & {
-  /**
-   * Display Persian digits while keeping the logical/submitted value in ASCII.
-   * - `"auto"` (default): enabled in Persian contexts.
-   * - `true` / `false`: force on or off
-   * - Or set `data-persian-digits="false"` on the element.
-   */
-  persianDigits?: PersianDigitsMode
+ /**
+ * Display Persian digits while keeping the logical/submitted value in ASCII.
+ * - `"auto"` (default): enabled in Persian contexts.
+ * - `true` / `false`: force on or off
+ * - Or set `data-persian-digits="false"` on the element.
+ */
+ persianDigits?: PersianDigitsMode
 }
 
 function Textarea({
-  className,
-  dir,
-  lang,
-  name,
-  value,
-  defaultValue,
-  onChange,
-  placeholder,
-  persianDigits = "auto",
-  ref,
-  ...props
+ className,
+ dir,
+ lang,
+ name,
+ value,
+ defaultValue,
+ onChange,
+ placeholder,
+ persianDigits = "auto",
+ ref,
+ ...props
 }: TextareaProps & { ref?: React.Ref<HTMLTextAreaElement> }) {
-  const dataPersianDigits =
-    typeof props["data-persian-digits"] === "string"
-      ? props["data-persian-digits"]
-      : null
+ const dataPersianDigits =
+ typeof props["data-persian-digits"] === "string"
+ ? props["data-persian-digits"]
+ : null
 
-  const { setFieldRef, textareaProps, hiddenInput, formatPlaceholder } =
-    usePersianDigitsInput({
-      persianDigits,
-      dir,
-      lang,
-      name,
-      value,
-      defaultValue,
-      onChange: onChange as React.ChangeEventHandler<
-        HTMLInputElement | HTMLTextAreaElement
-      >,
-      "data-persian-digits": dataPersianDigits,
-    })
+ const { setFieldRef, textareaProps, hiddenInput, formatPlaceholder } =
+ usePersianDigitsInput({
+ persianDigits,
+ dir,
+ lang,
+ name,
+ value,
+ defaultValue,
+ onChange: onChange as React.ChangeEventHandler<
+ HTMLInputElement | HTMLTextAreaElement
+ >,
+ "data-persian-digits": dataPersianDigits,
+ })
 
-  const composedRef = React.useCallback(
-    (node: HTMLTextAreaElement | null) => {
-      setFieldRef(node)
-      if (typeof ref === "function") {
-        ref(node)
-      } else if (ref) {
-        ref.current = node
-      }
-    },
-    [ref, setFieldRef]
-  )
+ const composedRef = React.useCallback(
+ (node: HTMLTextAreaElement | null) => {
+ setFieldRef(node)
+ if (typeof ref === "function") {
+ ref(node)
+ } else if (ref) {
+ ref.current = node
+ }
+ },
+ [ref, setFieldRef]
+ )
 
-  return (
-    <>
-      {hiddenInput ? <input {...hiddenInput} readOnly tabIndex={-1} /> : null}
-      <textarea
-        data-slot="textarea"
-        className={cn(
-          "flex field-sizing-content min-h-16 w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:aria-invalid:ring-destructive/40",
-          className
-        )}
-        {...props}
-        {...textareaProps}
-        placeholder={formatPlaceholder(placeholder)}
-        ref={composedRef}
-      />
-    </>
-  )
+ return (
+ <>
+ {hiddenInput ? <input {...hiddenInput} readOnly tabIndex={-1} /> : null}
+ <textarea
+ data-slot="textarea"
+ className={cn(
+ "flex field-sizing-content min-h-16 w-full rounded-md border border-input bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none placeholder:text-muted-foreground focus-visible:border-ring disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:aria-invalid:ring-destructive/40",
+ className
+ )}
+ {...props}
+ {...textareaProps}
+ placeholder={formatPlaceholder(placeholder)}
+ ref={composedRef}
+ />
+ </>
+ )
 }
 
 export { Textarea }

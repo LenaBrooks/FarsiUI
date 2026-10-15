@@ -1,5 +1,5 @@
 /**
- * Rename chart2 example ids to `{category}-{short}` (e.g. line-simple)
+ * Rename Chart example ids to `{category}-{short}` (e.g. line-simple)
  * and update files + demos map accordingly.
  */
 import fs from "node:fs"
@@ -7,9 +7,9 @@ import path from "node:path"
 import { fileURLToPath } from "node:url"
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
-const catalogPath = path.join(root, "lib/chart2-examples.json")
-const demosPath = path.join(root, "lib/chart2-demos.ts")
-const examplesRoot = path.join(root, "examples/chart2")
+const catalogPath = path.join(root, "lib/Chart-examples.json")
+const demosPath = path.join(root, "lib/Chart-demos.ts")
+const examplesRoot = path.join(root, "examples/Chart")
 
 const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"))
 
@@ -78,33 +78,33 @@ fs.writeFileSync(catalogPath, JSON.stringify(catalog, null, 2) + "\n")
 // rebuild demos map from catalog + files
 const demoEntries = catalog.examples.map((ex) => ({
   id: ex.id,
-  importPath: `@/examples/chart2/${ex.category}/${ex.id}`,
-  sourcePath: `examples/chart2/${ex.category}/${ex.id}.tsx`,
+  importPath: `@/examples/chart/${ex.category}/${ex.id}`,
+  sourcePath: `examples/chart/${ex.category}/${ex.id}.tsx`,
 }))
 
 const demosTs = `import type { ComponentType } from "react"
 
-export type Chart2DemoLoader = () => Promise<{
+export type ChartDemoLoader = () => Promise<{
   default: ComponentType<Record<string, unknown>>
 }>
 
 /** Relative to apps/v4 — use with fs from the view RSC page. */
-export const chart2DemoSourcePath: Record<string, string> = {
+export const ChartDemoSourcePath: Record<string, string> = {
 ${demoEntries.map((e) => `  "${e.id}": "${e.sourcePath}",`).join("\n")}
 }
 
-export const chart2DemoLoaders: Record<string, Chart2DemoLoader> = {
+export const ChartDemoLoaders: Record<string, ChartDemoLoader> = {
 ${demoEntries
   .map((e) => `  "${e.id}": () => import("${e.importPath}"),`)
   .join("\n")}
 }
 
-export function getChart2DemoSourcePath(id: string) {
-  return chart2DemoSourcePath[id]
+export function getChartDemoSourcePath(id: string) {
+  return ChartDemoSourcePath[id]
 }
 
-export function getChart2DemoLoader(id: string) {
-  return chart2DemoLoaders[id]
+export function getChartDemoLoader(id: string) {
+  return ChartDemoLoaders[id]
 }
 `
 

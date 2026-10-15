@@ -1,9 +1,7 @@
 /**
  * Nili (نیلی) — signal / circuit language for FarsiUI.
- *
- * Cool slate-teal canvas, solid hairlines, soft-tech radius,
- * quiet grid (not CRT scanlines / dashed phosphor / side accent bars).
- *
+ * Identity: cool indigo-teal, precise radius, high contrast; dark-first but light is complete.
+ * Quiet grid only — not CRT scanlines / dashed phosphor / side accent bars.
  * Unlayered so these beat `.theme-*` Primary Color overrides.
  */
 
@@ -56,6 +54,10 @@
   --chart-3: var(--nili-chart-3);
   --chart-4: var(--nili-chart-4);
   --chart-5: var(--nili-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   /* Soft-tech, not razor terminal */
   --radius: 0.625rem;
@@ -154,6 +156,10 @@
   --chart-3: var(--nili-chart-3);
   --chart-4: var(--nili-chart-4);
   --chart-5: var(--nili-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --surface: #101a1d;
   --surface-muted: #142022;
@@ -495,6 +501,10 @@ html body.style-nili {
   --chart-3: var(--nili-chart-3);
   --chart-4: var(--nili-chart-4);
   --chart-5: var(--nili-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -574,6 +584,10 @@ html.dark body.style-nili {
   --chart-3: var(--nili-chart-3);
   --chart-4: var(--nili-chart-4);
   --chart-5: var(--nili-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

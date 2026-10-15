@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "../examples/chart/**/*.tsx",
+    "../lib/chart-*.ts",
+    "../components/chart-*.tsx",
+    "../app/(app)/chart2/**/*.tsx"
+  ],
+  "exclude": ["../node_modules"]
+}

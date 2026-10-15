@@ -110,6 +110,12 @@ const nextConfig = {
   },
   redirects() {
     return [
+      // Components hub → first sidebar doc (base accordion).
+      {
+        source: "/docs/components",
+        destination: "/docs/components/base/accordion",
+        permanent: false,
+      },
       // Showcase renamed to demos. Category paths → query so tab filters stay client-side.
       {
         source: "/showcase",
@@ -190,14 +196,14 @@ const nextConfig = {
         destination: "/docs/components/base/:name.md",
         permanent: false,
       },
-      // Chart2 gallery moved to /charts.
+      // Chart gallery moved to /charts.
       {
-        source: "/chart2",
+        source: "/chart",
         destination: "/charts",
         permanent: true,
       },
       {
-        source: "/chart2/view/:id",
+        source: "/chart/view/:id",
         destination: "/charts/view/:id",
         permanent: true,
       },

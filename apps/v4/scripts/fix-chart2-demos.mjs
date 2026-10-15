@@ -2,7 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
-const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "../examples/chart2")
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "../examples/Chart")
 
 function walk(dir) {
   const out = []
@@ -45,7 +45,7 @@ for (const file of walk(root)) {
         .map((s) => s.trim())
         .filter(Boolean)
         .map((p) => (p.includes("MarketCandle") ? "type MarketCandle" : p))
-      return `import { generateMockMarketData, ${parts.join(", ")} } from "@/lib/chart2-mock-data";`
+      return `import { generateMockMarketData, ${parts.join(", ")} } from "@/lib/chart-mock-data";`
     }
   )
 
@@ -63,17 +63,17 @@ for (const file of walk(root)) {
           return p
         })
       if (!parts.length) return ""
-      return `import { ${parts.join(", ")} } from "@/lib/chart2-mock-data";`
+      return `import { ${parts.join(", ")} } from "@/lib/chart-mock-data";`
     }
   )
 
   if (
     code.includes("generateMockMarketData") &&
-    !code.includes("chart2-mock-data")
+    !code.includes("Chart-mock-data")
   ) {
     code = code.replace(
       /("use client"\s*\n+)/,
-      `$1import { generateMockMarketData, type MarketCandle } from "@/lib/chart2-mock-data";\n`
+      `$1import { generateMockMarketData, type MarketCandle } from "@/lib/chart-mock-data";\n`
     )
   }
 

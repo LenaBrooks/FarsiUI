@@ -33,10 +33,10 @@ function StyleThumb({ id }: { id: DesignSystemId }) {
       btn: "rounded-md bg-foreground/35",
     },
     comfort: {
-      card: "rounded-2xl border border-border/45 bg-background",
-      line: "rounded-full bg-foreground/40",
-      lineSoft: "rounded-full bg-foreground/14",
-      btn: "rounded-full bg-foreground/30",
+      card: "rounded-2xl border border-sky-500/25 bg-sky-500/10",
+      line: "rounded-full bg-sky-950/45 dark:bg-sky-100/50",
+      lineSoft: "rounded-full bg-sky-700/25 dark:bg-sky-200/30",
+      btn: "rounded-full bg-sky-700/45 dark:bg-sky-300/35",
     },
     glass: {
       card: "rounded-xl border border-cyan-500/25 bg-cyan-500/10",

@@ -328,14 +328,14 @@ function DocsCommand({ command }: { command: string }) {
   const packageManager = config.packageManager || "npm"
 
   return (
-    <div className="rounded-lg bg-muted/60">
+    <div className="rounded-lg bg-code text-code-foreground">
       <div className="flex items-center gap-3 px-3 pt-2">
         {PACKAGE_MANAGERS.map((pm) => (
           <button
             key={pm}
             type="button"
             data-active={pm === packageManager}
-            className="font-mono text-xs text-muted-foreground transition-colors hover:text-foreground data-[active=true]:text-foreground"
+            className="font-mono text-xs text-code-foreground/55 transition-colors hover:text-code-foreground data-[active=true]:text-code-foreground"
             onClick={() => setConfig({ ...config, packageManager: pm })}
           >
             {pm}
@@ -357,7 +357,7 @@ function DocsCode({
   className?: string
 }) {
   return (
-    <div className="relative rounded-lg bg-muted/60">
+    <div className="relative rounded-lg bg-code text-code-foreground">
       <pre
         className={cn(
           "scrollbar-none overflow-x-auto p-3 font-mono text-sm leading-relaxed",

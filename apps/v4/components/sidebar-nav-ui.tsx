@@ -3,7 +3,7 @@ import { ChevronDownIcon } from "lucide-react"
 
 import { cn } from "cn"
 
-/** Shared sidebar list chrome — docs / blocks / skills / charts / chart2. */
+/** Shared sidebar list chrome — docs / blocks / skills / charts / Chart. */
 
 export const SIDEBAR_SHELL_CLASS =
   "sticky top-[calc(var(--header-height)+0.6rem)] z-30 hidden h-[calc(100svh-10rem)] overflow-hidden overscroll-none bg-transparent [--sidebar-menu-width:--spacing(56)] lg:flex"

@@ -79,8 +79,8 @@ export function CodeBlockCommand({
           })
         }}
       >
-        <div className="flex items-center gap-2 border-b border-border/50 px-3 py-1">
-          <div className="flex size-4 items-center justify-center rounded-[1px] bg-foreground opacity-70">
+        <div className="flex items-center gap-2 border-b border-white/10 px-3 py-1">
+          <div className="flex size-4 items-center justify-center rounded-[1px] bg-code-foreground/80">
             <Terminal className="size-3 text-code" />
           </div>
           <TabsList className="rounded-none bg-transparent p-0">
@@ -89,7 +89,7 @@ export function CodeBlockCommand({
                 <TabsTrigger
                   key={key}
                   value={key}
-                  className="h-7 border border-transparent pt-0.5 shadow-none! data-[state=active]:border-input data-[state=active]:bg-background!"
+                  className="h-7 border border-transparent pt-0.5 text-code-foreground/55 shadow-none! hover:bg-white/10 hover:text-code-foreground dark:hover:text-code-foreground data-[state=active]:border-white/20 data-[state=active]:bg-white/10! data-[state=active]:text-code-foreground dark:data-[state=active]:bg-white/10! dark:data-[state=active]:text-code-foreground after:opacity-0!"
                 >
                   {key}
                 </TabsTrigger>
@@ -118,7 +118,7 @@ export function CodeBlockCommand({
         data-slot="copy-button"
         size="icon"
         variant="ghost"
-        className="absolute top-2 right-2 z-10 size-7 cursor-pointer opacity-70 hover:opacity-100 focus-visible:opacity-100"
+        className="absolute top-2 right-2 z-10 size-7 cursor-pointer text-code-foreground opacity-70 hover:bg-white/10 hover:opacity-100 focus-visible:opacity-100"
         onClick={copyCommand}
       >
         <span className="sr-only">Copy</span>

@@ -1,5 +1,5 @@
 /**
- * Downloads Recharts official examples, adapts them for FarsiUI chart2,
+ * Downloads Recharts official examples, adapts them for FarsiUI Chart,
  * and writes catalog + demo registry.
  */
 import fs from "node:fs"
@@ -8,9 +8,9 @@ import { fileURLToPath } from "node:url"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, "..")
-const outExamples = path.join(root, "examples", "chart2")
-const catalogPath = path.join(root, "lib", "chart2-examples.json")
-const demosMapPath = path.join(root, "lib", "chart2-demos.ts")
+const outExamples = path.join(root, "examples", "Chart")
+const catalogPath = path.join(root, "lib", "Chart-examples.json")
+const demosMapPath = path.join(root, "lib", "Chart-demos.ts")
 const indexesDir = path.join(__dirname, "recharts-indexes")
 
 const RAW =
@@ -259,7 +259,7 @@ function transformSource(code, componentName) {
       const bits = []
       if (values.length) bits.push(...values)
       if (hasType) bits.push("type MockDataType")
-      return `import { ${bits.join(", ")} } from "@/lib/chart2-mock-data";`
+      return `import { ${bits.join(", ")} } from "@/lib/chart-mock-data";`
     }
   )
 
@@ -324,7 +324,7 @@ function transformSource(code, componentName) {
   // Fix generateMockMarketData leftover
   if (out.includes("generateMockMarketData")) {
     out = out.replace(
-      /import\s*\{[^}]*generateMockMarketData[^}]*\}\s*from\s*['"]@\/lib\/chart2-mock-data['"]\s*;?/,
+      /import\s*\{[^}]*generateMockMarketData[^}]*\}\s*from\s*['"]@\/lib\/Chart-mock-data['"]\s*;?/,
       ""
     )
   }
@@ -432,11 +432,11 @@ async function main() {
         category: cat.id,
       })
 
-      const importPath = `@/examples/chart2/${cat.id}/${id}`
+      const importPath = `@/examples/chart/${cat.id}/${id}`
       demoEntries.push({
         id,
         importPath,
-        sourcePath: `examples/chart2/${cat.id}/${outFile}`,
+        sourcePath: `examples/chart/${cat.id}/${outFile}`,
       })
 
       console.log(`ok ${cat.id}/${id}`)
@@ -447,27 +447,27 @@ async function main() {
 
   const demosTs = `import type { ComponentType } from "react"
 
-export type Chart2DemoLoader = () => Promise<{
+export type ChartDemoLoader = () => Promise<{
   default: ComponentType<Record<string, unknown>>
 }>
 
 /** Relative to apps/v4 — use with fs from the view RSC page. */
-export const chart2DemoSourcePath: Record<string, string> = {
+export const ChartDemoSourcePath: Record<string, string> = {
 ${demoEntries.map((e) => `  "${e.id}": "${e.sourcePath}",`).join("\n")}
 }
 
-export const chart2DemoLoaders: Record<string, Chart2DemoLoader> = {
+export const ChartDemoLoaders: Record<string, ChartDemoLoader> = {
 ${demoEntries
   .map((e) => `  "${e.id}": () => import("${e.importPath}"),`)
   .join("\n")}
 }
 
-export function getChart2DemoSourcePath(id: string) {
-  return chart2DemoSourcePath[id]
+export function getChartDemoSourcePath(id: string) {
+  return ChartDemoSourcePath[id]
 }
 
-export function getChart2DemoLoader(id: string) {
-  return chart2DemoLoaders[id]
+export function getChartDemoLoader(id: string) {
+  return ChartDemoLoaders[id]
 }
 `
 

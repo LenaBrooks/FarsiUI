@@ -4,9 +4,9 @@ import { fileURLToPath } from "node:url"
 import { spawnSync } from "node:child_process"
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
-const catalogPath = path.join(root, "lib/chart2-examples.json")
+const catalogPath = path.join(root, "lib/Chart-examples.json")
 const importScript = path.join(root, "scripts/import-shadcn-charts-to-gallery.mjs")
-const examplesRoot = path.join(root, "examples/chart2")
+const examplesRoot = path.join(root, "examples/Chart")
 
 const importSrc = fs.readFileSync(importScript, "utf8")
 const ids = [...importSrc.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1])

@@ -83,8 +83,12 @@ export const DESIGN_SYSTEM_PRESETS = [
 
 export type DesignSystemId = (typeof DESIGN_SYSTEM_PRESETS)[number]["id"]
 
-/** Design systems whose accent is owned (Primary Color picker hidden). */
+/**
+ * Design systems whose accent is owned (Primary Color picker hidden).
+ * Includes comfort — Primary Color only applies to Nova/default.
+ */
 export const OWNED_ACCENT_SYSTEMS = new Set<DesignSystemId>([
+  "comfort",
   "glass",
   "rose",
   "nili",

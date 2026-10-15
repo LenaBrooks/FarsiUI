@@ -1,7 +1,7 @@
 /**
- * Rename chart2 demo ids/files to kebab-case of Recharts index keys.
+ * Rename Chart demo ids/files to kebab-case of Recharts index keys.
  * English titles stay exactly as Recharts `name`.
- * Path: examples/chart2/{category}/{kebab-key}.tsx
+ * Path: examples/chart/{category}/{kebab-key}.tsx
  */
 import fs from "node:fs"
 import path from "node:path"
@@ -9,10 +9,10 @@ import { fileURLToPath } from "node:url"
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
 const indexesDir = path.join(root, "scripts/recharts-indexes")
-const catalogPath = path.join(root, "lib/chart2-examples.json")
-const demosPath = path.join(root, "lib/chart2-demos.ts")
-const examplesRoot = path.join(root, "examples/chart2")
-const syncPath = path.join(root, "scripts/sync-chart2-catalog.mjs")
+const catalogPath = path.join(root, "lib/Chart-examples.json")
+const demosPath = path.join(root, "lib/Chart-demos.ts")
+const examplesRoot = path.join(root, "examples/Chart")
+const syncPath = path.join(root, "scripts/sync-Chart-catalog.mjs")
 
 const CATEGORIES = [
   { id: "line", title: "خطی", en: "LineChart", folder: "LineChart" },
@@ -118,32 +118,32 @@ fs.writeFileSync(
   demosPath,
   `import type { ComponentType } from "react"
 
-export type Chart2DemoLoader = () => Promise<{
+export type ChartDemoLoader = () => Promise<{
   default: ComponentType<Record<string, unknown>>
 }>
 
 /** Relative to apps/v4 — use with fs from the view RSC page. */
-export const chart2DemoSourcePath: Record<string, string> = {
+export const ChartDemoSourcePath: Record<string, string> = {
 ${catalog.examples
-  .map((e) => `  "${e.id}": "examples/chart2/${e.category}/${e.id}.tsx",`)
+  .map((e) => `  "${e.id}": "examples/chart/${e.category}/${e.id}.tsx",`)
   .join("\n")}
 }
 
-export const chart2DemoLoaders: Record<string, Chart2DemoLoader> = {
+export const ChartDemoLoaders: Record<string, ChartDemoLoader> = {
 ${catalog.examples
   .map(
     (e) =>
-      `  "${e.id}": () => import("@/examples/chart2/${e.category}/${e.id}"),`
+      `  "${e.id}": () => import("@/examples/chart/${e.category}/${e.id}"),`
   )
   .join("\n")}
 }
 
-export function getChart2DemoSourcePath(id: string) {
-  return chart2DemoSourcePath[id]
+export function getChartDemoSourcePath(id: string) {
+  return ChartDemoSourcePath[id]
 }
 
-export function getChart2DemoLoader(id: string) {
-  return chart2DemoLoaders[id]
+export function getChartDemoLoader(id: string) {
+  return ChartDemoLoaders[id]
 }
 `
 )
@@ -157,7 +157,7 @@ if (fs.existsSync(syncPath)) {
   if (/const ID_BY_KEY = \{[\s\S]*?\n\}/.test(sync)) {
     sync = sync.replace(/const ID_BY_KEY = \{[\s\S]*?\n\}/, nextBlock)
     fs.writeFileSync(syncPath, sync)
-    console.log("updated sync-chart2-catalog.mjs ID_BY_KEY")
+    console.log("updated sync-Chart-catalog.mjs ID_BY_KEY")
   }
 }
 

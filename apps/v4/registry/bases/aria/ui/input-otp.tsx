@@ -8,92 +8,92 @@ import { IconPlaceholder } from "@/components/icon-placeholder"
 import { toPersianDigits } from "@/registry/bases/aria/lib/digits"
 
 function InputOTP({
-  className,
-  containerClassName,
-  ...props
+ className,
+ containerClassName,
+ ...props
 }: React.ComponentProps<typeof OTPInput> & {
-  containerClassName?: string
+ containerClassName?: string
 }) {
-  return (
-    <OTPInput
-      data-slot="input-otp"
-      containerClassName={cn(
-        "cn-input-otp flex items-center has-disabled:opacity-50",
-        containerClassName,
-        // Keep slot order LTR even inside RTL pages; the library's
-        // invisible input is always LTR, so the container must match.
-        "[direction:ltr]"
-      )}
-      spellCheck={false}
-      className={cn(
-        "cn-input-otp-input disabled:cursor-not-allowed",
-        className
-      )}
-      {...props}
-      dir="ltr"
-    />
-  )
+ return (
+ <OTPInput
+ data-slot="input-otp"
+ containerClassName={cn(
+ "cn-input-otp flex items-center has-disabled:opacity-50",
+ containerClassName,
+ // Keep slot order LTR even inside RTL pages; the library's
+ // invisible input is always LTR, so the container must match.
+ "[direction:ltr]"
+ )}
+ spellCheck={false}
+ className={cn(
+ "cn-input-otp-input disabled:cursor-not-allowed",
+ className
+ )}
+ {...props}
+ dir="ltr"
+ />
+ )
 }
 
 function InputOTPGroup({ className, ...props }: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="input-otp-group"
-      dir="ltr"
-      className={cn("cn-input-otp-group flex items-center", className)}
-      {...props}
-    />
-  )
+ return (
+ <div
+ data-slot="input-otp-group"
+ dir="ltr"
+ className={cn("cn-input-otp-group flex items-center", className)}
+ {...props}
+ />
+ )
 }
 
 function InputOTPSlot({
-  index,
-  className,
-  ...props
+ index,
+ className,
+ ...props
 }: React.ComponentProps<"div"> & {
-  index: number
+ index: number
 }) {
-  const inputOTPContext = React.useContext(OTPInputContext)
-  const { char, hasFakeCaret, isActive } = inputOTPContext?.slots[index] ?? {}
-  const displayChar = char ? toPersianDigits(char) : char
+ const inputOTPContext = React.useContext(OTPInputContext)
+ const { char, hasFakeCaret, isActive } = inputOTPContext?.slots[index] ?? {}
+ const displayChar = char ? toPersianDigits(char) : char
 
-  return (
-    <div
-      data-slot="input-otp-slot"
-      data-active={isActive}
-      className={cn(
-        "cn-input-otp-slot relative flex items-center justify-center data-[active=true]:z-10",
-        className
-      )}
-      {...props}
-    >
-      {displayChar}
-      {hasFakeCaret && (
-        <div className="cn-input-otp-caret pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="cn-input-otp-caret-line" />
-        </div>
-      )}
-    </div>
-  )
+ return (
+ <div
+ data-slot="input-otp-slot"
+ data-active={isActive}
+ className={cn(
+ "cn-input-otp-slot relative flex items-center justify-center data-[active=true]:z-10",
+ className
+ )}
+ {...props}
+ >
+ {displayChar}
+ {hasFakeCaret && (
+ <div className="cn-input-otp-caret pointer-events-none absolute inset-0 flex items-center justify-center">
+ <div className="cn-input-otp-caret-line" />
+ </div>
+ )}
+ </div>
+ )
 }
 
 function InputOTPSeparator({ ...props }: React.ComponentProps<"div">) {
-  return (
-    <div
-      data-slot="input-otp-separator"
-      className="cn-input-otp-separator flex items-center"
-      role="separator"
-      {...props}
-    >
-      <IconPlaceholder
-        lucide="MinusIcon"
-        tabler="IconMinus"
-        hugeicons="MinusSignIcon"
-        phosphor="MinusIcon"
-        remixicon="RiSubtractLine"
-      />
-    </div>
-  )
+ return (
+ <div
+ data-slot="input-otp-separator"
+ className="cn-input-otp-separator flex items-center"
+ role="separator"
+ {...props}
+ >
+ <IconPlaceholder
+ lucide="MinusIcon"
+ tabler="IconMinus"
+ hugeicons="MinusSignIcon"
+ phosphor="MinusIcon"
+ remixicon="RiSubtractLine"
+ />
+ </div>
+ )
 }
 
 export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator }

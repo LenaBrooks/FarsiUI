@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation"
 
-export default function Chart2RedirectPage() {
+export default function ChartRedirectPage() {
   redirect("/charts")
 }

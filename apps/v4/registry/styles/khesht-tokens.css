@@ -1,9 +1,7 @@
 /**
  * Khesht (خشت) — adobe / brick-block language for FarsiUI.
- *
- * Warm clay paper, terracotta primary, charcoal ink + umber hard offsets.
- * Neo-brutal structure without cream/saffron/black poster clichés.
- *
+ * Identity: chunky/brutal, small sharp radius, thick borders, hard umber offsets.
+ * Warm clay paper + terracotta primary; dark stays earthen (not cool slate).
  * Unlayered so these beat `.theme-*` Primary Color overrides.
  */
 
@@ -58,6 +56,10 @@
   --chart-3: var(--khesht-chart-3);
   --chart-4: var(--khesht-chart-4);
   --chart-5: var(--khesht-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   /* Soft adobe block — not razor-zero, not pill */
   --radius: 0.5rem;
@@ -160,6 +162,10 @@
   --chart-3: var(--khesht-chart-3);
   --chart-4: var(--khesht-chart-4);
   --chart-5: var(--khesht-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --surface: #241e18;
   --surface-muted: #2c241c;
@@ -500,6 +506,10 @@ html body.style-khesht {
   --chart-3: var(--khesht-chart-3);
   --chart-4: var(--khesht-chart-4);
   --chart-5: var(--khesht-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -579,6 +589,10 @@ html.dark body.style-khesht {
   --chart-3: var(--khesht-chart-3);
   --chart-4: var(--khesht-chart-4);
   --chart-5: var(--khesht-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

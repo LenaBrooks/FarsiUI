@@ -67,8 +67,8 @@ export function PrimaryColorPalette({
   const currentLabel = THEME_LABELS[current] ?? current
   const [open, setOpen] = React.useState(false)
 
-  // Owned-accent design systems; Primary Color must not recolor them.
-  if (OWNED_ACCENT_SYSTEMS.has(designSystemId)) {
+  // Primary Color only for Nova/default — all other DS own their accent.
+  if (designSystemId !== "default" || OWNED_ACCENT_SYSTEMS.has(designSystemId)) {
     return null
   }
 

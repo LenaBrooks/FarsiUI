@@ -203,25 +203,25 @@
   }
 
   /* MARK: Button Group */
-  .cn-button-group {
-    @apply *:data-[slot=input]:px-4 has-[>[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-none has-[>[data-variant=outline]]:[&>input]:border-border has-[>[data-variant=outline]]:[&>input:focus-visible]:border-ring has-[>[data-variant=outline]]:*:data-[slot=input-group]:border-border has-[>[data-variant=outline]]:[&>[data-slot=input-group]:has(:focus-visible)]:border-ring has-[>[data-variant=outline]]:*:data-[slot=select-trigger]:border-border has-[>[data-variant=outline]]:[&>[data-slot=select-trigger]:focus-visible]:border-ring has-[>[data-variant=outline]]:*:data-[slot=input-group]:px-2.5 has-[>[data-variant=outline]]:*:[[role=combobox]]:px-2.5;
-  }
+ .cn-button-group {
+ @apply *:data-[slot=input]:px-4 has-[>[data-slot=button-group]]:gap-2 has-[select[aria-hidden=true]:last-child]:[&>[data-slot=select-trigger]:last-of-type]:rounded-none has-[>[data-variant=outline]]:[&>input]:border-border has-[>[data-variant=outline]]:[&>input:focus-visible]:border-ring has-[>[data-variant=outline]]:*:data-[slot=input-group]:border-border has-[>[data-variant=outline]]:[&>[data-slot=input-group]:has(:focus-visible)]:border-ring has-[>[data-variant=outline]]:*:data-[slot=select-trigger]:border-border has-[>[data-variant=outline]]:[&>[data-slot=select-trigger]:focus-visible]:border-ring has-[>[data-variant=outline]]:*:data-[slot=input-group]:px-2.5 has-[>[data-variant=outline]]:*:[[role=combobox]]:px-2.5;
+ }
 
-  .cn-button-group-orientation-horizontal {
-    @apply [&>[data-slot]:not(:has(~[data-slot]))]:rounded-none!;
-  }
+ .cn-button-group-orientation-horizontal {
+ @apply [&>[data-slot]:not(:has(~[data-slot]))]:rounded-none!;
+ }
 
-  .cn-button-group-orientation-vertical {
-    @apply [&>[data-slot]:not(:has(~[data-slot]))]:rounded-none!;
-  }
+ .cn-button-group-orientation-vertical {
+ @apply [&>[data-slot]:not(:has(~[data-slot]))]:rounded-none!;
+ }
 
-  .cn-button-group-text {
-    @apply gap-2 border border-transparent border-b-input bg-transparent px-2.5 text-xs font-semibold [&_svg:not([class*='size-'])]:size-3.5 group-has-[>[data-variant=outline]]/button-group:border-border uppercase;
-  }
+ .cn-button-group-text {
+ @apply gap-2 border border-transparent border-b-input bg-transparent px-2.5 text-xs font-semibold [&_svg:not([class*='size-'])]:size-3.5 group-has-[>[data-variant=outline]]/button-group:border-border uppercase;
+ }
 
-  .cn-button-group-separator {
-    @apply bg-input;
-  }
+ .cn-button-group-separator {
+ @apply bg-input;
+ }
 
   /* MARK: Calendar */
   .cn-calendar {
@@ -271,17 +271,17 @@
   }
 
   /* MARK: Checkbox */
-  .cn-checkbox {
-    @apply border-input bg-transparent data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary data-checked:border-primary aria-invalid:aria-checked:border-primary aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 focus-visible:border-ring focus-visible:ring-ring/30 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 flex size-4.5 items-center justify-center rounded-none border transition-shadow group-has-disabled/field:opacity-50 focus-visible:ring-2 aria-invalid:ring-2 group-has-[:focus-visible]/field-label:ring-0 group-has-[:focus-visible]/field-label:not-data-checked:border-input group-has-[:focus-visible]/field-label:data-checked:border-primary;
-  }
+ .cn-checkbox {
+ @apply border-input bg-transparent data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary data-checked:border-primary aria-invalid:aria-checked:border-primary aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 flex size-4.5 items-center justify-center rounded-none border transition-shadow group-has-disabled/field:opacity-50 aria-invalid:ring-2 group-has-[:focus-visible]/field-label:ring-0 group-has-[:focus-visible]/field-label:not-data-checked:border-input group-has-[:focus-visible]/field-label:data-checked:border-primary;
+ }
 
-  .cn-checkbox-aria {
-    @apply data-selected:bg-primary data-selected:text-primary-foreground dark:data-selected:bg-primary data-selected:border-primary data-focus-visible:border-ring data-focus-visible:ring-ring/30 data-focus-visible:ring-2 data-invalid:data-selected:border-primary data-invalid:border-destructive dark:data-invalid:border-destructive/50 data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 data-invalid:ring-2;
-  }
+ .cn-checkbox-aria {
+ @apply data-selected:bg-primary data-selected:text-primary-foreground dark:data-selected:bg-primary data-selected:border-primary data-focus-visible:border-ring data-data-data-invalid:data-selected:border-primary data-invalid:border-destructive dark:data-invalid:border-destructive/50 data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 data-invalid:ring-2;
+ }
 
-  .cn-checkbox-indicator {
-    @apply [&>svg]:size-3.5;
-  }
+ .cn-checkbox-indicator {
+ @apply [&>svg]:size-3.5;
+ }
 
   /* MARK: Combobox */
   .cn-combobox-content {
@@ -324,17 +324,17 @@
     @apply bg-border/50 -mx-1.5 my-1.5 h-px;
   }
 
-  .cn-combobox-trigger {
-    @apply [&_svg:not([class*='size-'])]:size-3.5;
-  }
+ .cn-combobox-trigger {
+ @apply [&_svg:not([class*='size-'])]:size-3.5;
+ }
 
-  .cn-combobox-trigger-icon {
-    @apply text-muted-foreground size-3.5;
-  }
+ .cn-combobox-trigger-icon {
+ @apply text-muted-foreground size-3.5;
+ }
 
-  .cn-combobox-chips {
-    @apply border-transparent border-b-input bg-transparent focus-within:border-b-ring has-aria-invalid:border-b-destructive dark:has-aria-invalid:border-b-destructive/50 flex min-h-10 flex-wrap items-center gap-1.5 rounded-none border bg-clip-padding px-0 py-1.5 text-sm transition-[color,border-color] has-data-[slot=combobox-chip]:px-0;
-  }
+ .cn-combobox-chips {
+ @apply border-transparent border-b-input bg-transparent focus-within:border-b-ring has-aria-invalid:border-b-destructive dark:has-aria-invalid:border-b-destructive/50 flex min-h-10 flex-wrap items-center gap-1.5 rounded-none border bg-clip-padding px-0 py-1.5 text-sm transition-[color,border-color] has-data-[slot=combobox-chip]:px-0;
+ }
 
   .cn-combobox-chip {
     @apply bg-muted text-foreground flex h-[calc(--spacing(5.5))] w-fit items-center justify-center gap-1 rounded-none px-2 text-xs font-medium whitespace-nowrap has-data-[slot=combobox-chip-remove]:pr-0;
@@ -627,13 +627,13 @@
     @apply gap-1;
   }
 
-  .cn-field-label {
-    @apply has-data-checked:bg-primary/5 has-data-checked:border-primary/30 dark:has-data-checked:border-primary/20 dark:has-data-checked:bg-primary/10 gap-2 group-data-[disabled=true]/field:opacity-50 has-[>[data-slot=field]]:rounded-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 has-[>[data-slot=field]]:has-[:focus-visible]:ring-ring/30 has-[>[data-slot=field]]:has-[:focus-visible]:ring-2 *:data-[slot=field]:p-4 leading-relaxed;
-  }
+ .cn-field-label {
+ @apply has-data-checked:bg-primary/5 has-data-checked:border-primary/30 dark:has-data-checked:border-primary/20 dark:has-data-checked:bg-primary/10 gap-2 group-data-[disabled=true]/field:opacity-50 has-[>[data-slot=field]]:rounded-none has-[>[data-slot=field]]:border has-[>[data-slot=field]]:not-has-[:disabled,[data-disabled]]:hover:bg-muted/50 *:data-[slot=field]:p-4 leading-relaxed;
+ }
 
-  .cn-field-label-aria {
-    @apply has-data-selected:bg-primary/5 has-data-selected:border-primary/30 dark:has-data-selected:border-primary/20 dark:has-data-selected:bg-primary/10;
-  }
+ .cn-field-label-aria {
+ @apply has-data-selected:bg-primary/5 has-data-selected:border-primary/30 dark:has-data-selected:border-primary/20 dark:has-data-selected:bg-primary/10;
+ }
 
   .cn-field-title {
     @apply gap-2 group-data-[disabled=true]/field:opacity-50 leading-normal font-semibold uppercase in-data-[slot=field-label]:font-semibold text-xs;
@@ -665,31 +665,31 @@
   }
 
   /* MARK: Input */
-  .cn-input {
-    @apply border-transparent border-b-input bg-transparent focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 h-10 border px-0 py-1 text-base transition-[color,border-color] file:h-7 file:text-sm file:font-medium md:text-sm;
-  }
+ .cn-input {
+ @apply border-transparent border-b-input bg-transparent focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 h-10 border px-0 py-1 text-base transition-[color,border-color] file:h-7 file:text-sm file:font-medium md:text-sm;
+ }
 
   /* MARK: Input OTP */
-  .cn-input-otp {
-    @apply gap-2;
-    direction: ltr;
-  }
+ .cn-input-otp {
+ @apply gap-2;
+ direction: ltr;
+ }
 
-  .cn-input-otp-group {
-    @apply has-aria-invalid:border-b-destructive dark:has-aria-invalid:border-b-destructive/50 rounded-none gap-1;
-  }
+ .cn-input-otp-group {
+ @apply has-aria-invalid:border-b-destructive dark:has-aria-invalid:border-b-destructive/50 rounded-none gap-1;
+ }
 
-  .cn-input-otp-slot {
-    @apply border-transparent border-b-input bg-transparent data-[active=true]:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 size-10 border text-sm transition-[color,border-color] outline-none first:rounded-none last:rounded-none;
-  }
+ .cn-input-otp-slot {
+ @apply border-transparent border-b-input bg-transparent data-[active=true]:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 size-10 border text-sm transition-[color,border-color] outline-none first:rounded-none last:rounded-none;
+ }
 
-  .cn-input-otp-caret-line {
-    @apply animate-caret-blink bg-foreground h-4 w-px duration-1000;
-  }
+ .cn-input-otp-caret-line {
+ @apply animate-caret-blink bg-foreground h-4 w-px duration-1000;
+ }
 
-  .cn-input-otp-separator {
-    @apply [&_svg:not([class*='size-'])]:size-3.5;
-  }
+ .cn-input-otp-separator {
+ @apply [&_svg:not([class*='size-'])]:size-3.5;
+ }
 
   /* MARK: Item */
   .cn-item {
@@ -889,13 +889,13 @@
   }
 
   /* MARK: Native Select */
-  .cn-native-select {
-    @apply border-transparent border-b-input bg-transparent placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 h-10 w-full min-w-0 appearance-none rounded-none border py-2 pr-8 pl-0 text-sm transition-[color,border-color] select-none data-[size=sm]:h-9;
-  }
+ .cn-native-select {
+ @apply border-transparent border-b-input bg-transparent placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 h-10 w-full min-w-0 appearance-none rounded-none border py-2 pr-8 pl-0 text-sm transition-[color,border-color] select-none data-[size=sm]:h-9;
+ }
 
-  .cn-native-select-icon {
-    @apply text-muted-foreground top-1/2 right-0 size-3.5 -translate-y-1/2;
-  }
+ .cn-native-select-icon {
+ @apply text-muted-foreground top-1/2 right-0 size-3.5 -translate-y-1/2;
+ }
 
   /* MARK: Pagination */
   .cn-pagination-content {
@@ -961,13 +961,13 @@
     @apply grid gap-3;
   }
 
-  .cn-radio-group-item {
-    @apply border-input bg-transparent data-checked:border-foreground aria-invalid:aria-checked:border-foreground aria-invalid:border-destructive focus-visible:border-ring focus-visible:ring-ring/30 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 dark:aria-invalid:border-destructive/50 flex size-4.5 rounded-full border focus-visible:ring-2 aria-invalid:ring-2 group-has-[:focus-visible]/field-label:ring-0 group-has-[:focus-visible]/field-label:not-data-checked:border-input group-has-[:focus-visible]/field-label:data-checked:border-foreground;
-  }
+ .cn-radio-group-item {
+ @apply border-input bg-transparent data-checked:border-foreground aria-invalid:aria-checked:border-foreground aria-invalid:border-destructive focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 dark:aria-invalid:border-destructive/50 flex size-4.5 rounded-full border aria-invalid:ring-2 group-has-[:focus-visible]/field-label:ring-0 group-has-[:focus-visible]/field-label:not-data-checked:border-input group-has-[:focus-visible]/field-label:data-checked:border-foreground;
+ }
 
-  .cn-radio-group-item-aria {
-    @apply data-selected:border-foreground data-focus-visible:border-ring data-focus-visible:ring-ring/30 data-focus-visible:ring-2 data-invalid:data-selected:border-foreground data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 dark:data-invalid:border-destructive/50 data-invalid:ring-2;
-  }
+ .cn-radio-group-item-aria {
+ @apply data-selected:border-foreground data-focus-visible:border-ring data-data-data-invalid:data-selected:border-foreground data-invalid:border-destructive data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 dark:data-invalid:border-destructive/50 data-invalid:ring-2;
+ }
 
   .cn-radio-group-indicator {
     @apply flex size-4.5 items-center justify-center;
@@ -992,9 +992,9 @@
   }
 
   /* MARK: Select */
-  .cn-select-trigger {
-    @apply border-transparent border-b-input bg-transparent data-placeholder:text-muted-foreground focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 gap-1.5 rounded-none border py-2 px-0 text-sm transition-[color,border-color] data-[size=default]:h-10 data-[size=sm]:h-9 *:data-[slot=select-value]:flex *:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-3.5;
-  }
+ .cn-select-trigger {
+ @apply border-transparent border-b-input bg-transparent data-placeholder:text-muted-foreground focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 gap-1.5 rounded-none border py-2 px-0 text-sm transition-[color,border-color] data-[size=default]:h-10 data-[size=sm]:h-9 *:data-[slot=select-value]:flex *:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-3.5;
+ }
 
   .cn-select-value {
     @apply flex flex-1 text-start;
@@ -1004,9 +1004,9 @@
     @apply data-placeholder:text-muted-foreground;
   }
 
-  .cn-select-trigger-icon {
-    @apply text-muted-foreground size-3.5;
-  }
+ .cn-select-trigger-icon {
+ @apply text-muted-foreground size-3.5;
+ }
 
   .cn-select-content {
     @apply bg-popover text-popover-foreground data-open:animate-in data-closed:animate-out data-closed:fade-out-0 data-open:fade-in-0 data-closed:zoom-out-95 data-open:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 ring-foreground/10 min-w-36 rounded-none shadow-md ring-1 duration-100;
@@ -1239,21 +1239,21 @@
   }
 
   /* MARK: Switch */
-  .cn-switch {
-    @apply data-checked:bg-primary data-unchecked:bg-input data-checked:border-primary border data-unchecked:border-input/50 focus-visible:border-ring focus-visible:ring-ring/30 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 shrink-0 rounded-none focus-visible:ring-2 aria-invalid:ring-2 group-has-[:focus-visible]/field-label:ring-0 group-has-[:focus-visible]/field-label:data-unchecked:border-input/50 group-has-[:focus-visible]/field-label:data-checked:border-primary data-[size=default]:h-4.5 data-[size=default]:w-8.25 data-[size=sm]:h-3.5 data-[size=sm]:w-6.25;
-  }
+ .cn-switch {
+ @apply data-checked:bg-primary data-unchecked:bg-input data-checked:border-primary border data-unchecked:border-input/50 focus-visible:border-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 shrink-0 rounded-none aria-invalid:ring-2 group-has-[:focus-visible]/field-label:ring-0 group-has-[:focus-visible]/field-label:data-unchecked:border-input/50 group-has-[:focus-visible]/field-label:data-checked:border-primary data-[size=default]:h-4.5 data-[size=default]:w-8.25 data-[size=sm]:h-3.5 data-[size=sm]:w-6.25;
+ }
 
-  .cn-switch-aria {
-    @apply data-selected:bg-primary not-data-selected:bg-input data-selected:border-primary not-data-selected:border-input/50 data-focus-visible:border-ring data-focus-visible:ring-ring/30 data-focus-visible:ring-2 data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 data-invalid:border-destructive dark:data-invalid:border-destructive/50 data-invalid:ring-2;
-  }
+ .cn-switch-aria {
+ @apply data-selected:bg-primary not-data-selected:bg-input data-selected:border-primary not-data-selected:border-input/50 data-focus-visible:border-ring data-data-data-invalid:ring-destructive/20 dark:data-invalid:ring-destructive/40 data-invalid:border-destructive dark:data-invalid:border-destructive/50 data-invalid:ring-2;
+ }
 
-  .cn-switch-thumb {
-    @apply bg-background dark:data-unchecked:bg-foreground dark:data-checked:bg-primary-foreground group-data-[size=default]/switch:size-3.5 group-data-[size=sm]/switch:size-2.5 data-checked:translate-x-[calc(100%+2px)] rtl:data-checked:-translate-x-[calc(100%+2px)] data-unchecked:translate-x-0.25;
-  }
+ .cn-switch-thumb {
+ @apply bg-background dark:data-unchecked:bg-foreground dark:data-checked:bg-primary-foreground group-data-[size=default]/switch:size-3.5 group-data-[size=sm]/switch:size-2.5 data-checked:translate-x-[calc(100%+2px)] rtl:data-checked:-translate-x-[calc(100%+2px)] data-unchecked:translate-x-0.25;
+ }
 
-  .cn-switch-thumb-aria {
-    @apply dark:not-data-selected:bg-foreground dark:data-selected:bg-primary-foreground data-selected:translate-x-[calc(100%+2px)] rtl:data-selected:-translate-x-[calc(100%+2px)] not-data-selected:translate-x-0.25;
-  }
+ .cn-switch-thumb-aria {
+ @apply dark:not-data-selected:bg-foreground dark:data-selected:bg-primary-foreground data-selected:translate-x-[calc(100%+2px)] rtl:data-selected:-translate-x-[calc(100%+2px)] not-data-selected:translate-x-0.25;
+ }
 
   /* MARK: Table */
   .cn-table-container {
@@ -1322,9 +1322,9 @@
   }
 
   /* MARK: Textarea */
-  .cn-textarea {
-    @apply border-transparent border-b-input bg-transparent focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 resize-none rounded-none border px-0 py-3 text-base transition-[color,border-color] md:text-sm;
-  }
+ .cn-textarea {
+ @apply border-transparent border-b-input bg-transparent focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 resize-none rounded-none border px-0 py-3 text-base transition-[color,border-color] md:text-sm;
+ }
 
   /* MARK: Toggle */
   .cn-toggle {
@@ -1382,57 +1382,57 @@
   }
 
   /* MARK: Input Group */
-  .cn-input-group {
-    @apply border-transparent border-b-input bg-transparent has-[[data-slot=input-group-control]:focus-visible]:border-b-ring has-[[data-slot][aria-invalid=true]]:border-b-destructive dark:has-[[data-slot][aria-invalid=true]]:border-b-destructive/50 h-10 rounded-none border transition-[color,border-color] in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 has-data-[align=block-end]:rounded-none has-data-[align=block-start]:rounded-none has-[textarea]:rounded-none has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-start]]:[&>input]:pb-3;
-  }
+ .cn-input-group {
+ @apply border-transparent border-b-input bg-transparent has-[[data-slot=input-group-control]:focus-visible]:border-b-ring has-[[data-slot][aria-invalid=true]]:border-b-destructive dark:has-[[data-slot][aria-invalid=true]]:border-b-destructive/50 h-10 rounded-none border transition-[color,border-color] in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:has-data-[align=block-end]:rounded-none has-data-[align=block-start]:rounded-none has-[textarea]:rounded-none has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-start]]:[&>input]:pb-3;
+ }
 
-  .cn-input-group-addon {
-    @apply text-muted-foreground **:data-[slot=kbd]:bg-muted-foreground/10 h-auto gap-2 py-2 text-sm font-medium group-data-[disabled=true]/input-group:opacity-50 **:data-[slot=kbd]:rounded-none **:data-[slot=kbd]:px-1.5 [&>svg:not([class*='size-'])]:size-3.5;
-  }
+ .cn-input-group-addon {
+ @apply text-muted-foreground **:data-[slot=kbd]:bg-muted-foreground/10 h-auto gap-2 py-2 text-sm font-medium group-data-[disabled=true]/input-group:opacity-50 **:data-[slot=kbd]:rounded-none **:data-[slot=kbd]:px-1.5 [&>svg:not([class*='size-'])]:size-3.5;
+ }
 
   /* .cn-input-group-addon-align-inline-start {
     @apply has-[>button]:-ml-1 has-[>kbd]:-ml-1;
   }
 
-  .cn-input-group-addon-align-inline-end {
-    @apply has-[>button]:-mr-1 has-[>kbd]:-mr-1;
-  } */
+ .cn-input-group-addon-align-inline-end {
+ @apply has-[>button]:-mr-1 has-[>kbd]:-mr-1;
+ } */
 
-  .cn-input-group-addon-align-block-start {
-    @apply pt-3 group-has-[>input]/input-group:pt-3.5 [.border-b]:pb-3.5;
-  }
+ .cn-input-group-addon-align-block-start {
+ @apply pt-3 group-has-[>input]/input-group:pt-3.5 [.border-b]:pb-3.5;
+ }
 
-  .cn-input-group-addon-align-block-end {
-    @apply pb-3 group-has-[>input]/input-group:pb-3.5 [.border-t]:pt-3.5;
-  }
+ .cn-input-group-addon-align-block-end {
+ @apply pb-3 group-has-[>input]/input-group:pb-3.5 [.border-t]:pt-3.5;
+ }
 
-  .cn-input-group-button {
-    @apply gap-2 rounded-none text-sm ;
-  }
+ .cn-input-group-button {
+ @apply gap-2 rounded-none text-sm ;
+ }
 
-  .cn-input-group-button-size-xs {
-    @apply h-6 gap-1 rounded-none px-1.5 [&>svg:not([class*='size-'])]:size-3.5 text-xs;
-  }
+ .cn-input-group-button-size-xs {
+ @apply h-6 gap-1 rounded-none px-1.5 [&>svg:not([class*='size-'])]:size-3.5 text-xs;
+ }
 
-  .cn-input-group-button-size-icon-xs {
-    @apply size-6 p-0 has-[>svg]:p-0 text-xs;
-  }
+ .cn-input-group-button-size-icon-xs {
+ @apply size-6 p-0 has-[>svg]:p-0 text-xs;
+ }
 
-  .cn-input-group-button-size-icon-sm {
-    @apply size-8 p-0 has-[>svg]:p-0;
-  }
+ .cn-input-group-button-size-icon-sm {
+ @apply size-8 p-0 has-[>svg]:p-0;
+ }
 
-  .cn-input-group-text {
-    @apply text-muted-foreground gap-2 text-sm [&_svg:not([class*='size-'])]:size-3.5;
-  }
+ .cn-input-group-text {
+ @apply text-muted-foreground gap-2 text-sm [&_svg:not([class*='size-'])]:size-3.5;
+ }
 
-  .cn-input-group-input {
-    @apply border-0 bg-transparent ring-0 focus-visible:ring-0 aria-invalid:ring-0 dark:bg-transparent group-has-[>[data-align=inline-start]]/input-group:pl-2 group-has-[>[data-align=inline-end]]/input-group:pr-2;
-  }
+ .cn-input-group-input {
+ @apply border-0 bg-transparent ring-0 aria-invalid:ring-0 dark:bg-transparent group-has-[>[data-align=inline-start]]/input-group:pl-2 group-has-[>[data-align=inline-end]]/input-group:pr-2;
+ }
 
-  .cn-input-group-textarea {
-    @apply border-0 bg-transparent py-2.5 ring-0 focus-visible:ring-0 aria-invalid:ring-0 dark:bg-transparent;
-  }
+ .cn-input-group-textarea {
+ @apply border-0 bg-transparent py-2.5 ring-0 aria-invalid:ring-0 dark:bg-transparent;
+ }
 
   /* MARK: Menu Translucent */
   .cn-menu-translucent {
@@ -1607,29 +1607,29 @@
     @apply gap-3;
   }
 
-  .cn-questionnaire-choice {
-    @apply hover:bg-muted/50 data-checked:bg-primary/5 data-checked:border-primary/30 dark:data-checked:border-primary/20 dark:data-checked:bg-primary/10 data-invalid:border-destructive has-[>input:focus-visible]:ring-ring/30 gap-3 rounded-none border border-input bg-transparent px-4 py-4 text-sm has-[>input:focus-visible]:ring-2;
-  }
+ .cn-questionnaire-choice {
+ @apply hover:bg-muted/50 data-checked:bg-primary/5 data-checked:border-primary/30 dark:data-checked:border-primary/20 dark:data-checked:bg-primary/10 data-invalid:border-destructive gap-3 rounded-none border border-input bg-transparent px-4 py-4 text-sm ;
+ }
 
-  .cn-questionnaire-choice-indicator {
-    @apply border-input group-data-checked/questionnaire-choice:border-foreground group-data-[type=checkbox]/questionnaire-choice:group-data-checked/questionnaire-choice:bg-primary group-data-[type=checkbox]/questionnaire-choice:group-data-checked/questionnaire-choice:text-primary-foreground group-data-[type=checkbox]/questionnaire-choice:group-data-checked/questionnaire-choice:border-primary size-4.5 translate-y-[--spacing(0.45)] group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5;
-  }
+ .cn-questionnaire-choice-indicator {
+ @apply border-input group-data-checked/questionnaire-choice:border-foreground group-data-[type=checkbox]/questionnaire-choice:group-data-checked/questionnaire-choice:bg-primary group-data-[type=checkbox]/questionnaire-choice:group-data-checked/questionnaire-choice:text-primary-foreground group-data-[type=checkbox]/questionnaire-choice:group-data-checked/questionnaire-choice:border-primary size-4.5 translate-y-[--spacing(0.45)] group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5;
+ }
 
-  .cn-questionnaire-choice-indicator-dot {
-    @apply bg-foreground size-2;
-  }
+ .cn-questionnaire-choice-indicator-dot {
+ @apply bg-foreground size-2;
+ }
 
-  .cn-questionnaire-choice-indicator-check {
-    @apply size-3.5;
-  }
+ .cn-questionnaire-choice-indicator-check {
+ @apply size-3.5;
+ }
 
-  .cn-questionnaire-choice-content {
-    @apply gap-1;
-  }
+ .cn-questionnaire-choice-content {
+ @apply gap-1;
+ }
 
-  .cn-questionnaire-choice-description {
-    @apply text-muted-foreground;
-  }
+ .cn-questionnaire-choice-description {
+ @apply text-muted-foreground;
+ }
 
   .cn-questionnaire-shortcut {
     @apply border-input bg-background text-muted-foreground size-5 translate-y-[--spacing(0.45)] group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5 items-center justify-center rounded-none border font-mono text-[0.625rem] font-medium leading-none;
@@ -1639,9 +1639,9 @@
     @apply w-full;
   }
 
-  .cn-questionnaire-input {
-    @apply border-transparent border-b-input bg-transparent focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 h-10 border px-0 py-1 text-base md:text-sm;
-  }
+ .cn-questionnaire-input {
+ @apply border-transparent border-b-input bg-transparent focus-visible:border-b-ring aria-invalid:border-b-destructive dark:aria-invalid:border-b-destructive/50 h-10 border px-0 py-1 text-base md:text-sm;
+ }
 
   .cn-questionnaire-error {
     @apply mt-2 text-sm;

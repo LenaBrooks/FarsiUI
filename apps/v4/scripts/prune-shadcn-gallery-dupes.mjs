@@ -98,8 +98,8 @@ const CATEGORY = {
 
 const REMOVE = ALL_IMPORTED.filter((id) => !KEEP.has(id))
 
-const catalogPath = path.join(root, "lib/chart2-examples.json")
-const demosPath = path.join(root, "lib/chart2-demos.ts")
+const catalogPath = path.join(root, "lib/Chart-examples.json")
+const demosPath = path.join(root, "lib/Chart-demos.ts")
 const importScriptPath = path.join(
   root,
   "scripts/import-shadcn-charts-to-gallery.mjs"
@@ -120,7 +120,7 @@ const deleted = []
 for (const id of REMOVE) {
   const cat = CATEGORY[id]
   if (!cat) continue
-  const file = path.join(root, "examples/chart2", cat, `${id}.tsx`)
+  const file = path.join(root, "examples/Chart", cat, `${id}.tsx`)
   if (fs.existsSync(file)) {
     fs.unlinkSync(file)
     deleted.push(path.relative(root, file))

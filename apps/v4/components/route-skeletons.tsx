@@ -4,7 +4,39 @@ const pulse = "animate-pulse rounded-sm bg-muted-foreground/20"
 const pulseMid = "animate-pulse rounded-sm bg-muted-foreground/30"
 const pulseBold = "animate-pulse rounded-sm bg-muted-foreground/40"
 
-/** Plain muted skeleton (no chart-shaped art). Used in iframes + route loading. */
+/**
+ * Shared App Router instant-loading UI.
+ * Neutral — not a components/charts/blocks grid lookalike.
+ */
+export function RoutePageSkeleton({
+  className,
+}: {
+  className?: string
+}) {
+  return (
+    <div
+      dir="rtl"
+      lang="fa"
+      className={cn(
+        "mx-auto flex w-full max-w-3xl min-w-0 flex-1 flex-col gap-5 px-4 py-10 md:px-6",
+        className
+      )}
+      aria-busy="true"
+      aria-live="polite"
+    >
+      <span className="sr-only">در حال بارگذاری</span>
+      <div className={cn("h-7 w-40 max-w-[50%]", pulseBold)} />
+      <div className="flex flex-col gap-2.5">
+        <div className={cn("h-3.5 w-full", pulse)} />
+        <div className={cn("h-3.5 w-[92%]", pulse)} />
+        <div className={cn("h-3.5 w-[70%]", pulse)} />
+      </div>
+      <div className={cn("mt-2 h-44 w-full rounded-xl", pulseMid)} />
+    </div>
+  )
+}
+
+/** Plain muted fill for a chart plot area only (inside a chart card). */
 export function ChartPlotSkeleton({ className }: { className?: string }) {
   return (
     <div
@@ -40,54 +72,7 @@ export function ChartCardSkeleton() {
   )
 }
 
-/** Index grid card: title row + wireframe stage (charts/blocks showcase). */
-export function ShowcaseTileSkeleton({
-  variant = "chart",
-}: {
-  variant?: "chart" | "block"
-}) {
-  return (
-    <div className="min-w-0 border-b border-border/60 last:border-b-0 md:border-b-0">
-      <div className="flex min-w-0 items-baseline gap-2 py-3 md:hidden">
-        <div className={cn("h-3.5 w-16", pulseBold)} />
-        <span className="mb-1 min-w-4 flex-1 border-b border-dashed border-muted-foreground/30" />
-        <div className={cn("h-3 w-10", pulse)} />
-      </div>
-      <div className="hidden min-w-0 flex-col gap-2 md:flex">
-        <div className="flex min-w-0 items-baseline gap-2">
-          <div className={cn("h-3.5 w-16", pulseBold)} />
-          <span className="mb-1 min-w-4 flex-1 border-b border-dashed border-muted-foreground/30" />
-          <div className={cn("h-3 w-12", pulse)} />
-        </div>
-        <div className="overflow-hidden rounded-xl border border-border bg-background">
-          <div className="relative aspect-16/5 overflow-hidden">
-            {variant === "chart" ? (
-              <ChartPlotSkeleton className="bg-transparent p-2" />
-            ) : (
-              <BlockTileWireSkeleton />
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function BlockTileWireSkeleton() {
-  return (
-    <div className="flex size-full items-center justify-center bg-transparent p-2">
-      <div className="flex w-full max-w-[94%] flex-col gap-1 overflow-hidden rounded-md border border-border/40 bg-background/80 p-2 shadow-none">
-        <div className={cn("h-1.5 w-1/2", pulseBold)} />
-        <div className={cn("h-1 w-3/4", pulse)} />
-        <div className={cn("mt-0.5 h-4 w-full rounded-sm border border-border/60", pulse)} />
-        <div className={cn("h-4 w-full rounded-sm border border-border/60", pulse)} />
-        <div className={cn("mt-0.5 h-5 w-full", pulseBold)} />
-      </div>
-    </div>
-  )
-}
-
-/** Category block preview card (toolbar + tall preview). */
+/** Block category preview card (in-page only — not route loading). */
 export function BlockPreviewCardSkeleton() {
   return (
     <div className="flex flex-col gap-2 overflow-hidden rounded-xl border border-border/80 bg-background">

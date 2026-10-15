@@ -1,9 +1,7 @@
 /**
  * Glass (فیروزه · شیشه‌ای)
- *
- * Dark: exact VibeFarsi `turquoise` tokens.
- * Light: frosted teal glass (same family — readable on light chrome).
- *
+ * Identity: turquoise glass, soft radius + blur, translucent surfaces; dark teal atmospheric.
+ * Dark: VibeFarsi `turquoise`. Light: frosted teal of the same family.
  * Unlayered so these beat `.theme-*` Primary Color overrides.
  */
 
@@ -56,6 +54,10 @@
   --chart-3: var(--glass-chart-3);
   --chart-4: var(--glass-chart-4);
   --chart-5: var(--glass-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   --radius: 0.875rem;
   --radius-field: 0.75rem;
@@ -155,6 +157,10 @@
   --chart-3: var(--glass-chart-3);
   --chart-4: var(--glass-chart-4);
   --chart-5: var(--glass-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --surface: #062d38e6;
   --surface-muted: #e6fafa18;
@@ -507,6 +513,10 @@ html body.style-glass {
   --chart-3: var(--glass-chart-3);
   --chart-4: var(--glass-chart-4);
   --chart-5: var(--glass-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -586,6 +596,10 @@ html.dark body.style-glass {
   --chart-3: var(--glass-chart-3);
   --chart-4: var(--glass-chart-4);
   --chart-5: var(--glass-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

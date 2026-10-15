@@ -7,6 +7,7 @@
 import {
   type DesignSystemCookieId,
 } from "@/lib/design-system"
+import { DS_CSS_VERSION } from "@/lib/ds-css-version"
 
 export type LoadableDesignSystemId = DesignSystemCookieId
 
@@ -14,7 +15,7 @@ const loaded = new Set<LoadableDesignSystemId>(["default"])
 const inflight = new Map<LoadableDesignSystemId, Promise<void>>()
 
 export function dsStyleHref(id: Exclude<LoadableDesignSystemId, "default">) {
-  return `/ds/${id}.css`
+  return `/ds/${id}.css?v=${DS_CSS_VERSION}`
 }
 
 export function isDesignSystemStyleLoaded(id: LoadableDesignSystemId) {

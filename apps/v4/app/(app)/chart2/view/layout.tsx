@@ -1,4 +1,4 @@
-export default function Chart2ViewLegacyLayout({
+export default function ChartViewLegacyLayout({
   children,
 }: {
   children: React.ReactNode

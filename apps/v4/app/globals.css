@@ -144,6 +144,10 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.606 0.25 292.717);
   --chart-5: oklch(0.645 0.246 16.439);
+  /* Nova/default price semantics — soft like chart-2/5 (branded DS override). */
+  --chart-up: var(--chart-2);
+  --chart-down: var(--chart-5);
+  --chart-mute: var(--muted-foreground);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0% 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -202,6 +206,9 @@
   --chart-3: oklch(0.828 0.189 84.429);
   --chart-4: oklch(0.702 0.183 293.541);
   --chart-5: oklch(0.712 0.194 13.428);
+  --chart-up: var(--chart-2);
+  --chart-down: var(--chart-5);
+  --chart-mute: var(--muted-foreground);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -914,9 +921,26 @@ body[class*="theme-"],
   [data-slot="chart"] .recharts-text {
     letter-spacing: 0;
   }
+
+  /* Nova: raw shadcn stroke — no neon bloom weight. */
+  .style-nova .recharts-area-curve,
+  .style-nova .recharts-line-curve {
+    stroke-width: 2;
+  }
 }
 
 @layer utilities {
+  /*
+   * Light Nova + آرام: only the chart stage card is pure white.
+   * !important beats Tailwind `bg-muted/20` on the same node.
+   */
+  html:not(.dark) .style-nova [data-chart-stage],
+  html:not(.dark) .style-vega [data-chart-stage] {
+    --background: #ffffff;
+    --card: #ffffff;
+    background-color: #ffffff !important;
+  }
+
   /*
    * Estedad + Persian digits: Tailwind `tabular-nums` enables tnum, which pads
    * short figures so values like «۴٪» / «۱۹٪» look letter-spaced. Keep the

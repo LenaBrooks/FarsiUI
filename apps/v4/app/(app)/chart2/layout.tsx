@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Chart2LegacyLayout({
+export default function ChartLegacyLayout({
   children,
 }: {
   children: React.ReactNode

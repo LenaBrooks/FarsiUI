@@ -75,9 +75,14 @@ function preventDemoHashNavigation(event: MouseEvent<HTMLDivElement>) {
   event.preventDefault()
 }
 
-/** Soft handoff from page header (background) into the collage (muted). */
-const COLLAGE_SURFACE =
-  "bg-muted [background-image:linear-gradient(to_bottom,var(--background)_0%,var(--background)_1.25rem,var(--muted)_5.5rem)] dark:bg-background dark:[background-image:none]"
+/**
+ * Continuous muted paper (آرام sky, etc.) — no lighter top band under the hero.
+ * Only fade out at the bottom into the page/footer.
+ */
+const COLLAGE_SURFACE = "bg-transparent"
+
+const COLLAGE_BOTTOM_FADE =
+  "pointer-events-none absolute inset-x-0 bottom-0 z-20 h-40 bg-linear-to-t from-background via-muted/90 to-transparent lg:h-52"
 
 export function CardsDemoMobile() {
   return (
@@ -93,7 +98,7 @@ export function CardsDemoMobile() {
         dir="rtl"
         lang="fa"
         aria-hidden="true"
-        className="theme-container pointer-events-none max-w-none bg-transparent px-12 pt-6 pb-0! [--gap:--spacing(6)] [font-variant-numeric:normal] [&_*]:[font-variant-numeric:normal]"
+        className="theme-container pointer-events-none relative z-10 max-w-none bg-transparent px-12 pt-6 pb-0! [--gap:--spacing(6)] [font-variant-numeric:normal] [&_*]:[font-variant-numeric:normal]"
         style={{
           width: MOBILE_DESIGN_WIDTH,
           zoom: `calc(140vw / ${MOBILE_DESIGN_WIDTH}px)`,
@@ -101,7 +106,7 @@ export function CardsDemoMobile() {
       >
         <CollageColumns forceAll cards={LIVE_CARDS} />
       </div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-40 bg-linear-to-t from-background via-muted/80 to-transparent dark:via-background/80" />
+      <div className={COLLAGE_BOTTOM_FADE} aria-hidden />
     </div>
   )
 }
@@ -119,8 +124,10 @@ export function CardsDemo() {
         COLLAGE_SURFACE
       )}
     >
-      <CollageColumns cards={LIVE_CARDS} />
-      <div className="absolute inset-x-0 bottom-0 z-20 h-40 bg-linear-to-t from-background via-muted/80 to-transparent lg:h-48 dark:via-background/80" />
+      <div className="relative z-10">
+        <CollageColumns cards={LIVE_CARDS} />
+      </div>
+      <div className={COLLAGE_BOTTOM_FADE} aria-hidden />
     </div>
   )
 }

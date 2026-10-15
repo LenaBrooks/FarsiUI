@@ -18,7 +18,7 @@ export const revalidate = false
 
 const title = "نمونه‌های کاربردی FarsiUI"
 const description =
-  "نمونه‌صفحه‌های آماده با کامپوننت‌های FarsiUI — داشبورد، وظایف، احراز هویت، playground و RTL."
+  "نمونه‌صفحه‌های آماده با کامپوننت‌های FarsiUI."
 
 export const metadata: Metadata = {
   title,

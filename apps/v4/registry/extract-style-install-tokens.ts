@@ -7,6 +7,7 @@ export type StyleInstallTokens = {
 
 /** Design systems that ship a `*-tokens.css` sidecar (preview SoT). */
 export const TOKEN_SIDECAR_STYLES = [
+  "vega",
   "glass",
   "rose",
   "nili",
@@ -84,9 +85,10 @@ function matchStyleTokenSelector(
   styleClass: string
 ): "light" | "dark" | null {
   const normalized = selector.replace(/\s+/g, " ").trim()
-  // `.dark .style-khesht` or `.dark.style-khesht`
+  // `.dark .style-khesht`, `html.dark .style-khesht`, or `.dark.style-khesht`
   if (
     normalized === `.dark .${styleClass}` ||
+    normalized === `html.dark .${styleClass}` ||
     normalized === `.dark.${styleClass}`
   ) {
     return "dark"

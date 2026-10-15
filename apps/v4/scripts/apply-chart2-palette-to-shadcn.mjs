@@ -1,6 +1,6 @@
 /**
- * Point kept shadcn gallery demos at CHART2_BAR_COLORS (readable on gray skins).
- * Usage: node apps/v4/scripts/apply-chart2-palette-to-shadcn.mjs
+ * Point kept shadcn gallery demos at Chart_BAR_COLORS (readable on gray skins).
+ * Usage: node apps/v4/scripts/apply-Chart-palette-to-shadcn.mjs
  */
 import fs from "node:fs"
 import path from "node:path"
@@ -9,39 +9,39 @@ import { fileURLToPath } from "node:url"
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
 
 const FILES = [
-  "examples/chart2/area/area-interactive.tsx",
-  "examples/chart2/area/area-step.tsx",
-  "examples/chart2/area/area-gradient.tsx",
-  "examples/chart2/bar/bar-interactive.tsx",
-  "examples/chart2/bar/bar-horizontal.tsx",
-  "examples/chart2/bar/bar-active.tsx",
-  "examples/chart2/line/line-interactive.tsx",
-  "examples/chart2/line/line-step.tsx",
-  "examples/chart2/pie/pie-donut-text.tsx",
-  "examples/chart2/pie/pie-interactive.tsx",
-  "examples/chart2/pie/pie-stacked.tsx",
-  "examples/chart2/radar/radar-multiple.tsx",
-  "examples/chart2/radar/radar-icons.tsx",
-  "examples/chart2/radar/radar-lines-only.tsx",
-  "examples/chart2/radial-bar/radial-stacked.tsx",
-  "examples/chart2/radial-bar/radial-text.tsx",
-  "examples/chart2/radial-bar/radial-shape.tsx",
-  "examples/chart2/tooltip/tooltip-advanced.tsx",
+  "examples/chart/area/area-interactive.tsx",
+  "examples/chart/area/area-step.tsx",
+  "examples/chart/area/area-gradient.tsx",
+  "examples/chart/bar/bar-interactive.tsx",
+  "examples/chart/bar/bar-horizontal.tsx",
+  "examples/chart/bar/bar-active.tsx",
+  "examples/chart/line/line-interactive.tsx",
+  "examples/chart/line/line-step.tsx",
+  "examples/chart/pie/pie-donut-text.tsx",
+  "examples/chart/pie/pie-interactive.tsx",
+  "examples/chart/pie/pie-stacked.tsx",
+  "examples/chart/radar/radar-multiple.tsx",
+  "examples/chart/radar/radar-icons.tsx",
+  "examples/chart/radar/radar-lines-only.tsx",
+  "examples/chart/radial-bar/radial-stacked.tsx",
+  "examples/chart/radial-bar/radial-text.tsx",
+  "examples/chart/radial-bar/radial-shape.tsx",
+  "examples/chart/tooltip/tooltip-advanced.tsx",
 ]
 
 const IMPORT_LINE =
-  'import { CHART2_BAR_COLORS } from "@/lib/chart2-fa"\n'
+  'import { Chart_BAR_COLORS } from "@/lib/chart-fa"\n'
 
 function stripBadImports(source) {
-  // Remove any chart2-fa import (may sit above "use client").
+  // Remove any Chart-fa import (may sit above "use client").
   return source.replace(
-    /^import\s*\{\s*CHART2_BAR_COLORS\s*\}\s*from\s*"@\/lib\/chart2-fa"\s*\n+/gm,
+    /^import\s*\{\s*Chart_BAR_COLORS\s*\}\s*from\s*"@\/lib\/Chart-fa"\s*\n+/gm,
     ""
   )
 }
 
 function ensureImport(source) {
-  if (source.includes('from "@/lib/chart2-fa"')) return source
+  if (source.includes('from "@/lib/chart-fa"')) return source
 
   const localeImport = source.match(
     /^import\s*\{[\s\S]*?\}\s*from\s*"@\/lib\/chart-locale"\s*\n/m
@@ -69,11 +69,11 @@ function ensureImport(source) {
 
 function remapColors(source) {
   return source
-    .replaceAll('color: "var(--chart-1)"', "color: CHART2_BAR_COLORS[0]")
-    .replaceAll('color: "var(--chart-2)"', "color: CHART2_BAR_COLORS[1]")
-    .replaceAll('color: "var(--chart-3)"', "color: CHART2_BAR_COLORS[2]")
-    .replaceAll('color: "var(--chart-4)"', "color: CHART2_BAR_COLORS[3]")
-    .replaceAll('color: "var(--chart-5)"', "color: CHART2_BAR_COLORS[4]")
+    .replaceAll('color: "var(--chart-1)"', "color: Chart_BAR_COLORS[0]")
+    .replaceAll('color: "var(--chart-2)"', "color: Chart_BAR_COLORS[1]")
+    .replaceAll('color: "var(--chart-3)"', "color: Chart_BAR_COLORS[2]")
+    .replaceAll('color: "var(--chart-4)"', "color: Chart_BAR_COLORS[3]")
+    .replaceAll('color: "var(--chart-5)"', "color: Chart_BAR_COLORS[4]")
 }
 
 const updated = []

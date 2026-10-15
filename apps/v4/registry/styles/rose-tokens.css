@@ -1,9 +1,7 @@
 /**
- * Rose (رز · خمیری) — exact tokens from VibeFarsi `pomegranate`.
- *
- * Source (live): https://vibefarsi.ir/components/card → data-theme="pomegranate"
- * Color hexes from stylesheet; clay depth/shape from [data-ds] rule.
- *
+ * Rose (رز · comfort-adjacent warm) — soft clay / pomegranate.
+ * Identity: warm tint, medium–soft radius, clay depth shadows; dark stays warm (not cool gray).
+ * Source: VibeFarsi `pomegranate` (https://vibefarsi.ir/components/card).
  * Unlayered so these beat `.theme-*` Primary Color overrides.
  */
 
@@ -57,6 +55,10 @@
   --chart-3: var(--rose-chart-3);
   --chart-4: var(--rose-chart-4);
   --chart-5: var(--rose-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   /* Geometry — VibeFarsi --radius / --shape-* */
   --radius: 1.25rem;
@@ -161,6 +163,10 @@
   --chart-3: var(--rose-chart-3);
   --chart-4: var(--rose-chart-4);
   --chart-5: var(--rose-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --surface: #3a1c20;
   --surface-muted: #2a1416;
@@ -596,6 +602,10 @@ html body.style-rose {
   --chart-3: var(--rose-chart-3);
   --chart-4: var(--rose-chart-4);
   --chart-5: var(--rose-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -675,6 +685,10 @@ html.dark body.style-rose {
   --chart-3: var(--rose-chart-3);
   --chart-4: var(--rose-chart-4);
   --chart-5: var(--rose-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

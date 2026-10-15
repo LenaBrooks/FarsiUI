@@ -1,5 +1,5 @@
 /**
- * Import unique shadcn /charts demos into chart2 gallery (skip obvious duplicates).
+ * Import unique shadcn /charts demos into Chart gallery (skip obvious duplicates).
  * Usage: node apps/v4/scripts/import-shadcn-charts-to-gallery.mjs
  */
 import fs from "node:fs"
@@ -8,9 +8,9 @@ import { fileURLToPath } from "node:url"
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..")
 const srcDir = path.join(root, "registry/new-york-v4/charts")
-const examplesRoot = path.join(root, "examples/chart2")
-const catalogPath = path.join(root, "lib/chart2-examples.json")
-const demosPath = path.join(root, "lib/chart2-demos.ts")
+const examplesRoot = path.join(root, "examples/Chart")
+const catalogPath = path.join(root, "lib/Chart-examples.json")
+const demosPath = path.join(root, "lib/Chart-demos.ts")
 
 /** Only keep charts that add a distinct pattern vs existing gallery. */
 const IMPORTS = [
@@ -173,37 +173,37 @@ function rebuildDemosTs(examples) {
   const paths = examples
     .map(
       (e) =>
-        `  "${e.id}": "examples/chart2/${e.category}/${e.id}.tsx",`
+        `  "${e.id}": "examples/chart/${e.category}/${e.id}.tsx",`
     )
     .join("\n")
   const loaders = examples
     .map(
       (e) =>
-        `  "${e.id}": () => import("@/examples/chart2/${e.category}/${e.id}"),`
+        `  "${e.id}": () => import("@/examples/chart/${e.category}/${e.id}"),`
     )
     .join("\n")
 
   return `import type { ComponentType } from "react"
 
-export type Chart2DemoLoader = () => Promise<{
+export type ChartDemoLoader = () => Promise<{
   default: ComponentType<Record<string, unknown>>
 }>
 
 /** Relative to apps/v4 — use with fs from the view RSC page. */
-export const chart2DemoSourcePath: Record<string, string> = {
+export const ChartDemoSourcePath: Record<string, string> = {
 ${paths}
 }
 
-export const chart2DemoLoaders: Record<string, Chart2DemoLoader> = {
+export const ChartDemoLoaders: Record<string, ChartDemoLoader> = {
 ${loaders}
 }
 
-export function getChart2DemoSourcePath(id: string) {
-  return chart2DemoSourcePath[id]
+export function getChartDemoSourcePath(id: string) {
+  return ChartDemoSourcePath[id]
 }
 
-export function getChart2DemoLoader(id: string) {
-  return chart2DemoLoaders[id]
+export function getChartDemoLoader(id: string) {
+  return ChartDemoLoaders[id]
 }
 `
 }

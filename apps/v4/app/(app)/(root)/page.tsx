@@ -15,7 +15,7 @@ import { CardsCollage } from "./cards-deferred"
 const title = "کتابخانه کامپوننت فارسی"
 const metadataTitle = `${siteConfig.name} · ${title}`
 const description =
-  "راست‌چین از پایه، اعداد فارسی، تقویم شمسی، ۵۰۰+ کامپوننت آماده و ۶ دیزاین سیستم"
+  "راست‌چین از پایه، اعداد فارسی، تقویم شمسی، ۵۰۰+ کامپوننت آماده، ۶ دیزاین سیستم و نمودارهای اختصاصی"
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -100,7 +100,10 @@ export const metadata: Metadata = {
 
 export default function IndexPage() {
   return (
-    <div className="flex min-w-0 flex-1 flex-col overflow-x-clip">
+    <div
+      data-home-surface=""
+      className="flex min-w-0 flex-1 flex-col overflow-x-clip"
+    >
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -110,7 +113,7 @@ export default function IndexPage() {
       <PageHeader
         dir="rtl"
         lang="fa"
-        className="**:[.container]:py-6 md:**:[.container]:py-8 lg:**:[.container]:py-10"
+        className="bg-transparent **:[.container]:py-6 md:**:[.container]:py-8 lg:**:[.container]:py-10"
       >
         <PageHeaderHeading className="max-w-4xl">{title}</PageHeaderHeading>
         <PageHeaderDescription>{description}</PageHeaderDescription>
@@ -126,7 +129,7 @@ export default function IndexPage() {
           </Button>
         </PageActions>
       </PageHeader>
-      <div className="container-wrapper min-w-0 flex-1 overflow-x-clip p-0">
+      <div className="container-wrapper min-w-0 flex-1 overflow-x-clip bg-transparent p-0">
         <div className="container min-w-0 overflow-x-clip md:px-0 lg:max-w-none">
           {/* Only one collage mounts — CSS hide still hydrated both and raced the header. */}
           <CardsCollage />

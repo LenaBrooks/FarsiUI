@@ -6,33 +6,7 @@ import { cn } from "cn"
 
 import { ScrollArea, ScrollBar } from "@/registry/new-york-v4/ui/scroll-area"
 
-const examples = [
-  {
-    name: "Dashboard",
-    href: "/examples/dashboard",
-    hidden: false,
-  },
-  {
-    name: "Tasks",
-    href: "/examples/tasks",
-    hidden: false,
-  },
-  {
-    name: "Playground",
-    href: "/examples/playground",
-    hidden: false,
-  },
-  {
-    name: "Authentication",
-    href: "/examples/authentication",
-    hidden: false,
-  },
-  {
-    name: "RTL",
-    href: "/examples/rtl",
-    hidden: false,
-  },
-]
+const examples: { name: string; href: string; hidden: boolean }[] = []
 
 export function ExamplesNav({
   className,
@@ -81,9 +55,6 @@ function ExampleLink({
       data-active={isActive}
     >
       {example.name}
-      {example.name === "RTL" && (
-        <span className="flex size-2 rounded-full bg-primary" title="New" />
-      )}
     </Link>
   )
 }

@@ -1,61 +1,243 @@
 /**
- * Vega (آرام · comfort) — calm chart + surface accents.
+ * Vega (آرام · comfort) — open, soft, low-tension.
+ * Identity: larger radius, flat-soft surfaces, calm sky-blue accents (not green).
+ * Light + dark stay the same blue family (not a gray invert of Nova).
  *
- * Recipes stay in style-vega.css; these unlayered tokens make charts
- * visibly shift when آرام is selected (default/nova charts stay grayscale).
+ * Unlayered so these beat `.theme-*` Primary Color overrides.
  */
 
 /* -------------------------------------------------------------------------- */
-/* Light — soft sage / sky                                                    */
+/* Light — pure white paper (no blue-tint fills; accents stay on primary only) */
 /* -------------------------------------------------------------------------- */
 
 .style-vega {
-  --vega-chart-1: #5b8f7a;
+  --vega-primary: #3d6ea8;
+  --vega-primary-foreground: #f4f8fc;
+  --vega-ring: #3d6ea8;
+  --vega-brand: #5a7aa0;
+  --vega-brand-foreground: #f5f8fc;
+  --vega-chart-1: #4a7eb8;
   --vega-chart-2: #6a8cae;
   --vega-chart-3: #c4a35a;
   --vega-chart-4: #8b7aa8;
-  --vega-chart-5: #7a8a8e;
+  --vega-chart-5: #7a8a96;
+
+  --background: #ffffff;
+  --foreground: #1a2433;
+  --card: #ffffff;
+  --card-foreground: #1a2433;
+  --popover: #ffffff;
+  --popover-foreground: #1a2433;
+  --primary: var(--vega-primary);
+  --primary-foreground: var(--vega-primary-foreground);
+  --secondary: #f4f4f5;
+  --secondary-foreground: #1a2433;
+  --muted: #f4f4f5;
+  --muted-foreground: #52525b;
+  --accent: #f4f4f5;
+  --accent-foreground: #1a2433;
+  --destructive: #c44b4b;
+  --border: #1a243314;
+  --input: #1a243333;
+  --ring: var(--vega-ring);
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a2433;
+  --sidebar-primary: var(--vega-primary);
+  --sidebar-primary-foreground: var(--vega-primary-foreground);
+  --sidebar-accent: #f4f4f5;
+  --sidebar-accent-foreground: #1a2433;
+  --sidebar-border: #1a243314;
+  --sidebar-ring: var(--vega-ring);
 
   --chart-1: var(--vega-chart-1);
   --chart-2: var(--vega-chart-2);
   --chart-3: var(--vega-chart-3);
   --chart-4: var(--vega-chart-4);
   --chart-5: var(--vega-chart-5);
-
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
   --color-chart-1: var(--vega-chart-1);
   --color-chart-2: var(--vega-chart-2);
   --color-chart-3: var(--vega-chart-3);
   --color-chart-4: var(--vega-chart-4);
   --color-chart-5: var(--vega-chart-5);
+
+  /* Comfort density — soft large radius (SoT: densities.ts comfort) */
+  --radius: 1rem;
+  --radius-field: 0.875rem;
+  --radius-surface: 1.25rem;
+  --radius-overlay: 1.125rem;
+  --radius-control: var(--radius-xl);
+  --radius-4xl: 1.5rem;
+  --radius-3xl: 1.25rem;
+  --radius-2xl: 1rem;
+  --radius-xl: 0.875rem;
+  --radius-lg: 0.75rem;
+  --radius-md: 0.625rem;
+  --radius-sm: 0.5rem;
+
+  --surface: #ffffff;
+  --surface-muted: #f4f4f5;
+  --surface-border: #1a243314;
+  --surface-filter: none;
+  --surface-opacity: 1;
+  --surface-foreground: #1a2433;
+
+  --field: #ffffff;
+  --field-border: #1a24331f;
+  --field-shadow: 0 1px 2px 0 #1a243308;
+
+  --control: #ffffff;
+  --control-border: #1a243314;
+  --control-shadow: 0 1px 2px 0 #1a24330a;
+
+  --overlay: #ffffff;
+  --overlay-shadow: 0 18px 40px -24px #1a243333;
+
+  --shadow-surface: 0 1px 2px 0 #1a243308, 0 8px 24px -18px #1a243314;
+  --shadow-field: 0 1px 2px 0 #1a243308;
+  --shadow-overlay: 0 18px 40px -24px #1a243333;
+  --shadow-control: 0 1px 2px 0 #1a24330a;
+  --shadow-press: inset 0 1px 2px #1a243314;
+
+  --motion-fast: 200ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: light;
 }
 
 /* -------------------------------------------------------------------------- */
-/* Dark — softer, slightly brighter                                           */
+/* Dark — mirror Nova globals .dark for surfaces + primary (active items go   */
+/* near-white like default). Keep comfort radius; chart neon stays branded.   */
 /* -------------------------------------------------------------------------- */
 
-html.dark .style-vega {
-  --vega-chart-1: #7eb89a;
+html.dark .style-vega,
+.dark .style-vega {
+  /* Brand refs (charts / selective demos) — not wired to --primary in dark */
+  --vega-primary: #6ea1d4;
+  --vega-primary-foreground: oklch(0.205 0 0);
+  --vega-ring: oklch(0.556 0 0);
+  --vega-brand: #8aafd1;
+  --vega-brand-foreground: oklch(0.205 0 0);
+  --vega-chart-1: #7eb0e0;
   --vega-chart-2: #8aafd1;
-  --vega-chart-3: #d4b56e;
-  --vega-chart-4: #a899c4;
-  --vega-chart-5: #9aa8ac;
+  --vega-chart-3: #b83a4a;
+  --vega-chart-4: #5ec8e8;
+  --vega-chart-5: #c4a574;
+
+  /* Exact Nova .dark chrome (globals.css) — sidebar active = white primary */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.371 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.439 0 0);
 
   --chart-1: var(--vega-chart-1);
   --chart-2: var(--vega-chart-2);
   --chart-3: var(--vega-chart-3);
   --chart-4: var(--vega-chart-4);
   --chart-5: var(--vega-chart-5);
-
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
   --color-chart-1: var(--vega-chart-1);
   --color-chart-2: var(--vega-chart-2);
   --color-chart-3: var(--vega-chart-3);
   --color-chart-4: var(--vega-chart-4);
   --color-chart-5: var(--vega-chart-5);
+
+  --surface: oklch(0.2 0 0);
+  --surface-muted: oklch(0.269 0 0);
+  --surface-border: oklch(1 0 0 / 10%);
+  --surface-filter: none;
+  --surface-opacity: 1;
+  --surface-foreground: oklch(0.708 0 0);
+
+  --field: oklch(0.205 0 0);
+  --field-border: oklch(1 0 0 / 12%);
+  --field-shadow: inset 0 1px 0 0 oklch(1 0 0 / 4%);
+
+  --control: oklch(0.205 0 0);
+  --control-border: oklch(1 0 0 / 10%);
+  --control-shadow: 0 1px 0 0 oklch(1 0 0 / 6%) inset;
+
+  --overlay: oklch(0.205 0 0);
+  --overlay-shadow: 0 24px 48px -28px oklch(0 0 0 / 53%);
+
+  --shadow-surface: 0 1px 0 0 oklch(1 0 0 / 4%) inset, 0 12px 28px -20px oklch(0 0 0 / 40%);
+  --shadow-field: inset 0 1px 0 0 oklch(1 0 0 / 4%);
+  --shadow-overlay: 0 24px 48px -28px oklch(0 0 0 / 53%);
+  --shadow-control: 0 1px 0 0 oklch(1 0 0 / 6%) inset;
+  --shadow-press: inset 0 1px 2px oklch(0 0 0 / 27%);
+
+  color-scheme: dark;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Atmosphere + hide Primary Color                                            */
+/* -------------------------------------------------------------------------- */
+
+.style-vega [data-slot="layout"] {
+  background-color: transparent;
+}
+
+.style-vega [data-slot="header-primary-colors"] {
+  display: none !important;
 }
 
 /*
- * Keep chart palette when Primary Color themes are active on آرام
- * (same specificity pattern as rose/glass owned accents).
+ * One continuous white paper under hero + collage — never a second slab on
+ * [data-collage-surface] (that hard edge read as a separator line).
+ * No tinted / stained washes — keep the shell flat white in light.
+ */
+.style-vega [data-home-surface] {
+  background-color: #ffffff;
+  background-image: none;
+  background-size: auto;
+  background-attachment: scroll;
+  color-scheme: light;
+}
+
+html.dark .style-vega [data-home-surface],
+.dark .style-vega [data-home-surface] {
+  background-color: oklch(0.145 0 0);
+  background-image: none;
+  color-scheme: dark;
+}
+
+.style-vega [data-collage-surface] {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/*
+ * Keep chart + brand palette when legacy theme-* classes remain on body.
  */
 html body.style-vega.theme-default,
 html body.style-vega.theme-neutral,
@@ -83,11 +265,18 @@ html body.style-vega.theme-yellow .theme-container,
 html body.style-vega.theme-violet .theme-container,
 html body.style-vega .theme-container,
 html body.style-vega {
+  --primary: var(--vega-primary);
+  --primary-foreground: var(--vega-primary-foreground);
+  --ring: var(--vega-ring);
   --chart-1: var(--vega-chart-1);
   --chart-2: var(--vega-chart-2);
   --chart-3: var(--vega-chart-3);
   --chart-4: var(--vega-chart-4);
   --chart-5: var(--vega-chart-5);
+  /* Neon area/spark semantics — shared SoT (market cards) */
+  --chart-up: #16a34a;
+  --chart-down: #e11d48;
+  --chart-mute: #52525b;
   --color-chart-1: var(--vega-chart-1);
   --color-chart-2: var(--vega-chart-2);
   --color-chart-3: var(--vega-chart-3);
@@ -121,11 +310,19 @@ html.dark body.style-vega.theme-yellow .theme-container,
 html.dark body.style-vega.theme-violet .theme-container,
 html.dark body.style-vega .theme-container,
 html.dark body.style-vega {
+  /* Keep Nova-dark primary (near-white) — do NOT re-apply sky --vega-primary */
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --ring: oklch(0.556 0 0);
   --chart-1: var(--vega-chart-1);
   --chart-2: var(--vega-chart-2);
   --chart-3: var(--vega-chart-3);
   --chart-4: var(--vega-chart-4);
   --chart-5: var(--vega-chart-5);
+  /* Neon area/spark semantics — dark (brighter neon) */
+  --chart-up: #4ADE80;
+  --chart-down: #F25F70;
+  --chart-mute: #d4d4d8;
   --color-chart-1: var(--vega-chart-1);
   --color-chart-2: var(--vega-chart-2);
   --color-chart-3: var(--vega-chart-3);

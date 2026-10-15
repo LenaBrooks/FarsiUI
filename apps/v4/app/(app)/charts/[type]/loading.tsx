@@ -1,5 +1,6 @@
 import { ChartCardSkeleton } from "@/components/route-skeletons"
 
+/** Chart-type gallery — card-frame skeletons only (not the shared route shell). */
 export default function ChartTypeLoading() {
   return (
     <div

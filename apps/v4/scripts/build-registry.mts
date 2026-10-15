@@ -1670,15 +1670,28 @@ async function syncLegacyRegistryUiFromCanonicalBase() {
   )
 
   let copied = 0
+  let refreshed = 0
   for (const name of fromNames) {
-    if (name === "registry" || toNames.has(name)) continue
-    await fs.copyFile(
-      path.join(fromDir, `${name}.json`),
-      path.join(toDir, `${name}.json`)
-    )
-    copied++
+    if (name === "registry") continue
+    const fromPath = path.join(fromDir, `${name}.json`)
+    const toPath = path.join(toDir, `${name}.json`)
+    if (!toNames.has(name)) {
+      await fs.copyFile(fromPath, toPath)
+      copied++
+      continue
+    }
+    // Refresh prior mirrors (content still points at registry/base-nova/…).
+    // Native new-york-v4 items keep their own JSON.
+    const existing = await fs.readFile(toPath, "utf8")
+    if (!existing.includes("registry/base-nova/")) continue
+    const next = await fs.readFile(fromPath, "utf8")
+    if (existing === next) continue
+    await fs.writeFile(toPath, next, "utf8")
+    refreshed++
   }
-  console.log(`   ✅ mirrored ${copied} UI items ${canonical} → ${legacy}`)
+  console.log(
+    `   ✅ mirrored ${copied} new + refreshed ${refreshed} UI items ${canonical} → ${legacy}`
+  )
 }
 
 async function buildBlocksIndex() {

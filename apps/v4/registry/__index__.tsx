@@ -5935,6 +5935,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:component",
           target: "",
         },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+          type: "registry:file",
+          target: "react-gauge-chart.d.ts",
+        },
       ],
       categories: ["charts", "charts-gauge"],
       meta: undefined,
@@ -5955,6 +5960,11 @@ export const Index: Record<string, Record<string, any>> = {
           path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
           type: "registry:component",
           target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+          type: "registry:file",
+          target: "react-gauge-chart.d.ts",
         },
       ],
       categories: ["charts", "charts-gauge"],
@@ -5977,6 +5987,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:component",
           target: "",
         },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+          type: "registry:file",
+          target: "react-gauge-chart.d.ts",
+        },
       ],
       categories: ["charts", "charts-gauge"],
       meta: undefined,
@@ -5997,6 +6012,11 @@ export const Index: Record<string, Record<string, any>> = {
           path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
           type: "registry:component",
           target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+          type: "registry:file",
+          target: "react-gauge-chart.d.ts",
         },
       ],
       categories: ["charts", "charts-gauge"],
@@ -6019,6 +6039,11 @@ export const Index: Record<string, Record<string, any>> = {
           type: "registry:component",
           target: "",
         },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+          type: "registry:file",
+          target: "react-gauge-chart.d.ts",
+        },
       ],
       categories: ["charts", "charts-gauge"],
       meta: undefined,
@@ -6039,6 +6064,11 @@ export const Index: Record<string, Record<string, any>> = {
           path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
           type: "registry:component",
           target: "",
+        },
+        {
+          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+          type: "registry:file",
+          target: "react-gauge-chart.d.ts",
         },
       ],
       categories: ["charts", "charts-gauge"],
@@ -11665,6 +11695,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -12161,14 +12192,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "styles/base-vega/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "styles/base-vega/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "styles/base-vega/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "styles/base-vega/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,
@@ -13362,6 +13398,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -13858,14 +13895,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "styles/base-nova/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "styles/base-nova/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "styles/base-nova/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "styles/base-nova/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,
@@ -15059,6 +15101,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -15555,14 +15598,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "styles/base-glass/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "styles/base-glass/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "styles/base-glass/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "styles/base-glass/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,
@@ -16756,6 +16804,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -17252,14 +17301,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "styles/base-rose/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "styles/base-rose/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "styles/base-rose/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "styles/base-rose/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,
@@ -18453,6 +18507,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -18949,14 +19004,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "styles/base-nili/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "styles/base-nili/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "styles/base-nili/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "styles/base-nili/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,
@@ -20150,6 +20210,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -20646,14 +20707,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "styles/base-khesht/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "styles/base-khesht/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "styles/base-khesht/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "styles/base-khesht/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,

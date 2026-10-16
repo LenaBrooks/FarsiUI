@@ -1385,12 +1385,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     registryDependencies: ["field", "native-select", "label"],
     files: [
       {
-        path: "ui/iran-division-picker.tsx",
-        type: "registry:ui",
+        path: "ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx",
       },
       {
-        path: "lib/iran-geo.ts",
+        path: "ui/IranDivisionPicker/iran-geo.ts",
         type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts",
+      },
+      {
+        path: "ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
       },
     ],
     meta: {

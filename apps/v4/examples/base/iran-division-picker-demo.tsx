@@ -5,7 +5,7 @@ import * as React from "react"
 import {
   IranDivisionPicker,
   type IranDivisionSelection,
-} from "@/registry/bases/base/ui/iran-division-picker"
+} from "@/registry/bases/base/ui/IranDivisionPicker/iran-division-picker"
 
 export default function IranDivisionPickerDemo() {
   const [value, setValue] = React.useState<IranDivisionSelection>({})

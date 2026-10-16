@@ -5,7 +5,7 @@
     "[نصب](/docs/installation)",
     "cli",
     "mcp",
-    "updates",
+    "!updates",
     "!components-json",
     "!package-imports",
     "!theming",

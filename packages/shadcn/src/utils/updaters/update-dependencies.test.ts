@@ -37,7 +37,7 @@ describe("updateDependencies", () => {
     },
     {
       description:
-        "npm with react-day-picker v8 applies force prompt when silent",
+        "npm with React 19 applies legacy-peer-deps when silent",
       options: { silent: true },
       dependencies: ["first", "second", "third"],
       devDependencies: ["fourth"],
@@ -47,12 +47,25 @@ describe("updateDependencies", () => {
         },
       },
       expectedPackageManager: "npm",
-      expectedArgs: ["install", "--force", "--", "first", "second", "third"],
-      expectedDevArgs: ["install", "--force", "-D", "--", "fourth"],
+      expectedArgs: [
+        "install",
+        "--legacy-peer-deps",
+        "--",
+        "first",
+        "second",
+        "third",
+      ],
+      expectedDevArgs: [
+        "install",
+        "--legacy-peer-deps",
+        "-D",
+        "--",
+        "fourth",
+      ],
     },
     {
       description:
-        "npm with react-day-picker v8 applies force when non-interactive",
+        "npm with React 19 applies legacy-peer-deps when non-interactive",
       options: { interactive: false },
       dependencies: ["first", "second", "third"],
       devDependencies: ["fourth"],
@@ -62,12 +75,24 @@ describe("updateDependencies", () => {
         },
       },
       expectedPackageManager: "npm",
-      expectedArgs: ["install", "--force", "--", "first", "second", "third"],
-      expectedDevArgs: ["install", "--force", "-D", "--", "fourth"],
+      expectedArgs: [
+        "install",
+        "--legacy-peer-deps",
+        "--",
+        "first",
+        "second",
+        "third",
+      ],
+      expectedDevArgs: [
+        "install",
+        "--legacy-peer-deps",
+        "-D",
+        "--",
+        "fourth",
+      ],
     },
     {
-      description:
-        "npm with react-day-picker v8 prompts for flag when not silent",
+      description: "npm with React 19 prompts for flag when not silent",
       flagPrompt: "legacy-peer-deps",
       dependencies: ["first", "second", "third"],
       devDependencies: ["fourth"],

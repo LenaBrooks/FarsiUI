@@ -6855,6 +6855,7 @@ export const blocks: Registry["items"] = [
     title: "Event List 01",
     description: "فهرست ساده رویداد با تاریخ شمسی.",
     type: "registry:block",
+    dependencies: ["date-fns"],
     registryDependencies: ["card", "separator"],
     files: [
       {
@@ -6875,6 +6876,7 @@ export const blocks: Registry["items"] = [
     title: "Event List 02",
     description: "کارت روز/ماه شمسی، بج نوع و مکان.",
     type: "registry:block",
+    dependencies: ["date-fns"],
     registryDependencies: ["badge", "button", "card", "separator"],
     files: [
       {
@@ -6895,6 +6897,7 @@ export const blocks: Registry["items"] = [
     title: "Event List 03",
     description: "جستجو، Select نوع و دعوت ایمیل LTR.",
     type: "registry:block",
+    dependencies: ["date-fns"],
     registryDependencies: [
       "badge",
       "button",
@@ -6923,6 +6926,7 @@ export const blocks: Registry["items"] = [
     title: "Event List 04",
     description: "چیپ فیلتر، وضعیت و منوی عملیات RTL.",
     type: "registry:block",
+    dependencies: ["date-fns"],
     registryDependencies: [
       "badge",
       "button",
@@ -6948,6 +6952,7 @@ export const blocks: Registry["items"] = [
     title: "Event List 05",
     description: "مرکز رویداد با گروه، انتخاب چندتایی و تنظیمات.",
     type: "registry:block",
+    dependencies: ["date-fns"],
     registryDependencies: [
       "badge",
       "button",

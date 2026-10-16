@@ -51,7 +51,7 @@ export async function updateDependencies(
   let flag = ""
   if (shouldPromptForNpmFlag(config) && packageManager === "npm") {
     if (options.silent || !options.interactive) {
-      flag = "force"
+      flag = "legacy-peer-deps"
     } else {
       dependenciesSpinner.stopAndPersist()
       logger.warn(
@@ -247,13 +247,9 @@ function shouldPromptForNpmFlag(config: Config) {
     return false
   }
 
-  const hasReact19 = /^(?:\^|~)?19(?:\.\d+)*(?:-.*)?$/.test(
+  return /^(?:\^|~)?19(?:\.\d+)*(?:-.*)?$/.test(
     packageInfo.dependencies.react
   )
-  const hasReactDayPicker8 =
-    packageInfo.dependencies["react-day-picker"]?.startsWith("8")
-
-  return hasReact19 && hasReactDayPicker8
 }
 
 async function getUpdateDependenciesPackageManager(config: Config) {

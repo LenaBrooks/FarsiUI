@@ -183,8 +183,8 @@ export default async function Page(props: {
                         asChild
                       >
                         <Link href={neighbours.previous.url}>
-                          <ArrowLeft className="rtl:rotate-180" />
-                          <span className="sr-only">Previous</span>
+                          <ArrowRight />
+                          <span className="sr-only">قبلی</span>
                         </Link>
                       </Button>
                     )}
@@ -196,8 +196,8 @@ export default async function Page(props: {
                         asChild
                       >
                         <Link href={neighbours.next.url}>
-                          <span className="sr-only">Next</span>
-                          <ArrowRight className="rtl:rotate-180" />
+                          <span className="sr-only">بعدی</span>
+                          <ArrowLeft />
                         </Link>
                       </Button>
                     )}
@@ -268,7 +268,7 @@ export default async function Page(props: {
                   className="shadow-none"
                 >
                   <Link href={neighbours.previous.url}>
-                    <ArrowLeft className="rtl:rotate-180" />{" "}
+                    <ArrowRight />{" "}
                     {splitDocTitle(neighbours.previous.name).fa}
                   </Link>
                 </Button>
@@ -282,7 +282,7 @@ export default async function Page(props: {
                 >
                   <Link href={neighbours.next.url}>
                     {splitDocTitle(neighbours.next.name).fa}{" "}
-                    <ArrowRight className="rtl:rotate-180" />
+                    <ArrowLeft />
                   </Link>
                 </Button>
               )}

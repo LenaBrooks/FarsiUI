@@ -10,7 +10,7 @@ import {
   pickSelection,
   type IranGeoIndex,
   type IranGeoRecord,
-} from "@/registry/bases/base/lib/iran-geo"
+} from "./iran-geo"
 import { Field, FieldGroup, FieldLabel } from "@/registry/bases/base/ui/field"
 import {
   NativeSelect,
@@ -49,7 +49,7 @@ export type IranDivisionPickerProps = {
   value?: IranDivisionSelection
   defaultValue?: IranDivisionSelection
   onValueChange?: (value: IranDivisionSelection) => void
-  /** Base URL for geo JSON (default `/r/geo/iran`). */
+  /** Base URL for geo JSON (default `https://farsiui.ir/r/geo/iran`). */
   dataUrl?: string
   labels?: Partial<Record<IranDivisionLevel, string>>
 }

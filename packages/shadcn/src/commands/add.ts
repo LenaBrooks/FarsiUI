@@ -124,7 +124,10 @@ export const add = new Command()
           itemType !== "registry:base"
 
         if (isUniversalRegistryItem(registryItem) && !isDryRun) {
-          await addComponents(components, initialConfig, options)
+          await addComponents(components, initialConfig, {
+            ...options,
+            interactive: !options.yes,
+          })
           return
         }
         if (
@@ -311,7 +314,10 @@ export const add = new Command()
       }
 
       if (!initHasRun) {
-        await addComponents(options.components, config, options)
+        await addComponents(options.components, config, {
+          ...options,
+          interactive: !options.yes,
+        })
       }
 
       // If we're adding a single component and it's from the v0 registry,

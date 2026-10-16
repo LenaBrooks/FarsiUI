@@ -1,1 +1,1 @@
-export * from "../registry/bases/base/lib/iran-geo"
+export * from "../registry/bases/base/ui/IranDivisionPicker/iran-geo"

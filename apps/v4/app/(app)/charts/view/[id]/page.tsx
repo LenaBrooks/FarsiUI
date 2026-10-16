@@ -7,6 +7,10 @@ import {
   chartExamples,
   getChartExample,
 } from "@/lib/chart-catalog"
+import {
+  getDefaultExportName,
+  toPascalCaseId,
+} from "@/lib/chart-demo-export-name"
 import { getChartDemoSourcePath } from "@/lib/chart-demos"
 import { ChartViewPanel } from "@/components/chart-view-panel"
 import { CodeFigure } from "@/components/code-figure"
@@ -59,10 +63,12 @@ export default async function ChartViewPage({ params }: PageProps) {
   const source = await readDemoSource(id)
   if (!source) notFound()
 
-  const importPath = `@/examples/chart/${example.category}/${id}`
-  const usageImport = `import Chart from "${importPath}"`
+  const componentName =
+    getDefaultExportName(source) ?? toPascalCaseId(id)
+  const importPath = `@/components/${id}`
+  const usageImport = `import ${componentName} from "${importPath}"`
   const usageJsx = `export default function Page() {
-  return <Chart />
+  return <${componentName} />
 }
 `
 

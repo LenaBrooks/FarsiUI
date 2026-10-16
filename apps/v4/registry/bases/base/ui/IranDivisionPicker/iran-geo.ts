@@ -19,7 +19,7 @@ export type IranGeoIndex = {
   ruralDistricts: IranGeoRecord[]
 }
 
-export const DEFAULT_IRAN_GEO_DATA_URL = "/r/geo/iran"
+export const DEFAULT_IRAN_GEO_DATA_URL = "https://farsiui.ir/r/geo/iran"
 
 const indexCache = new Map<string, Promise<IranGeoIndex>>()
 const villageCache = new Map<string, Promise<IranGeoRecord[]>>()

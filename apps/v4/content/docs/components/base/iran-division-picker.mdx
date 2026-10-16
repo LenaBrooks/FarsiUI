@@ -25,12 +25,16 @@ featured: true
 npx farsiui@latest add iran-division-picker
 ```
 
+فایل‌ها داخل پوشهٔ `components/IranDivisionPicker` نصب می‌شوند.
+
 ## استفاده
 
 ```tsx showLineNumbers
-import { IranDivisionPicker } from "@/components/ui/iran-division-picker"
+"use client"
 
-export function Example() {
+import { IranDivisionPicker } from "@/components/IranDivisionPicker/iran-division-picker"
+
+export function IranDivisionPickerDemo() {
   return (
     <IranDivisionPicker
       onValueChange={(selection) => {
@@ -38,6 +42,16 @@ export function Example() {
       }}
     />
   )
+}
+```
+
+یا مستقیم دموی آماده‌شده را ایمپورت کنید:
+
+```tsx showLineNumbers
+import { IranDivisionPickerDemo } from "@/components/IranDivisionPicker/iran-division-picker-demo"
+
+export default function Page() {
+  return <IranDivisionPickerDemo />
 }
 ```
 
@@ -61,4 +75,4 @@ export function Example() {
 }
 ```
 
-**نکته:** فایل‌های دادهٔ تقسیمات کشوری باید در پوشهٔ `public/r/geo/iran` پروژه قرار داشته باشند تا کامپوننت بتواند آن‌ها را بارگذاری کند.
+**نکته:** دادهٔ تقسیمات به‌صورت پیش‌فرض از `https://farsiui.ir/r/geo/iran` بارگذاری می‌شود؛ لازم نیست چیزی در پروژه کپی کنید. برای میزبانی خودتان از prop به نام `dataUrl` استفاده کنید.

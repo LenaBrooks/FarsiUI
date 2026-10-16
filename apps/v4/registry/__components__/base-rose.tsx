@@ -599,7 +599,9 @@ export const Components: Record<string, any> = {
     return { default: mod.default || mod[exportName] }
   }),
   "iran-division-picker": React.lazy(async () => {
-    const mod = await import("@/styles/base-rose/ui/iran-division-picker")
+    const mod = await import(
+      "@/styles/base-rose/ui/IranDivisionPicker/iran-division-picker"
+    )
     const exportName =
       Object.keys(mod).find(
         (key) => typeof mod[key] === "function" || typeof mod[key] === "object"

@@ -2961,6 +2961,7 @@ export const charts: Registry["items"] = [
     name: "gauge-default",
     type: "registry:block",
     description: "گیج پیش‌فرض",
+    dependencies: ["react-gauge-chart", "lodash"],
     registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
@@ -2971,6 +2972,11 @@ export const charts: Registry["items"] = [
         path: "charts/gallery/gauge/gauge-shared.tsx",
         type: "registry:component",
       },
+      {
+        path: "charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts",
+      },
     ],
     categories: ["charts","charts-gauge"],
   },
@@ -2978,6 +2984,7 @@ export const charts: Registry["items"] = [
     name: "gauge-levels",
     type: "registry:block",
     description: "گیج چندسطحی",
+    dependencies: ["react-gauge-chart", "lodash"],
     registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
@@ -2988,6 +2995,11 @@ export const charts: Registry["items"] = [
         path: "charts/gallery/gauge/gauge-shared.tsx",
         type: "registry:component",
       },
+      {
+        path: "charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts",
+      },
     ],
     categories: ["charts","charts-gauge"],
   },
@@ -2995,6 +3007,7 @@ export const charts: Registry["items"] = [
     name: "gauge-custom-colors",
     type: "registry:block",
     description: "گیج رنگی",
+    dependencies: ["react-gauge-chart", "lodash"],
     registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
@@ -3005,6 +3018,11 @@ export const charts: Registry["items"] = [
         path: "charts/gallery/gauge/gauge-shared.tsx",
         type: "registry:component",
       },
+      {
+        path: "charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts",
+      },
     ],
     categories: ["charts","charts-gauge"],
   },
@@ -3012,6 +3030,7 @@ export const charts: Registry["items"] = [
     name: "gauge-corner-radius",
     type: "registry:block",
     description: "گیج گوشه‌گرد",
+    dependencies: ["react-gauge-chart", "lodash"],
     registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
@@ -3022,6 +3041,11 @@ export const charts: Registry["items"] = [
         path: "charts/gallery/gauge/gauge-shared.tsx",
         type: "registry:component",
       },
+      {
+        path: "charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts",
+      },
     ],
     categories: ["charts","charts-gauge"],
   },
@@ -3029,6 +3053,7 @@ export const charts: Registry["items"] = [
     name: "gauge-custom-arcs",
     type: "registry:block",
     description: "گیج با کمان سفارشی",
+    dependencies: ["react-gauge-chart", "lodash"],
     registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
@@ -3039,6 +3064,11 @@ export const charts: Registry["items"] = [
         path: "charts/gallery/gauge/gauge-shared.tsx",
         type: "registry:component",
       },
+      {
+        path: "charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts",
+      },
     ],
     categories: ["charts","charts-gauge"],
   },
@@ -3046,6 +3076,7 @@ export const charts: Registry["items"] = [
     name: "gauge-no-animation",
     type: "registry:block",
     description: "گیج بدون انیمیشن",
+    dependencies: ["react-gauge-chart", "lodash"],
     registryDependencies: ["chart-fa", "chart-live"],
     files: [
       {
@@ -3055,6 +3086,11 @@ export const charts: Registry["items"] = [
       {
         path: "charts/gallery/gauge/gauge-shared.tsx",
         type: "registry:component",
+      },
+      {
+        path: "charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts",
       },
     ],
     categories: ["charts","charts-gauge"],
@@ -3279,6 +3315,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-calendar",
     type: "registry:block",
     description: "تقویم حرارتی",
+    dependencies: ["date-fns-jalali"],
     registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
@@ -3296,6 +3333,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-calendar-emerald",
     type: "registry:block",
     description: "تقویم زمردی",
+    dependencies: ["date-fns-jalali"],
     registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
@@ -3313,6 +3351,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-matrix",
     type: "registry:block",
     description: "ماتریس روز و ساعت",
+    dependencies: ["date-fns-jalali"],
     registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {
@@ -3330,6 +3369,7 @@ export const charts: Registry["items"] = [
     name: "heatmap-matrix-values",
     type: "registry:block",
     description: "ماتریس با مقدار",
+    dependencies: ["date-fns-jalali"],
     registryDependencies: ["chart-fa", "chart-live", "utils"],
     files: [
       {

@@ -1187,6 +1187,7 @@ export const Index: Record<string, Record<string, any>> = {
       ],
       categories: undefined,
       meta: {
+        installStyle: "base-nova",
         links: {
           docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
           examples:
@@ -1683,14 +1684,19 @@ export const Index: Record<string, Record<string, any>> = {
       registryDependencies: ["field", "native-select", "label"],
       files: [
         {
-          path: "registry/bases/base/ui/iran-division-picker.tsx",
-          type: "registry:ui",
-          target: "",
+          path: "registry/bases/base/ui/IranDivisionPicker/iran-division-picker.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker.tsx",
         },
         {
-          path: "registry/bases/base/lib/iran-geo.ts",
+          path: "registry/bases/base/ui/IranDivisionPicker/iran-geo.ts",
           type: "registry:lib",
-          target: "",
+          target: "components/IranDivisionPicker/iran-geo.ts",
+        },
+        {
+          path: "registry/bases/base/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+          type: "registry:component",
+          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
         },
       ],
       categories: undefined,

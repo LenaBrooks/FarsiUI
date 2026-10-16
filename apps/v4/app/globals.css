@@ -766,8 +766,13 @@ body[class*="theme-"],
     font-family: var(--font-geist-mono), ui-monospace, monospace !important;
   }
 
-  /* Soft scrollbar on code boxes (overrides highlight-code no-scrollbar legacy). */
+  /*
+   * Shiki injects inline pre { background: #1e1e1e }. That fights figure's
+   * --color-code and the sticky line-number gutter (also --color-code), so
+   * dark DS themes (e.g. آرام / vega) show a mismatched number strip.
+   */
   [data-rehype-pretty-code-figure] pre {
+    background-color: transparent !important;
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
   }

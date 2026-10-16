@@ -72,6 +72,10 @@ const TOP_LEVEL_SECTIONS: Array<{
     href: "/docs/installation",
   },
   {
+    name: "آموزش",
+    href: "/docs/tutorials",
+  },
+  {
     name: "CLI",
     href: "/docs/cli",
   },
@@ -79,20 +83,22 @@ const TOP_LEVEL_SECTIONS: Array<{
     name: "سرور MCP",
     href: "/docs/mcp",
   },
-  {
-    name: "بروزرسانی‌ها",
-    href: "/docs/updates",
-    statusDot: "green",
-  },
 ]
-const EXCLUDED_SECTIONS = ["installation", "dark-mode", "changelog", "rtl"]
-const EXCLUDED_PAGES = ["/docs", "/docs/rtl", "/docs/new"]
+const EXCLUDED_SECTIONS = [
+  "installation",
+  "tutorials",
+  "dark-mode",
+  "changelog",
+  "rtl",
+]
+const EXCLUDED_PAGES = ["/docs", "/docs/rtl", "/docs/new", "/docs/updates"]
 
 function isHiddenDocsNavPage(url: string) {
   if (EXCLUDED_PAGES.includes(url)) return true
   // RTL section is linked from root meta in older trees; never show in main nav.
   if (url === "/docs/rtl" || url.startsWith("/docs/rtl/")) return true
   if (url === "/docs/changelog" || url.startsWith("/docs/changelog/")) return true
+  if (url === "/docs/updates" || url.startsWith("/docs/updates/")) return true
   if (url === "/docs/typeset" || url === "/typeset") return true
   return false
 }

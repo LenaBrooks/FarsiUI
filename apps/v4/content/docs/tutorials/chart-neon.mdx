@@ -1,0 +1,46 @@
+---
+title: نئون چارت‌ها
+description: چطور حالت نئون چارت‌ها را در پروژه روشن کنید.
+---
+
+در دمو بعضی چارت‌ها نئون (سبز / قرمز) دیده می‌شوند. در پروژهٔ خودتان این حالت وقتی روشن است که روی `body` کلاس همان دیزاین سیستم باشد.
+
+نمونه: [نمودار ناحیه‌ای گرادیان](/charts/view/area-gradient)
+
+## مراحل
+
+### ۱. نصب چارت
+
+```bash
+npx farsiui@latest add area-gradient
+```
+
+### ۲. کلاس روی `body`
+
+در `app/layout.tsx` (یا فایل معادل):
+
+```tsx
+<body className="style-vega">
+```
+
+این کلاس برای **Aram** است. برای بقیهٔ دیزاین‌سیستم‌ها:
+
+- **Aram** ← `style-vega`
+- **Firoozeh** ← `style-glass`
+- **Rose** ← `style-rose`
+- **Nili** ← `style-nili`
+- **Khesht** ← `style-khesht`
+
+**Default** نئون ندارد و عمداً ساده می‌ماند.
+
+### ۳. استفاده در صفحه
+
+```tsx
+import ChartAreaGradient from "@/components/area-gradient"
+
+export default function Page() {
+  return <ChartAreaGradient />
+}
+```
+
+بدون کلاس دیزاین سیستم روی `body`، همان رنگ‌های عادی چارت نمایش داده می‌شود.

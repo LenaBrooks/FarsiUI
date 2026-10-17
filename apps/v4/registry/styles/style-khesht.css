@@ -1,5 +1,5 @@
 .style-khesht {
-  /* Density — chunky neo-brutal controls */
+  /* Density ï¿½ chunky neo-brutal controls */
   --control-h-xs: 1.625rem;
   --control-h-sm: 1.875rem;
   --control-h-md: 2.25rem;
@@ -38,7 +38,7 @@
 
   /* MARK: Alert */
   .cn-alert {
-    @apply grid gap-0.5 rounded-(--radius-control) border px-2.5 py-2 text-start text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pe-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4;
+    @apply grid gap-0.5 rounded-(--radius-control) border px-2.5 py-2 text-start text-sm has-data-[slot=alert-action]:grid-cols-[minmax(0,1fr)_auto] has-data-[slot=alert-action]:gap-x-3 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:has-data-[slot=alert-action]:grid-cols-[auto_minmax(0,1fr)_auto] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4;
   }
 
   .cn-alert-variant-default {
@@ -58,7 +58,7 @@
   }
 
   .cn-alert-action {
-    @apply absolute top-2 end-2;
+    @apply col-start-2 row-start-1 row-span-2 self-start shrink-0 group-has-[>svg]/alert:col-start-3;
   }
 
   /* MARK: Alert Dialog */
@@ -165,7 +165,7 @@
     @apply size-5 [&>svg]:size-4;
   }
 
-  /* MARK: Button — Default: compact, flat, precise */
+  /* MARK: Button ï¿½ Default: compact, flat, precise */
   .cn-button {
     border-width: var(--line);
     border-style: solid;

@@ -1,119 +1,113 @@
 ---
 name: neshan-maps
-description: "Complete guide to the Neshan Maps Platform (platform.neshan.org, نقشه نشان, Iranian/Persian maps): REST APIs (routing with live traffic, no-traffic, predictive, typical, pedestrian, TSP, distance matrix, isochrone, map matching, logistics/VRP, search, geocoding, reverse geocoding, nearby, POI, region, static map, account) and SDKs (web MapLibre/Leaflet/OpenLayers/Mapbox, React, Vue, Android, iOS, WordPress). Use whenever the user mentions Neshan/نشان, api.neshan.org, static.neshan.org, @neshan-maps-platform, or wants Iran maps, routing with traffic, geocoding or place search (مسیریابی، ترافیک، ژئوکدینگ، نقشه فارسی). Read the matching reference file before writing code; never answer endpoint or parameter details from memory."
+description: "Neshan Maps Platform (نقشه نشان, platform.neshan.org), the Iranian map/routing/geocoding provider: REST APIs (routing with traffic, TSP, distance matrix, isochrone, map matching, VRP, search, geocoding, reverse geocoding, nearby, POI, region, static map) and SDKs (MapLibre web, React, Vue, Next.js, Android, iOS). Use when code or questions mention Neshan, api.neshan.org, @neshan-maps-platform, org.neshan.maplibre, or Iranian map needs (مسیریابی، ترافیک، ژئوکدینگ، جستجوی مکان، نقشه فارسی). Read the matching reference before writing code; reuse bundled scripts; never invent endpoint details."
 ---
 
-# Neshan Maps Platform
+# Neshan Maps
 
-Neshan (نشان) is an Iranian maps, navigation and logistics platform. It offers:
+Neshan is Iran's map/routing platform. Two product families:
 
-- **Web services (REST APIs)** at `https://api.neshan.org/...` authenticated with an `Api-Key` header.
-- **SDKs** for web, Android, iOS and a WordPress add-on, authenticated with a *map key* passed at map creation.
+- **Web services (REST)** at `https://api.neshan.org`, key in header `Api-Key`.
+- **Map SDKs** (web, Android, iOS) with a *map key*.
 
-The full official documentation is bundled in `references/` as one Markdown file per page (converted verbatim from platform.neshan.org/docs). **This SKILL.md is only the router and a list of hard-won gotchas.** For any endpoint, parameter, response field, error code, or SDK option, open the matching reference file first and base the code on it.
+Docs: https://platform.neshan.org/docs/ (the site blocks automated fetching; do not rely on being able to open it).
+This skill holds the verified knowledge. Answer in the user's language (usually Persian); code, identifiers and
+parameter names stay in English.
 
-## How to use this skill
+Companion files live next to this `SKILL.md` (`references/`, `recipes/`, `scripts/`, `assets/`).
+If installed via the Cursor ZIP that unpacks into `.cursor/`, the same files are under `.cursor/neshan-maps/`
+and the Agent Requested rule is `.cursor/rules/neshan-maps.mdc`.
 
-1. Identify what the user needs: an **API call** (server/client HTTP request) or an **SDK** (displaying an interactive map)? Often both.
-2. Open the reference file(s) from the routing tables below. Read the whole file for the endpoint you are about to use; each contains parameters, sample requests in cURL/JS/Java/C#/Python/PHP, the response format, and error codes.
-3. Prefer the **latest version** of an endpoint. Files ending in `-legacy` are old versions; use them only if the user is already on that version.
-4. Write the code, then apply the checklist at the bottom.
+## Workflow
 
-If something is not in the references, say so; do not invent parameters. The docs index is in `references/00-index.md`.
+1. **Classify the request**: REST call, map display, or both. Note platform/framework (vanilla web, React, Next.js, Vue,
+   Android, iOS, Python/Node backend). If it truly changes the answer and is unknown, ask **one** short question; otherwise
+   pick the defaults below and state the assumption.
+2. **Read the matching reference** (table below) before writing code. They contain verified parameter tables,
+   response shapes, units and documented bugs. Do not answer endpoint/parameter details from memory.
+3. **Reuse the bundled code** instead of rewriting it: `scripts/neshan.py`, `scripts/neshan.mjs` (clients with
+   validation, retries, polyline decoding), `scripts/proxy-server.mjs` (key-safe proxy), `scripts/plan_delivery.py`,
+   `assets/map-template.html`, and the recipes.
+4. **Apply the safety rules and the checklist** below.
+5. **Say what you could not verify.** If a detail is not in the references (rate limits, matrix size limits, tile
+   details...) state that it is undocumented rather than inventing it.
 
-## Quick start (facts that apply to almost everything)
+Defaults when unspecified: new web map -> **MapLibre SDK**; REST from a **backend/proxy**; route with traffic
+`/v4/direction`; address lookup `/geocoding/v1/plus`; coordinates in REST requests `lat,lng`.
 
-- Get a key (free signup) from the Neshan developer panel: `https://platform.neshan.org/panel`.
-- **Different keys for different products.** Keys are issued per service/app type (for example a web map key for SDKs vs a service key for APIs). Using the wrong type returns error `483 ApiKeyTypeError`. Details: `references/getting-started.md`.
-- REST APIs: send `Api-Key: <YOUR_API_KEY>` as an HTTP **header**. Exception: the Static Map APIs take `key` as a **query parameter** (see gotchas).
-- Request coordinates for REST APIs are almost always `latitude,longitude` (lat first). SDK coordinates are `[longitude, latitude]` (lng first, standard GeoJSON/MapLibre order). Response fields such as `start_location` are `[longitude, latitude]`.
-- Multiple points are separated by the pipe `|` (URL-encoded `%7C`). Always URL-encode query values (`encodeURIComponent`, `urllib.parse.quote`, etc.).
-- Success responses are JSON. Errors use HTTP status codes (400, 470, 480-485, 500) plus a JSON body.
+## Which file to read
 
-## Routing table: Web services (APIs)
-
-| User wants | Endpoint | Reference file |
+| Task | Read | Also |
 |---|---|---|
-| Route between points for car/motorcycle with live traffic (ETA) | `GET /v4/direction` | `references/api/routing-traffic.md` |
-| Route without traffic data (car only) | `GET /v4/direction/no-traffic` | `references/api/routing-no-traffic.md` |
-| Predicted route/ETA for a future time | `GET /v1/direction/historical` | `references/api/routing-predictive.md` |
-| Route from typical (historical pattern) traffic | `GET /v1/direction/typical` | `references/api/routing-typical.md` |
-| Walking route | see file (**docs inconsistent**, see gotchas) | `references/api/routing-pedestrian.md` |
-| Best visiting order for many stops (TSP) | `GET /v3/trip` | `references/api/tsp.md` |
-| Many-to-many distance/duration table | `GET /v1/distance-matrix` and `/v1/distance-matrix/no-traffic` | `references/api/distance-matrix.md` |
-| Reachable area by time/distance | `GET /v2/isochrone` | `references/api/isochrone.md` |
-| Snap GPS trace to roads | `POST /v3/map-matching` | `references/api/map-matching.md` |
-| Fleet optimisation, vehicles + orders (VRP) | `/vrp/logistic` | `references/api/logistic-vrp.md` |
-| Text search for places near a point | `GET /v3/search` | `references/api/search.md` |
-| Address text to coordinates | `/geocoding/v1`, `/geocoding/v1/plus` | `references/api/geocoding.md` |
-| Coordinates to address | `GET /v5/reverse` | `references/api/reverse-geocoding.md` |
-| Places of a category within a radius | `GET /v1/nearby` | `references/api/nearby.md` |
-| Details of one POI by hash | `GET /v1/point` | `references/api/poi-details.md` |
-| Provinces / cities / geometry | `/v2/region/...` | `references/api/region.md` |
-| Map image (PNG) with marker | `GET /v5/static` | `references/api/static-map.md` |
-| Map image with an arc between two points | `GET /v5/static/arc` | `references/api/static-map-arc.md` |
-| Remaining quota/charge of a key | `/account-inquiry/v1/remaining-charge` | `references/api/account-remaining-charge.md` |
-| Which services a key can use | `/account-inquiry/v1/services` | `references/api/account-active-services.md` |
+| Keys, coordinate order, units, error codes, versions, doc bugs | `references/conventions.md` | always skim first |
+| Directions/ETA (traffic, no-traffic, typical, predictive, walking) | `references/routing.md` | `recipes/02-route-on-map.md` |
+| TSP, distance matrix, isochrone, map matching, logistics/VRP | `references/optimization.md` | `recipes/04`, `recipes/05` |
+| Search, geocoding, reverse, nearby, POI details, region | `references/places.md` | `recipes/01`, `03`, `06` |
+| Map as an image (emails, previews) | `references/static-maps.md` | |
+| Web map: MapLibre, Leaflet, OpenLayers, React, Vue | `references/web-sdk.md` | `assets/map-template.html`, `recipes/07` |
+| Android, iOS (new and legacy) | `references/mobile-sdk.md` | |
+| Something is failing | `references/troubleshooting.md` | |
+| End-to-end flows | `recipes/README.md` | |
 
-Older versions (`*-legacy.md`): routing v3/v2, no-traffic v2, isochrone v1, map-matching v2, geocoding v4/v6, reverse-geocoding v2, search v1. All are in `references/api/`.
+## Hard rules (each one prevents a real bug)
 
-Cross-API workflow: **Search (v3) returns `poiHash` -> POI Details (`/v1/point`)**. Nearby also returns `poiHash`. Search results need a reference `center` point.
+1. **Coordinate order.** REST request points are `lat,lng`; MapLibre/GeoJSON/Mapbox are `[lng, lat]`; map-matching responses are
+   `[lat, lng]`; search/POI `location` is `{x: lng, y: lat}`. Convert explicitly at every boundary. Full table in `conventions.md`.
+2. **Keep REST keys off the front end.** Browser -> your backend/proxy -> Neshan. Only the SDK *map key* may be in client code,
+   read from env/config, never committed, restricted by domain in the panel.
+3. **Right key in the right place.** REST: header `Api-Key`. **Static Map: `key` query param.** SDK: `apiKey` (MapLibre), `key`
+   (Leaflet/OpenLayers), manifest meta-data (Android), `MLNApiKey` (iOS). Wrong key type -> `483`.
+4. **Polylines**: Encoded Polyline, precision 5; use `routes[i].overview_polyline.points` (an object!) or `steps[j].polyline`;
+   predictive routing uses `geometry`. Use the bundled decoder; swap to `[lng, lat]` for maps.
+5. **Totals** = sum over `legs`; units: meters and seconds in `.value` (Persian display text in `.text`).
+6. **Errors**: never retry `480/481/483/484/485`; back off on `482/5xx/503`; show friendly states for `404`, `NoRouteFound`,
+   `unMatchedTerm`, matrix `status != Ok`, VRP `unassignedJobs`.
+7. **Map lifecycle**: create the map client-side only (no SSR), import the SDK CSS, give the container a height, add sources/layers
+   after `load`, remove old sources/layers before re-adding, call `map.remove()` on unmount.
+8. **Escape API text** (place names, addresses) before inserting into HTML.
+9. **Do not use expired SDKs for new work**: web Mapbox GL SDK, Android/iOS legacy SDKs, WordPress add-on are marked
+   expired/deprecated in the docs. Recommend MapLibre-based SDKs.
+10. **Region and Active-Services APIs need activation** through a support ticket in the panel; say so before building on them.
 
-## Routing table: SDKs
+## Documentation inconsistencies to flag when you rely on them
 
-First choose the platform, then read the overview file for it.
+- Static Map parameter descriptions swap latitude/longitude; the names and sample are right.
+- Pedestrian routing: endpoint section says `/v4/direction`, samples use `/v1/direction` (client helper tries both).
+- Predictive routing `duration` is documented as minutes but behaves like seconds; the sample has a stray `%09`.
+- `overview_polyline` is documented as a string-like "Encoded Polyline" but is `{ "points": ... }`.
+- Leaflet docs promise six styles but list two (`dreamy`, `standard-night`).
 
-| Platform | Recommended | Read first | Notes |
-|---|---|---|---|
-| **Web (new projects)** | MapLibre SDK `@neshan-maps-platform/maplibre-sdk` | `references/sdk/web/maplibre.md` | Based on MapLibre GL JS, RTL Persian text on by default, 5 hosted styles. |
-| Web, React/Vue/etc. | Same MapLibre SDK; framework samples are inside the page | `references/sdk/web/maplibre.md` | Create the map in a client-side lifecycle hook, call `map.remove()` on unmount. |
-| Web, custom map style | MapLibre style editor | `references/sdk/web/maplibre-style-editor.md` | |
-| Web, Leaflet-based | `@neshan-maps-platform/leaflet` | `references/sdk/web/leaflet.md` | Leaflet 1.9.4. Traffic and POI layers are **not updated**. |
-| Web, OpenLayers-based | `@neshan-maps-platform/ol` (+ `react-openlayers`, `vue3-openlayers`) | `references/sdk/web/openlayers.md`, `openlayers-react.md`, `openlayers-vue.md` | OpenLayers 8.1.0. Traffic and POI layers are **not updated**. |
-| Web, Mapbox GL based | `@neshan-maps-platform/mapbox-gl` (+ react/vue) | `references/sdk/web/mapbox.md` | **Marked expired / unsupported in the docs.** Migrate to MapLibre unless the user is already on it. |
-| **Android (new)** | MapLibre Native based | `references/sdk/android/00-overview.md`, `01-installation.md` | Maven Central, key in `AndroidManifest.xml`. |
-| Android (old SDK) | Legacy SDK | `references/sdk/android-legacy/00-overview.md` | Large legacy feature set (layers, clustering, Jetpack Compose, B4A, ...). |
-| **iOS (new)** | MapLibre Native based | `references/sdk/ios/00-overview.md`, `01-installation.md` | Local Swift Package, key in `Info.plist`. |
-| iOS (old SDK) | Legacy | `references/sdk/ios-legacy/00-legacy-sdk.md` | |
-| WordPress | Add-on | `references/sdk/wordpress-addon.md` | |
+## Using the bundled code
 
-Feature recipes (markers, lines, routes, clustering, bounds, click coordinates, ...) are the `*-ex-*.md` files on web and `feature-*.md` files on Android/iOS. Full file list: `references/00-index.md`.
+```bash
+# Python client (stdlib only) and tests
+python3 scripts/test_neshan.py && python3 scripts/test_plan_delivery.py
+# Node client, proxy and template tests (Node >= 18)
+node --test scripts/test_neshan.mjs && node scripts/test_proxy.mjs && node scripts/test_template.mjs
+# Key-safe proxy + static front-end
+NESHAN_API_KEY=... STATIC_DIR=./public node scripts/proxy-server.mjs
+# Delivery plan
+NESHAN_API_KEY=... python3 scripts/plan_delivery.py stops.json > plan.geojson
+```
 
-## Gotchas (verified against the bundled docs)
+Copy the scripts into the user's source tree (they have no dependencies) and adapt; do not leave production code importing from the skill folder.
+The clients validate inputs (swapped lat/lng, ranges, mutually exclusive params) so mistakes fail fast with a clear message; set
+`NESHAN_NO_COORD_CHECK=1` to disable the swapped-coordinate guard (Neshan covers Iran only).
 
-1. **Coordinate order differs.** REST request params: `lat,lng`. SDK / GeoJSON / response `start_location`: `[lng, lat]`. Mixing them puts points in the wrong place (Iran is lat ~25-40, lng ~44-64, so the swap is silent).
-2. **Static Map docs have the labels swapped.** In `static-map.md` the parameter `latitude` is described as "طول جغرافیایی" (longitude) and `longitude` as "عرض جغرافیایی" (latitude). Treat `latitude` as latitude and `longitude` as longitude, and verify with the sample request/output.
-3. **Static Map uses `key` as a query parameter**, not an `Api-Key` header. Zoom is 5-19, width/height 200-2048 px (default 512), `style` is `light` or `dark`.
-4. **Pedestrian routing endpoint is inconsistent in the docs.** The Endpoint section lists `/v4/direction` but the sample requests use `/v1/direction?type=pedestrian`. Read `routing-pedestrian.md`, prefer what the samples do, and tell the user to verify.
-5. **No-traffic routing is car-only** (`type=car`). The with-traffic API supports `car` and `motorcycle`.
-6. **`NoRouteFound` surprise:** outside Tehran, if `avoidTrafficZone` or `avoidOddEvenZone` is `true` and the destination is inside that city's odd-even zone, routing returns `NoRouteFound`.
-7. **Search (v3) takes one JSON param `q`** containing `term` and `center {latitude, longitude}`; it must be URL-encoded. Geocoding (`/geocoding/v1/plus`) takes a `json` param. Read the file for the exact shape.
-8. **Map matching is `POST`** with JSON body `{"path": "lat,lng|lat,lng|..."}`, min 2 and max 1000 points, headers `Api-Key` and `Content-Type: application/json`.
-9. **Polylines are Encoded Polyline** (Google polyline algorithm) in routing responses (`overview_polyline`, `step.polyline`); decode before drawing. See the `*-ex-draw-route.md` examples.
-10. **Web SDK key option names differ per SDK:** MapLibre `apiKey`; Mapbox GL `mapKey`; Leaflet `key`; OpenLayers SDK `key`; React/Vue components `mapKey`. MapLibre throws `Api key is not defined!` if missing. Import the CSS (`@neshan-maps-platform/maplibre-sdk/style.css`) or controls render unstyled.
-11. **SSR:** MapLibre touches `window` at construction. In Next.js/Nuxt/SvelteKit create the map client-side only (`"use client"` + `dynamic(..., { ssr: false })`, `useEffect`, `onMounted`).
-12. **Logo and copyright cannot be removed** from the maps; only their position is configurable (`logoPosition` = attribution control, `copyRightPosition` = Neshan logo; naming is counter-intuitive).
-13. **Never hard-code API keys in front-end source you commit.** Keys can be restricted in the panel (domain/app scope; errors 484/485 relate to that). Keep service keys server-side where possible.
-14. **Rate and quota errors:** `481 LimitExceeded` (quota) vs `482 RateExceeded` (per-minute). Back off on 482; do not retry-loop on 481.
-15. **Legacy and new mobile SDKs are different libraries with different setup.** The new Android/iOS SDKs are MapLibre Native based (Android: Maven Central `org.neshan.maplibre:android-sdk-opengl`, key in `AndroidManifest.xml`; iOS: local Swift Package, `MLNApiKey` in `Info.plist`). The legacy Android SDK needs a license file (`neshan.license`, generated in the panel from the package name and SHA1 fingerprints) and the Neshan Maven repository. Do not mix their snippets.
-16. **Direct raster tile service** (OSM-like) exists only for verified legal entities via support ticket; it is not part of the normal key.
+## Answer checklist
 
-## Writing code: checklist
+- [ ] Read the relevant reference; used the latest endpoint version.
+- [ ] Key placement correct; no service key in browser code; key from env.
+- [ ] Coordinate order correct at each boundary; polyline decoded with precision 5 and swapped.
+- [ ] Query values encoded; JSON params (`q`, `json`) stringified then encoded; `|` as `%7C`.
+- [ ] Error handling per `conventions.md` section 6; empty/no-result states handled.
+- [ ] For maps: client-only creation, CSS, container height, cleanup.
+- [ ] Persian UX where relevant: `lang="fa"` / `dir="rtl"`, Persian strings, RTL-safe layout.
+- [ ] Mentioned any doc inconsistency or unverified assumption you relied on, and what was and was not tested.
 
-- [ ] Used the latest endpoint version from the reference file.
-- [ ] Key goes in the right place (header / `key` query / SDK option / manifest / Info.plist) and is read from config or env, not a literal.
-- [ ] Coordinates in the right order for the surface (REST vs SDK).
-- [ ] Query values URL-encoded; points joined with `|`.
-- [ ] Handles error codes from the file (at least 480-485, 500) and shows a useful message.
-- [ ] For maps: container element exists with a height, CSS imported, map created client-side, cleaned up on unmount.
-- [ ] Persian text: use RTL-capable containers (`dir="rtl"`), `lang="fa"`; the MapLibre SDK renders Persian labels correctly by default.
-- [ ] Mentioned any doc inconsistency you relied on (items 2 and 4 above).
+## Scope notes
 
-## Other helpers
-
-- `references/getting-started.md`: keys, key types, error code table, URL encoding, coordinate conventions, versions.
-- `references/api-overview.md`: auto-extracted endpoint, headers and parameter tables for every API (quick lookup; the per-API file stays the source of truth).
-- `references/sdk-overview.md`: install commands, key options, style URLs and versions for every SDK.
-- `references/00-index.md`: every reference file with its title and source URL.
-- Neshan also publishes an official MCP server (tools for routing, search, deeplinks). If the user wants an agent to call Neshan live, point them to it rather than re-implementing the tools.
-- Support: platform@neshan.org. Panel and ticketing: `https://platform.neshan.org/panel`.
+- Neshan data/coverage is Iran; do not promise worldwide results.
+- Live-traffic, predictive and odd-even/traffic-zone features matter mainly for Tehran, Mashhad, Karaj (predictive is limited to those three).
+- Pricing/quota/limits beyond what `conventions.md` lists are not in the docs bundled here; direct the user to the panel or support (platform@neshan.org).
+- A Neshan MCP server exists (GitHub `NeshanMaps/Neshan-MCP`, listed in MCP directories; not reviewed here). If a user wants live tool calls from an AI client rather than app code, mention it.

@@ -20,7 +20,7 @@
    * so Aether indigo beats Primary Color theme-* overrides.
    */
 
-  /* Atmospheric shell — tint + mesh + grid so glass panels can read */
+  /* Atmospheric shell ï¿½ tint + mesh + grid so glass panels can read */
   background-color: var(--background);
   background-image:
     linear-gradient(oklch(0.45 0.08 275 / 0.07) 1px, transparent 1px),
@@ -61,7 +61,7 @@
     border-color: var(--surface-border);
     box-shadow: var(--shadow-surface);
     border-radius: var(--radius-surface);
-    @apply grid gap-0.5 border px-3 py-2.5 text-start text-sm text-card-foreground ring-1 ring-white/40 backdrop-blur-2xl backdrop-saturate-150 has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pe-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4 dark:ring-white/10;
+    @apply grid gap-0.5 border px-3 py-2.5 text-start text-sm text-card-foreground ring-1 ring-white/40 backdrop-blur-2xl backdrop-saturate-150 has-data-[slot=alert-action]:grid-cols-[minmax(0,1fr)_auto] has-data-[slot=alert-action]:gap-x-3 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:has-data-[slot=alert-action]:grid-cols-[auto_minmax(0,1fr)_auto] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4 dark:ring-white/10;
   }
 
   .cn-alert-variant-default {
@@ -81,7 +81,7 @@
   }
 
   .cn-alert-action {
-    @apply absolute top-2 end-2;
+    @apply col-start-2 row-start-1 row-span-2 self-start shrink-0 group-has-[>svg]/alert:col-start-3;
   }
 
   /* MARK: Alert Dialog */
@@ -192,7 +192,7 @@
     @apply size-5 [&>svg]:size-4;
   }
 
-  /* MARK: Button — solid Aether controls (glass stays on surfaces) */
+  /* MARK: Button ï¿½ solid Aether controls (glass stays on surfaces) */
   .cn-button {
     border-radius: var(--radius-field);
     @apply focus-visible:border-ring focus-visible:ring-ring/45 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 border border-transparent bg-clip-padding text-(length:--text-control) leading-(--leading-control) font-semibold shadow-none transition-[color,background-color,border-color,box-shadow,transform] duration-150 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background aria-invalid:ring-2 active:not-aria-[haspopup]:scale-[0.985] [&_svg:not([class*='size-'])]:size-(--control-icon);
@@ -297,7 +297,7 @@
     @apply h-7 pe-1.5 ps-2.5;
   }
 
-  /* MARK: Card — primary glass surface
+  /* MARK: Card ï¿½ primary glass surface
    * Do NOT combine overflow-hidden with backdrop-filter on the same node
    * (Chromium drops the blur). Clip media via child selectors instead. */
   .cn-card {
@@ -1609,7 +1609,7 @@
  }
 
   /* MARK: Menu Translucent
-   * Direct blur on the panel — the ::before + isolate pattern kills
+   * Direct blur on the panel ï¿½ the ::before + isolate pattern kills
    * backdrop-filter sampling of the page behind portaled menus. */
   .cn-menu-translucent {
     background-color: var(--overlay);

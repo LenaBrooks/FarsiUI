@@ -1219,14 +1219,14 @@ export const skills: Skill[] = [
     title: "نقشه نشان",
     titleEn: "Neshan Maps",
     summary:
-      "مستندات رسمی سرویس‌ها و SDKهای نشان را درست به کار می‌برد و از اشتباهات lat/lng، کلید API و endpoint قدیمی جلوگیری می‌کند.",
+      "مسیریابی، ژئوکدینگ و نقشه نشان با قوانین lat/lng، کلید درست، اسکریپت آماده و recipeهای اجرایی — بدون کپی خام داک.",
     description:
-      "نشان یک سرویس ایرانی برای نقشه، مسیریابی و خدمات مکان‌محوره. این Skill به ایجنت کمک می‌کنه مستندات رسمی سرویس‌ها و SDKهای نشان رو درست استفاده کنه و از اشتباهاتی مثل جابه‌جا نوشتن `lat` و `lng`، انتخاب کلید API اشتباه یا استفاده از endpointهای قدیمی جلوگیری کنه.\n\nمستندات هر سرویس در فایل‌های جداگانه نگهداری می‌شن تا ایجنت قبل از نوشتن کد، مرجع مرتبط رو بررسی کنه و پارامترها رو حدس نزنه.",
+      "نشان سرویس ایرانی نقشه و مسیریابی است. این Skill به‌جای کپی کامل داک، مرجع‌های فشرده، قوانین سخت (ترتیب مختصات، نوع کلید، polyline)، کلاینت/پراکسی تست‌شده و recipeهای آماده دارد تا ایجنت کد درست بنویسد و اشتباهات رایج را تکرار نکند.",
     useCases: [
-      "نمایش نقشه نشان در وب با MapLibre یا Leaflet",
-      "مسیریابی با ترافیک زنده، بدون ترافیک و پیاده",
-      "جستجوی مکان و تبدیل آدرس به مختصات و برعکس",
-      "استفاده از SDKهای اندروید و iOS و افزونه وردپرس",
+      "نمایش نقشه با MapLibre و پراکسی امن کلید REST",
+      "مسیریابی با ترافیک، رسم مسیر و ETA",
+      "جستجوی مکان، ژئوکدینگ و تبدیل مختصات به آدرس",
+      "برنامهٔ تحویل، isochrone و یکپارچه‌سازی Next.js",
     ],
     tags: [
       "نقشه",
@@ -1238,7 +1238,7 @@ export const skills: Skill[] = [
       "ایران",
     ],
     activationDescription:
-      "Complete guide to the Neshan Maps Platform (platform.neshan.org, نقشه نشان, Iranian/Persian maps): REST APIs (routing with live traffic, no-traffic, predictive, typical, pedestrian, TSP, distance matrix, isochrone, map matching, logistics/VRP, search, geocoding, reverse geocoding, nearby, POI, region, static map, account) and SDKs (web MapLibre/Leaflet/OpenLayers/Mapbox, React, Vue, Android, iOS, WordPress). Use whenever the user mentions Neshan/نشان, api.neshan.org, static.neshan.org, @neshan-maps-platform, or wants Iran maps, routing with traffic, geocoding or place search (مسیریابی، ترافیک، ژئوکدینگ، نقشه فارسی). Read the matching reference file before writing code; never answer endpoint or parameter details from memory.",
+      "Neshan Maps Platform (نقشه نشان, platform.neshan.org), the Iranian map/routing/geocoding provider: REST APIs (routing with traffic, TSP, distance matrix, isochrone, map matching, VRP, search, geocoding, reverse geocoding, nearby, POI, region, static map) and SDKs (MapLibre web, React, Vue, Next.js, Android, iOS). Use when code or questions mention Neshan, api.neshan.org, @neshan-maps-platform, org.neshan.maplibre, or Iranian map needs (مسیریابی، ترافیک، ژئوکدینگ، جستجوی مکان، نقشه فارسی). Read the matching reference before writing code; reuse bundled scripts; never invent endpoint details.",
     activationNote:
       "این چند خط به AI می‌گوید کی این مهارت را باز کند. اگر جاهای دیگری هم لازم دارید، همین متن را عوض کنید.",
     installCommand: "npx farsiui@latest add neshan-maps",
@@ -1265,9 +1265,10 @@ export const skills: Skill[] = [
       },
     ],
     agentsHint:
-      "For Neshan Maps APIs or SDKs, read .claude/skills/neshan-maps/SKILL.md first, then only the matching file under references/.",
+      "For Neshan Maps, read SKILL.md then the matching references/ or recipes/ file; reuse scripts/ instead of rewriting clients.",
     example:
-      "هنگام پیاده‌سازی مسیریابی یا تبدیل مختصات به آدرس، ایجنت ابتدا مستندات مربوط به همان سرویس رو بررسی می‌کنه تا پارامترها، ترتیب مختصات و نوع کلید API رو درست به کار ببره و از endpointهای قدیمی فقط در صورت نیاز استفاده کنه.",
+      "برای مسیر روی نقشه، ایجنت از پراکسی کلید استفاده می‌کند، `/v4/direction` را صدا می‌زند، polyline را decode می‌کند و با MapLibre رسم می‌کند — بدون جابه‌جا کردن lat/lng.",
+    bundleZipUrl: "/skills/neshan-maps.zip",
     source: {
       name: "مشاهده Skill در گیت‌هاب",
       url: "https://github.com/MiladJoodi/skills/tree/main/skills/neshan-maps",

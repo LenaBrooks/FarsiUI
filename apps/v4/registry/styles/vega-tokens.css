@@ -11,16 +11,17 @@
 /* -------------------------------------------------------------------------- */
 
 .style-vega {
-  --vega-primary: #3d6ea8;
+  --vega-primary: hsl(208 74% 43%);
   --vega-primary-foreground: #f4f8fc;
-  --vega-ring: #3d6ea8;
+  --vega-ring: hsl(208 74% 43%);
   --vega-brand: #5a7aa0;
   --vega-brand-foreground: #f5f8fc;
-  --vega-chart-1: #4a7eb8;
-  --vega-chart-2: #6a8cae;
-  --vega-chart-3: #c4a35a;
-  --vega-chart-4: #8b7aa8;
-  --vega-chart-5: #7a8a96;
+  /* Chart series — natural sky sequential (low sat, one family) */
+  --vega-chart-1: hsl(210 48% 40%);
+  --vega-chart-2: hsl(208 42% 48%);
+  --vega-chart-3: hsl(205 38% 55%);
+  --vega-chart-4: hsl(212 36% 46%);
+  --vega-chart-5: hsl(200 34% 52%);
 
   --background: #ffffff;
   --foreground: #1a2433;
@@ -116,16 +117,17 @@
 
 html.dark .style-vega,
 .dark .style-vega {
-  --vega-primary: #6ea1d4;
+  --vega-primary: hsl(208 70% 66%);
   --vega-primary-foreground: oklch(0.16 0.02 250);
-  --vega-ring: #6ea1d4;
+  --vega-ring: hsl(208 70% 66%);
   --vega-brand: #8aafd1;
   --vega-brand-foreground: oklch(0.16 0.02 250);
-  --vega-chart-1: #7eb0e0;
-  --vega-chart-2: #8aafd1;
-  --vega-chart-3: #b83a4a;
-  --vega-chart-4: #5ec8e8;
-  --vega-chart-5: #c4a574;
+  /* Chart series — same sky sequential, lifted for dark */
+  --vega-chart-1: hsl(210 52% 68%);
+  --vega-chart-2: hsl(208 46% 72%);
+  --vega-chart-3: hsl(205 42% 76%);
+  --vega-chart-4: hsl(212 40% 70%);
+  --vega-chart-5: hsl(200 38% 74%);
 
   /* Background locked — do not retint the page shell */
   --background: oklch(0.145 0 0);

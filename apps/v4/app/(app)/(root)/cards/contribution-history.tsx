@@ -37,7 +37,7 @@ export function ContributionHistory() {
               className="flex h-full flex-1 flex-col justify-end gap-2"
             >
               <div
-                className="w-full max-w-12 self-center rounded-t-md"
+                className="w-full max-w-12 self-center rounded-t-lg"
                 style={{
                   height: bar.height,
                   backgroundColor: bar.color,

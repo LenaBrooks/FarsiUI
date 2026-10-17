@@ -1,0 +1,122 @@
+<!doctype html>
+<!--
+  Neshan MapLibre starter: map + marker + click-to-coordinates + route line + clustering.
+  Replace YOUR_MAP_API_KEY with a *web map* key (restrict its domains in the Neshan panel).
+  REST calls (routing, reverse geocoding) must go through YOUR backend because service keys are secret:
+  see ROUTE_ENDPOINT / REVERSE_ENDPOINT below. Without a backend the template draws a bundled sample route.
+-->
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neshan map</title>
+  <link rel="stylesheet" href="https://static.neshan.org/sdk/maplibre/5.24.3/neshan-maplibre-sdk.css" />
+  <style>
+    html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; }
+    #map { position: absolute; inset: 0; }
+    #info { position: absolute; top: 12px; inset-inline-start: 12px; z-index: 2; background: #fff; padding: 8px 12px;
+            border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,.25); max-width: 70vw; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div id="info">روی نقشه کلیک کنید</div>
+  <div id="map"></div>
+  <script src="https://static.neshan.org/sdk/maplibre/5.24.3/neshan-maplibre-sdk.umd.js"></script>
+  <script>
+    const maplibregl = window.maplibregl.default;
+
+    // ---- config ---------------------------------------------------------
+    const MAP_KEY = "YOUR_MAP_API_KEY";
+    const STYLE = "https://static.neshan.org/sdk/maplibre/styles/light.json";   // light|dark|monochrome_light|monochrome_dark|pastel
+    const ROUTE_ENDPOINT = null;      // e.g. "/api/route?origin=35.7,51.38&destination=35.71,51.39" (your backend proxies /v4/direction)
+    const REVERSE_ENDPOINT = null;    // e.g. "/api/reverse"  (your backend proxies /v5/reverse?lat=&lng=)
+
+    // ---- helpers (tested offline, see scripts/test_template.mjs) --------
+    /** Encoded polyline (precision 5) -> [[lat, lng], ...] */
+    function decodePolyline(str, precision = 5) {
+      const f = 10 ** precision, out = [];
+      let i = 0, lat = 0, lng = 0;
+      while (i < str.length) {
+        for (let axis = 0; axis < 2; axis++) {
+          let shift = 0, result = 0, b;
+          do { b = str.charCodeAt(i++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+          const d = result & 1 ? ~(result >> 1) : result >> 1;
+          if (axis === 0) lat += d; else lng += d;
+        }
+        out.push([lat / f, lng / f]);
+      }
+      return out;
+    }
+    const toLngLat = (pairs) => pairs.map(([lat, lng]) => [lng, lat]);          // MapLibre wants [lng, lat]
+    function routeToLine(route) {                                                // direction API route -> GeoJSON coordinates
+      const ov = route.overview_polyline;
+      const enc = ov && typeof ov === "object" ? ov.points : ov || route.geometry;
+      return toLngLat(decodePolyline(enc));
+    }
+    function boundsOf(coords) {
+      return coords.reduce((b, c) => b.extend(c), new maplibregl.LngLatBounds(coords[0], coords[0]));
+    }
+
+    // ---- map ------------------------------------------------------------
+    const map = new maplibregl.Map({
+      container: "map", style: STYLE, center: [51.389, 35.689], zoom: 12, minZoom: 2, maxZoom: 21,
+      trackResize: true, apiKey: MAP_KEY,
+    });
+    map.addControl(new maplibregl.NavigationControl());
+    const info = document.getElementById("info");
+    let pin = null;
+
+    // click -> marker + coordinates (+ address if a backend is wired)
+    map.on("click", async (e) => {
+      const { lng, lat } = e.lngLat;
+      pin = pin || new maplibregl.Marker({ anchor: "bottom" });
+      pin.setLngLat([lng, lat]).addTo(map);
+      info.textContent = `عرض: ${lat.toFixed(6)} ، طول: ${lng.toFixed(6)}`;
+      if (REVERSE_ENDPOINT) {
+        try {
+          const r = await fetch(`${REVERSE_ENDPOINT}?lat=${lat}&lng=${lng}`);
+          if (r.ok) info.textContent = (await r.json()).formatted_address || info.textContent;
+        } catch (_) { /* keep coordinates */ }
+      }
+    });
+
+    map.on("load", async () => {
+      // route line
+      let line;
+      if (ROUTE_ENDPOINT) {
+        const res = await (await fetch(ROUTE_ENDPOINT)).json();
+        line = routeToLine(res.routes[0]);
+      } else {
+        // sample overview_polyline.points from the Neshan docs (Tehran, ~1 km)
+        line = routeToLine({ overview_polyline: { points: "cy{xEa{sxHCyEr@}FIi@MWi@Um@L[l@A^{Jr@" } });
+      }
+      map.addSource("route", { type: "geojson", data: { type: "Feature", geometry: { type: "LineString", coordinates: line } } });
+      map.addLayer({ id: "route-line", type: "line", source: "route",
+        layout: { "line-join": "round", "line-cap": "round" }, paint: { "line-color": "#250ECD", "line-width": 6 } });
+      new maplibregl.Marker({ color: "#2e7d32" }).setLngLat(line[0]).addTo(map);
+      new maplibregl.Marker({ color: "#c62828" }).setLngLat(line[line.length - 1]).addTo(map);
+      map.fitBounds(boundsOf(line), { padding: 80 });
+
+      // clustering demo (replace `points` with your data: GeoJSON Point features, [lng, lat])
+      const points = { type: "FeatureCollection", features: Array.from({ length: 200 }, (_, i) => ({
+        type: "Feature", properties: { id: i },
+        geometry: { type: "Point", coordinates: [51.30 + Math.random() * 0.2, 35.62 + Math.random() * 0.15] } })) };
+      map.addSource("pts", { type: "geojson", data: points, cluster: true, clusterRadius: 50, clusterMaxZoom: 14 });
+      map.addLayer({ id: "clusters", type: "circle", source: "pts", filter: ["has", "point_count"],
+        paint: { "circle-color": ["step", ["get", "point_count"], "#51bbd6", 20, "#f1f075", 100, "#f28cb1"],
+                 "circle-radius": ["step", ["get", "point_count"], 16, 20, 22, 100, 30] } });
+      map.addLayer({ id: "cluster-count", type: "symbol", source: "pts", filter: ["has", "point_count"],
+        layout: { "text-field": "{point_count_abbreviated}", "text-size": 12 } });
+      map.addLayer({ id: "unclustered", type: "circle", source: "pts", filter: ["!", ["has", "point_count"]],
+        paint: { "circle-color": "#11b4da", "circle-radius": 6, "circle-stroke-width": 1, "circle-stroke-color": "#fff" } });
+      map.on("click", "clusters", async (e) => {
+        const f = map.queryRenderedFeatures(e.point, { layers: ["clusters"] })[0];
+        const zoom = await map.getSource("pts").getClusterExpansionZoom(f.properties.cluster_id);
+        map.easeTo({ center: f.geometry.coordinates, zoom });
+      });
+      map.on("mouseenter", "clusters", () => (map.getCanvas().style.cursor = "pointer"));
+      map.on("mouseleave", "clusters", () => (map.getCanvas().style.cursor = ""));
+    });
+  </script>
+</body>
+</html>

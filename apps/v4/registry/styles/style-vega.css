@@ -1,5 +1,5 @@
 .style-vega {
-  /* Density tokens (SoT: registry/densities.ts — comfort) */
+  /* Density tokens (SoT: registry/densities.ts ï¿½ comfort) */
   --control-h-xs: 1.75rem;
   --control-h-sm: 2.25rem;
   --control-h-md: 2.5rem;
@@ -59,7 +59,7 @@
 
   /* MARK: Alert */
   .cn-alert {
-    @apply grid gap-1 rounded-(--radius-control) border px-5 py-4 text-start text-(length:--text-control) shadow-xs has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pr-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-3 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-(--control-icon);
+    @apply grid gap-1 rounded-(--radius-control) border px-5 py-4 text-start text-(length:--text-control) shadow-xs has-data-[slot=alert-action]:grid-cols-[minmax(0,1fr)_auto] has-data-[slot=alert-action]:gap-x-3 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:has-data-[slot=alert-action]:grid-cols-[auto_minmax(0,1fr)_auto] has-[>svg]:gap-x-3 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-(--control-icon);
   }
 
   .cn-alert-variant-default {
@@ -79,7 +79,7 @@
   }
 
   .cn-alert-action {
-    @apply absolute top-3.5 right-4;
+    @apply col-start-2 row-start-1 row-span-2 self-start shrink-0 group-has-[>svg]/alert:col-start-3;
   }
 
   /* MARK: Avatar */
@@ -157,7 +157,7 @@
     @apply size-(--control-h-xs) [&>svg]:size-(--control-icon);
   }
 
-  /* MARK: Button — Comfort: spacious, soft elevation, independent language */
+  /* MARK: Button ï¿½ Comfort: spacious, soft elevation, independent language */
   .cn-button {
     @apply focus-visible:border-ring focus-visible:ring-ring/40 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 rounded-(--radius-control) border border-transparent bg-clip-padding text-(length:--text-control) leading-(--leading-control) font-normal shadow-xs transition-[color,background-color,border-color,box-shadow,transform] duration-200 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background aria-invalid:ring-2 active:not-aria-[haspopup]:scale-[0.98] [&_svg:not([class*='size-'])]:size-(--control-icon);
   }

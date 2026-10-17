@@ -8,6 +8,7 @@ type Phase = "idle" | "loading" | "finishing"
 /**
  * Top navigation progress for App Router.
  * Starts on internal link click, crawls until the URL settles, then finishes.
+ * Stays visible for the full navigation — does not time out early.
  */
 export function NavigationProgress() {
   const pathname = usePathname()
@@ -40,7 +41,7 @@ export function NavigationProgress() {
     }, 320)
   }
 
-  /** Clear the bar without claiming navigation completed (cancelled / stuck). */
+  /** Clear without claiming success (e.g. tab hidden mid-nav). */
   const abort = () => {
     if (!loadingRef.current) return
     clearTimers()
@@ -63,8 +64,11 @@ export function NavigationProgress() {
     schedule(() => setProgress(72), 600)
     schedule(() => setProgress(86), 1200)
     schedule(() => setProgress(92), 2200)
-    // Soft abort when navigation stalls (soft nav cancel / hung RSC).
-    schedule(() => abort(), 8_000)
+    // Keep crawling slowly on long navigations — never finish or abort
+    // until the route key actually changes (see effect below).
+    schedule(() => setProgress(94), 5_000)
+    schedule(() => setProgress(96), 12_000)
+    schedule(() => setProgress(97), 25_000)
   }
 
   useEffect(() => {

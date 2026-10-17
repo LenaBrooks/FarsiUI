@@ -47,7 +47,7 @@
 
   /* MARK: Alert */
   .cn-alert {
-    @apply grid gap-0.5 rounded-lg border px-2 py-1.5 text-start text-xs/relaxed has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pr-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-1.5 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-3.5;
+    @apply grid gap-0.5 rounded-lg border px-2 py-1.5 text-start text-xs/relaxed has-data-[slot=alert-action]:grid-cols-[minmax(0,1fr)_auto] has-data-[slot=alert-action]:gap-x-3 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:has-data-[slot=alert-action]:grid-cols-[auto_minmax(0,1fr)_auto] has-[>svg]:gap-x-1.5 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-3.5;
   }
 
   .cn-alert-variant-default {
@@ -67,7 +67,7 @@
   }
 
   .cn-alert-action {
-    @apply absolute top-1.5 right-2;
+    @apply col-start-2 row-start-1 row-span-2 self-start shrink-0 group-has-[>svg]/alert:col-start-3;
   }
 
   /* MARK: Avatar */

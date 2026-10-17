@@ -30,7 +30,6 @@ export function ComponentPreviewTabs({
   name,
   component,
   source,
-  sourcePreview,
   dependencies,
   direction = "ltr",
   styleName,
@@ -42,10 +41,10 @@ export function ComponentPreviewTabs({
   chromeLessOnMobile?: boolean
   /** Demo/registry item name — used to load the active Design System bake. */
   name?: string
-  component: React.ReactNode
+  /** Inline preview node when `name` is absent (non-iframe embeds). */
+  component?: React.ReactNode
   /** @deprecated Prefer lazy full source via `name` after expand. */
   source?: React.ReactNode
-  sourcePreview?: React.ReactNode
   dependencies?: string[]
   direction?: "ltr" | "rtl"
   styleName?: string

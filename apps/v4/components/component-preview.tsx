@@ -2,9 +2,8 @@ import * as React from "react"
 import Image from "next/image"
 
 import { extractHookDependencies } from "@/lib/example-dependencies"
-import { getDemoItem, getRegistryComponent } from "@/lib/registry"
+import { getDemoItem, getRegistryMeta } from "@/lib/registry"
 import { ComponentPreviewTabs } from "@/components/component-preview-tabs"
-import { ComponentSource } from "@/components/component-source"
 import { PreviewThemeIframe } from "@/components/preview-theme-scope"
 
 export async function ComponentPreview({
@@ -78,9 +77,13 @@ export async function ComponentPreview({
     return content
   }
 
-  const Component = getRegistryComponent(name, styleName)
+  // Installable demos render via iframe (`/view/...`). Do not resolve
+  // React.lazy registry components here — that pulls multi-MB client chunks
+  // into the docs route even though `component` was never rendered.
+  const demo = await getDemoItem(name, styleName)
+  const meta = getRegistryMeta(name, styleName)
 
-  if (!Component) {
+  if (!demo && !meta) {
     return (
       <p className="mt-6 text-sm text-muted-foreground">
         Component{" "}
@@ -92,7 +95,6 @@ export async function ComponentPreview({
     )
   }
 
-  const demo = await getDemoItem(name, styleName)
   const dependencies = extractHookDependencies(demo?.files?.[0]?.content)
 
   const content = (
@@ -102,15 +104,6 @@ export async function ComponentPreview({
       align={align}
       hideCode={hideCode}
       name={name}
-      component={React.createElement(Component)}
-      sourcePreview={
-        <ComponentSource
-          name={name}
-          collapsible={false}
-          styleName={styleName}
-          maxLines={3}
-        />
-      }
       dependencies={dependencies}
       chromeLessOnMobile={chromeLessOnMobile}
       direction={direction}

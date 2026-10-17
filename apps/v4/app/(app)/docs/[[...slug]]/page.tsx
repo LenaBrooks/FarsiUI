@@ -2,7 +2,7 @@ import { siteConfig } from "@/lib/config"
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { mdxComponents } from "@/mdx-components"
+import { resolveDocsMdxComponents } from "@/lib/docs-mdx-components"
 import { findDocsNeighbour } from "@/lib/docs-nav"
 import { source } from "@/lib/source"
 import { absoluteUrl } from "@/lib/utils"
@@ -120,6 +120,7 @@ export default async function Page(props: {
 
   const doc = contentPage.data
   const MDX = doc.body
+  const mdxComponents = await resolveDocsMdxComponents(slug, contentPage)
   const { fa: titleFa, en: titleEn } = splitDocTitle(doc.title)
   const links = (
     doc as { links?: { doc?: string; api?: string } }

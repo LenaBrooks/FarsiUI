@@ -43,9 +43,9 @@ const nextConfig = {
     // Cap workers on Vercel only — locally this made first compile / refresh feel frozen.
     ...(process.env.VERCEL
       ? {
-          cpus: 1,
-          staticGenerationMaxConcurrency: 2,
-          staticGenerationMinPagesPerWorker: 50,
+          cpus: 2,
+          staticGenerationMaxConcurrency: 4,
+          staticGenerationMinPagesPerWorker: 40,
         }
       : {}),
     webpackBuildWorker: true,

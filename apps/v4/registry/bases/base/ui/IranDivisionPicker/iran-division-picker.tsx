@@ -49,7 +49,7 @@ export type IranDivisionPickerProps = {
   value?: IranDivisionSelection
   defaultValue?: IranDivisionSelection
   onValueChange?: (value: IranDivisionSelection) => void
-  /** Base URL for geo JSON (default `https://farsiui.ir/r/geo/iran`). */
+  /** Base URL for geo JSON (default GitHub raw under `apps/v4/public/r/geo/iran`). */
   dataUrl?: string
   labels?: Partial<Record<IranDivisionLevel, string>>
 }

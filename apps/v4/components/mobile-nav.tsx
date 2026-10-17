@@ -11,6 +11,7 @@ import {
   LayoutTemplateIcon,
   MailIcon,
   MenuIcon,
+  ShapesIcon,
   SparklesIcon,
   WandSparklesIcon,
   XIcon,
@@ -34,6 +35,7 @@ const NAV_ICONS: Record<string, LucideIcon> = {
   "/skills": WandSparklesIcon,
   "/charts": ChartAreaIcon,
   "/contact": MailIcon,
+  "https://icons.farsiui.ir/": ShapesIcon,
   "https://tarhak.ir/": ExternalLinkIcon,
 }
 

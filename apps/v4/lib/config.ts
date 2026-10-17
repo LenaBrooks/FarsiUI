@@ -64,6 +64,11 @@ export const siteConfig = {
       label: "نمودارها",
     },
     {
+      href: "https://icons.farsiui.ir/",
+      label: "آیکون‌ها",
+      external: true,
+    },
+    {
       href: "https://tarhak.ir/",
       label: "انیمیشن",
       external: true,

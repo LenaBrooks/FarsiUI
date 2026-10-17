@@ -45,15 +45,15 @@ export function CodeCollapsibleWrapper({
 
       <CollapsibleContent
         forceMount
-        className="relative mt-6 overflow-hidden data-[state=closed]:max-h-64 data-[state=closed]:[content-visibility:auto] [&>figure]:mt-0 [&>figure]:md:mx-0!"
+        className="relative mt-6 overflow-hidden rounded-2xl data-[state=closed]:max-h-64 data-[state=closed]:[content-visibility:auto] [&>figure]:mt-0 [&>figure]:md:mx-0!"
       >
         {children}
       </CollapsibleContent>
 
       {!isOpened ? (
-        <div className="absolute inset-x-0 bottom-0 z-10 flex h-16 items-center justify-center rounded-b-lg bg-background/95 backdrop-blur-sm">
+        <div className="absolute inset-x-0 bottom-0 z-10 flex h-16 items-center justify-center rounded-b-2xl bg-background/95 backdrop-blur-sm">
           <div
-            className="absolute inset-0 rounded-b-lg"
+            className="absolute inset-0 rounded-b-2xl"
             style={{
               background:
                 "linear-gradient(to top, var(--background), color-mix(in oklab, var(--background) 75%, transparent), transparent)",

@@ -67,6 +67,8 @@
   /* Point at next/font variables — never self-reference (breaks mobile Safari). */
   --font-sans: var(--font-estedad);
   --font-heading: var(--font-estedad);
+  --font-ar: var(--font-estedad);
+  --font-he: var(--font-estedad);
   --font-mono: var(--font-geist-mono);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);

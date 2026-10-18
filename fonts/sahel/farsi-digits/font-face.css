@@ -1,0 +1,41 @@
+/* Sahel FD — Persian digits mapped to 0–9. Source: rastikerdar/sahel-font (OFL-1.1) */
+
+@font-face {
+  font-family: "Sahel FD";
+  src: url("./Sahel-Light-FD.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sahel FD";
+  src: url("./Sahel-FD.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sahel FD";
+  src: url("./Sahel-SemiBold-FD.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sahel FD";
+  src: url("./Sahel-Bold-FD.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sahel FD";
+  src: url("./Sahel-Black-FD.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

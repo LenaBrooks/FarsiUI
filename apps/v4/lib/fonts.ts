@@ -1,92 +1,10 @@
-import type { CSSProperties } from "react"
 import localFont from "next/font/local"
 import { cn } from "cn"
 
 /**
- * Runtime UI font options for the docs site font switcher.
- * Estedad (+ mono) ship with the shell; other faces load via fonts-extras.
+ * Shell UI fonts — Estedad (sans) + Geist Mono.
+ * Font Switcher / preview extras removed; catalog fonts are docs-only.
  */
-export const UI_FONTS = [
-  {
-    id: "vazirmatn",
-    label: "وزیرمتن",
-    cssVar: "--font-vazirmatn",
-  },
-  {
-    id: "estedad",
-    label: "استعداد",
-    cssVar: "--font-estedad",
-  },
-  {
-    id: "noto-sans-arabic",
-    label: "نوتو سنس عربی",
-    cssVar: "--font-noto-sans-arabic",
-  },
-  {
-    id: "noto-kufi-arabic",
-    label: "نوتو کوفی عربی",
-    cssVar: "--font-noto-kufi-arabic",
-  },
-  {
-    id: "lalezar",
-    label: "لاله‌زار",
-    cssVar: "--font-lalezar",
-  },
-  {
-    id: "markazi-text",
-    label: "مرکزی تکست",
-    cssVar: "--font-markazi-text",
-  },
-] as const
-
-export type UiFontId = (typeof UI_FONTS)[number]["id"]
-
-export const DEFAULT_UI_FONT: UiFontId = "estedad"
-export const UI_FONT_STORAGE_KEY = "ui-font-preview"
-export const UI_FONT_COOKIE = "ui-font-preview"
-
-export function isUiFontId(value: string): value is UiFontId {
-  return UI_FONTS.some((font) => font.id === value)
-}
-
-export function normalizeUiFontId(
-  value: string | null | undefined
-): UiFontId {
-  if (value && isUiFontId(value)) return value
-  return DEFAULT_UI_FONT
-}
-
-/** Persist choice for SSR (cookie) + client restore (localStorage). */
-export function persistUiFontId(fontId: UiFontId) {
-  if (typeof document === "undefined") return
-  try {
-    window.localStorage.setItem(UI_FONT_STORAGE_KEY, fontId)
-    document.cookie = `${UI_FONT_COOKIE}=${fontId};path=/;max-age=31536000;samesite=lax`
-  } catch {
-    // Ignore quota / private mode.
-  }
-}
-
-export function getUiFontCssVar(fontId: UiFontId) {
-  return (
-    UI_FONTS.find((font) => font.id === fontId)?.cssVar ??
-    UI_FONTS[0].cssVar
-  )
-}
-
-/** Inline style values for --font-sans / heading / ar / he. */
-export function getUiFontStyle(fontId: UiFontId = DEFAULT_UI_FONT): CSSProperties {
-  const cssVar = getUiFontCssVar(fontId)
-  // Explicit fallbacks help mobile Safari when a font face is still loading.
-  const stack = `var(${cssVar}), ui-sans-serif, system-ui, sans-serif`
-  return {
-    "--font-sans": stack,
-    "--font-heading": stack,
-    "--font-ar": stack,
-    "--font-he": stack,
-    "--font-mono": "var(--font-geist-mono), ui-monospace, monospace",
-  } as CSSProperties
-}
 
 const fontEstedad = localFont({
   src: "../app/fonts/estedad-wght.woff2",
@@ -104,32 +22,5 @@ const fontMono = localFont({
   adjustFontFallback: false,
 })
 
-/** Shell fonts only — extras load via `lib/fonts-extras`. */
+/** Applied on <html> — maps to --font-sans / --font-mono via globals.css @theme. */
 export const fontVariables = cn(fontEstedad.variable, fontMono.variable)
-
-/** Inline script: apply saved font + cookie sync before paint. */
-export const UI_FONT_BOOTSTRAP_SCRIPT = `
-  try {
-    var fontMap = {
-      vazirmatn: '--font-vazirmatn',
-      estedad: '--font-estedad',
-      'noto-sans-arabic': '--font-noto-sans-arabic',
-      'noto-kufi-arabic': '--font-noto-kufi-arabic',
-      lalezar: '--font-lalezar',
-      'markazi-text': '--font-markazi-text'
-    };
-    var cookieName = '${UI_FONT_COOKIE}';
-    var fromCookie = (document.cookie.match(new RegExp('(?:^|; )' + cookieName + '=([^;]*)')) || [])[1];
-    var font = localStorage.getItem('${UI_FONT_STORAGE_KEY}') || (fromCookie ? decodeURIComponent(fromCookie) : '') || '${DEFAULT_UI_FONT}';
-    if (!fontMap[font]) font = '${DEFAULT_UI_FONT}';
-    document.cookie = cookieName + '=' + font + ';path=/;max-age=31536000;samesite=lax';
-    try { localStorage.setItem('${UI_FONT_STORAGE_KEY}', font); } catch (_) {}
-    var cssVar = fontMap[font];
-    var stack = 'var(' + cssVar + '), ui-sans-serif, system-ui, sans-serif';
-    var root = document.documentElement;
-    root.style.setProperty('--font-sans', stack);
-    root.style.setProperty('--font-heading', stack);
-    root.style.setProperty('--font-ar', stack);
-    root.style.setProperty('--font-he', stack);
-  } catch (_) {}
-`

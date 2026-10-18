@@ -4,7 +4,11 @@ import * as React from "react"
 import { PrefetchLink } from "@/components/prefetch-link"
 import { usePathname } from "next/navigation"
 
-import { isComponentsDocsPath, PAGES_NEW, splitDocTitle } from "@/lib/docs"
+import {
+  isComponentsDocsPath,
+  isFeaturedDocsPage,
+  splitDocTitle,
+} from "@/lib/docs"
 import { DOCS_SIDEBAR_SCROLL_STORAGE_KEY } from "@/lib/docs-sidebar-scroll"
 import { showMcpDocs } from "@/lib/flags"
 import { getCurrentBase, getPagesFromFolder } from "@/lib/page-tree"
@@ -428,7 +432,7 @@ function DocsSidebarBody({
                       ? pathname === href
                       : pathname === href || pathname.startsWith(`${href}/`)
                   const featured =
-                    statusDot === "green" || PAGES_NEW.includes(href)
+                    statusDot === "green" || isFeaturedDocsPage(href)
 
                   return (
                     <SidebarMenuItem key={name}>
@@ -460,7 +464,7 @@ function DocsSidebarBody({
                 {componentGroup.pages.map((page) => {
                   const { fa, en } = sidebarPageLabel(page)
                   const active = page.url === pathname
-                  const featured = PAGES_NEW.includes(page.url)
+                  const featured = isFeaturedDocsPage(page.url)
 
                   return (
                     <SidebarMenuItem key={page.url}>
@@ -504,7 +508,7 @@ function DocsSidebarBody({
                   {group.pages.map((page) => {
                     const { fa, en } = sidebarPageLabel(page)
                     const active = page.url === pathname
-                    const featured = PAGES_NEW.includes(page.url)
+                    const featured = isFeaturedDocsPage(page.url)
 
                     return (
                       <PrefetchLink

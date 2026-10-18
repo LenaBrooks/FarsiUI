@@ -10,7 +10,6 @@ import {
   useDesignSystemPreview,
   type DesignSystemId,
 } from "@/components/design-system-preview"
-import { useFontPreview } from "@/components/font-preview"
 import { DEFAULT_ACTIVE_THEME } from "@/lib/active-theme"
 import { THEME_BEFORE_DARK_DS_KEY } from "@/lib/design-system"
 import { THEME_LABELS, THEMES } from "@/lib/themes"
@@ -94,7 +93,6 @@ export function DesignStudioPanel({
 }) {
   const { designSystemId, setDesignSystemId, presets } =
     useDesignSystemPreview()
-  const { setFontId } = useFontPreview()
   const { activeTheme, setActiveTheme } = useThemeConfig()
   const { setTheme } = useTheme()
   const showPrimaryColor = !hideColor && designSystemId === "default"
@@ -107,10 +105,9 @@ export function DesignStudioPanel({
       // Ignore private mode.
     }
     setDesignSystemId("default")
-    setFontId("estedad")
     setTheme("system")
     setActiveTheme(DEFAULT_ACTIVE_THEME)
-  }, [setActiveTheme, setDesignSystemId, setFontId, setTheme])
+  }, [setActiveTheme, setDesignSystemId, setTheme])
 
   return (
     <div

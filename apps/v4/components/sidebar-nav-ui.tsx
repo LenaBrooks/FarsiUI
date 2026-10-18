@@ -99,11 +99,11 @@ export function SidebarNavBullet({
     return (
       <span
         className={cn(
-          "size-1.5 shrink-0 rounded-full bg-emerald-500",
+          "size-1.5 shrink-0 rounded-full bg-[var(--chart-up)]",
           className
         )}
-        title="پیشنهادی"
-        aria-label="پیشنهادی"
+        title="ویژه"
+        aria-label="ویژه"
       />
     )
   }

@@ -17,18 +17,11 @@ import {
   normalizeDesignSystemId,
 } from "@/lib/design-system"
 import { DOCS_SIDEBAR_SCROLL_RESTORE_SCRIPT } from "@/lib/docs-sidebar-scroll"
-import {
-  fontVariables,
-  getUiFontStyle,
-  normalizeUiFontId,
-  UI_FONT_BOOTSTRAP_SCRIPT,
-  UI_FONT_COOKIE,
-} from "@/lib/fonts"
+import { fontVariables } from "@/lib/fonts"
 import { ActiveThemeProvider } from "@/components/active-theme"
 import { Analytics } from "@/components/analytics"
 import { DesignSystemPreviewProvider } from "@/components/design-system-preview"
 import { DesignSystemStyles } from "@/components/design-system-styles"
-import { FontPreviewProvider } from "@/components/font-preview"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/registry/bases/radix/ui/sonner"
@@ -116,10 +109,6 @@ export default async function RootLayout({
     headerStore.get("x-design-system-preview") ??
       cookieStore.get(DESIGN_SYSTEM_COOKIE)?.value
   )
-  const initialFontId = normalizeUiFontId(
-    headerStore.get("x-ui-font-preview") ??
-      cookieStore.get(UI_FONT_COOKIE)?.value
-  )
   const initialActiveTheme = normalizeActiveTheme(
     headerStore.get("x-active-theme") ??
       cookieStore.get(ACTIVE_THEME_COOKIE)?.value
@@ -127,24 +116,15 @@ export default async function RootLayout({
   const styleRootClass = DESIGN_SYSTEM_STYLE_CLASS[initialDesignSystem]
   const themeClass = `theme-${initialActiveTheme}`
 
-  const extraFontClass =
-    initialFontId !== "estedad"
-      ? (await import("@/lib/fonts-extras")).getExtraUiFontClassName(
-          initialFontId
-        )
-      : undefined
-
   return (
     <html
       lang="fa"
       suppressHydrationWarning
       className={cn(
         fontVariables,
-        extraFontClass,
         "font-sans",
         "[--header-height:calc(var(--spacing)*14)] lg:[--header-height:calc(var(--spacing)*16)]"
       )}
-      style={getUiFontStyle(initialFontId)}
     >
       <head>
         <Script
@@ -165,13 +145,6 @@ export default async function RootLayout({
                 }
               } catch (_) {}
             `,
-          }}
-        />
-        <Script
-          id="ui-font-bootstrap"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: UI_FONT_BOOTSTRAP_SCRIPT,
           }}
         />
         <meta name="theme-color" content={META_THEME_COLORS.light} />
@@ -232,16 +205,14 @@ export default async function RootLayout({
             <DesignSystemPreviewProvider
               initialDesignSystem={initialDesignSystem}
             >
-              <FontPreviewProvider initialFontId={initialFontId}>
-                <NuqsAdapter>
-                  <RadixTooltipProvider delayDuration={0}>
-                    {children}
-                    <Toaster position="top-center" dir="rtl" />
-                  </RadixTooltipProvider>
-                </NuqsAdapter>
-                <TailwindIndicator />
-                <Analytics />
-              </FontPreviewProvider>
+              <NuqsAdapter>
+                <RadixTooltipProvider delayDuration={0}>
+                  {children}
+                  <Toaster position="top-center" dir="rtl" />
+                </RadixTooltipProvider>
+              </NuqsAdapter>
+              <TailwindIndicator />
+              <Analytics />
             </DesignSystemPreviewProvider>
           </ActiveThemeProvider>
         </ThemeProvider>

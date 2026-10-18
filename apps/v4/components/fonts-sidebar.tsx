@@ -20,7 +20,7 @@ import {
   SidebarNavBullet,
   sidebarItemStateClass,
 } from "@/components/sidebar-nav-ui"
-import { FONTS_CATALOG } from "@/lib/fonts-catalog"
+import { FONTS_CATALOG, isFeaturedFont } from "@/lib/fonts/catalog"
 import { cn } from "cn"
 import { PersianDigits } from "@/registry/bases/base/ui/persian-digits"
 import {
@@ -36,7 +36,7 @@ import {
 const SEARCH_DEBOUNCE_MS = 200
 
 function fontHref(id: string) {
-  return `/font-catalog/${id}`
+  return `/fonts/${id}`
 }
 
 function getFontsNavCurrent(pathname: string) {
@@ -105,7 +105,7 @@ function FontsNavBody({ showSearch = true }: { showSearch?: boolean }) {
                           sidebarItemStateClass(active)
                         )}
                       >
-                        <SidebarNavBullet featured={false} />
+                        <SidebarNavBullet featured={isFeaturedFont(font.id)} />
                         <SidebarNavBilingualLabel
                           fa={font.nameFa}
                           en={font.nameEn}

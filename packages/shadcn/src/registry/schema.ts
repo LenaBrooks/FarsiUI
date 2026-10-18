@@ -97,17 +97,22 @@ export const registryItemTypeSchema = z.enum([
   "registry:internal",
 ])
 
+const registryFileEncodingSchema = z.enum(["utf-8", "base64"]).optional()
+
 export const registryItemFileSchema = z.discriminatedUnion("type", [
   // Target is required for registry:file and registry:page
   z.object({
     path: z.string(),
     content: z.string().optional(),
+    /** `base64` for binary assets (e.g. woff2). Default: utf-8 text. */
+    encoding: registryFileEncodingSchema,
     type: z.enum(["registry:file", "registry:page"]),
     target: z.string(),
   }),
   z.object({
     path: z.string(),
     content: z.string().optional(),
+    encoding: registryFileEncodingSchema,
     type: registryItemTypeSchema.exclude(["registry:file", "registry:page"]),
     target: z.string().optional(),
   }),

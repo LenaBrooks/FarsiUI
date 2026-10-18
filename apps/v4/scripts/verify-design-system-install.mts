@@ -26,7 +26,7 @@ const systems = [
     style: "vega" as const,
     registry: "base-vega",
     font: "inter" as const,
-    expectPrimary: null,
+    expectPrimary: "hsl(208 74% 43%)",
     expectMarkers: {
       button: ["h-10"],
       input: ["h-10"],

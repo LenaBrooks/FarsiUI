@@ -4,7 +4,7 @@ import * as React from "react"
 
 import { Card, CardContent } from "@/registry/bases/radix/ui/card"
 import { STYLES } from "@/registry/styles"
-import { FONTS } from "@/lib/font-options"
+import { FONTS } from "@/lib/fonts/options"
 import { useDesignSystemSearchParams } from "@/lib/design-system-search-params"
 
 export default function StyleOverview() {

@@ -27,7 +27,16 @@ import { isTokenSidecarStyle } from "@/registry/extract-style-install-tokens"
 import { resolveStyleTokensCssPath } from "@/registry/extract-style-install-tokens.node"
 import { mergeStyleMaps } from "@/registry/merge-style-maps"
 import { resolveDensityInStyleMap } from "@/registry/resolve-density-style-map"
+import { getStyleInstallTokens } from "@/registry/style-install-tokens"
 import { STYLES } from "@/registry/styles"
+
+/** `base-vega` / `radix-glass` → sidecar style name when tokens exist. */
+function tokenStyleFromRegistryStyleName(styleName: string) {
+  const leaf = styleName.includes("-")
+    ? styleName.slice(styleName.lastIndexOf("-") + 1)
+    : styleName
+  return isTokenSidecarStyle(leaf) ? leaf : null
+}
 
 /*
  * build-registry.mts is the single v4 registry pipeline.
@@ -841,6 +850,9 @@ async function runFullBuild() {
   const { buildSkillsRegistry } = await import("./build-skills-registry.mts")
   await buildSkillsRegistry()
 
+  const { buildFontsRegistry } = await import("./build-fonts-registry.mts")
+  await buildFontsRegistry()
+
   await saveTransformCache()
 }
 
@@ -969,6 +981,9 @@ async function runTargetedRegistryBuild(target: "all" | string) {
 
   const { buildSkillsRegistry } = await import("./build-skills-registry.mts")
   await buildSkillsRegistry()
+
+  const { buildFontsRegistry } = await import("./build-fonts-registry.mts")
+  await buildFontsRegistry()
 }
 
 async function buildBasesIndex(bases: Base[]) {
@@ -1525,19 +1540,35 @@ async function buildRegistryJsonFile(styleName: string) {
         ),
       ]
 
+  const tokenStyle = tokenStyleFromRegistryStyleName(styleName)
+  const installTokens = tokenStyle ? getStyleInstallTokens(tokenStyle) : null
+
   const fixedRegistry = {
     ...registry,
     items: await Promise.all(
       registryItems.map(async (item) => {
-        const files = normalizeRegistryFiles(item).map((file) => ({
+        // Bake Design System *-tokens.css into registry:style so CLI init
+        // writes the same light/dark vars as the site preview (not Nova).
+        const withTokens =
+          installTokens && item.type === "registry:style"
+            ? {
+                ...item,
+                cssVars: {
+                  light: installTokens.light,
+                  dark: installTokens.dark,
+                },
+              }
+            : item
+
+        const files = normalizeRegistryFiles(withTokens).map((file) => ({
           ...file,
           path: `registry/${styleName}/${file.path}`,
         }))
         if (files.length === 0) {
-          return item
+          return withTokens
         }
-        const dependencies = await getItemDependencies(item, files)
-        return { ...item, files, ...(dependencies && { dependencies }) }
+        const dependencies = await getItemDependencies(withTokens, files)
+        return { ...withTokens, files, ...(dependencies && { dependencies }) }
       })
     ),
   }

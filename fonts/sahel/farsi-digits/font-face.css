@@ -1,4 +1,8 @@
-/* Sahel FD — Persian digits mapped to 0–9. Source: rastikerdar/sahel-font (OFL-1.1) */
+/*
+ * Sahel FD — Persian digits mapped to 0–9.
+ * Copyright (c) 2016, Saber Rastikerdar — https://github.com/rastikerdar/sahel-font
+ * Licensed under the SIL Open Font License, Version 1.1 — see LICENSE (or OFL.txt) in this folder.
+ */
 
 @font-face {
   font-family: "Sahel FD";

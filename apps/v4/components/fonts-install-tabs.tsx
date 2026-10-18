@@ -115,7 +115,9 @@ function SnippetBody({ snippet }: { snippet: HighlightedFontSnippet }) {
 
     return (
       <Tabs defaultValue={defaultVariant} dir="rtl" className="w-full">
-        <div className="mb-1 text-sm text-muted-foreground">روش نصب را انتخاب کنید</div>
+        <div className="mb-1 text-sm text-muted-foreground">
+          روش نصب را انتخاب کنید
+        </div>
         <TabsList className={methodTabsListClass}>
           {variants.map((variant) => (
             <TabsTrigger
@@ -133,7 +135,10 @@ function SnippetBody({ snippet }: { snippet: HighlightedFontSnippet }) {
             value={variant.id}
             className={docsTabsContentClass}
           >
-            <InstallSteps id={`${snippet.id}-${variant.id}`} steps={variant.steps} />
+            <InstallSteps
+              id={`${snippet.id}-${variant.id}`}
+              steps={variant.steps}
+            />
           </TabsContent>
         ))}
       </Tabs>
@@ -148,7 +153,7 @@ export function FontInstallTabs({
 }: {
   snippets: HighlightedFontSnippet[]
 }) {
-  const defaultValue = snippets[0]?.id ?? "link"
+  const defaultValue = snippets[0]?.id ?? "next"
 
   return (
     <Tabs

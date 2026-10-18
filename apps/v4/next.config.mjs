@@ -207,6 +207,32 @@ const nextConfig = {
         destination: "/charts/view/:id",
         permanent: true,
       },
+      {
+        source: "/chart2",
+        destination: "/charts",
+        permanent: true,
+      },
+      {
+        source: "/chart2/view/:id",
+        destination: "/charts/view/:id",
+        permanent: true,
+      },
+      {
+        source: "/chart2/:path*",
+        destination: "/charts/:path*",
+        permanent: true,
+      },
+      // Font catalog renamed to /fonts.
+      {
+        source: "/font-catalog",
+        destination: "/fonts",
+        permanent: true,
+      },
+      {
+        source: "/font-catalog/:path*",
+        destination: "/fonts/:path*",
+        permanent: true,
+      },
       // Other redirects.
       {
         source: "/components",

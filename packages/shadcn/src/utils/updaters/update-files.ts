@@ -176,14 +176,17 @@ export async function updateFiles(
       )
     }
 
+    const isBase64File = file.encoding === "base64"
+
     // Run our transformers.
     // Skip transformers for .env files to preserve exact content
     // Skip transformers for universal item files (registry:file and registry:item)
     // to preserve their original content as they're meant to be framework-agnostic
+    // Skip transformers for base64 binary assets (fonts, etc.)
     const isUniversalItemFile =
       file.type === "registry:file" || file.type === "registry:item"
     const content =
-      isEnvFile(filePath) || isUniversalItemFile
+      isEnvFile(filePath) || isUniversalItemFile || isBase64File
         ? file.content
         : await transform(
             {
@@ -215,26 +218,35 @@ export async function updateFiles(
     // Skip the file if it already exists and the content is the same.
     // Exception: Don't skip .env files as we merge content instead of replacing
     if (existingFile && !isEnvFile(filePath)) {
-      const resolvedContent = await rewriteResolvedImportsInContent({
-        config,
-        content,
-        filePaths: plannedFilePaths,
-        project: importRewriteProject,
-        projectInfo,
-        resolvedPath: filePath,
-        tsConfig,
-      })
-      const existingFileContent = await fs.readFile(filePath, "utf-8")
-
-      if (
-        isContentSame(existingFileContent, resolvedContent, {
-          // Ignore import differences for workspace components.
-          // TODO: figure out if we always want this.
-          ignoreImports: options.isWorkspace,
+      if (isBase64File) {
+        const existingBuffer = await fs.readFile(filePath)
+        const nextBuffer = Buffer.from(content, "base64")
+        if (existingBuffer.equals(nextBuffer)) {
+          filesSkipped.push(path.relative(config.resolvedPaths.cwd, filePath))
+          continue
+        }
+      } else {
+        const resolvedContent = await rewriteResolvedImportsInContent({
+          config,
+          content,
+          filePaths: plannedFilePaths,
+          project: importRewriteProject,
+          projectInfo,
+          resolvedPath: filePath,
+          tsConfig,
         })
-      ) {
-        filesSkipped.push(path.relative(config.resolvedPaths.cwd, filePath))
-        continue
+        const existingFileContent = await fs.readFile(filePath, "utf-8")
+
+        if (
+          isContentSame(existingFileContent, resolvedContent, {
+            // Ignore import differences for workspace components.
+            // TODO: figure out if we always want this.
+            ignoreImports: options.isWorkspace,
+          })
+        ) {
+          filesSkipped.push(path.relative(config.resolvedPaths.cwd, filePath))
+          continue
+        }
       }
     }
 
@@ -298,7 +310,11 @@ export async function updateFiles(
       continue
     }
 
-    await fs.writeFile(filePath, content, "utf-8")
+    if (isBase64File) {
+      await fs.writeFile(filePath, Buffer.from(content, "base64"))
+    } else {
+      await fs.writeFile(filePath, content, "utf-8")
+    }
 
     // Handle file creation logging
     if (!existingFile) {

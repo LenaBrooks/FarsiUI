@@ -4,7 +4,7 @@
     "../examples/chart/**/*.tsx",
     "../lib/chart-*.ts",
     "../components/chart-*.tsx",
-    "../app/(app)/chart2/**/*.tsx"
+    "../app/(app)/charts/**/*.tsx"
   ],
   "exclude": ["../node_modules"]
 }

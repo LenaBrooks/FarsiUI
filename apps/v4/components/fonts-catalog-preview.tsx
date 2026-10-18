@@ -1,13 +1,12 @@
 import Link from "next/link"
-import { ExternalLinkIcon } from "lucide-react"
 
 import {
   FontInstallTabs,
   type HighlightedFontSnippet,
 } from "@/components/fonts-install-tabs"
 import { highlightCode } from "@/lib/highlight-code"
-import type { FontCatalogItem } from "@/lib/fonts-catalog"
-import { getFontInstallSnippets } from "@/lib/fonts-install-snippets"
+import type { FontCatalogItem } from "@/lib/fonts/catalog"
+import { getFontInstallSnippets } from "@/lib/fonts/install-snippets"
 import { Button } from "@/registry/new-york-v4/ui/button"
 
 async function highlightSteps(
@@ -27,7 +26,7 @@ async function highlightSteps(
 async function buildHighlightedSnippets(
   font: FontCatalogItem
 ): Promise<HighlightedFontSnippet[]> {
-  const tabs = getFontInstallSnippets(font)
+  const { tabs } = getFontInstallSnippets(font)
   return Promise.all(
     tabs.map(async (tab) => {
       if (tab.variants?.length) {
@@ -86,21 +85,9 @@ export async function FontCatalogDetail({ font }: { font: FontCatalogItem }) {
               مشاهده دمو
             </Link>
           </Button>
-          <Button
-            asChild
-            size="icon"
-            variant="outline"
-            className="size-8 rounded-full text-muted-foreground hover:text-foreground"
-          >
-            <Link
-              href={font.sourceUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={
-                font.provider === "google" ? "Google Fonts" : "منبع فونت"
-              }
-            >
-              <ExternalLinkIcon className="size-4" />
+          <Button asChild size="sm" variant="outline">
+            <Link href={font.sourceUrl} target="_blank" rel="noreferrer">
+              منبع
             </Link>
           </Button>
         </div>

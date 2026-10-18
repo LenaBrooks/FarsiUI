@@ -25,7 +25,7 @@ import {
   SelectValue,
 } from "@/registry/bases/base/ui/select"
 import { Textarea } from "@/registry/bases/base/ui/textarea"
-import { FONTS } from "@/lib/font-options"
+import { FONTS } from "@/lib/fonts/options"
 import { useDesignSystemSearchParams } from "@/lib/design-system-search-params"
 
 export default function TypographySpecimen() {

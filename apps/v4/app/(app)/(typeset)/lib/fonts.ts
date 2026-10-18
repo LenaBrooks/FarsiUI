@@ -1,4 +1,4 @@
-import { FONT_DEFINITIONS } from "@/lib/font-definitions"
+import { FONT_DEFINITIONS } from "@/lib/fonts/definitions"
 
 // The pickers/preview want a small {id,label,type} plus a render value (the
 // loaded preview var, with the family as fallback). value is the only computed

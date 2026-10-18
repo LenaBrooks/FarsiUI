@@ -69,7 +69,12 @@
           },
           "content": {
             "type": "string",
-            "description": "The content of the file."
+            "description": "The content of the file. When encoding is base64, this is a base64 string of the binary bytes."
+          },
+          "encoding": {
+            "type": "string",
+            "enum": ["utf-8", "base64"],
+            "description": "How to interpret content when writing the file. Use base64 for binary assets such as woff2 fonts."
           },
           "type": {
             "type": "string",

@@ -152,18 +152,21 @@ export const Icons = {
 }
 
 export function getIconForLanguageExtension(language: string) {
+  // Code figures are always dark chrome (`--code`); fill must follow
+  // `text-code-foreground` (currentColor), not page `--foreground` — otherwise
+  // light UI makes ts/css icons disappear on the dark title bar.
   switch (language) {
     case "json":
-      return <Icons.json />
+      return <Icons.json className="fill-current" />
     case "css":
-      return <Icons.css className="fill-foreground" />
+      return <Icons.css className="fill-current" />
     case "js":
     case "jsx":
     case "ts":
     case "tsx":
     case "typescript":
-      return <Icons.ts className="fill-foreground" />
+      return <Icons.ts className="fill-current" />
     default:
-      return <FileIcon />
+      return <FileIcon className="text-current" />
   }
 }

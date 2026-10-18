@@ -1,6 +1,6 @@
 import { type RegistryItem } from "farsiui/schema"
 
-import { FONT_DEFINITIONS, type FontDefinition } from "@/lib/font-definitions"
+import { FONT_DEFINITIONS, type FontDefinition } from "@/lib/fonts/definitions"
 
 function createFontItem(definition: FontDefinition, role: "body" | "heading") {
   return {

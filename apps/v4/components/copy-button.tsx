@@ -92,7 +92,7 @@ export function CopyButton({
       size="icon"
       variant={variant}
       className={cn(
-        "absolute top-3 right-2 z-10 size-7 cursor-pointer bg-code text-code-foreground hover:bg-white/10 hover:opacity-100 focus-visible:opacity-100",
+        "absolute top-3 right-2 z-10 size-7 cursor-pointer bg-code text-code-foreground hover:bg-white/15 hover:text-code-foreground hover:opacity-100 focus-visible:bg-white/15 focus-visible:text-code-foreground focus-visible:opacity-100 dark:hover:bg-white/15 dark:hover:text-code-foreground",
         className
       )}
       onClick={async () => {

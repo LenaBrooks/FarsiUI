@@ -1255,6 +1255,11 @@
     "categories": ["invoice"]
   },
   {
+    "name": "iran-calendar",
+    "description": "تقویم کامل ایران با ساعت، تبدیل سه‌گانه، تعطیلات رسمی و مناسبت‌ها.",
+    "categories": ["calendar-block"]
+  },
+  {
     "name": "license-plate-01",
     "description": "فرم ثبت پلاک خودرو با تأیید نهایی.",
     "categories": ["license-plate"]

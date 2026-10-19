@@ -67,7 +67,25 @@ if (matches.length > 0) {
           یا چه مناسبت‌هایی دارد. نیازی به نصب پکیج یا راه‌اندازی سرور ندارید؛
           کافی است فایل JSON موردنیاز را از طریق اینترنت دریافت کنید.
         </p>
-        <p>در این راهنما از سال ۱۴۰۵ به‌عنوان مثال استفاده می‌کنیم.</p>
+        <p>
+          برای نصب همان UI تقویم (جدول ماه، مناسبت‌ها، ساعت و کارت تاریخ‌ها) در
+          پروژهٔ خود:
+        </p>
+        <CodeFigure
+          code="npx farsiui@latest add iran-calendar"
+          language="bash"
+          title="terminal"
+          className={codeFigureClass}
+        />
+        <p>
+          بعد از نصب، صفحه در{" "}
+          <code dir="ltr">/iran-calendar</code> در دسترس است و فایل‌ها در{" "}
+          <code dir="ltr">components/iran-calendar/</code> قرار می‌گیرند.
+        </p>
+        <p>
+          در ادامه، فقط مصرف مستقیم فایل‌های JSON توضیح داده شده است. در این
+          راهنما از سال ۱۴۰۵ به‌عنوان مثال استفاده می‌کنیم.
+        </p>
 
         <div className="steps relative mb-12 mt-6 [counter-reset:step] md:ms-4 md:border-s md:ps-8 [&>h3]:step">
           <h3 className="font-heading">سال موردنظر را مشخص کنید</h3>

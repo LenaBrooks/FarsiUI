@@ -654,6 +654,7 @@ const shards: Record<
       "sidebar-04",
       "sidebar-05",
       "sidebar-06",
+      "iran-calendar",
       "use-media-query",
       "use-mobile",
       "use-persian-digits-input",

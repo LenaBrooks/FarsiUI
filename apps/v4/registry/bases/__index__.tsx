@@ -15028,6 +15028,53 @@ export const Index: Record<string, Record<string, any>> = {
       categories: ["sidebar"],
       meta: { iframeHeight: "700px" },
     },
+    "iran-calendar": {
+      name: "iran-calendar",
+      title: "Iran Calendar",
+      description:
+        "تقویم کامل ایران با ساعت، تبدیل سه‌گانه، تعطیلات رسمی و مناسبت‌ها.",
+      type: "registry:block",
+      registryDependencies: ["popover", "select", "digits"],
+      files: [
+        {
+          path: "registry/bases/base/blocks/iran-calendar/page.tsx",
+          type: "registry:page",
+          target: "app/iran-calendar/page.tsx",
+        },
+        {
+          path: "registry/bases/base/blocks/iran-calendar/components/iran-calendar-app.tsx",
+          type: "registry:component",
+          target: "components/iran-calendar/iran-calendar-app.tsx",
+        },
+        {
+          path: "registry/bases/base/blocks/iran-calendar/components/data.ts",
+          type: "registry:lib",
+          target: "components/iran-calendar/data.ts",
+        },
+        {
+          path: "registry/bases/base/blocks/iran-calendar/components/jalali.ts",
+          type: "registry:lib",
+          target: "components/iran-calendar/jalali.ts",
+        },
+        {
+          path: "registry/bases/base/blocks/iran-calendar/components/types.ts",
+          type: "registry:lib",
+          target: "components/iran-calendar/types.ts",
+        },
+        {
+          path: "registry/bases/base/blocks/iran-calendar/components/cdn.ts",
+          type: "registry:lib",
+          target: "components/iran-calendar/cdn.ts",
+        },
+      ],
+      categories: ["calendar-block"],
+      meta: {
+        iframeHeight: "1200px",
+        links: {
+          docs: "https://farsiui.ir/docs/components/base/iran-calendar",
+        },
+      },
+    },
     "use-media-query": {
       name: "use-media-query",
       title: "undefined",

@@ -5644,6 +5644,14 @@ export const Components: Record<string, any> = {
       ) || "sidebar-06"
     return { default: mod.default || mod[exportName] }
   }),
+  "iran-calendar": React.lazy(async () => {
+    const mod = await import("@/registry/bases/base/blocks/iran-calendar/page")
+    const exportName =
+      Object.keys(mod).find(
+        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
+      ) || "iran-calendar"
+    return { default: mod.default || mod[exportName] }
+  }),
   "use-media-query": React.lazy(async () => {
     const mod = await import("@/registry/bases/base/hooks/use-media-query")
     const exportName =

@@ -340,11 +340,11 @@ export function IranCalendarApp({ year }: { year?: number }) {
           <div className="flex items-start justify-between gap-2 px-3 pt-4 sm:px-4 md:px-5">
             <button
               type="button"
-              onClick={() => goMonth(1)}
+              onClick={() => goMonth(-1)}
               className="mt-1 inline-flex !cursor-pointer items-center gap-1 text-xs font-medium text-primary"
             >
               <ChevronRightIcon className="size-4" />
-              ماه بعد
+              ماه قبل
             </button>
 
             <div className="relative flex flex-col items-center gap-1 text-center">
@@ -508,10 +508,10 @@ export function IranCalendarApp({ year }: { year?: number }) {
 
             <button
               type="button"
-              onClick={() => goMonth(-1)}
+              onClick={() => goMonth(1)}
               className="mt-1 inline-flex !cursor-pointer items-center gap-1 text-xs font-medium text-primary"
             >
-              ماه قبل
+              ماه بعد
               <ChevronLeftIcon className="size-4" />
             </button>
           </div>

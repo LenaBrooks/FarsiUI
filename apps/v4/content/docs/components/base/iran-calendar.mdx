@@ -1,0 +1,50 @@
+---
+title: تقویم ایران (Iran Calendar)
+description: تقویم کامل شمسی با ساعت، تبدیل میلادی و قمری، تعطیلات رسمی و مناسبت‌ها.
+base: base
+component: true
+featured: true
+---
+
+## نصب
+
+```bash
+npx farsiui@latest add iran-calendar
+```
+
+پس از نصب:
+
+- کامپوننت‌ها در `components/iran-calendar/`
+- صفحه در `app/iran-calendar/page.tsx` → مسیر `/iran-calendar`
+
+وابستگی‌های `popover`، `select` و `digits` همراه نصب می‌شوند. دادهٔ تعطیلات و مناسبت‌ها از GitHub Raw خوانده می‌شود و داخل پروژه کپی نمی‌گردد.
+
+## استفاده
+
+صفحهٔ آماده‌شده را باز کنید:
+
+```text
+/iran-calendar
+```
+
+یا کامپوننت را هر جا که خواستید رندر کنید:
+
+```tsx showLineNumbers
+"use client"
+
+import { IranCalendarApp } from "@/components/iran-calendar/iran-calendar-app"
+
+export default function Page() {
+  return <IranCalendarApp />
+}
+```
+
+## داده
+
+فایل‌های JSON سال‌ها روی ریپوی FarsiUI هستند. نمونه:
+
+```text
+https://raw.githubusercontent.com/MiladJoodi/FarsiUI/main/calendar/years/1405/holidays.json
+```
+
+منبع اصلی داده‌ها، سایت رسمی مرکز تقویم دانشگاه تهران است.

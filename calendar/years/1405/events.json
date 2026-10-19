@@ -1,11 +1,11 @@
 {
   "year": 1405,
   "schemaVersion": 1,
-  "dataVersion": "1405.1.0",
+  "dataVersion": "1405.2.0",
   "coverage": "none-in-this-release",
   "items": [],
   "notes": [
-    "Official holidays (including religious/lunar) live in holidays.json. This file remains empty: non-holiday observances (isHoliday:false) are not curated yet.",
+    "Official holidays (including religious/lunar) live in holidays.json, aligned with UT Holiday-1405.pdf. This file remains empty: non-holiday observances are not curated yet.",
     "Do not treat an empty list as 'no events exist in 1405'."
   ]
 }

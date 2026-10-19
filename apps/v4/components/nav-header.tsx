@@ -31,7 +31,7 @@ export function NavHeader() {
             <Link href="/charts">نمودارها</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuLink
             asChild
             data-active={
@@ -50,7 +50,7 @@ export function NavHeader() {
           >
             <Link href="/calendar">تقویم</Link>
           </NavigationMenuLink>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild data-active={pathname === "/forms"}>
             <Link href="/forms">فرم‌ها</Link>

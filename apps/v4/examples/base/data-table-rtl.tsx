@@ -184,7 +184,7 @@ export default function DataTableRtl() {
           ),
         }),
         columnHelper.accessor("amount", {
-          header: () => <div className="text-end">مبلغ</div>,
+          header: () => <div className="w-full text-end">مبلغ</div>,
           cell: ({ row }) => {
             const amount = parseFloat(row.getValue("amount"))
             const formatted = toPersianDigits(
@@ -195,7 +195,7 @@ export default function DataTableRtl() {
             )
 
             return (
-              <div className="text-end font-normal tracking-normal [font-variant-numeric:normal]">
+              <div className="w-full text-end font-normal tracking-normal [font-variant-numeric:normal]">
                 {formatted} تومان
               </div>
             )

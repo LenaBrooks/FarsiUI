@@ -88,14 +88,54 @@ export function getDemoComponent(name: string, styleName: string) {
   return getExamplesComponent(key, name)
 }
 
-export async function getDemoItem(name: string, styleName: string) {
+/** Sync ExamplesIndex lookup (no file read). Includes baked hookDependencies. */
+export function getDemoMeta(name: string, styleName: string) {
   const key = getDemoIndexKey(styleName)
   const demo = ExamplesIndex[key]?.[name]
   if (!demo) {
     return null
   }
 
-  const content = await readFileFromRoot(demo.filePath)
+  return {
+    name: demo.name as string,
+    filePath: demo.filePath as string,
+    hookDependencies: Array.isArray(demo.hookDependencies)
+      ? (demo.hookDependencies as string[])
+      : null,
+  }
+}
+
+function isNotFoundError(error: unknown): boolean {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "code" in error &&
+    (error as NodeJS.ErrnoException).code === "ENOENT"
+  )
+}
+
+export async function getDemoItem(name: string, styleName: string) {
+  const demo = getDemoMeta(name, styleName)
+  if (!demo) {
+    return null
+  }
+
+  // Missing demo file → null (same shape as unknown name). Other I/O errors
+  // still throw so view/variant-preview/docs do not hide real failures.
+  // readFileFromRoot stays a thin fs wrapper; callers that need typed results
+  // (docs lazy source) use getHighlightedComponentSourceResult instead.
+  let content: string
+  try {
+    content = await readFileFromRoot(demo.filePath)
+  } catch (error) {
+    if (isNotFoundError(error)) {
+      console.error(
+        `[getDemoItem] missing file for ${styleName}:${name} at ${demo.filePath}`
+      )
+      return null
+    }
+    throw error
+  }
 
   return {
     name: demo.name,

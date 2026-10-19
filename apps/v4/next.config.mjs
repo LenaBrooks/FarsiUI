@@ -94,10 +94,14 @@ const nextConfig = {
     ],
     "/docs/[[...slug]]": [
       "./examples/**/*",
+      // ComponentSource src="/app/(app)/examples/..." (data-table tasks helpers).
+      // Distinct from ./examples/** (installable demos under apps/v4/examples).
+      "./app/(app)/examples/**/*",
       "./registry/**/*",
       "./styles/**/*",
       "./content/docs/**/*",
     ],
+    // Changelog MDX has no ComponentSource src= into app/(app)/examples; keep lean.
     "/docs/changelog": ["./examples/**/*", "./content/docs/**/*"],
     // Specimen preview serves woff2 from the monorepo `fonts/` tree.
     "/catalog-fonts/[...path]": ["../../fonts/**/*"],

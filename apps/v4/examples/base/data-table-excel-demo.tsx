@@ -46,7 +46,7 @@ export default function DataTableExcelDemo() {
           <TableHeader>
             <TableRow>
               <TableHead>نام</TableHead>
-              <TableHead>مبلغ</TableHead>
+              <TableHead className="text-end">مبلغ</TableHead>
               <TableHead>وضعیت</TableHead>
             </TableRow>
           </TableHeader>
@@ -54,7 +54,7 @@ export default function DataTableExcelDemo() {
             {rows.map((row) => (
               <TableRow key={row.name}>
                 <TableCell>{row.name}</TableCell>
-                <TableCell className="tabular-nums">
+                <TableCell className="text-end tabular-nums">
                   {row.amount.toLocaleString("fa-IR")}
                 </TableCell>
                 <TableCell>{row.status}</TableCell>

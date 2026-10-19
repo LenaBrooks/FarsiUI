@@ -72,9 +72,10 @@ export function ComponentPreviewTabs({
             dir={direction}
             data-chromeless={chromeLessOnMobile}
             className={cn(
+              // Absolute iframe fills the host; height must stay definite.
               "relative w-full overflow-hidden data-[chromeless=true]:h-auto",
               chromeLessOnMobile ? "h-auto min-h-56" : "h-72",
-              previewClassName
+              iframePreviewClassName(previewClassName)
             )}
           >
             <PreviewThemeIframe
@@ -113,17 +114,20 @@ export function ComponentPreviewTabs({
             data-slot="code"
             data-not-typeset
             data-mobile-code-visible={isMobileCodeVisible}
-            className="relative overflow-hidden **:data-[slot=copy-button]:right-4 **:data-[slot=copy-button]:hidden data-[mobile-code-visible=true]:**:data-[slot=copy-button]:flex [&_[data-rehype-pretty-code-figure]]:m-0! [&_[data-rehype-pretty-code-figure]]:rounded-t-none [&_[data-rehype-pretty-code-figure]]:border-t [&_pre]:max-h-72"
+            className="relative overflow-hidden border-t **:data-[slot=copy-button]:top-3 **:data-[slot=copy-button]:right-3 **:data-[slot=copy-button]:hidden data-[mobile-code-visible=true]:**:data-[slot=copy-button]:flex [&_[data-rehype-pretty-code-figure]]:m-0! [&_[data-rehype-pretty-code-figure]]:rounded-none"
           >
             {isMobileCodeVisible ? (
-              name ? (
-                <ComponentSourceLazy
-                  name={name}
-                  styleName={previewStyleName}
-                />
-              ) : (
-                <>{source}</>
-              )
+              <div dir="ltr" className="relative max-h-72 overflow-auto">
+                {name ? (
+                  <ComponentSourceLazy
+                    name={name}
+                    styleName={previewStyleName}
+                    collapsible={false}
+                  />
+                ) : (
+                  <>{source}</>
+                )}
+              </div>
             ) : (
               <div className="relative flex h-16 items-center justify-center bg-muted/20">
                 <Button
@@ -146,6 +150,31 @@ export function ComponentPreviewTabs({
       <ExampleDependencies dependencies={dependencies} />
     </div>
   )
+}
+
+/**
+ * MDX often passes `h-auto! min-h-0 p-*` meant for inline demos.
+ * Absolute iframe hosts ignore padding/flex align and collapse on h-auto —
+ * keep only real height utilities (e.g. h-96).
+ */
+function iframePreviewClassName(previewClassName?: string) {
+  if (!previewClassName) return undefined
+  const kept = previewClassName.split(/\s+/).filter((token) => {
+    if (!token) return false
+    if (
+      token === "h-auto" ||
+      token === "h-auto!" ||
+      token === "min-h-0" ||
+      token === "min-h-0!"
+    ) {
+      return false
+    }
+    if (/^(p|px|py|pt|pb|ps|pe|pl|pr|items|justify)-/.test(token)) {
+      return false
+    }
+    return true
+  })
+  return kept.length ? kept.join(" ") : undefined
 }
 
 const directionTranslations: Translations<Record<string, never>> = {

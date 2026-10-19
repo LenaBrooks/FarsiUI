@@ -17,14 +17,26 @@ const viewCodeButtonClassName =
 export function CodeCollapsibleWrapper({
   className,
   children,
+  open: openProp,
+  defaultOpen = false,
+  onOpenChange,
   ...props
 }: React.ComponentProps<typeof Collapsible>) {
-  const [isOpened, setIsOpened] = React.useState(false)
+  const [uncontrolledOpen, setUncontrolledOpen] = React.useState(defaultOpen)
+  const isControlled = openProp !== undefined
+  const isOpened = isControlled ? openProp : uncontrolledOpen
+
+  const handleOpenChange = (next: boolean) => {
+    if (!isControlled) {
+      setUncontrolledOpen(next)
+    }
+    onOpenChange?.(next)
+  }
 
   return (
     <Collapsible
       open={isOpened}
-      onOpenChange={setIsOpened}
+      onOpenChange={handleOpenChange}
       className={cn("group/collapsible relative md:-mx-1", className)}
       {...props}
     >

@@ -9,6 +9,19 @@ import { CodeCollapsibleWrapper } from "@/components/code-collapsible-wrapper"
 import { CopyButton } from "@/components/copy-button"
 import { getIconForLanguageExtension } from "@/components/icons"
 
+function isNotFoundError(error: unknown): boolean {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "code" in error &&
+    (error as NodeJS.ErrnoException).code === "ENOENT"
+  )
+}
+
+function normalizeSrc(src: string) {
+  return src.replace(/^\/+/, "")
+}
+
 export async function ComponentSource({
   name,
   src,
@@ -40,8 +53,19 @@ export async function ComponentSource({
     code = item?.files?.[0]?.content
   }
 
+  // Scoped docs caller harden (Phase E2): strip MDX leading `/`, map ENOENT →
+  // null UI. Do not change shared readFileFromRoot. Other I/O still throws.
   if (src) {
-    code = await readFileFromRoot(src)
+    try {
+      code = await readFileFromRoot(normalizeSrc(src))
+    } catch (error) {
+      if (isNotFoundError(error)) {
+        console.error(`[ComponentSource] missing src file: ${src}`)
+        code = undefined
+      } else {
+        throw error
+      }
+    }
   }
 
   if (!code) {

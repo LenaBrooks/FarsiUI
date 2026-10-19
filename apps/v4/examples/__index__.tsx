@@ -8,6206 +8,7756 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/base/accordion-basic.tsx",
+      hookDependencies: [],
     },
     "accordion-borders": {
       name: "accordion-borders",
       filePath: "examples/base/accordion-borders.tsx",
+      hookDependencies: [],
     },
     "accordion-card": {
       name: "accordion-card",
       filePath: "examples/base/accordion-card.tsx",
+      hookDependencies: [],
     },
     "accordion-demo": {
       name: "accordion-demo",
       filePath: "examples/base/accordion-demo.tsx",
+      hookDependencies: [],
     },
     "accordion-disabled": {
       name: "accordion-disabled",
       filePath: "examples/base/accordion-disabled.tsx",
+      hookDependencies: [],
     },
     "accordion-multiple": {
       name: "accordion-multiple",
       filePath: "examples/base/accordion-multiple.tsx",
+      hookDependencies: [],
     },
     "accordion-rtl": {
       name: "accordion-rtl",
       filePath: "examples/base/accordion-rtl.tsx",
+      hookDependencies: [],
     },
     "address-form-demo": {
       name: "address-form-demo",
       filePath: "examples/base/address-form-demo.tsx",
+      hookDependencies: [],
     },
     "ai-sdk-helper-demo": {
       name: "ai-sdk-helper-demo",
       filePath: "examples/base/ai-sdk-helper-demo.tsx",
+      hookDependencies: [],
     },
     "alert-action": {
       name: "alert-action",
       filePath: "examples/base/alert-action.tsx",
+      hookDependencies: [],
     },
     "alert-basic": {
       name: "alert-basic",
       filePath: "examples/base/alert-basic.tsx",
+      hookDependencies: [],
     },
     "alert-colors": {
       name: "alert-colors",
       filePath: "examples/base/alert-colors.tsx",
+      hookDependencies: [],
     },
     "alert-demo": {
       name: "alert-demo",
       filePath: "examples/base/alert-demo.tsx",
+      hookDependencies: [],
     },
     "alert-destructive": {
       name: "alert-destructive",
       filePath: "examples/base/alert-destructive.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-basic": {
       name: "alert-dialog-basic",
       filePath: "examples/base/alert-dialog-basic.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-close": {
       name: "alert-dialog-close",
       filePath: "examples/base/alert-dialog-close.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-demo": {
       name: "alert-dialog-demo",
       filePath: "examples/base/alert-dialog-demo.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-destructive": {
       name: "alert-dialog-destructive",
       filePath: "examples/base/alert-dialog-destructive.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-media": {
       name: "alert-dialog-media",
       filePath: "examples/base/alert-dialog-media.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-rtl": {
       name: "alert-dialog-rtl",
       filePath: "examples/base/alert-dialog-rtl.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-small-media": {
       name: "alert-dialog-small-media",
       filePath: "examples/base/alert-dialog-small-media.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-small": {
       name: "alert-dialog-small",
       filePath: "examples/base/alert-dialog-small.tsx",
+      hookDependencies: [],
     },
     "alert-rtl": {
       name: "alert-rtl",
       filePath: "examples/base/alert-rtl.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-demo": {
       name: "aspect-ratio-demo",
       filePath: "examples/base/aspect-ratio-demo.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-portrait": {
       name: "aspect-ratio-portrait",
       filePath: "examples/base/aspect-ratio-portrait.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-rtl": {
       name: "aspect-ratio-rtl",
       filePath: "examples/base/aspect-ratio-rtl.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-square": {
       name: "aspect-ratio-square",
       filePath: "examples/base/aspect-ratio-square.tsx",
+      hookDependencies: [],
     },
     "attachment-demo": {
       name: "attachment-demo",
       filePath: "examples/base/attachment-demo.tsx",
+      hookDependencies: [],
     },
     "attachment-group": {
       name: "attachment-group",
       filePath: "examples/base/attachment-group.tsx",
+      hookDependencies: [],
     },
     "attachment-image": {
       name: "attachment-image",
       filePath: "examples/base/attachment-image.tsx",
+      hookDependencies: [],
     },
     "attachment-sizes": {
       name: "attachment-sizes",
       filePath: "examples/base/attachment-sizes.tsx",
+      hookDependencies: [],
     },
     "attachment-states": {
       name: "attachment-states",
       filePath: "examples/base/attachment-states.tsx",
+      hookDependencies: [],
     },
     "attachment-trigger": {
       name: "attachment-trigger",
       filePath: "examples/base/attachment-trigger.tsx",
+      hookDependencies: [],
     },
     "avatar-badge-icon": {
       name: "avatar-badge-icon",
       filePath: "examples/base/avatar-badge-icon.tsx",
+      hookDependencies: [],
     },
     "avatar-badge": {
       name: "avatar-badge",
       filePath: "examples/base/avatar-badge.tsx",
+      hookDependencies: [],
     },
     "avatar-basic": {
       name: "avatar-basic",
       filePath: "examples/base/avatar-basic.tsx",
+      hookDependencies: [],
     },
     "avatar-demo": {
       name: "avatar-demo",
       filePath: "examples/base/avatar-demo.tsx",
+      hookDependencies: [],
     },
     "avatar-dropdown": {
       name: "avatar-dropdown",
       filePath: "examples/base/avatar-dropdown.tsx",
+      hookDependencies: [],
     },
     "avatar-group-count-icon": {
       name: "avatar-group-count-icon",
       filePath: "examples/base/avatar-group-count-icon.tsx",
+      hookDependencies: [],
     },
     "avatar-group-count": {
       name: "avatar-group-count",
       filePath: "examples/base/avatar-group-count.tsx",
+      hookDependencies: [],
     },
     "avatar-group": {
       name: "avatar-group",
       filePath: "examples/base/avatar-group.tsx",
+      hookDependencies: [],
     },
     "avatar-rtl": {
       name: "avatar-rtl",
       filePath: "examples/base/avatar-rtl.tsx",
+      hookDependencies: [],
     },
     "avatar-size": {
       name: "avatar-size",
       filePath: "examples/base/avatar-size.tsx",
+      hookDependencies: [],
     },
     "badge-colors": {
       name: "badge-colors",
       filePath: "examples/base/badge-colors.tsx",
+      hookDependencies: [],
     },
     "badge-demo": {
       name: "badge-demo",
       filePath: "examples/base/badge-demo.tsx",
+      hookDependencies: [],
     },
     "badge-icon": {
       name: "badge-icon",
       filePath: "examples/base/badge-icon.tsx",
+      hookDependencies: [],
     },
     "badge-link": {
       name: "badge-link",
       filePath: "examples/base/badge-link.tsx",
+      hookDependencies: [],
     },
     "badge-rtl": {
       name: "badge-rtl",
       filePath: "examples/base/badge-rtl.tsx",
+      hookDependencies: [],
     },
     "badge-spinner": {
       name: "badge-spinner",
       filePath: "examples/base/badge-spinner.tsx",
+      hookDependencies: [],
     },
     "badge-variants": {
       name: "badge-variants",
       filePath: "examples/base/badge-variants.tsx",
+      hookDependencies: [],
     },
     "bank-card-input-demo": {
       name: "bank-card-input-demo",
       filePath: "examples/base/bank-card-input-demo.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-basic": {
       name: "breadcrumb-basic",
       filePath: "examples/base/breadcrumb-basic.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-demo": {
       name: "breadcrumb-demo",
       filePath: "examples/base/breadcrumb-demo.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-dropdown": {
       name: "breadcrumb-dropdown",
       filePath: "examples/base/breadcrumb-dropdown.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-ellipsis": {
       name: "breadcrumb-ellipsis",
       filePath: "examples/base/breadcrumb-ellipsis.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-link": {
       name: "breadcrumb-link",
       filePath: "examples/base/breadcrumb-link.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-rtl": {
       name: "breadcrumb-rtl",
       filePath: "examples/base/breadcrumb-rtl.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-separator": {
       name: "breadcrumb-separator",
       filePath: "examples/base/breadcrumb-separator.tsx",
+      hookDependencies: [],
     },
     "bubble-alignment": {
       name: "bubble-alignment",
       filePath: "examples/base/bubble-alignment.tsx",
+      hookDependencies: [],
     },
     "bubble-collapsible": {
       name: "bubble-collapsible",
       filePath: "examples/base/bubble-collapsible.tsx",
+      hookDependencies: [],
     },
     "bubble-demo": {
       name: "bubble-demo",
       filePath: "examples/base/bubble-demo.tsx",
+      hookDependencies: [],
     },
     "bubble-group-demo": {
       name: "bubble-group-demo",
       filePath: "examples/base/bubble-group-demo.tsx",
+      hookDependencies: [],
     },
     "bubble-link-button": {
       name: "bubble-link-button",
       filePath: "examples/base/bubble-link-button.tsx",
+      hookDependencies: [],
     },
     "bubble-markdown": {
       name: "bubble-markdown",
       filePath: "examples/base/bubble-markdown.tsx",
+      hookDependencies: [],
     },
     "bubble-popover": {
       name: "bubble-popover",
       filePath: "examples/base/bubble-popover.tsx",
+      hookDependencies: [],
     },
     "bubble-reactions": {
       name: "bubble-reactions",
       filePath: "examples/base/bubble-reactions.tsx",
+      hookDependencies: [],
     },
     "bubble-tooltip": {
       name: "bubble-tooltip",
       filePath: "examples/base/bubble-tooltip.tsx",
+      hookDependencies: [],
     },
     "bubble-variants": {
       name: "bubble-variants",
       filePath: "examples/base/bubble-variants.tsx",
+      hookDependencies: [],
     },
     "button-default": {
       name: "button-default",
       filePath: "examples/base/button-default.tsx",
+      hookDependencies: [],
     },
     "button-demo": {
       name: "button-demo",
       filePath: "examples/base/button-demo.tsx",
+      hookDependencies: [],
     },
     "button-destructive": {
       name: "button-destructive",
       filePath: "examples/base/button-destructive.tsx",
+      hookDependencies: [],
     },
     "button-disabled": {
       name: "button-disabled",
       filePath: "examples/base/button-disabled.tsx",
+      hookDependencies: [],
     },
     "button-ghost": {
       name: "button-ghost",
       filePath: "examples/base/button-ghost.tsx",
+      hookDependencies: [],
     },
     "button-group-demo": {
       name: "button-group-demo",
       filePath: "examples/base/button-group-demo.tsx",
+      hookDependencies: [],
     },
     "button-group-dropdown": {
       name: "button-group-dropdown",
       filePath: "examples/base/button-group-dropdown.tsx",
+      hookDependencies: [],
     },
     "button-group-input-group": {
       name: "button-group-input-group",
       filePath: "examples/base/button-group-input-group.tsx",
+      hookDependencies: [],
     },
     "button-group-input": {
       name: "button-group-input",
       filePath: "examples/base/button-group-input.tsx",
+      hookDependencies: [],
     },
     "button-group-nested": {
       name: "button-group-nested",
       filePath: "examples/base/button-group-nested.tsx",
+      hookDependencies: [],
     },
     "button-group-orientation": {
       name: "button-group-orientation",
       filePath: "examples/base/button-group-orientation.tsx",
+      hookDependencies: [],
     },
     "button-group-popover": {
       name: "button-group-popover",
       filePath: "examples/base/button-group-popover.tsx",
+      hookDependencies: [],
     },
     "button-group-rtl": {
       name: "button-group-rtl",
       filePath: "examples/base/button-group-rtl.tsx",
+      hookDependencies: [],
     },
     "button-group-select": {
       name: "button-group-select",
       filePath: "examples/base/button-group-select.tsx",
+      hookDependencies: [],
     },
     "button-group-separator": {
       name: "button-group-separator",
       filePath: "examples/base/button-group-separator.tsx",
+      hookDependencies: [],
     },
     "button-group-size": {
       name: "button-group-size",
       filePath: "examples/base/button-group-size.tsx",
+      hookDependencies: [],
     },
     "button-group-split": {
       name: "button-group-split",
       filePath: "examples/base/button-group-split.tsx",
+      hookDependencies: [],
     },
     "button-icon": {
       name: "button-icon",
       filePath: "examples/base/button-icon.tsx",
+      hookDependencies: [],
     },
     "button-link": {
       name: "button-link",
       filePath: "examples/base/button-link.tsx",
+      hookDependencies: [],
     },
     "button-outline": {
       name: "button-outline",
       filePath: "examples/base/button-outline.tsx",
+      hookDependencies: [],
     },
     "button-render": {
       name: "button-render",
       filePath: "examples/base/button-render.tsx",
+      hookDependencies: [],
     },
     "button-rounded": {
       name: "button-rounded",
       filePath: "examples/base/button-rounded.tsx",
+      hookDependencies: [],
     },
     "button-rtl": {
       name: "button-rtl",
       filePath: "examples/base/button-rtl.tsx",
+      hookDependencies: [],
     },
     "button-secondary": {
       name: "button-secondary",
       filePath: "examples/base/button-secondary.tsx",
+      hookDependencies: [],
     },
     "button-size-default": {
       name: "button-size-default",
       filePath: "examples/base/button-size-default.tsx",
+      hookDependencies: [],
     },
     "button-size-lg": {
       name: "button-size-lg",
       filePath: "examples/base/button-size-lg.tsx",
+      hookDependencies: [],
     },
     "button-size-sm": {
       name: "button-size-sm",
       filePath: "examples/base/button-size-sm.tsx",
+      hookDependencies: [],
     },
     "button-size-xs": {
       name: "button-size-xs",
       filePath: "examples/base/button-size-xs.tsx",
+      hookDependencies: [],
     },
     "button-size": {
       name: "button-size",
       filePath: "examples/base/button-size.tsx",
+      hookDependencies: [],
     },
     "button-spinner": {
       name: "button-spinner",
       filePath: "examples/base/button-spinner.tsx",
+      hookDependencies: [],
     },
     "button-with-icon": {
       name: "button-with-icon",
       filePath: "examples/base/button-with-icon.tsx",
+      hookDependencies: [],
     },
     "calendar-basic": {
       name: "calendar-basic",
       filePath: "examples/base/calendar-basic.tsx",
+      hookDependencies: [],
     },
     "calendar-booked-dates": {
       name: "calendar-booked-dates",
       filePath: "examples/base/calendar-booked-dates.tsx",
+      hookDependencies: [],
     },
     "calendar-caption": {
       name: "calendar-caption",
       filePath: "examples/base/calendar-caption.tsx",
+      hookDependencies: [],
     },
     "calendar-custom-days": {
       name: "calendar-custom-days",
       filePath: "examples/base/calendar-custom-days.tsx",
+      hookDependencies: [],
     },
     "calendar-demo": {
       name: "calendar-demo",
       filePath: "examples/base/calendar-demo.tsx",
+      hookDependencies: [],
     },
     "calendar-hijri": {
       name: "calendar-hijri",
       filePath: "examples/base/calendar-hijri.tsx",
+      hookDependencies: [],
     },
     "calendar-multiple": {
       name: "calendar-multiple",
       filePath: "examples/base/calendar-multiple.tsx",
+      hookDependencies: [],
     },
     "calendar-presets": {
       name: "calendar-presets",
       filePath: "examples/base/calendar-presets.tsx",
+      hookDependencies: [],
     },
     "calendar-range": {
       name: "calendar-range",
       filePath: "examples/base/calendar-range.tsx",
+      hookDependencies: [],
     },
     "calendar-rtl": {
       name: "calendar-rtl",
       filePath: "examples/base/calendar-rtl.tsx",
+      hookDependencies: [],
     },
     "calendar-time": {
       name: "calendar-time",
       filePath: "examples/base/calendar-time.tsx",
+      hookDependencies: [],
     },
     "calendar-week-numbers": {
       name: "calendar-week-numbers",
       filePath: "examples/base/calendar-week-numbers.tsx",
+      hookDependencies: [],
     },
     "card-demo": {
       name: "card-demo",
       filePath: "examples/base/card-demo.tsx",
+      hookDependencies: [],
     },
     "card-edge-to-edge": {
       name: "card-edge-to-edge",
       filePath: "examples/base/card-edge-to-edge.tsx",
+      hookDependencies: [],
     },
     "card-image": {
       name: "card-image",
       filePath: "examples/base/card-image.tsx",
+      hookDependencies: [],
     },
     "card-rtl": {
       name: "card-rtl",
       filePath: "examples/base/card-rtl.tsx",
+      hookDependencies: [],
     },
     "card-small": {
       name: "card-small",
       filePath: "examples/base/card-small.tsx",
+      hookDependencies: [],
     },
     "card-spacing": {
       name: "card-spacing",
       filePath: "examples/base/card-spacing.tsx",
+      hookDependencies: [],
     },
     "carousel-api": {
       name: "carousel-api",
       filePath: "examples/base/carousel-api.tsx",
+      hookDependencies: [],
     },
     "carousel-demo": {
       name: "carousel-demo",
       filePath: "examples/base/carousel-demo.tsx",
+      hookDependencies: [],
     },
     "carousel-multiple": {
       name: "carousel-multiple",
       filePath: "examples/base/carousel-multiple.tsx",
+      hookDependencies: [],
     },
     "carousel-orientation": {
       name: "carousel-orientation",
       filePath: "examples/base/carousel-orientation.tsx",
+      hookDependencies: [],
     },
     "carousel-plugin": {
       name: "carousel-plugin",
       filePath: "examples/base/carousel-plugin.tsx",
+      hookDependencies: [],
     },
     "carousel-rtl": {
       name: "carousel-rtl",
       filePath: "examples/base/carousel-rtl.tsx",
+      hookDependencies: [],
     },
     "carousel-size": {
       name: "carousel-size",
       filePath: "examples/base/carousel-size.tsx",
+      hookDependencies: [],
     },
     "carousel-spacing": {
       name: "carousel-spacing",
       filePath: "examples/base/carousel-spacing.tsx",
+      hookDependencies: [],
     },
     "chart-demo": {
       name: "chart-demo",
       filePath: "examples/base/chart-demo.tsx",
+      hookDependencies: [],
     },
     "chart-example-axis": {
       name: "chart-example-axis",
       filePath: "examples/base/chart-example-axis.tsx",
+      hookDependencies: [],
     },
     "chart-example-grid": {
       name: "chart-example-grid",
       filePath: "examples/base/chart-example-grid.tsx",
+      hookDependencies: [],
     },
     "chart-example-legend": {
       name: "chart-example-legend",
       filePath: "examples/base/chart-example-legend.tsx",
+      hookDependencies: [],
     },
     "chart-example-tooltip": {
       name: "chart-example-tooltip",
       filePath: "examples/base/chart-example-tooltip.tsx",
+      hookDependencies: [],
     },
     "chart-example": {
       name: "chart-example",
       filePath: "examples/base/chart-example.tsx",
+      hookDependencies: [],
     },
     "chart-rtl": {
       name: "chart-rtl",
       filePath: "examples/base/chart-rtl.tsx",
+      hookDependencies: [],
     },
     "chart-tooltip": {
       name: "chart-tooltip",
       filePath: "examples/base/chart-tooltip.tsx",
+      hookDependencies: [],
     },
     "checkbox-basic": {
       name: "checkbox-basic",
       filePath: "examples/base/checkbox-basic.tsx",
+      hookDependencies: [],
     },
     "checkbox-demo": {
       name: "checkbox-demo",
       filePath: "examples/base/checkbox-demo.tsx",
+      hookDependencies: [],
     },
     "checkbox-description": {
       name: "checkbox-description",
       filePath: "examples/base/checkbox-description.tsx",
+      hookDependencies: [],
     },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       filePath: "examples/base/checkbox-disabled.tsx",
+      hookDependencies: [],
     },
     "checkbox-group": {
       name: "checkbox-group",
       filePath: "examples/base/checkbox-group.tsx",
+      hookDependencies: [],
     },
     "checkbox-invalid": {
       name: "checkbox-invalid",
       filePath: "examples/base/checkbox-invalid.tsx",
+      hookDependencies: [],
     },
     "checkbox-rtl": {
       name: "checkbox-rtl",
       filePath: "examples/base/checkbox-rtl.tsx",
+      hookDependencies: [],
     },
     "checkbox-table": {
       name: "checkbox-table",
       filePath: "examples/base/checkbox-table.tsx",
+      hookDependencies: [],
     },
     "collapsible-basic": {
       name: "collapsible-basic",
       filePath: "examples/base/collapsible-basic.tsx",
+      hookDependencies: [],
     },
     "collapsible-demo": {
       name: "collapsible-demo",
       filePath: "examples/base/collapsible-demo.tsx",
+      hookDependencies: [],
     },
     "collapsible-file-tree": {
       name: "collapsible-file-tree",
       filePath: "examples/base/collapsible-file-tree.tsx",
+      hookDependencies: [],
     },
     "collapsible-rtl": {
       name: "collapsible-rtl",
       filePath: "examples/base/collapsible-rtl.tsx",
+      hookDependencies: [],
     },
     "collapsible-settings": {
       name: "collapsible-settings",
       filePath: "examples/base/collapsible-settings.tsx",
+      hookDependencies: [],
     },
     "combobox-auto-highlight": {
       name: "combobox-auto-highlight",
       filePath: "examples/base/combobox-auto-highlight.tsx",
+      hookDependencies: [],
     },
     "combobox-basic": {
       name: "combobox-basic",
       filePath: "examples/base/combobox-basic.tsx",
+      hookDependencies: [],
     },
     "combobox-clear": {
       name: "combobox-clear",
       filePath: "examples/base/combobox-clear.tsx",
+      hookDependencies: [],
     },
     "combobox-custom": {
       name: "combobox-custom",
       filePath: "examples/base/combobox-custom.tsx",
+      hookDependencies: [],
     },
     "combobox-demo": {
       name: "combobox-demo",
       filePath: "examples/base/combobox-demo.tsx",
+      hookDependencies: [],
     },
     "combobox-disabled": {
       name: "combobox-disabled",
       filePath: "examples/base/combobox-disabled.tsx",
+      hookDependencies: [],
     },
     "combobox-groups": {
       name: "combobox-groups",
       filePath: "examples/base/combobox-groups.tsx",
+      hookDependencies: [],
     },
     "combobox-input-group": {
       name: "combobox-input-group",
       filePath: "examples/base/combobox-input-group.tsx",
+      hookDependencies: [],
     },
     "combobox-invalid": {
       name: "combobox-invalid",
       filePath: "examples/base/combobox-invalid.tsx",
+      hookDependencies: [],
     },
     "combobox-multiple": {
       name: "combobox-multiple",
       filePath: "examples/base/combobox-multiple.tsx",
+      hookDependencies: [],
     },
     "combobox-popup": {
       name: "combobox-popup",
       filePath: "examples/base/combobox-popup.tsx",
+      hookDependencies: [],
     },
     "combobox-rtl": {
       name: "combobox-rtl",
       filePath: "examples/base/combobox-rtl.tsx",
+      hookDependencies: [],
     },
     "command-basic": {
       name: "command-basic",
       filePath: "examples/base/command-basic.tsx",
+      hookDependencies: [],
     },
     "command-demo": {
       name: "command-demo",
       filePath: "examples/base/command-demo.tsx",
+      hookDependencies: [],
     },
     "command-dialog": {
       name: "command-dialog",
       filePath: "examples/base/command-dialog.tsx",
+      hookDependencies: [],
     },
     "command-groups": {
       name: "command-groups",
       filePath: "examples/base/command-groups.tsx",
+      hookDependencies: [],
     },
     "command-rtl": {
       name: "command-rtl",
       filePath: "examples/base/command-rtl.tsx",
+      hookDependencies: [],
     },
     "command-scrollable": {
       name: "command-scrollable",
       filePath: "examples/base/command-scrollable.tsx",
+      hookDependencies: [],
     },
     "command-shortcuts": {
       name: "command-shortcuts",
       filePath: "examples/base/command-shortcuts.tsx",
+      hookDependencies: [],
     },
     "context-menu-basic": {
       name: "context-menu-basic",
       filePath: "examples/base/context-menu-basic.tsx",
+      hookDependencies: [],
     },
     "context-menu-checkboxes": {
       name: "context-menu-checkboxes",
       filePath: "examples/base/context-menu-checkboxes.tsx",
+      hookDependencies: [],
     },
     "context-menu-demo": {
       name: "context-menu-demo",
       filePath: "examples/base/context-menu-demo.tsx",
+      hookDependencies: [],
     },
     "context-menu-destructive": {
       name: "context-menu-destructive",
       filePath: "examples/base/context-menu-destructive.tsx",
+      hookDependencies: [],
     },
     "context-menu-groups": {
       name: "context-menu-groups",
       filePath: "examples/base/context-menu-groups.tsx",
+      hookDependencies: [],
     },
     "context-menu-icons": {
       name: "context-menu-icons",
       filePath: "examples/base/context-menu-icons.tsx",
+      hookDependencies: [],
     },
     "context-menu-radio": {
       name: "context-menu-radio",
       filePath: "examples/base/context-menu-radio.tsx",
+      hookDependencies: [],
     },
     "context-menu-rtl": {
       name: "context-menu-rtl",
       filePath: "examples/base/context-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "context-menu-shortcuts": {
       name: "context-menu-shortcuts",
       filePath: "examples/base/context-menu-shortcuts.tsx",
+      hookDependencies: [],
     },
     "context-menu-sides": {
       name: "context-menu-sides",
       filePath: "examples/base/context-menu-sides.tsx",
+      hookDependencies: [],
     },
     "context-menu-submenu": {
       name: "context-menu-submenu",
       filePath: "examples/base/context-menu-submenu.tsx",
+      hookDependencies: [],
     },
     "data-picker-with-dropdowns": {
       name: "data-picker-with-dropdowns",
       filePath: "examples/base/data-picker-with-dropdowns.tsx",
+      hookDependencies: [],
     },
     "data-table-demo": {
       name: "data-table-demo",
       filePath: "examples/base/data-table-demo.tsx",
+      hookDependencies: [],
     },
     "data-table-excel-demo": {
       name: "data-table-excel-demo",
       filePath: "examples/base/data-table-excel-demo.tsx",
+      hookDependencies: [],
     },
     "data-table-rtl": {
       name: "data-table-rtl",
       filePath: "examples/base/data-table-rtl.tsx",
+      hookDependencies: [],
     },
     "date-picker-basic": {
       name: "date-picker-basic",
       filePath: "examples/base/date-picker-basic.tsx",
+      hookDependencies: [],
     },
     "date-picker-demo": {
       name: "date-picker-demo",
       filePath: "examples/base/date-picker-demo.tsx",
+      hookDependencies: [],
     },
     "date-picker-dob": {
       name: "date-picker-dob",
       filePath: "examples/base/date-picker-dob.tsx",
+      hookDependencies: [],
     },
     "date-picker-input": {
       name: "date-picker-input",
       filePath: "examples/base/date-picker-input.tsx",
+      hookDependencies: [],
     },
     "date-picker-natural-language": {
       name: "date-picker-natural-language",
       filePath: "examples/base/date-picker-natural-language.tsx",
+      hookDependencies: [],
     },
     "date-picker-range": {
       name: "date-picker-range",
       filePath: "examples/base/date-picker-range.tsx",
+      hookDependencies: [],
     },
     "date-picker-rtl": {
       name: "date-picker-rtl",
       filePath: "examples/base/date-picker-rtl.tsx",
+      hookDependencies: [],
     },
     "date-picker-time": {
       name: "date-picker-time",
       filePath: "examples/base/date-picker-time.tsx",
+      hookDependencies: [],
     },
     "dialog-close-button": {
       name: "dialog-close-button",
       filePath: "examples/base/dialog-close-button.tsx",
+      hookDependencies: [],
     },
     "dialog-demo": {
       name: "dialog-demo",
       filePath: "examples/base/dialog-demo.tsx",
+      hookDependencies: [],
     },
     "dialog-no-close-button": {
       name: "dialog-no-close-button",
       filePath: "examples/base/dialog-no-close-button.tsx",
+      hookDependencies: [],
     },
     "dialog-rtl": {
       name: "dialog-rtl",
       filePath: "examples/base/dialog-rtl.tsx",
+      hookDependencies: [],
     },
     "dialog-scrollable-content": {
       name: "dialog-scrollable-content",
       filePath: "examples/base/dialog-scrollable-content.tsx",
+      hookDependencies: [],
     },
     "dialog-sticky-footer": {
       name: "dialog-sticky-footer",
       filePath: "examples/base/dialog-sticky-footer.tsx",
+      hookDependencies: [],
     },
     "drag-scroll-demo": {
       name: "drag-scroll-demo",
       filePath: "examples/base/drag-scroll-demo.tsx",
+      hookDependencies: [],
     },
     "drawer-demo": {
       name: "drawer-demo",
       filePath: "examples/base/drawer-demo.tsx",
+      hookDependencies: ["use-mobile"],
     },
     "drawer-dialog": {
       name: "drawer-dialog",
       filePath: "examples/base/drawer-dialog.tsx",
+      hookDependencies: ["use-media-query"],
     },
     "drawer-nested": {
       name: "drawer-nested",
       filePath: "examples/base/drawer-nested.tsx",
+      hookDependencies: ["use-mobile"],
     },
     "drawer-non-modal": {
       name: "drawer-non-modal",
       filePath: "examples/base/drawer-non-modal.tsx",
+      hookDependencies: [],
     },
     "drawer-rtl": {
       name: "drawer-rtl",
       filePath: "examples/base/drawer-rtl.tsx",
+      hookDependencies: ["use-mobile"],
     },
     "drawer-sides": {
       name: "drawer-sides",
       filePath: "examples/base/drawer-sides.tsx",
+      hookDependencies: [],
     },
     "drawer-snap-points": {
       name: "drawer-snap-points",
       filePath: "examples/base/drawer-snap-points.tsx",
+      hookDependencies: [],
     },
     "drawer-swipe-handle": {
       name: "drawer-swipe-handle",
       filePath: "examples/base/drawer-swipe-handle.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-avatar": {
       name: "dropdown-menu-avatar",
       filePath: "examples/base/dropdown-menu-avatar.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-basic": {
       name: "dropdown-menu-basic",
       filePath: "examples/base/dropdown-menu-basic.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-checkboxes-icons": {
       name: "dropdown-menu-checkboxes-icons",
       filePath: "examples/base/dropdown-menu-checkboxes-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-checkboxes": {
       name: "dropdown-menu-checkboxes",
       filePath: "examples/base/dropdown-menu-checkboxes.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-complex": {
       name: "dropdown-menu-complex",
       filePath: "examples/base/dropdown-menu-complex.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-demo": {
       name: "dropdown-menu-demo",
       filePath: "examples/base/dropdown-menu-demo.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-destructive": {
       name: "dropdown-menu-destructive",
       filePath: "examples/base/dropdown-menu-destructive.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-icons": {
       name: "dropdown-menu-icons",
       filePath: "examples/base/dropdown-menu-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-radio-group": {
       name: "dropdown-menu-radio-group",
       filePath: "examples/base/dropdown-menu-radio-group.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-radio-icons": {
       name: "dropdown-menu-radio-icons",
       filePath: "examples/base/dropdown-menu-radio-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-rtl": {
       name: "dropdown-menu-rtl",
       filePath: "examples/base/dropdown-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-shortcuts": {
       name: "dropdown-menu-shortcuts",
       filePath: "examples/base/dropdown-menu-shortcuts.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-submenu": {
       name: "dropdown-menu-submenu",
       filePath: "examples/base/dropdown-menu-submenu.tsx",
+      hookDependencies: [],
     },
     "empty-avatar-group": {
       name: "empty-avatar-group",
       filePath: "examples/base/empty-avatar-group.tsx",
+      hookDependencies: [],
     },
     "empty-avatar": {
       name: "empty-avatar",
       filePath: "examples/base/empty-avatar.tsx",
+      hookDependencies: [],
     },
     "empty-background": {
       name: "empty-background",
       filePath: "examples/base/empty-background.tsx",
+      hookDependencies: [],
     },
     "empty-card": {
       name: "empty-card",
       filePath: "examples/base/empty-card.tsx",
+      hookDependencies: [],
     },
     "empty-demo": {
       name: "empty-demo",
       filePath: "examples/base/empty-demo.tsx",
+      hookDependencies: [],
     },
     "empty-input-group": {
       name: "empty-input-group",
       filePath: "examples/base/empty-input-group.tsx",
+      hookDependencies: [],
     },
     "empty-outline": {
       name: "empty-outline",
       filePath: "examples/base/empty-outline.tsx",
+      hookDependencies: [],
     },
     "empty-rtl": {
       name: "empty-rtl",
       filePath: "examples/base/empty-rtl.tsx",
+      hookDependencies: [],
     },
     "field-checkbox": {
       name: "field-checkbox",
       filePath: "examples/base/field-checkbox.tsx",
+      hookDependencies: [],
     },
     "field-choice-card": {
       name: "field-choice-card",
       filePath: "examples/base/field-choice-card.tsx",
+      hookDependencies: [],
     },
     "field-demo": {
       name: "field-demo",
       filePath: "examples/base/field-demo.tsx",
+      hookDependencies: [],
     },
     "field-fieldset": {
       name: "field-fieldset",
       filePath: "examples/base/field-fieldset.tsx",
+      hookDependencies: [],
     },
     "field-group": {
       name: "field-group",
       filePath: "examples/base/field-group.tsx",
+      hookDependencies: [],
     },
     "field-input": {
       name: "field-input",
       filePath: "examples/base/field-input.tsx",
+      hookDependencies: [],
     },
     "field-radio": {
       name: "field-radio",
       filePath: "examples/base/field-radio.tsx",
+      hookDependencies: [],
     },
     "field-responsive": {
       name: "field-responsive",
       filePath: "examples/base/field-responsive.tsx",
+      hookDependencies: [],
     },
     "field-rtl": {
       name: "field-rtl",
       filePath: "examples/base/field-rtl.tsx",
+      hookDependencies: [],
     },
     "field-select": {
       name: "field-select",
       filePath: "examples/base/field-select.tsx",
+      hookDependencies: [],
     },
     "field-slider": {
       name: "field-slider",
       filePath: "examples/base/field-slider.tsx",
+      hookDependencies: [],
     },
     "field-switch": {
       name: "field-switch",
       filePath: "examples/base/field-switch.tsx",
+      hookDependencies: [],
     },
     "field-textarea": {
       name: "field-textarea",
       filePath: "examples/base/field-textarea.tsx",
+      hookDependencies: [],
     },
     "file-upload-demo": {
       name: "file-upload-demo",
       filePath: "examples/base/file-upload-demo.tsx",
+      hookDependencies: [],
     },
     "file-upload-list": {
       name: "file-upload-list",
       filePath: "examples/base/file-upload-list.tsx",
+      hookDependencies: [],
     },
     "hover-card-demo": {
       name: "hover-card-demo",
       filePath: "examples/base/hover-card-demo.tsx",
+      hookDependencies: [],
     },
     "hover-card-rtl": {
       name: "hover-card-rtl",
       filePath: "examples/base/hover-card-rtl.tsx",
+      hookDependencies: [],
     },
     "hover-card-sides": {
       name: "hover-card-sides",
       filePath: "examples/base/hover-card-sides.tsx",
+      hookDependencies: [],
     },
     "input-badge": {
       name: "input-badge",
       filePath: "examples/base/input-badge.tsx",
+      hookDependencies: [],
     },
     "input-basic": {
       name: "input-basic",
       filePath: "examples/base/input-basic.tsx",
+      hookDependencies: [],
     },
     "input-button-group": {
       name: "input-button-group",
       filePath: "examples/base/input-button-group.tsx",
+      hookDependencies: [],
     },
     "input-demo": {
       name: "input-demo",
       filePath: "examples/base/input-demo.tsx",
+      hookDependencies: [],
     },
     "input-disabled": {
       name: "input-disabled",
       filePath: "examples/base/input-disabled.tsx",
+      hookDependencies: [],
     },
     "input-field": {
       name: "input-field",
       filePath: "examples/base/input-field.tsx",
+      hookDependencies: [],
     },
     "input-fieldgroup": {
       name: "input-fieldgroup",
       filePath: "examples/base/input-fieldgroup.tsx",
+      hookDependencies: [],
     },
     "input-file": {
       name: "input-file",
       filePath: "examples/base/input-file.tsx",
+      hookDependencies: [],
     },
     "input-form": {
       name: "input-form",
       filePath: "examples/base/input-form.tsx",
+      hookDependencies: [],
     },
     "input-grid": {
       name: "input-grid",
       filePath: "examples/base/input-grid.tsx",
+      hookDependencies: [],
     },
     "input-group-basic": {
       name: "input-group-basic",
       filePath: "examples/base/input-group-basic.tsx",
+      hookDependencies: [],
     },
     "input-group-block-end": {
       name: "input-group-block-end",
       filePath: "examples/base/input-group-block-end.tsx",
+      hookDependencies: [],
     },
     "input-group-block-start": {
       name: "input-group-block-start",
       filePath: "examples/base/input-group-block-start.tsx",
+      hookDependencies: [],
     },
     "input-group-button-group": {
       name: "input-group-button-group",
       filePath: "examples/base/input-group-button-group.tsx",
+      hookDependencies: [],
     },
     "input-group-button": {
       name: "input-group-button",
       filePath: "examples/base/input-group-button.tsx",
+      hookDependencies: ["use-copy-to-clipboard"],
     },
     "input-group-custom": {
       name: "input-group-custom",
       filePath: "examples/base/input-group-custom.tsx",
+      hookDependencies: [],
     },
     "input-group-demo": {
       name: "input-group-demo",
       filePath: "examples/base/input-group-demo.tsx",
+      hookDependencies: [],
     },
     "input-group-dropdown": {
       name: "input-group-dropdown",
       filePath: "examples/base/input-group-dropdown.tsx",
+      hookDependencies: [],
     },
     "input-group-icon": {
       name: "input-group-icon",
       filePath: "examples/base/input-group-icon.tsx",
+      hookDependencies: [],
     },
     "input-group-in-card": {
       name: "input-group-in-card",
       filePath: "examples/base/input-group-in-card.tsx",
+      hookDependencies: [],
     },
     "input-group-inline-end": {
       name: "input-group-inline-end",
       filePath: "examples/base/input-group-inline-end.tsx",
+      hookDependencies: [],
     },
     "input-group-inline-start": {
       name: "input-group-inline-start",
       filePath: "examples/base/input-group-inline-start.tsx",
+      hookDependencies: [],
     },
     "input-group-kbd": {
       name: "input-group-kbd",
       filePath: "examples/base/input-group-kbd.tsx",
+      hookDependencies: [],
     },
     "input-group-label": {
       name: "input-group-label",
       filePath: "examples/base/input-group-label.tsx",
+      hookDependencies: [],
     },
     "input-group-rtl": {
       name: "input-group-rtl",
       filePath: "examples/base/input-group-rtl.tsx",
+      hookDependencies: [],
     },
     "input-group-spinner": {
       name: "input-group-spinner",
       filePath: "examples/base/input-group-spinner.tsx",
+      hookDependencies: [],
     },
     "input-group-text": {
       name: "input-group-text",
       filePath: "examples/base/input-group-text.tsx",
+      hookDependencies: [],
     },
     "input-group-textarea-examples": {
       name: "input-group-textarea-examples",
       filePath: "examples/base/input-group-textarea-examples.tsx",
+      hookDependencies: [],
     },
     "input-group-textarea": {
       name: "input-group-textarea",
       filePath: "examples/base/input-group-textarea.tsx",
+      hookDependencies: [],
     },
     "input-group-tooltip": {
       name: "input-group-tooltip",
       filePath: "examples/base/input-group-tooltip.tsx",
+      hookDependencies: [],
     },
     "input-group-with-addons": {
       name: "input-group-with-addons",
       filePath: "examples/base/input-group-with-addons.tsx",
+      hookDependencies: [],
     },
     "input-group-with-buttons": {
       name: "input-group-with-buttons",
       filePath: "examples/base/input-group-with-buttons.tsx",
+      hookDependencies: [],
     },
     "input-group-with-kbd": {
       name: "input-group-with-kbd",
       filePath: "examples/base/input-group-with-kbd.tsx",
+      hookDependencies: [],
     },
     "input-group-with-tooltip": {
       name: "input-group-with-tooltip",
       filePath: "examples/base/input-group-with-tooltip.tsx",
+      hookDependencies: [],
     },
     "input-inline": {
       name: "input-inline",
       filePath: "examples/base/input-inline.tsx",
+      hookDependencies: [],
     },
     "input-input-group": {
       name: "input-input-group",
       filePath: "examples/base/input-input-group.tsx",
+      hookDependencies: [],
     },
     "input-invalid": {
       name: "input-invalid",
       filePath: "examples/base/input-invalid.tsx",
+      hookDependencies: [],
     },
     "input-numeric": {
       name: "input-numeric",
       filePath: "examples/base/input-numeric.tsx",
+      hookDependencies: [],
     },
     "input-otp-alphanumeric": {
       name: "input-otp-alphanumeric",
       filePath: "examples/base/input-otp-alphanumeric.tsx",
+      hookDependencies: [],
     },
     "input-otp-controlled": {
       name: "input-otp-controlled",
       filePath: "examples/base/input-otp-controlled.tsx",
+      hookDependencies: [],
     },
     "input-otp-demo": {
       name: "input-otp-demo",
       filePath: "examples/base/input-otp-demo.tsx",
+      hookDependencies: [],
     },
     "input-otp-disabled": {
       name: "input-otp-disabled",
       filePath: "examples/base/input-otp-disabled.tsx",
+      hookDependencies: [],
     },
     "input-otp-form": {
       name: "input-otp-form",
       filePath: "examples/base/input-otp-form.tsx",
+      hookDependencies: [],
     },
     "input-otp-four-digits": {
       name: "input-otp-four-digits",
       filePath: "examples/base/input-otp-four-digits.tsx",
+      hookDependencies: [],
     },
     "input-otp-invalid": {
       name: "input-otp-invalid",
       filePath: "examples/base/input-otp-invalid.tsx",
+      hookDependencies: [],
     },
     "input-otp-pattern": {
       name: "input-otp-pattern",
       filePath: "examples/base/input-otp-pattern.tsx",
+      hookDependencies: [],
     },
     "input-otp-rtl": {
       name: "input-otp-rtl",
       filePath: "examples/base/input-otp-rtl.tsx",
+      hookDependencies: [],
     },
     "input-otp-separator": {
       name: "input-otp-separator",
       filePath: "examples/base/input-otp-separator.tsx",
+      hookDependencies: [],
     },
     "input-required": {
       name: "input-required",
       filePath: "examples/base/input-required.tsx",
+      hookDependencies: [],
     },
     "input-rtl": {
       name: "input-rtl",
       filePath: "examples/base/input-rtl.tsx",
+      hookDependencies: [],
     },
     "iran-division-picker-demo": {
       name: "iran-division-picker-demo",
       filePath: "examples/base/iran-division-picker-demo.tsx",
+      hookDependencies: [],
     },
     "iran-division-picker-levels-demo": {
       name: "iran-division-picker-levels-demo",
       filePath: "examples/base/iran-division-picker-levels-demo.tsx",
+      hookDependencies: [],
     },
     "item-avatar": {
       name: "item-avatar",
       filePath: "examples/base/item-avatar.tsx",
+      hookDependencies: [],
     },
     "item-demo": {
       name: "item-demo",
       filePath: "examples/base/item-demo.tsx",
+      hookDependencies: [],
     },
     "item-dropdown": {
       name: "item-dropdown",
       filePath: "examples/base/item-dropdown.tsx",
+      hookDependencies: [],
     },
     "item-group": {
       name: "item-group",
       filePath: "examples/base/item-group.tsx",
+      hookDependencies: [],
     },
     "item-header": {
       name: "item-header",
       filePath: "examples/base/item-header.tsx",
+      hookDependencies: [],
     },
     "item-icon": {
       name: "item-icon",
       filePath: "examples/base/item-icon.tsx",
+      hookDependencies: [],
     },
     "item-image": {
       name: "item-image",
       filePath: "examples/base/item-image.tsx",
+      hookDependencies: [],
     },
     "item-link": {
       name: "item-link",
       filePath: "examples/base/item-link.tsx",
+      hookDependencies: [],
     },
     "item-rtl": {
       name: "item-rtl",
       filePath: "examples/base/item-rtl.tsx",
+      hookDependencies: [],
     },
     "item-size": {
       name: "item-size",
       filePath: "examples/base/item-size.tsx",
+      hookDependencies: [],
     },
     "item-variant": {
       name: "item-variant",
       filePath: "examples/base/item-variant.tsx",
+      hookDependencies: [],
     },
     "kbd-button": {
       name: "kbd-button",
       filePath: "examples/base/kbd-button.tsx",
+      hookDependencies: [],
     },
     "kbd-demo": {
       name: "kbd-demo",
       filePath: "examples/base/kbd-demo.tsx",
+      hookDependencies: [],
     },
     "kbd-group": {
       name: "kbd-group",
       filePath: "examples/base/kbd-group.tsx",
+      hookDependencies: [],
     },
     "kbd-input-group": {
       name: "kbd-input-group",
       filePath: "examples/base/kbd-input-group.tsx",
+      hookDependencies: [],
     },
     "kbd-rtl": {
       name: "kbd-rtl",
       filePath: "examples/base/kbd-rtl.tsx",
+      hookDependencies: [],
     },
     "kbd-tooltip": {
       name: "kbd-tooltip",
       filePath: "examples/base/kbd-tooltip.tsx",
+      hookDependencies: [],
     },
     "label-demo": {
       name: "label-demo",
       filePath: "examples/base/label-demo.tsx",
+      hookDependencies: [],
     },
     "label-rtl": {
       name: "label-rtl",
       filePath: "examples/base/label-rtl.tsx",
+      hookDependencies: [],
     },
     "markdown-demo": {
       name: "markdown-demo",
       filePath: "examples/base/markdown-demo.tsx",
+      hookDependencies: [],
     },
     "marker-border": {
       name: "marker-border",
       filePath: "examples/base/marker-border.tsx",
+      hookDependencies: [],
     },
     "marker-demo": {
       name: "marker-demo",
       filePath: "examples/base/marker-demo.tsx",
+      hookDependencies: [],
     },
     "marker-icon": {
       name: "marker-icon",
       filePath: "examples/base/marker-icon.tsx",
+      hookDependencies: [],
     },
     "marker-link-button": {
       name: "marker-link-button",
       filePath: "examples/base/marker-link-button.tsx",
+      hookDependencies: [],
     },
     "marker-separator": {
       name: "marker-separator",
       filePath: "examples/base/marker-separator.tsx",
+      hookDependencies: [],
     },
     "marker-shimmer": {
       name: "marker-shimmer",
       filePath: "examples/base/marker-shimmer.tsx",
+      hookDependencies: [],
     },
     "marker-status": {
       name: "marker-status",
       filePath: "examples/base/marker-status.tsx",
+      hookDependencies: [],
     },
     "marker-variants": {
       name: "marker-variants",
       filePath: "examples/base/marker-variants.tsx",
+      hookDependencies: [],
     },
     "menubar-checkbox": {
       name: "menubar-checkbox",
       filePath: "examples/base/menubar-checkbox.tsx",
+      hookDependencies: [],
     },
     "menubar-demo": {
       name: "menubar-demo",
       filePath: "examples/base/menubar-demo.tsx",
+      hookDependencies: [],
     },
     "menubar-icons": {
       name: "menubar-icons",
       filePath: "examples/base/menubar-icons.tsx",
+      hookDependencies: [],
     },
     "menubar-radio": {
       name: "menubar-radio",
       filePath: "examples/base/menubar-radio.tsx",
+      hookDependencies: [],
     },
     "menubar-rtl": {
       name: "menubar-rtl",
       filePath: "examples/base/menubar-rtl.tsx",
+      hookDependencies: [],
     },
     "menubar-submenu": {
       name: "menubar-submenu",
       filePath: "examples/base/menubar-submenu.tsx",
+      hookDependencies: [],
     },
     "message-actions": {
       name: "message-actions",
       filePath: "examples/base/message-actions.tsx",
+      hookDependencies: [],
     },
     "message-attachment": {
       name: "message-attachment",
       filePath: "examples/base/message-attachment.tsx",
+      hookDependencies: [],
     },
     "message-avatar": {
       name: "message-avatar",
       filePath: "examples/base/message-avatar.tsx",
+      hookDependencies: [],
     },
     "message-demo": {
       name: "message-demo",
       filePath: "examples/base/message-demo.tsx",
+      hookDependencies: [],
     },
     "message-group": {
       name: "message-group",
       filePath: "examples/base/message-group.tsx",
+      hookDependencies: [],
     },
     "message-header-footer": {
       name: "message-header-footer",
       filePath: "examples/base/message-header-footer.tsx",
+      hookDependencies: [],
     },
     "message-markdown": {
       name: "message-markdown",
       filePath: "examples/base/message-markdown.tsx",
+      hookDependencies: [],
     },
     "message-scroller-anchoring": {
       name: "message-scroller-anchoring",
       filePath: "examples/base/message-scroller-anchoring.tsx",
+      hookDependencies: [],
     },
     "message-scroller-animation": {
       name: "message-scroller-animation",
       filePath: "examples/base/message-scroller-animation.tsx",
+      hookDependencies: [],
     },
     "message-scroller-commands": {
       name: "message-scroller-commands",
       filePath: "examples/base/message-scroller-commands.tsx",
+      hookDependencies: [],
     },
     "message-scroller-demo": {
       name: "message-scroller-demo",
       filePath: "examples/base/message-scroller-demo.tsx",
+      hookDependencies: [],
     },
     "message-scroller-group-chat": {
       name: "message-scroller-group-chat",
       filePath: "examples/base/message-scroller-group-chat.tsx",
+      hookDependencies: [],
     },
     "message-scroller-load-history": {
       name: "message-scroller-load-history",
       filePath: "examples/base/message-scroller-load-history.tsx",
+      hookDependencies: [],
     },
     "message-scroller-opening-position": {
       name: "message-scroller-opening-position",
       filePath: "examples/base/message-scroller-opening-position.tsx",
+      hookDependencies: [],
     },
     "message-scroller-previous-context": {
       name: "message-scroller-previous-context",
       filePath: "examples/base/message-scroller-previous-context.tsx",
+      hookDependencies: [],
     },
     "message-scroller-scrollable": {
       name: "message-scroller-scrollable",
       filePath: "examples/base/message-scroller-scrollable.tsx",
+      hookDependencies: [],
     },
     "message-scroller-state": {
       name: "message-scroller-state",
       filePath: "examples/base/message-scroller-state.tsx",
+      hookDependencies: [],
     },
     "message-scroller-streaming": {
       name: "message-scroller-streaming",
       filePath: "examples/base/message-scroller-streaming.tsx",
+      hookDependencies: [],
     },
     "message-scroller-visibility": {
       name: "message-scroller-visibility",
       filePath: "examples/base/message-scroller-visibility.tsx",
+      hookDependencies: [],
     },
     "muted-item-group": {
       name: "muted-item-group",
       filePath: "examples/base/muted-item-group.tsx",
+      hookDependencies: [],
     },
     "national-code-input-demo": {
       name: "national-code-input-demo",
       filePath: "examples/base/national-code-input-demo.tsx",
+      hookDependencies: [],
     },
     "native-select-demo": {
       name: "native-select-demo",
       filePath: "examples/base/native-select-demo.tsx",
+      hookDependencies: [],
     },
     "native-select-disabled": {
       name: "native-select-disabled",
       filePath: "examples/base/native-select-disabled.tsx",
+      hookDependencies: [],
     },
     "native-select-groups": {
       name: "native-select-groups",
       filePath: "examples/base/native-select-groups.tsx",
+      hookDependencies: [],
     },
     "native-select-invalid": {
       name: "native-select-invalid",
       filePath: "examples/base/native-select-invalid.tsx",
+      hookDependencies: [],
     },
     "native-select-rtl": {
       name: "native-select-rtl",
       filePath: "examples/base/native-select-rtl.tsx",
+      hookDependencies: [],
     },
     "navigation-menu-demo": {
       name: "navigation-menu-demo",
       filePath: "examples/base/navigation-menu-demo.tsx",
+      hookDependencies: [],
     },
     "navigation-menu-rtl": {
       name: "navigation-menu-rtl",
       filePath: "examples/base/navigation-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "outline-item-group": {
       name: "outline-item-group",
       filePath: "examples/base/outline-item-group.tsx",
+      hookDependencies: [],
     },
     "pagination-demo": {
       name: "pagination-demo",
       filePath: "examples/base/pagination-demo.tsx",
+      hookDependencies: [],
     },
     "pagination-icons-only": {
       name: "pagination-icons-only",
       filePath: "examples/base/pagination-icons-only.tsx",
+      hookDependencies: [],
     },
     "pagination-rtl": {
       name: "pagination-rtl",
       filePath: "examples/base/pagination-rtl.tsx",
+      hookDependencies: [],
     },
     "pagination-simple": {
       name: "pagination-simple",
       filePath: "examples/base/pagination-simple.tsx",
+      hookDependencies: [],
     },
     "phone-input-demo": {
       name: "phone-input-demo",
       filePath: "examples/base/phone-input-demo.tsx",
+      hookDependencies: [],
     },
     "popover-alignments": {
       name: "popover-alignments",
       filePath: "examples/base/popover-alignments.tsx",
+      hookDependencies: [],
     },
     "popover-basic": {
       name: "popover-basic",
       filePath: "examples/base/popover-basic.tsx",
+      hookDependencies: [],
     },
     "popover-demo": {
       name: "popover-demo",
       filePath: "examples/base/popover-demo.tsx",
+      hookDependencies: [],
     },
     "popover-form": {
       name: "popover-form",
       filePath: "examples/base/popover-form.tsx",
+      hookDependencies: [],
     },
     "popover-rtl": {
       name: "popover-rtl",
       filePath: "examples/base/popover-rtl.tsx",
+      hookDependencies: [],
     },
     "price-input-demo": {
       name: "price-input-demo",
       filePath: "examples/base/price-input-demo.tsx",
+      hookDependencies: [],
     },
     "progress-controlled": {
       name: "progress-controlled",
       filePath: "examples/base/progress-controlled.tsx",
+      hookDependencies: [],
     },
     "progress-demo": {
       name: "progress-demo",
       filePath: "examples/base/progress-demo.tsx",
+      hookDependencies: [],
     },
     "progress-label": {
       name: "progress-label",
       filePath: "examples/base/progress-label.tsx",
+      hookDependencies: [],
     },
     "progress-rtl": {
       name: "progress-rtl",
       filePath: "examples/base/progress-rtl.tsx",
+      hookDependencies: [],
     },
     "questionnaire-animated": {
       name: "questionnaire-animated",
       filePath: "examples/base/questionnaire-animated.tsx",
+      hookDependencies: [],
     },
     "questionnaire-card": {
       name: "questionnaire-card",
       filePath: "examples/base/questionnaire-card.tsx",
+      hookDependencies: [],
     },
     "questionnaire-conditional": {
       name: "questionnaire-conditional",
       filePath: "examples/base/questionnaire-conditional.tsx",
+      hookDependencies: [],
     },
     "questionnaire-controlled": {
       name: "questionnaire-controlled",
       filePath: "examples/base/questionnaire-controlled.tsx",
+      hookDependencies: [],
     },
     "questionnaire-demo": {
       name: "questionnaire-demo",
       filePath: "examples/base/questionnaire-demo.tsx",
+      hookDependencies: [],
     },
     "questionnaire-dialog": {
       name: "questionnaire-dialog",
       filePath: "examples/base/questionnaire-dialog.tsx",
+      hookDependencies: [],
     },
     "questionnaire-freeform": {
       name: "questionnaire-freeform",
       filePath: "examples/base/questionnaire-freeform.tsx",
+      hookDependencies: [],
     },
     "questionnaire-multiple": {
       name: "questionnaire-multiple",
       filePath: "examples/base/questionnaire-multiple.tsx",
+      hookDependencies: [],
     },
     "questionnaire-navigation-state": {
       name: "questionnaire-navigation-state",
       filePath: "examples/base/questionnaire-navigation-state.tsx",
+      hookDependencies: [],
     },
     "questionnaire-progress": {
       name: "questionnaire-progress",
       filePath: "examples/base/questionnaire-progress.tsx",
+      hookDependencies: [],
     },
     "questionnaire-resume": {
       name: "questionnaire-resume",
       filePath: "examples/base/questionnaire-resume.tsx",
+      hookDependencies: [],
     },
     "questionnaire-shortcuts": {
       name: "questionnaire-shortcuts",
       filePath: "examples/base/questionnaire-shortcuts.tsx",
+      hookDependencies: [],
     },
     "questionnaire-skip": {
       name: "questionnaire-skip",
       filePath: "examples/base/questionnaire-skip.tsx",
+      hookDependencies: [],
     },
     "questionnaire-validation": {
       name: "questionnaire-validation",
       filePath: "examples/base/questionnaire-validation.tsx",
+      hookDependencies: [],
     },
     "radio-fields": {
       name: "radio-fields",
       filePath: "examples/base/radio-fields.tsx",
+      hookDependencies: [],
     },
     "radio-group-choice-card": {
       name: "radio-group-choice-card",
       filePath: "examples/base/radio-group-choice-card.tsx",
+      hookDependencies: [],
     },
     "radio-group-demo": {
       name: "radio-group-demo",
       filePath: "examples/base/radio-group-demo.tsx",
+      hookDependencies: [],
     },
     "radio-group-description": {
       name: "radio-group-description",
       filePath: "examples/base/radio-group-description.tsx",
+      hookDependencies: [],
     },
     "radio-group-disabled": {
       name: "radio-group-disabled",
       filePath: "examples/base/radio-group-disabled.tsx",
+      hookDependencies: [],
     },
     "radio-group-fieldset": {
       name: "radio-group-fieldset",
       filePath: "examples/base/radio-group-fieldset.tsx",
+      hookDependencies: [],
     },
     "radio-group-invalid": {
       name: "radio-group-invalid",
       filePath: "examples/base/radio-group-invalid.tsx",
+      hookDependencies: [],
     },
     "radio-group-rtl": {
       name: "radio-group-rtl",
       filePath: "examples/base/radio-group-rtl.tsx",
+      hookDependencies: [],
     },
     "relative-time-demo": {
       name: "relative-time-demo",
       filePath: "examples/base/relative-time-demo.tsx",
+      hookDependencies: [],
     },
     "resizable-demo": {
       name: "resizable-demo",
       filePath: "examples/base/resizable-demo.tsx",
+      hookDependencies: [],
     },
     "resizable-handle": {
       name: "resizable-handle",
       filePath: "examples/base/resizable-handle.tsx",
+      hookDependencies: [],
     },
     "resizable-rtl": {
       name: "resizable-rtl",
       filePath: "examples/base/resizable-rtl.tsx",
+      hookDependencies: [],
     },
     "resizable-vertical": {
       name: "resizable-vertical",
       filePath: "examples/base/resizable-vertical.tsx",
+      hookDependencies: [],
     },
     "rich-text-editor-advanced": {
       name: "rich-text-editor-advanced",
       filePath: "examples/base/rich-text-editor-advanced.tsx",
+      hookDependencies: [],
     },
     "rich-text-editor-controlled": {
       name: "rich-text-editor-controlled",
       filePath: "examples/base/rich-text-editor-controlled.tsx",
+      hookDependencies: [],
     },
     "rich-text-editor-demo": {
       name: "rich-text-editor-demo",
       filePath: "examples/base/rich-text-editor-demo.tsx",
+      hookDependencies: [],
     },
     "rich-text-editor-disabled": {
       name: "rich-text-editor-disabled",
       filePath: "examples/base/rich-text-editor-disabled.tsx",
+      hookDependencies: [],
     },
     "rich-text-editor-invalid": {
       name: "rich-text-editor-invalid",
       filePath: "examples/base/rich-text-editor-invalid.tsx",
+      hookDependencies: [],
     },
     "rich-text-editor-readonly": {
       name: "rich-text-editor-readonly",
       filePath: "examples/base/rich-text-editor-readonly.tsx",
+      hookDependencies: [],
     },
     "scroll-area-demo": {
       name: "scroll-area-demo",
       filePath: "examples/base/scroll-area-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-area-horizontal-demo": {
       name: "scroll-area-horizontal-demo",
       filePath: "examples/base/scroll-area-horizontal-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-area-rtl": {
       name: "scroll-area-rtl",
       filePath: "examples/base/scroll-area-rtl.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-demo": {
       name: "scroll-fade-demo",
       filePath: "examples/base/scroll-fade-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-edge": {
       name: "scroll-fade-edge",
       filePath: "examples/base/scroll-fade-edge.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-horizontal": {
       name: "scroll-fade-horizontal",
       filePath: "examples/base/scroll-fade-horizontal.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-none": {
       name: "scroll-fade-none",
       filePath: "examples/base/scroll-fade-none.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-overflow": {
       name: "scroll-fade-overflow",
       filePath: "examples/base/scroll-fade-overflow.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-rtl": {
       name: "scroll-fade-rtl",
       filePath: "examples/base/scroll-fade-rtl.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-size": {
       name: "scroll-fade-size",
       filePath: "examples/base/scroll-fade-size.tsx",
+      hookDependencies: [],
     },
     "select-align-item": {
       name: "select-align-item",
       filePath: "examples/base/select-align-item.tsx",
+      hookDependencies: [],
     },
     "select-demo": {
       name: "select-demo",
       filePath: "examples/base/select-demo.tsx",
+      hookDependencies: [],
     },
     "select-disabled": {
       name: "select-disabled",
       filePath: "examples/base/select-disabled.tsx",
+      hookDependencies: [],
     },
     "select-groups": {
       name: "select-groups",
       filePath: "examples/base/select-groups.tsx",
+      hookDependencies: [],
     },
     "select-invalid": {
       name: "select-invalid",
       filePath: "examples/base/select-invalid.tsx",
+      hookDependencies: [],
     },
     "select-rtl": {
       name: "select-rtl",
       filePath: "examples/base/select-rtl.tsx",
+      hookDependencies: [],
     },
     "select-scrollable": {
       name: "select-scrollable",
       filePath: "examples/base/select-scrollable.tsx",
+      hookDependencies: [],
     },
     "separator-demo": {
       name: "separator-demo",
       filePath: "examples/base/separator-demo.tsx",
+      hookDependencies: [],
     },
     "separator-list": {
       name: "separator-list",
       filePath: "examples/base/separator-list.tsx",
+      hookDependencies: [],
     },
     "separator-menu": {
       name: "separator-menu",
       filePath: "examples/base/separator-menu.tsx",
+      hookDependencies: [],
     },
     "separator-rtl": {
       name: "separator-rtl",
       filePath: "examples/base/separator-rtl.tsx",
+      hookDependencies: [],
     },
     "separator-vertical": {
       name: "separator-vertical",
       filePath: "examples/base/separator-vertical.tsx",
+      hookDependencies: [],
     },
     "sheba-input-demo": {
       name: "sheba-input-demo",
       filePath: "examples/base/sheba-input-demo.tsx",
+      hookDependencies: [],
     },
     "sheet-demo": {
       name: "sheet-demo",
       filePath: "examples/base/sheet-demo.tsx",
+      hookDependencies: [],
     },
     "sheet-no-close-button": {
       name: "sheet-no-close-button",
       filePath: "examples/base/sheet-no-close-button.tsx",
+      hookDependencies: [],
     },
     "sheet-rtl": {
       name: "sheet-rtl",
       filePath: "examples/base/sheet-rtl.tsx",
+      hookDependencies: [],
     },
     "sheet-side": {
       name: "sheet-side",
       filePath: "examples/base/sheet-side.tsx",
+      hookDependencies: [],
     },
     "shimmer-angle": {
       name: "shimmer-angle",
       filePath: "examples/base/shimmer-angle.tsx",
+      hookDependencies: [],
     },
     "shimmer-color": {
       name: "shimmer-color",
       filePath: "examples/base/shimmer-color.tsx",
+      hookDependencies: [],
     },
     "shimmer-demo": {
       name: "shimmer-demo",
       filePath: "examples/base/shimmer-demo.tsx",
+      hookDependencies: [],
     },
     "shimmer-duration": {
       name: "shimmer-duration",
       filePath: "examples/base/shimmer-duration.tsx",
+      hookDependencies: [],
     },
     "shimmer-marker": {
       name: "shimmer-marker",
       filePath: "examples/base/shimmer-marker.tsx",
+      hookDependencies: [],
     },
     "shimmer-none": {
       name: "shimmer-none",
       filePath: "examples/base/shimmer-none.tsx",
+      hookDependencies: [],
     },
     "shimmer-once": {
       name: "shimmer-once",
       filePath: "examples/base/shimmer-once.tsx",
+      hookDependencies: [],
     },
     "shimmer-rtl": {
       name: "shimmer-rtl",
       filePath: "examples/base/shimmer-rtl.tsx",
+      hookDependencies: [],
     },
     "shimmer-spread": {
       name: "shimmer-spread",
       filePath: "examples/base/shimmer-spread.tsx",
+      hookDependencies: [],
     },
     "sidebar-controlled": {
       name: "sidebar-controlled",
       filePath: "examples/base/sidebar-controlled.tsx",
+      hookDependencies: [],
     },
     "sidebar-demo": {
       name: "sidebar-demo",
       filePath: "examples/base/sidebar-demo.tsx",
+      hookDependencies: [],
     },
     "sidebar-footer": {
       name: "sidebar-footer",
       filePath: "examples/base/sidebar-footer.tsx",
+      hookDependencies: [],
     },
     "sidebar-group-action": {
       name: "sidebar-group-action",
       filePath: "examples/base/sidebar-group-action.tsx",
+      hookDependencies: [],
     },
     "sidebar-group-collapsible": {
       name: "sidebar-group-collapsible",
       filePath: "examples/base/sidebar-group-collapsible.tsx",
+      hookDependencies: [],
     },
     "sidebar-group": {
       name: "sidebar-group",
       filePath: "examples/base/sidebar-group.tsx",
+      hookDependencies: [],
     },
     "sidebar-header": {
       name: "sidebar-header",
       filePath: "examples/base/sidebar-header.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-action": {
       name: "sidebar-menu-action",
       filePath: "examples/base/sidebar-menu-action.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-badge": {
       name: "sidebar-menu-badge",
       filePath: "examples/base/sidebar-menu-badge.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-collapsible": {
       name: "sidebar-menu-collapsible",
       filePath: "examples/base/sidebar-menu-collapsible.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-sub": {
       name: "sidebar-menu-sub",
       filePath: "examples/base/sidebar-menu-sub.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu": {
       name: "sidebar-menu",
       filePath: "examples/base/sidebar-menu.tsx",
+      hookDependencies: [],
     },
     "sidebar-rsc": {
       name: "sidebar-rsc",
       filePath: "examples/base/sidebar-rsc.tsx",
+      hookDependencies: [],
     },
     "sidebar-rtl": {
       name: "sidebar-rtl",
       filePath: "examples/base/sidebar-rtl.tsx",
+      hookDependencies: [],
     },
     "signature-pad-demo": {
       name: "signature-pad-demo",
       filePath: "examples/base/signature-pad-demo.tsx",
+      hookDependencies: [],
     },
     "skeleton-avatar": {
       name: "skeleton-avatar",
       filePath: "examples/base/skeleton-avatar.tsx",
+      hookDependencies: [],
     },
     "skeleton-card": {
       name: "skeleton-card",
       filePath: "examples/base/skeleton-card.tsx",
+      hookDependencies: [],
     },
     "skeleton-demo": {
       name: "skeleton-demo",
       filePath: "examples/base/skeleton-demo.tsx",
+      hookDependencies: [],
     },
     "skeleton-form": {
       name: "skeleton-form",
       filePath: "examples/base/skeleton-form.tsx",
+      hookDependencies: [],
     },
     "skeleton-rtl": {
       name: "skeleton-rtl",
       filePath: "examples/base/skeleton-rtl.tsx",
+      hookDependencies: [],
     },
     "skeleton-table": {
       name: "skeleton-table",
       filePath: "examples/base/skeleton-table.tsx",
+      hookDependencies: [],
     },
     "skeleton-text": {
       name: "skeleton-text",
       filePath: "examples/base/skeleton-text.tsx",
+      hookDependencies: [],
     },
     "slider-controlled": {
       name: "slider-controlled",
       filePath: "examples/base/slider-controlled.tsx",
+      hookDependencies: [],
     },
     "slider-demo": {
       name: "slider-demo",
       filePath: "examples/base/slider-demo.tsx",
+      hookDependencies: [],
     },
     "slider-disabled": {
       name: "slider-disabled",
       filePath: "examples/base/slider-disabled.tsx",
+      hookDependencies: [],
     },
     "slider-multiple": {
       name: "slider-multiple",
       filePath: "examples/base/slider-multiple.tsx",
+      hookDependencies: [],
     },
     "slider-range": {
       name: "slider-range",
       filePath: "examples/base/slider-range.tsx",
+      hookDependencies: [],
     },
     "slider-rtl": {
       name: "slider-rtl",
       filePath: "examples/base/slider-rtl.tsx",
+      hookDependencies: [],
     },
     "slider-vertical": {
       name: "slider-vertical",
       filePath: "examples/base/slider-vertical.tsx",
+      hookDependencies: [],
     },
     "spinner-badge": {
       name: "spinner-badge",
       filePath: "examples/base/spinner-badge.tsx",
+      hookDependencies: [],
     },
     "spinner-button": {
       name: "spinner-button",
       filePath: "examples/base/spinner-button.tsx",
+      hookDependencies: [],
     },
     "spinner-custom": {
       name: "spinner-custom",
       filePath: "examples/base/spinner-custom.tsx",
+      hookDependencies: [],
     },
     "spinner-demo": {
       name: "spinner-demo",
       filePath: "examples/base/spinner-demo.tsx",
+      hookDependencies: [],
     },
     "spinner-empty": {
       name: "spinner-empty",
       filePath: "examples/base/spinner-empty.tsx",
+      hookDependencies: [],
     },
     "spinner-input-group": {
       name: "spinner-input-group",
       filePath: "examples/base/spinner-input-group.tsx",
+      hookDependencies: [],
     },
     "spinner-rtl": {
       name: "spinner-rtl",
       filePath: "examples/base/spinner-rtl.tsx",
+      hookDependencies: [],
     },
     "spinner-size": {
       name: "spinner-size",
       filePath: "examples/base/spinner-size.tsx",
+      hookDependencies: [],
     },
     "switch-choice-card": {
       name: "switch-choice-card",
       filePath: "examples/base/switch-choice-card.tsx",
+      hookDependencies: [],
     },
     "switch-demo": {
       name: "switch-demo",
       filePath: "examples/base/switch-demo.tsx",
+      hookDependencies: [],
     },
     "switch-description": {
       name: "switch-description",
       filePath: "examples/base/switch-description.tsx",
+      hookDependencies: [],
     },
     "switch-disabled": {
       name: "switch-disabled",
       filePath: "examples/base/switch-disabled.tsx",
+      hookDependencies: [],
     },
     "switch-invalid": {
       name: "switch-invalid",
       filePath: "examples/base/switch-invalid.tsx",
+      hookDependencies: [],
     },
     "switch-rtl": {
       name: "switch-rtl",
       filePath: "examples/base/switch-rtl.tsx",
+      hookDependencies: [],
     },
     "switch-sizes": {
       name: "switch-sizes",
       filePath: "examples/base/switch-sizes.tsx",
+      hookDependencies: [],
     },
     "table-actions": {
       name: "table-actions",
       filePath: "examples/base/table-actions.tsx",
+      hookDependencies: [],
     },
     "table-demo": {
       name: "table-demo",
       filePath: "examples/base/table-demo.tsx",
+      hookDependencies: [],
     },
     "table-footer": {
       name: "table-footer",
       filePath: "examples/base/table-footer.tsx",
+      hookDependencies: [],
     },
     "table-rtl": {
       name: "table-rtl",
       filePath: "examples/base/table-rtl.tsx",
+      hookDependencies: [],
     },
     "tabs-demo": {
       name: "tabs-demo",
       filePath: "examples/base/tabs-demo.tsx",
+      hookDependencies: [],
     },
     "tabs-disabled": {
       name: "tabs-disabled",
       filePath: "examples/base/tabs-disabled.tsx",
+      hookDependencies: [],
     },
     "tabs-icons": {
       name: "tabs-icons",
       filePath: "examples/base/tabs-icons.tsx",
+      hookDependencies: [],
     },
     "tabs-line": {
       name: "tabs-line",
       filePath: "examples/base/tabs-line.tsx",
+      hookDependencies: [],
     },
     "tabs-rtl": {
       name: "tabs-rtl",
       filePath: "examples/base/tabs-rtl.tsx",
+      hookDependencies: [],
     },
     "tabs-vertical": {
       name: "tabs-vertical",
       filePath: "examples/base/tabs-vertical.tsx",
+      hookDependencies: [],
     },
     "tanstack-ai-helper-demo": {
       name: "tanstack-ai-helper-demo",
       filePath: "examples/base/tanstack-ai-helper-demo.tsx",
+      hookDependencies: [],
     },
     "textarea-button": {
       name: "textarea-button",
       filePath: "examples/base/textarea-button.tsx",
+      hookDependencies: [],
     },
     "textarea-demo": {
       name: "textarea-demo",
       filePath: "examples/base/textarea-demo.tsx",
+      hookDependencies: [],
     },
     "textarea-disabled": {
       name: "textarea-disabled",
       filePath: "examples/base/textarea-disabled.tsx",
+      hookDependencies: [],
     },
     "textarea-field": {
       name: "textarea-field",
       filePath: "examples/base/textarea-field.tsx",
+      hookDependencies: [],
     },
     "textarea-invalid": {
       name: "textarea-invalid",
       filePath: "examples/base/textarea-invalid.tsx",
+      hookDependencies: [],
     },
     "textarea-rtl": {
       name: "textarea-rtl",
       filePath: "examples/base/textarea-rtl.tsx",
+      hookDependencies: [],
     },
     "toast-demo": {
       name: "toast-demo",
       filePath: "examples/base/toast-demo.tsx",
+      hookDependencies: [],
     },
     "toast-promise": {
       name: "toast-promise",
       filePath: "examples/base/toast-promise.tsx",
+      hookDependencies: [],
     },
     "toast-types": {
       name: "toast-types",
       filePath: "examples/base/toast-types.tsx",
+      hookDependencies: [],
     },
     "toggle-demo": {
       name: "toggle-demo",
       filePath: "examples/base/toggle-demo.tsx",
+      hookDependencies: [],
     },
     "toggle-disabled": {
       name: "toggle-disabled",
       filePath: "examples/base/toggle-disabled.tsx",
+      hookDependencies: [],
     },
     "toggle-group-demo": {
       name: "toggle-group-demo",
       filePath: "examples/base/toggle-group-demo.tsx",
+      hookDependencies: [],
     },
     "toggle-group-disabled": {
       name: "toggle-group-disabled",
       filePath: "examples/base/toggle-group-disabled.tsx",
+      hookDependencies: [],
     },
     "toggle-group-font-weight-selector": {
       name: "toggle-group-font-weight-selector",
       filePath: "examples/base/toggle-group-font-weight-selector.tsx",
+      hookDependencies: [],
     },
     "toggle-group-outline": {
       name: "toggle-group-outline",
       filePath: "examples/base/toggle-group-outline.tsx",
+      hookDependencies: [],
     },
     "toggle-group-rtl": {
       name: "toggle-group-rtl",
       filePath: "examples/base/toggle-group-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-group-sizes": {
       name: "toggle-group-sizes",
       filePath: "examples/base/toggle-group-sizes.tsx",
+      hookDependencies: [],
     },
     "toggle-group-spacing": {
       name: "toggle-group-spacing",
       filePath: "examples/base/toggle-group-spacing.tsx",
+      hookDependencies: [],
     },
     "toggle-group-vertical": {
       name: "toggle-group-vertical",
       filePath: "examples/base/toggle-group-vertical.tsx",
+      hookDependencies: [],
     },
     "toggle-outline": {
       name: "toggle-outline",
       filePath: "examples/base/toggle-outline.tsx",
+      hookDependencies: [],
     },
     "toggle-rtl": {
       name: "toggle-rtl",
       filePath: "examples/base/toggle-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-sizes": {
       name: "toggle-sizes",
       filePath: "examples/base/toggle-sizes.tsx",
+      hookDependencies: [],
     },
     "toggle-text": {
       name: "toggle-text",
       filePath: "examples/base/toggle-text.tsx",
+      hookDependencies: [],
     },
     "tooltip-demo": {
       name: "tooltip-demo",
       filePath: "examples/base/tooltip-demo.tsx",
+      hookDependencies: [],
     },
     "tooltip-disabled": {
       name: "tooltip-disabled",
       filePath: "examples/base/tooltip-disabled.tsx",
+      hookDependencies: [],
     },
     "tooltip-keyboard": {
       name: "tooltip-keyboard",
       filePath: "examples/base/tooltip-keyboard.tsx",
+      hookDependencies: [],
     },
     "tooltip-rtl": {
       name: "tooltip-rtl",
       filePath: "examples/base/tooltip-rtl.tsx",
+      hookDependencies: [],
     },
     "tooltip-sides": {
       name: "tooltip-sides",
       filePath: "examples/base/tooltip-sides.tsx",
+      hookDependencies: [],
     },
     "typography-blockquote": {
       name: "typography-blockquote",
       filePath: "examples/base/typography-blockquote.tsx",
+      hookDependencies: [],
     },
     "typography-demo": {
       name: "typography-demo",
       filePath: "examples/base/typography-demo.tsx",
+      hookDependencies: [],
     },
     "typography-h1": {
       name: "typography-h1",
       filePath: "examples/base/typography-h1.tsx",
+      hookDependencies: [],
     },
     "typography-h2": {
       name: "typography-h2",
       filePath: "examples/base/typography-h2.tsx",
+      hookDependencies: [],
     },
     "typography-h3": {
       name: "typography-h3",
       filePath: "examples/base/typography-h3.tsx",
+      hookDependencies: [],
     },
     "typography-h4": {
       name: "typography-h4",
       filePath: "examples/base/typography-h4.tsx",
+      hookDependencies: [],
     },
     "typography-inline-code": {
       name: "typography-inline-code",
       filePath: "examples/base/typography-inline-code.tsx",
+      hookDependencies: [],
     },
     "typography-large": {
       name: "typography-large",
       filePath: "examples/base/typography-large.tsx",
+      hookDependencies: [],
     },
     "typography-lead": {
       name: "typography-lead",
       filePath: "examples/base/typography-lead.tsx",
+      hookDependencies: [],
     },
     "typography-list": {
       name: "typography-list",
       filePath: "examples/base/typography-list.tsx",
+      hookDependencies: [],
     },
     "typography-muted": {
       name: "typography-muted",
       filePath: "examples/base/typography-muted.tsx",
+      hookDependencies: [],
     },
     "typography-p": {
       name: "typography-p",
       filePath: "examples/base/typography-p.tsx",
+      hookDependencies: [],
     },
     "typography-rtl": {
       name: "typography-rtl",
       filePath: "examples/base/typography-rtl.tsx",
+      hookDependencies: [],
     },
     "typography-small": {
       name: "typography-small",
       filePath: "examples/base/typography-small.tsx",
+      hookDependencies: [],
     },
     "typography-table": {
       name: "typography-table",
       filePath: "examples/base/typography-table.tsx",
+      hookDependencies: [],
     },
   },
   aria: {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/aria/accordion-basic.tsx",
+      hookDependencies: [],
     },
     "accordion-borders": {
       name: "accordion-borders",
       filePath: "examples/aria/accordion-borders.tsx",
+      hookDependencies: [],
     },
     "accordion-card": {
       name: "accordion-card",
       filePath: "examples/aria/accordion-card.tsx",
+      hookDependencies: [],
     },
     "accordion-demo": {
       name: "accordion-demo",
       filePath: "examples/aria/accordion-demo.tsx",
+      hookDependencies: [],
     },
     "accordion-disabled": {
       name: "accordion-disabled",
       filePath: "examples/aria/accordion-disabled.tsx",
+      hookDependencies: [],
     },
     "accordion-multiple": {
       name: "accordion-multiple",
       filePath: "examples/aria/accordion-multiple.tsx",
+      hookDependencies: [],
     },
     "accordion-rtl": {
       name: "accordion-rtl",
       filePath: "examples/aria/accordion-rtl.tsx",
+      hookDependencies: [],
     },
     "alert-action": {
       name: "alert-action",
       filePath: "examples/aria/alert-action.tsx",
+      hookDependencies: [],
     },
     "alert-basic": {
       name: "alert-basic",
       filePath: "examples/aria/alert-basic.tsx",
+      hookDependencies: [],
     },
     "alert-colors": {
       name: "alert-colors",
       filePath: "examples/aria/alert-colors.tsx",
+      hookDependencies: [],
     },
     "alert-demo": {
       name: "alert-demo",
       filePath: "examples/aria/alert-demo.tsx",
+      hookDependencies: [],
     },
     "alert-destructive": {
       name: "alert-destructive",
       filePath: "examples/aria/alert-destructive.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-basic": {
       name: "alert-dialog-basic",
       filePath: "examples/aria/alert-dialog-basic.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-demo": {
       name: "alert-dialog-demo",
       filePath: "examples/aria/alert-dialog-demo.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-destructive": {
       name: "alert-dialog-destructive",
       filePath: "examples/aria/alert-dialog-destructive.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-media": {
       name: "alert-dialog-media",
       filePath: "examples/aria/alert-dialog-media.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-rtl": {
       name: "alert-dialog-rtl",
       filePath: "examples/aria/alert-dialog-rtl.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-small-media": {
       name: "alert-dialog-small-media",
       filePath: "examples/aria/alert-dialog-small-media.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-small": {
       name: "alert-dialog-small",
       filePath: "examples/aria/alert-dialog-small.tsx",
+      hookDependencies: [],
     },
     "alert-rtl": {
       name: "alert-rtl",
       filePath: "examples/aria/alert-rtl.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-demo": {
       name: "aspect-ratio-demo",
       filePath: "examples/aria/aspect-ratio-demo.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-portrait": {
       name: "aspect-ratio-portrait",
       filePath: "examples/aria/aspect-ratio-portrait.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-rtl": {
       name: "aspect-ratio-rtl",
       filePath: "examples/aria/aspect-ratio-rtl.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-square": {
       name: "aspect-ratio-square",
       filePath: "examples/aria/aspect-ratio-square.tsx",
+      hookDependencies: [],
     },
     "attachment-demo": {
       name: "attachment-demo",
       filePath: "examples/aria/attachment-demo.tsx",
+      hookDependencies: [],
     },
     "attachment-group": {
       name: "attachment-group",
       filePath: "examples/aria/attachment-group.tsx",
+      hookDependencies: [],
     },
     "attachment-image": {
       name: "attachment-image",
       filePath: "examples/aria/attachment-image.tsx",
+      hookDependencies: [],
     },
     "attachment-sizes": {
       name: "attachment-sizes",
       filePath: "examples/aria/attachment-sizes.tsx",
+      hookDependencies: [],
     },
     "attachment-states": {
       name: "attachment-states",
       filePath: "examples/aria/attachment-states.tsx",
+      hookDependencies: [],
     },
     "attachment-trigger": {
       name: "attachment-trigger",
       filePath: "examples/aria/attachment-trigger.tsx",
+      hookDependencies: [],
     },
     "avatar-badge-icon": {
       name: "avatar-badge-icon",
       filePath: "examples/aria/avatar-badge-icon.tsx",
+      hookDependencies: [],
     },
     "avatar-badge": {
       name: "avatar-badge",
       filePath: "examples/aria/avatar-badge.tsx",
+      hookDependencies: [],
     },
     "avatar-basic": {
       name: "avatar-basic",
       filePath: "examples/aria/avatar-basic.tsx",
+      hookDependencies: [],
     },
     "avatar-demo": {
       name: "avatar-demo",
       filePath: "examples/aria/avatar-demo.tsx",
+      hookDependencies: [],
     },
     "avatar-dropdown": {
       name: "avatar-dropdown",
       filePath: "examples/aria/avatar-dropdown.tsx",
+      hookDependencies: [],
     },
     "avatar-group-count-icon": {
       name: "avatar-group-count-icon",
       filePath: "examples/aria/avatar-group-count-icon.tsx",
+      hookDependencies: [],
     },
     "avatar-group-count": {
       name: "avatar-group-count",
       filePath: "examples/aria/avatar-group-count.tsx",
+      hookDependencies: [],
     },
     "avatar-group": {
       name: "avatar-group",
       filePath: "examples/aria/avatar-group.tsx",
+      hookDependencies: [],
     },
     "avatar-rtl": {
       name: "avatar-rtl",
       filePath: "examples/aria/avatar-rtl.tsx",
+      hookDependencies: [],
     },
     "avatar-size": {
       name: "avatar-size",
       filePath: "examples/aria/avatar-size.tsx",
+      hookDependencies: [],
     },
     "badge-colors": {
       name: "badge-colors",
       filePath: "examples/aria/badge-colors.tsx",
+      hookDependencies: [],
     },
     "badge-demo": {
       name: "badge-demo",
       filePath: "examples/aria/badge-demo.tsx",
+      hookDependencies: [],
     },
     "badge-icon": {
       name: "badge-icon",
       filePath: "examples/aria/badge-icon.tsx",
+      hookDependencies: [],
     },
     "badge-link": {
       name: "badge-link",
       filePath: "examples/aria/badge-link.tsx",
+      hookDependencies: [],
     },
     "badge-rtl": {
       name: "badge-rtl",
       filePath: "examples/aria/badge-rtl.tsx",
+      hookDependencies: [],
     },
     "badge-spinner": {
       name: "badge-spinner",
       filePath: "examples/aria/badge-spinner.tsx",
+      hookDependencies: [],
     },
     "badge-variants": {
       name: "badge-variants",
       filePath: "examples/aria/badge-variants.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-basic": {
       name: "breadcrumb-basic",
       filePath: "examples/aria/breadcrumb-basic.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-demo": {
       name: "breadcrumb-demo",
       filePath: "examples/aria/breadcrumb-demo.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-dropdown": {
       name: "breadcrumb-dropdown",
       filePath: "examples/aria/breadcrumb-dropdown.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-ellipsis": {
       name: "breadcrumb-ellipsis",
       filePath: "examples/aria/breadcrumb-ellipsis.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-link": {
       name: "breadcrumb-link",
       filePath: "examples/aria/breadcrumb-link.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-rtl": {
       name: "breadcrumb-rtl",
       filePath: "examples/aria/breadcrumb-rtl.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-separator": {
       name: "breadcrumb-separator",
       filePath: "examples/aria/breadcrumb-separator.tsx",
+      hookDependencies: [],
     },
     "bubble-alignment": {
       name: "bubble-alignment",
       filePath: "examples/aria/bubble-alignment.tsx",
+      hookDependencies: [],
     },
     "bubble-collapsible": {
       name: "bubble-collapsible",
       filePath: "examples/aria/bubble-collapsible.tsx",
+      hookDependencies: [],
     },
     "bubble-demo": {
       name: "bubble-demo",
       filePath: "examples/aria/bubble-demo.tsx",
+      hookDependencies: [],
     },
     "bubble-group-demo": {
       name: "bubble-group-demo",
       filePath: "examples/aria/bubble-group-demo.tsx",
+      hookDependencies: [],
     },
     "bubble-link-button": {
       name: "bubble-link-button",
       filePath: "examples/aria/bubble-link-button.tsx",
+      hookDependencies: [],
     },
     "bubble-markdown": {
       name: "bubble-markdown",
       filePath: "examples/aria/bubble-markdown.tsx",
+      hookDependencies: [],
     },
     "bubble-popover": {
       name: "bubble-popover",
       filePath: "examples/aria/bubble-popover.tsx",
+      hookDependencies: [],
     },
     "bubble-reactions": {
       name: "bubble-reactions",
       filePath: "examples/aria/bubble-reactions.tsx",
+      hookDependencies: [],
     },
     "bubble-tooltip": {
       name: "bubble-tooltip",
       filePath: "examples/aria/bubble-tooltip.tsx",
+      hookDependencies: [],
     },
     "bubble-variants": {
       name: "bubble-variants",
       filePath: "examples/aria/bubble-variants.tsx",
+      hookDependencies: [],
     },
     "button-default": {
       name: "button-default",
       filePath: "examples/aria/button-default.tsx",
+      hookDependencies: [],
     },
     "button-demo": {
       name: "button-demo",
       filePath: "examples/aria/button-demo.tsx",
+      hookDependencies: [],
     },
     "button-destructive": {
       name: "button-destructive",
       filePath: "examples/aria/button-destructive.tsx",
+      hookDependencies: [],
     },
     "button-ghost": {
       name: "button-ghost",
       filePath: "examples/aria/button-ghost.tsx",
+      hookDependencies: [],
     },
     "button-group-demo": {
       name: "button-group-demo",
       filePath: "examples/aria/button-group-demo.tsx",
+      hookDependencies: [],
     },
     "button-group-dropdown": {
       name: "button-group-dropdown",
       filePath: "examples/aria/button-group-dropdown.tsx",
+      hookDependencies: [],
     },
     "button-group-input-group": {
       name: "button-group-input-group",
       filePath: "examples/aria/button-group-input-group.tsx",
+      hookDependencies: [],
     },
     "button-group-input": {
       name: "button-group-input",
       filePath: "examples/aria/button-group-input.tsx",
+      hookDependencies: [],
     },
     "button-group-nested": {
       name: "button-group-nested",
       filePath: "examples/aria/button-group-nested.tsx",
+      hookDependencies: [],
     },
     "button-group-orientation": {
       name: "button-group-orientation",
       filePath: "examples/aria/button-group-orientation.tsx",
+      hookDependencies: [],
     },
     "button-group-popover": {
       name: "button-group-popover",
       filePath: "examples/aria/button-group-popover.tsx",
+      hookDependencies: [],
     },
     "button-group-rtl": {
       name: "button-group-rtl",
       filePath: "examples/aria/button-group-rtl.tsx",
+      hookDependencies: [],
     },
     "button-group-select": {
       name: "button-group-select",
       filePath: "examples/aria/button-group-select.tsx",
+      hookDependencies: [],
     },
     "button-group-separator": {
       name: "button-group-separator",
       filePath: "examples/aria/button-group-separator.tsx",
+      hookDependencies: [],
     },
     "button-group-size": {
       name: "button-group-size",
       filePath: "examples/aria/button-group-size.tsx",
+      hookDependencies: [],
     },
     "button-group-split": {
       name: "button-group-split",
       filePath: "examples/aria/button-group-split.tsx",
+      hookDependencies: [],
     },
     "button-icon": {
       name: "button-icon",
       filePath: "examples/aria/button-icon.tsx",
+      hookDependencies: [],
     },
     "button-link": {
       name: "button-link",
       filePath: "examples/aria/button-link.tsx",
+      hookDependencies: [],
     },
     "button-outline": {
       name: "button-outline",
       filePath: "examples/aria/button-outline.tsx",
+      hookDependencies: [],
     },
     "button-render": {
       name: "button-render",
       filePath: "examples/aria/button-render.tsx",
+      hookDependencies: [],
     },
     "button-rounded": {
       name: "button-rounded",
       filePath: "examples/aria/button-rounded.tsx",
+      hookDependencies: [],
     },
     "button-rtl": {
       name: "button-rtl",
       filePath: "examples/aria/button-rtl.tsx",
+      hookDependencies: [],
     },
     "button-secondary": {
       name: "button-secondary",
       filePath: "examples/aria/button-secondary.tsx",
+      hookDependencies: [],
     },
     "button-size": {
       name: "button-size",
       filePath: "examples/aria/button-size.tsx",
+      hookDependencies: [],
     },
     "button-spinner": {
       name: "button-spinner",
       filePath: "examples/aria/button-spinner.tsx",
+      hookDependencies: [],
     },
     "button-with-icon": {
       name: "button-with-icon",
       filePath: "examples/aria/button-with-icon.tsx",
+      hookDependencies: [],
     },
     "calendar-basic": {
       name: "calendar-basic",
       filePath: "examples/aria/calendar-basic.tsx",
+      hookDependencies: [],
     },
     "calendar-booked-dates": {
       name: "calendar-booked-dates",
       filePath: "examples/aria/calendar-booked-dates.tsx",
+      hookDependencies: [],
     },
     "calendar-caption": {
       name: "calendar-caption",
       filePath: "examples/aria/calendar-caption.tsx",
+      hookDependencies: [],
     },
     "calendar-custom-days": {
       name: "calendar-custom-days",
       filePath: "examples/aria/calendar-custom-days.tsx",
+      hookDependencies: [],
     },
     "calendar-demo": {
       name: "calendar-demo",
       filePath: "examples/aria/calendar-demo.tsx",
+      hookDependencies: [],
     },
     "calendar-hijri": {
       name: "calendar-hijri",
       filePath: "examples/aria/calendar-hijri.tsx",
+      hookDependencies: [],
     },
     "calendar-multiple": {
       name: "calendar-multiple",
       filePath: "examples/aria/calendar-multiple.tsx",
+      hookDependencies: [],
     },
     "calendar-presets": {
       name: "calendar-presets",
       filePath: "examples/aria/calendar-presets.tsx",
+      hookDependencies: [],
     },
     "calendar-range": {
       name: "calendar-range",
       filePath: "examples/aria/calendar-range.tsx",
+      hookDependencies: [],
     },
     "calendar-rtl": {
       name: "calendar-rtl",
       filePath: "examples/aria/calendar-rtl.tsx",
+      hookDependencies: [],
     },
     "calendar-time": {
       name: "calendar-time",
       filePath: "examples/aria/calendar-time.tsx",
+      hookDependencies: [],
     },
     "card-demo": {
       name: "card-demo",
       filePath: "examples/aria/card-demo.tsx",
+      hookDependencies: [],
     },
     "card-edge-to-edge": {
       name: "card-edge-to-edge",
       filePath: "examples/aria/card-edge-to-edge.tsx",
+      hookDependencies: [],
     },
     "card-image": {
       name: "card-image",
       filePath: "examples/aria/card-image.tsx",
+      hookDependencies: [],
     },
     "card-rtl": {
       name: "card-rtl",
       filePath: "examples/aria/card-rtl.tsx",
+      hookDependencies: [],
     },
     "card-small": {
       name: "card-small",
       filePath: "examples/aria/card-small.tsx",
+      hookDependencies: [],
     },
     "card-spacing": {
       name: "card-spacing",
       filePath: "examples/aria/card-spacing.tsx",
+      hookDependencies: [],
     },
     "carousel-api": {
       name: "carousel-api",
       filePath: "examples/aria/carousel-api.tsx",
+      hookDependencies: [],
     },
     "carousel-demo": {
       name: "carousel-demo",
       filePath: "examples/aria/carousel-demo.tsx",
+      hookDependencies: [],
     },
     "carousel-multiple": {
       name: "carousel-multiple",
       filePath: "examples/aria/carousel-multiple.tsx",
+      hookDependencies: [],
     },
     "carousel-orientation": {
       name: "carousel-orientation",
       filePath: "examples/aria/carousel-orientation.tsx",
+      hookDependencies: [],
     },
     "carousel-plugin": {
       name: "carousel-plugin",
       filePath: "examples/aria/carousel-plugin.tsx",
+      hookDependencies: [],
     },
     "carousel-rtl": {
       name: "carousel-rtl",
       filePath: "examples/aria/carousel-rtl.tsx",
+      hookDependencies: [],
     },
     "carousel-size": {
       name: "carousel-size",
       filePath: "examples/aria/carousel-size.tsx",
+      hookDependencies: [],
     },
     "carousel-spacing": {
       name: "carousel-spacing",
       filePath: "examples/aria/carousel-spacing.tsx",
+      hookDependencies: [],
     },
     "chart-demo": {
       name: "chart-demo",
       filePath: "examples/aria/chart-demo.tsx",
+      hookDependencies: [],
     },
     "chart-example-axis": {
       name: "chart-example-axis",
       filePath: "examples/aria/chart-example-axis.tsx",
+      hookDependencies: [],
     },
     "chart-example-grid": {
       name: "chart-example-grid",
       filePath: "examples/aria/chart-example-grid.tsx",
+      hookDependencies: [],
     },
     "chart-example-legend": {
       name: "chart-example-legend",
       filePath: "examples/aria/chart-example-legend.tsx",
+      hookDependencies: [],
     },
     "chart-example-tooltip": {
       name: "chart-example-tooltip",
       filePath: "examples/aria/chart-example-tooltip.tsx",
+      hookDependencies: [],
     },
     "chart-example": {
       name: "chart-example",
       filePath: "examples/aria/chart-example.tsx",
+      hookDependencies: [],
     },
     "chart-rtl": {
       name: "chart-rtl",
       filePath: "examples/aria/chart-rtl.tsx",
+      hookDependencies: [],
     },
     "chart-tooltip": {
       name: "chart-tooltip",
       filePath: "examples/aria/chart-tooltip.tsx",
+      hookDependencies: [],
     },
     "checkbox-basic": {
       name: "checkbox-basic",
       filePath: "examples/aria/checkbox-basic.tsx",
+      hookDependencies: [],
     },
     "checkbox-demo": {
       name: "checkbox-demo",
       filePath: "examples/aria/checkbox-demo.tsx",
+      hookDependencies: [],
     },
     "checkbox-description": {
       name: "checkbox-description",
       filePath: "examples/aria/checkbox-description.tsx",
+      hookDependencies: [],
     },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       filePath: "examples/aria/checkbox-disabled.tsx",
+      hookDependencies: [],
     },
     "checkbox-group": {
       name: "checkbox-group",
       filePath: "examples/aria/checkbox-group.tsx",
+      hookDependencies: [],
     },
     "checkbox-invalid": {
       name: "checkbox-invalid",
       filePath: "examples/aria/checkbox-invalid.tsx",
+      hookDependencies: [],
     },
     "checkbox-rtl": {
       name: "checkbox-rtl",
       filePath: "examples/aria/checkbox-rtl.tsx",
+      hookDependencies: [],
     },
     "checkbox-table": {
       name: "checkbox-table",
       filePath: "examples/aria/checkbox-table.tsx",
+      hookDependencies: [],
     },
     "collapsible-basic": {
       name: "collapsible-basic",
       filePath: "examples/aria/collapsible-basic.tsx",
+      hookDependencies: [],
     },
     "collapsible-demo": {
       name: "collapsible-demo",
       filePath: "examples/aria/collapsible-demo.tsx",
+      hookDependencies: [],
     },
     "collapsible-file-tree": {
       name: "collapsible-file-tree",
       filePath: "examples/aria/collapsible-file-tree.tsx",
+      hookDependencies: [],
     },
     "collapsible-rtl": {
       name: "collapsible-rtl",
       filePath: "examples/aria/collapsible-rtl.tsx",
+      hookDependencies: [],
     },
     "collapsible-settings": {
       name: "collapsible-settings",
       filePath: "examples/aria/collapsible-settings.tsx",
+      hookDependencies: [],
     },
     "combobox-basic": {
       name: "combobox-basic",
       filePath: "examples/aria/combobox-basic.tsx",
+      hookDependencies: [],
     },
     "combobox-clear": {
       name: "combobox-clear",
       filePath: "examples/aria/combobox-clear.tsx",
+      hookDependencies: [],
     },
     "combobox-custom": {
       name: "combobox-custom",
       filePath: "examples/aria/combobox-custom.tsx",
+      hookDependencies: [],
     },
     "combobox-demo": {
       name: "combobox-demo",
       filePath: "examples/aria/combobox-demo.tsx",
+      hookDependencies: [],
     },
     "combobox-disabled": {
       name: "combobox-disabled",
       filePath: "examples/aria/combobox-disabled.tsx",
+      hookDependencies: [],
     },
     "combobox-groups": {
       name: "combobox-groups",
       filePath: "examples/aria/combobox-groups.tsx",
+      hookDependencies: [],
     },
     "combobox-input-group": {
       name: "combobox-input-group",
       filePath: "examples/aria/combobox-input-group.tsx",
+      hookDependencies: [],
     },
     "combobox-invalid": {
       name: "combobox-invalid",
       filePath: "examples/aria/combobox-invalid.tsx",
+      hookDependencies: [],
     },
     "combobox-multiple": {
       name: "combobox-multiple",
       filePath: "examples/aria/combobox-multiple.tsx",
+      hookDependencies: [],
     },
     "combobox-rtl": {
       name: "combobox-rtl",
       filePath: "examples/aria/combobox-rtl.tsx",
+      hookDependencies: [],
     },
     "command-basic": {
       name: "command-basic",
       filePath: "examples/aria/command-basic.tsx",
+      hookDependencies: [],
     },
     "command-demo": {
       name: "command-demo",
       filePath: "examples/aria/command-demo.tsx",
+      hookDependencies: [],
     },
     "command-dialog": {
       name: "command-dialog",
       filePath: "examples/aria/command-dialog.tsx",
+      hookDependencies: [],
     },
     "command-groups": {
       name: "command-groups",
       filePath: "examples/aria/command-groups.tsx",
+      hookDependencies: [],
     },
     "command-rtl": {
       name: "command-rtl",
       filePath: "examples/aria/command-rtl.tsx",
+      hookDependencies: [],
     },
     "command-scrollable": {
       name: "command-scrollable",
       filePath: "examples/aria/command-scrollable.tsx",
+      hookDependencies: [],
     },
     "command-shortcuts": {
       name: "command-shortcuts",
       filePath: "examples/aria/command-shortcuts.tsx",
+      hookDependencies: [],
     },
     "context-menu-basic": {
       name: "context-menu-basic",
       filePath: "examples/aria/context-menu-basic.tsx",
+      hookDependencies: [],
     },
     "context-menu-checkboxes": {
       name: "context-menu-checkboxes",
       filePath: "examples/aria/context-menu-checkboxes.tsx",
+      hookDependencies: [],
     },
     "context-menu-demo": {
       name: "context-menu-demo",
       filePath: "examples/aria/context-menu-demo.tsx",
+      hookDependencies: [],
     },
     "context-menu-destructive": {
       name: "context-menu-destructive",
       filePath: "examples/aria/context-menu-destructive.tsx",
+      hookDependencies: [],
     },
     "context-menu-groups": {
       name: "context-menu-groups",
       filePath: "examples/aria/context-menu-groups.tsx",
+      hookDependencies: [],
     },
     "context-menu-icons": {
       name: "context-menu-icons",
       filePath: "examples/aria/context-menu-icons.tsx",
+      hookDependencies: [],
     },
     "context-menu-radio": {
       name: "context-menu-radio",
       filePath: "examples/aria/context-menu-radio.tsx",
+      hookDependencies: [],
     },
     "context-menu-rtl": {
       name: "context-menu-rtl",
       filePath: "examples/aria/context-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "context-menu-shortcuts": {
       name: "context-menu-shortcuts",
       filePath: "examples/aria/context-menu-shortcuts.tsx",
+      hookDependencies: [],
     },
     "context-menu-sides": {
       name: "context-menu-sides",
       filePath: "examples/aria/context-menu-sides.tsx",
+      hookDependencies: [],
     },
     "context-menu-submenu": {
       name: "context-menu-submenu",
       filePath: "examples/aria/context-menu-submenu.tsx",
+      hookDependencies: [],
     },
     "data-picker-with-dropdowns": {
       name: "data-picker-with-dropdowns",
       filePath: "examples/aria/data-picker-with-dropdowns.tsx",
+      hookDependencies: [],
     },
     "data-table-demo": {
       name: "data-table-demo",
       filePath: "examples/aria/data-table-demo.tsx",
+      hookDependencies: [],
     },
     "data-table-rtl": {
       name: "data-table-rtl",
       filePath: "examples/aria/data-table-rtl.tsx",
+      hookDependencies: [],
     },
     "date-picker-basic": {
       name: "date-picker-basic",
       filePath: "examples/aria/date-picker-basic.tsx",
+      hookDependencies: [],
     },
     "date-picker-demo": {
       name: "date-picker-demo",
       filePath: "examples/aria/date-picker-demo.tsx",
+      hookDependencies: [],
     },
     "date-picker-dob": {
       name: "date-picker-dob",
       filePath: "examples/aria/date-picker-dob.tsx",
+      hookDependencies: [],
     },
     "date-picker-input": {
       name: "date-picker-input",
       filePath: "examples/aria/date-picker-input.tsx",
+      hookDependencies: [],
     },
     "date-picker-natural-language": {
       name: "date-picker-natural-language",
       filePath: "examples/aria/date-picker-natural-language.tsx",
+      hookDependencies: [],
     },
     "date-picker-range": {
       name: "date-picker-range",
       filePath: "examples/aria/date-picker-range.tsx",
+      hookDependencies: [],
     },
     "date-picker-rtl": {
       name: "date-picker-rtl",
       filePath: "examples/aria/date-picker-rtl.tsx",
+      hookDependencies: [],
     },
     "date-picker-time": {
       name: "date-picker-time",
       filePath: "examples/aria/date-picker-time.tsx",
+      hookDependencies: [],
     },
     "dialog-close-button": {
       name: "dialog-close-button",
       filePath: "examples/aria/dialog-close-button.tsx",
+      hookDependencies: [],
     },
     "dialog-demo": {
       name: "dialog-demo",
       filePath: "examples/aria/dialog-demo.tsx",
+      hookDependencies: [],
     },
     "dialog-no-close-button": {
       name: "dialog-no-close-button",
       filePath: "examples/aria/dialog-no-close-button.tsx",
+      hookDependencies: [],
     },
     "dialog-rtl": {
       name: "dialog-rtl",
       filePath: "examples/aria/dialog-rtl.tsx",
+      hookDependencies: [],
     },
     "dialog-scrollable-content": {
       name: "dialog-scrollable-content",
       filePath: "examples/aria/dialog-scrollable-content.tsx",
+      hookDependencies: [],
     },
     "dialog-sticky-footer": {
       name: "dialog-sticky-footer",
       filePath: "examples/aria/dialog-sticky-footer.tsx",
+      hookDependencies: [],
     },
     "drawer-demo": {
       name: "drawer-demo",
       filePath: "examples/aria/drawer-demo.tsx",
+      hookDependencies: ["use-mobile"],
     },
     "drawer-dialog": {
       name: "drawer-dialog",
       filePath: "examples/aria/drawer-dialog.tsx",
+      hookDependencies: ["use-media-query"],
     },
     "drawer-nested": {
       name: "drawer-nested",
       filePath: "examples/aria/drawer-nested.tsx",
+      hookDependencies: ["use-mobile"],
     },
     "drawer-non-modal": {
       name: "drawer-non-modal",
       filePath: "examples/aria/drawer-non-modal.tsx",
+      hookDependencies: [],
     },
     "drawer-rtl": {
       name: "drawer-rtl",
       filePath: "examples/aria/drawer-rtl.tsx",
+      hookDependencies: ["use-mobile"],
     },
     "drawer-sides": {
       name: "drawer-sides",
       filePath: "examples/aria/drawer-sides.tsx",
+      hookDependencies: [],
     },
     "drawer-snap-points": {
       name: "drawer-snap-points",
       filePath: "examples/aria/drawer-snap-points.tsx",
+      hookDependencies: [],
     },
     "drawer-swipe-handle": {
       name: "drawer-swipe-handle",
       filePath: "examples/aria/drawer-swipe-handle.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-avatar": {
       name: "dropdown-menu-avatar",
       filePath: "examples/aria/dropdown-menu-avatar.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-basic": {
       name: "dropdown-menu-basic",
       filePath: "examples/aria/dropdown-menu-basic.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-checkboxes-icons": {
       name: "dropdown-menu-checkboxes-icons",
       filePath: "examples/aria/dropdown-menu-checkboxes-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-checkboxes": {
       name: "dropdown-menu-checkboxes",
       filePath: "examples/aria/dropdown-menu-checkboxes.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-complex": {
       name: "dropdown-menu-complex",
       filePath: "examples/aria/dropdown-menu-complex.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-demo": {
       name: "dropdown-menu-demo",
       filePath: "examples/aria/dropdown-menu-demo.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-destructive": {
       name: "dropdown-menu-destructive",
       filePath: "examples/aria/dropdown-menu-destructive.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-icons": {
       name: "dropdown-menu-icons",
       filePath: "examples/aria/dropdown-menu-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-radio-group": {
       name: "dropdown-menu-radio-group",
       filePath: "examples/aria/dropdown-menu-radio-group.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-radio-icons": {
       name: "dropdown-menu-radio-icons",
       filePath: "examples/aria/dropdown-menu-radio-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-rtl": {
       name: "dropdown-menu-rtl",
       filePath: "examples/aria/dropdown-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-shortcuts": {
       name: "dropdown-menu-shortcuts",
       filePath: "examples/aria/dropdown-menu-shortcuts.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-submenu": {
       name: "dropdown-menu-submenu",
       filePath: "examples/aria/dropdown-menu-submenu.tsx",
+      hookDependencies: [],
     },
     "empty-avatar-group": {
       name: "empty-avatar-group",
       filePath: "examples/aria/empty-avatar-group.tsx",
+      hookDependencies: [],
     },
     "empty-avatar": {
       name: "empty-avatar",
       filePath: "examples/aria/empty-avatar.tsx",
+      hookDependencies: [],
     },
     "empty-background": {
       name: "empty-background",
       filePath: "examples/aria/empty-background.tsx",
+      hookDependencies: [],
     },
     "empty-card": {
       name: "empty-card",
       filePath: "examples/aria/empty-card.tsx",
+      hookDependencies: [],
     },
     "empty-demo": {
       name: "empty-demo",
       filePath: "examples/aria/empty-demo.tsx",
+      hookDependencies: [],
     },
     "empty-input-group": {
       name: "empty-input-group",
       filePath: "examples/aria/empty-input-group.tsx",
+      hookDependencies: [],
     },
     "empty-outline": {
       name: "empty-outline",
       filePath: "examples/aria/empty-outline.tsx",
+      hookDependencies: [],
     },
     "empty-rtl": {
       name: "empty-rtl",
       filePath: "examples/aria/empty-rtl.tsx",
+      hookDependencies: [],
     },
     "field-checkbox": {
       name: "field-checkbox",
       filePath: "examples/aria/field-checkbox.tsx",
+      hookDependencies: [],
     },
     "field-choice-card": {
       name: "field-choice-card",
       filePath: "examples/aria/field-choice-card.tsx",
+      hookDependencies: [],
     },
     "field-demo": {
       name: "field-demo",
       filePath: "examples/aria/field-demo.tsx",
+      hookDependencies: [],
     },
     "field-fieldset": {
       name: "field-fieldset",
       filePath: "examples/aria/field-fieldset.tsx",
+      hookDependencies: [],
     },
     "field-group": {
       name: "field-group",
       filePath: "examples/aria/field-group.tsx",
+      hookDependencies: [],
     },
     "field-input": {
       name: "field-input",
       filePath: "examples/aria/field-input.tsx",
+      hookDependencies: [],
     },
     "field-radio": {
       name: "field-radio",
       filePath: "examples/aria/field-radio.tsx",
+      hookDependencies: [],
     },
     "field-responsive": {
       name: "field-responsive",
       filePath: "examples/aria/field-responsive.tsx",
+      hookDependencies: [],
     },
     "field-rtl": {
       name: "field-rtl",
       filePath: "examples/aria/field-rtl.tsx",
+      hookDependencies: [],
     },
     "field-select": {
       name: "field-select",
       filePath: "examples/aria/field-select.tsx",
+      hookDependencies: [],
     },
     "field-slider": {
       name: "field-slider",
       filePath: "examples/aria/field-slider.tsx",
+      hookDependencies: [],
     },
     "field-switch": {
       name: "field-switch",
       filePath: "examples/aria/field-switch.tsx",
+      hookDependencies: [],
     },
     "field-textarea": {
       name: "field-textarea",
       filePath: "examples/aria/field-textarea.tsx",
+      hookDependencies: [],
     },
     "file-upload-list": {
       name: "file-upload-list",
       filePath: "examples/aria/file-upload-list.tsx",
+      hookDependencies: [],
     },
     "hover-card-demo": {
       name: "hover-card-demo",
       filePath: "examples/aria/hover-card-demo.tsx",
+      hookDependencies: [],
     },
     "hover-card-rtl": {
       name: "hover-card-rtl",
       filePath: "examples/aria/hover-card-rtl.tsx",
+      hookDependencies: [],
     },
     "hover-card-sides": {
       name: "hover-card-sides",
       filePath: "examples/aria/hover-card-sides.tsx",
+      hookDependencies: [],
     },
     "input-badge": {
       name: "input-badge",
       filePath: "examples/aria/input-badge.tsx",
+      hookDependencies: [],
     },
     "input-basic": {
       name: "input-basic",
       filePath: "examples/aria/input-basic.tsx",
+      hookDependencies: [],
     },
     "input-button-group": {
       name: "input-button-group",
       filePath: "examples/aria/input-button-group.tsx",
+      hookDependencies: [],
     },
     "input-demo": {
       name: "input-demo",
       filePath: "examples/aria/input-demo.tsx",
+      hookDependencies: [],
     },
     "input-disabled": {
       name: "input-disabled",
       filePath: "examples/aria/input-disabled.tsx",
+      hookDependencies: [],
     },
     "input-field": {
       name: "input-field",
       filePath: "examples/aria/input-field.tsx",
+      hookDependencies: [],
     },
     "input-fieldgroup": {
       name: "input-fieldgroup",
       filePath: "examples/aria/input-fieldgroup.tsx",
+      hookDependencies: [],
     },
     "input-file": {
       name: "input-file",
       filePath: "examples/aria/input-file.tsx",
+      hookDependencies: [],
     },
     "input-form": {
       name: "input-form",
       filePath: "examples/aria/input-form.tsx",
+      hookDependencies: [],
     },
     "input-grid": {
       name: "input-grid",
       filePath: "examples/aria/input-grid.tsx",
+      hookDependencies: [],
     },
     "input-group-basic": {
       name: "input-group-basic",
       filePath: "examples/aria/input-group-basic.tsx",
+      hookDependencies: [],
     },
     "input-group-block-end": {
       name: "input-group-block-end",
       filePath: "examples/aria/input-group-block-end.tsx",
+      hookDependencies: [],
     },
     "input-group-block-start": {
       name: "input-group-block-start",
       filePath: "examples/aria/input-group-block-start.tsx",
+      hookDependencies: [],
     },
     "input-group-button-group": {
       name: "input-group-button-group",
       filePath: "examples/aria/input-group-button-group.tsx",
+      hookDependencies: [],
     },
     "input-group-button": {
       name: "input-group-button",
       filePath: "examples/aria/input-group-button.tsx",
+      hookDependencies: ["use-copy-to-clipboard"],
     },
     "input-group-custom": {
       name: "input-group-custom",
       filePath: "examples/aria/input-group-custom.tsx",
+      hookDependencies: [],
     },
     "input-group-demo": {
       name: "input-group-demo",
       filePath: "examples/aria/input-group-demo.tsx",
+      hookDependencies: [],
     },
     "input-group-dropdown": {
       name: "input-group-dropdown",
       filePath: "examples/aria/input-group-dropdown.tsx",
+      hookDependencies: [],
     },
     "input-group-icon": {
       name: "input-group-icon",
       filePath: "examples/aria/input-group-icon.tsx",
+      hookDependencies: [],
     },
     "input-group-in-card": {
       name: "input-group-in-card",
       filePath: "examples/aria/input-group-in-card.tsx",
+      hookDependencies: [],
     },
     "input-group-inline-end": {
       name: "input-group-inline-end",
       filePath: "examples/aria/input-group-inline-end.tsx",
+      hookDependencies: [],
     },
     "input-group-inline-start": {
       name: "input-group-inline-start",
       filePath: "examples/aria/input-group-inline-start.tsx",
+      hookDependencies: [],
     },
     "input-group-kbd": {
       name: "input-group-kbd",
       filePath: "examples/aria/input-group-kbd.tsx",
+      hookDependencies: [],
     },
     "input-group-label": {
       name: "input-group-label",
       filePath: "examples/aria/input-group-label.tsx",
+      hookDependencies: [],
     },
     "input-group-rtl": {
       name: "input-group-rtl",
       filePath: "examples/aria/input-group-rtl.tsx",
+      hookDependencies: [],
     },
     "input-group-spinner": {
       name: "input-group-spinner",
       filePath: "examples/aria/input-group-spinner.tsx",
+      hookDependencies: [],
     },
     "input-group-text": {
       name: "input-group-text",
       filePath: "examples/aria/input-group-text.tsx",
+      hookDependencies: [],
     },
     "input-group-textarea-examples": {
       name: "input-group-textarea-examples",
       filePath: "examples/aria/input-group-textarea-examples.tsx",
+      hookDependencies: [],
     },
     "input-group-textarea": {
       name: "input-group-textarea",
       filePath: "examples/aria/input-group-textarea.tsx",
+      hookDependencies: [],
     },
     "input-group-tooltip": {
       name: "input-group-tooltip",
       filePath: "examples/aria/input-group-tooltip.tsx",
+      hookDependencies: [],
     },
     "input-group-with-addons": {
       name: "input-group-with-addons",
       filePath: "examples/aria/input-group-with-addons.tsx",
+      hookDependencies: [],
     },
     "input-group-with-buttons": {
       name: "input-group-with-buttons",
       filePath: "examples/aria/input-group-with-buttons.tsx",
+      hookDependencies: [],
     },
     "input-group-with-kbd": {
       name: "input-group-with-kbd",
       filePath: "examples/aria/input-group-with-kbd.tsx",
+      hookDependencies: [],
     },
     "input-group-with-tooltip": {
       name: "input-group-with-tooltip",
       filePath: "examples/aria/input-group-with-tooltip.tsx",
+      hookDependencies: [],
     },
     "input-inline": {
       name: "input-inline",
       filePath: "examples/aria/input-inline.tsx",
+      hookDependencies: [],
     },
     "input-input-group": {
       name: "input-input-group",
       filePath: "examples/aria/input-input-group.tsx",
+      hookDependencies: [],
     },
     "input-invalid": {
       name: "input-invalid",
       filePath: "examples/aria/input-invalid.tsx",
+      hookDependencies: [],
     },
     "input-numeric": {
       name: "input-numeric",
       filePath: "examples/aria/input-numeric.tsx",
+      hookDependencies: [],
     },
     "input-otp-alphanumeric": {
       name: "input-otp-alphanumeric",
       filePath: "examples/aria/input-otp-alphanumeric.tsx",
+      hookDependencies: [],
     },
     "input-otp-controlled": {
       name: "input-otp-controlled",
       filePath: "examples/aria/input-otp-controlled.tsx",
+      hookDependencies: [],
     },
     "input-otp-demo": {
       name: "input-otp-demo",
       filePath: "examples/aria/input-otp-demo.tsx",
+      hookDependencies: [],
     },
     "input-otp-disabled": {
       name: "input-otp-disabled",
       filePath: "examples/aria/input-otp-disabled.tsx",
+      hookDependencies: [],
     },
     "input-otp-form": {
       name: "input-otp-form",
       filePath: "examples/aria/input-otp-form.tsx",
+      hookDependencies: [],
     },
     "input-otp-four-digits": {
       name: "input-otp-four-digits",
       filePath: "examples/aria/input-otp-four-digits.tsx",
+      hookDependencies: [],
     },
     "input-otp-invalid": {
       name: "input-otp-invalid",
       filePath: "examples/aria/input-otp-invalid.tsx",
+      hookDependencies: [],
     },
     "input-otp-pattern": {
       name: "input-otp-pattern",
       filePath: "examples/aria/input-otp-pattern.tsx",
+      hookDependencies: [],
     },
     "input-otp-rtl": {
       name: "input-otp-rtl",
       filePath: "examples/aria/input-otp-rtl.tsx",
+      hookDependencies: [],
     },
     "input-otp-separator": {
       name: "input-otp-separator",
       filePath: "examples/aria/input-otp-separator.tsx",
+      hookDependencies: [],
     },
     "input-required": {
       name: "input-required",
       filePath: "examples/aria/input-required.tsx",
+      hookDependencies: [],
     },
     "input-rtl": {
       name: "input-rtl",
       filePath: "examples/aria/input-rtl.tsx",
+      hookDependencies: [],
     },
     "item-avatar": {
       name: "item-avatar",
       filePath: "examples/aria/item-avatar.tsx",
+      hookDependencies: [],
     },
     "item-demo": {
       name: "item-demo",
       filePath: "examples/aria/item-demo.tsx",
+      hookDependencies: [],
     },
     "item-dropdown": {
       name: "item-dropdown",
       filePath: "examples/aria/item-dropdown.tsx",
+      hookDependencies: [],
     },
     "item-group": {
       name: "item-group",
       filePath: "examples/aria/item-group.tsx",
+      hookDependencies: [],
     },
     "item-header": {
       name: "item-header",
       filePath: "examples/aria/item-header.tsx",
+      hookDependencies: [],
     },
     "item-icon": {
       name: "item-icon",
       filePath: "examples/aria/item-icon.tsx",
+      hookDependencies: [],
     },
     "item-image": {
       name: "item-image",
       filePath: "examples/aria/item-image.tsx",
+      hookDependencies: [],
     },
     "item-link": {
       name: "item-link",
       filePath: "examples/aria/item-link.tsx",
+      hookDependencies: [],
     },
     "item-rtl": {
       name: "item-rtl",
       filePath: "examples/aria/item-rtl.tsx",
+      hookDependencies: [],
     },
     "item-size": {
       name: "item-size",
       filePath: "examples/aria/item-size.tsx",
+      hookDependencies: [],
     },
     "item-variant": {
       name: "item-variant",
       filePath: "examples/aria/item-variant.tsx",
+      hookDependencies: [],
     },
     "kbd-button": {
       name: "kbd-button",
       filePath: "examples/aria/kbd-button.tsx",
+      hookDependencies: [],
     },
     "kbd-demo": {
       name: "kbd-demo",
       filePath: "examples/aria/kbd-demo.tsx",
+      hookDependencies: [],
     },
     "kbd-group": {
       name: "kbd-group",
       filePath: "examples/aria/kbd-group.tsx",
+      hookDependencies: [],
     },
     "kbd-input-group": {
       name: "kbd-input-group",
       filePath: "examples/aria/kbd-input-group.tsx",
+      hookDependencies: [],
     },
     "kbd-rtl": {
       name: "kbd-rtl",
       filePath: "examples/aria/kbd-rtl.tsx",
+      hookDependencies: [],
     },
     "kbd-tooltip": {
       name: "kbd-tooltip",
       filePath: "examples/aria/kbd-tooltip.tsx",
+      hookDependencies: [],
     },
     "label-demo": {
       name: "label-demo",
       filePath: "examples/aria/label-demo.tsx",
+      hookDependencies: [],
     },
     "label-rtl": {
       name: "label-rtl",
       filePath: "examples/aria/label-rtl.tsx",
+      hookDependencies: [],
     },
     "markdown-demo": {
       name: "markdown-demo",
       filePath: "examples/aria/markdown-demo.tsx",
+      hookDependencies: [],
     },
     "marker-border": {
       name: "marker-border",
       filePath: "examples/aria/marker-border.tsx",
+      hookDependencies: [],
     },
     "marker-demo": {
       name: "marker-demo",
       filePath: "examples/aria/marker-demo.tsx",
+      hookDependencies: [],
     },
     "marker-icon": {
       name: "marker-icon",
       filePath: "examples/aria/marker-icon.tsx",
+      hookDependencies: [],
     },
     "marker-link-button": {
       name: "marker-link-button",
       filePath: "examples/aria/marker-link-button.tsx",
+      hookDependencies: [],
     },
     "marker-separator": {
       name: "marker-separator",
       filePath: "examples/aria/marker-separator.tsx",
+      hookDependencies: [],
     },
     "marker-shimmer": {
       name: "marker-shimmer",
       filePath: "examples/aria/marker-shimmer.tsx",
+      hookDependencies: [],
     },
     "marker-status": {
       name: "marker-status",
       filePath: "examples/aria/marker-status.tsx",
+      hookDependencies: [],
     },
     "marker-variants": {
       name: "marker-variants",
       filePath: "examples/aria/marker-variants.tsx",
+      hookDependencies: [],
     },
     "message-actions": {
       name: "message-actions",
       filePath: "examples/aria/message-actions.tsx",
+      hookDependencies: [],
     },
     "message-attachment": {
       name: "message-attachment",
       filePath: "examples/aria/message-attachment.tsx",
+      hookDependencies: [],
     },
     "message-avatar": {
       name: "message-avatar",
       filePath: "examples/aria/message-avatar.tsx",
+      hookDependencies: [],
     },
     "message-demo": {
       name: "message-demo",
       filePath: "examples/aria/message-demo.tsx",
+      hookDependencies: [],
     },
     "message-group": {
       name: "message-group",
       filePath: "examples/aria/message-group.tsx",
+      hookDependencies: [],
     },
     "message-header-footer": {
       name: "message-header-footer",
       filePath: "examples/aria/message-header-footer.tsx",
+      hookDependencies: [],
     },
     "message-markdown": {
       name: "message-markdown",
       filePath: "examples/aria/message-markdown.tsx",
+      hookDependencies: [],
     },
     "message-scroller-anchoring": {
       name: "message-scroller-anchoring",
       filePath: "examples/aria/message-scroller-anchoring.tsx",
+      hookDependencies: [],
     },
     "message-scroller-animation": {
       name: "message-scroller-animation",
       filePath: "examples/aria/message-scroller-animation.tsx",
+      hookDependencies: [],
     },
     "message-scroller-commands": {
       name: "message-scroller-commands",
       filePath: "examples/aria/message-scroller-commands.tsx",
+      hookDependencies: [],
     },
     "message-scroller-demo": {
       name: "message-scroller-demo",
       filePath: "examples/aria/message-scroller-demo.tsx",
+      hookDependencies: [],
     },
     "message-scroller-group-chat": {
       name: "message-scroller-group-chat",
       filePath: "examples/aria/message-scroller-group-chat.tsx",
+      hookDependencies: [],
     },
     "message-scroller-load-history": {
       name: "message-scroller-load-history",
       filePath: "examples/aria/message-scroller-load-history.tsx",
+      hookDependencies: [],
     },
     "message-scroller-opening-position": {
       name: "message-scroller-opening-position",
       filePath: "examples/aria/message-scroller-opening-position.tsx",
+      hookDependencies: [],
     },
     "message-scroller-previous-context": {
       name: "message-scroller-previous-context",
       filePath: "examples/aria/message-scroller-previous-context.tsx",
+      hookDependencies: [],
     },
     "message-scroller-scrollable": {
       name: "message-scroller-scrollable",
       filePath: "examples/aria/message-scroller-scrollable.tsx",
+      hookDependencies: [],
     },
     "message-scroller-state": {
       name: "message-scroller-state",
       filePath: "examples/aria/message-scroller-state.tsx",
+      hookDependencies: [],
     },
     "message-scroller-streaming": {
       name: "message-scroller-streaming",
       filePath: "examples/aria/message-scroller-streaming.tsx",
+      hookDependencies: [],
     },
     "message-scroller-visibility": {
       name: "message-scroller-visibility",
       filePath: "examples/aria/message-scroller-visibility.tsx",
+      hookDependencies: [],
     },
     "muted-item-group": {
       name: "muted-item-group",
       filePath: "examples/aria/muted-item-group.tsx",
+      hookDependencies: [],
     },
     "native-select-demo": {
       name: "native-select-demo",
       filePath: "examples/aria/native-select-demo.tsx",
+      hookDependencies: [],
     },
     "native-select-disabled": {
       name: "native-select-disabled",
       filePath: "examples/aria/native-select-disabled.tsx",
+      hookDependencies: [],
     },
     "native-select-groups": {
       name: "native-select-groups",
       filePath: "examples/aria/native-select-groups.tsx",
+      hookDependencies: [],
     },
     "native-select-invalid": {
       name: "native-select-invalid",
       filePath: "examples/aria/native-select-invalid.tsx",
+      hookDependencies: [],
     },
     "native-select-rtl": {
       name: "native-select-rtl",
       filePath: "examples/aria/native-select-rtl.tsx",
+      hookDependencies: [],
     },
     "outline-item-group": {
       name: "outline-item-group",
       filePath: "examples/aria/outline-item-group.tsx",
+      hookDependencies: [],
     },
     "pagination-demo": {
       name: "pagination-demo",
       filePath: "examples/aria/pagination-demo.tsx",
+      hookDependencies: [],
     },
     "pagination-icons-only": {
       name: "pagination-icons-only",
       filePath: "examples/aria/pagination-icons-only.tsx",
+      hookDependencies: [],
     },
     "pagination-rtl": {
       name: "pagination-rtl",
       filePath: "examples/aria/pagination-rtl.tsx",
+      hookDependencies: [],
     },
     "pagination-simple": {
       name: "pagination-simple",
       filePath: "examples/aria/pagination-simple.tsx",
+      hookDependencies: [],
     },
     "popover-alignments": {
       name: "popover-alignments",
       filePath: "examples/aria/popover-alignments.tsx",
+      hookDependencies: [],
     },
     "popover-basic": {
       name: "popover-basic",
       filePath: "examples/aria/popover-basic.tsx",
+      hookDependencies: [],
     },
     "popover-demo": {
       name: "popover-demo",
       filePath: "examples/aria/popover-demo.tsx",
+      hookDependencies: [],
     },
     "popover-form": {
       name: "popover-form",
       filePath: "examples/aria/popover-form.tsx",
+      hookDependencies: [],
     },
     "popover-rtl": {
       name: "popover-rtl",
       filePath: "examples/aria/popover-rtl.tsx",
+      hookDependencies: [],
     },
     "progress-controlled": {
       name: "progress-controlled",
       filePath: "examples/aria/progress-controlled.tsx",
+      hookDependencies: [],
     },
     "progress-demo": {
       name: "progress-demo",
       filePath: "examples/aria/progress-demo.tsx",
+      hookDependencies: [],
     },
     "progress-label": {
       name: "progress-label",
       filePath: "examples/aria/progress-label.tsx",
+      hookDependencies: [],
     },
     "progress-rtl": {
       name: "progress-rtl",
       filePath: "examples/aria/progress-rtl.tsx",
+      hookDependencies: [],
     },
     "questionnaire-animated": {
       name: "questionnaire-animated",
       filePath: "examples/aria/questionnaire-animated.tsx",
+      hookDependencies: [],
     },
     "questionnaire-card": {
       name: "questionnaire-card",
       filePath: "examples/aria/questionnaire-card.tsx",
+      hookDependencies: [],
     },
     "questionnaire-conditional": {
       name: "questionnaire-conditional",
       filePath: "examples/aria/questionnaire-conditional.tsx",
+      hookDependencies: [],
     },
     "questionnaire-controlled": {
       name: "questionnaire-controlled",
       filePath: "examples/aria/questionnaire-controlled.tsx",
+      hookDependencies: [],
     },
     "questionnaire-demo": {
       name: "questionnaire-demo",
       filePath: "examples/aria/questionnaire-demo.tsx",
+      hookDependencies: [],
     },
     "questionnaire-dialog": {
       name: "questionnaire-dialog",
       filePath: "examples/aria/questionnaire-dialog.tsx",
+      hookDependencies: [],
     },
     "questionnaire-freeform": {
       name: "questionnaire-freeform",
       filePath: "examples/aria/questionnaire-freeform.tsx",
+      hookDependencies: [],
     },
     "questionnaire-multiple": {
       name: "questionnaire-multiple",
       filePath: "examples/aria/questionnaire-multiple.tsx",
+      hookDependencies: [],
     },
     "questionnaire-navigation-state": {
       name: "questionnaire-navigation-state",
       filePath: "examples/aria/questionnaire-navigation-state.tsx",
+      hookDependencies: [],
     },
     "questionnaire-progress": {
       name: "questionnaire-progress",
       filePath: "examples/aria/questionnaire-progress.tsx",
+      hookDependencies: [],
     },
     "questionnaire-resume": {
       name: "questionnaire-resume",
       filePath: "examples/aria/questionnaire-resume.tsx",
+      hookDependencies: [],
     },
     "questionnaire-shortcuts": {
       name: "questionnaire-shortcuts",
       filePath: "examples/aria/questionnaire-shortcuts.tsx",
+      hookDependencies: [],
     },
     "questionnaire-skip": {
       name: "questionnaire-skip",
       filePath: "examples/aria/questionnaire-skip.tsx",
+      hookDependencies: [],
     },
     "questionnaire-validation": {
       name: "questionnaire-validation",
       filePath: "examples/aria/questionnaire-validation.tsx",
+      hookDependencies: [],
     },
     "radio-fields": {
       name: "radio-fields",
       filePath: "examples/aria/radio-fields.tsx",
+      hookDependencies: [],
     },
     "radio-group-choice-card": {
       name: "radio-group-choice-card",
       filePath: "examples/aria/radio-group-choice-card.tsx",
+      hookDependencies: [],
     },
     "radio-group-demo": {
       name: "radio-group-demo",
       filePath: "examples/aria/radio-group-demo.tsx",
+      hookDependencies: [],
     },
     "radio-group-description": {
       name: "radio-group-description",
       filePath: "examples/aria/radio-group-description.tsx",
+      hookDependencies: [],
     },
     "radio-group-disabled": {
       name: "radio-group-disabled",
       filePath: "examples/aria/radio-group-disabled.tsx",
+      hookDependencies: [],
     },
     "radio-group-fieldset": {
       name: "radio-group-fieldset",
       filePath: "examples/aria/radio-group-fieldset.tsx",
+      hookDependencies: [],
     },
     "radio-group-invalid": {
       name: "radio-group-invalid",
       filePath: "examples/aria/radio-group-invalid.tsx",
+      hookDependencies: [],
     },
     "radio-group-rtl": {
       name: "radio-group-rtl",
       filePath: "examples/aria/radio-group-rtl.tsx",
+      hookDependencies: [],
     },
     "resizable-demo": {
       name: "resizable-demo",
       filePath: "examples/aria/resizable-demo.tsx",
+      hookDependencies: [],
     },
     "resizable-handle": {
       name: "resizable-handle",
       filePath: "examples/aria/resizable-handle.tsx",
+      hookDependencies: [],
     },
     "resizable-rtl": {
       name: "resizable-rtl",
       filePath: "examples/aria/resizable-rtl.tsx",
+      hookDependencies: [],
     },
     "resizable-vertical": {
       name: "resizable-vertical",
       filePath: "examples/aria/resizable-vertical.tsx",
+      hookDependencies: [],
     },
     "scroll-area-demo": {
       name: "scroll-area-demo",
       filePath: "examples/aria/scroll-area-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-area-horizontal-demo": {
       name: "scroll-area-horizontal-demo",
       filePath: "examples/aria/scroll-area-horizontal-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-area-rtl": {
       name: "scroll-area-rtl",
       filePath: "examples/aria/scroll-area-rtl.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-demo": {
       name: "scroll-fade-demo",
       filePath: "examples/aria/scroll-fade-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-edge": {
       name: "scroll-fade-edge",
       filePath: "examples/aria/scroll-fade-edge.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-horizontal": {
       name: "scroll-fade-horizontal",
       filePath: "examples/aria/scroll-fade-horizontal.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-none": {
       name: "scroll-fade-none",
       filePath: "examples/aria/scroll-fade-none.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-overflow": {
       name: "scroll-fade-overflow",
       filePath: "examples/aria/scroll-fade-overflow.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-rtl": {
       name: "scroll-fade-rtl",
       filePath: "examples/aria/scroll-fade-rtl.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-size": {
       name: "scroll-fade-size",
       filePath: "examples/aria/scroll-fade-size.tsx",
+      hookDependencies: [],
     },
     "select-autocomplete": {
       name: "select-autocomplete",
       filePath: "examples/aria/select-autocomplete.tsx",
+      hookDependencies: [],
     },
     "select-demo": {
       name: "select-demo",
       filePath: "examples/aria/select-demo.tsx",
+      hookDependencies: [],
     },
     "select-disabled": {
       name: "select-disabled",
       filePath: "examples/aria/select-disabled.tsx",
+      hookDependencies: [],
     },
     "select-groups": {
       name: "select-groups",
       filePath: "examples/aria/select-groups.tsx",
+      hookDependencies: [],
     },
     "select-invalid": {
       name: "select-invalid",
       filePath: "examples/aria/select-invalid.tsx",
+      hookDependencies: [],
     },
     "select-rtl": {
       name: "select-rtl",
       filePath: "examples/aria/select-rtl.tsx",
+      hookDependencies: [],
     },
     "select-scrollable": {
       name: "select-scrollable",
       filePath: "examples/aria/select-scrollable.tsx",
+      hookDependencies: [],
     },
     "separator-demo": {
       name: "separator-demo",
       filePath: "examples/aria/separator-demo.tsx",
+      hookDependencies: [],
     },
     "separator-list": {
       name: "separator-list",
       filePath: "examples/aria/separator-list.tsx",
+      hookDependencies: [],
     },
     "separator-menu": {
       name: "separator-menu",
       filePath: "examples/aria/separator-menu.tsx",
+      hookDependencies: [],
     },
     "separator-rtl": {
       name: "separator-rtl",
       filePath: "examples/aria/separator-rtl.tsx",
+      hookDependencies: [],
     },
     "separator-vertical": {
       name: "separator-vertical",
       filePath: "examples/aria/separator-vertical.tsx",
+      hookDependencies: [],
     },
     "sheet-demo": {
       name: "sheet-demo",
       filePath: "examples/aria/sheet-demo.tsx",
+      hookDependencies: [],
     },
     "sheet-no-close-button": {
       name: "sheet-no-close-button",
       filePath: "examples/aria/sheet-no-close-button.tsx",
+      hookDependencies: [],
     },
     "sheet-rtl": {
       name: "sheet-rtl",
       filePath: "examples/aria/sheet-rtl.tsx",
+      hookDependencies: [],
     },
     "sheet-side": {
       name: "sheet-side",
       filePath: "examples/aria/sheet-side.tsx",
+      hookDependencies: [],
     },
     "shimmer-angle": {
       name: "shimmer-angle",
       filePath: "examples/aria/shimmer-angle.tsx",
+      hookDependencies: [],
     },
     "shimmer-color": {
       name: "shimmer-color",
       filePath: "examples/aria/shimmer-color.tsx",
+      hookDependencies: [],
     },
     "shimmer-demo": {
       name: "shimmer-demo",
       filePath: "examples/aria/shimmer-demo.tsx",
+      hookDependencies: [],
     },
     "shimmer-duration": {
       name: "shimmer-duration",
       filePath: "examples/aria/shimmer-duration.tsx",
+      hookDependencies: [],
     },
     "shimmer-marker": {
       name: "shimmer-marker",
       filePath: "examples/aria/shimmer-marker.tsx",
+      hookDependencies: [],
     },
     "shimmer-none": {
       name: "shimmer-none",
       filePath: "examples/aria/shimmer-none.tsx",
+      hookDependencies: [],
     },
     "shimmer-once": {
       name: "shimmer-once",
       filePath: "examples/aria/shimmer-once.tsx",
+      hookDependencies: [],
     },
     "shimmer-rtl": {
       name: "shimmer-rtl",
       filePath: "examples/aria/shimmer-rtl.tsx",
+      hookDependencies: [],
     },
     "shimmer-spread": {
       name: "shimmer-spread",
       filePath: "examples/aria/shimmer-spread.tsx",
+      hookDependencies: [],
     },
     "sidebar-controlled": {
       name: "sidebar-controlled",
       filePath: "examples/aria/sidebar-controlled.tsx",
+      hookDependencies: [],
     },
     "sidebar-demo": {
       name: "sidebar-demo",
       filePath: "examples/aria/sidebar-demo.tsx",
+      hookDependencies: [],
     },
     "sidebar-footer": {
       name: "sidebar-footer",
       filePath: "examples/aria/sidebar-footer.tsx",
+      hookDependencies: [],
     },
     "sidebar-group-action": {
       name: "sidebar-group-action",
       filePath: "examples/aria/sidebar-group-action.tsx",
+      hookDependencies: [],
     },
     "sidebar-group-collapsible": {
       name: "sidebar-group-collapsible",
       filePath: "examples/aria/sidebar-group-collapsible.tsx",
+      hookDependencies: [],
     },
     "sidebar-group": {
       name: "sidebar-group",
       filePath: "examples/aria/sidebar-group.tsx",
+      hookDependencies: [],
     },
     "sidebar-header": {
       name: "sidebar-header",
       filePath: "examples/aria/sidebar-header.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-action": {
       name: "sidebar-menu-action",
       filePath: "examples/aria/sidebar-menu-action.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-badge": {
       name: "sidebar-menu-badge",
       filePath: "examples/aria/sidebar-menu-badge.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-collapsible": {
       name: "sidebar-menu-collapsible",
       filePath: "examples/aria/sidebar-menu-collapsible.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-sub": {
       name: "sidebar-menu-sub",
       filePath: "examples/aria/sidebar-menu-sub.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu": {
       name: "sidebar-menu",
       filePath: "examples/aria/sidebar-menu.tsx",
+      hookDependencies: [],
     },
     "sidebar-rsc": {
       name: "sidebar-rsc",
       filePath: "examples/aria/sidebar-rsc.tsx",
+      hookDependencies: [],
     },
     "sidebar-rtl": {
       name: "sidebar-rtl",
       filePath: "examples/aria/sidebar-rtl.tsx",
+      hookDependencies: [],
     },
     "skeleton-avatar": {
       name: "skeleton-avatar",
       filePath: "examples/aria/skeleton-avatar.tsx",
+      hookDependencies: [],
     },
     "skeleton-card": {
       name: "skeleton-card",
       filePath: "examples/aria/skeleton-card.tsx",
+      hookDependencies: [],
     },
     "skeleton-demo": {
       name: "skeleton-demo",
       filePath: "examples/aria/skeleton-demo.tsx",
+      hookDependencies: [],
     },
     "skeleton-form": {
       name: "skeleton-form",
       filePath: "examples/aria/skeleton-form.tsx",
+      hookDependencies: [],
     },
     "skeleton-rtl": {
       name: "skeleton-rtl",
       filePath: "examples/aria/skeleton-rtl.tsx",
+      hookDependencies: [],
     },
     "skeleton-table": {
       name: "skeleton-table",
       filePath: "examples/aria/skeleton-table.tsx",
+      hookDependencies: [],
     },
     "skeleton-text": {
       name: "skeleton-text",
       filePath: "examples/aria/skeleton-text.tsx",
+      hookDependencies: [],
     },
     "slider-controlled": {
       name: "slider-controlled",
       filePath: "examples/aria/slider-controlled.tsx",
+      hookDependencies: [],
     },
     "slider-demo": {
       name: "slider-demo",
       filePath: "examples/aria/slider-demo.tsx",
+      hookDependencies: [],
     },
     "slider-disabled": {
       name: "slider-disabled",
       filePath: "examples/aria/slider-disabled.tsx",
+      hookDependencies: [],
     },
     "slider-multiple": {
       name: "slider-multiple",
       filePath: "examples/aria/slider-multiple.tsx",
+      hookDependencies: [],
     },
     "slider-range": {
       name: "slider-range",
       filePath: "examples/aria/slider-range.tsx",
+      hookDependencies: [],
     },
     "slider-rtl": {
       name: "slider-rtl",
       filePath: "examples/aria/slider-rtl.tsx",
+      hookDependencies: [],
     },
     "slider-vertical": {
       name: "slider-vertical",
       filePath: "examples/aria/slider-vertical.tsx",
+      hookDependencies: [],
     },
     "sonner-demo": {
       name: "sonner-demo",
       filePath: "examples/aria/sonner-demo.tsx",
+      hookDependencies: [],
     },
     "sonner-description": {
       name: "sonner-description",
       filePath: "examples/aria/sonner-description.tsx",
+      hookDependencies: [],
     },
     "sonner-position": {
       name: "sonner-position",
       filePath: "examples/aria/sonner-position.tsx",
+      hookDependencies: [],
     },
     "sonner-types": {
       name: "sonner-types",
       filePath: "examples/aria/sonner-types.tsx",
+      hookDependencies: [],
     },
     "spinner-badge": {
       name: "spinner-badge",
       filePath: "examples/aria/spinner-badge.tsx",
+      hookDependencies: [],
     },
     "spinner-button": {
       name: "spinner-button",
       filePath: "examples/aria/spinner-button.tsx",
+      hookDependencies: [],
     },
     "spinner-custom": {
       name: "spinner-custom",
       filePath: "examples/aria/spinner-custom.tsx",
+      hookDependencies: [],
     },
     "spinner-demo": {
       name: "spinner-demo",
       filePath: "examples/aria/spinner-demo.tsx",
+      hookDependencies: [],
     },
     "spinner-empty": {
       name: "spinner-empty",
       filePath: "examples/aria/spinner-empty.tsx",
+      hookDependencies: [],
     },
     "spinner-input-group": {
       name: "spinner-input-group",
       filePath: "examples/aria/spinner-input-group.tsx",
+      hookDependencies: [],
     },
     "spinner-rtl": {
       name: "spinner-rtl",
       filePath: "examples/aria/spinner-rtl.tsx",
+      hookDependencies: [],
     },
     "spinner-size": {
       name: "spinner-size",
       filePath: "examples/aria/spinner-size.tsx",
+      hookDependencies: [],
     },
     "switch-choice-card": {
       name: "switch-choice-card",
       filePath: "examples/aria/switch-choice-card.tsx",
+      hookDependencies: [],
     },
     "switch-demo": {
       name: "switch-demo",
       filePath: "examples/aria/switch-demo.tsx",
+      hookDependencies: [],
     },
     "switch-description": {
       name: "switch-description",
       filePath: "examples/aria/switch-description.tsx",
+      hookDependencies: [],
     },
     "switch-disabled": {
       name: "switch-disabled",
       filePath: "examples/aria/switch-disabled.tsx",
+      hookDependencies: [],
     },
     "switch-invalid": {
       name: "switch-invalid",
       filePath: "examples/aria/switch-invalid.tsx",
+      hookDependencies: [],
     },
     "switch-rtl": {
       name: "switch-rtl",
       filePath: "examples/aria/switch-rtl.tsx",
+      hookDependencies: [],
     },
     "switch-sizes": {
       name: "switch-sizes",
       filePath: "examples/aria/switch-sizes.tsx",
+      hookDependencies: [],
     },
     "table-actions": {
       name: "table-actions",
       filePath: "examples/aria/table-actions.tsx",
+      hookDependencies: [],
     },
     "table-demo": {
       name: "table-demo",
       filePath: "examples/aria/table-demo.tsx",
+      hookDependencies: [],
     },
     "table-footer": {
       name: "table-footer",
       filePath: "examples/aria/table-footer.tsx",
+      hookDependencies: [],
     },
     "table-rtl": {
       name: "table-rtl",
       filePath: "examples/aria/table-rtl.tsx",
+      hookDependencies: [],
     },
     "tabs-demo": {
       name: "tabs-demo",
       filePath: "examples/aria/tabs-demo.tsx",
+      hookDependencies: [],
     },
     "tabs-disabled": {
       name: "tabs-disabled",
       filePath: "examples/aria/tabs-disabled.tsx",
+      hookDependencies: [],
     },
     "tabs-icons": {
       name: "tabs-icons",
       filePath: "examples/aria/tabs-icons.tsx",
+      hookDependencies: [],
     },
     "tabs-line": {
       name: "tabs-line",
       filePath: "examples/aria/tabs-line.tsx",
+      hookDependencies: [],
     },
     "tabs-rtl": {
       name: "tabs-rtl",
       filePath: "examples/aria/tabs-rtl.tsx",
+      hookDependencies: [],
     },
     "tabs-vertical": {
       name: "tabs-vertical",
       filePath: "examples/aria/tabs-vertical.tsx",
+      hookDependencies: [],
     },
     "textarea-button": {
       name: "textarea-button",
       filePath: "examples/aria/textarea-button.tsx",
+      hookDependencies: [],
     },
     "textarea-demo": {
       name: "textarea-demo",
       filePath: "examples/aria/textarea-demo.tsx",
+      hookDependencies: [],
     },
     "textarea-disabled": {
       name: "textarea-disabled",
       filePath: "examples/aria/textarea-disabled.tsx",
+      hookDependencies: [],
     },
     "textarea-field": {
       name: "textarea-field",
       filePath: "examples/aria/textarea-field.tsx",
+      hookDependencies: [],
     },
     "textarea-invalid": {
       name: "textarea-invalid",
       filePath: "examples/aria/textarea-invalid.tsx",
+      hookDependencies: [],
     },
     "textarea-rtl": {
       name: "textarea-rtl",
       filePath: "examples/aria/textarea-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-demo": {
       name: "toggle-demo",
       filePath: "examples/aria/toggle-demo.tsx",
+      hookDependencies: [],
     },
     "toggle-disabled": {
       name: "toggle-disabled",
       filePath: "examples/aria/toggle-disabled.tsx",
+      hookDependencies: [],
     },
     "toggle-group-demo": {
       name: "toggle-group-demo",
       filePath: "examples/aria/toggle-group-demo.tsx",
+      hookDependencies: [],
     },
     "toggle-group-disabled": {
       name: "toggle-group-disabled",
       filePath: "examples/aria/toggle-group-disabled.tsx",
+      hookDependencies: [],
     },
     "toggle-group-font-weight-selector": {
       name: "toggle-group-font-weight-selector",
       filePath: "examples/aria/toggle-group-font-weight-selector.tsx",
+      hookDependencies: [],
     },
     "toggle-group-outline": {
       name: "toggle-group-outline",
       filePath: "examples/aria/toggle-group-outline.tsx",
+      hookDependencies: [],
     },
     "toggle-group-rtl": {
       name: "toggle-group-rtl",
       filePath: "examples/aria/toggle-group-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-group-sizes": {
       name: "toggle-group-sizes",
       filePath: "examples/aria/toggle-group-sizes.tsx",
+      hookDependencies: [],
     },
     "toggle-group-spacing": {
       name: "toggle-group-spacing",
       filePath: "examples/aria/toggle-group-spacing.tsx",
+      hookDependencies: [],
     },
     "toggle-group-vertical": {
       name: "toggle-group-vertical",
       filePath: "examples/aria/toggle-group-vertical.tsx",
+      hookDependencies: [],
     },
     "toggle-outline": {
       name: "toggle-outline",
       filePath: "examples/aria/toggle-outline.tsx",
+      hookDependencies: [],
     },
     "toggle-rtl": {
       name: "toggle-rtl",
       filePath: "examples/aria/toggle-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-sizes": {
       name: "toggle-sizes",
       filePath: "examples/aria/toggle-sizes.tsx",
+      hookDependencies: [],
     },
     "toggle-text": {
       name: "toggle-text",
       filePath: "examples/aria/toggle-text.tsx",
+      hookDependencies: [],
     },
     "tooltip-demo": {
       name: "tooltip-demo",
       filePath: "examples/aria/tooltip-demo.tsx",
+      hookDependencies: [],
     },
     "tooltip-disabled": {
       name: "tooltip-disabled",
       filePath: "examples/aria/tooltip-disabled.tsx",
+      hookDependencies: [],
     },
     "tooltip-keyboard": {
       name: "tooltip-keyboard",
       filePath: "examples/aria/tooltip-keyboard.tsx",
+      hookDependencies: [],
     },
     "tooltip-rtl": {
       name: "tooltip-rtl",
       filePath: "examples/aria/tooltip-rtl.tsx",
+      hookDependencies: [],
     },
     "tooltip-sides": {
       name: "tooltip-sides",
       filePath: "examples/aria/tooltip-sides.tsx",
+      hookDependencies: [],
     },
     "typography-blockquote": {
       name: "typography-blockquote",
       filePath: "examples/aria/typography-blockquote.tsx",
+      hookDependencies: [],
     },
     "typography-demo": {
       name: "typography-demo",
       filePath: "examples/aria/typography-demo.tsx",
+      hookDependencies: [],
     },
     "typography-h1": {
       name: "typography-h1",
       filePath: "examples/aria/typography-h1.tsx",
+      hookDependencies: [],
     },
     "typography-h2": {
       name: "typography-h2",
       filePath: "examples/aria/typography-h2.tsx",
+      hookDependencies: [],
     },
     "typography-h3": {
       name: "typography-h3",
       filePath: "examples/aria/typography-h3.tsx",
+      hookDependencies: [],
     },
     "typography-h4": {
       name: "typography-h4",
       filePath: "examples/aria/typography-h4.tsx",
+      hookDependencies: [],
     },
     "typography-inline-code": {
       name: "typography-inline-code",
       filePath: "examples/aria/typography-inline-code.tsx",
+      hookDependencies: [],
     },
     "typography-large": {
       name: "typography-large",
       filePath: "examples/aria/typography-large.tsx",
+      hookDependencies: [],
     },
     "typography-lead": {
       name: "typography-lead",
       filePath: "examples/aria/typography-lead.tsx",
+      hookDependencies: [],
     },
     "typography-list": {
       name: "typography-list",
       filePath: "examples/aria/typography-list.tsx",
+      hookDependencies: [],
     },
     "typography-muted": {
       name: "typography-muted",
       filePath: "examples/aria/typography-muted.tsx",
+      hookDependencies: [],
     },
     "typography-p": {
       name: "typography-p",
       filePath: "examples/aria/typography-p.tsx",
+      hookDependencies: [],
     },
     "typography-rtl": {
       name: "typography-rtl",
       filePath: "examples/aria/typography-rtl.tsx",
+      hookDependencies: [],
     },
     "typography-small": {
       name: "typography-small",
       filePath: "examples/aria/typography-small.tsx",
+      hookDependencies: [],
     },
     "typography-table": {
       name: "typography-table",
       filePath: "examples/aria/typography-table.tsx",
+      hookDependencies: [],
     },
   },
   radix: {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/radix/accordion-basic.tsx",
+      hookDependencies: [],
     },
     "accordion-borders": {
       name: "accordion-borders",
       filePath: "examples/radix/accordion-borders.tsx",
+      hookDependencies: [],
     },
     "accordion-card": {
       name: "accordion-card",
       filePath: "examples/radix/accordion-card.tsx",
+      hookDependencies: [],
     },
     "accordion-demo": {
       name: "accordion-demo",
       filePath: "examples/radix/accordion-demo.tsx",
+      hookDependencies: [],
     },
     "accordion-disabled": {
       name: "accordion-disabled",
       filePath: "examples/radix/accordion-disabled.tsx",
+      hookDependencies: [],
     },
     "accordion-multiple": {
       name: "accordion-multiple",
       filePath: "examples/radix/accordion-multiple.tsx",
+      hookDependencies: [],
     },
     "accordion-rtl": {
       name: "accordion-rtl",
       filePath: "examples/radix/accordion-rtl.tsx",
+      hookDependencies: [],
     },
     "alert-action": {
       name: "alert-action",
       filePath: "examples/radix/alert-action.tsx",
+      hookDependencies: [],
     },
     "alert-basic": {
       name: "alert-basic",
       filePath: "examples/radix/alert-basic.tsx",
+      hookDependencies: [],
     },
     "alert-colors": {
       name: "alert-colors",
       filePath: "examples/radix/alert-colors.tsx",
+      hookDependencies: [],
     },
     "alert-demo": {
       name: "alert-demo",
       filePath: "examples/radix/alert-demo.tsx",
+      hookDependencies: [],
     },
     "alert-destructive": {
       name: "alert-destructive",
       filePath: "examples/radix/alert-destructive.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-basic": {
       name: "alert-dialog-basic",
       filePath: "examples/radix/alert-dialog-basic.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-demo": {
       name: "alert-dialog-demo",
       filePath: "examples/radix/alert-dialog-demo.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-destructive": {
       name: "alert-dialog-destructive",
       filePath: "examples/radix/alert-dialog-destructive.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-media": {
       name: "alert-dialog-media",
       filePath: "examples/radix/alert-dialog-media.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-rtl": {
       name: "alert-dialog-rtl",
       filePath: "examples/radix/alert-dialog-rtl.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-small-media": {
       name: "alert-dialog-small-media",
       filePath: "examples/radix/alert-dialog-small-media.tsx",
+      hookDependencies: [],
     },
     "alert-dialog-small": {
       name: "alert-dialog-small",
       filePath: "examples/radix/alert-dialog-small.tsx",
+      hookDependencies: [],
     },
     "alert-rtl": {
       name: "alert-rtl",
       filePath: "examples/radix/alert-rtl.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-demo": {
       name: "aspect-ratio-demo",
       filePath: "examples/radix/aspect-ratio-demo.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-portrait": {
       name: "aspect-ratio-portrait",
       filePath: "examples/radix/aspect-ratio-portrait.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-rtl": {
       name: "aspect-ratio-rtl",
       filePath: "examples/radix/aspect-ratio-rtl.tsx",
+      hookDependencies: [],
     },
     "aspect-ratio-square": {
       name: "aspect-ratio-square",
       filePath: "examples/radix/aspect-ratio-square.tsx",
+      hookDependencies: [],
     },
     "attachment-demo": {
       name: "attachment-demo",
       filePath: "examples/radix/attachment-demo.tsx",
+      hookDependencies: [],
     },
     "attachment-group": {
       name: "attachment-group",
       filePath: "examples/radix/attachment-group.tsx",
+      hookDependencies: [],
     },
     "attachment-image": {
       name: "attachment-image",
       filePath: "examples/radix/attachment-image.tsx",
+      hookDependencies: [],
     },
     "attachment-sizes": {
       name: "attachment-sizes",
       filePath: "examples/radix/attachment-sizes.tsx",
+      hookDependencies: [],
     },
     "attachment-states": {
       name: "attachment-states",
       filePath: "examples/radix/attachment-states.tsx",
+      hookDependencies: [],
     },
     "attachment-trigger": {
       name: "attachment-trigger",
       filePath: "examples/radix/attachment-trigger.tsx",
+      hookDependencies: [],
     },
     "avatar-badge-icon": {
       name: "avatar-badge-icon",
       filePath: "examples/radix/avatar-badge-icon.tsx",
+      hookDependencies: [],
     },
     "avatar-badge": {
       name: "avatar-badge",
       filePath: "examples/radix/avatar-badge.tsx",
+      hookDependencies: [],
     },
     "avatar-basic": {
       name: "avatar-basic",
       filePath: "examples/radix/avatar-basic.tsx",
+      hookDependencies: [],
     },
     "avatar-demo": {
       name: "avatar-demo",
       filePath: "examples/radix/avatar-demo.tsx",
+      hookDependencies: [],
     },
     "avatar-dropdown": {
       name: "avatar-dropdown",
       filePath: "examples/radix/avatar-dropdown.tsx",
+      hookDependencies: [],
     },
     "avatar-group-count-icon": {
       name: "avatar-group-count-icon",
       filePath: "examples/radix/avatar-group-count-icon.tsx",
+      hookDependencies: [],
     },
     "avatar-group-count": {
       name: "avatar-group-count",
       filePath: "examples/radix/avatar-group-count.tsx",
+      hookDependencies: [],
     },
     "avatar-group": {
       name: "avatar-group",
       filePath: "examples/radix/avatar-group.tsx",
+      hookDependencies: [],
     },
     "avatar-rtl": {
       name: "avatar-rtl",
       filePath: "examples/radix/avatar-rtl.tsx",
+      hookDependencies: [],
     },
     "avatar-size": {
       name: "avatar-size",
       filePath: "examples/radix/avatar-size.tsx",
+      hookDependencies: [],
     },
     "badge-colors": {
       name: "badge-colors",
       filePath: "examples/radix/badge-colors.tsx",
+      hookDependencies: [],
     },
     "badge-demo": {
       name: "badge-demo",
       filePath: "examples/radix/badge-demo.tsx",
+      hookDependencies: [],
     },
     "badge-icon": {
       name: "badge-icon",
       filePath: "examples/radix/badge-icon.tsx",
+      hookDependencies: [],
     },
     "badge-link": {
       name: "badge-link",
       filePath: "examples/radix/badge-link.tsx",
+      hookDependencies: [],
     },
     "badge-rtl": {
       name: "badge-rtl",
       filePath: "examples/radix/badge-rtl.tsx",
+      hookDependencies: [],
     },
     "badge-spinner": {
       name: "badge-spinner",
       filePath: "examples/radix/badge-spinner.tsx",
+      hookDependencies: [],
     },
     "badge-variants": {
       name: "badge-variants",
       filePath: "examples/radix/badge-variants.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-basic": {
       name: "breadcrumb-basic",
       filePath: "examples/radix/breadcrumb-basic.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-demo": {
       name: "breadcrumb-demo",
       filePath: "examples/radix/breadcrumb-demo.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-dropdown": {
       name: "breadcrumb-dropdown",
       filePath: "examples/radix/breadcrumb-dropdown.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-ellipsis": {
       name: "breadcrumb-ellipsis",
       filePath: "examples/radix/breadcrumb-ellipsis.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-link": {
       name: "breadcrumb-link",
       filePath: "examples/radix/breadcrumb-link.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-rtl": {
       name: "breadcrumb-rtl",
       filePath: "examples/radix/breadcrumb-rtl.tsx",
+      hookDependencies: [],
     },
     "breadcrumb-separator": {
       name: "breadcrumb-separator",
       filePath: "examples/radix/breadcrumb-separator.tsx",
+      hookDependencies: [],
     },
     "bubble-alignment": {
       name: "bubble-alignment",
       filePath: "examples/radix/bubble-alignment.tsx",
+      hookDependencies: [],
     },
     "bubble-collapsible": {
       name: "bubble-collapsible",
       filePath: "examples/radix/bubble-collapsible.tsx",
+      hookDependencies: [],
     },
     "bubble-demo": {
       name: "bubble-demo",
       filePath: "examples/radix/bubble-demo.tsx",
+      hookDependencies: [],
     },
     "bubble-group-demo": {
       name: "bubble-group-demo",
       filePath: "examples/radix/bubble-group-demo.tsx",
+      hookDependencies: [],
     },
     "bubble-link-button": {
       name: "bubble-link-button",
       filePath: "examples/radix/bubble-link-button.tsx",
+      hookDependencies: [],
     },
     "bubble-markdown": {
       name: "bubble-markdown",
       filePath: "examples/radix/bubble-markdown.tsx",
+      hookDependencies: [],
     },
     "bubble-popover": {
       name: "bubble-popover",
       filePath: "examples/radix/bubble-popover.tsx",
+      hookDependencies: [],
     },
     "bubble-reactions": {
       name: "bubble-reactions",
       filePath: "examples/radix/bubble-reactions.tsx",
+      hookDependencies: [],
     },
     "bubble-tooltip": {
       name: "bubble-tooltip",
       filePath: "examples/radix/bubble-tooltip.tsx",
+      hookDependencies: [],
     },
     "bubble-variants": {
       name: "bubble-variants",
       filePath: "examples/radix/bubble-variants.tsx",
+      hookDependencies: [],
     },
     "button-aschild": {
       name: "button-aschild",
       filePath: "examples/radix/button-aschild.tsx",
+      hookDependencies: [],
     },
     "button-default": {
       name: "button-default",
       filePath: "examples/radix/button-default.tsx",
+      hookDependencies: [],
     },
     "button-demo": {
       name: "button-demo",
       filePath: "examples/radix/button-demo.tsx",
+      hookDependencies: [],
     },
     "button-destructive": {
       name: "button-destructive",
       filePath: "examples/radix/button-destructive.tsx",
+      hookDependencies: [],
     },
     "button-ghost": {
       name: "button-ghost",
       filePath: "examples/radix/button-ghost.tsx",
+      hookDependencies: [],
     },
     "button-group-demo": {
       name: "button-group-demo",
       filePath: "examples/radix/button-group-demo.tsx",
+      hookDependencies: [],
     },
     "button-group-dropdown": {
       name: "button-group-dropdown",
       filePath: "examples/radix/button-group-dropdown.tsx",
+      hookDependencies: [],
     },
     "button-group-input-group": {
       name: "button-group-input-group",
       filePath: "examples/radix/button-group-input-group.tsx",
+      hookDependencies: [],
     },
     "button-group-input": {
       name: "button-group-input",
       filePath: "examples/radix/button-group-input.tsx",
+      hookDependencies: [],
     },
     "button-group-nested": {
       name: "button-group-nested",
       filePath: "examples/radix/button-group-nested.tsx",
+      hookDependencies: [],
     },
     "button-group-orientation": {
       name: "button-group-orientation",
       filePath: "examples/radix/button-group-orientation.tsx",
+      hookDependencies: [],
     },
     "button-group-popover": {
       name: "button-group-popover",
       filePath: "examples/radix/button-group-popover.tsx",
+      hookDependencies: [],
     },
     "button-group-rtl": {
       name: "button-group-rtl",
       filePath: "examples/radix/button-group-rtl.tsx",
+      hookDependencies: [],
     },
     "button-group-select": {
       name: "button-group-select",
       filePath: "examples/radix/button-group-select.tsx",
+      hookDependencies: [],
     },
     "button-group-separator": {
       name: "button-group-separator",
       filePath: "examples/radix/button-group-separator.tsx",
+      hookDependencies: [],
     },
     "button-group-size": {
       name: "button-group-size",
       filePath: "examples/radix/button-group-size.tsx",
+      hookDependencies: [],
     },
     "button-group-split": {
       name: "button-group-split",
       filePath: "examples/radix/button-group-split.tsx",
+      hookDependencies: [],
     },
     "button-icon": {
       name: "button-icon",
       filePath: "examples/radix/button-icon.tsx",
+      hookDependencies: [],
     },
     "button-link": {
       name: "button-link",
       filePath: "examples/radix/button-link.tsx",
+      hookDependencies: [],
     },
     "button-outline": {
       name: "button-outline",
       filePath: "examples/radix/button-outline.tsx",
+      hookDependencies: [],
     },
     "button-rounded": {
       name: "button-rounded",
       filePath: "examples/radix/button-rounded.tsx",
+      hookDependencies: [],
     },
     "button-rtl": {
       name: "button-rtl",
       filePath: "examples/radix/button-rtl.tsx",
+      hookDependencies: [],
     },
     "button-secondary": {
       name: "button-secondary",
       filePath: "examples/radix/button-secondary.tsx",
+      hookDependencies: [],
     },
     "button-size": {
       name: "button-size",
       filePath: "examples/radix/button-size.tsx",
+      hookDependencies: [],
     },
     "button-spinner": {
       name: "button-spinner",
       filePath: "examples/radix/button-spinner.tsx",
+      hookDependencies: [],
     },
     "button-with-icon": {
       name: "button-with-icon",
       filePath: "examples/radix/button-with-icon.tsx",
+      hookDependencies: [],
     },
     "calendar-basic": {
       name: "calendar-basic",
       filePath: "examples/radix/calendar-basic.tsx",
+      hookDependencies: [],
     },
     "calendar-booked-dates": {
       name: "calendar-booked-dates",
       filePath: "examples/radix/calendar-booked-dates.tsx",
+      hookDependencies: [],
     },
     "calendar-caption": {
       name: "calendar-caption",
       filePath: "examples/radix/calendar-caption.tsx",
+      hookDependencies: [],
     },
     "calendar-custom-days": {
       name: "calendar-custom-days",
       filePath: "examples/radix/calendar-custom-days.tsx",
+      hookDependencies: [],
     },
     "calendar-demo": {
       name: "calendar-demo",
       filePath: "examples/radix/calendar-demo.tsx",
+      hookDependencies: [],
     },
     "calendar-hijri": {
       name: "calendar-hijri",
       filePath: "examples/radix/calendar-hijri.tsx",
+      hookDependencies: [],
     },
     "calendar-multiple": {
       name: "calendar-multiple",
       filePath: "examples/radix/calendar-multiple.tsx",
+      hookDependencies: [],
     },
     "calendar-presets": {
       name: "calendar-presets",
       filePath: "examples/radix/calendar-presets.tsx",
+      hookDependencies: [],
     },
     "calendar-range": {
       name: "calendar-range",
       filePath: "examples/radix/calendar-range.tsx",
+      hookDependencies: [],
     },
     "calendar-rtl": {
       name: "calendar-rtl",
       filePath: "examples/radix/calendar-rtl.tsx",
+      hookDependencies: [],
     },
     "calendar-time": {
       name: "calendar-time",
       filePath: "examples/radix/calendar-time.tsx",
+      hookDependencies: [],
     },
     "calendar-week-numbers": {
       name: "calendar-week-numbers",
       filePath: "examples/radix/calendar-week-numbers.tsx",
+      hookDependencies: [],
     },
     "card-demo": {
       name: "card-demo",
       filePath: "examples/radix/card-demo.tsx",
+      hookDependencies: [],
     },
     "card-edge-to-edge": {
       name: "card-edge-to-edge",
       filePath: "examples/radix/card-edge-to-edge.tsx",
+      hookDependencies: [],
     },
     "card-image": {
       name: "card-image",
       filePath: "examples/radix/card-image.tsx",
+      hookDependencies: [],
     },
     "card-rtl": {
       name: "card-rtl",
       filePath: "examples/radix/card-rtl.tsx",
+      hookDependencies: [],
     },
     "card-small": {
       name: "card-small",
       filePath: "examples/radix/card-small.tsx",
+      hookDependencies: [],
     },
     "card-spacing": {
       name: "card-spacing",
       filePath: "examples/radix/card-spacing.tsx",
+      hookDependencies: [],
     },
     "carousel-api": {
       name: "carousel-api",
       filePath: "examples/radix/carousel-api.tsx",
+      hookDependencies: [],
     },
     "carousel-demo": {
       name: "carousel-demo",
       filePath: "examples/radix/carousel-demo.tsx",
+      hookDependencies: [],
     },
     "carousel-multiple": {
       name: "carousel-multiple",
       filePath: "examples/radix/carousel-multiple.tsx",
+      hookDependencies: [],
     },
     "carousel-orientation": {
       name: "carousel-orientation",
       filePath: "examples/radix/carousel-orientation.tsx",
+      hookDependencies: [],
     },
     "carousel-plugin": {
       name: "carousel-plugin",
       filePath: "examples/radix/carousel-plugin.tsx",
+      hookDependencies: [],
     },
     "carousel-rtl": {
       name: "carousel-rtl",
       filePath: "examples/radix/carousel-rtl.tsx",
+      hookDependencies: [],
     },
     "carousel-size": {
       name: "carousel-size",
       filePath: "examples/radix/carousel-size.tsx",
+      hookDependencies: [],
     },
     "carousel-spacing": {
       name: "carousel-spacing",
       filePath: "examples/radix/carousel-spacing.tsx",
+      hookDependencies: [],
     },
     "chart-demo": {
       name: "chart-demo",
       filePath: "examples/radix/chart-demo.tsx",
+      hookDependencies: [],
     },
     "chart-example-axis": {
       name: "chart-example-axis",
       filePath: "examples/radix/chart-example-axis.tsx",
+      hookDependencies: [],
     },
     "chart-example-grid": {
       name: "chart-example-grid",
       filePath: "examples/radix/chart-example-grid.tsx",
+      hookDependencies: [],
     },
     "chart-example-legend": {
       name: "chart-example-legend",
       filePath: "examples/radix/chart-example-legend.tsx",
+      hookDependencies: [],
     },
     "chart-example-tooltip": {
       name: "chart-example-tooltip",
       filePath: "examples/radix/chart-example-tooltip.tsx",
+      hookDependencies: [],
     },
     "chart-example": {
       name: "chart-example",
       filePath: "examples/radix/chart-example.tsx",
+      hookDependencies: [],
     },
     "chart-rtl": {
       name: "chart-rtl",
       filePath: "examples/radix/chart-rtl.tsx",
+      hookDependencies: [],
     },
     "chart-tooltip": {
       name: "chart-tooltip",
       filePath: "examples/radix/chart-tooltip.tsx",
+      hookDependencies: [],
     },
     "checkbox-basic": {
       name: "checkbox-basic",
       filePath: "examples/radix/checkbox-basic.tsx",
+      hookDependencies: [],
     },
     "checkbox-demo": {
       name: "checkbox-demo",
       filePath: "examples/radix/checkbox-demo.tsx",
+      hookDependencies: [],
     },
     "checkbox-description": {
       name: "checkbox-description",
       filePath: "examples/radix/checkbox-description.tsx",
+      hookDependencies: [],
     },
     "checkbox-disabled": {
       name: "checkbox-disabled",
       filePath: "examples/radix/checkbox-disabled.tsx",
+      hookDependencies: [],
     },
     "checkbox-group": {
       name: "checkbox-group",
       filePath: "examples/radix/checkbox-group.tsx",
+      hookDependencies: [],
     },
     "checkbox-invalid": {
       name: "checkbox-invalid",
       filePath: "examples/radix/checkbox-invalid.tsx",
+      hookDependencies: [],
     },
     "checkbox-rtl": {
       name: "checkbox-rtl",
       filePath: "examples/radix/checkbox-rtl.tsx",
+      hookDependencies: [],
     },
     "checkbox-table": {
       name: "checkbox-table",
       filePath: "examples/radix/checkbox-table.tsx",
+      hookDependencies: [],
     },
     "collapsible-basic": {
       name: "collapsible-basic",
       filePath: "examples/radix/collapsible-basic.tsx",
+      hookDependencies: [],
     },
     "collapsible-demo": {
       name: "collapsible-demo",
       filePath: "examples/radix/collapsible-demo.tsx",
+      hookDependencies: [],
     },
     "collapsible-file-tree": {
       name: "collapsible-file-tree",
       filePath: "examples/radix/collapsible-file-tree.tsx",
+      hookDependencies: [],
     },
     "collapsible-rtl": {
       name: "collapsible-rtl",
       filePath: "examples/radix/collapsible-rtl.tsx",
+      hookDependencies: [],
     },
     "collapsible-settings": {
       name: "collapsible-settings",
       filePath: "examples/radix/collapsible-settings.tsx",
+      hookDependencies: [],
     },
     "combobox-auto-highlight": {
       name: "combobox-auto-highlight",
       filePath: "examples/radix/combobox-auto-highlight.tsx",
+      hookDependencies: [],
     },
     "combobox-basic": {
       name: "combobox-basic",
       filePath: "examples/radix/combobox-basic.tsx",
+      hookDependencies: [],
     },
     "combobox-clear": {
       name: "combobox-clear",
       filePath: "examples/radix/combobox-clear.tsx",
+      hookDependencies: [],
     },
     "combobox-custom": {
       name: "combobox-custom",
       filePath: "examples/radix/combobox-custom.tsx",
+      hookDependencies: [],
     },
     "combobox-demo": {
       name: "combobox-demo",
       filePath: "examples/radix/combobox-demo.tsx",
+      hookDependencies: [],
     },
     "combobox-disabled": {
       name: "combobox-disabled",
       filePath: "examples/radix/combobox-disabled.tsx",
+      hookDependencies: [],
     },
     "combobox-groups": {
       name: "combobox-groups",
       filePath: "examples/radix/combobox-groups.tsx",
+      hookDependencies: [],
     },
     "combobox-input-group": {
       name: "combobox-input-group",
       filePath: "examples/radix/combobox-input-group.tsx",
+      hookDependencies: [],
     },
     "combobox-invalid": {
       name: "combobox-invalid",
       filePath: "examples/radix/combobox-invalid.tsx",
+      hookDependencies: [],
     },
     "combobox-multiple": {
       name: "combobox-multiple",
       filePath: "examples/radix/combobox-multiple.tsx",
+      hookDependencies: [],
     },
     "combobox-popup": {
       name: "combobox-popup",
       filePath: "examples/radix/combobox-popup.tsx",
+      hookDependencies: [],
     },
     "combobox-rtl": {
       name: "combobox-rtl",
       filePath: "examples/radix/combobox-rtl.tsx",
+      hookDependencies: [],
     },
     "command-basic": {
       name: "command-basic",
       filePath: "examples/radix/command-basic.tsx",
+      hookDependencies: [],
     },
     "command-demo": {
       name: "command-demo",
       filePath: "examples/radix/command-demo.tsx",
+      hookDependencies: [],
     },
     "command-dialog": {
       name: "command-dialog",
       filePath: "examples/radix/command-dialog.tsx",
+      hookDependencies: [],
     },
     "command-groups": {
       name: "command-groups",
       filePath: "examples/radix/command-groups.tsx",
+      hookDependencies: [],
     },
     "command-rtl": {
       name: "command-rtl",
       filePath: "examples/radix/command-rtl.tsx",
+      hookDependencies: [],
     },
     "command-scrollable": {
       name: "command-scrollable",
       filePath: "examples/radix/command-scrollable.tsx",
+      hookDependencies: [],
     },
     "command-shortcuts": {
       name: "command-shortcuts",
       filePath: "examples/radix/command-shortcuts.tsx",
+      hookDependencies: [],
     },
     "context-menu-basic": {
       name: "context-menu-basic",
       filePath: "examples/radix/context-menu-basic.tsx",
+      hookDependencies: [],
     },
     "context-menu-checkboxes": {
       name: "context-menu-checkboxes",
       filePath: "examples/radix/context-menu-checkboxes.tsx",
+      hookDependencies: [],
     },
     "context-menu-demo": {
       name: "context-menu-demo",
       filePath: "examples/radix/context-menu-demo.tsx",
+      hookDependencies: [],
     },
     "context-menu-destructive": {
       name: "context-menu-destructive",
       filePath: "examples/radix/context-menu-destructive.tsx",
+      hookDependencies: [],
     },
     "context-menu-groups": {
       name: "context-menu-groups",
       filePath: "examples/radix/context-menu-groups.tsx",
+      hookDependencies: [],
     },
     "context-menu-icons": {
       name: "context-menu-icons",
       filePath: "examples/radix/context-menu-icons.tsx",
+      hookDependencies: [],
     },
     "context-menu-radio": {
       name: "context-menu-radio",
       filePath: "examples/radix/context-menu-radio.tsx",
+      hookDependencies: [],
     },
     "context-menu-rtl": {
       name: "context-menu-rtl",
       filePath: "examples/radix/context-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "context-menu-shortcuts": {
       name: "context-menu-shortcuts",
       filePath: "examples/radix/context-menu-shortcuts.tsx",
+      hookDependencies: [],
     },
     "context-menu-sides": {
       name: "context-menu-sides",
       filePath: "examples/radix/context-menu-sides.tsx",
+      hookDependencies: [],
     },
     "context-menu-submenu": {
       name: "context-menu-submenu",
       filePath: "examples/radix/context-menu-submenu.tsx",
+      hookDependencies: [],
     },
     "data-picker-with-dropdowns": {
       name: "data-picker-with-dropdowns",
       filePath: "examples/radix/data-picker-with-dropdowns.tsx",
+      hookDependencies: [],
     },
     "data-table-demo": {
       name: "data-table-demo",
       filePath: "examples/radix/data-table-demo.tsx",
+      hookDependencies: [],
     },
     "data-table-rtl": {
       name: "data-table-rtl",
       filePath: "examples/radix/data-table-rtl.tsx",
+      hookDependencies: [],
     },
     "date-picker-basic": {
       name: "date-picker-basic",
       filePath: "examples/radix/date-picker-basic.tsx",
+      hookDependencies: [],
     },
     "date-picker-demo": {
       name: "date-picker-demo",
       filePath: "examples/radix/date-picker-demo.tsx",
+      hookDependencies: [],
     },
     "date-picker-dob": {
       name: "date-picker-dob",
       filePath: "examples/radix/date-picker-dob.tsx",
+      hookDependencies: [],
     },
     "date-picker-input": {
       name: "date-picker-input",
       filePath: "examples/radix/date-picker-input.tsx",
+      hookDependencies: [],
     },
     "date-picker-natural-language": {
       name: "date-picker-natural-language",
       filePath: "examples/radix/date-picker-natural-language.tsx",
+      hookDependencies: [],
     },
     "date-picker-range": {
       name: "date-picker-range",
       filePath: "examples/radix/date-picker-range.tsx",
+      hookDependencies: [],
     },
     "date-picker-rtl": {
       name: "date-picker-rtl",
       filePath: "examples/radix/date-picker-rtl.tsx",
+      hookDependencies: [],
     },
     "date-picker-time": {
       name: "date-picker-time",
       filePath: "examples/radix/date-picker-time.tsx",
+      hookDependencies: [],
     },
     "dialog-close-button": {
       name: "dialog-close-button",
       filePath: "examples/radix/dialog-close-button.tsx",
+      hookDependencies: [],
     },
     "dialog-demo": {
       name: "dialog-demo",
       filePath: "examples/radix/dialog-demo.tsx",
+      hookDependencies: [],
     },
     "dialog-no-close-button": {
       name: "dialog-no-close-button",
       filePath: "examples/radix/dialog-no-close-button.tsx",
+      hookDependencies: [],
     },
     "dialog-rtl": {
       name: "dialog-rtl",
       filePath: "examples/radix/dialog-rtl.tsx",
+      hookDependencies: [],
     },
     "dialog-scrollable-content": {
       name: "dialog-scrollable-content",
       filePath: "examples/radix/dialog-scrollable-content.tsx",
+      hookDependencies: [],
     },
     "dialog-sticky-footer": {
       name: "dialog-sticky-footer",
       filePath: "examples/radix/dialog-sticky-footer.tsx",
+      hookDependencies: [],
     },
     "drawer-demo": {
       name: "drawer-demo",
       filePath: "examples/radix/drawer-demo.tsx",
+      hookDependencies: [],
     },
     "drawer-dialog": {
       name: "drawer-dialog",
       filePath: "examples/radix/drawer-dialog.tsx",
+      hookDependencies: ["use-media-query"],
     },
     "drawer-rtl": {
       name: "drawer-rtl",
       filePath: "examples/radix/drawer-rtl.tsx",
+      hookDependencies: [],
     },
     "drawer-scrollable-content": {
       name: "drawer-scrollable-content",
       filePath: "examples/radix/drawer-scrollable-content.tsx",
+      hookDependencies: [],
     },
     "drawer-sides": {
       name: "drawer-sides",
       filePath: "examples/radix/drawer-sides.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-avatar": {
       name: "dropdown-menu-avatar",
       filePath: "examples/radix/dropdown-menu-avatar.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-basic": {
       name: "dropdown-menu-basic",
       filePath: "examples/radix/dropdown-menu-basic.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-checkboxes-icons": {
       name: "dropdown-menu-checkboxes-icons",
       filePath: "examples/radix/dropdown-menu-checkboxes-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-checkboxes": {
       name: "dropdown-menu-checkboxes",
       filePath: "examples/radix/dropdown-menu-checkboxes.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-complex": {
       name: "dropdown-menu-complex",
       filePath: "examples/radix/dropdown-menu-complex.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-demo": {
       name: "dropdown-menu-demo",
       filePath: "examples/radix/dropdown-menu-demo.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-destructive": {
       name: "dropdown-menu-destructive",
       filePath: "examples/radix/dropdown-menu-destructive.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-icons": {
       name: "dropdown-menu-icons",
       filePath: "examples/radix/dropdown-menu-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-radio-group": {
       name: "dropdown-menu-radio-group",
       filePath: "examples/radix/dropdown-menu-radio-group.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-radio-icons": {
       name: "dropdown-menu-radio-icons",
       filePath: "examples/radix/dropdown-menu-radio-icons.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-rtl": {
       name: "dropdown-menu-rtl",
       filePath: "examples/radix/dropdown-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-shortcuts": {
       name: "dropdown-menu-shortcuts",
       filePath: "examples/radix/dropdown-menu-shortcuts.tsx",
+      hookDependencies: [],
     },
     "dropdown-menu-submenu": {
       name: "dropdown-menu-submenu",
       filePath: "examples/radix/dropdown-menu-submenu.tsx",
+      hookDependencies: [],
     },
     "empty-avatar-group": {
       name: "empty-avatar-group",
       filePath: "examples/radix/empty-avatar-group.tsx",
+      hookDependencies: [],
     },
     "empty-avatar": {
       name: "empty-avatar",
       filePath: "examples/radix/empty-avatar.tsx",
+      hookDependencies: [],
     },
     "empty-background": {
       name: "empty-background",
       filePath: "examples/radix/empty-background.tsx",
+      hookDependencies: [],
     },
     "empty-card": {
       name: "empty-card",
       filePath: "examples/radix/empty-card.tsx",
+      hookDependencies: [],
     },
     "empty-demo": {
       name: "empty-demo",
       filePath: "examples/radix/empty-demo.tsx",
+      hookDependencies: [],
     },
     "empty-input-group": {
       name: "empty-input-group",
       filePath: "examples/radix/empty-input-group.tsx",
+      hookDependencies: [],
     },
     "empty-outline": {
       name: "empty-outline",
       filePath: "examples/radix/empty-outline.tsx",
+      hookDependencies: [],
     },
     "empty-rtl": {
       name: "empty-rtl",
       filePath: "examples/radix/empty-rtl.tsx",
+      hookDependencies: [],
     },
     "field-checkbox": {
       name: "field-checkbox",
       filePath: "examples/radix/field-checkbox.tsx",
+      hookDependencies: [],
     },
     "field-choice-card": {
       name: "field-choice-card",
       filePath: "examples/radix/field-choice-card.tsx",
+      hookDependencies: [],
     },
     "field-demo": {
       name: "field-demo",
       filePath: "examples/radix/field-demo.tsx",
+      hookDependencies: [],
     },
     "field-fieldset": {
       name: "field-fieldset",
       filePath: "examples/radix/field-fieldset.tsx",
+      hookDependencies: [],
     },
     "field-group": {
       name: "field-group",
       filePath: "examples/radix/field-group.tsx",
+      hookDependencies: [],
     },
     "field-input": {
       name: "field-input",
       filePath: "examples/radix/field-input.tsx",
+      hookDependencies: [],
     },
     "field-radio": {
       name: "field-radio",
       filePath: "examples/radix/field-radio.tsx",
+      hookDependencies: [],
     },
     "field-responsive": {
       name: "field-responsive",
       filePath: "examples/radix/field-responsive.tsx",
+      hookDependencies: [],
     },
     "field-rtl": {
       name: "field-rtl",
       filePath: "examples/radix/field-rtl.tsx",
+      hookDependencies: [],
     },
     "field-select": {
       name: "field-select",
       filePath: "examples/radix/field-select.tsx",
+      hookDependencies: [],
     },
     "field-slider": {
       name: "field-slider",
       filePath: "examples/radix/field-slider.tsx",
+      hookDependencies: [],
     },
     "field-switch": {
       name: "field-switch",
       filePath: "examples/radix/field-switch.tsx",
+      hookDependencies: [],
     },
     "field-textarea": {
       name: "field-textarea",
       filePath: "examples/radix/field-textarea.tsx",
+      hookDependencies: [],
     },
     "file-upload-list": {
       name: "file-upload-list",
       filePath: "examples/radix/file-upload-list.tsx",
+      hookDependencies: [],
     },
     "hover-card-demo": {
       name: "hover-card-demo",
       filePath: "examples/radix/hover-card-demo.tsx",
+      hookDependencies: [],
     },
     "hover-card-rtl": {
       name: "hover-card-rtl",
       filePath: "examples/radix/hover-card-rtl.tsx",
+      hookDependencies: [],
     },
     "hover-card-sides": {
       name: "hover-card-sides",
       filePath: "examples/radix/hover-card-sides.tsx",
+      hookDependencies: [],
     },
     "input-badge": {
       name: "input-badge",
       filePath: "examples/radix/input-badge.tsx",
+      hookDependencies: [],
     },
     "input-basic": {
       name: "input-basic",
       filePath: "examples/radix/input-basic.tsx",
+      hookDependencies: [],
     },
     "input-button-group": {
       name: "input-button-group",
       filePath: "examples/radix/input-button-group.tsx",
+      hookDependencies: [],
     },
     "input-demo": {
       name: "input-demo",
       filePath: "examples/radix/input-demo.tsx",
+      hookDependencies: [],
     },
     "input-disabled": {
       name: "input-disabled",
       filePath: "examples/radix/input-disabled.tsx",
+      hookDependencies: [],
     },
     "input-field": {
       name: "input-field",
       filePath: "examples/radix/input-field.tsx",
+      hookDependencies: [],
     },
     "input-fieldgroup": {
       name: "input-fieldgroup",
       filePath: "examples/radix/input-fieldgroup.tsx",
+      hookDependencies: [],
     },
     "input-file": {
       name: "input-file",
       filePath: "examples/radix/input-file.tsx",
+      hookDependencies: [],
     },
     "input-form": {
       name: "input-form",
       filePath: "examples/radix/input-form.tsx",
+      hookDependencies: [],
     },
     "input-grid": {
       name: "input-grid",
       filePath: "examples/radix/input-grid.tsx",
+      hookDependencies: [],
     },
     "input-group-basic": {
       name: "input-group-basic",
       filePath: "examples/radix/input-group-basic.tsx",
+      hookDependencies: [],
     },
     "input-group-block-end": {
       name: "input-group-block-end",
       filePath: "examples/radix/input-group-block-end.tsx",
+      hookDependencies: [],
     },
     "input-group-block-start": {
       name: "input-group-block-start",
       filePath: "examples/radix/input-group-block-start.tsx",
+      hookDependencies: [],
     },
     "input-group-button-group": {
       name: "input-group-button-group",
       filePath: "examples/radix/input-group-button-group.tsx",
+      hookDependencies: [],
     },
     "input-group-button": {
       name: "input-group-button",
       filePath: "examples/radix/input-group-button.tsx",
+      hookDependencies: ["use-copy-to-clipboard"],
     },
     "input-group-custom": {
       name: "input-group-custom",
       filePath: "examples/radix/input-group-custom.tsx",
+      hookDependencies: [],
     },
     "input-group-demo": {
       name: "input-group-demo",
       filePath: "examples/radix/input-group-demo.tsx",
+      hookDependencies: [],
     },
     "input-group-dropdown": {
       name: "input-group-dropdown",
       filePath: "examples/radix/input-group-dropdown.tsx",
+      hookDependencies: [],
     },
     "input-group-icon": {
       name: "input-group-icon",
       filePath: "examples/radix/input-group-icon.tsx",
+      hookDependencies: [],
     },
     "input-group-in-card": {
       name: "input-group-in-card",
       filePath: "examples/radix/input-group-in-card.tsx",
+      hookDependencies: [],
     },
     "input-group-inline-end": {
       name: "input-group-inline-end",
       filePath: "examples/radix/input-group-inline-end.tsx",
+      hookDependencies: [],
     },
     "input-group-inline-start": {
       name: "input-group-inline-start",
       filePath: "examples/radix/input-group-inline-start.tsx",
+      hookDependencies: [],
     },
     "input-group-kbd": {
       name: "input-group-kbd",
       filePath: "examples/radix/input-group-kbd.tsx",
+      hookDependencies: [],
     },
     "input-group-label": {
       name: "input-group-label",
       filePath: "examples/radix/input-group-label.tsx",
+      hookDependencies: [],
     },
     "input-group-rtl": {
       name: "input-group-rtl",
       filePath: "examples/radix/input-group-rtl.tsx",
+      hookDependencies: [],
     },
     "input-group-spinner": {
       name: "input-group-spinner",
       filePath: "examples/radix/input-group-spinner.tsx",
+      hookDependencies: [],
     },
     "input-group-text": {
       name: "input-group-text",
       filePath: "examples/radix/input-group-text.tsx",
+      hookDependencies: [],
     },
     "input-group-textarea-examples": {
       name: "input-group-textarea-examples",
       filePath: "examples/radix/input-group-textarea-examples.tsx",
+      hookDependencies: [],
     },
     "input-group-textarea": {
       name: "input-group-textarea",
       filePath: "examples/radix/input-group-textarea.tsx",
+      hookDependencies: [],
     },
     "input-group-tooltip": {
       name: "input-group-tooltip",
       filePath: "examples/radix/input-group-tooltip.tsx",
+      hookDependencies: [],
     },
     "input-group-with-addons": {
       name: "input-group-with-addons",
       filePath: "examples/radix/input-group-with-addons.tsx",
+      hookDependencies: [],
     },
     "input-group-with-buttons": {
       name: "input-group-with-buttons",
       filePath: "examples/radix/input-group-with-buttons.tsx",
+      hookDependencies: [],
     },
     "input-group-with-kbd": {
       name: "input-group-with-kbd",
       filePath: "examples/radix/input-group-with-kbd.tsx",
+      hookDependencies: [],
     },
     "input-group-with-tooltip": {
       name: "input-group-with-tooltip",
       filePath: "examples/radix/input-group-with-tooltip.tsx",
+      hookDependencies: [],
     },
     "input-inline": {
       name: "input-inline",
       filePath: "examples/radix/input-inline.tsx",
+      hookDependencies: [],
     },
     "input-input-group": {
       name: "input-input-group",
       filePath: "examples/radix/input-input-group.tsx",
+      hookDependencies: [],
     },
     "input-invalid": {
       name: "input-invalid",
       filePath: "examples/radix/input-invalid.tsx",
+      hookDependencies: [],
     },
     "input-numeric": {
       name: "input-numeric",
       filePath: "examples/radix/input-numeric.tsx",
+      hookDependencies: [],
     },
     "input-otp-alphanumeric": {
       name: "input-otp-alphanumeric",
       filePath: "examples/radix/input-otp-alphanumeric.tsx",
+      hookDependencies: [],
     },
     "input-otp-controlled": {
       name: "input-otp-controlled",
       filePath: "examples/radix/input-otp-controlled.tsx",
+      hookDependencies: [],
     },
     "input-otp-demo": {
       name: "input-otp-demo",
       filePath: "examples/radix/input-otp-demo.tsx",
+      hookDependencies: [],
     },
     "input-otp-disabled": {
       name: "input-otp-disabled",
       filePath: "examples/radix/input-otp-disabled.tsx",
+      hookDependencies: [],
     },
     "input-otp-form": {
       name: "input-otp-form",
       filePath: "examples/radix/input-otp-form.tsx",
+      hookDependencies: [],
     },
     "input-otp-four-digits": {
       name: "input-otp-four-digits",
       filePath: "examples/radix/input-otp-four-digits.tsx",
+      hookDependencies: [],
     },
     "input-otp-invalid": {
       name: "input-otp-invalid",
       filePath: "examples/radix/input-otp-invalid.tsx",
+      hookDependencies: [],
     },
     "input-otp-pattern": {
       name: "input-otp-pattern",
       filePath: "examples/radix/input-otp-pattern.tsx",
+      hookDependencies: [],
     },
     "input-otp-rtl": {
       name: "input-otp-rtl",
       filePath: "examples/radix/input-otp-rtl.tsx",
+      hookDependencies: [],
     },
     "input-otp-separator": {
       name: "input-otp-separator",
       filePath: "examples/radix/input-otp-separator.tsx",
+      hookDependencies: [],
     },
     "input-required": {
       name: "input-required",
       filePath: "examples/radix/input-required.tsx",
+      hookDependencies: [],
     },
     "input-rtl": {
       name: "input-rtl",
       filePath: "examples/radix/input-rtl.tsx",
+      hookDependencies: [],
     },
     "item-avatar": {
       name: "item-avatar",
       filePath: "examples/radix/item-avatar.tsx",
+      hookDependencies: [],
     },
     "item-demo": {
       name: "item-demo",
       filePath: "examples/radix/item-demo.tsx",
+      hookDependencies: [],
     },
     "item-dropdown": {
       name: "item-dropdown",
       filePath: "examples/radix/item-dropdown.tsx",
+      hookDependencies: [],
     },
     "item-group": {
       name: "item-group",
       filePath: "examples/radix/item-group.tsx",
+      hookDependencies: [],
     },
     "item-header": {
       name: "item-header",
       filePath: "examples/radix/item-header.tsx",
+      hookDependencies: [],
     },
     "item-icon": {
       name: "item-icon",
       filePath: "examples/radix/item-icon.tsx",
+      hookDependencies: [],
     },
     "item-image": {
       name: "item-image",
       filePath: "examples/radix/item-image.tsx",
+      hookDependencies: [],
     },
     "item-link": {
       name: "item-link",
       filePath: "examples/radix/item-link.tsx",
+      hookDependencies: [],
     },
     "item-rtl": {
       name: "item-rtl",
       filePath: "examples/radix/item-rtl.tsx",
+      hookDependencies: [],
     },
     "item-size": {
       name: "item-size",
       filePath: "examples/radix/item-size.tsx",
+      hookDependencies: [],
     },
     "item-variant": {
       name: "item-variant",
       filePath: "examples/radix/item-variant.tsx",
+      hookDependencies: [],
     },
     "kbd-button": {
       name: "kbd-button",
       filePath: "examples/radix/kbd-button.tsx",
+      hookDependencies: [],
     },
     "kbd-demo": {
       name: "kbd-demo",
       filePath: "examples/radix/kbd-demo.tsx",
+      hookDependencies: [],
     },
     "kbd-group": {
       name: "kbd-group",
       filePath: "examples/radix/kbd-group.tsx",
+      hookDependencies: [],
     },
     "kbd-input-group": {
       name: "kbd-input-group",
       filePath: "examples/radix/kbd-input-group.tsx",
+      hookDependencies: [],
     },
     "kbd-rtl": {
       name: "kbd-rtl",
       filePath: "examples/radix/kbd-rtl.tsx",
+      hookDependencies: [],
     },
     "kbd-tooltip": {
       name: "kbd-tooltip",
       filePath: "examples/radix/kbd-tooltip.tsx",
+      hookDependencies: [],
     },
     "label-demo": {
       name: "label-demo",
       filePath: "examples/radix/label-demo.tsx",
+      hookDependencies: [],
     },
     "label-rtl": {
       name: "label-rtl",
       filePath: "examples/radix/label-rtl.tsx",
+      hookDependencies: [],
     },
     "markdown-demo": {
       name: "markdown-demo",
       filePath: "examples/radix/markdown-demo.tsx",
+      hookDependencies: [],
     },
     "marker-border": {
       name: "marker-border",
       filePath: "examples/radix/marker-border.tsx",
+      hookDependencies: [],
     },
     "marker-demo": {
       name: "marker-demo",
       filePath: "examples/radix/marker-demo.tsx",
+      hookDependencies: [],
     },
     "marker-icon": {
       name: "marker-icon",
       filePath: "examples/radix/marker-icon.tsx",
+      hookDependencies: [],
     },
     "marker-link-button": {
       name: "marker-link-button",
       filePath: "examples/radix/marker-link-button.tsx",
+      hookDependencies: [],
     },
     "marker-separator": {
       name: "marker-separator",
       filePath: "examples/radix/marker-separator.tsx",
+      hookDependencies: [],
     },
     "marker-shimmer": {
       name: "marker-shimmer",
       filePath: "examples/radix/marker-shimmer.tsx",
+      hookDependencies: [],
     },
     "marker-status": {
       name: "marker-status",
       filePath: "examples/radix/marker-status.tsx",
+      hookDependencies: [],
     },
     "marker-variants": {
       name: "marker-variants",
       filePath: "examples/radix/marker-variants.tsx",
+      hookDependencies: [],
     },
     "menubar-checkbox": {
       name: "menubar-checkbox",
       filePath: "examples/radix/menubar-checkbox.tsx",
+      hookDependencies: [],
     },
     "menubar-demo": {
       name: "menubar-demo",
       filePath: "examples/radix/menubar-demo.tsx",
+      hookDependencies: [],
     },
     "menubar-icons": {
       name: "menubar-icons",
       filePath: "examples/radix/menubar-icons.tsx",
+      hookDependencies: [],
     },
     "menubar-radio": {
       name: "menubar-radio",
       filePath: "examples/radix/menubar-radio.tsx",
+      hookDependencies: [],
     },
     "menubar-rtl": {
       name: "menubar-rtl",
       filePath: "examples/radix/menubar-rtl.tsx",
+      hookDependencies: [],
     },
     "menubar-submenu": {
       name: "menubar-submenu",
       filePath: "examples/radix/menubar-submenu.tsx",
+      hookDependencies: [],
     },
     "message-actions": {
       name: "message-actions",
       filePath: "examples/radix/message-actions.tsx",
+      hookDependencies: [],
     },
     "message-attachment": {
       name: "message-attachment",
       filePath: "examples/radix/message-attachment.tsx",
+      hookDependencies: [],
     },
     "message-avatar": {
       name: "message-avatar",
       filePath: "examples/radix/message-avatar.tsx",
+      hookDependencies: [],
     },
     "message-demo": {
       name: "message-demo",
       filePath: "examples/radix/message-demo.tsx",
+      hookDependencies: [],
     },
     "message-group": {
       name: "message-group",
       filePath: "examples/radix/message-group.tsx",
+      hookDependencies: [],
     },
     "message-header-footer": {
       name: "message-header-footer",
       filePath: "examples/radix/message-header-footer.tsx",
+      hookDependencies: [],
     },
     "message-markdown": {
       name: "message-markdown",
       filePath: "examples/radix/message-markdown.tsx",
+      hookDependencies: [],
     },
     "message-scroller-anchoring": {
       name: "message-scroller-anchoring",
       filePath: "examples/radix/message-scroller-anchoring.tsx",
+      hookDependencies: [],
     },
     "message-scroller-animation": {
       name: "message-scroller-animation",
       filePath: "examples/radix/message-scroller-animation.tsx",
+      hookDependencies: [],
     },
     "message-scroller-commands": {
       name: "message-scroller-commands",
       filePath: "examples/radix/message-scroller-commands.tsx",
+      hookDependencies: [],
     },
     "message-scroller-demo": {
       name: "message-scroller-demo",
       filePath: "examples/radix/message-scroller-demo.tsx",
+      hookDependencies: [],
     },
     "message-scroller-group-chat": {
       name: "message-scroller-group-chat",
       filePath: "examples/radix/message-scroller-group-chat.tsx",
+      hookDependencies: [],
     },
     "message-scroller-load-history": {
       name: "message-scroller-load-history",
       filePath: "examples/radix/message-scroller-load-history.tsx",
+      hookDependencies: [],
     },
     "message-scroller-opening-position": {
       name: "message-scroller-opening-position",
       filePath: "examples/radix/message-scroller-opening-position.tsx",
+      hookDependencies: [],
     },
     "message-scroller-previous-context": {
       name: "message-scroller-previous-context",
       filePath: "examples/radix/message-scroller-previous-context.tsx",
+      hookDependencies: [],
     },
     "message-scroller-scrollable": {
       name: "message-scroller-scrollable",
       filePath: "examples/radix/message-scroller-scrollable.tsx",
+      hookDependencies: [],
     },
     "message-scroller-streaming": {
       name: "message-scroller-streaming",
       filePath: "examples/radix/message-scroller-streaming.tsx",
+      hookDependencies: [],
     },
     "message-scroller-visibility": {
       name: "message-scroller-visibility",
       filePath: "examples/radix/message-scroller-visibility.tsx",
+      hookDependencies: [],
     },
     "muted-item-group": {
       name: "muted-item-group",
       filePath: "examples/radix/muted-item-group.tsx",
+      hookDependencies: [],
     },
     "native-select-demo": {
       name: "native-select-demo",
       filePath: "examples/radix/native-select-demo.tsx",
+      hookDependencies: [],
     },
     "native-select-disabled": {
       name: "native-select-disabled",
       filePath: "examples/radix/native-select-disabled.tsx",
+      hookDependencies: [],
     },
     "native-select-groups": {
       name: "native-select-groups",
       filePath: "examples/radix/native-select-groups.tsx",
+      hookDependencies: [],
     },
     "native-select-invalid": {
       name: "native-select-invalid",
       filePath: "examples/radix/native-select-invalid.tsx",
+      hookDependencies: [],
     },
     "native-select-rtl": {
       name: "native-select-rtl",
       filePath: "examples/radix/native-select-rtl.tsx",
+      hookDependencies: [],
     },
     "navigation-menu-demo": {
       name: "navigation-menu-demo",
       filePath: "examples/radix/navigation-menu-demo.tsx",
+      hookDependencies: [],
     },
     "navigation-menu-rtl": {
       name: "navigation-menu-rtl",
       filePath: "examples/radix/navigation-menu-rtl.tsx",
+      hookDependencies: [],
     },
     "outline-item-group": {
       name: "outline-item-group",
       filePath: "examples/radix/outline-item-group.tsx",
+      hookDependencies: [],
     },
     "pagination-demo": {
       name: "pagination-demo",
       filePath: "examples/radix/pagination-demo.tsx",
+      hookDependencies: [],
     },
     "pagination-icons-only": {
       name: "pagination-icons-only",
       filePath: "examples/radix/pagination-icons-only.tsx",
+      hookDependencies: [],
     },
     "pagination-rtl": {
       name: "pagination-rtl",
       filePath: "examples/radix/pagination-rtl.tsx",
+      hookDependencies: [],
     },
     "pagination-simple": {
       name: "pagination-simple",
       filePath: "examples/radix/pagination-simple.tsx",
+      hookDependencies: [],
     },
     "popover-alignments": {
       name: "popover-alignments",
       filePath: "examples/radix/popover-alignments.tsx",
+      hookDependencies: [],
     },
     "popover-basic": {
       name: "popover-basic",
       filePath: "examples/radix/popover-basic.tsx",
+      hookDependencies: [],
     },
     "popover-demo": {
       name: "popover-demo",
       filePath: "examples/radix/popover-demo.tsx",
+      hookDependencies: [],
     },
     "popover-form": {
       name: "popover-form",
       filePath: "examples/radix/popover-form.tsx",
+      hookDependencies: [],
     },
     "popover-rtl": {
       name: "popover-rtl",
       filePath: "examples/radix/popover-rtl.tsx",
+      hookDependencies: [],
     },
     "progress-controlled": {
       name: "progress-controlled",
       filePath: "examples/radix/progress-controlled.tsx",
+      hookDependencies: [],
     },
     "progress-demo": {
       name: "progress-demo",
       filePath: "examples/radix/progress-demo.tsx",
+      hookDependencies: [],
     },
     "progress-label": {
       name: "progress-label",
       filePath: "examples/radix/progress-label.tsx",
+      hookDependencies: [],
     },
     "progress-rtl": {
       name: "progress-rtl",
       filePath: "examples/radix/progress-rtl.tsx",
+      hookDependencies: [],
     },
     "questionnaire-animated": {
       name: "questionnaire-animated",
       filePath: "examples/radix/questionnaire-animated.tsx",
+      hookDependencies: [],
     },
     "questionnaire-card": {
       name: "questionnaire-card",
       filePath: "examples/radix/questionnaire-card.tsx",
+      hookDependencies: [],
     },
     "questionnaire-conditional": {
       name: "questionnaire-conditional",
       filePath: "examples/radix/questionnaire-conditional.tsx",
+      hookDependencies: [],
     },
     "questionnaire-controlled": {
       name: "questionnaire-controlled",
       filePath: "examples/radix/questionnaire-controlled.tsx",
+      hookDependencies: [],
     },
     "questionnaire-demo": {
       name: "questionnaire-demo",
       filePath: "examples/radix/questionnaire-demo.tsx",
+      hookDependencies: [],
     },
     "questionnaire-dialog": {
       name: "questionnaire-dialog",
       filePath: "examples/radix/questionnaire-dialog.tsx",
+      hookDependencies: [],
     },
     "questionnaire-freeform": {
       name: "questionnaire-freeform",
       filePath: "examples/radix/questionnaire-freeform.tsx",
+      hookDependencies: [],
     },
     "questionnaire-multiple": {
       name: "questionnaire-multiple",
       filePath: "examples/radix/questionnaire-multiple.tsx",
+      hookDependencies: [],
     },
     "questionnaire-navigation-state": {
       name: "questionnaire-navigation-state",
       filePath: "examples/radix/questionnaire-navigation-state.tsx",
+      hookDependencies: [],
     },
     "questionnaire-progress": {
       name: "questionnaire-progress",
       filePath: "examples/radix/questionnaire-progress.tsx",
+      hookDependencies: [],
     },
     "questionnaire-resume": {
       name: "questionnaire-resume",
       filePath: "examples/radix/questionnaire-resume.tsx",
+      hookDependencies: [],
     },
     "questionnaire-shortcuts": {
       name: "questionnaire-shortcuts",
       filePath: "examples/radix/questionnaire-shortcuts.tsx",
+      hookDependencies: [],
     },
     "questionnaire-skip": {
       name: "questionnaire-skip",
       filePath: "examples/radix/questionnaire-skip.tsx",
+      hookDependencies: [],
     },
     "questionnaire-validation": {
       name: "questionnaire-validation",
       filePath: "examples/radix/questionnaire-validation.tsx",
+      hookDependencies: [],
     },
     "radio-fields": {
       name: "radio-fields",
       filePath: "examples/radix/radio-fields.tsx",
+      hookDependencies: [],
     },
     "radio-group-choice-card": {
       name: "radio-group-choice-card",
       filePath: "examples/radix/radio-group-choice-card.tsx",
+      hookDependencies: [],
     },
     "radio-group-demo": {
       name: "radio-group-demo",
       filePath: "examples/radix/radio-group-demo.tsx",
+      hookDependencies: [],
     },
     "radio-group-description": {
       name: "radio-group-description",
       filePath: "examples/radix/radio-group-description.tsx",
+      hookDependencies: [],
     },
     "radio-group-disabled": {
       name: "radio-group-disabled",
       filePath: "examples/radix/radio-group-disabled.tsx",
+      hookDependencies: [],
     },
     "radio-group-fieldset": {
       name: "radio-group-fieldset",
       filePath: "examples/radix/radio-group-fieldset.tsx",
+      hookDependencies: [],
     },
     "radio-group-invalid": {
       name: "radio-group-invalid",
       filePath: "examples/radix/radio-group-invalid.tsx",
+      hookDependencies: [],
     },
     "radio-group-rtl": {
       name: "radio-group-rtl",
       filePath: "examples/radix/radio-group-rtl.tsx",
+      hookDependencies: [],
     },
     "resizable-demo": {
       name: "resizable-demo",
       filePath: "examples/radix/resizable-demo.tsx",
+      hookDependencies: [],
     },
     "resizable-handle": {
       name: "resizable-handle",
       filePath: "examples/radix/resizable-handle.tsx",
+      hookDependencies: [],
     },
     "resizable-rtl": {
       name: "resizable-rtl",
       filePath: "examples/radix/resizable-rtl.tsx",
+      hookDependencies: [],
     },
     "resizable-vertical": {
       name: "resizable-vertical",
       filePath: "examples/radix/resizable-vertical.tsx",
+      hookDependencies: [],
     },
     "scroll-area-demo": {
       name: "scroll-area-demo",
       filePath: "examples/radix/scroll-area-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-area-horizontal-demo": {
       name: "scroll-area-horizontal-demo",
       filePath: "examples/radix/scroll-area-horizontal-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-area-rtl": {
       name: "scroll-area-rtl",
       filePath: "examples/radix/scroll-area-rtl.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-demo": {
       name: "scroll-fade-demo",
       filePath: "examples/radix/scroll-fade-demo.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-edge": {
       name: "scroll-fade-edge",
       filePath: "examples/radix/scroll-fade-edge.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-horizontal": {
       name: "scroll-fade-horizontal",
       filePath: "examples/radix/scroll-fade-horizontal.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-none": {
       name: "scroll-fade-none",
       filePath: "examples/radix/scroll-fade-none.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-overflow": {
       name: "scroll-fade-overflow",
       filePath: "examples/radix/scroll-fade-overflow.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-rtl": {
       name: "scroll-fade-rtl",
       filePath: "examples/radix/scroll-fade-rtl.tsx",
+      hookDependencies: [],
     },
     "scroll-fade-size": {
       name: "scroll-fade-size",
       filePath: "examples/radix/scroll-fade-size.tsx",
+      hookDependencies: [],
     },
     "select-align-item": {
       name: "select-align-item",
       filePath: "examples/radix/select-align-item.tsx",
+      hookDependencies: [],
     },
     "select-demo": {
       name: "select-demo",
       filePath: "examples/radix/select-demo.tsx",
+      hookDependencies: [],
     },
     "select-disabled": {
       name: "select-disabled",
       filePath: "examples/radix/select-disabled.tsx",
+      hookDependencies: [],
     },
     "select-groups": {
       name: "select-groups",
       filePath: "examples/radix/select-groups.tsx",
+      hookDependencies: [],
     },
     "select-invalid": {
       name: "select-invalid",
       filePath: "examples/radix/select-invalid.tsx",
+      hookDependencies: [],
     },
     "select-rtl": {
       name: "select-rtl",
       filePath: "examples/radix/select-rtl.tsx",
+      hookDependencies: [],
     },
     "select-scrollable": {
       name: "select-scrollable",
       filePath: "examples/radix/select-scrollable.tsx",
+      hookDependencies: [],
     },
     "separator-demo": {
       name: "separator-demo",
       filePath: "examples/radix/separator-demo.tsx",
+      hookDependencies: [],
     },
     "separator-list": {
       name: "separator-list",
       filePath: "examples/radix/separator-list.tsx",
+      hookDependencies: [],
     },
     "separator-menu": {
       name: "separator-menu",
       filePath: "examples/radix/separator-menu.tsx",
+      hookDependencies: [],
     },
     "separator-rtl": {
       name: "separator-rtl",
       filePath: "examples/radix/separator-rtl.tsx",
+      hookDependencies: [],
     },
     "separator-vertical": {
       name: "separator-vertical",
       filePath: "examples/radix/separator-vertical.tsx",
+      hookDependencies: [],
     },
     "sheet-demo": {
       name: "sheet-demo",
       filePath: "examples/radix/sheet-demo.tsx",
+      hookDependencies: [],
     },
     "sheet-no-close-button": {
       name: "sheet-no-close-button",
       filePath: "examples/radix/sheet-no-close-button.tsx",
+      hookDependencies: [],
     },
     "sheet-rtl": {
       name: "sheet-rtl",
       filePath: "examples/radix/sheet-rtl.tsx",
+      hookDependencies: [],
     },
     "sheet-side": {
       name: "sheet-side",
       filePath: "examples/radix/sheet-side.tsx",
+      hookDependencies: [],
     },
     "shimmer-angle": {
       name: "shimmer-angle",
       filePath: "examples/radix/shimmer-angle.tsx",
+      hookDependencies: [],
     },
     "shimmer-color": {
       name: "shimmer-color",
       filePath: "examples/radix/shimmer-color.tsx",
+      hookDependencies: [],
     },
     "shimmer-demo": {
       name: "shimmer-demo",
       filePath: "examples/radix/shimmer-demo.tsx",
+      hookDependencies: [],
     },
     "shimmer-duration": {
       name: "shimmer-duration",
       filePath: "examples/radix/shimmer-duration.tsx",
+      hookDependencies: [],
     },
     "shimmer-marker": {
       name: "shimmer-marker",
       filePath: "examples/radix/shimmer-marker.tsx",
+      hookDependencies: [],
     },
     "shimmer-none": {
       name: "shimmer-none",
       filePath: "examples/radix/shimmer-none.tsx",
+      hookDependencies: [],
     },
     "shimmer-once": {
       name: "shimmer-once",
       filePath: "examples/radix/shimmer-once.tsx",
+      hookDependencies: [],
     },
     "shimmer-rtl": {
       name: "shimmer-rtl",
       filePath: "examples/radix/shimmer-rtl.tsx",
+      hookDependencies: [],
     },
     "shimmer-spread": {
       name: "shimmer-spread",
       filePath: "examples/radix/shimmer-spread.tsx",
+      hookDependencies: [],
     },
     "sidebar-controlled": {
       name: "sidebar-controlled",
       filePath: "examples/radix/sidebar-controlled.tsx",
+      hookDependencies: [],
     },
     "sidebar-demo": {
       name: "sidebar-demo",
       filePath: "examples/radix/sidebar-demo.tsx",
+      hookDependencies: [],
     },
     "sidebar-footer": {
       name: "sidebar-footer",
       filePath: "examples/radix/sidebar-footer.tsx",
+      hookDependencies: [],
     },
     "sidebar-group-action": {
       name: "sidebar-group-action",
       filePath: "examples/radix/sidebar-group-action.tsx",
+      hookDependencies: [],
     },
     "sidebar-group-collapsible": {
       name: "sidebar-group-collapsible",
       filePath: "examples/radix/sidebar-group-collapsible.tsx",
+      hookDependencies: [],
     },
     "sidebar-group": {
       name: "sidebar-group",
       filePath: "examples/radix/sidebar-group.tsx",
+      hookDependencies: [],
     },
     "sidebar-header": {
       name: "sidebar-header",
       filePath: "examples/radix/sidebar-header.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-action": {
       name: "sidebar-menu-action",
       filePath: "examples/radix/sidebar-menu-action.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-badge": {
       name: "sidebar-menu-badge",
       filePath: "examples/radix/sidebar-menu-badge.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-collapsible": {
       name: "sidebar-menu-collapsible",
       filePath: "examples/radix/sidebar-menu-collapsible.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu-sub": {
       name: "sidebar-menu-sub",
       filePath: "examples/radix/sidebar-menu-sub.tsx",
+      hookDependencies: [],
     },
     "sidebar-menu": {
       name: "sidebar-menu",
       filePath: "examples/radix/sidebar-menu.tsx",
+      hookDependencies: [],
     },
     "sidebar-rsc": {
       name: "sidebar-rsc",
       filePath: "examples/radix/sidebar-rsc.tsx",
+      hookDependencies: [],
     },
     "sidebar-rtl": {
       name: "sidebar-rtl",
       filePath: "examples/radix/sidebar-rtl.tsx",
+      hookDependencies: [],
     },
     "skeleton-avatar": {
       name: "skeleton-avatar",
       filePath: "examples/radix/skeleton-avatar.tsx",
+      hookDependencies: [],
     },
     "skeleton-card": {
       name: "skeleton-card",
       filePath: "examples/radix/skeleton-card.tsx",
+      hookDependencies: [],
     },
     "skeleton-demo": {
       name: "skeleton-demo",
       filePath: "examples/radix/skeleton-demo.tsx",
+      hookDependencies: [],
     },
     "skeleton-form": {
       name: "skeleton-form",
       filePath: "examples/radix/skeleton-form.tsx",
+      hookDependencies: [],
     },
     "skeleton-rtl": {
       name: "skeleton-rtl",
       filePath: "examples/radix/skeleton-rtl.tsx",
+      hookDependencies: [],
     },
     "skeleton-table": {
       name: "skeleton-table",
       filePath: "examples/radix/skeleton-table.tsx",
+      hookDependencies: [],
     },
     "skeleton-text": {
       name: "skeleton-text",
       filePath: "examples/radix/skeleton-text.tsx",
+      hookDependencies: [],
     },
     "slider-controlled": {
       name: "slider-controlled",
       filePath: "examples/radix/slider-controlled.tsx",
+      hookDependencies: [],
     },
     "slider-demo": {
       name: "slider-demo",
       filePath: "examples/radix/slider-demo.tsx",
+      hookDependencies: [],
     },
     "slider-disabled": {
       name: "slider-disabled",
       filePath: "examples/radix/slider-disabled.tsx",
+      hookDependencies: [],
     },
     "slider-multiple": {
       name: "slider-multiple",
       filePath: "examples/radix/slider-multiple.tsx",
+      hookDependencies: [],
     },
     "slider-range": {
       name: "slider-range",
       filePath: "examples/radix/slider-range.tsx",
+      hookDependencies: [],
     },
     "slider-rtl": {
       name: "slider-rtl",
       filePath: "examples/radix/slider-rtl.tsx",
+      hookDependencies: [],
     },
     "slider-vertical": {
       name: "slider-vertical",
       filePath: "examples/radix/slider-vertical.tsx",
+      hookDependencies: [],
     },
     "sonner-demo": {
       name: "sonner-demo",
       filePath: "examples/radix/sonner-demo.tsx",
+      hookDependencies: [],
     },
     "sonner-description": {
       name: "sonner-description",
       filePath: "examples/radix/sonner-description.tsx",
+      hookDependencies: [],
     },
     "sonner-position": {
       name: "sonner-position",
       filePath: "examples/radix/sonner-position.tsx",
+      hookDependencies: [],
     },
     "sonner-types": {
       name: "sonner-types",
       filePath: "examples/radix/sonner-types.tsx",
+      hookDependencies: [],
     },
     "spinner-badge": {
       name: "spinner-badge",
       filePath: "examples/radix/spinner-badge.tsx",
+      hookDependencies: [],
     },
     "spinner-button": {
       name: "spinner-button",
       filePath: "examples/radix/spinner-button.tsx",
+      hookDependencies: [],
     },
     "spinner-custom": {
       name: "spinner-custom",
       filePath: "examples/radix/spinner-custom.tsx",
+      hookDependencies: [],
     },
     "spinner-demo": {
       name: "spinner-demo",
       filePath: "examples/radix/spinner-demo.tsx",
+      hookDependencies: [],
     },
     "spinner-empty": {
       name: "spinner-empty",
       filePath: "examples/radix/spinner-empty.tsx",
+      hookDependencies: [],
     },
     "spinner-input-group": {
       name: "spinner-input-group",
       filePath: "examples/radix/spinner-input-group.tsx",
+      hookDependencies: [],
     },
     "spinner-rtl": {
       name: "spinner-rtl",
       filePath: "examples/radix/spinner-rtl.tsx",
+      hookDependencies: [],
     },
     "spinner-size": {
       name: "spinner-size",
       filePath: "examples/radix/spinner-size.tsx",
+      hookDependencies: [],
     },
     "switch-choice-card": {
       name: "switch-choice-card",
       filePath: "examples/radix/switch-choice-card.tsx",
+      hookDependencies: [],
     },
     "switch-demo": {
       name: "switch-demo",
       filePath: "examples/radix/switch-demo.tsx",
+      hookDependencies: [],
     },
     "switch-description": {
       name: "switch-description",
       filePath: "examples/radix/switch-description.tsx",
+      hookDependencies: [],
     },
     "switch-disabled": {
       name: "switch-disabled",
       filePath: "examples/radix/switch-disabled.tsx",
+      hookDependencies: [],
     },
     "switch-invalid": {
       name: "switch-invalid",
       filePath: "examples/radix/switch-invalid.tsx",
+      hookDependencies: [],
     },
     "switch-rtl": {
       name: "switch-rtl",
       filePath: "examples/radix/switch-rtl.tsx",
+      hookDependencies: [],
     },
     "switch-sizes": {
       name: "switch-sizes",
       filePath: "examples/radix/switch-sizes.tsx",
+      hookDependencies: [],
     },
     "table-actions": {
       name: "table-actions",
       filePath: "examples/radix/table-actions.tsx",
+      hookDependencies: [],
     },
     "table-demo": {
       name: "table-demo",
       filePath: "examples/radix/table-demo.tsx",
+      hookDependencies: [],
     },
     "table-footer": {
       name: "table-footer",
       filePath: "examples/radix/table-footer.tsx",
+      hookDependencies: [],
     },
     "table-rtl": {
       name: "table-rtl",
       filePath: "examples/radix/table-rtl.tsx",
+      hookDependencies: [],
     },
     "tabs-demo": {
       name: "tabs-demo",
       filePath: "examples/radix/tabs-demo.tsx",
+      hookDependencies: [],
     },
     "tabs-disabled": {
       name: "tabs-disabled",
       filePath: "examples/radix/tabs-disabled.tsx",
+      hookDependencies: [],
     },
     "tabs-icons": {
       name: "tabs-icons",
       filePath: "examples/radix/tabs-icons.tsx",
+      hookDependencies: [],
     },
     "tabs-line": {
       name: "tabs-line",
       filePath: "examples/radix/tabs-line.tsx",
+      hookDependencies: [],
     },
     "tabs-rtl": {
       name: "tabs-rtl",
       filePath: "examples/radix/tabs-rtl.tsx",
+      hookDependencies: [],
     },
     "tabs-vertical": {
       name: "tabs-vertical",
       filePath: "examples/radix/tabs-vertical.tsx",
+      hookDependencies: [],
     },
     "textarea-button": {
       name: "textarea-button",
       filePath: "examples/radix/textarea-button.tsx",
+      hookDependencies: [],
     },
     "textarea-demo": {
       name: "textarea-demo",
       filePath: "examples/radix/textarea-demo.tsx",
+      hookDependencies: [],
     },
     "textarea-disabled": {
       name: "textarea-disabled",
       filePath: "examples/radix/textarea-disabled.tsx",
+      hookDependencies: [],
     },
     "textarea-field": {
       name: "textarea-field",
       filePath: "examples/radix/textarea-field.tsx",
+      hookDependencies: [],
     },
     "textarea-invalid": {
       name: "textarea-invalid",
       filePath: "examples/radix/textarea-invalid.tsx",
+      hookDependencies: [],
     },
     "textarea-rtl": {
       name: "textarea-rtl",
       filePath: "examples/radix/textarea-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-demo": {
       name: "toggle-demo",
       filePath: "examples/radix/toggle-demo.tsx",
+      hookDependencies: [],
     },
     "toggle-disabled": {
       name: "toggle-disabled",
       filePath: "examples/radix/toggle-disabled.tsx",
+      hookDependencies: [],
     },
     "toggle-group-demo": {
       name: "toggle-group-demo",
       filePath: "examples/radix/toggle-group-demo.tsx",
+      hookDependencies: [],
     },
     "toggle-group-disabled": {
       name: "toggle-group-disabled",
       filePath: "examples/radix/toggle-group-disabled.tsx",
+      hookDependencies: [],
     },
     "toggle-group-font-weight-selector": {
       name: "toggle-group-font-weight-selector",
       filePath: "examples/radix/toggle-group-font-weight-selector.tsx",
+      hookDependencies: [],
     },
     "toggle-group-outline": {
       name: "toggle-group-outline",
       filePath: "examples/radix/toggle-group-outline.tsx",
+      hookDependencies: [],
     },
     "toggle-group-rtl": {
       name: "toggle-group-rtl",
       filePath: "examples/radix/toggle-group-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-group-sizes": {
       name: "toggle-group-sizes",
       filePath: "examples/radix/toggle-group-sizes.tsx",
+      hookDependencies: [],
     },
     "toggle-group-spacing": {
       name: "toggle-group-spacing",
       filePath: "examples/radix/toggle-group-spacing.tsx",
+      hookDependencies: [],
     },
     "toggle-group-vertical": {
       name: "toggle-group-vertical",
       filePath: "examples/radix/toggle-group-vertical.tsx",
+      hookDependencies: [],
     },
     "toggle-outline": {
       name: "toggle-outline",
       filePath: "examples/radix/toggle-outline.tsx",
+      hookDependencies: [],
     },
     "toggle-rtl": {
       name: "toggle-rtl",
       filePath: "examples/radix/toggle-rtl.tsx",
+      hookDependencies: [],
     },
     "toggle-sizes": {
       name: "toggle-sizes",
       filePath: "examples/radix/toggle-sizes.tsx",
+      hookDependencies: [],
     },
     "toggle-text": {
       name: "toggle-text",
       filePath: "examples/radix/toggle-text.tsx",
+      hookDependencies: [],
     },
     "tooltip-demo": {
       name: "tooltip-demo",
       filePath: "examples/radix/tooltip-demo.tsx",
+      hookDependencies: [],
     },
     "tooltip-disabled": {
       name: "tooltip-disabled",
       filePath: "examples/radix/tooltip-disabled.tsx",
+      hookDependencies: [],
     },
     "tooltip-keyboard": {
       name: "tooltip-keyboard",
       filePath: "examples/radix/tooltip-keyboard.tsx",
+      hookDependencies: [],
     },
     "tooltip-rtl": {
       name: "tooltip-rtl",
       filePath: "examples/radix/tooltip-rtl.tsx",
+      hookDependencies: [],
     },
     "tooltip-sides": {
       name: "tooltip-sides",
       filePath: "examples/radix/tooltip-sides.tsx",
+      hookDependencies: [],
     },
     "typography-blockquote": {
       name: "typography-blockquote",
       filePath: "examples/radix/typography-blockquote.tsx",
+      hookDependencies: [],
     },
     "typography-demo": {
       name: "typography-demo",
       filePath: "examples/radix/typography-demo.tsx",
+      hookDependencies: [],
     },
     "typography-h1": {
       name: "typography-h1",
       filePath: "examples/radix/typography-h1.tsx",
+      hookDependencies: [],
     },
     "typography-h2": {
       name: "typography-h2",
       filePath: "examples/radix/typography-h2.tsx",
+      hookDependencies: [],
     },
     "typography-h3": {
       name: "typography-h3",
       filePath: "examples/radix/typography-h3.tsx",
+      hookDependencies: [],
     },
     "typography-h4": {
       name: "typography-h4",
       filePath: "examples/radix/typography-h4.tsx",
+      hookDependencies: [],
     },
     "typography-inline-code": {
       name: "typography-inline-code",
       filePath: "examples/radix/typography-inline-code.tsx",
+      hookDependencies: [],
     },
     "typography-large": {
       name: "typography-large",
       filePath: "examples/radix/typography-large.tsx",
+      hookDependencies: [],
     },
     "typography-lead": {
       name: "typography-lead",
       filePath: "examples/radix/typography-lead.tsx",
+      hookDependencies: [],
     },
     "typography-list": {
       name: "typography-list",
       filePath: "examples/radix/typography-list.tsx",
+      hookDependencies: [],
     },
     "typography-muted": {
       name: "typography-muted",
       filePath: "examples/radix/typography-muted.tsx",
+      hookDependencies: [],
     },
     "typography-p": {
       name: "typography-p",
       filePath: "examples/radix/typography-p.tsx",
+      hookDependencies: [],
     },
     "typography-rtl": {
       name: "typography-rtl",
       filePath: "examples/radix/typography-rtl.tsx",
+      hookDependencies: [],
     },
     "typography-small": {
       name: "typography-small",
       filePath: "examples/radix/typography-small.tsx",
+      hookDependencies: [],
     },
     "typography-table": {
       name: "typography-table",
       filePath: "examples/radix/typography-table.tsx",
+      hookDependencies: [],
     },
   },
 }

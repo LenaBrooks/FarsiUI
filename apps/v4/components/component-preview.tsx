@@ -2,7 +2,7 @@ import * as React from "react"
 import Image from "next/image"
 
 import { extractHookDependencies } from "@/lib/example-dependencies"
-import { getDemoItem, getRegistryMeta } from "@/lib/registry"
+import { getDemoItem, getDemoMeta, getRegistryMeta } from "@/lib/registry"
 import { ComponentPreviewTabs } from "@/components/component-preview-tabs"
 import { PreviewThemeIframe } from "@/components/preview-theme-scope"
 
@@ -80,10 +80,15 @@ export async function ComponentPreview({
   // Installable demos render via iframe (`/view/...`). Do not resolve
   // React.lazy registry components here — that pulls multi-MB client chunks
   // into the docs route even though `component` was never rendered.
-  const demo = await getDemoItem(name, styleName)
+  //
+  // Hook install notes use baked ExamplesIndex.hookDependencies (same list
+  // extractHookDependencies would produce from the demo file). Fall back to
+  // getDemoItem only when the index entry is stale/missing that field so we
+  // never invent dependencies={[]} for demos that still import hooks.
+  const demoMeta = getDemoMeta(name, styleName)
   const meta = getRegistryMeta(name, styleName)
 
-  if (!demo && !meta) {
+  if (!demoMeta && !meta) {
     return (
       <p className="mt-6 text-sm text-muted-foreground">
         Component{" "}
@@ -95,7 +100,17 @@ export async function ComponentPreview({
     )
   }
 
-  const dependencies = extractHookDependencies(demo?.files?.[0]?.content)
+  let dependencies: string[]
+  if (demoMeta && Array.isArray(demoMeta.hookDependencies)) {
+    dependencies = demoMeta.hookDependencies
+  } else if (demoMeta) {
+    const demo = await getDemoItem(name, styleName)
+    dependencies = extractHookDependencies(demo?.files?.[0]?.content)
+  } else {
+    // Registry-only name (no ExamplesIndex entry): same as historic path when
+    // getDemoItem returned null → extractHookDependencies(undefined) === [].
+    dependencies = []
+  }
 
   const content = (
     <ComponentPreviewTabs

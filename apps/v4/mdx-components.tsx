@@ -1,7 +1,7 @@
 import { source } from "@/lib/source"
 import { ComponentDependencies } from "@/components/component-dependencies"
 import { ComponentPreview } from "@/components/component-preview"
-import { ComponentSource } from "@/components/component-source"
+import { ComponentSourceLazy as ComponentSource } from "@/components/component-source-lazy"
 import { ComponentVariantPreview } from "@/components/component-variant-preview"
 import { DocsApiProps } from "@/components/docs-api-props"
 import { ComponentsList } from "@/components/components-list"

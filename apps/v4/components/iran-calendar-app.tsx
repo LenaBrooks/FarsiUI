@@ -46,9 +46,22 @@ function sameDay(a: JalaliYMD, b: JalaliYMD) {
   return a.year === b.year && a.month === b.month && a.day === b.day
 }
 
+/** Fixed hour-mark positions — rounded so SSR/CSR styles match. */
+const CLOCK_MARKS = Array.from({ length: 12 }, (_, i) => {
+  const n = i + 1
+  const angle = (n * 30 - 90) * (Math.PI / 180)
+  const r = 40
+  return {
+    n,
+    left: `${(50 + r * Math.cos(angle)).toFixed(3)}%`,
+    top: `${(50 + r * Math.sin(angle)).toFixed(3)}%`,
+  }
+})
+
 function useNow() {
-  const [now, setNow] = React.useState(() => new Date())
+  const [now, setNow] = React.useState<Date | null>(null)
   React.useEffect(() => {
+    setNow(new Date())
     const id = window.setInterval(() => setNow(new Date()), 1000)
     return () => window.clearInterval(id)
   }, [])
@@ -88,26 +101,19 @@ function AnalogClock() {
 
   return (
     <div className="relative mx-auto size-[100px] rounded-full border border-border bg-background shadow-sm sm:size-[120px]">
-      {Array.from({ length: 12 }, (_, i) => {
-        const n = i + 1
-        const angle = (n * 30 - 90) * (Math.PI / 180)
-        const r = 40
-        const x = 50 + r * Math.cos(angle)
-        const y = 50 + r * Math.sin(angle)
-        return (
-          <span
-            key={n}
-            className="absolute text-xs font-medium text-foreground"
-            style={{
-              left: `${x}%`,
-              top: `${y}%`,
-              transform: "translate(-50%, -50%)",
-            }}
-          >
-            {n}
-          </span>
-        )
-      })}
+      {CLOCK_MARKS.map(({ n, left, top }) => (
+        <span
+          key={n}
+          className="absolute text-xs font-medium text-foreground"
+          style={{
+            left,
+            top,
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          {n}
+        </span>
+      ))}
       <span
         ref={hourRef}
         className="absolute left-1/2 top-1/2 h-[24%] w-[3px] origin-bottom rounded-full bg-foreground"
@@ -237,12 +243,17 @@ export function IranCalendarApp({ year }: { year?: number }) {
   const hijri = formatHijriLong(selected)
   const zodiac = getZodiacFa(selected)
   const hasYearData = CALENDAR_AVAILABLE_YEARS.includes(cursor.year)
-  const digital = now.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
-  })
+  const digital =
+    now == null
+      ? "-- : -- : -- --"
+      : now
+          .toLocaleTimeString("en-US", {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: true,
+          })
+          .replace(/:/g, " : ")
 
   function goMonth(delta: number) {
     setCursor((prev) => addJalaliMonths({ ...prev, day: 1 }, delta))
@@ -289,7 +300,7 @@ export function IranCalendarApp({ year }: { year?: number }) {
         <div className="flex shrink-0 flex-col items-center gap-1.5">
           <AnalogClock />
           <p className="text-sm font-bold tabular-nums tracking-wide text-foreground sm:text-base">
-            {digital.replace(/:/g, " : ")}
+            {digital}
           </p>
         </div>
 

@@ -18,6 +18,7 @@ import {
 import { createStyleMap } from "../../../packages/shadcn/src/styles/create-style-map"
 import { Project, ScriptKind } from "ts-morph"
 
+import { extractHookDependencies } from "@/lib/example-dependencies"
 import { legacyStyles } from "@/registry/_legacy-styles"
 import { BASE_COLORS } from "@/registry/base-colors"
 import { BASES, type Base } from "@/registry/bases"
@@ -1317,11 +1318,19 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {`
 
     for (const file of files) {
       const name = file.replace(/\.tsx$/, "")
+      const examplePath = path.join(examplesDir, baseName, file)
+      const exampleSource = await fs.readFile(examplePath, "utf8")
+      // Bake the same hook list ComponentPreview historically derived via
+      // getDemoItem + extractHookDependencies, so docs soft-nav can skip the
+      // per-request file read without changing ExampleDependencies output.
+      const hookDependencies = extractHookDependencies(exampleSource)
+      const hookDependenciesLiteral = JSON.stringify(hookDependencies)
 
       index += `
     "${name}": {
       name: "${name}",
       filePath: "examples/${baseName}/${file}",
+      hookDependencies: ${hookDependenciesLiteral},
     },`
 
       shard.entries += `

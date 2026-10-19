@@ -169,7 +169,7 @@ const columns = columnHelper.columns([
     ),
   }),
   columnHelper.accessor("amount", {
-    header: () => <div className="text-end">مبلغ</div>,
+    header: () => <div className="w-full text-end">مبلغ</div>,
     cell: ({ row }) => {
       const amount = Number(row.getValue("amount"))
       const formatted = new Intl.NumberFormat("fa-IR", {
@@ -177,7 +177,9 @@ const columns = columnHelper.columns([
         maximumFractionDigits: 2,
       }).format(amount)
 
-      return <div className="text-end font-medium">{formatted} تومان</div>
+      return (
+        <div className="w-full text-end font-medium">{formatted} تومان</div>
+      )
     },
   }),
   columnHelper.display({

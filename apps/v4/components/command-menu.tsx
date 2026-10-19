@@ -119,7 +119,7 @@ export function CommandMenu({
           type="button"
           variant="ghost"
           size="icon"
-          className="size-8 shrink-0"
+          className="size-8 shrink-0 cursor-pointer"
           onClick={() => setOpen(true)}
           aria-label="جستجو در مستندات"
         >

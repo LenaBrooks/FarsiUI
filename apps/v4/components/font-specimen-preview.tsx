@@ -29,17 +29,12 @@ const SPECIMEN_FRAME_CLASS = "h-64 sm:h-72"
 /** Keep spinner visible long enough to paint (cached fonts resolve in one tick). */
 const LOADING_MIN_MS = 240
 
-/** Discrete test sizes (px). */
+/** Discrete test sizes (px). Default matches docs body (16). */
 const SPECIMEN_SIZES = [16, 18, 20, 24, 32] as const
-const SIZE_DEFAULT_MOBILE = 16
-const SIZE_DEFAULT_DESKTOP = 20
-const MOBILE_BREAKPOINT = 768
+const SIZE_DEFAULT = 16
 
 function defaultSpecimenSize() {
-  if (typeof window === "undefined") return SIZE_DEFAULT_DESKTOP
-  return window.innerWidth < MOBILE_BREAKPOINT
-    ? SIZE_DEFAULT_MOBILE
-    : SIZE_DEFAULT_DESKTOP
+  return SIZE_DEFAULT
 }
 
 const fieldClass = cn(
@@ -87,6 +82,7 @@ export function FontSpecimenPreview({ font }: { font: FontCatalogItem }) {
     setSampleFa(DEFAULT_FA)
     setSampleEn(DEFAULT_EN)
     setWeight(defaultWeight(getFontSpecimenWeights(font)))
+    setSize(defaultSpecimenSize())
   }, [font])
 
   React.useEffect(() => {

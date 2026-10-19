@@ -19,7 +19,7 @@ const docsTabsTriggerClass =
   "not-typeset rounded-none border-0 border-b-2 border-transparent bg-transparent px-0 pb-2.5 text-[length:var(--docs-small)] font-medium text-muted-foreground hover:text-primary data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-foreground data-[state=active]:shadow-none! dark:data-[state=active]:border-primary dark:data-[state=active]:bg-transparent"
 
 const docsTabsContentClass =
-  "relative [&_h3.font-heading]:text-[length:var(--docs-h3)] [&_h3.font-heading]:font-medium [&_h3.font-heading]:leading-snug *:[figure]:first:mt-0 [&>.steps]:mt-6"
+  "relative *:[figure]:first:mt-0 [&>.steps]:mt-6"
 
 const methodTabsListClass =
   "mb-4 h-8 w-fit justify-start gap-0 rounded-lg bg-muted p-0.5"
@@ -93,7 +93,7 @@ function InstallSteps({
     <div className="steps relative mb-0 pt-2 [counter-reset:step] md:ms-4 md:border-s md:ps-8 [&>h3]:step">
       {steps.map((step) => (
         <Fragment key={`${id}-${step.title}-${step.instruction}`}>
-          <h3 className="font-heading text-[length:var(--docs-h3)] font-medium leading-snug">
+          <h3 className="font-heading text-[length:var(--docs-body)] font-normal leading-relaxed">
             {step.instruction}
           </h3>
           <CodeFigure

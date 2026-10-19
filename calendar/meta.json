@@ -1,17 +1,17 @@
 {
   "name": "farsiui-calendar",
   "schemaVersion": 1,
-  "dataVersion": "1405.2.0",
+  "dataVersion": "1405.2.1",
   "description": "Official Iranian public holidays and optional events for Jalali years. Date conversion is not included — consumers use a Jalali library (e.g. @internationalized/date).",
   "years": [1405],
   "coverage": {
     "holidays": "national+religious",
-    "events": "none-in-this-release",
+    "events": "observances-from-time-ir",
     "religiousLunar": "included-1405-from-ut-official"
   },
   "license": {
     "data": "CC0-1.0",
-    "note": "Curated holiday rows for 1405 follow the official University of Tehran Calendar Center Holiday-1405.pdf. This is not a wholesale copy of any upstream scrape. Non-holiday observances remain unpublished."
+    "note": "Holiday rows for 1405 follow UT Holiday-1405.pdf. Non-holiday observances in events.json are curated from Time.ir via pipe2time (MIT); not a wholesale repo copy. Lunar observances in events may differ ±1 day from UT Calendar PDF."
   },
   "sources": [
     {
@@ -32,8 +32,8 @@
     },
     {
       "id": "pipe2time.ir",
-      "role": "superseded-for-1405",
-      "description": "MIT Time.ir scrape. Used in an earlier draft; several lunar dates differed by ±1 day from the official UT PDF and were corrected in 1405.2.0.",
+      "role": "curated-source-1405-events",
+      "description": "MIT Time.ir scrape. holidays.json lunar dates were corrected from UT PDF (superseding pipe2time holidays). events.json uses isHoliday:false rows only.",
       "url": "https://github.com/HMarzban/pipe2time.ir"
     },
     {
@@ -60,6 +60,7 @@
   "notes": [
     "Friday is a weekend day in Iran but is not listed as a holiday item; clients should treat weekends separately.",
     "1405 has 26 official holiday days per Holiday-1405.pdf (some days carry two occasion titles in our items array).",
+    "1405 events.json has non-holiday observances from Time.ir/pipe2time (see coverage.events).",
     "1405 Esfand has 29 days (non-leap in the algorithmic 33-year cycle used by @internationalized/date PersianCalendar).",
     "Do not publish future years' lunar holidays until that year's UT official PDF is available.",
     "Schema is designed for FarsiUI calendar UI to import JSON statically or fetch via jsDelivr."

@@ -1,11 +1,2147 @@
 {
   "year": 1405,
   "schemaVersion": 1,
-  "dataVersion": "1405.2.0",
-  "coverage": "none-in-this-release",
-  "items": [],
+  "dataVersion": "1405.2.1",
+  "source": "pipe2time.ir api/1405/events.json (isHoliday:false only); holidays remain UT official",
+  "coverage": "observances-from-time-ir",
+  "items": [
+    {
+      "id": "1405-evt-001",
+      "date": "1405-01-06",
+      "title": {
+        "fa": "روز امید، روز شادباش نویسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-002",
+      "date": "1405-01-06",
+      "title": {
+        "fa": "زادروز آشو زرتشت، اَبَراِنسان بزرگ تاریخ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-003",
+      "date": "1405-01-07",
+      "title": {
+        "fa": "روز جهانی تئاتر[27 March]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-004",
+      "date": "1405-01-10",
+      "title": {
+        "fa": "جشن آبانگاه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-005",
+      "date": "1405-01-17",
+      "title": {
+        "fa": "سروش روز،جشن سروشگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-006",
+      "date": "1405-01-18",
+      "title": {
+        "fa": "روز جهانی بهداشت[7 April]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-007",
+      "date": "1405-01-19",
+      "title": {
+        "fa": "فروردین روز،جشن فروردینگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-008",
+      "date": "1405-01-23",
+      "title": {
+        "fa": "روز دندانپزشک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-009",
+      "date": "1405-01-25",
+      "title": {
+        "fa": "روز بزرگداشت عطار نیشابوری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-010",
+      "date": "1405-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی ایران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-011",
+      "date": "1405-01-29",
+      "title": {
+        "fa": "ولادت حضرت معصومه سلام الله علیها و روز دختران[1 ذوالقعده]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-012",
+      "date": "1405-01-30",
+      "title": {
+        "fa": "روز علوم آزمایشگاهی، زاد روز حکیم سید اسماعیل جرجانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-013",
+      "date": "1405-02-01",
+      "title": {
+        "fa": "روز بزرگداشت سعدی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-014",
+      "date": "1405-02-02",
+      "title": {
+        "fa": "جشن گیاه آوری؛ روز زمین[22 April]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international",
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-015",
+      "date": "1405-02-03",
+      "title": {
+        "fa": "روزبزرگداشت شیخ بهایی؛ روزملی کارآفرینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-016",
+      "date": "1405-02-08",
+      "title": {
+        "fa": "ولادت امامرضا علیه السلام[11 ذوالقعده]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-017",
+      "date": "1405-02-09",
+      "title": {
+        "fa": "روزشوراها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-018",
+      "date": "1405-02-09",
+      "title": {
+        "fa": "روز جهانی روانشناس و مشاور"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-019",
+      "date": "1405-02-10",
+      "title": {
+        "fa": "جشن چهلم نوروز؛ روز ملی خلیج فارس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-020",
+      "date": "1405-02-11",
+      "title": {
+        "fa": "روزجهانیکارگر[1 May]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-021",
+      "date": "1405-02-12",
+      "title": {
+        "fa": "شهادت استاد مرتضی مطهری، روزمعلم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-022",
+      "date": "1405-02-15",
+      "title": {
+        "fa": "جشن میانه بهار/جشن بهاربد؛ روز شیراز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-023",
+      "date": "1405-02-15",
+      "title": {
+        "fa": "روز جهانی ماما[5 May]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-024",
+      "date": "1405-02-17",
+      "title": {
+        "fa": "روز اسناد ملی و میراث مکتوب"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-025",
+      "date": "1405-02-18",
+      "title": {
+        "fa": "روز جهانی صلیب سرخ و هلال احمر[8 May]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-026",
+      "date": "1405-02-25",
+      "title": {
+        "fa": "روز بزرگداشت فردوسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-027",
+      "date": "1405-02-27",
+      "title": {
+        "fa": "روز ارتباطات و روابط عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-028",
+      "date": "1405-02-27",
+      "title": {
+        "fa": "شهادت امام محمد تقی علیه السلام[30 ذوالقعده]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-029",
+      "date": "1405-02-28",
+      "title": {
+        "fa": "روز بزرگداشت حکیم عمر خیام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-030",
+      "date": "1405-02-28",
+      "title": {
+        "fa": "روز جهانی موزه و میراث فرهنگی[18 May]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-031",
+      "date": "1405-03-01",
+      "title": {
+        "fa": "روز بهره وری و بهینه سازی مصرف"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-032",
+      "date": "1405-03-01",
+      "title": {
+        "fa": "روز بزرگداشت ملاصدرا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-033",
+      "date": "1405-03-03",
+      "title": {
+        "fa": "فتح خرمشهر در عملیات بیت المقدس و روز مقاومت، ایثار و پیروزی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-034",
+      "date": "1405-03-03",
+      "title": {
+        "fa": "شهادت امام محمد باقر علیه السلام[7 ذوالحجه]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-035",
+      "date": "1405-03-04",
+      "title": {
+        "fa": "روز دزفول، روز مقاومت و پایداری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-036",
+      "date": "1405-03-05",
+      "title": {
+        "fa": "روز عرفه[9 ذوالحجه]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-037",
+      "date": "1405-03-06",
+      "title": {
+        "fa": "خرداد روز،جشن خردادگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-038",
+      "date": "1405-03-11",
+      "title": {
+        "fa": "ولادت امام علی النقی الهادی علیه السلام[15 ذوالحجه]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-039",
+      "date": "1405-03-15",
+      "title": {
+        "fa": "روز جهانی محیط زیست[5 June]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-040",
+      "date": "1405-03-16",
+      "title": {
+        "fa": "ولادت امام موسی کاظم علیه السلام[20 ذوالحجه]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-041",
+      "date": "1405-03-20",
+      "title": {
+        "fa": "روز جهانی صنایع دستی[10 June]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-042",
+      "date": "1405-03-22",
+      "title": {
+        "fa": "روز جهانی مبارزه با کار کودکان[12 June]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-043",
+      "date": "1405-03-24",
+      "title": {
+        "fa": "روز جهانی اهدای خون[14 June]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-044",
+      "date": "1405-03-25",
+      "title": {
+        "fa": "روز ملی گل وگیاه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-045",
+      "date": "1405-03-27",
+      "title": {
+        "fa": "روز جهاد کشاورزی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-046",
+      "date": "1405-03-27",
+      "title": {
+        "fa": "روز جهانی بیابان زدایی[17 June]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-047",
+      "date": "1405-04-01",
+      "title": {
+        "fa": "جشن آب پاشونک، جشن آغاز تابستان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-048",
+      "date": "1405-04-01",
+      "title": {
+        "fa": "روز اصناف"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-049",
+      "date": "1405-04-05",
+      "title": {
+        "fa": "روز جهانی مبارزه با مواد مخدر[26 June]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-050",
+      "date": "1405-04-06",
+      "title": {
+        "fa": "شهادتامام زین العابدین علیه السلام[12 محرم]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-051",
+      "date": "1405-04-07",
+      "title": {
+        "fa": "انفجار دفتر حزب جمهوری اسلامی و شهادت دکتر بهشتی و 72 نفر از اعضای حزب؛ روز قوه قضاییه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-052",
+      "date": "1405-04-08",
+      "title": {
+        "fa": "روز مبارزه با سلاح های شیمیایی و میکروبی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-053",
+      "date": "1405-04-10",
+      "title": {
+        "fa": "روز صنعت و معدن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-054",
+      "date": "1405-04-12",
+      "title": {
+        "fa": "شلیک به پرواز 655 ایران ایر توسط ناو وینسنس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-055",
+      "date": "1405-04-13",
+      "title": {
+        "fa": "تیر روز،جشن تیرگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-056",
+      "date": "1405-04-14",
+      "title": {
+        "fa": "روز قلم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-057",
+      "date": "1405-04-15",
+      "title": {
+        "fa": "جشن خام خواری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-058",
+      "date": "1405-04-25",
+      "title": {
+        "fa": "روز بهزیستی و تامین اجتماعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-059",
+      "date": "1405-04-27",
+      "title": {
+        "fa": "اعلام پذیرش قطعنامه 598 شورای امنیت از سوی ایران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-060",
+      "date": "1405-05-06",
+      "title": {
+        "fa": "روز ترویج آموزش های فنی و حرفه ای"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-061",
+      "date": "1405-05-07",
+      "title": {
+        "fa": "مرداد روز،جشن مردادگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-062",
+      "date": "1405-05-08",
+      "title": {
+        "fa": "روز بزرگداشت شیخ شهاب الدین سهروردی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-063",
+      "date": "1405-05-10",
+      "title": {
+        "fa": "جشن چله تابستان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-064",
+      "date": "1405-05-10",
+      "title": {
+        "fa": "آغاز هفته جهانی شیردهی[1 August]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-065",
+      "date": "1405-05-14",
+      "title": {
+        "fa": "صدور فرمان مشروطیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-066",
+      "date": "1405-05-17",
+      "title": {
+        "fa": "روز خبرنگار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-067",
+      "date": "1405-05-22",
+      "title": {
+        "fa": "روز جهانی چپ دست ها[13 August]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-068",
+      "date": "1405-05-23",
+      "title": {
+        "fa": "هجرت پیامبر اکرم از مکه به مدینه[1 ربيع الاول]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-069",
+      "date": "1405-05-26",
+      "title": {
+        "fa": "سالروز ورود آزادگانِ سرافراز به وطن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-070",
+      "date": "1405-05-28",
+      "title": {
+        "fa": "سالروز وقایع 28 مرداد و برکناری دکتر محمد مصدق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-071",
+      "date": "1405-05-28",
+      "title": {
+        "fa": "سالروز فاجعه آتش زدن سینما رکس آبادان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-072",
+      "date": "1405-05-28",
+      "title": {
+        "fa": "روز جهانی عکاسی[19 August]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-073",
+      "date": "1405-06-01",
+      "title": {
+        "fa": "روز بزرگداشت ابوعلی سینا و روز پزشک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-074",
+      "date": "1405-06-02",
+      "title": {
+        "fa": "آغاز هفته دولت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-075",
+      "date": "1405-06-03",
+      "title": {
+        "fa": "میلاد رسول اکرم به روایت اهل سنت[12 ربيع الاول]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-076",
+      "date": "1405-06-04",
+      "title": {
+        "fa": "زادروز داراب (کوروش)"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-077",
+      "date": "1405-06-04",
+      "title": {
+        "fa": "شهریور روز،جشن شهریورگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-078",
+      "date": "1405-06-04",
+      "title": {
+        "fa": "روز کارمند"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-079",
+      "date": "1405-06-05",
+      "title": {
+        "fa": "روز بزرگداشت محمدبن زکریای رازی و روز داروساز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-080",
+      "date": "1405-06-08",
+      "title": {
+        "fa": "انفجار در دفتر نخست‌وزیری جمهوری اسلامی ایران، روز مبارزه با تروریسم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-081",
+      "date": "1405-06-11",
+      "title": {
+        "fa": "روزصنعت چاپ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-082",
+      "date": "1405-06-13",
+      "title": {
+        "fa": "روز بزرگداشت ابوریحان بیرونی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-083",
+      "date": "1405-06-13",
+      "title": {
+        "fa": "روز تعاون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-084",
+      "date": "1405-06-17",
+      "title": {
+        "fa": "قیام 17 شهریور"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-085",
+      "date": "1405-06-19",
+      "title": {
+        "fa": "درگذشت آیت الله سید محمود طالقانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-086",
+      "date": "1405-06-19",
+      "title": {
+        "fa": "روز جهانی پیشگیری از خودکشی[10 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-087",
+      "date": "1405-06-20",
+      "title": {
+        "fa": "حمله به برج‌های دوقلوی مرکز تجارت جهانی[11 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-088",
+      "date": "1405-06-21",
+      "title": {
+        "fa": "روز سینما"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-089",
+      "date": "1405-06-21",
+      "title": {
+        "fa": "روز گرامیداشت برنامه نویسان[12 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-090",
+      "date": "1405-06-27",
+      "title": {
+        "fa": "روز شعر و ادب پارسی وروز بزرگداشت استاد شهریار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-091",
+      "date": "1405-06-28",
+      "title": {
+        "fa": "ولادت امام حسن عسکری علیه السلام[8 ربيع الثاني]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-092",
+      "date": "1405-06-30",
+      "title": {
+        "fa": "روز گفتگوی تمدنها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-093",
+      "date": "1405-06-30",
+      "title": {
+        "fa": "وفات حضرت معصومه سلام الله علیها[10 ربيع الثاني]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-094",
+      "date": "1405-06-30",
+      "title": {
+        "fa": "روز جهانی صلح[21 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-095",
+      "date": "1405-06-31",
+      "title": {
+        "fa": "آغاز هفته دفاع مقدس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-096",
+      "date": "1405-07-01",
+      "title": {
+        "fa": "آغاز حمله مغول به ایران در پاییز 598 خورشیدی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-097",
+      "date": "1405-07-05",
+      "title": {
+        "fa": "روز جهانی جهانگردی[27 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-098",
+      "date": "1405-07-07",
+      "title": {
+        "fa": "روز آتش نشانی و ایمنی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-099",
+      "date": "1405-07-07",
+      "title": {
+        "fa": "سقوط هواپیمای حامل جمعی از فرماندهان جنگ (کلاهدوز، نامجو، فلاحی، فکوری، جهان آرا) در سال 1360"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-100",
+      "date": "1405-07-08",
+      "title": {
+        "fa": "روزبزرگداشت مولوی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-101",
+      "date": "1405-07-08",
+      "title": {
+        "fa": "روز جهانی ناشنوایان[30 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-102",
+      "date": "1405-07-08",
+      "title": {
+        "fa": "روز جهانی ترجمه و مترجم[30 September]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-103",
+      "date": "1405-07-09",
+      "title": {
+        "fa": "روز جهانی سالمندان[1 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-104",
+      "date": "1405-07-10",
+      "title": {
+        "fa": "مهر روز،جشن مهرگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-105",
+      "date": "1405-07-13",
+      "title": {
+        "fa": "روز نیروی انتظامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-106",
+      "date": "1405-07-13",
+      "title": {
+        "fa": "روز جهانی معلم[5 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-107",
+      "date": "1405-07-14",
+      "title": {
+        "fa": "روز دامپزشکی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-108",
+      "date": "1405-07-16",
+      "title": {
+        "fa": "روز ملی کودک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-109",
+      "date": "1405-07-17",
+      "title": {
+        "fa": "روز جهانی پست[9 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-110",
+      "date": "1405-07-18",
+      "title": {
+        "fa": "روز جهانی مبارزه با حکم اعدام[10 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-111",
+      "date": "1405-07-19",
+      "title": {
+        "fa": "روز جهانی دختر[11 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-112",
+      "date": "1405-07-20",
+      "title": {
+        "fa": "روز بزرگداشت حافظ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-113",
+      "date": "1405-07-21",
+      "title": {
+        "fa": "جشن پیروزی کاوه و فریدون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-114",
+      "date": "1405-07-22",
+      "title": {
+        "fa": "روز جهانی استاندارد[14 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-115",
+      "date": "1405-07-23",
+      "title": {
+        "fa": "روز جهانی عصای سفید[15 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-116",
+      "date": "1405-07-24",
+      "title": {
+        "fa": "ولادت حضرت زینب سلام الله علیها و روز پرستار و بهورز[5 جمادي الاولي]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-117",
+      "date": "1405-07-24",
+      "title": {
+        "fa": "روز جهانی غذا[16 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-118",
+      "date": "1405-07-25",
+      "title": {
+        "fa": "روز جهانی ریشه کنی فقر[17 October]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-119",
+      "date": "1405-07-26",
+      "title": {
+        "fa": "روز تربیت بدنی و ورزش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-120",
+      "date": "1405-07-29",
+      "title": {
+        "fa": "روز ملی کوهنورد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-121",
+      "date": "1405-08-01",
+      "title": {
+        "fa": "روز آمار و برنامه ریزی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-122",
+      "date": "1405-08-07",
+      "title": {
+        "fa": "سالروز ورود کوروش بزرگ به بابل در سال 539 پیش از میلاد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-123",
+      "date": "1405-08-08",
+      "title": {
+        "fa": "روز نوجوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-124",
+      "date": "1405-08-10",
+      "title": {
+        "fa": "آبان روز، جشن آبانگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-125",
+      "date": "1405-08-13",
+      "title": {
+        "fa": "روز دانش آموز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-126",
+      "date": "1405-08-14",
+      "title": {
+        "fa": "روز فرهنگ عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-127",
+      "date": "1405-08-15",
+      "title": {
+        "fa": "جشن میانه پاییز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-128",
+      "date": "1405-08-18",
+      "title": {
+        "fa": "روز ملی کیفیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-129",
+      "date": "1405-08-23",
+      "title": {
+        "fa": "روز جهانی دیابت[14 November]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-130",
+      "date": "1405-08-24",
+      "title": {
+        "fa": "روز کتاب و کتابخوانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-131",
+      "date": "1405-08-28",
+      "title": {
+        "fa": "روز جهانی فلسفه[19 November]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-132",
+      "date": "1405-08-28",
+      "title": {
+        "fa": "روز جهانی آقایان[19 November]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-133",
+      "date": "1405-08-29",
+      "title": {
+        "fa": "روز جهانی کودک[20 November]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-134",
+      "date": "1405-09-01",
+      "title": {
+        "fa": "آذر جشن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-135",
+      "date": "1405-09-04",
+      "title": {
+        "fa": "روز جهانی مبارزه با خشونت علیه زنان[25 November]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-136",
+      "date": "1405-09-05",
+      "title": {
+        "fa": "روز بسیج مستضعفان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-137",
+      "date": "1405-09-07",
+      "title": {
+        "fa": "روز نیروی دریایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-138",
+      "date": "1405-09-09",
+      "title": {
+        "fa": "جشن آذرگان ،آذر روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-139",
+      "date": "1405-09-09",
+      "title": {
+        "fa": "ولادت حضرت فاطمه زهرا سلام الله علیها و روز مادر[20 جمادي الثانيه]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-140",
+      "date": "1405-09-10",
+      "title": {
+        "fa": "روز مجلس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-141",
+      "date": "1405-09-10",
+      "title": {
+        "fa": "روز جهانی ایدز[1 December]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-142",
+      "date": "1405-09-12",
+      "title": {
+        "fa": "روز جهانی معلولان[3 December]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-143",
+      "date": "1405-09-13",
+      "title": {
+        "fa": "روز بیمه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-144",
+      "date": "1405-09-15",
+      "title": {
+        "fa": "روز حسابدار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-145",
+      "date": "1405-09-16",
+      "title": {
+        "fa": "روز دانشجو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-146",
+      "date": "1405-09-19",
+      "title": {
+        "fa": "ولادتامام محمد باقر علیه السلام[1 رجب]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-147",
+      "date": "1405-09-20",
+      "title": {
+        "fa": "روز جهانی کوه نوردی[11 December]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-148",
+      "date": "1405-09-21",
+      "title": {
+        "fa": "شهادت امام علی النقی الهادی علیه السلام[3 رجب]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-149",
+      "date": "1405-09-25",
+      "title": {
+        "fa": "روز پژوهش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-150",
+      "date": "1405-09-26",
+      "title": {
+        "fa": "روز حمل و نقل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-151",
+      "date": "1405-09-28",
+      "title": {
+        "fa": "ولادت امام محمد تقی علیه السلام[10 رجب]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-152",
+      "date": "1405-09-30",
+      "title": {
+        "fa": "جشن شب یلدا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-153",
+      "date": "1405-10-01",
+      "title": {
+        "fa": "روز میلاد خورشید؛ جشن خرم روز، نخستین جشن دیگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-154",
+      "date": "1405-10-03",
+      "title": {
+        "fa": "وفات حضرت زینب سلام الله علیها[15 رجب]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-155",
+      "date": "1405-10-04",
+      "title": {
+        "fa": "جشن کریسمس[25 December]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international",
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-156",
+      "date": "1405-10-05",
+      "title": {
+        "fa": "سالروز زمین لرزه ی بم در سال 1382"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-157",
+      "date": "1405-10-05",
+      "title": {
+        "fa": "سالروز شهادت آشو زرتشت، اَبَراِنسان بزرگ تاریخ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-158",
+      "date": "1405-10-08",
+      "title": {
+        "fa": "دی به آذر روز، دومین جشن دیگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-159",
+      "date": "1405-10-11",
+      "title": {
+        "fa": "جشن آغاز سال نو میلادی[1 January]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international",
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-160",
+      "date": "1405-10-13",
+      "title": {
+        "fa": "شهادت امام موسی کاظم علیه السلام[25 رجب]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-161",
+      "date": "1405-10-13",
+      "title": {
+        "fa": "شهادت سردار حاج قاسم سلیمانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-162",
+      "date": "1405-10-15",
+      "title": {
+        "fa": "دی به مهر روز، سومین جشن دیگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-163",
+      "date": "1405-10-20",
+      "title": {
+        "fa": "قتل امیرکبیر به دستور ناصرالدین شاه قاجار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-164",
+      "date": "1405-10-21",
+      "title": {
+        "fa": "ولادت سالار شهیدان، امام حسین علیه السلام و روز پاسدار[3 شعبان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-165",
+      "date": "1405-10-22",
+      "title": {
+        "fa": "ولادت ابوالفضل العباس علیه السلام و روز جانباز[4 شعبان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-166",
+      "date": "1405-10-23",
+      "title": {
+        "fa": "دی به دین روز، چهارمین جشن دیگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-167",
+      "date": "1405-10-23",
+      "title": {
+        "fa": "ولادت امام زین العابدین علیه السلام[5 شعبان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-168",
+      "date": "1405-10-29",
+      "title": {
+        "fa": "ولادت علی اکبر علیه السلام و روز جوان[11 شعبان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-169",
+      "date": "1405-11-01",
+      "title": {
+        "fa": "زادروز فردوسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-170",
+      "date": "1405-11-02",
+      "title": {
+        "fa": "بهمن روز، جشن بهمنگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-171",
+      "date": "1405-11-05",
+      "title": {
+        "fa": "جشن نوسره"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-172",
+      "date": "1405-11-10",
+      "title": {
+        "fa": "جشن سده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-173",
+      "date": "1405-11-12",
+      "title": {
+        "fa": "بازگشت امام خمینی (ره) به ایران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-174",
+      "date": "1405-11-15",
+      "title": {
+        "fa": "جشن میانه زمستان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-175",
+      "date": "1405-11-19",
+      "title": {
+        "fa": "روز نیروی هوایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-176",
+      "date": "1405-11-22",
+      "title": {
+        "fa": "حمله به سفارت روسیه و قتل گریبایدوف سفیر روسیه تزاری در ایران[11 February]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-177",
+      "date": "1405-11-23",
+      "title": {
+        "fa": "زادروز چارلز داروین بنیانگذار نظریه‌ی فرگشت از طریق انتخاب طبیعی[12 February]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international",
+        "cultural"
+      ]
+    },
+    {
+      "id": "1405-evt-178",
+      "date": "1405-11-25",
+      "title": {
+        "fa": "روز ولنتاین[14 February]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-179",
+      "date": "1405-11-29",
+      "title": {
+        "fa": "جشن سپندارمذگان و روز عشق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "cultural",
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-180",
+      "date": "1405-12-02",
+      "title": {
+        "fa": "روز جهانی زبان مادری[21 February]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-181",
+      "date": "1405-12-03",
+      "title": {
+        "fa": "ولادت امام حسن مجتبی علیه السلام[15 رمضان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-182",
+      "date": "1405-12-05",
+      "title": {
+        "fa": "روز بزرگداشت زمین و بانوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-183",
+      "date": "1405-12-05",
+      "title": {
+        "fa": "روز بزرگداشت خواجه نصیر الدین طوسی و روز مهندس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-184",
+      "date": "1405-12-06",
+      "title": {
+        "fa": "شب قدر[18 رمضان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-185",
+      "date": "1405-12-07",
+      "title": {
+        "fa": "ضربت خوردن حضرت علی علیه السلام[19 رمضان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-186",
+      "date": "1405-12-07",
+      "title": {
+        "fa": "سالروز استقلال کانون وکلای دادگستری و روز وکیل مدافع"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-187",
+      "date": "1405-12-07",
+      "title": {
+        "fa": "سالروز درگذشت علی اکبر دهخدا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-188",
+      "date": "1405-12-10",
+      "title": {
+        "fa": "شب قدر[22 رمضان]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "religious"
+      ]
+    },
+    {
+      "id": "1405-evt-189",
+      "date": "1405-12-15",
+      "title": {
+        "fa": "روز درختکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-190",
+      "date": "1405-12-17",
+      "title": {
+        "fa": "روزجهانی زنان[8 March]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    },
+    {
+      "id": "1405-evt-191",
+      "date": "1405-12-25",
+      "title": {
+        "fa": "پایان سرایش شاهنامه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1405-evt-192",
+      "date": "1405-12-29",
+      "title": {
+        "fa": "روز جهانی شادی[20 March]"
+      },
+      "isHoliday": false,
+      "categories": [
+        "international"
+      ]
+    }
+  ],
   "notes": [
-    "Official holidays (including religious/lunar) live in holidays.json, aligned with UT Holiday-1405.pdf. This file remains empty: non-holiday observances are not curated yet.",
-    "Do not treat an empty list as 'no events exist in 1405'."
+    "Non-holiday observances curated from Time.ir via pipe2time. Official holidays stay in holidays.json (UT Holiday-1405.pdf).",
+    "Hijri-linked observances here may differ by ±1 day from the official UT Calendar PDF; verify critical lunar dates if needed.",
+    "Titles cleaned from upstream text; English titles omitted in this release."
   ]
 }

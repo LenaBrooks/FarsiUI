@@ -2,7 +2,7 @@
 
 Static Jalali holiday/event JSON for Iranian public calendars. This folder is **data only** — no date-conversion library and no React component.
 
-**Status:** Jalali year **1405**, aligned with the official University of Tehran Calendar Center (`dataVersion` `1405.2.0`).
+**Status:** Jalali year **1405** — holidays from UT official PDF; observances from Time.ir/pipe2time (`dataVersion` `1405.2.1`).
 
 ## Layout
 
@@ -15,7 +15,7 @@ calendar/
   years/
     1405/
       holidays.json         # official national + religious holidays
-      events.json           # empty (reserved)
+      events.json           # non-holiday observances
   README.md
 ```
 
@@ -59,7 +59,9 @@ Earlier drafts used Time.ir/pipe2time scrapes; several lunar dates were ±1 day 
 | 1405-12-20 | تعطیل به مناسبت عید سعید فطر | religious |
 | 1405-12-29 | روز ملی شدن صنعت نفت ایران | national |
 
-Not included: Fridays/weekends, non-holiday observances, ad-hoc government closures.
+Also in `events.json`: **192** non-holiday observances from Time.ir/pipe2time (`isHoliday: false`). Hijri-linked event dates may differ ±1 day from the UT Calendar PDF.
+
+Not included: Fridays/weekends as rows, ad-hoc government closures.
 
 ## Future years (1406+)
 
@@ -72,21 +74,22 @@ Prefer `@main` or a pinned tag (`@latest` may lag):
 ```text
 https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@main/calendar/meta.json
 https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@main/calendar/years/1405/holidays.json
+https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@main/calendar/years/1405/events.json
 ```
 
 ```ts
 const res = await fetch(
-  "https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@main/calendar/years/1405/holidays.json"
+  "https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@main/calendar/years/1405/events.json"
 )
 const { year, items } = await res.json()
 ```
 
 ## Date conversion
 
-Not part of this package. Use `@internationalized/date` (`PersianCalendar`) or another Jalali library. Holiday rows use Jalali `YYYY-MM-DD` only.
+Not part of this package. Use `@internationalized/date` (`PersianCalendar`) or another Jalali library. Dates use Jalali `YYYY-MM-DD` only.
 
 ## Data policy
 
-1. Official holidays only, from UT Calendar Center PDFs when available.
-2. Empty `events.json` means “not curated yet”.
+1. Official **holidays** from UT Calendar Center PDFs when available.
+2. **Events** (non-holiday) currently from Time.ir via pipe2time; not verified day-by-day against UT Calendar PDF.
 3. License intent for curated FarsiUI JSON: **CC0-1.0** (see `meta.json`).

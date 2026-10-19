@@ -6,5150 +6,2849 @@ import "server-only"
 import * as React from "react"
 
 export const Components: Record<string, any> = {
-  accordion: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/accordion")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "accordion"
-    return { default: mod.default || mod[exportName] }
-  }),
-  alert: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/alert")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "alert"
-    return { default: mod.default || mod[exportName] }
-  }),
+  "accordion": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/accordion")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "accordion"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "alert": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/alert")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "alert"
+        return { default: mod.default || mod[exportName] }
+      }),
   "alert-dialog": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/alert-dialog")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "alert-dialog"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/alert-dialog")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "alert-dialog"
+        return { default: mod.default || mod[exportName] }
+      }),
   "aspect-ratio": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/aspect-ratio")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "aspect-ratio"
-    return { default: mod.default || mod[exportName] }
-  }),
-  avatar: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/avatar")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "avatar"
-    return { default: mod.default || mod[exportName] }
-  }),
-  badge: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/badge")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "badge"
-    return { default: mod.default || mod[exportName] }
-  }),
-  breadcrumb: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/breadcrumb")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb"
-    return { default: mod.default || mod[exportName] }
-  }),
-  button: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/button")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/aspect-ratio")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "aspect-ratio"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "avatar": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/avatar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "avatar"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "badge": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/badge")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "badge"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "breadcrumb": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/breadcrumb")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "button": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/button-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group"
-    return { default: mod.default || mod[exportName] }
-  }),
-  calendar: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/calendar")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "calendar"
-    return { default: mod.default || mod[exportName] }
-  }),
-  card: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/card")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "card"
-    return { default: mod.default || mod[exportName] }
-  }),
-  carousel: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/carousel")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel"
-    return { default: mod.default || mod[exportName] }
-  }),
-  chart: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/chart")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart"
-    return { default: mod.default || mod[exportName] }
-  }),
-  checkbox: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/checkbox")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "checkbox"
-    return { default: mod.default || mod[exportName] }
-  }),
-  collapsible: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/collapsible")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "collapsible"
-    return { default: mod.default || mod[exportName] }
-  }),
-  combobox: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/combobox")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "combobox"
-    return { default: mod.default || mod[exportName] }
-  }),
-  command: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/command")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "command"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/button-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "calendar": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/calendar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "calendar"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "card": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/card")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "card"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "carousel": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/carousel")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "chart": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "checkbox": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/checkbox")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "checkbox"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "collapsible": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/collapsible")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "collapsible"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "combobox": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/combobox")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "combobox"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "command": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/command")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "command"
+        return { default: mod.default || mod[exportName] }
+      }),
   "context-menu": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/context-menu")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "context-menu"
-    return { default: mod.default || mod[exportName] }
-  }),
-  dialog: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/dialog")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dialog"
-    return { default: mod.default || mod[exportName] }
-  }),
-  drawer: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/drawer")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "drawer"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/context-menu")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "context-menu"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "dialog": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/dialog")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dialog"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "drawer": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/drawer")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "drawer"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dropdown-menu": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/dropdown-menu")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dropdown-menu"
-    return { default: mod.default || mod[exportName] }
-  }),
-  empty: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/empty")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty"
-    return { default: mod.default || mod[exportName] }
-  }),
-  field: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/field")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field"
-    return { default: mod.default || mod[exportName] }
-  }),
-  form: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/form")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/dropdown-menu")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dropdown-menu"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "empty": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/empty")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "field": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/field")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "form": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/form")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hover-card": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/hover-card")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hover-card"
-    return { default: mod.default || mod[exportName] }
-  }),
-  input: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/input")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/hover-card")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hover-card"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "input": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/input")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/input-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/input-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-otp": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/input-otp")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-otp"
-    return { default: mod.default || mod[exportName] }
-  }),
-  item: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/item")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item"
-    return { default: mod.default || mod[exportName] }
-  }),
-  label: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/label")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "label"
-    return { default: mod.default || mod[exportName] }
-  }),
-  menubar: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/menubar")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "menubar"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/input-otp")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-otp"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "item": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/item")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "label": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "label"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "menubar": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/menubar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "menubar"
+        return { default: mod.default || mod[exportName] }
+      }),
   "navigation-menu": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/navigation-menu")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "navigation-menu"
-    return { default: mod.default || mod[exportName] }
-  }),
-  pagination: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/pagination")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pagination"
-    return { default: mod.default || mod[exportName] }
-  }),
-  popover: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/popover")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "popover"
-    return { default: mod.default || mod[exportName] }
-  }),
-  progress: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/progress")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "progress"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/navigation-menu")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "navigation-menu"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "pagination": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/pagination")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pagination"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "popover": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/popover")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "popover"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "progress": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/progress")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "progress"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radio-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/radio-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radio-group"
-    return { default: mod.default || mod[exportName] }
-  }),
-  resizable: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/resizable")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "resizable"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/radio-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radio-group"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "resizable": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/resizable")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "resizable"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scroll-area": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/scroll-area")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scroll-area"
-    return { default: mod.default || mod[exportName] }
-  }),
-  select: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/select")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "select"
-    return { default: mod.default || mod[exportName] }
-  }),
-  separator: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/separator")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "separator"
-    return { default: mod.default || mod[exportName] }
-  }),
-  sheet: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/sheet")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sheet"
-    return { default: mod.default || mod[exportName] }
-  }),
-  sidebar: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/sidebar")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar"
-    return { default: mod.default || mod[exportName] }
-  }),
-  skeleton: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/skeleton")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "skeleton"
-    return { default: mod.default || mod[exportName] }
-  }),
-  slider: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/slider")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "slider"
-    return { default: mod.default || mod[exportName] }
-  }),
-  sonner: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/sonner")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sonner"
-    return { default: mod.default || mod[exportName] }
-  }),
-  spinner: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/spinner")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner"
-    return { default: mod.default || mod[exportName] }
-  }),
-  switch: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/switch")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "switch"
-    return { default: mod.default || mod[exportName] }
-  }),
-  table: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/table")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "table"
-    return { default: mod.default || mod[exportName] }
-  }),
-  tabs: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/tabs")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tabs"
-    return { default: mod.default || mod[exportName] }
-  }),
-  textarea: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/textarea")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "textarea"
-    return { default: mod.default || mod[exportName] }
-  }),
-  toggle: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/toggle")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/scroll-area")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scroll-area"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "select": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "select"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "separator": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/separator")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "separator"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "sheet": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/sheet")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sheet"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "sidebar": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/sidebar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "skeleton": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/skeleton")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "skeleton"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "slider": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/slider")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "slider"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "sonner": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/sonner")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sonner"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "spinner": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/spinner")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "switch": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/switch")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "switch"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "table": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/table")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "table"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "tabs": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/tabs")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tabs"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "textarea": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/textarea")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "toggle": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/toggle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/toggle-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group"
-    return { default: mod.default || mod[exportName] }
-  }),
-  tooltip: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/tooltip")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tooltip"
-    return { default: mod.default || mod[exportName] }
-  }),
-  kbd: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/kbd")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "kbd"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/toggle-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "tooltip": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/tooltip")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tooltip"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "kbd": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/kbd")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "kbd"
+        return { default: mod.default || mod[exportName] }
+      }),
   "native-select": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/native-select")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "native-select"
-    return { default: mod.default || mod[exportName] }
-  }),
-  direction: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/direction")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "direction"
-    return { default: mod.default || mod[exportName] }
-  }),
-  attachment: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/attachment")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "attachment"
-    return { default: mod.default || mod[exportName] }
-  }),
-  bubble: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/bubble")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bubble"
-    return { default: mod.default || mod[exportName] }
-  }),
-  marker: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/marker")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "marker"
-    return { default: mod.default || mod[exportName] }
-  }),
-  message: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/message")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "message"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/native-select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "native-select"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "direction": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/direction")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "direction"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "attachment": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/attachment")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "attachment"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "bubble": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/bubble")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bubble"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "marker": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/marker")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "marker"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "message": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/ui/message")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "message"
+        return { default: mod.default || mod[exportName] }
+      }),
   "message-scroller": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/ui/message-scroller")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "message-scroller"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/ui/message-scroller")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "message-scroller"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-01": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-01/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-01"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-01/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-01"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-02": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-02/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-02"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-02/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-02"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-03": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-03/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-03"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-03/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-03"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-04": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-04/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-04"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-04/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-04"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-05": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-05/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-05"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-05/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-05"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-06": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-06/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-06"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-06/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-06"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-07": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-07/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-07"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-07/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-07"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-09": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-09/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-09"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-09/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-09"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-10": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-10/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-10"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-10/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-10"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-11": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-11/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-11"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-11/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-11"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-12": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-12/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-12"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-12/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-12"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-13": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-13/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-13"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-13/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-13"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-14": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-14/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-14"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-14/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-14"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-15": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-15/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-15"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-15/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-15"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sidebar-16": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/sidebar-16/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sidebar-16"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/sidebar-16/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sidebar-16"
+        return { default: mod.default || mod[exportName] }
+      }),
   "login-01": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/login-01/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "login-01"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/login-01/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "login-01"
+        return { default: mod.default || mod[exportName] }
+      }),
   "login-02": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/login-02/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "login-02"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/login-02/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "login-02"
+        return { default: mod.default || mod[exportName] }
+      }),
   "login-03": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/login-03/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "login-03"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/login-03/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "login-03"
+        return { default: mod.default || mod[exportName] }
+      }),
   "login-04": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/login-04/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "login-04"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/login-04/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "login-04"
+        return { default: mod.default || mod[exportName] }
+      }),
   "login-05": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/login-05/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "login-05"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/login-05/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "login-05"
+        return { default: mod.default || mod[exportName] }
+      }),
   "signup-01": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/signup-01/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "signup-01"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/signup-01/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "signup-01"
+        return { default: mod.default || mod[exportName] }
+      }),
   "signup-02": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/signup-02/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "signup-02"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/signup-02/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "signup-02"
+        return { default: mod.default || mod[exportName] }
+      }),
   "signup-03": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/signup-03/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "signup-03"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/signup-03/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "signup-03"
+        return { default: mod.default || mod[exportName] }
+      }),
   "signup-04": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/signup-04/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "signup-04"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/signup-04/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "signup-04"
+        return { default: mod.default || mod[exportName] }
+      }),
   "signup-05": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/blocks/signup-05/page")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "signup-05"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/blocks/signup-05/page")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "signup-05"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-axes": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-axes")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-axes"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-axes")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-axes"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-default": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-default")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-gradient": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-area-gradient"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-gradient"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-gradient")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-gradient"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-icons": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-icons")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-icons"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-icons")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-icons"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-area-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-legend": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-legend")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-legend"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-legend")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-legend"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-linear": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-linear")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-linear"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-linear")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-linear"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-stacked-expand": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-area-stacked-expand"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-stacked-expand"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-stacked-expand")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-stacked-expand"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-stacked": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-stacked")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-stacked"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-stacked")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-stacked"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-area-step": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-area-step")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-area-step"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-area-step")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-area-step"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-active": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-active")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-active"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-active")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-active"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-default": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-default")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-horizontal": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-bar-horizontal"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-horizontal"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-horizontal")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-horizontal"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-bar-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-label-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-bar-label-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-label-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-label-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-label-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-label": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-label")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-mixed": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-mixed")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-mixed"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-mixed")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-mixed"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-multiple": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-multiple")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-multiple"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-multiple")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-multiple"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-negative": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-negative")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-negative"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-negative")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-negative"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-stacked": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-bar-stacked")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-stacked"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-bar-stacked")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-stacked"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-default": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-line-default")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-dots-colors": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-line-dots-colors"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-dots-colors"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-dots-colors")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-dots-colors"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-dots-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-line-dots-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-dots-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-dots-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-dots-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-dots": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-line-dots")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-dots"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-dots")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-dots"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-line-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-label-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-line-label-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-label-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-label-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-label-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-label": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-line-label")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-linear": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-line-linear")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-linear"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-linear")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-linear"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-multiple": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-line-multiple"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-multiple"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-multiple")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-multiple"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-line-step": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-line-step")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-line-step"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-line-step")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-line-step"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-donut-active": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-pie-donut-active"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-donut-active"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut-active")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-donut-active"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-donut-text": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-pie-donut-text"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-donut-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-donut-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-donut": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-donut"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-donut")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-donut"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-pie-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-label-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-pie-label-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-label-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-label-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-label-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-label-list": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-pie-label-list"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-label-list"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-label-list")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-label-list"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-label": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-pie-label")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-legend": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-pie-legend")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-legend"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-legend")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-legend"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-separator-none": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-pie-separator-none"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-separator-none"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-separator-none")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-separator-none"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-simple": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-pie-simple")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-simple"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-simple")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-simple"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-pie-stacked": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-pie-stacked")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-pie-stacked"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-pie-stacked")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-pie-stacked"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-default": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-default"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-dots": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radar-dots")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-dots"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-dots")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-dots"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-grid-circle-fill": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-grid-circle-fill"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-grid-circle-fill"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-circle-fill")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-grid-circle-fill"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-grid-circle-no-lines": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-grid-circle-no-lines"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-grid-circle-no-lines"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-circle-no-lines")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-grid-circle-no-lines"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-grid-circle": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-grid-circle"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-grid-circle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-circle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-grid-circle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-grid-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-grid-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-grid-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-grid-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-grid-fill": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-grid-fill"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-grid-fill"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-fill")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-grid-fill"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-grid-none": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-grid-none"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-grid-none"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-grid-none")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-grid-none"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-icons": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radar-icons")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-icons"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-icons")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-icons"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-label-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-label-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-label-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-label-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-label-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-legend": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radar-legend")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-legend"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-legend")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-legend"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-lines-only": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-lines-only"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-lines-only"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-lines-only")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-lines-only"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-multiple": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radar-multiple"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-multiple"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-multiple")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-multiple"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radar-radius": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radar-radius")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radar-radius"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radar-radius")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radar-radius"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radial-grid": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radial-grid")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radial-grid"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radial-grid")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radial-grid"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radial-label": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radial-label")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radial-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radial-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radial-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radial-shape": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radial-shape")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radial-shape"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radial-shape")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radial-shape"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radial-simple": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radial-simple"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radial-simple"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radial-simple")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radial-simple"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radial-stacked": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-radial-stacked"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radial-stacked"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radial-stacked")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radial-stacked"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-radial-text": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/charts/chart-radial-text")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-radial-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-radial-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-radial-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-default": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-default"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-indicator-line": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-indicator-line"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-indicator-line"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-indicator-line")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-indicator-line"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-indicator-none": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-indicator-none"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-indicator-none"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-indicator-none")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-indicator-none"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-label-none": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-label-none"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-label-none"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-label-none")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-label-none"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-label-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-label-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-label-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-label-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-label-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-label-formatter": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-label-formatter"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-label-formatter"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-label-formatter")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-label-formatter"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-formatter": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-formatter"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-formatter"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-formatter")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-formatter"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-icons": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-icons"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-icons"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-icons")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-icons"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-advanced": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/chart-tooltip-advanced"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-advanced"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/chart-tooltip-advanced")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-advanced"
+        return { default: mod.default || mod[exportName] }
+      }),
   "simple-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/simple-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "simple-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/simple-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "simple-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dashed-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/dashed-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dashed-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/dashed-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dashed-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "vertical-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/vertical-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "vertical-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/vertical-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "vertical-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "biaxial-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/biaxial-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "biaxial-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/biaxial-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "biaxial-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-connect-nulls": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-connect-nulls"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-connect-nulls"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-connect-nulls")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-connect-nulls"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-with-x-axis-padding": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-with-x-axis-padding"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-with-x-axis-padding"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-with-x-axis-padding")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-with-x-axis-padding"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-with-reference-lines": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-with-reference-lines"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-with-reference-lines"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-with-reference-lines")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-with-reference-lines"
+        return { default: mod.default || mod[exportName] }
+      }),
   "customized-dot-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/customized-dot-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "customized-dot-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/customized-dot-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "customized-dot-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "customized-label-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/customized-label-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "customized-label-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/customized-label-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "customized-label-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "synchronized-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/synchronized-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "synchronized-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/synchronized-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "synchronized-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "synchronized-different-data": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/synchronized-different-data"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "synchronized-different-data"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/synchronized-different-data")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "synchronized-different-data"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-custom-shape": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-custom-shape"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-custom-shape"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-custom-shape")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-custom-shape"
+        return { default: mod.default || mod[exportName] }
+      }),
   "highlight-and-zoom-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/highlight-and-zoom-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "highlight-and-zoom-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/highlight-and-zoom-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "highlight-and-zoom-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-has-multi-series": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-has-multi-series"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-has-multi-series"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-has-multi-series")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-has-multi-series"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-axis-interval": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-axis-interval"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-axis-interval"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-axis-interval")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-axis-interval"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-chart-negative-values-with-reference-lines": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-chart-negative-values-with-reference-lines"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-chart-negative-values-with-reference-lines"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-chart-negative-values-with-reference-lines")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-chart-negative-values-with-reference-lines"
+        return { default: mod.default || mod[exportName] }
+      }),
   "compare-two-lines": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/compare-two-lines"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "compare-two-lines"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/compare-two-lines")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "compare-two-lines"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dynamic-z-index-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/dynamic-z-index-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dynamic-z-index-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/dynamic-z-index-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dynamic-z-index-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tiny-line-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/tiny-line-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tiny-line-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/tiny-line-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tiny-line-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "animated-time-series": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/animated-time-series"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "animated-time-series"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/animated-time-series")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "animated-time-series"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-step": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/line/line-step"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-step"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/line/line-step")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-step"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stacked-area-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/stacked-area-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stacked-area-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/stacked-area-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stacked-area-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-chart-range": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-chart-range"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-chart-range"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-chart-range")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-chart-range"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-chart-connect-nulls": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-chart-connect-nulls"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-chart-connect-nulls"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-chart-connect-nulls")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-chart-connect-nulls"
+        return { default: mod.default || mod[exportName] }
+      }),
   "cardinal-area-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/cardinal-area-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "cardinal-area-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/cardinal-area-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "cardinal-area-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "percent-area-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/percent-area-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "percent-area-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/percent-area-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "percent-area-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "synchronized-area-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/synchronized-area-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "synchronized-area-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/synchronized-area-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "synchronized-area-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tiny-area-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/tiny-area-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tiny-area-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/tiny-area-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tiny-area-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-chart-fill-by-value": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-chart-fill-by-value"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-chart-fill-by-value"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-chart-fill-by-value")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-chart-fill-by-value"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-chart-custom-animation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-chart-custom-animation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-chart-custom-animation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-chart-custom-animation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-chart-custom-animation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "range-area-chart-custom-animation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/range-area-chart-custom-animation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "range-area-chart-custom-animation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/range-area-chart-custom-animation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "range-area-chart-custom-animation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-chart-with-custom-events": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-chart-with-custom-events"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-chart-with-custom-events"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-chart-with-custom-events")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-chart-with-custom-events"
+        return { default: mod.default || mod[exportName] }
+      }),
   "prevent-right-click": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/prevent-right-click"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "prevent-right-click"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/prevent-right-click")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "prevent-right-click"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-step": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-step"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-step"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-step")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-step"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-gradient": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/area-gradient"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-gradient"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/area-gradient")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-gradient"
+        return { default: mod.default || mod[exportName] }
+      }),
   "market-cards": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/area/market-cards"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "market-cards"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/area/market-cards")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "market-cards"
+        return { default: mod.default || mod[exportName] }
+      }),
   "simple-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/simple-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "simple-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/simple-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "simple-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stacked-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/stacked-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stacked-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/stacked-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stacked-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "population-pyramid": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/population-pyramid"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "population-pyramid"
-    return { default: mod.default || mod[exportName] }
-  }),
-  timeline: React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/timeline"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "timeline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/population-pyramid")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "population-pyramid"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "timeline": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/timeline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "timeline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "box-plot": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/box-plot"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "box-plot"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/box-plot")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "box-plot"
+        return { default: mod.default || mod[exportName] }
+      }),
   "animated-bar-width": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/animated-bar-width"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "animated-bar-width"
-    return { default: mod.default || mod[exportName] }
-  }),
-  waterfall: React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/waterfall"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "waterfall"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/animated-bar-width")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "animated-bar-width"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "waterfall": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/waterfall")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "waterfall"
+        return { default: mod.default || mod[exportName] }
+      }),
   "animated-bar-time-series": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/animated-bar-time-series"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "animated-bar-time-series"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/animated-bar-time-series")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "animated-bar-time-series"
+        return { default: mod.default || mod[exportName] }
+      }),
   "mix-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/mix-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "mix-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/mix-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "mix-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "custom-shape-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/custom-shape-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "custom-shape-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/custom-shape-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "custom-shape-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "positive-and-negative-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/positive-and-negative-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "positive-and-negative-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/positive-and-negative-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "positive-and-negative-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "brush-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/brush-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "brush-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/brush-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "brush-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-chart-with-customized-event": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-with-customized-event"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-chart-with-customized-event"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-chart-with-customized-event")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-chart-with-customized-event"
+        return { default: mod.default || mod[exportName] }
+      }),
   "biaxial-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/biaxial-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "biaxial-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/biaxial-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "biaxial-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-chart-has-background": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-has-background"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-chart-has-background"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-chart-has-background")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-chart-has-background"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-chart-with-label-background": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-with-label-background"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-chart-with-label-background"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-chart-with-label-background")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-chart-with-label-background"
+        return { default: mod.default || mod[exportName] }
+      }),
   "ranged-stacked-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/ranged-stacked-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "ranged-stacked-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/ranged-stacked-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "ranged-stacked-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-chart-range": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-chart-range"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-chart-range"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-chart-range")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-chart-range"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tiny-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/tiny-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tiny-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/tiny-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tiny-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stacked-bar-chart-with-horizontal-line": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/stacked-bar-chart-with-horizontal-line"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stacked-bar-chart-with-horizontal-line"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/stacked-bar-chart-with-horizontal-line")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stacked-bar-chart-with-horizontal-line"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-horizontal": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-horizontal"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-horizontal"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-horizontal")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-horizontal"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bar-active": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/bar/bar-active"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bar-active"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/bar/bar-active")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bar-active"
+        return { default: mod.default || mod[exportName] }
+      }),
   "asset-returns": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/asset-returns"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "asset-returns"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/asset-returns")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "asset-returns"
+        return { default: mod.default || mod[exportName] }
+      }),
   "monthly-savings": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/monthly-savings"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "monthly-savings"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/monthly-savings")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "monthly-savings"
+        return { default: mod.default || mod[exportName] }
+      }),
   "line-bar-area-composed-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/line-bar-area-composed-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "line-bar-area-composed-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/line-bar-area-composed-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "line-bar-area-composed-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "same-data-composed-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/same-data-composed-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "same-data-composed-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/same-data-composed-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "same-data-composed-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "vertical-composed-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/vertical-composed-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "vertical-composed-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/vertical-composed-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "vertical-composed-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "composed-chart-with-axis-labels": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/composed-chart-with-axis-labels"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "composed-chart-with-axis-labels"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/composed-chart-with-axis-labels")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "composed-chart-with-axis-labels"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scatter-and-line-of-best-fit": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/scatter-and-line-of-best-fit"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scatter-and-line-of-best-fit"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/scatter-and-line-of-best-fit")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scatter-and-line-of-best-fit"
+        return { default: mod.default || mod[exportName] }
+      }),
   "banded-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/banded-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "banded-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/banded-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "banded-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "target-price-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/composed/target-price-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "target-price-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/composed/target-price-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "target-price-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "simple-scatter-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/simple-scatter-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "simple-scatter-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/simple-scatter-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "simple-scatter-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "joint-line-scatter-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/joint-line-scatter-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "joint-line-scatter-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/joint-line-scatter-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "joint-line-scatter-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bubble-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/bubble-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bubble-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/bubble-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bubble-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "custom-animation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/custom-animation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "custom-animation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/custom-animation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "custom-animation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scatter-chart-with-labels": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-labels"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scatter-chart-with-labels"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-labels")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scatter-chart-with-labels"
+        return { default: mod.default || mod[exportName] }
+      }),
   "multiple-y-axes-scatter-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/multiple-y-axes-scatter-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "multiple-y-axes-scatter-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/multiple-y-axes-scatter-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "multiple-y-axes-scatter-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scatter-chart-with-cells": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-cells"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scatter-chart-with-cells"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-cells")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scatter-chart-with-cells"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scatter-chart-performance": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-performance"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scatter-chart-performance"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/scatter/scatter-chart-performance")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scatter-chart-performance"
+        return { default: mod.default || mod[exportName] }
+      }),
   "two-level-pie-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/two-level-pie-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "two-level-pie-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/two-level-pie-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "two-level-pie-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "straight-angle-pie-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/straight-angle-pie-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "straight-angle-pie-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/straight-angle-pie-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "straight-angle-pie-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "custom-active-shape-pie-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/custom-active-shape-pie-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "custom-active-shape-pie-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/custom-active-shape-pie-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "custom-active-shape-pie-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-chart-with-customized-label": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-chart-with-customized-label"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-chart-with-customized-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-chart-with-customized-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-chart-with-customized-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-chart-with-padding-angle": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-chart-with-padding-angle"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-chart-with-padding-angle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-chart-with-padding-angle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-chart-with-padding-angle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-chart-in-grid": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-chart-in-grid"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-chart-in-grid"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-chart-in-grid")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-chart-in-grid"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-with-gradient": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-with-gradient"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-with-gradient"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-with-gradient")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-with-gradient"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-donut-text": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-donut-text"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-donut-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-donut-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-donut-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-interactive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-interactive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-interactive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-interactive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-interactive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-stacked": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/pie/pie-stacked"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-stacked"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/pie/pie-stacked")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-stacked"
+        return { default: mod.default || mod[exportName] }
+      }),
   "simple-radar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radar/simple-radar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "simple-radar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radar/simple-radar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "simple-radar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "specified-domain-radar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radar/specified-domain-radar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "specified-domain-radar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radar/specified-domain-radar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "specified-domain-radar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "range-radar-chart-custom-animation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radar/range-radar-chart-custom-animation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "range-radar-chart-custom-animation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radar/range-radar-chart-custom-animation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "range-radar-chart-custom-animation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radar-lines-only": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radar/radar-lines-only"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radar-lines-only"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radar/radar-lines-only")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radar-lines-only"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radar-icons": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radar/radar-icons"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radar-icons"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radar/radar-icons")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radar-icons"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radar-multiple": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radar/radar-multiple"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radar-multiple"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radar/radar-multiple")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radar-multiple"
+        return { default: mod.default || mod[exportName] }
+      }),
   "simple-radial-bar-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radial-bar/simple-radial-bar-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "simple-radial-bar-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radial-bar/simple-radial-bar-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "simple-radial-bar-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radial-bar-chart-click-to-focus-legend": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radial-bar-chart-click-to-focus-legend"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radial-bar-chart-click-to-focus-legend"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radial-text": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-text"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radial-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radial-bar/radial-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radial-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radial-shape": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-shape"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radial-shape"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radial-bar/radial-shape")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radial-shape"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radial-stacked": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/radial-bar/radial-stacked"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radial-stacked"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/radial-bar/radial-stacked")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radial-stacked"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bundle-size-treemap": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/treemap/bundle-size-treemap"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bundle-size-treemap"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/treemap/bundle-size-treemap")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bundle-size-treemap"
+        return { default: mod.default || mod[exportName] }
+      }),
   "simple-treemap": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/treemap/simple-treemap"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "simple-treemap"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/treemap/simple-treemap")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "simple-treemap"
+        return { default: mod.default || mod[exportName] }
+      }),
   "custom-content-treemap": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/treemap/custom-content-treemap"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "custom-content-treemap"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/treemap/custom-content-treemap")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "custom-content-treemap"
+        return { default: mod.default || mod[exportName] }
+      }),
   "nested-treemap": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/treemap/nested-treemap"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "nested-treemap"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/treemap/nested-treemap")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "nested-treemap"
+        return { default: mod.default || mod[exportName] }
+      }),
   "treemap-with-padding-and-gaps": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/treemap/treemap-with-padding-and-gaps"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "treemap-with-padding-and-gaps"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/treemap/treemap-with-padding-and-gaps")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "treemap-with-padding-and-gaps"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bundle-size-sunburst": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/sunburst/bundle-size-sunburst"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bundle-size-sunburst"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/sunburst/bundle-size-sunburst")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bundle-size-sunburst"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sunburst-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/sunburst/sunburst-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sunburst-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/sunburst/sunburst-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sunburst-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sunburst-chart-theme-colors": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/sunburst/sunburst-chart-theme-colors"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sunburst-chart-theme-colors"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/sunburst/sunburst-chart-theme-colors")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sunburst-chart-theme-colors"
+        return { default: mod.default || mod[exportName] }
+      }),
   "custom-content-of-tooltip": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/tooltip/custom-content-of-tooltip"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "custom-content-of-tooltip"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/tooltip/custom-content-of-tooltip")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "custom-content-of-tooltip"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tooltip-styles": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/tooltip/tooltip-styles"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tooltip-styles"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/tooltip/tooltip-styles")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tooltip-styles"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tooltip-advanced": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/tooltip/tooltip-advanced"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tooltip-advanced"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/tooltip/tooltip-advanced")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tooltip-advanced"
+        return { default: mod.default || mod[exportName] }
+      }),
   "legend-effect-opacity": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/legend/legend-effect-opacity"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "legend-effect-opacity"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/legend/legend-effect-opacity")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "legend-effect-opacity"
+        return { default: mod.default || mod[exportName] }
+      }),
   "legend-position": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/legend/legend-position"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "legend-position"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/legend/legend-position")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "legend-position"
+        return { default: mod.default || mod[exportName] }
+      }),
   "legend-styles": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/legend/legend-styles"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "legend-styles"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/legend/legend-styles")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "legend-styles"
+        return { default: mod.default || mod[exportName] }
+      }),
   "area-responsive-container": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/responsive/area-responsive-container"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "area-responsive-container"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/responsive/area-responsive-container")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "area-responsive-container"
+        return { default: mod.default || mod[exportName] }
+      }),
   "composed-responsive-container": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/responsive/composed-responsive-container"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "composed-responsive-container"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/responsive/composed-responsive-container")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "composed-responsive-container"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pie-responsive-container": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/responsive/pie-responsive-container"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pie-responsive-container"
-    return { default: mod.default || mod[exportName] }
-  }),
-  candlestick: React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/candlestick"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "candlestick"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/responsive/pie-responsive-container")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pie-responsive-container"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "candlestick": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/candlestick")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "candlestick"
+        return { default: mod.default || mod[exportName] }
+      }),
   "candlestick-dashboard": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/candlestick-dashboard"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "candlestick-dashboard"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/candlestick-dashboard")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "candlestick-dashboard"
+        return { default: mod.default || mod[exportName] }
+      }),
   "candlestick-bar": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/candlestick-bar"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "candlestick-bar"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/candlestick-bar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "candlestick-bar"
+        return { default: mod.default || mod[exportName] }
+      }),
   "candlestick-category": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/candlestick-category"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "candlestick-category"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/candlestick-category")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "candlestick-category"
+        return { default: mod.default || mod[exportName] }
+      }),
   "candlestick-line": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/candlestick-line"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "candlestick-line"
-    return { default: mod.default || mod[exportName] }
-  }),
-  sparklines: React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/sparklines"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sparklines"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/candlestick-line")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "candlestick-line"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "sparklines": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/sparklines")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sparklines"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stock-ohlc": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/stock-ohlc"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stock-ohlc"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/stock-ohlc")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stock-ohlc"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stock-line": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/stock-line"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stock-line"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/stock-line")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stock-line"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stock-column": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/stock-column"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stock-column"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/stock-column")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stock-column"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stock-with-volume": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/stock-with-volume"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stock-with-volume"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/stock-with-volume")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stock-with-volume"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stock-multi-series": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/stock-multi-series"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stock-multi-series"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/stock-multi-series")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stock-multi-series"
+        return { default: mod.default || mod[exportName] }
+      }),
   "stock-trendline": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/stock-trendline"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "stock-trendline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/stock-trendline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "stock-trendline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tremor-area-charts": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/tremor-area-charts"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tremor-area-charts"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/tremor-area-charts")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tremor-area-charts"
+        return { default: mod.default || mod[exportName] }
+      }),
   "realtime-mountain-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/realtime-mountain-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "realtime-mountain-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/realtime-mountain-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "realtime-mountain-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "realtime-candlestick": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/realtime-candlestick"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "realtime-candlestick"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/realtime-candlestick")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "realtime-candlestick"
+        return { default: mod.default || mod[exportName] }
+      }),
   "heikin-ashi": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/heikin-ashi"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "heikin-ashi"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/heikin-ashi")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "heikin-ashi"
+        return { default: mod.default || mod[exportName] }
+      }),
   "renko-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/renko-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "renko-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/renko-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "renko-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "volume-profile": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/volume-profile"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "volume-profile"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/volume-profile")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "volume-profile"
+        return { default: mod.default || mod[exportName] }
+      }),
   "order-book-depth": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/order-book-depth"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "order-book-depth"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/order-book-depth")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "order-book-depth"
+        return { default: mod.default || mod[exportName] }
+      }),
   "drawdown-chart": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/drawdown-chart"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "drawdown-chart"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/drawdown-chart")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "drawdown-chart"
+        return { default: mod.default || mod[exportName] }
+      }),
   "bollinger-bands": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/bollinger-bands"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "bollinger-bands"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/bollinger-bands")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "bollinger-bands"
+        return { default: mod.default || mod[exportName] }
+      }),
   "candlestick-indicators": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/candlestick-indicators"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "candlestick-indicators"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/candlestick-indicators")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "candlestick-indicators"
+        return { default: mod.default || mod[exportName] }
+      }),
   "multi-timeframe": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/stock/multi-timeframe"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "multi-timeframe"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/stock/multi-timeframe")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "multi-timeframe"
+        return { default: mod.default || mod[exportName] }
+      }),
   "gauge-default": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/gauge-default"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "gauge-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/gauge-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "gauge-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "gauge-levels": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/gauge-levels"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "gauge-levels"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/gauge-levels")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "gauge-levels"
+        return { default: mod.default || mod[exportName] }
+      }),
   "gauge-custom-colors": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/gauge-custom-colors"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "gauge-custom-colors"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/gauge-custom-colors")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "gauge-custom-colors"
+        return { default: mod.default || mod[exportName] }
+      }),
   "gauge-corner-radius": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/gauge-corner-radius"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "gauge-corner-radius"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/gauge-corner-radius")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "gauge-corner-radius"
+        return { default: mod.default || mod[exportName] }
+      }),
   "gauge-custom-arcs": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/gauge-custom-arcs"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "gauge-custom-arcs"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/gauge-custom-arcs")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "gauge-custom-arcs"
+        return { default: mod.default || mod[exportName] }
+      }),
   "gauge-no-animation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/gauge-no-animation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "gauge-no-animation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/gauge-no-animation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "gauge-no-animation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-default": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-default"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-rounded-ends": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-ends"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-rounded-ends"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-ends")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-rounded-ends"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-thin-ring": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-thin-ring"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-thin-ring"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-thin-ring")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-thin-ring"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-semicircle": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-semicircle"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-semicircle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-semicircle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-semicircle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-custom-pivot": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-pivot"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-custom-pivot"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-pivot")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-custom-pivot"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-combo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-combo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-combo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-combo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-combo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-fuel": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-fuel"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-fuel"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-fuel")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-fuel"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-activity": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-activity"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-activity"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-activity")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-activity"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-kpi": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-kpi"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-kpi"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-kpi")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-kpi"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-rounded-bands": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-bands"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-rounded-bands"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-bands")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-rounded-bands"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-threshold": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-threshold"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-threshold"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-threshold")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-threshold"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hc-gauge-custom-dial": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-dial"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hc-gauge-custom-dial"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-dial")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hc-gauge-custom-dial"
+        return { default: mod.default || mod[exportName] }
+      }),
   "heatmap-calendar": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "heatmap-calendar"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "heatmap-calendar"
+        return { default: mod.default || mod[exportName] }
+      }),
   "heatmap-calendar-emerald": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar-emerald"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "heatmap-calendar-emerald"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar-emerald")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "heatmap-calendar-emerald"
+        return { default: mod.default || mod[exportName] }
+      }),
   "heatmap-matrix": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "heatmap-matrix"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "heatmap-matrix"
+        return { default: mod.default || mod[exportName] }
+      }),
   "heatmap-matrix-values": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix-values"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "heatmap-matrix-values"
-    return { default: mod.default || mod[exportName] }
-  }),
-  utils: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/utils")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "utils"
-    return { default: mod.default || mod[exportName] }
-  }),
-  digits: React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/digits")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "digits"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix-values")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "heatmap-matrix-values"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "utils": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/lib/utils")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "utils"
+        return { default: mod.default || mod[exportName] }
+      }),
+  "digits": React.lazy(async () => {
+        const mod = await import("@/registry/new-york-v4/lib/digits")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "digits"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-locale": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/chart-locale")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-locale"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/chart-locale")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-locale"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-mock-data": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/chart-mock-data")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-mock-data"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/chart-mock-data")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-mock-data"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-fa": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/chart-fa")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-fa"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/chart-fa")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-fa"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-toman-tick": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/chart-toman-tick")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-toman-tick"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/chart-toman-tick")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-toman-tick"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-jalali-tick": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/chart-jalali-tick")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-jalali-tick"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/chart-jalali-tick")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-jalali-tick"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-live": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/chart-live")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-live"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/chart-live")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-live"
+        return { default: mod.default || mod[exportName] }
+      }),
   "use-market-neon": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/lib/use-market-neon")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "use-market-neon"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/lib/use-market-neon")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "use-market-neon"
+        return { default: mod.default || mod[exportName] }
+      }),
   "use-media-query": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/hooks/use-media-query")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "use-media-query"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/hooks/use-media-query")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "use-media-query"
+        return { default: mod.default || mod[exportName] }
+      }),
   "use-mobile": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/hooks/use-mobile")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "use-mobile"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/hooks/use-mobile")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "use-mobile"
+        return { default: mod.default || mod[exportName] }
+      }),
   "accordion-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/accordion-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "accordion-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/accordion-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "accordion-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "alert-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/alert-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "alert-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/alert-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "alert-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "alert-destructive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/alert-destructive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "alert-destructive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/alert-destructive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "alert-destructive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "alert-dialog-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/alert-dialog-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "alert-dialog-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/alert-dialog-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "alert-dialog-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "aspect-ratio-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/aspect-ratio-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "aspect-ratio-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/aspect-ratio-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "aspect-ratio-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "avatar-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/avatar-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "avatar-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/avatar-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "avatar-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "badge-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/badge-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "badge-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/badge-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "badge-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "badge-destructive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/badge-destructive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "badge-destructive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/badge-destructive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "badge-destructive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "badge-outline": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/badge-outline")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "badge-outline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/badge-outline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "badge-outline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "badge-secondary": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/badge-secondary")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "badge-secondary"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/badge-secondary")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "badge-secondary"
+        return { default: mod.default || mod[exportName] }
+      }),
   "breadcrumb-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/breadcrumb-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/breadcrumb-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "breadcrumb-separator": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/breadcrumb-separator"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb-separator"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/breadcrumb-separator")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb-separator"
+        return { default: mod.default || mod[exportName] }
+      }),
   "breadcrumb-dropdown": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/breadcrumb-dropdown"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb-dropdown"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/breadcrumb-dropdown")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb-dropdown"
+        return { default: mod.default || mod[exportName] }
+      }),
   "breadcrumb-ellipsis": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/breadcrumb-ellipsis"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb-ellipsis"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/breadcrumb-ellipsis")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb-ellipsis"
+        return { default: mod.default || mod[exportName] }
+      }),
   "breadcrumb-link": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/breadcrumb-link")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb-link"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/breadcrumb-link")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb-link"
+        return { default: mod.default || mod[exportName] }
+      }),
   "breadcrumb-responsive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/breadcrumb-responsive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "breadcrumb-responsive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/breadcrumb-responsive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "breadcrumb-responsive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-default": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-default")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-default"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-default")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-default"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-secondary": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-secondary")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-secondary"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-secondary")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-secondary"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-destructive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-destructive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-destructive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-destructive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-destructive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-outline": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-outline")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-outline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-outline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-outline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-ghost": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-ghost")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-ghost"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-ghost")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-ghost"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-link": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-link")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-link"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-link")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-link"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-with-icon": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-with-icon")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-with-icon"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-with-icon")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-with-icon"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-loading": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-loading")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-loading"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-loading")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-loading"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-icon": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-icon")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-icon"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-icon")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-icon"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-as-child": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-as-child")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-as-child"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-as-child")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-as-child"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-rounded": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-rounded")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-rounded"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-rounded")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-rounded"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-size": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/button-size")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-size"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-size")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-size"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-nested": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-nested"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-nested"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-nested")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-nested"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-size": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-size"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-size"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-size")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-size"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-separator": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-separator"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-separator"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-separator")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-separator"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-split": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-split"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-split"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-split")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-split"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-input": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-input"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-input"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-input")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-input"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-dropdown": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-dropdown"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-dropdown"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-dropdown")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-dropdown"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-select": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-select"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-select"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-select"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-popover": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-popover"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-popover"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-popover")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-popover"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-input-group": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-input-group"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-input-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-input-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-input-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "button-group-orientation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/button-group-orientation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "button-group-orientation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/button-group-orientation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "button-group-orientation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "calendar-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/calendar-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "calendar-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/calendar-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "calendar-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "card-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/card-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "card-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/card-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "card-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "card-with-form": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/card-with-form")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "card-with-form"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/card-with-form")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "card-with-form"
+        return { default: mod.default || mod[exportName] }
+      }),
   "carousel-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/carousel-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/carousel-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "carousel-size": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/carousel-size")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel-size"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/carousel-size")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel-size"
+        return { default: mod.default || mod[exportName] }
+      }),
   "carousel-spacing": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/carousel-spacing")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel-spacing"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/carousel-spacing")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel-spacing"
+        return { default: mod.default || mod[exportName] }
+      }),
   "carousel-orientation": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/carousel-orientation"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel-orientation"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/carousel-orientation")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel-orientation"
+        return { default: mod.default || mod[exportName] }
+      }),
   "carousel-api": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/carousel-api")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel-api"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/carousel-api")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel-api"
+        return { default: mod.default || mod[exportName] }
+      }),
   "carousel-plugin": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/carousel-plugin")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "carousel-plugin"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/carousel-plugin")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "carousel-plugin"
+        return { default: mod.default || mod[exportName] }
+      }),
   "checkbox-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/checkbox-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "checkbox-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/checkbox-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "checkbox-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "checkbox-disabled": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/checkbox-disabled"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "checkbox-disabled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/checkbox-disabled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "checkbox-disabled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "checkbox-with-text": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/checkbox-with-text"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "checkbox-with-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/checkbox-with-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "checkbox-with-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "collapsible-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/collapsible-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "collapsible-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/collapsible-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "collapsible-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "combobox-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/combobox-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "combobox-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/combobox-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "combobox-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "combobox-dropdown-menu": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/combobox-dropdown-menu"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "combobox-dropdown-menu"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/combobox-dropdown-menu")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "combobox-dropdown-menu"
+        return { default: mod.default || mod[exportName] }
+      }),
   "combobox-popover": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/combobox-popover")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "combobox-popover"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/combobox-popover")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "combobox-popover"
+        return { default: mod.default || mod[exportName] }
+      }),
   "combobox-responsive": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/combobox-responsive"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "combobox-responsive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/combobox-responsive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "combobox-responsive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "command-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/command-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "command-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/command-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "command-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "command-dialog": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/command-dialog")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "command-dialog"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/command-dialog")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "command-dialog"
+        return { default: mod.default || mod[exportName] }
+      }),
   "context-menu-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/context-menu-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "context-menu-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/context-menu-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "context-menu-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "data-table-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/data-table-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "data-table-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/data-table-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "data-table-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "date-picker-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/date-picker-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "date-picker-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/date-picker-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "date-picker-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "date-picker-with-presets": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/date-picker-with-presets"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "date-picker-with-presets"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/date-picker-with-presets")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "date-picker-with-presets"
+        return { default: mod.default || mod[exportName] }
+      }),
   "date-picker-with-range": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/date-picker-with-range"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "date-picker-with-range"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/date-picker-with-range")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "date-picker-with-range"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dialog-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/dialog-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dialog-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/dialog-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dialog-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dialog-close-button": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/dialog-close-button"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dialog-close-button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/dialog-close-button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dialog-close-button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "drawer-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/drawer-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "drawer-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/drawer-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "drawer-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/empty-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-icon": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/empty-icon")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-icon"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-icon")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-icon"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-avatar": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/empty-avatar")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-avatar"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-avatar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-avatar"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-avatar-group": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/empty-avatar-group"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-avatar-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-avatar-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-avatar-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-input-group": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/empty-input-group"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-input-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-input-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-input-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-outline": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/empty-outline")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-outline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-outline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-outline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "empty-background": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/empty-background")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "empty-background"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/empty-background")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "empty-background"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-input": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-input")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-input"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-input")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-input"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-textarea": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-textarea")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-textarea"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-textarea")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-fieldset": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-fieldset")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-fieldset"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-fieldset")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-fieldset"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-radio": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-radio")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-radio"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-radio")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-radio"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-checkbox": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-checkbox")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-checkbox"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-checkbox")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-checkbox"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-switch": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-switch")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-switch"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-switch")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-switch"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-slider": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-slider")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-slider"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-slider")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-slider"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-select": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-select")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-select"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-select"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-choice-card": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/field-choice-card"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-choice-card"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-choice-card")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-choice-card"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "field-responsive": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/field-responsive")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "field-responsive"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/field-responsive")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "field-responsive"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-next-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-next-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-next-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-next-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-next-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-next-complex": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-next-complex"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-next-complex"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-next-complex")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-next-complex"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-rhf-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-input": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-rhf-input")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-input"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-input")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-input"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-select": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-rhf-select")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-select"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-select"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-checkbox": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-rhf-checkbox"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-checkbox"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-checkbox")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-checkbox"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-switch": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-rhf-switch")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-switch"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-switch")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-switch"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-textarea": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-rhf-textarea"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-textarea"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-textarea")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-radiogroup": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-rhf-radiogroup"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-radiogroup"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-radiogroup")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-radiogroup"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-array": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-rhf-array")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-array"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-array")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-array"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-complex": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/form-rhf-complex")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-complex"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-complex")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-complex"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-rhf-password": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-rhf-password"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-rhf-password"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-rhf-password")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-rhf-password"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-input": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-input"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-input"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-input")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-input"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-textarea": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-textarea"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-textarea"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-textarea")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-select": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-select"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-select"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-select"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-checkbox": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-checkbox"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-checkbox"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-checkbox")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-checkbox"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-switch": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-switch"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-switch"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-switch")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-switch"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-radiogroup": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-radiogroup"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-radiogroup"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-radiogroup")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-radiogroup"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-array": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-array"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-array"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-array")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-array"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-tanstack-complex": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-tanstack-complex"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-tanstack-complex"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-tanstack-complex")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-tanstack-complex"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-input": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-input"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-input"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-input")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-input"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-textarea": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-textarea"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-textarea"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-textarea")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-select": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-select"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-select"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-select")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-select"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-checkbox": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-checkbox"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-checkbox"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-checkbox")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-checkbox"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-radiogroup": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-radiogroup"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-radiogroup"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-radiogroup")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-radiogroup"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-switch": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-switch"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-switch"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-switch")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-switch"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-array": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-array"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-array"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-array")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-array"
+        return { default: mod.default || mod[exportName] }
+      }),
   "form-formisch-complex": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/form-formisch-complex"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "form-formisch-complex"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/form-formisch-complex")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "form-formisch-complex"
+        return { default: mod.default || mod[exportName] }
+      }),
   "drawer-dialog": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/drawer-dialog")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "drawer-dialog"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/drawer-dialog")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "drawer-dialog"
+        return { default: mod.default || mod[exportName] }
+      }),
   "drawer-dialog-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/drawer-dialog")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "drawer-dialog-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/drawer-dialog")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "drawer-dialog-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dropdown-menu-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/dropdown-menu-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dropdown-menu-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dropdown-menu-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dropdown-menu-checkboxes": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/dropdown-menu-checkboxes"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dropdown-menu-checkboxes"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-checkboxes")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dropdown-menu-checkboxes"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dropdown-menu-radio-group": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/dropdown-menu-radio-group"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dropdown-menu-radio-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-radio-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dropdown-menu-radio-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "dropdown-menu-dialog": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/dropdown-menu-dialog"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "dropdown-menu-dialog"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/dropdown-menu-dialog")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "dropdown-menu-dialog"
+        return { default: mod.default || mod[exportName] }
+      }),
   "hover-card-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/hover-card-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "hover-card-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/hover-card-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "hover-card-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-disabled": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-disabled")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-disabled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-disabled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-disabled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-file": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-file")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-file"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-file")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-file"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-with-button": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-with-button"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-with-button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-with-button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-with-button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-with-label": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-with-label")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-with-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-with-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-with-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-with-text": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-with-text")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-with-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-with-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-with-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-group-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-label": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-label"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-text": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-group-text")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-tooltip": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-tooltip"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-tooltip"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-tooltip")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-tooltip"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-button": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-button"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-button-group": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-button-group"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-button-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-button-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-button-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-dropdown": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-dropdown"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-dropdown"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-dropdown")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-dropdown"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-spinner": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-spinner"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-spinner"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-spinner")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-spinner"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-textarea": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-textarea"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-textarea"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-textarea")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-textarea"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-icon": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-group-icon")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-icon"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-icon")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-icon"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-group-custom": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-group-custom"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-group-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-group-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-group-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-otp-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/input-otp-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-otp-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-otp-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-otp-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-otp-pattern": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-otp-pattern"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-otp-pattern"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-otp-pattern")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-otp-pattern"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-otp-separator": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-otp-separator"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-otp-separator"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-otp-separator")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-otp-separator"
+        return { default: mod.default || mod[exportName] }
+      }),
   "input-otp-controlled": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/input-otp-controlled"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "input-otp-controlled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/input-otp-controlled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "input-otp-controlled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-size": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-size")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-size"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-size")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-size"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-variant": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-variant")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-variant"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-variant")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-variant"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-icon": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-icon")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-icon"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-icon")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-icon"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-image": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-image")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-image"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-image")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-image"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-avatar": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-avatar")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-avatar"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-avatar")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-avatar"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-header": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-header")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-header"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-header")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-header"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-dropdown": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-dropdown")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-dropdown"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-dropdown")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-dropdown"
+        return { default: mod.default || mod[exportName] }
+      }),
   "item-link": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/item-link")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "item-link"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/item-link")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "item-link"
+        return { default: mod.default || mod[exportName] }
+      }),
   "kbd-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/kbd-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "kbd-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/kbd-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "kbd-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "kbd-tooltip": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/kbd-tooltip")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "kbd-tooltip"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/kbd-tooltip")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "kbd-tooltip"
+        return { default: mod.default || mod[exportName] }
+      }),
   "kbd-input-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/kbd-input-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "kbd-input-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/kbd-input-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "kbd-input-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "kbd-button": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/kbd-button")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "kbd-button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/kbd-button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "kbd-button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "kbd-group": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/kbd-group")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "kbd-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/kbd-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "kbd-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "label-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/label-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "label-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/label-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "label-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "menubar-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/menubar-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "menubar-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/menubar-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "menubar-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "navigation-menu-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/navigation-menu-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "navigation-menu-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/navigation-menu-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "navigation-menu-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "native-select-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/native-select-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "native-select-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/native-select-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "native-select-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "native-select-groups": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/native-select-groups"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "native-select-groups"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/native-select-groups")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "native-select-groups"
+        return { default: mod.default || mod[exportName] }
+      }),
   "native-select-disabled": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/native-select-disabled"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "native-select-disabled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/native-select-disabled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "native-select-disabled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "native-select-invalid": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/native-select-invalid"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "native-select-invalid"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/native-select-invalid")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "native-select-invalid"
+        return { default: mod.default || mod[exportName] }
+      }),
   "pagination-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/pagination-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "pagination-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/pagination-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "pagination-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "popover-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/popover-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "popover-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/popover-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "popover-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "progress-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/progress-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "progress-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/progress-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "progress-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "radio-group-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/radio-group-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "radio-group-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/radio-group-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "radio-group-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "resizable-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/resizable-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "resizable-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/resizable-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "resizable-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "resizable-demo-with-handle": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/resizable-demo-with-handle"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "resizable-demo-with-handle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/resizable-demo-with-handle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "resizable-demo-with-handle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "resizable-vertical": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/resizable-vertical"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "resizable-vertical"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/resizable-vertical")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "resizable-vertical"
+        return { default: mod.default || mod[exportName] }
+      }),
   "resizable-handle": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/resizable-handle")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "resizable-handle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/resizable-handle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "resizable-handle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scroll-area-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/scroll-area-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scroll-area-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/scroll-area-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scroll-area-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "scroll-area-horizontal-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/scroll-area-horizontal-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "scroll-area-horizontal-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/scroll-area-horizontal-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "scroll-area-horizontal-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "select-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/select-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "select-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/select-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "select-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "select-scrollable": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/select-scrollable"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "select-scrollable"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/select-scrollable")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "select-scrollable"
+        return { default: mod.default || mod[exportName] }
+      }),
   "separator-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/separator-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "separator-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/separator-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "separator-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sheet-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/sheet-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sheet-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/sheet-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sheet-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sheet-side": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/sheet-side")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sheet-side"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/sheet-side")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sheet-side"
+        return { default: mod.default || mod[exportName] }
+      }),
   "skeleton-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/skeleton-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "skeleton-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/skeleton-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "skeleton-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "skeleton-card": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/skeleton-card")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "skeleton-card"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/skeleton-card")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "skeleton-card"
+        return { default: mod.default || mod[exportName] }
+      }),
   "slider-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/slider-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "slider-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/slider-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "slider-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sonner-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/sonner-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sonner-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/sonner-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sonner-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "sonner-types": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/sonner-types")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "sonner-types"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/sonner-types")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "sonner-types"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-basic": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-basic")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-basic"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-basic")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-basic"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-button": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-button")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-badge": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-badge")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-badge"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-badge")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-badge"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-input-group": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/spinner-input-group"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-input-group"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-input-group")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-input-group"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-empty": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-empty")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-empty"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-empty")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-empty"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-color": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-color")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-color"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-color")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-color"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-custom": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-custom")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-custom"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-custom")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-custom"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-size": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-size")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-size"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-size")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-size"
+        return { default: mod.default || mod[exportName] }
+      }),
   "spinner-item": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/spinner-item")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "spinner-item"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/spinner-item")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "spinner-item"
+        return { default: mod.default || mod[exportName] }
+      }),
   "switch-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/switch-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "switch-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/switch-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "switch-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "table-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/table-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "table-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/table-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "table-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tabs-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/tabs-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tabs-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/tabs-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tabs-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "textarea-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/textarea-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "textarea-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/textarea-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "textarea-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "textarea-disabled": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/textarea-disabled"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "textarea-disabled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/textarea-disabled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "textarea-disabled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "textarea-with-button": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/textarea-with-button"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "textarea-with-button"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/textarea-with-button")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "textarea-with-button"
+        return { default: mod.default || mod[exportName] }
+      }),
   "textarea-with-label": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/textarea-with-label"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "textarea-with-label"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/textarea-with-label")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "textarea-with-label"
+        return { default: mod.default || mod[exportName] }
+      }),
   "textarea-with-text": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/textarea-with-text"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "textarea-with-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/textarea-with-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "textarea-with-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/toggle-group-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-disabled": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/toggle-group-disabled"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-disabled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-disabled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-disabled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-lg": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-group-lg")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-lg"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-lg")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-lg"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-outline": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/toggle-group-outline"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-outline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-outline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-outline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-sm": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-group-sm")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-sm"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-sm")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-sm"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-single": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/toggle-group-single"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-single"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-single")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-single"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-group-spacing": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/toggle-group-spacing"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-group-spacing"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-group-spacing")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-group-spacing"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-disabled": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-disabled")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-disabled"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-disabled")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-disabled"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-lg": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-lg")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-lg"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-lg")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-lg"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-outline": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-outline")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-outline"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-outline")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-outline"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-sm": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-sm")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-sm"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-sm")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-sm"
+        return { default: mod.default || mod[exportName] }
+      }),
   "toggle-with-text": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/toggle-with-text")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "toggle-with-text"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/toggle-with-text")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "toggle-with-text"
+        return { default: mod.default || mod[exportName] }
+      }),
   "tooltip-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/tooltip-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "tooltip-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/tooltip-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "tooltip-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-blockquote": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/typography-blockquote"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-blockquote"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-blockquote")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-blockquote"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-h1": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-h1")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-h1"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-h1")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-h1"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-h2": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-h2")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-h2"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-h2")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-h2"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-h3": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-h3")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-h3"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-h3")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-h3"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-h4": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-h4")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-h4"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-h4")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-h4"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-inline-code": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/typography-inline-code"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-inline-code"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-inline-code")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-inline-code"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-large": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-large")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-large"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-large")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-large"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-lead": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-lead")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-lead"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-lead")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-lead"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-list": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-list")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-list"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-list")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-list"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-muted": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-muted")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-muted"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-muted")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-muted"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-p": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-p")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-p"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-p")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-p"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-small": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-small")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-small"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-small")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-small"
+        return { default: mod.default || mod[exportName] }
+      }),
   "typography-table": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/typography-table")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "typography-table"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/typography-table")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "typography-table"
+        return { default: mod.default || mod[exportName] }
+      }),
   "mode-toggle": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/mode-toggle")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "mode-toggle"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/mode-toggle")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "mode-toggle"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-demo": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-demo-grid": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/chart-bar-demo-grid"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-demo-grid"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-grid")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-demo-grid"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-demo-axis": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/chart-bar-demo-axis"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-demo-axis"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-axis")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-demo-axis"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-demo-tooltip": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/chart-bar-demo-tooltip"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-demo-tooltip"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-tooltip")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-demo-tooltip"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-bar-demo-legend": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/chart-bar-demo-legend"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-bar-demo-legend"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/chart-bar-demo-legend")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-bar-demo-legend"
+        return { default: mod.default || mod[exportName] }
+      }),
   "chart-tooltip-demo": React.lazy(async () => {
-    const mod = await import(
-      "@/registry/new-york-v4/examples/chart-tooltip-demo"
-    )
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "chart-tooltip-demo"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/chart-tooltip-demo")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "chart-tooltip-demo"
+        return { default: mod.default || mod[exportName] }
+      }),
   "calendar-hijri": React.lazy(async () => {
-    const mod = await import("@/registry/new-york-v4/examples/calendar-hijri")
-    const exportName =
-      Object.keys(mod).find(
-        (key) => typeof mod[key] === "function" || typeof mod[key] === "object"
-      ) || "calendar-hijri"
-    return { default: mod.default || mod[exportName] }
-  }),
+        const mod = await import("@/registry/new-york-v4/examples/calendar-hijri")
+        const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || "calendar-hijri"
+        return { default: mod.default || mod[exportName] }
+      }),
 }

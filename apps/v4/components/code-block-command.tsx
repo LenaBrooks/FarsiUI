@@ -13,22 +13,23 @@ import {
   TabsTrigger,
 } from "@/registry/new-york-v4/ui/tabs"
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/registry/new-york-v4/ui/tooltip"
+  type CodeBlockCommandProps,
+  toCodeBlockProps,
+} from "@/components/code-block-command-shared"
+
+export type { CodeBlockCommandProps }
+export { toCodeBlockProps }
 
 export function CodeBlockCommand({
   __npm__,
   __yarn__,
   __pnpm__,
   __bun__,
-}: React.ComponentProps<"pre"> & {
-  __npm__?: string
-  __yarn__?: string
-  __pnpm__?: string
-  __bun__?: string
-}) {
+  __npmHtml__,
+  __yarnHtml__,
+  __pnpmHtml__,
+  __bunHtml__,
+}: CodeBlockCommandProps) {
   const [config, setConfig] = useConfig()
   const [hasCopied, setHasCopied] = React.useState(false)
 
@@ -40,14 +41,25 @@ export function CodeBlockCommand({
   }, [hasCopied])
 
   const packageManager = config.packageManager || "npm"
-  const tabs = React.useMemo(() => {
-    return {
+  const tabs = React.useMemo(
+    () => ({
       npm: __npm__,
       pnpm: __pnpm__,
       yarn: __yarn__,
       bun: __bun__,
-    }
-  }, [__npm__, __pnpm__, __yarn__, __bun__])
+    }),
+    [__npm__, __pnpm__, __yarn__, __bun__]
+  )
+
+  const htmlTabs = React.useMemo(
+    () => ({
+      npm: __npmHtml__,
+      pnpm: __pnpmHtml__,
+      yarn: __yarnHtml__,
+      bun: __bunHtml__,
+    }),
+    [__npmHtml__, __pnpmHtml__, __yarnHtml__, __bunHtml__]
+  )
 
   const copyCommand = React.useCallback(() => {
     const command = tabs[packageManager]
@@ -67,7 +79,7 @@ export function CodeBlockCommand({
   }, [packageManager, tabs])
 
   return (
-    <div dir="ltr" className="overflow-x-auto">
+    <div dir="ltr" className="relative overflow-x-auto">
       <Tabs
         value={packageManager}
         className="gap-0"
@@ -99,16 +111,21 @@ export function CodeBlockCommand({
         </div>
         <div className="no-scrollbar overflow-x-auto">
           {Object.entries(tabs).map(([key, value]) => {
+            const html = htmlTabs[key as keyof typeof htmlTabs]
             return (
-              <TabsContent key={key} value={key} className="mt-0 px-4 py-3.5">
-                <pre>
-                  <code
-                    className="relative font-mono text-sm leading-none"
-                    data-language="bash"
-                  >
-                    {value}
-                  </code>
-                </pre>
+              <TabsContent key={key} value={key} className="mt-0 p-0">
+                {html ? (
+                  <div
+                    data-not-typeset=""
+                    dangerouslySetInnerHTML={{ __html: html }}
+                  />
+                ) : (
+                  <pre className="scrollbar-soft min-w-0 overflow-x-auto ps-4 pe-12 py-3.5 outline-none">
+                    <code className="relative font-mono" data-language="bash">
+                      {value}
+                    </code>
+                  </pre>
+                )}
               </TabsContent>
             )
           })}

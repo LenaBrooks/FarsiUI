@@ -5,35 +5,31 @@ import "server-only"
 
 export const Index: Record<string, Record<string, any>> = {
   "new-york-v4": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -43,13 +39,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -59,77 +53,67 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -138,142 +122,124 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "separator"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","separator"],
+      files: [{
+        path: "registry/new-york-v4/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["card"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "registry/new-york-v4/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dialog"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -283,45 +249,39 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -331,61 +291,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "registry/new-york-v4/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    form: {
+    "form": {
       name: "form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","label"],
+      files: [{
+        path: "registry/new-york-v4/ui/form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -395,29 +347,25 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -426,14 +374,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "registry/new-york-v4/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -443,61 +389,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -507,61 +445,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -571,29 +501,25 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -603,229 +529,193 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "separator",
-        "sheet",
-        "tooltip",
-        "input",
-        "use-mobile",
-        "skeleton",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","separator","sheet","tooltip","input","use-mobile","skeleton"],
+      files: [{
+        path: "registry/new-york-v4/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -835,45 +725,39 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -883,93 +767,81 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -979,13 +851,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -994,36 +864,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A simple sidebar with navigation grouped by section.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "label",
-        "dropdown-menu",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-01/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-01/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-01/components/search-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-01/components/version-switcher.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","label","dropdown-menu"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-01/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-01/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-01/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-01/components/version-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-02": {
@@ -1031,36 +890,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with collapsible sections.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "label",
-        "dropdown-menu",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-02/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-02/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-02/components/search-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-02/components/version-switcher.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","label","dropdown-menu"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-02/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-02/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-02/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-02/components/version-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-03": {
@@ -1068,20 +916,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with submenus.",
       type: "registry:block",
-      registryDependencies: ["sidebar", "breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-03/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-03/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-03/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-03/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-04": {
@@ -1089,20 +934,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A floating sidebar with submenus.",
       type: "registry:block",
-      registryDependencies: ["sidebar", "breadcrumb", "separator"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-04/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-04/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-04/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-04/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-05": {
@@ -1110,31 +952,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with collapsible submenus.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "label",
-        "collapsible",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-05/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-05/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-05/components/search-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","label","collapsible"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-05/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-05/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-05/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-06": {
@@ -1142,36 +974,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with submenus as dropdowns.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "card",
-        "dropdown-menu",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-06/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-06/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-06/components/nav-main.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-06/components/sidebar-opt-in-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","card","dropdown-menu"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-06/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-06/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-06/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-06/components/sidebar-opt-in-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-07": {
@@ -1179,47 +1000,33 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar that collapses to icons.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "collapsible",
-        "dropdown-menu",
-        "avatar",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-07/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-07/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-07/components/nav-main.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-07/components/nav-projects.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-07/components/nav-user.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-07/components/team-switcher.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-07/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-07/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-07/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-07/components/nav-projects.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-07/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-07/components/team-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-09": {
@@ -1227,34 +1034,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "Collapsible nested sidebars.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "collapsible",
-        "dropdown-menu",
-        "avatar",
-        "switch",
-        "label",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-09/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-09/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-09/components/nav-user.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar","switch","label"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-09/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-09/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-09/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-10": {
@@ -1262,57 +1056,41 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar in a popover.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "popover",
-        "collapsible",
-        "dropdown-menu",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/nav-actions.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/nav-favorites.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/nav-main.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/nav-secondary.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/nav-workspaces.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-10/components/team-switcher.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","popover","collapsible","dropdown-menu"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-10/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/nav-actions.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/nav-favorites.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/nav-secondary.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/nav-workspaces.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-10/components/team-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-11": {
@@ -1320,25 +1098,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with a collapsible file tree.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "collapsible",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-11/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-11/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-11/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-11/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-12": {
@@ -1346,43 +1116,29 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with a calendar.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "collapsible",
-        "calendar",
-        "dropdown-menu",
-        "avatar",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-12/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-12/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-12/components/calendars.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-12/components/date-picker.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-12/components/nav-user.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","calendar","dropdown-menu","avatar"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-12/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-12/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-12/components/calendars.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-12/components/date-picker.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-12/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-13": {
@@ -1390,20 +1146,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar in a dialog.",
       type: "registry:block",
-      registryDependencies: ["sidebar", "breadcrumb", "button", "dialog"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-13/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-13/components/settings-dialog.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","button","dialog"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-13/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-13/components/settings-dialog.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-14": {
@@ -1411,20 +1164,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar on the right.",
       type: "registry:block",
-      registryDependencies: ["sidebar", "breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-14/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-14/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-14/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-14/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-15": {
@@ -1432,74 +1182,53 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A left and right sidebar.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "popover",
-        "collapsible",
-        "dropdown-menu",
-        "calendar",
-        "avatar",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/calendars.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/date-picker.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/nav-favorites.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/nav-main.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/nav-secondary.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/nav-user.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/nav-workspaces.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/sidebar-left.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/sidebar-right.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-15/components/team-switcher.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","popover","collapsible","dropdown-menu","calendar","avatar"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-15/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/calendars.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/date-picker.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/nav-favorites.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/nav-secondary.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/nav-workspaces.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/sidebar-left.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/sidebar-right.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-15/components/team-switcher.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "sidebar-16": {
@@ -1507,59 +1236,41 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A sidebar with a sticky site header.",
       type: "registry:block",
-      registryDependencies: [
-        "sidebar",
-        "breadcrumb",
-        "separator",
-        "collapsible",
-        "dropdown-menu",
-        "avatar",
-        "button",
-        "label",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/page.tsx",
-          type: "registry:page",
-          target: "app/dashboard/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/app-sidebar.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/nav-main.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/nav-projects.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/nav-secondary.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/nav-user.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/search-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/blocks/sidebar-16/components/site-header.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["sidebar", "dashboard"],
+      registryDependencies: ["sidebar","breadcrumb","separator","collapsible","dropdown-menu","avatar","button","label"],
+      files: [{
+        path: "registry/new-york-v4/blocks/sidebar-16/page.tsx",
+        type: "registry:page",
+        target: "app/dashboard/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/app-sidebar.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/nav-main.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/nav-projects.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/nav-secondary.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/nav-user.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/search-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/blocks/sidebar-16/components/site-header.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["sidebar","dashboard"],
       meta: undefined,
     },
     "login-01": {
@@ -1567,20 +1278,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A simple login form.",
       type: "registry:block",
-      registryDependencies: ["button", "card", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/login-01/page.tsx",
-          type: "registry:page",
-          target: "app/login/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/login-01/components/login-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "login"],
+      registryDependencies: ["button","card","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/login-01/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/login-01/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
       meta: undefined,
     },
     "login-02": {
@@ -1588,20 +1296,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A two column login page with a cover image.",
       type: "registry:block",
-      registryDependencies: ["button", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/login-02/page.tsx",
-          type: "registry:page",
-          target: "app/login/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/login-02/components/login-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "login"],
+      registryDependencies: ["button","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/login-02/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/login-02/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
       meta: undefined,
     },
     "login-03": {
@@ -1609,20 +1314,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A login page with a muted background color.",
       type: "registry:block",
-      registryDependencies: ["button", "card", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/login-03/page.tsx",
-          type: "registry:page",
-          target: "app/login/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/login-03/components/login-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "login"],
+      registryDependencies: ["button","card","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/login-03/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/login-03/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
       meta: undefined,
     },
     "login-04": {
@@ -1630,20 +1332,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A login page with form and image.",
       type: "registry:block",
-      registryDependencies: ["button", "card", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/login-04/page.tsx",
-          type: "registry:page",
-          target: "app/login/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/login-04/components/login-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "login"],
+      registryDependencies: ["button","card","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/login-04/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/login-04/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
       meta: undefined,
     },
     "login-05": {
@@ -1651,20 +1350,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A simple email-only login page.",
       type: "registry:block",
-      registryDependencies: ["button", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/login-05/page.tsx",
-          type: "registry:page",
-          target: "app/login/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/login-05/components/login-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "login"],
+      registryDependencies: ["button","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/login-05/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/login-05/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","login"],
       meta: undefined,
     },
     "signup-01": {
@@ -1672,20 +1368,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A simple signup form.",
       type: "registry:block",
-      registryDependencies: ["button", "card", "input", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/signup-01/page.tsx",
-          type: "registry:page",
-          target: "app/signup/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/signup-01/components/signup-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "signup"],
+      registryDependencies: ["button","card","input","label"],
+      files: [{
+        path: "registry/new-york-v4/blocks/signup-01/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/signup-01/components/signup-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","signup"],
       meta: undefined,
     },
     "signup-02": {
@@ -1693,20 +1386,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A two column signup page with a cover image.",
       type: "registry:block",
-      registryDependencies: ["button", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/signup-02/page.tsx",
-          type: "registry:page",
-          target: "app/signup/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/signup-02/components/signup-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "signup"],
+      registryDependencies: ["button","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/signup-02/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/signup-02/components/signup-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","signup"],
       meta: undefined,
     },
     "signup-03": {
@@ -1714,20 +1404,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A signup page with a muted background color.",
       type: "registry:block",
-      registryDependencies: ["button", "card", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/signup-03/page.tsx",
-          type: "registry:page",
-          target: "app/signup/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/signup-03/components/signup-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "signup"],
+      registryDependencies: ["button","card","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/signup-03/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/signup-03/components/signup-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","signup"],
       meta: undefined,
     },
     "signup-04": {
@@ -1735,20 +1422,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A signup page with form and image.",
       type: "registry:block",
-      registryDependencies: ["button", "card", "input", "label", "field"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/signup-04/page.tsx",
-          type: "registry:page",
-          target: "app/signup/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/signup-04/components/signup-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "signup"],
+      registryDependencies: ["button","card","input","label","field"],
+      files: [{
+        path: "registry/new-york-v4/blocks/signup-04/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/signup-04/components/signup-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","signup"],
       meta: undefined,
     },
     "signup-05": {
@@ -1756,20 +1440,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "A simple signup form with social providers.",
       type: "registry:block",
-      registryDependencies: ["button", "input", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/blocks/signup-05/page.tsx",
-          type: "registry:page",
-          target: "app/signup/page.tsx",
-        },
-        {
-          path: "registry/new-york-v4/blocks/signup-05/components/signup-form.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["authentication", "signup"],
+      registryDependencies: ["button","input","label"],
+      files: [{
+        path: "registry/new-york-v4/blocks/signup-05/page.tsx",
+        type: "registry:page",
+        target: "app/signup/page.tsx"
+      },{
+        path: "registry/new-york-v4/blocks/signup-05/components/signup-form.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["authentication","signup"],
       meta: undefined,
     },
     "chart-area-axes": {
@@ -1777,15 +1458,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-axes.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-axes.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-default": {
@@ -1793,15 +1472,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-default.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-gradient": {
@@ -1809,15 +1486,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-gradient.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-gradient.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-icons": {
@@ -1825,15 +1500,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-icons.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-icons.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-interactive": {
@@ -1841,15 +1514,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "select", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-interactive.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","select","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-interactive.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-legend": {
@@ -1857,15 +1528,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-legend.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-legend.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-linear": {
@@ -1873,15 +1542,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-linear.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-linear.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-stacked-expand": {
@@ -1889,15 +1556,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-stacked-expand.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-stacked-expand.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-stacked": {
@@ -1905,15 +1570,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-stacked.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-stacked.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-area-step": {
@@ -1921,15 +1584,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-area-step.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-area-step.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "chart-bar-active": {
@@ -1937,15 +1598,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-active.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-active.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-default": {
@@ -1953,20 +1612,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: [
-        "card",
-        "chart",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-default.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-horizontal": {
@@ -1974,15 +1626,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-horizontal.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-horizontal.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-interactive": {
@@ -1990,15 +1640,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-label-custom": {
@@ -2006,15 +1654,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-label-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-label-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-label": {
@@ -2022,15 +1668,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-label.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-label.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-mixed": {
@@ -2038,15 +1682,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-mixed.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-mixed.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-multiple": {
@@ -2054,15 +1696,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-multiple.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-multiple.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-negative": {
@@ -2070,15 +1710,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-negative.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-negative.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-bar-stacked": {
@@ -2086,15 +1724,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-bar-stacked.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-bar-stacked.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "chart-line-default": {
@@ -2102,20 +1738,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: [
-        "card",
-        "chart",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-default.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-dots-colors": {
@@ -2123,15 +1752,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-dots-colors.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-dots-colors.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-dots-custom": {
@@ -2139,15 +1766,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-dots-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-dots-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-dots": {
@@ -2155,15 +1780,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-dots.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-dots.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-interactive": {
@@ -2171,15 +1794,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-label-custom": {
@@ -2187,15 +1808,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-label-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-label-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-label": {
@@ -2203,15 +1822,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-label.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-label.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-linear": {
@@ -2219,15 +1836,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-linear.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-linear.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-multiple": {
@@ -2235,15 +1850,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-multiple.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-multiple.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-line-step": {
@@ -2251,15 +1864,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-line-step.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-line-step.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "chart-pie-donut-active": {
@@ -2267,15 +1878,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-donut-active.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-donut-active.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-donut-text": {
@@ -2283,15 +1892,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-donut-text.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-donut-text.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-donut": {
@@ -2299,15 +1906,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-donut.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-donut.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-interactive": {
@@ -2315,15 +1920,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-label-custom": {
@@ -2331,15 +1934,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-label-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-label-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-label-list": {
@@ -2347,15 +1948,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-label-list.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-label-list.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-label": {
@@ -2363,15 +1962,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-label.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-label.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-legend": {
@@ -2379,15 +1976,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-legend.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-legend.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-separator-none": {
@@ -2395,15 +1990,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-separator-none.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-separator-none.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-simple": {
@@ -2411,15 +2004,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-simple.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-simple.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-pie-stacked": {
@@ -2427,15 +2018,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-pie-stacked.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-pie-stacked.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "chart-radar-default": {
@@ -2443,15 +2032,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-default.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-dots": {
@@ -2459,15 +2046,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-dots.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-dots.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-grid-circle-fill": {
@@ -2475,15 +2060,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-grid-circle-fill.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-grid-circle-fill.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-grid-circle-no-lines": {
@@ -2491,15 +2074,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-grid-circle-no-lines.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-grid-circle-no-lines.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-grid-circle": {
@@ -2507,15 +2088,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-grid-circle.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-grid-circle.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-grid-custom": {
@@ -2523,15 +2102,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-grid-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-grid-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-grid-fill": {
@@ -2539,15 +2116,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-grid-fill.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-grid-fill.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-grid-none": {
@@ -2555,15 +2130,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-grid-none.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-grid-none.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-icons": {
@@ -2571,15 +2144,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-icons.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-icons.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-label-custom": {
@@ -2587,15 +2158,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-label-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-label-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-legend": {
@@ -2603,15 +2172,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-legend.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-legend.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-lines-only": {
@@ -2619,15 +2186,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-lines-only.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-lines-only.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-multiple": {
@@ -2635,15 +2200,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-multiple.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-multiple.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radar-radius": {
@@ -2651,15 +2214,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radar-radius.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radar-radius.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "chart-radial-grid": {
@@ -2667,15 +2228,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radial-grid.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radial-grid.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial"],
       meta: undefined,
     },
     "chart-radial-label": {
@@ -2683,15 +2242,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radial-label.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radial-label.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial"],
       meta: undefined,
     },
     "chart-radial-shape": {
@@ -2699,15 +2256,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radial-shape.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radial-shape.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial"],
       meta: undefined,
     },
     "chart-radial-simple": {
@@ -2715,15 +2270,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radial-simple.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radial-simple.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial"],
       meta: undefined,
     },
     "chart-radial-stacked": {
@@ -2731,15 +2284,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radial-stacked.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radial-stacked.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial"],
       meta: undefined,
     },
     "chart-radial-text": {
@@ -2747,15 +2298,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-radial-text.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-radial-text.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial"],
       meta: undefined,
     },
     "chart-tooltip-default": {
@@ -2763,15 +2312,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-default.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-indicator-line": {
@@ -2779,15 +2326,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-indicator-line.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-indicator-line.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-indicator-none": {
@@ -2795,15 +2340,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-indicator-none.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-indicator-none.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-label-none": {
@@ -2811,15 +2354,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-label-none.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-label-none.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-label-custom": {
@@ -2827,15 +2368,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-label-custom.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-label-custom.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-label-formatter": {
@@ -2843,15 +2382,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-label-formatter.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-label-formatter.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-formatter": {
@@ -2859,15 +2396,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-formatter.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-formatter.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-icons": {
@@ -2875,15 +2410,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-icons.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-icons.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "chart-tooltip-advanced": {
@@ -2891,15 +2424,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:block",
-      registryDependencies: ["card", "chart", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/chart-tooltip-advanced.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["card","chart","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/chart-tooltip-advanced.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "simple-line-chart": {
@@ -2907,27 +2438,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خطی ساده",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/simple-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/simple-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "dashed-line-chart": {
@@ -2935,27 +2456,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خطی خط‌چین",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/dashed-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/dashed-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "vertical-line-chart": {
@@ -2963,27 +2474,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خطی عمودی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/vertical-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/vertical-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "biaxial-line-chart": {
@@ -2991,27 +2492,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خطی دو‌محوره",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/biaxial-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/biaxial-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-connect-nulls": {
@@ -3019,27 +2510,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "اتصال مقادیر تهی در خطی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-connect-nulls.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-connect-nulls.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-with-x-axis-padding": {
@@ -3047,27 +2528,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی با فاصلهٔ محور X",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-with-x-axis-padding.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-with-x-axis-padding.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-with-reference-lines": {
@@ -3075,27 +2546,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی با خطوط مرجع",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-with-reference-lines.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-with-reference-lines.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "customized-dot-line-chart": {
@@ -3103,27 +2564,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی با نقطهٔ سفارشی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/customized-dot-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/customized-dot-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "customized-label-line-chart": {
@@ -3131,27 +2582,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی با برچسب سفارشی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/customized-label-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/customized-label-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "synchronized-line-chart": {
@@ -3159,27 +2600,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودارهای خطی همگام",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/synchronized-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/synchronized-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "synchronized-different-data": {
@@ -3187,28 +2618,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "همگام با داده‌های متفاوت",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/synchronized-different-data.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/synchronized-different-data.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-custom-shape": {
@@ -3216,27 +2636,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خط با انیمیشن شفافیت",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-custom-shape.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-custom-shape.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "highlight-and-zoom-line-chart": {
@@ -3244,15 +2654,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "هایلایت و زوم خطی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/highlight-and-zoom-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/highlight-and-zoom-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-has-multi-series": {
@@ -3260,27 +2668,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "چند سری خطی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-has-multi-series.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-has-multi-series.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-axis-interval": {
@@ -3288,27 +2686,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "فاصلهٔ تیک محور خطی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-axis-interval.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-axis-interval.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-chart-negative-values-with-reference-lines": {
@@ -3316,15 +2704,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "مقادیر منفی با خطوط مرجع",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-chart-negative-values-with-reference-lines.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-chart-negative-values-with-reference-lines.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "compare-two-lines": {
@@ -3332,27 +2718,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "مقایسهٔ دو خط",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/compare-two-lines.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/compare-two-lines.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "dynamic-z-index-line-chart": {
@@ -3360,27 +2736,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی با z-index پویا",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/dynamic-z-index-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/dynamic-z-index-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "tiny-line-chart": {
@@ -3388,27 +2754,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خطی فشرده",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/tiny-line-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/tiny-line-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "animated-time-series": {
@@ -3416,27 +2772,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "سری زمانی متحرک",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/animated-time-series.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/animated-time-series.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-interactive": {
@@ -3444,15 +2790,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی تعاملی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "line-step": {
@@ -3460,15 +2804,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خطی پله‌ای",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-step.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-line"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/line/line-step.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-line"],
       meta: undefined,
     },
     "area-chart": {
@@ -3476,21 +2818,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار ناحیه‌ای ساده",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "stacked-area-chart": {
@@ -3498,21 +2832,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای انباشته",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/stacked-area-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/stacked-area-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-chart-range": {
@@ -3520,15 +2846,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای بازه‌ای",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-chart-range.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-chart-range.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-chart-connect-nulls": {
@@ -3536,21 +2860,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "اتصال تهی در ناحیه‌ای",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-chart-connect-nulls.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-chart-connect-nulls.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "cardinal-area-chart": {
@@ -3558,21 +2874,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای Cardinal",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/cardinal-area-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/cardinal-area-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "percent-area-chart": {
@@ -3580,21 +2888,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای درصدی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/percent-area-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/percent-area-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "synchronized-area-chart": {
@@ -3602,21 +2902,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای همگام",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/synchronized-area-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/synchronized-area-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "tiny-area-chart": {
@@ -3624,21 +2916,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای فشرده",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/tiny-area-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/tiny-area-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-chart-fill-by-value": {
@@ -3646,15 +2930,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پر شدن بر اساس مقدار",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-chart-fill-by-value.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-chart-fill-by-value.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-chart-custom-animation": {
@@ -3662,15 +2944,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "انیمیشن سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-chart-custom-animation.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-chart-custom-animation.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "range-area-chart-custom-animation": {
@@ -3678,15 +2958,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "انیمیشن ناحیه‌ای بازه‌ای",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "use-market-neon", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/range-area-chart-custom-animation.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/range-area-chart-custom-animation.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-chart-with-custom-events": {
@@ -3694,21 +2972,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای با رویداد سفارشی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-chart-with-custom-events.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-chart-with-custom-events.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "prevent-right-click": {
@@ -3716,21 +2986,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "جلوگیری از منوی راست‌کلیک",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/prevent-right-click.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-live","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/prevent-right-click.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-interactive": {
@@ -3738,22 +3000,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای تعاملی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "select",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-locale","select","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-step": {
@@ -3761,21 +3014,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای پله‌ای",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-step.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-locale","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-step.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "area-gradient": {
@@ -3783,21 +3028,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای با گرادیان",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/area-gradient.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart","chart-fa","chart-locale","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/area-gradient.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "market-cards": {
@@ -3805,20 +3042,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "کارت‌های بازار",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "digits", "use-market-neon", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/area/market-cards.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/area/market-cards-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-area"],
+      registryDependencies: ["chart-fa","digits","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/area/market-cards.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/area/market-cards-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-area"],
       meta: undefined,
     },
     "simple-bar-chart": {
@@ -3826,27 +3060,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار میله‌ای ساده",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/simple-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/simple-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/line/line-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "stacked-bar-chart": {
@@ -3854,15 +3078,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله‌ای انباشته",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/stacked-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/stacked-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "population-pyramid": {
@@ -3870,31 +3092,27 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "هرم جمعیتی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/population-pyramid.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/population-pyramid.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
-    timeline: {
+    "timeline": {
       name: "timeline",
       title: "undefined",
       description: "خط زمانی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/timeline.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/timeline.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "box-plot": {
@@ -3902,15 +3120,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار جعبه‌ای",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/box-plot.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/box-plot.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "animated-bar-width": {
@@ -3918,31 +3134,27 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "عرض میله متحرک",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/animated-bar-width.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/animated-bar-width.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
-    waterfall: {
+    "waterfall": {
       name: "waterfall",
       title: "undefined",
       description: "آبشاری",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/waterfall.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/waterfall.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "animated-bar-time-series": {
@@ -3950,15 +3162,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "سری میله‌ای متحرک",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/animated-bar-time-series.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/animated-bar-time-series.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "mix-bar-chart": {
@@ -3966,15 +3176,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله‌ای ترکیبی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/mix-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/mix-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "custom-shape-bar-chart": {
@@ -3982,15 +3190,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله با شکل سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/custom-shape-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/custom-shape-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "positive-and-negative-bar-chart": {
@@ -3998,15 +3204,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله مثبت و منفی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/positive-and-negative-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/positive-and-negative-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "brush-bar-chart": {
@@ -4014,15 +3218,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله با برس",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/brush-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/brush-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-chart-with-customized-event": {
@@ -4030,15 +3232,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "انتخاب میله با کلیک",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-with-customized-event.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-chart-with-customized-event.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "biaxial-bar-chart": {
@@ -4046,15 +3246,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله دو‌محوره",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/biaxial-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/biaxial-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-chart-has-background": {
@@ -4062,15 +3260,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله با پس‌زمینه",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-has-background.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-chart-has-background.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-chart-with-label-background": {
@@ -4078,15 +3274,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله با پس‌زمینهٔ برچسب",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-with-label-background.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-chart-with-label-background.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "ranged-stacked-bar-chart": {
@@ -4094,15 +3288,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "مراحل سفارش به‌صورت بازه",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/ranged-stacked-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/ranged-stacked-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-chart-range": {
@@ -4110,15 +3302,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله بازه‌ای",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-chart-range.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-chart-range.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "tiny-bar-chart": {
@@ -4126,15 +3316,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله فشرده",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/tiny-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/tiny-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "stacked-bar-chart-with-horizontal-line": {
@@ -4142,15 +3330,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "فروش در برابر هدف",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/stacked-bar-chart-with-horizontal-line.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/stacked-bar-chart-with-horizontal-line.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-interactive": {
@@ -4158,15 +3344,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله‌ای تعاملی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-horizontal": {
@@ -4174,15 +3358,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله‌ای افقی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-horizontal.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-horizontal.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "bar-active": {
@@ -4190,15 +3372,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله فعال",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/bar/bar-active.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/bar/bar-active.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-bar"],
       meta: undefined,
     },
     "asset-returns": {
@@ -4206,15 +3386,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "مقایسه بازدهی دارایی‌ها",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/asset-returns.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/asset-returns.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "monthly-savings": {
@@ -4222,15 +3400,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پس‌انداز ماه‌به‌ماه",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/monthly-savings.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/monthly-savings.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "line-bar-area-composed-chart": {
@@ -4238,15 +3414,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "فروش کانال‌ها (ترکیبی)",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/line-bar-area-composed-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/line-bar-area-composed-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "same-data-composed-chart": {
@@ -4254,15 +3428,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "فروش با خط روند",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/same-data-composed-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/same-data-composed-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "vertical-composed-chart": {
@@ -4270,15 +3442,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "مقایسهٔ استان‌ها",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/vertical-composed-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/vertical-composed-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "composed-chart-with-axis-labels": {
@@ -4286,15 +3456,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "درآمد و حاشیه با برچسب محور",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/composed-chart-with-axis-labels.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/composed-chart-with-axis-labels.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "scatter-and-line-of-best-fit": {
@@ -4302,15 +3470,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "تبلیغات و فروش",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/scatter-and-line-of-best-fit.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/scatter-and-line-of-best-fit.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "banded-chart": {
@@ -4318,15 +3484,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "فروش با بازهٔ اطمینان",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/banded-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/banded-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "target-price-chart": {
@@ -4334,15 +3498,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "قیمت و هدف تحلیلگران",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/composed/target-price-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-composed"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/composed/target-price-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-composed"],
       meta: undefined,
     },
     "simple-scatter-chart": {
@@ -4350,20 +3512,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پراکندگی ساده",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/simple-scatter-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/simple-scatter-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "joint-line-scatter-chart": {
@@ -4371,20 +3530,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پراکندگی با خط اتصال",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/joint-line-scatter-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/joint-line-scatter-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "bubble-chart": {
@@ -4392,15 +3548,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار حبابی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/bubble-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/bubble-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "custom-animation": {
@@ -4408,20 +3562,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "انیمیشن سفارشی پراکندگی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/custom-animation.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/custom-animation.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "scatter-chart-with-labels": {
@@ -4429,20 +3580,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پراکندگی با برچسب",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-labels.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-labels.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "multiple-y-axes-scatter-chart": {
@@ -4450,20 +3598,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پراکندگی با چند محور Y",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/multiple-y-axes-scatter-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/multiple-y-axes-scatter-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "scatter-chart-with-cells": {
@@ -4471,20 +3616,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پراکندگی با Cell",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-cells.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-with-cells.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "scatter-chart-performance": {
@@ -4492,20 +3634,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پراکندگی پرتراکم (عملکرد)",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-mock-data"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-performance.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-scatter"],
+      registryDependencies: ["chart","chart-fa","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-chart-performance.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/scatter/scatter-fa-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-scatter"],
       meta: undefined,
     },
     "two-level-pie-chart": {
@@ -4513,15 +3652,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای دو سطحی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/two-level-pie-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/two-level-pie-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "straight-angle-pie-chart": {
@@ -4529,15 +3666,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای نیم‌دایره",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/straight-angle-pie-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/straight-angle-pie-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "custom-active-shape-pie-chart": {
@@ -4545,15 +3680,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای با شکل فعال سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/custom-active-shape-pie-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/custom-active-shape-pie-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-chart-with-customized-label": {
@@ -4561,15 +3694,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای با برچسب سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-chart-with-customized-label.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-chart-with-customized-label.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-chart-with-padding-angle": {
@@ -4577,15 +3708,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای با فاصله و گوشه گرد",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-chart-with-padding-angle.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-chart-with-padding-angle.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-chart-in-grid": {
@@ -4593,15 +3722,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای در Grid",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-chart-in-grid.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-chart-in-grid.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-with-gradient": {
@@ -4609,15 +3736,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "سهم کانال با گرادیان",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-with-gradient.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-with-gradient.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-donut-text": {
@@ -4625,15 +3750,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دونات با متن مرکزی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-donut-text.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-donut-text.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-interactive": {
@@ -4641,15 +3764,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای تعاملی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale", "select"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-interactive.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa","chart-locale","select"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-interactive.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "pie-stacked": {
@@ -4657,15 +3778,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای انباشته",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/pie/pie-stacked.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-pie"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/pie/pie-stacked.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-pie"],
       meta: undefined,
     },
     "simple-radar-chart": {
@@ -4673,15 +3792,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راداری ساده",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radar/simple-radar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radar/simple-radar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "specified-domain-radar-chart": {
@@ -4689,15 +3806,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راداری با دامنهٔ مشخص",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radar/specified-domain-radar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radar/specified-domain-radar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "range-radar-chart-custom-animation": {
@@ -4705,15 +3820,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راداری بازه‌ای با انیمیشن",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radar/range-radar-chart-custom-animation.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radar/range-radar-chart-custom-animation.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "radar-lines-only": {
@@ -4721,15 +3834,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راداری فقط خط",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radar/radar-lines-only.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radar/radar-lines-only.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "radar-icons": {
@@ -4737,15 +3848,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راداری با آیکون",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radar/radar-icons.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radar/radar-icons.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "radar-multiple": {
@@ -4753,15 +3862,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راداری چندسری",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radar/radar-multiple.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radar/radar-multiple.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radar"],
       meta: undefined,
     },
     "simple-radial-bar-chart": {
@@ -4769,15 +3876,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله شعاعی ساده",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radial-bar/simple-radial-bar-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radial-bar/simple-radial-bar-chart.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial-bar"],
       meta: undefined,
     },
     "radial-bar-chart-click-to-focus-legend": {
@@ -4785,15 +3890,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله شعاعی با فوکوس راهنما",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial-bar"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radial-bar/radial-bar-chart-click-to-focus-legend.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial-bar"],
       meta: undefined,
     },
     "radial-text": {
@@ -4801,15 +3904,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله شعاعی با متن",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-text.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radial-bar/radial-text.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial-bar"],
       meta: undefined,
     },
     "radial-shape": {
@@ -4817,15 +3918,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله شعاعی با شکل",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-shape.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radial-bar/radial-shape.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial-bar"],
       meta: undefined,
     },
     "radial-stacked": {
@@ -4833,15 +3932,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "میله شعاعی انباشته",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/radial-bar/radial-stacked.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-radial-bar"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/radial-bar/radial-stacked.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-radial-bar"],
       meta: undefined,
     },
     "bundle-size-treemap": {
@@ -4849,30 +3946,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "درخت‌نقشهٔ حجم باندل",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/bundle-size-treemap.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-treemap"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/treemap/bundle-size-treemap.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-treemap"],
       meta: undefined,
     },
     "simple-treemap": {
@@ -4880,30 +3972,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "درخت‌نقشهٔ ساده",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/simple-treemap.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-treemap"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/treemap/simple-treemap.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-treemap"],
       meta: undefined,
     },
     "custom-content-treemap": {
@@ -4911,30 +3998,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "درخت‌نقشه با محتوای سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/custom-content-treemap.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-treemap"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/treemap/custom-content-treemap.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-treemap"],
       meta: undefined,
     },
     "nested-treemap": {
@@ -4942,30 +4024,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "درخت‌نقشهٔ تودرتو",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/nested-treemap.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-treemap"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/treemap/nested-treemap.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-treemap"],
       meta: undefined,
     },
     "treemap-with-padding-and-gaps": {
@@ -4973,30 +4050,25 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "درخت‌نقشه با فاصله",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-with-padding-and-gaps.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-treemap"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-with-padding-and-gaps.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/data.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-colors.ts",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/treemap/treemap-content.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-treemap"],
       meta: undefined,
     },
     "bundle-size-sunburst": {
@@ -5004,20 +4076,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خورشیدسان حجم باندل",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/sunburst/bundle-size-sunburst.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-sunburst"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/sunburst/bundle-size-sunburst.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-sunburst"],
       meta: undefined,
     },
     "sunburst-chart": {
@@ -5025,20 +4094,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمونهٔ خورشیدسان",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-sunburst"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-sunburst"],
       meta: undefined,
     },
     "sunburst-chart-theme-colors": {
@@ -5046,20 +4112,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "خورشیدسان با رنگ تم",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-chart-theme-colors.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-sunburst"],
+      registryDependencies: ["chart","chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-chart-theme-colors.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/sunburst/sunburst-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-sunburst"],
       meta: undefined,
     },
     "custom-content-of-tooltip": {
@@ -5067,20 +4130,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "محتوای سفارشی تولتیپ",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/tooltip/custom-content-of-tooltip.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/tooltip/custom-content-of-tooltip.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "tooltip-styles": {
@@ -5088,21 +4144,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "سبک تولتیپ",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/tooltip/tooltip-styles.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/tooltip/tooltip-styles.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "tooltip-advanced": {
@@ -5110,15 +4158,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "تولتیپ پیشرفته",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa", "chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/tooltip/tooltip-advanced.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-tooltip"],
+      registryDependencies: ["chart","chart-fa","chart-locale"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/tooltip/tooltip-advanced.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-tooltip"],
       meta: undefined,
     },
     "legend-effect-opacity": {
@@ -5126,20 +4172,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "راهنما با شفافیت",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/legend/legend-effect-opacity.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-legend"],
+      registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/legend/legend-effect-opacity.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-legend"],
       meta: undefined,
     },
     "legend-position": {
@@ -5147,20 +4186,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "موقعیت راهنما",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/legend/legend-position.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-legend"],
+      registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/legend/legend-position.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-legend"],
       meta: undefined,
     },
     "legend-styles": {
@@ -5168,21 +4200,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "سبک سفارشی راهنما",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-live",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/legend/legend-styles.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-legend"],
+      registryDependencies: ["chart","chart-fa","chart-live","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/legend/legend-styles.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-legend"],
       meta: undefined,
     },
     "area-responsive-container": {
@@ -5190,20 +4214,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ناحیه‌ای واکنش‌گرا",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/responsive/area-responsive-container.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-responsive"],
+      registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/responsive/area-responsive-container.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-responsive"],
       meta: undefined,
     },
     "composed-responsive-container": {
@@ -5211,20 +4228,13 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ترکیبی واکنش‌گرا",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-locale",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/responsive/composed-responsive-container.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-responsive"],
+      registryDependencies: ["chart","chart-fa","chart-locale","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/responsive/composed-responsive-container.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-responsive"],
       meta: undefined,
     },
     "pie-responsive-container": {
@@ -5232,43 +4242,31 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "دایره‌ای واکنش‌گرا",
       type: "registry:block",
-      registryDependencies: ["chart", "chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/responsive/pie-responsive-container.tsx",
-          type: "registry:block",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-responsive"],
+      registryDependencies: ["chart","chart-fa"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/responsive/pie-responsive-container.tsx",
+        type: "registry:block",
+        target: ""
+      }],
+      categories: ["charts","charts-responsive"],
       meta: undefined,
     },
-    candlestick: {
+    "candlestick": {
       name: "candlestick",
       title: "undefined",
       description: "نمودار کندل‌استیک",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/candlestick.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/candlestick.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "candlestick-dashboard": {
@@ -5276,28 +4274,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "داشبورد کندل",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/candlestick-dashboard.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/candlestick-dashboard.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "candlestick-bar": {
@@ -5305,27 +4292,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "کندل‌استیک و میله‌ای",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/candlestick-bar.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/candlestick-bar.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "candlestick-category": {
@@ -5333,27 +4310,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "کندل‌استیک با محور دسته‌ای",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/candlestick-category.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/candlestick-category.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "candlestick-line": {
@@ -5361,58 +4328,35 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "کندل‌استیک و خطی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/candlestick-line.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/candlestick-line.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
-    sparklines: {
+    "sparklines": {
       name: "sparklines",
       title: "undefined",
       description: "اسپارک‌لاین قیمت",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/sparklines.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/sparklines.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "stock-ohlc": {
@@ -5420,26 +4364,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار میله‌ای OHLC",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-locale",
-        "chart-mock-data",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-ohlc.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-locale","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-ohlc.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "stock-line": {
@@ -5447,30 +4382,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خط قیمت",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-line.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-line.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "stock-column": {
@@ -5478,26 +4400,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار ستونی قیمت",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-locale",
-        "chart-mock-data",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-column.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-locale","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-column.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "stock-with-volume": {
@@ -5505,27 +4418,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار قیمت و حجم معاملات",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-with-volume.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-with-volume.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "stock-multi-series": {
@@ -5533,29 +4436,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "مقایسه چند نماد",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-multi-series.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-multi-series.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "stock-trendline": {
@@ -5563,30 +4454,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار خط روند",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-trendline.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-trendline.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "tremor-area-charts": {
@@ -5594,30 +4472,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار ناحیه‌ای",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/tremor-area-charts.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/tremor-area-charts.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "realtime-mountain-chart": {
@@ -5625,31 +4490,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار ناحیه‌ای زنده",
       type: "registry:block",
-      registryDependencies: [
-        "button",
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/realtime-mountain-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["button","chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/realtime-mountain-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "realtime-candlestick": {
@@ -5657,29 +4508,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "کندل زنده",
       type: "registry:block",
-      registryDependencies: [
-        "button",
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/realtime-candlestick.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["button","chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/realtime-candlestick.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "heikin-ashi": {
@@ -5687,28 +4526,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "هیکن‌آشی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/heikin-ashi.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/heikin-ashi.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "renko-chart": {
@@ -5716,28 +4544,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار رنکو",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/renko-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/renko-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "volume-profile": {
@@ -5745,27 +4562,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "پروفایل حجم",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/volume-profile.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/volume-profile.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "order-book-depth": {
@@ -5773,29 +4580,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "عمق بازار",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/order-book-depth.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/order-book-depth.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "drawdown-chart": {
@@ -5803,30 +4598,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "نمودار افت سرمایه",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/drawdown-chart.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/drawdown-chart.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "bollinger-bands": {
@@ -5834,30 +4616,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "باندهای بولینگر",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-        "use-market-neon",
-        "utils",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/bollinger-bands.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick","use-market-neon","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/bollinger-bands.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "candlestick-indicators": {
@@ -5865,28 +4634,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "کندل‌استیک با اندیکاتور",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/candlestick-indicators.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/candlestick-indicators.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "multi-timeframe": {
@@ -5894,28 +4652,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "چند بازهٔ زمانی",
       type: "registry:block",
-      registryDependencies: [
-        "chart",
-        "chart-fa",
-        "chart-jalali-tick",
-        "chart-live",
-        "chart-locale",
-        "chart-mock-data",
-        "chart-toman-tick",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/multi-timeframe.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-stock"],
+      registryDependencies: ["chart","chart-fa","chart-jalali-tick","chart-live","chart-locale","chart-mock-data","chart-toman-tick"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/stock/multi-timeframe.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/stock/stock-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-stock"],
       meta: undefined,
     },
     "gauge-default": {
@@ -5923,25 +4670,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج پیش‌فرض",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
-          type: "registry:file",
-          target: "react-gauge-chart.d.ts",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-default.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts"
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "gauge-levels": {
@@ -5949,25 +4692,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج چندسطحی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-levels.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
-          type: "registry:file",
-          target: "react-gauge-chart.d.ts",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-levels.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts"
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "gauge-custom-colors": {
@@ -5975,25 +4714,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج رنگی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-custom-colors.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
-          type: "registry:file",
-          target: "react-gauge-chart.d.ts",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-custom-colors.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts"
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "gauge-corner-radius": {
@@ -6001,25 +4736,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج گوشه‌گرد",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-corner-radius.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
-          type: "registry:file",
-          target: "react-gauge-chart.d.ts",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-corner-radius.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts"
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "gauge-custom-arcs": {
@@ -6027,25 +4758,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج با کمان سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-custom-arcs.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
-          type: "registry:file",
-          target: "react-gauge-chart.d.ts",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-custom-arcs.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts"
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "gauge-no-animation": {
@@ -6053,25 +4780,21 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج بدون انیمیشن",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-no-animation.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
-          type: "registry:file",
-          target: "react-gauge-chart.d.ts",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-no-animation.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/react-gauge-chart.d.ts",
+        type: "registry:file",
+        target: "react-gauge-chart.d.ts"
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-default": {
@@ -6079,20 +4802,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج پیش‌فرض HC",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-default.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-default.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-rounded-ends": {
@@ -6100,20 +4820,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج انتهای گرد",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-ends.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-ends.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-thin-ring": {
@@ -6121,20 +4838,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج حلقهٔ نازک",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-thin-ring.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-thin-ring.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-semicircle": {
@@ -6142,20 +4856,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج نیم‌دایره",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-semicircle.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-semicircle.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-custom-pivot": {
@@ -6163,20 +4874,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج محور سفارشی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-pivot.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-pivot.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-combo": {
@@ -6184,20 +4892,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج ترکیبی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-combo.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-combo.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-fuel": {
@@ -6205,20 +4910,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج سطح سوخت",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-fuel.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-fuel.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-activity": {
@@ -6226,20 +4928,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج فعالیت",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-activity.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-activity.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-kpi": {
@@ -6247,20 +4946,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج چندحلقهٔ KPI",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-kpi.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-kpi.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-rounded-bands": {
@@ -6268,20 +4964,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج نوار گرد",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-bands.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-rounded-bands.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-threshold": {
@@ -6289,20 +4982,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج آستانه",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-threshold.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-threshold.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "hc-gauge-custom-dial": {
@@ -6310,20 +5000,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "گیج عقربهٔ نقطه‌ای",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-dial.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-gauge"],
+      registryDependencies: ["chart-fa","chart-live"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-custom-dial.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/gauge/hc-gauge-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-gauge"],
       meta: undefined,
     },
     "heatmap-calendar": {
@@ -6331,20 +5018,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "تقویم حرارتی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-heatmap"],
+      registryDependencies: ["chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-heatmap"],
       meta: undefined,
     },
     "heatmap-calendar-emerald": {
@@ -6352,20 +5036,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "تقویم زمردی",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar-emerald.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-heatmap"],
+      registryDependencies: ["chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-calendar-emerald.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-heatmap"],
       meta: undefined,
     },
     "heatmap-matrix": {
@@ -6373,20 +5054,17 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ماتریس روز و ساعت",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-heatmap"],
+      registryDependencies: ["chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-heatmap"],
       meta: undefined,
     },
     "heatmap-matrix-values": {
@@ -6394,51 +5072,44 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "ماتریس با مقدار",
       type: "registry:block",
-      registryDependencies: ["chart-fa", "chart-live", "utils"],
-      files: [
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix-values.tsx",
-          type: "registry:block",
-          target: "",
-        },
-        {
-          path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
-          type: "registry:component",
-          target: "",
-        },
-      ],
-      categories: ["charts", "charts-heatmap"],
+      registryDependencies: ["chart-fa","chart-live","utils"],
+      files: [{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-matrix-values.tsx",
+        type: "registry:block",
+        target: ""
+      },{
+        path: "registry/new-york-v4/charts/gallery/heatmap/heatmap-shared.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["charts","charts-heatmap"],
       meta: undefined,
     },
-    utils: {
+    "utils": {
       name: "utils",
       title: "undefined",
       description: "",
       type: "registry:lib",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/lib/utils.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/utils.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    digits: {
+    "digits": {
       name: "digits",
       title: "undefined",
       description: "",
       type: "registry:lib",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/lib/digits.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/digits.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6448,13 +5119,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:lib",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "registry/new-york-v4/lib/chart-locale.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/chart-locale.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6464,13 +5133,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:lib",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/lib/chart-mock-data.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/chart-mock-data.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6479,14 +5146,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:lib",
-      registryDependencies: ["chart-locale", "chart-mock-data", "chart"],
-      files: [
-        {
-          path: "registry/new-york-v4/lib/chart-fa.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["chart-locale","chart-mock-data","chart"],
+      files: [{
+        path: "registry/new-york-v4/lib/chart-fa.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6496,13 +5161,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:lib",
       registryDependencies: ["chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/lib/chart-toman-tick.tsx",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/chart-toman-tick.tsx",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6512,13 +5175,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:lib",
       registryDependencies: ["chart-locale"],
-      files: [
-        {
-          path: "registry/new-york-v4/lib/chart-jalali-tick.tsx",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/chart-jalali-tick.tsx",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6528,13 +5189,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:lib",
       registryDependencies: ["chart-fa"],
-      files: [
-        {
-          path: "registry/new-york-v4/lib/chart-live.tsx",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/chart-live.tsx",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6544,13 +5203,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:lib",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/lib/use-market-neon.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/lib/use-market-neon.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6560,13 +5217,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:hook",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/hooks/use-media-query.ts",
-          type: "registry:hook",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/hooks/use-media-query.ts",
+        type: "registry:hook",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6576,13 +5231,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:hook",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/hooks/use-mobile.ts",
-          type: "registry:hook",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/hooks/use-mobile.ts",
+        type: "registry:hook",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6592,13 +5245,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["accordion"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/accordion-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/accordion-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6608,13 +5259,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["alert"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/alert-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/alert-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6624,13 +5273,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["alert"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/alert-destructive.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/alert-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6639,14 +5286,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["alert-dialog", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/alert-dialog-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["alert-dialog","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/alert-dialog-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6656,13 +5301,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["aspect-ratio"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/aspect-ratio-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/aspect-ratio-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6672,13 +5315,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["avatar"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/avatar-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/avatar-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6688,13 +5329,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["badge"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/badge-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/badge-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6704,13 +5343,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["badge"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/badge-destructive.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/badge-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6720,13 +5357,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["badge"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/badge-outline.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/badge-outline.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6736,13 +5371,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["badge"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/badge-secondary.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/badge-secondary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6752,13 +5385,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/breadcrumb-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/breadcrumb-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6768,13 +5399,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/breadcrumb-separator.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/breadcrumb-separator.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6784,13 +5413,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/breadcrumb-dropdown.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/breadcrumb-dropdown.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6800,13 +5427,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/breadcrumb-ellipsis.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/breadcrumb-ellipsis.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6816,13 +5441,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["breadcrumb"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/breadcrumb-link.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/breadcrumb-link.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6831,14 +5454,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["breadcrumb", "use-media-query"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/breadcrumb-responsive.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["breadcrumb","use-media-query"],
+      files: [{
+        path: "registry/new-york-v4/examples/breadcrumb-responsive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6848,13 +5469,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6864,13 +5483,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-default.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-default.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6880,13 +5497,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-secondary.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-secondary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6896,13 +5511,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-destructive.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6912,13 +5525,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-outline.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-outline.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6928,13 +5539,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-ghost.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-ghost.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6944,13 +5553,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-link.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-link.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6960,13 +5567,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-with-icon.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-with-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6976,13 +5581,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-loading.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-loading.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -6992,13 +5595,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-icon.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7008,13 +5609,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-as-child.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-as-child.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7024,13 +5623,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-rounded.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-rounded.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7040,13 +5637,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-size.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-size.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7056,13 +5651,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7072,13 +5665,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-nested.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-nested.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7088,13 +5679,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-size.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-size.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7104,13 +5693,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-separator.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-separator.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7120,13 +5707,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-split.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-split.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7136,13 +5721,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-input.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-input.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7152,13 +5735,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-dropdown.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-dropdown.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7168,13 +5749,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-select.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-select.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7184,13 +5763,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-popover.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-popover.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7200,13 +5777,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-input-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-input-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7216,13 +5791,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/button-group-orientation.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/button-group-orientation.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7232,13 +5805,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["calendar"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/calendar-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/calendar-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7247,14 +5818,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["card", "button", "switch"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/card-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","button","switch"],
+      files: [{
+        path: "registry/new-york-v4/examples/card-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7263,14 +5832,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["button", "card", "input", "label", "select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/card-with-form.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","card","input","label","select"],
+      files: [{
+        path: "registry/new-york-v4/examples/card-with-form.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7280,13 +5847,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["carousel"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/carousel-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/carousel-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7296,13 +5861,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["carousel"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/carousel-size.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/carousel-size.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7312,13 +5875,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["carousel"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/carousel-spacing.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/carousel-spacing.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7328,13 +5889,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["carousel"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/carousel-orientation.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/carousel-orientation.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7344,13 +5903,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["carousel"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/carousel-api.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/carousel-api.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7360,13 +5917,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["carousel"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/carousel-plugin.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/carousel-plugin.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7376,13 +5931,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["checkbox"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/checkbox-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/checkbox-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7392,13 +5945,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["checkbox"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/checkbox-disabled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/checkbox-disabled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7408,13 +5959,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["checkbox"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/checkbox-with-text.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/checkbox-with-text.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7424,13 +5973,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["collapsible"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/collapsible-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/collapsible-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7440,13 +5987,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["command"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/combobox-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/combobox-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7455,14 +6000,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["command", "dropdown-menu", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/combobox-dropdown-menu.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["command","dropdown-menu","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/combobox-dropdown-menu.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7471,14 +6014,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["combobox", "popover"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/combobox-popover.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["combobox","popover"],
+      files: [{
+        path: "registry/new-york-v4/examples/combobox-popover.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7487,19 +6028,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "combobox",
-        "popover",
-        "drawer",
-        "use-media-query",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/combobox-responsive.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["combobox","popover","drawer","use-media-query"],
+      files: [{
+        path: "registry/new-york-v4/examples/combobox-responsive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7509,13 +6043,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["command"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/command-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/command-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7524,14 +6056,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["command", "dialog"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/command-dialog.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["command","dialog"],
+      files: [{
+        path: "registry/new-york-v4/examples/command-dialog.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7541,13 +6071,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["context-menu"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/context-menu-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/context-menu-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7557,13 +6085,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["data-table"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/data-table-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/data-table-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7572,14 +6098,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["button", "calendar", "popover"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/date-picker-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","calendar","popover"],
+      files: [{
+        path: "registry/new-york-v4/examples/date-picker-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7588,14 +6112,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["button", "calendar", "popover", "select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/date-picker-with-presets.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","calendar","popover","select"],
+      files: [{
+        path: "registry/new-york-v4/examples/date-picker-with-presets.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7604,14 +6126,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["button", "calendar", "popover"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/date-picker-with-range.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","calendar","popover"],
+      files: [{
+        path: "registry/new-york-v4/examples/date-picker-with-range.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7621,13 +6141,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["dialog"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/dialog-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/dialog-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7636,14 +6154,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["dialog", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/dialog-close-button.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/dialog-close-button.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7653,13 +6169,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["drawer"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/drawer-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/drawer-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7668,14 +6182,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["empty", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["empty","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7685,13 +6197,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["empty"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-icon.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7700,14 +6210,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["empty", "button", "avatar"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-avatar.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["empty","button","avatar"],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-avatar.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7716,14 +6224,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["empty", "button", "avatar"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-avatar-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["empty","button","avatar"],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-avatar-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7732,14 +6238,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["empty", "button", "input"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-input-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["empty","button","input"],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-input-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7748,14 +6252,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["empty", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-outline.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["empty","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-outline.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7765,13 +6267,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["empty"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/empty-background.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/empty-background.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7781,13 +6281,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7797,13 +6295,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-input.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-input.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7813,13 +6309,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-textarea.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-textarea.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7829,13 +6323,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-fieldset.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-fieldset.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7845,13 +6337,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-radio.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-radio.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7861,13 +6351,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-checkbox.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-checkbox.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7877,13 +6365,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-switch.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-switch.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7893,13 +6379,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-slider.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-slider.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7909,13 +6393,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-select.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-select.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7925,13 +6407,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-choice-card.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-choice-card.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7941,13 +6421,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7957,13 +6435,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["field"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/field-responsive.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/field-responsive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7972,21 +6448,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "button",
-        "card",
-        "spinner",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-next-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","button","card","spinner"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-next-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -7995,26 +6462,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "button",
-        "card",
-        "spinner",
-        "checkbox",
-        "dialog",
-        "radio-group",
-        "select",
-        "switch",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-next-complex.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","button","card","spinner","checkbox","dialog","radio-group","select","switch"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-next-complex.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8023,14 +6476,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "input-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","input-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8039,14 +6490,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-input.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-input.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8055,14 +6504,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "select", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-select.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","select","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-select.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8071,14 +6518,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "checkbox", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-checkbox.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","checkbox","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-checkbox.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8087,14 +6532,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "switch", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-switch.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","switch","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-switch.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8103,14 +6546,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "textarea", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-textarea.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","textarea","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-textarea.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8119,14 +6560,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "radio-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-radiogroup.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","radio-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-radiogroup.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8135,14 +6574,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "input-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-array.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","input-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-array.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8151,22 +6588,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "field",
-        "button",
-        "card",
-        "checkbox",
-        "radio-group",
-        "select",
-        "switch",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-complex.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","button","card","checkbox","radio-group","select","switch"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-complex.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8175,20 +6602,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "field",
-        "input-group",
-        "progress",
-        "button",
-        "card",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-rhf-password.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input-group","progress","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-rhf-password.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8197,14 +6616,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "input-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","input-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8213,14 +6630,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-input.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-input.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8229,14 +6644,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "textarea", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-textarea.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","textarea","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-textarea.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8245,14 +6658,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "select", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-select.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","select","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-select.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8261,14 +6672,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "checkbox", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-checkbox.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","checkbox","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-checkbox.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8277,14 +6686,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "switch", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-switch.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","switch","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-switch.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8293,14 +6700,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "radio-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-radiogroup.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","radio-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-radiogroup.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8309,14 +6714,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "input-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-array.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","input-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-array.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8325,22 +6728,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "field",
-        "button",
-        "card",
-        "checkbox",
-        "radio-group",
-        "select",
-        "switch",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-tanstack-complex.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","button","card","checkbox","radio-group","select","switch"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-tanstack-complex.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8349,14 +6742,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "input-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","input-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8365,14 +6756,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-input.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-input.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8381,14 +6770,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "textarea", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-textarea.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","textarea","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-textarea.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8397,14 +6784,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "select", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-select.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","select","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-select.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8413,14 +6798,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "checkbox", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-checkbox.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","checkbox","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-checkbox.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8429,14 +6812,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "radio-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-radiogroup.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","radio-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-radiogroup.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8445,14 +6826,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "switch", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-switch.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","switch","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-switch.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8461,14 +6840,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["field", "input", "input-group", "button", "card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-array.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","input-group","button","card"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-array.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8477,22 +6854,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "field",
-        "button",
-        "card",
-        "checkbox",
-        "radio-group",
-        "select",
-        "switch",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/form-formisch-complex.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","button","card","checkbox","radio-group","select","switch"],
+      files: [{
+        path: "registry/new-york-v4/examples/form-formisch-complex.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8501,21 +6868,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "drawer",
-        "dialog",
-        "button",
-        "input",
-        "label",
-        "use-media-query",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/drawer-dialog.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["drawer","dialog","button","input","label","use-media-query"],
+      files: [{
+        path: "registry/new-york-v4/examples/drawer-dialog.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8524,21 +6882,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "drawer",
-        "dialog",
-        "button",
-        "input",
-        "label",
-        "use-media-query",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/drawer-dialog.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["drawer","dialog","button","input","label","use-media-query"],
+      files: [{
+        path: "registry/new-york-v4/examples/drawer-dialog.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8548,13 +6897,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/dropdown-menu-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/dropdown-menu-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8563,14 +6910,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["dropdown-menu", "checkbox"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dropdown-menu","checkbox"],
+      files: [{
+        path: "registry/new-york-v4/examples/dropdown-menu-checkboxes.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8579,14 +6924,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["dropdown-menu", "radio-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dropdown-menu","radio-group"],
+      files: [{
+        path: "registry/new-york-v4/examples/dropdown-menu-radio-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8595,20 +6938,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "dropdown-menu",
-        "dialog",
-        "button",
-        "input",
-        "label",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/dropdown-menu-dialog.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dropdown-menu","dialog","button","input","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/dropdown-menu-dialog.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8618,13 +6953,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["hover-card"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/hover-card-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/hover-card-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8634,13 +6967,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8650,13 +6981,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-disabled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-disabled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8666,13 +6995,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-file.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-file.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8681,14 +7008,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-with-button.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-with-button.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8697,14 +7022,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input", "button", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-with-label.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-with-label.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8713,14 +7036,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input", "button", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-with-text.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-with-text.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8730,13 +7051,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8745,14 +7064,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input-group", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-label.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-label.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8762,13 +7079,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-text.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-text.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8777,14 +7092,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input-group", "tooltip"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-tooltip.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","tooltip"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-tooltip.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8794,13 +7107,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-button.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-button.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8809,14 +7120,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input-group", "button-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-button-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","button-group"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-button-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8825,14 +7134,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input-group", "dropdown-menu", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-dropdown.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","dropdown-menu","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-dropdown.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8841,14 +7148,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input-group", "spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-spinner.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","spinner"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-spinner.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8857,14 +7162,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["input-group", "textarea"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-textarea.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","textarea"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-textarea.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8874,13 +7177,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-icon.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8889,20 +7190,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: [
-        "input-group",
-        "badge",
-        "progress",
-        "dropdown-menu",
-        "tooltip",
-      ],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-group-custom.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input-group","badge","progress","dropdown-menu","tooltip"],
+      files: [{
+        path: "registry/new-york-v4/examples/input-group-custom.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8912,13 +7205,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-otp"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-otp-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-otp-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8928,13 +7219,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-otp"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-otp-pattern.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-otp-pattern.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8944,13 +7233,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-otp"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-otp-separator.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-otp-separator.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8960,13 +7247,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["input-otp"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/input-otp-controlled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/input-otp-controlled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8976,13 +7261,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -8992,13 +7275,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-size.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-size.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9008,13 +7289,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-variant.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-variant.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9024,13 +7303,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-icon.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9040,13 +7317,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-image.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-image.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9056,13 +7331,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-avatar.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-avatar.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9072,13 +7345,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9088,13 +7359,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-header.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-header.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9104,13 +7373,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-dropdown.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-dropdown.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9120,13 +7387,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["item"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/item-link.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/item-link.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9136,13 +7401,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["kbd"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/kbd-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/kbd-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9151,14 +7414,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["kbd", "tooltip", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/kbd-tooltip.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["kbd","tooltip","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/kbd-tooltip.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9167,14 +7428,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["kbd", "input", "button", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/kbd-input-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["kbd","input","button","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/kbd-input-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9183,14 +7442,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["kbd", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/kbd-button.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["kbd","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/kbd-button.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9200,13 +7457,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["kbd"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/kbd-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/kbd-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9216,13 +7471,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/label-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/label-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9232,13 +7485,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["menubar"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/menubar-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/menubar-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9248,13 +7499,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["navigation-menu"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/navigation-menu-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/navigation-menu-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9264,13 +7513,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["native-select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/native-select-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/native-select-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9280,13 +7527,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["native-select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/native-select-groups.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/native-select-groups.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9296,13 +7541,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["native-select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/native-select-disabled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/native-select-disabled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9312,13 +7555,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["native-select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/native-select-invalid.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/native-select-invalid.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9328,13 +7569,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["pagination"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/pagination-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/pagination-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9344,13 +7583,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["popover"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/popover-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/popover-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9360,13 +7597,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["progress"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/progress-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/progress-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9376,13 +7611,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["radio-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/radio-group-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/radio-group-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9392,13 +7625,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["resizable"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/resizable-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/resizable-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9408,13 +7639,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["resizable"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/resizable-demo-with-handle.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/resizable-demo-with-handle.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9424,13 +7653,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["resizable"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/resizable-vertical.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/resizable-vertical.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9440,13 +7667,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["resizable"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/resizable-handle.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/resizable-handle.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9456,13 +7681,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["scroll-area"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/scroll-area-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/scroll-area-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9472,13 +7695,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["scroll-area"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/scroll-area-horizontal-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/scroll-area-horizontal-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9488,13 +7709,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/select-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/select-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9504,13 +7723,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["select"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/select-scrollable.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/select-scrollable.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9520,13 +7737,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/separator-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/separator-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9536,13 +7751,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["sheet"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/sheet-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/sheet-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9552,13 +7765,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["sheet"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/sheet-side.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/sheet-side.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9568,13 +7779,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["skeleton"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/skeleton-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/skeleton-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9584,13 +7793,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["skeleton"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/skeleton-card.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/skeleton-card.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9600,13 +7807,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["slider"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/slider-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/slider-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9616,13 +7821,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["sonner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/sonner-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/sonner-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9632,13 +7835,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["sonner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/sonner-types.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/sonner-types.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9648,13 +7849,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9663,14 +7862,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["spinner", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-basic.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["spinner","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-basic.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9679,14 +7876,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["spinner", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-button.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["spinner","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-button.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9695,14 +7890,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["spinner", "badge"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-badge.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["spinner","badge"],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-badge.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9711,14 +7904,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["spinner", "button", "input"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-input-group.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["spinner","button","input"],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-input-group.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9728,13 +7919,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-empty.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-empty.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9744,13 +7933,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-color.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-color.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9760,13 +7947,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-custom.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-custom.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9776,13 +7961,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-size.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-size.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9792,13 +7975,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["spinner"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/spinner-item.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/spinner-item.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9808,13 +7989,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["switch"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/switch-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/switch-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9824,13 +8003,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["table"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/table-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/table-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9840,13 +8017,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["tabs"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/tabs-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/tabs-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9856,13 +8031,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["textarea"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/textarea-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/textarea-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9872,13 +8045,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["textarea"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/textarea-disabled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/textarea-disabled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9887,14 +8058,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["textarea", "button"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/textarea-with-button.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["textarea","button"],
+      files: [{
+        path: "registry/new-york-v4/examples/textarea-with-button.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9903,14 +8072,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["textarea", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/textarea-with-label.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["textarea","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/textarea-with-label.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9919,14 +8086,12 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:example",
-      registryDependencies: ["textarea", "label"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/textarea-with-text.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      registryDependencies: ["textarea","label"],
+      files: [{
+        path: "registry/new-york-v4/examples/textarea-with-text.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9936,13 +8101,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9952,13 +8115,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-disabled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-disabled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9968,13 +8129,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-lg.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-lg.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -9984,13 +8143,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-outline.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-outline.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10000,13 +8157,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-sm.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-sm.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10016,13 +8171,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-single.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-single.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10032,13 +8185,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle-group"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-group-spacing.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-group-spacing.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10048,13 +8199,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10064,13 +8213,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-disabled.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-disabled.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10080,13 +8227,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-lg.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-lg.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10096,13 +8241,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-outline.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-outline.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10112,13 +8255,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-sm.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-sm.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10128,13 +8269,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/toggle-with-text.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/toggle-with-text.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10144,13 +8283,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: ["tooltip"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/tooltip-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/tooltip-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10160,13 +8297,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-blockquote.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-blockquote.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10176,13 +8311,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10192,13 +8325,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-h1.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-h1.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10208,13 +8339,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-h2.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-h2.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10224,13 +8353,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-h3.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-h3.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10240,13 +8367,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-h4.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-h4.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10256,13 +8381,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-inline-code.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-inline-code.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10272,13 +8395,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-large.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-large.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10288,13 +8409,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-lead.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-lead.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10304,13 +8423,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-list.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-list.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10320,13 +8437,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-muted.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-muted.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10336,13 +8451,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-p.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-p.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10352,13 +8465,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-small.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-small.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10368,13 +8479,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/typography-table.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/typography-table.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10384,13 +8493,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/mode-toggle.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/mode-toggle.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10400,13 +8507,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/chart-bar-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/chart-bar-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10416,13 +8521,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/chart-bar-demo-grid.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/chart-bar-demo-grid.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10432,13 +8535,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/chart-bar-demo-axis.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/chart-bar-demo-axis.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10448,13 +8549,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/chart-bar-demo-tooltip.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10464,13 +8563,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/chart-bar-demo-legend.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/chart-bar-demo-legend.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10480,13 +8577,11 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:example",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "registry/new-york-v4/examples/chart-tooltip-demo.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "registry/new-york-v4/examples/chart-tooltip-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -10496,67 +8591,43 @@ export const Index: Record<string, Record<string, any>> = {
       description: "A Persian calendar.",
       type: "registry:example",
       registryDependencies: ["calendar"],
-      files: [
-        {
-          path: "registry/new-york-v4/examples/calendar-hijri.tsx",
-          type: "registry:example",
-          target: "",
-        },
-      ],
-      categories: ["calendar", "date"],
-      meta: {
-        iframeHeight: "600px",
-        container:
-          "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0",
-        mobile: "component",
-      },
+      files: [{
+        path: "registry/new-york-v4/examples/calendar-hijri.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: ["calendar","date"],
+      meta: {"iframeHeight":"600px","container":"w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0","mobile":"component"},
     },
   },
   "base-vega": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/accordion",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/accordion","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -10564,22 +8635,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert-dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert-dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -10587,110 +8649,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/aspect-ratio",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/aspect-ratio","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/avatar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/avatar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/badge",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/badge","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/breadcrumb",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/breadcrumb","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -10698,208 +8719,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-vega/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-vega/ui/day-picker-persian.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-vega/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-vega/ui/day-picker-persian.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/calendar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://daypicker.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/calendar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://daypicker.dev"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/carousel",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/carousel","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["card", "digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","digits"],
+      files: [{
+        path: "styles/base-vega/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/chart",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/chart","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/checkbox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/checkbox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/collapsible",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/collapsible","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-vega/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-vega/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/combobox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/combobox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-vega/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-vega/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/command",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/command","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -10907,68 +8849,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/context-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/context-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/drawer",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drawer","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -10976,66 +8891,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dropdown-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dropdown-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/empty",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/empty","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-vega/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-vega/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/field",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/field","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -11043,66 +8933,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/hover-card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/hover-card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-vega/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-vega/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-vega/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-vega/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -11110,90 +8975,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-otp",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-otp","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-vega/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/item",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/item","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/label",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/label","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-vega/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/menubar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/menubar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -11201,44 +9031,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/navigation-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/navigation-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/pagination",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/pagination","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
     "persian-digits": {
       name: "persian-digits",
@@ -11246,61 +9059,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/persian-digits.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/persian-digits.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/popover",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/popover","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/progress",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/progress","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -11308,45 +9101,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/radio-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/radio-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/resizable",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/resizable","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -11354,400 +9129,239 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/scroll-area",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/scroll-area","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/separator",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/separator","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sheet",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheet","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-vega/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sidebar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sidebar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/skeleton",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/skeleton","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/slider",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/slider","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sonner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sonner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/spinner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/spinner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/switch",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/switch","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/table",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/table","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tabs",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tabs","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-vega/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-vega/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/textarea",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/textarea","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
     "rich-text-editor": {
       name: "rich-text-editor",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "toggle-group",
-        "separator",
-        "tooltip",
-        "dialog",
-        "input",
-        "label",
-        "dropdown-menu",
-        "popover",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/rich-text-editor.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-vega/ui/rich-text-editor-toolbar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/hooks/use-rich-text-editor.ts",
-          type: "registry:hook",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor.ts",
-          type: "registry:lib",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor-presets.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
+      files: [{
+        path: "styles/base-vega/ui/rich-text-editor.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-vega/ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        installStyle: "base-nova",
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
-          examples:
-            "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
-        },
-      },
+      meta: {"installStyle":"base-nova","links":{"docs":"https://farsiui.ir/docs/components/base/rich-text-editor","examples":"https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toast",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toast","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -11755,67 +9369,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-vega/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tooltip",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tooltip","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/kbd",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/kbd","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -11823,72 +9411,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/native-select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/native-select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -11898,67 +9467,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    questionnaire: {
+    "questionnaire": {
       name: "questionnaire",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/questionnaire.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-vega/ui/questionnaire.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/questionnaire",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/questionnaire","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -11967,159 +9522,98 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "button",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/price-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-vega/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/price-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
     },
     "phone-input": {
       name: "phone-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/phone-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-vega/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/phone-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
     },
     "national-code-input": {
       name: "national-code-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/national-code-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-vega/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/national-code-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
     },
     "sheba-input": {
       name: "sheba-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran"],
-      files: [
-        {
-          path: "styles/base-vega/ui/sheba-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "styles/base-vega/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/sheba-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
     },
     "bank-card-input": {
       name: "bank-card-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/bank-card-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-vega/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/bank-card-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
     },
     "address-form": {
       name: "address-form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "native-select",
-        "label",
-        "iran",
-        "digits",
-      ],
-      files: [
-        {
-          path: "styles/base-vega/ui/address-form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "styles/base-vega/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/address-form" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
     },
     "file-upload": {
       name: "file-upload",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "progress", "digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/file-upload.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "styles/base-vega/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/file-upload" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
     },
     "relative-time": {
       name: "relative-time",
@@ -12127,24 +9621,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-vega/ui/relative-time.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/relative-time.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/relative-time",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
     },
     "drag-scroll": {
       name: "drag-scroll",
@@ -12152,17 +9639,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-vega/ui/drag-scroll.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/drag-scroll" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "diff": {
+      name: "diff",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "styles/base-vega/ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx"
+      },{
+        path: "styles/base-vega/ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts"
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/diff"}},
     },
     "signature-pad": {
       name: "signature-pad",
@@ -12170,96 +9671,65 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-vega/ui/signature-pad.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-vega/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/signature-pad",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
     },
     "iran-division-picker": {
       name: "iran-division-picker",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["field", "native-select", "label"],
-      files: [
-        {
-          path: "styles/base-vega/ui/IranDivisionPicker/iran-division-picker.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker.tsx",
-        },
-        {
-          path: "styles/base-vega/ui/IranDivisionPicker/iran-geo.ts",
-          type: "registry:lib",
-          target: "components/IranDivisionPicker/iran-geo.ts",
-        },
-        {
-          path: "styles/base-vega/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
-        },
-      ],
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "styles/base-vega/ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx"
+      },{
+        path: "styles/base-vega/ui/IranDivisionPicker/iran-geo.ts",
+        type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts"
+      },{
+        path: "styles/base-vega/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx"
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
   },
   "base-nova": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/accordion",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/accordion","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -12267,22 +9737,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert-dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert-dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -12290,110 +9751,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/aspect-ratio",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/aspect-ratio","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/avatar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/avatar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/badge",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/badge","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/breadcrumb",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/breadcrumb","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -12401,208 +9821,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-nova/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-nova/ui/day-picker-persian.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-nova/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-nova/ui/day-picker-persian.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/calendar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://daypicker.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/calendar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://daypicker.dev"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/carousel",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/carousel","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["card", "digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","digits"],
+      files: [{
+        path: "styles/base-nova/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/chart",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/chart","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/checkbox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/checkbox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/collapsible",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/collapsible","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-nova/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-nova/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/combobox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/combobox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-nova/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-nova/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/command",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/command","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -12610,68 +9951,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/context-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/context-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/drawer",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drawer","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -12679,66 +9993,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dropdown-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dropdown-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/empty",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/empty","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-nova/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-nova/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/field",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/field","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -12746,66 +10035,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/hover-card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/hover-card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-nova/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-nova/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-nova/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-nova/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -12813,90 +10077,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-otp",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-otp","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-nova/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/item",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/item","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/label",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/label","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-nova/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/menubar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/menubar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -12904,44 +10133,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/navigation-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/navigation-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/pagination",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/pagination","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
     "persian-digits": {
       name: "persian-digits",
@@ -12949,61 +10161,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/persian-digits.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/persian-digits.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/popover",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/popover","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/progress",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/progress","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -13011,45 +10203,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/radio-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/radio-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/resizable",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/resizable","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -13057,400 +10231,239 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/scroll-area",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/scroll-area","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/separator",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/separator","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sheet",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheet","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-nova/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sidebar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sidebar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/skeleton",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/skeleton","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/slider",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/slider","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sonner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sonner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/spinner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/spinner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/switch",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/switch","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/table",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/table","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tabs",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tabs","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-nova/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-nova/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/textarea",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/textarea","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
     "rich-text-editor": {
       name: "rich-text-editor",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "toggle-group",
-        "separator",
-        "tooltip",
-        "dialog",
-        "input",
-        "label",
-        "dropdown-menu",
-        "popover",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/rich-text-editor.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-nova/ui/rich-text-editor-toolbar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/hooks/use-rich-text-editor.ts",
-          type: "registry:hook",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor.ts",
-          type: "registry:lib",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor-presets.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
+      files: [{
+        path: "styles/base-nova/ui/rich-text-editor.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-nova/ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        installStyle: "base-nova",
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
-          examples:
-            "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
-        },
-      },
+      meta: {"installStyle":"base-nova","links":{"docs":"https://farsiui.ir/docs/components/base/rich-text-editor","examples":"https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toast",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toast","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -13458,67 +10471,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-nova/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tooltip",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tooltip","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/kbd",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/kbd","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -13526,72 +10513,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/native-select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/native-select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -13601,67 +10569,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    questionnaire: {
+    "questionnaire": {
       name: "questionnaire",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/questionnaire.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-nova/ui/questionnaire.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/questionnaire",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/questionnaire","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -13670,159 +10624,98 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "button",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/price-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nova/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/price-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
     },
     "phone-input": {
       name: "phone-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/phone-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nova/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/phone-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
     },
     "national-code-input": {
       name: "national-code-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/national-code-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nova/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/national-code-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
     },
     "sheba-input": {
       name: "sheba-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran"],
-      files: [
-        {
-          path: "styles/base-nova/ui/sheba-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "styles/base-nova/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/sheba-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
     },
     "bank-card-input": {
       name: "bank-card-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/bank-card-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nova/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/bank-card-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
     },
     "address-form": {
       name: "address-form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "native-select",
-        "label",
-        "iran",
-        "digits",
-      ],
-      files: [
-        {
-          path: "styles/base-nova/ui/address-form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "styles/base-nova/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/address-form" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
     },
     "file-upload": {
       name: "file-upload",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "progress", "digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/file-upload.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "styles/base-nova/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/file-upload" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
     },
     "relative-time": {
       name: "relative-time",
@@ -13830,24 +10723,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nova/ui/relative-time.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/relative-time.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/relative-time",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
     },
     "drag-scroll": {
       name: "drag-scroll",
@@ -13855,17 +10741,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nova/ui/drag-scroll.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/drag-scroll" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "diff": {
+      name: "diff",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "styles/base-nova/ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx"
+      },{
+        path: "styles/base-nova/ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts"
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/diff"}},
     },
     "signature-pad": {
       name: "signature-pad",
@@ -13873,96 +10773,65 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nova/ui/signature-pad.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nova/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/signature-pad",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
     },
     "iran-division-picker": {
       name: "iran-division-picker",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["field", "native-select", "label"],
-      files: [
-        {
-          path: "styles/base-nova/ui/IranDivisionPicker/iran-division-picker.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker.tsx",
-        },
-        {
-          path: "styles/base-nova/ui/IranDivisionPicker/iran-geo.ts",
-          type: "registry:lib",
-          target: "components/IranDivisionPicker/iran-geo.ts",
-        },
-        {
-          path: "styles/base-nova/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
-        },
-      ],
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "styles/base-nova/ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx"
+      },{
+        path: "styles/base-nova/ui/IranDivisionPicker/iran-geo.ts",
+        type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts"
+      },{
+        path: "styles/base-nova/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx"
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
   },
   "base-glass": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/accordion",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/accordion","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -13970,22 +10839,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert-dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert-dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -13993,110 +10853,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/aspect-ratio",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/aspect-ratio","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/avatar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/avatar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/badge",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/badge","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/breadcrumb",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/breadcrumb","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -14104,208 +10923,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-glass/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-glass/ui/day-picker-persian.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-glass/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-glass/ui/day-picker-persian.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/calendar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://daypicker.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/calendar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://daypicker.dev"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/carousel",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/carousel","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["card", "digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","digits"],
+      files: [{
+        path: "styles/base-glass/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/chart",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/chart","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/checkbox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/checkbox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/collapsible",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/collapsible","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-glass/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-glass/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/combobox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/combobox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-glass/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-glass/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/command",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/command","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -14313,68 +11053,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/context-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/context-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/drawer",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drawer","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -14382,66 +11095,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dropdown-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dropdown-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/empty",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/empty","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-glass/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-glass/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/field",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/field","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -14449,66 +11137,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/hover-card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/hover-card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-glass/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-glass/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-glass/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-glass/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -14516,90 +11179,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-otp",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-otp","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-glass/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/item",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/item","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/label",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/label","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-glass/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/menubar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/menubar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -14607,44 +11235,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/navigation-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/navigation-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/pagination",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/pagination","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
     "persian-digits": {
       name: "persian-digits",
@@ -14652,61 +11263,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/persian-digits.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/persian-digits.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/popover",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/popover","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/progress",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/progress","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -14714,45 +11305,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/radio-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/radio-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/resizable",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/resizable","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -14760,400 +11333,239 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/scroll-area",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/scroll-area","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/separator",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/separator","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sheet",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheet","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-glass/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sidebar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sidebar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/skeleton",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/skeleton","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/slider",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/slider","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sonner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sonner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/spinner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/spinner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/switch",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/switch","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/table",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/table","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tabs",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tabs","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-glass/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-glass/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/textarea",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/textarea","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
     "rich-text-editor": {
       name: "rich-text-editor",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "toggle-group",
-        "separator",
-        "tooltip",
-        "dialog",
-        "input",
-        "label",
-        "dropdown-menu",
-        "popover",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/rich-text-editor.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-glass/ui/rich-text-editor-toolbar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/hooks/use-rich-text-editor.ts",
-          type: "registry:hook",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor.ts",
-          type: "registry:lib",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor-presets.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
+      files: [{
+        path: "styles/base-glass/ui/rich-text-editor.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-glass/ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        installStyle: "base-nova",
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
-          examples:
-            "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
-        },
-      },
+      meta: {"installStyle":"base-nova","links":{"docs":"https://farsiui.ir/docs/components/base/rich-text-editor","examples":"https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toast",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toast","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -15161,67 +11573,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-glass/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tooltip",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tooltip","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/kbd",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/kbd","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -15229,72 +11615,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/native-select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/native-select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -15304,67 +11671,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    questionnaire: {
+    "questionnaire": {
       name: "questionnaire",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/questionnaire.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-glass/ui/questionnaire.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/questionnaire",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/questionnaire","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -15373,159 +11726,98 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "button",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/price-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-glass/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/price-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
     },
     "phone-input": {
       name: "phone-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/phone-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-glass/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/phone-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
     },
     "national-code-input": {
       name: "national-code-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/national-code-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-glass/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/national-code-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
     },
     "sheba-input": {
       name: "sheba-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran"],
-      files: [
-        {
-          path: "styles/base-glass/ui/sheba-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "styles/base-glass/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/sheba-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
     },
     "bank-card-input": {
       name: "bank-card-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/bank-card-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-glass/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/bank-card-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
     },
     "address-form": {
       name: "address-form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "native-select",
-        "label",
-        "iran",
-        "digits",
-      ],
-      files: [
-        {
-          path: "styles/base-glass/ui/address-form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "styles/base-glass/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/address-form" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
     },
     "file-upload": {
       name: "file-upload",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "progress", "digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/file-upload.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "styles/base-glass/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/file-upload" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
     },
     "relative-time": {
       name: "relative-time",
@@ -15533,24 +11825,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-glass/ui/relative-time.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/relative-time.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/relative-time",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
     },
     "drag-scroll": {
       name: "drag-scroll",
@@ -15558,17 +11843,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-glass/ui/drag-scroll.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/drag-scroll" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "diff": {
+      name: "diff",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "styles/base-glass/ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx"
+      },{
+        path: "styles/base-glass/ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts"
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/diff"}},
     },
     "signature-pad": {
       name: "signature-pad",
@@ -15576,96 +11875,65 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-glass/ui/signature-pad.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-glass/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/signature-pad",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
     },
     "iran-division-picker": {
       name: "iran-division-picker",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["field", "native-select", "label"],
-      files: [
-        {
-          path: "styles/base-glass/ui/IranDivisionPicker/iran-division-picker.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker.tsx",
-        },
-        {
-          path: "styles/base-glass/ui/IranDivisionPicker/iran-geo.ts",
-          type: "registry:lib",
-          target: "components/IranDivisionPicker/iran-geo.ts",
-        },
-        {
-          path: "styles/base-glass/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
-        },
-      ],
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "styles/base-glass/ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx"
+      },{
+        path: "styles/base-glass/ui/IranDivisionPicker/iran-geo.ts",
+        type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts"
+      },{
+        path: "styles/base-glass/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx"
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
   },
   "base-rose": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/accordion",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/accordion","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -15673,22 +11941,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert-dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert-dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -15696,110 +11955,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/aspect-ratio",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/aspect-ratio","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/avatar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/avatar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/badge",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/badge","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/breadcrumb",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/breadcrumb","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -15807,208 +12025,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-rose/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-rose/ui/day-picker-persian.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-rose/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-rose/ui/day-picker-persian.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/calendar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://daypicker.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/calendar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://daypicker.dev"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/carousel",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/carousel","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["card", "digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","digits"],
+      files: [{
+        path: "styles/base-rose/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/chart",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/chart","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/checkbox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/checkbox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/collapsible",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/collapsible","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-rose/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-rose/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/combobox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/combobox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-rose/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-rose/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/command",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/command","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -16016,68 +12155,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/context-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/context-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/drawer",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drawer","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -16085,66 +12197,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dropdown-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dropdown-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/empty",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/empty","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-rose/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-rose/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/field",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/field","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -16152,66 +12239,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/hover-card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/hover-card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-rose/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-rose/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-rose/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-rose/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -16219,90 +12281,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-otp",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-otp","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-rose/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/item",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/item","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/label",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/label","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-rose/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/menubar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/menubar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -16310,44 +12337,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/navigation-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/navigation-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/pagination",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/pagination","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
     "persian-digits": {
       name: "persian-digits",
@@ -16355,61 +12365,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/persian-digits.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/persian-digits.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/popover",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/popover","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/progress",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/progress","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -16417,45 +12407,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/radio-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/radio-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/resizable",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/resizable","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -16463,400 +12435,239 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/scroll-area",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/scroll-area","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/separator",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/separator","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sheet",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheet","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-rose/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sidebar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sidebar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/skeleton",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/skeleton","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/slider",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/slider","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sonner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sonner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/spinner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/spinner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/switch",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/switch","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/table",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/table","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tabs",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tabs","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-rose/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-rose/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/textarea",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/textarea","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
     "rich-text-editor": {
       name: "rich-text-editor",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "toggle-group",
-        "separator",
-        "tooltip",
-        "dialog",
-        "input",
-        "label",
-        "dropdown-menu",
-        "popover",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/rich-text-editor.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-rose/ui/rich-text-editor-toolbar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/hooks/use-rich-text-editor.ts",
-          type: "registry:hook",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor.ts",
-          type: "registry:lib",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor-presets.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
+      files: [{
+        path: "styles/base-rose/ui/rich-text-editor.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-rose/ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        installStyle: "base-nova",
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
-          examples:
-            "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
-        },
-      },
+      meta: {"installStyle":"base-nova","links":{"docs":"https://farsiui.ir/docs/components/base/rich-text-editor","examples":"https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toast",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toast","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -16864,67 +12675,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-rose/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tooltip",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tooltip","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/kbd",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/kbd","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -16932,72 +12717,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/native-select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/native-select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -17007,67 +12773,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    questionnaire: {
+    "questionnaire": {
       name: "questionnaire",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/questionnaire.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-rose/ui/questionnaire.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/questionnaire",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/questionnaire","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -17076,159 +12828,98 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "button",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/price-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-rose/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/price-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
     },
     "phone-input": {
       name: "phone-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/phone-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-rose/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/phone-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
     },
     "national-code-input": {
       name: "national-code-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/national-code-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-rose/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/national-code-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
     },
     "sheba-input": {
       name: "sheba-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran"],
-      files: [
-        {
-          path: "styles/base-rose/ui/sheba-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "styles/base-rose/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/sheba-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
     },
     "bank-card-input": {
       name: "bank-card-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/bank-card-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-rose/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/bank-card-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
     },
     "address-form": {
       name: "address-form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "native-select",
-        "label",
-        "iran",
-        "digits",
-      ],
-      files: [
-        {
-          path: "styles/base-rose/ui/address-form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "styles/base-rose/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/address-form" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
     },
     "file-upload": {
       name: "file-upload",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "progress", "digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/file-upload.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "styles/base-rose/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/file-upload" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
     },
     "relative-time": {
       name: "relative-time",
@@ -17236,24 +12927,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-rose/ui/relative-time.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/relative-time.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/relative-time",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
     },
     "drag-scroll": {
       name: "drag-scroll",
@@ -17261,17 +12945,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-rose/ui/drag-scroll.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/drag-scroll" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "diff": {
+      name: "diff",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "styles/base-rose/ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx"
+      },{
+        path: "styles/base-rose/ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts"
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/diff"}},
     },
     "signature-pad": {
       name: "signature-pad",
@@ -17279,96 +12977,65 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-rose/ui/signature-pad.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-rose/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/signature-pad",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
     },
     "iran-division-picker": {
       name: "iran-division-picker",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["field", "native-select", "label"],
-      files: [
-        {
-          path: "styles/base-rose/ui/IranDivisionPicker/iran-division-picker.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker.tsx",
-        },
-        {
-          path: "styles/base-rose/ui/IranDivisionPicker/iran-geo.ts",
-          type: "registry:lib",
-          target: "components/IranDivisionPicker/iran-geo.ts",
-        },
-        {
-          path: "styles/base-rose/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
-        },
-      ],
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "styles/base-rose/ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx"
+      },{
+        path: "styles/base-rose/ui/IranDivisionPicker/iran-geo.ts",
+        type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts"
+      },{
+        path: "styles/base-rose/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx"
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
   },
   "base-nili": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/accordion",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/accordion","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -17376,22 +13043,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert-dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert-dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -17399,110 +13057,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/aspect-ratio",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/aspect-ratio","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/avatar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/avatar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/badge",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/badge","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/breadcrumb",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/breadcrumb","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -17510,208 +13127,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-nili/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-nili/ui/day-picker-persian.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-nili/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-nili/ui/day-picker-persian.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/calendar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://daypicker.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/calendar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://daypicker.dev"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/carousel",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/carousel","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["card", "digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","digits"],
+      files: [{
+        path: "styles/base-nili/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/chart",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/chart","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/checkbox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/checkbox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/collapsible",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/collapsible","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-nili/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-nili/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/combobox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/combobox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-nili/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-nili/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/command",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/command","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -17719,68 +13257,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/context-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/context-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/drawer",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drawer","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -17788,66 +13299,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dropdown-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dropdown-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/empty",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/empty","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-nili/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-nili/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/field",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/field","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -17855,66 +13341,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/hover-card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/hover-card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-nili/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-nili/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-nili/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-nili/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -17922,90 +13383,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-otp",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-otp","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-nili/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/item",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/item","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/label",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/label","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-nili/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/menubar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/menubar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -18013,44 +13439,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/navigation-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/navigation-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/pagination",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/pagination","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
     "persian-digits": {
       name: "persian-digits",
@@ -18058,61 +13467,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/persian-digits.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/persian-digits.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/popover",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/popover","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/progress",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/progress","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -18120,45 +13509,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/radio-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/radio-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/resizable",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/resizable","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -18166,400 +13537,239 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/scroll-area",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/scroll-area","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/separator",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/separator","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sheet",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheet","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-nili/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sidebar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sidebar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/skeleton",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/skeleton","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/slider",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/slider","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sonner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sonner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/spinner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/spinner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/switch",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/switch","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/table",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/table","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tabs",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tabs","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-nili/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-nili/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/textarea",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/textarea","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
     "rich-text-editor": {
       name: "rich-text-editor",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "toggle-group",
-        "separator",
-        "tooltip",
-        "dialog",
-        "input",
-        "label",
-        "dropdown-menu",
-        "popover",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/rich-text-editor.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-nili/ui/rich-text-editor-toolbar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/hooks/use-rich-text-editor.ts",
-          type: "registry:hook",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor.ts",
-          type: "registry:lib",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor-presets.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
+      files: [{
+        path: "styles/base-nili/ui/rich-text-editor.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-nili/ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        installStyle: "base-nova",
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
-          examples:
-            "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
-        },
-      },
+      meta: {"installStyle":"base-nova","links":{"docs":"https://farsiui.ir/docs/components/base/rich-text-editor","examples":"https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toast",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toast","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -18567,67 +13777,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-nili/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tooltip",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tooltip","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/kbd",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/kbd","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -18635,72 +13819,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/native-select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/native-select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -18710,67 +13875,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    questionnaire: {
+    "questionnaire": {
       name: "questionnaire",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/questionnaire.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-nili/ui/questionnaire.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/questionnaire",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/questionnaire","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -18779,159 +13930,98 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "button",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/price-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nili/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/price-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
     },
     "phone-input": {
       name: "phone-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/phone-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nili/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/phone-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
     },
     "national-code-input": {
       name: "national-code-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/national-code-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nili/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/national-code-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
     },
     "sheba-input": {
       name: "sheba-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran"],
-      files: [
-        {
-          path: "styles/base-nili/ui/sheba-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "styles/base-nili/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/sheba-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
     },
     "bank-card-input": {
       name: "bank-card-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/bank-card-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-nili/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/bank-card-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
     },
     "address-form": {
       name: "address-form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "native-select",
-        "label",
-        "iran",
-        "digits",
-      ],
-      files: [
-        {
-          path: "styles/base-nili/ui/address-form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "styles/base-nili/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/address-form" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
     },
     "file-upload": {
       name: "file-upload",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "progress", "digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/file-upload.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "styles/base-nili/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/file-upload" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
     },
     "relative-time": {
       name: "relative-time",
@@ -18939,24 +14029,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-nili/ui/relative-time.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/relative-time.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/relative-time",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
     },
     "drag-scroll": {
       name: "drag-scroll",
@@ -18964,17 +14047,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-nili/ui/drag-scroll.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/drag-scroll" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "diff": {
+      name: "diff",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "styles/base-nili/ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx"
+      },{
+        path: "styles/base-nili/ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts"
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/diff"}},
     },
     "signature-pad": {
       name: "signature-pad",
@@ -18982,96 +14079,65 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-nili/ui/signature-pad.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-nili/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/signature-pad",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
     },
     "iran-division-picker": {
       name: "iran-division-picker",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["field", "native-select", "label"],
-      files: [
-        {
-          path: "styles/base-nili/ui/IranDivisionPicker/iran-division-picker.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker.tsx",
-        },
-        {
-          path: "styles/base-nili/ui/IranDivisionPicker/iran-geo.ts",
-          type: "registry:lib",
-          target: "components/IranDivisionPicker/iran-geo.ts",
-        },
-        {
-          path: "styles/base-nili/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
-        },
-      ],
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "styles/base-nili/ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx"
+      },{
+        path: "styles/base-nili/ui/IranDivisionPicker/iran-geo.ts",
+        type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts"
+      },{
+        path: "styles/base-nili/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx"
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
   },
   "base-khesht": {
-    accordion: {
+    "accordion": {
       name: "accordion",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/accordion.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/accordion.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/accordion",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx",
-          api: "https://base-ui.com/react/components/accordion.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/accordion","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/accordion-example.tsx","api":"https://base-ui.com/react/components/accordion.md"}},
     },
-    alert: {
+    "alert": {
       name: "alert",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/alert.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/alert.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-example.tsx"}},
     },
     "alert-dialog": {
       name: "alert-dialog",
@@ -19079,22 +14145,13 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/alert-dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/alert-dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/alert-dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx",
-          api: "https://base-ui.com/react/components/alert-dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/alert-dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/alert-dialog-example.tsx","api":"https://base-ui.com/react/components/alert-dialog.md"}},
     },
     "aspect-ratio": {
       name: "aspect-ratio",
@@ -19102,110 +14159,69 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/aspect-ratio.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/aspect-ratio.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/aspect-ratio",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/aspect-ratio","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/aspect-ratio-example.tsx"}},
     },
-    avatar: {
+    "avatar": {
       name: "avatar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/avatar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/avatar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/avatar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx",
-          api: "https://base-ui.com/react/components/avatar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/avatar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/avatar-example.tsx","api":"https://base-ui.com/react/components/avatar.md"}},
     },
-    badge: {
+    "badge": {
       name: "badge",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/badge.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/badge.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/badge",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/badge","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/badge-example.tsx"}},
     },
-    breadcrumb: {
+    "breadcrumb": {
       name: "breadcrumb",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/breadcrumb.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/breadcrumb.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/breadcrumb",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/breadcrumb","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/breadcrumb-example.tsx"}},
     },
-    button: {
+    "button": {
       name: "button",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/button.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/button.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-example.tsx"}},
     },
     "button-group": {
       name: "button-group",
@@ -19213,208 +14229,129 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/button-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/button-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/button-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/button-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/button-group-example.tsx"}},
     },
-    calendar: {
+    "calendar": {
       name: "calendar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/calendar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-khesht/ui/day-picker-persian.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-khesht/ui/calendar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-khesht/ui/day-picker-persian.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/calendar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx",
-          api: "https://daypicker.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/calendar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/calendar-example.tsx","api":"https://daypicker.dev"}},
     },
-    card: {
+    "card": {
       name: "card",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/card-example.tsx"}},
     },
-    carousel: {
+    "carousel": {
       name: "carousel",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/carousel.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/carousel.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/carousel",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx",
-          api: "https://www.embla-carousel.com/get-started/react",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/carousel","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/carousel-example.tsx","api":"https://www.embla-carousel.com/get-started/react"}},
     },
-    chart: {
+    "chart": {
       name: "chart",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["card", "digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/chart.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["card","digits"],
+      files: [{
+        path: "styles/base-khesht/ui/chart.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/chart",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/chart","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/chart-example.tsx"}},
     },
-    checkbox: {
+    "checkbox": {
       name: "checkbox",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/checkbox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/checkbox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/checkbox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx",
-          api: "https://base-ui.com/react/components/checkbox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/checkbox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/checkbox-example.tsx","api":"https://base-ui.com/react/components/checkbox.md"}},
     },
-    collapsible: {
+    "collapsible": {
       name: "collapsible",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/collapsible.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/collapsible.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/collapsible",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx",
-          api: "https://base-ui.com/react/components/collapsible.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/collapsible","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/collapsible-example.tsx","api":"https://base-ui.com/react/components/collapsible.md"}},
     },
-    combobox: {
+    "combobox": {
       name: "combobox",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input-group"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/combobox.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input-group"],
+      files: [{
+        path: "styles/base-khesht/ui/combobox.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/combobox",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx",
-          api: "https://base-ui.com/react/components/combobox.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/combobox","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/combobox-example.tsx","api":"https://base-ui.com/react/components/combobox.md"}},
     },
-    command: {
+    "command": {
       name: "command",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["dialog", "input-group"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/command.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["dialog","input-group"],
+      files: [{
+        path: "styles/base-khesht/ui/command.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/command",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx",
-          api: "https://github.com/dip/cmdk",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/command","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/command-example.tsx","api":"https://github.com/dip/cmdk"}},
     },
     "context-menu": {
       name: "context-menu",
@@ -19422,68 +14359,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/context-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/context-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/context-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx",
-          api: "https://base-ui.com/react/components/context-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/context-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/context-menu-example.tsx","api":"https://base-ui.com/react/components/context-menu.md"}},
     },
-    dialog: {
+    "dialog": {
       name: "dialog",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/dialog.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/dialog.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dialog",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dialog","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dialog-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    drawer: {
+    "drawer": {
       name: "drawer",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/drawer.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/drawer.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/drawer",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx",
-          api: "https://base-ui.com/react/components/drawer.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drawer","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/drawer-example.tsx","api":"https://base-ui.com/react/components/drawer.md"}},
     },
     "dropdown-menu": {
       name: "dropdown-menu",
@@ -19491,66 +14401,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/dropdown-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/dropdown-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/dropdown-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx",
-          api: "https://base-ui.com/react/components/menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/dropdown-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/dropdown-menu-example.tsx","api":"https://base-ui.com/react/components/menu.md"}},
     },
-    empty: {
+    "empty": {
       name: "empty",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/empty.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/empty.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/empty",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/empty","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/empty-example.tsx"}},
     },
-    field: {
+    "field": {
       name: "field",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["label", "separator"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/field.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["label","separator"],
+      files: [{
+        path: "styles/base-khesht/ui/field.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/field",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/field","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/field-example.tsx"}},
     },
     "hover-card": {
       name: "hover-card",
@@ -19558,66 +14443,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/hover-card.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/hover-card.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/hover-card",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx",
-          api: "https://base-ui.com/react/components/hover-card.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/hover-card","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/hover-card-example.tsx","api":"https://base-ui.com/react/components/hover-card.md"}},
     },
-    input: {
+    "input": {
       name: "input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-khesht/ui/input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-example.tsx"}},
     },
     "input-group": {
       name: "input-group",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "input", "textarea"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/input-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","textarea"],
+      files: [{
+        path: "styles/base-khesht/ui/input-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-group-example.tsx"}},
     },
     "input-otp": {
       name: "input-otp",
@@ -19625,90 +14485,55 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/input-otp.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/input-otp.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/input-otp",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx",
-          api: "https://input-otp.rodz.dev",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/input-otp","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/input-otp-example.tsx","api":"https://input-otp.rodz.dev"}},
     },
-    item: {
+    "item": {
       name: "item",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["separator"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/item.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/item.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/item",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/item","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/item-example.tsx"}},
     },
-    label: {
+    "label": {
       name: "label",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/label.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/label.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/label",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx",
-          api: "https://base-ui.com/react/components/label.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/label","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/label-example.tsx","api":"https://base-ui.com/react/components/label.md"}},
     },
-    menubar: {
+    "menubar": {
       name: "menubar",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["dropdown-menu"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/menubar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/menubar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/menubar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx",
-          api: "https://base-ui.com/react/components/menubar.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/menubar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/menubar-example.tsx","api":"https://base-ui.com/react/components/menubar.md"}},
     },
     "navigation-menu": {
       name: "navigation-menu",
@@ -19716,44 +14541,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/navigation-menu.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/navigation-menu.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/navigation-menu",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx",
-          api: "https://base-ui.com/react/components/navigation-menu.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/navigation-menu","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/navigation-menu-example.tsx","api":"https://base-ui.com/react/components/navigation-menu.md"}},
     },
-    pagination: {
+    "pagination": {
       name: "pagination",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/pagination.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/pagination.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/pagination",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/pagination","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/pagination-example.tsx"}},
     },
     "persian-digits": {
       name: "persian-digits",
@@ -19761,61 +14569,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/persian-digits.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/persian-digits.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    popover: {
+    "popover": {
       name: "popover",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/popover.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/popover.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/popover",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx",
-          api: "https://base-ui.com/react/components/popover.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/popover","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/popover-example.tsx","api":"https://base-ui.com/react/components/popover.md"}},
     },
-    progress: {
+    "progress": {
       name: "progress",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/progress.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/progress.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/progress",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx",
-          api: "https://base-ui.com/react/components/progress.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/progress","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/progress-example.tsx","api":"https://base-ui.com/react/components/progress.md"}},
     },
     "radio-group": {
       name: "radio-group",
@@ -19823,45 +14611,27 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/radio-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/radio-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/radio-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx",
-          api: "https://base-ui.com/react/components/radio-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/radio-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/radio-group-example.tsx","api":"https://base-ui.com/react/components/radio-group.md"}},
     },
-    resizable: {
+    "resizable": {
       name: "resizable",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/resizable.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/resizable.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/resizable",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx",
-          api: "https://github.com/bvaughn/react-resizable-panels",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/resizable","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/resizable-example.tsx","api":"https://github.com/bvaughn/react-resizable-panels"}},
     },
     "scroll-area": {
       name: "scroll-area",
@@ -19869,400 +14639,239 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/scroll-area.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/scroll-area.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/scroll-area",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx",
-          api: "https://base-ui.com/react/components/scroll-area.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/scroll-area","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/scroll-area-example.tsx","api":"https://base-ui.com/react/components/scroll-area.md"}},
     },
-    select: {
+    "select": {
       name: "select",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx",
-          api: "https://base-ui.com/react/components/select.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/select-example.tsx","api":"https://base-ui.com/react/components/select.md"}},
     },
-    separator: {
+    "separator": {
       name: "separator",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/separator.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/separator.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/separator",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx",
-          api: "https://base-ui.com/react/components/separator.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/separator","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/separator-example.tsx","api":"https://base-ui.com/react/components/separator.md"}},
     },
-    sheet: {
+    "sheet": {
       name: "sheet",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/sheet.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/sheet.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sheet",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx",
-          api: "https://base-ui.com/react/components/dialog.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheet","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sheet-example.tsx","api":"https://base-ui.com/react/components/dialog.md"}},
     },
-    sidebar: {
+    "sidebar": {
       name: "sidebar",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "input",
-        "separator",
-        "sheet",
-        "skeleton",
-        "tooltip",
-        "use-mobile",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/sidebar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","input","separator","sheet","skeleton","tooltip","use-mobile"],
+      files: [{
+        path: "styles/base-khesht/ui/sidebar.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sidebar",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sidebar","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sidebar-example.tsx"}},
     },
-    skeleton: {
+    "skeleton": {
       name: "skeleton",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/skeleton.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/skeleton.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/skeleton",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/skeleton","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/skeleton-example.tsx"}},
     },
-    slider: {
+    "slider": {
       name: "slider",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/slider.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/slider.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/slider",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx",
-          api: "https://base-ui.com/react/components/slider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/slider","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/slider-example.tsx","api":"https://base-ui.com/react/components/slider.md"}},
     },
-    sonner: {
+    "sonner": {
       name: "sonner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/sonner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/sonner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/sonner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx",
-          api: "https://sonner.emilkowal.ski",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sonner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/sonner-example.tsx","api":"https://sonner.emilkowal.ski"}},
     },
-    spinner: {
+    "spinner": {
       name: "spinner",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/spinner.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/spinner.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/spinner",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/spinner","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/spinner-example.tsx"}},
     },
-    switch: {
+    "switch": {
       name: "switch",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/switch.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/switch.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/switch",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx",
-          api: "https://base-ui.com/react/components/switch.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/switch","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/switch-example.tsx","api":"https://base-ui.com/react/components/switch.md"}},
     },
-    table: {
+    "table": {
       name: "table",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/table.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/table.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/table",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/table","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/table-example.tsx"}},
     },
-    tabs: {
+    "tabs": {
       name: "tabs",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/tabs.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/tabs.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tabs",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx",
-          api: "https://base-ui.com/react/components/tabs.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tabs","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tabs-example.tsx","api":"https://base-ui.com/react/components/tabs.md"}},
     },
-    textarea: {
+    "textarea": {
       name: "textarea",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["digits", "use-persian-digits-input"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/textarea.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["digits","use-persian-digits-input"],
+      files: [{
+        path: "styles/base-khesht/ui/textarea.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/textarea",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/textarea","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/textarea-example.tsx"}},
     },
     "rich-text-editor": {
       name: "rich-text-editor",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "button",
-        "toggle-group",
-        "separator",
-        "tooltip",
-        "dialog",
-        "input",
-        "label",
-        "dropdown-menu",
-        "popover",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/rich-text-editor.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "styles/base-khesht/ui/rich-text-editor-toolbar.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/hooks/use-rich-text-editor.ts",
-          type: "registry:hook",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor.ts",
-          type: "registry:lib",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/rich-text-editor-presets.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","toggle-group","separator","tooltip","dialog","input","label","dropdown-menu","popover"],
+      files: [{
+        path: "styles/base-khesht/ui/rich-text-editor.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "styles/base-khesht/ui/rich-text-editor-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/hooks/use-rich-text-editor.ts",
+        type: "registry:hook",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/rich-text-editor-presets.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        installStyle: "base-nova",
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/rich-text-editor",
-          examples:
-            "https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx",
-        },
-      },
+      meta: {"installStyle":"base-nova","links":{"docs":"https://farsiui.ir/docs/components/base/rich-text-editor","examples":"https://farsiui.ir/code/apps/v4/examples/base/rich-text-editor-demo.tsx"}},
     },
-    toast: {
+    "toast": {
       name: "toast",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/toast.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/toast.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toast",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx",
-          api: "https://base-ui.com/react/components/toast.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toast","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toast-example.tsx","api":"https://base-ui.com/react/components/toast.md"}},
     },
-    toggle: {
+    "toggle": {
       name: "toggle",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/toggle.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/toggle.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx",
-          api: "https://base-ui.com/react/components/toggle.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-example.tsx","api":"https://base-ui.com/react/components/toggle.md"}},
     },
     "toggle-group": {
       name: "toggle-group",
@@ -20270,67 +14879,41 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["toggle"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/toggle-group.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/toggle-group.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/toggle-group",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx",
-          api: "https://base-ui.com/react/components/toggle-group.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/toggle-group","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/toggle-group-example.tsx","api":"https://base-ui.com/react/components/toggle-group.md"}},
     },
-    tooltip: {
+    "tooltip": {
       name: "tooltip",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/tooltip.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/tooltip.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/tooltip",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx",
-          api: "https://base-ui.com/react/components/tooltip.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/tooltip","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/tooltip-example.tsx","api":"https://base-ui.com/react/components/tooltip.md"}},
     },
-    kbd: {
+    "kbd": {
       name: "kbd",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/kbd.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/kbd.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/kbd",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/kbd","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/kbd-example.tsx"}},
     },
     "native-select": {
       name: "native-select",
@@ -20338,72 +14921,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/native-select.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/native-select.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/native-select",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/native-select","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/native-select-example.tsx"}},
     },
-    direction: {
+    "direction": {
       name: "direction",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/direction.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/direction.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/direction",
-          api: "https://base-ui.com/react/utils/direction-provider.md",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/direction","api":"https://base-ui.com/react/utils/direction-provider.md"}},
     },
-    attachment: {
+    "attachment": {
       name: "attachment",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/attachment.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/attachment.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    bubble: {
+    "bubble": {
       name: "bubble",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/bubble.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/bubble.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -20413,67 +14977,53 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/message-scroller.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/message-scroller.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    questionnaire: {
+    "questionnaire": {
       name: "questionnaire",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/questionnaire.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","digits"],
+      files: [{
+        path: "styles/base-khesht/ui/questionnaire.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/questionnaire",
-          examples:
-            "https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/questionnaire","examples":"https://farsiui.ir/code/apps/v4/registry/bases/base/examples/questionnaire-example.tsx"}},
     },
-    marker: {
+    "marker": {
       name: "marker",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/marker.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/marker.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
-    message: {
+    "message": {
       name: "message",
       title: "undefined",
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/message.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/message.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
       meta: undefined,
     },
@@ -20482,159 +15032,98 @@ export const Index: Record<string, Record<string, any>> = {
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "button",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/price-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","button","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-khesht/ui/price-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/price-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/price-input"}},
     },
     "phone-input": {
       name: "phone-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/phone-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-khesht/ui/phone-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/phone-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/phone-input"}},
     },
     "national-code-input": {
       name: "national-code-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/national-code-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-khesht/ui/national-code-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/national-code-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/national-code-input"}},
     },
     "sheba-input": {
       name: "sheba-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["input", "iran"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/sheba-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran"],
+      files: [{
+        path: "styles/base-khesht/ui/sheba-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/sheba-input" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/sheba-input"}},
     },
     "bank-card-input": {
       name: "bank-card-input",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "input",
-        "iran",
-        "digits",
-        "use-formatted-digits-caret",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/bank-card-input.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["input","iran","digits","use-formatted-digits-caret"],
+      files: [{
+        path: "styles/base-khesht/ui/bank-card-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/bank-card-input",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/bank-card-input"}},
     },
     "address-form": {
       name: "address-form",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: [
-        "field",
-        "input",
-        "textarea",
-        "native-select",
-        "label",
-        "iran",
-        "digits",
-      ],
-      files: [
-        {
-          path: "styles/base-khesht/ui/address-form.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["field","input","textarea","native-select","label","iran","digits"],
+      files: [{
+        path: "styles/base-khesht/ui/address-form.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/address-form" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/address-form"}},
     },
     "file-upload": {
       name: "file-upload",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["button", "progress", "digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/file-upload.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      registryDependencies: ["button","progress","digits"],
+      files: [{
+        path: "styles/base-khesht/ui/file-upload.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/file-upload" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/file-upload"}},
     },
     "relative-time": {
       name: "relative-time",
@@ -20642,24 +15131,17 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["digits"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/relative-time.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-        {
-          path: "registry/bases/base/lib/relative-time.ts",
-          type: "registry:lib",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/relative-time.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/bases/base/lib/relative-time.ts",
+        type: "registry:lib",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/relative-time",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/relative-time"}},
     },
     "drag-scroll": {
       name: "drag-scroll",
@@ -20667,17 +15149,31 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: undefined,
-      files: [
-        {
-          path: "styles/base-khesht/ui/drag-scroll.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/drag-scroll.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: { docs: "https://farsiui.ir/docs/components/base/drag-scroll" },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/drag-scroll"}},
+    },
+    "diff": {
+      name: "diff",
+      title: "undefined",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: [{
+        path: "styles/base-khesht/ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx"
+      },{
+        path: "styles/base-khesht/ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts"
+      }],
+      categories: undefined,
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/diff"}},
     },
     "signature-pad": {
       name: "signature-pad",
@@ -20685,49 +15181,35 @@ export const Index: Record<string, Record<string, any>> = {
       description: "",
       type: "registry:ui",
       registryDependencies: ["button"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/signature-pad.tsx",
-          type: "registry:ui",
-          target: "",
-        },
-      ],
+      files: [{
+        path: "styles/base-khesht/ui/signature-pad.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/signature-pad",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/signature-pad"}},
     },
     "iran-division-picker": {
       name: "iran-division-picker",
       title: "undefined",
       description: "",
       type: "registry:ui",
-      registryDependencies: ["field", "native-select", "label"],
-      files: [
-        {
-          path: "styles/base-khesht/ui/IranDivisionPicker/iran-division-picker.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker.tsx",
-        },
-        {
-          path: "styles/base-khesht/ui/IranDivisionPicker/iran-geo.ts",
-          type: "registry:lib",
-          target: "components/IranDivisionPicker/iran-geo.ts",
-        },
-        {
-          path: "styles/base-khesht/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
-          type: "registry:component",
-          target: "components/IranDivisionPicker/iran-division-picker-demo.tsx",
-        },
-      ],
+      registryDependencies: ["field","native-select","label"],
+      files: [{
+        path: "styles/base-khesht/ui/IranDivisionPicker/iran-division-picker.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker.tsx"
+      },{
+        path: "styles/base-khesht/ui/IranDivisionPicker/iran-geo.ts",
+        type: "registry:lib",
+        target: "components/IranDivisionPicker/iran-geo.ts"
+      },{
+        path: "styles/base-khesht/ui/IranDivisionPicker/iran-division-picker-demo.tsx",
+        type: "registry:component",
+        target: "components/IranDivisionPicker/iran-division-picker-demo.tsx"
+      }],
       categories: undefined,
-      meta: {
-        links: {
-          docs: "https://farsiui.ir/docs/components/base/iran-division-picker",
-        },
-      },
+      meta: {"links":{"docs":"https://farsiui.ir/docs/components/base/iran-division-picker"}},
     },
   },
 }

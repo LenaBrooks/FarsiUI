@@ -2,6 +2,7 @@ import type { ComponentType } from "react"
 import { Suspense } from "react"
 
 import { extractHookDependencies } from "@/lib/example-dependencies"
+import { highlightDocumentedHookCommands } from "@/lib/highlight-hook-commands"
 import { formatCode } from "@/lib/format-code"
 import { highlightCode } from "@/lib/highlight-code"
 import { getDemoItem, getRegistryComponent } from "@/lib/registry"
@@ -285,6 +286,7 @@ export async function ComponentVariantPreview({
 
         const highlightedCode =
           sized.default?.highlightedCode || (await highlightCode(code, "tsx"))
+        const dependencies = extractHookDependencies(raw ?? code)
 
         return {
           meta: {
@@ -297,7 +299,9 @@ export async function ComponentVariantPreview({
             demo: example.demo,
             sizeable,
             sized: Object.keys(sized).length > 0 ? sized : undefined,
-            dependencies: extractHookDependencies(raw ?? code),
+            dependencies,
+            highlightedCommands:
+              await highlightDocumentedHookCommands(dependencies),
           } satisfies VariantPreviewItem,
           Component,
         }

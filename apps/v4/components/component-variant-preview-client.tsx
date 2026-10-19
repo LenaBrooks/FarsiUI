@@ -563,7 +563,10 @@ export function ComponentVariantPreviewClient({
         )}
         </div>
       </div>
-      <ExampleDependencies dependencies={active.dependencies} />
+      <ExampleDependencies
+        dependencies={active.dependencies}
+        highlightedCommands={active.highlightedCommands}
+      />
     </div>
   )
 }

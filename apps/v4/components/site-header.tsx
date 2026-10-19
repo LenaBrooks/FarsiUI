@@ -49,18 +49,16 @@ export function SiteHeader() {
             </div>
           </div>
 
-          <div className="ms-auto flex min-w-0 items-center gap-1.5 sm:gap-2 md:flex-1 md:justify-end">
+          <div className="ms-auto flex shrink-0 items-center gap-0.5">
             <SiteHeaderActions
               tree={pageTree}
               colors={colors}
               navItems={siteConfig.navItems}
             />
-            <Separator orientation="vertical" className="hidden sm:block" />
-            <div className="flex shrink-0 items-center gap-0.5">
-              <GitHubLink />
-              <ContactLink className="hidden lg:inline-flex" />
-              <ModeSwitcher />
-            </div>
+            <Separator orientation="vertical" className="mx-1 hidden sm:block" />
+            <GitHubLink />
+            <ContactLink className="hidden lg:inline-flex" />
+            <ModeSwitcher />
           </div>
         </div>
       </div>

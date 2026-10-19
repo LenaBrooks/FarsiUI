@@ -3,7 +3,10 @@ import { type Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { getSkill, getSkillFiles, getSkillSlugs } from "@/lib/skills"
-import { highlightCode } from "@/lib/highlight-code"
+import {
+  highlightCode,
+  highlightPackageManagerCommands,
+} from "@/lib/highlight-code"
 import { SkillDetail } from "@/components/skill-detail"
 
 export const dynamicParams = true
@@ -60,9 +63,19 @@ export default async function SkillPage({
     notFound()
   }
 
+  const installHighlighted = await highlightPackageManagerCommands(
+    skill.installCommand
+  )
+
   // Zip-bundled skills: no in-page file preview — download ZIP only.
   if (skill.bundleZipUrl) {
-    return <SkillDetail skill={skill} files={[]} />
+    return (
+      <SkillDetail
+        skill={skill}
+        files={[]}
+        installHighlighted={installHighlighted}
+      />
+    )
   }
 
   const files = getSkillFiles(slug)
@@ -78,5 +91,11 @@ export default async function SkillPage({
     }))
   )
 
-  return <SkillDetail skill={skill} files={skillFiles} />
+  return (
+    <SkillDetail
+      skill={skill}
+      files={skillFiles}
+      installHighlighted={installHighlighted}
+    />
+  )
 }

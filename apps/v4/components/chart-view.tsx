@@ -21,7 +21,11 @@ import {
   useChartHasGrid,
   useChartLive,
 } from "@/components/chart-live"
-import { CodeBlockCommand } from "@/components/code-block-command"
+import {
+  CodeBlockCommand,
+  toCodeBlockProps,
+} from "@/components/code-block-command"
+import type { HighlightedPackageManagerCommands } from "@/lib/highlight-code"
 import { CodeTabs } from "@/components/code-tabs"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
@@ -102,12 +106,14 @@ export function ChartView({
   sourceFigure,
   usageFigures,
   embedded = false,
+  cliHighlighted,
 }: {
   example: ChartExample
   sourceFigure: React.ReactNode
   usageFigures: React.ReactNode
   /** Render inside gallery shell (no full-page chrome). */
   embedded?: boolean
+  cliHighlighted?: HighlightedPackageManagerCommands | null
 }) {
   const addCommand = `farsiui@latest add ${example.id}`
   const backHref = `/charts#chart-type-${example.category}`
@@ -206,10 +212,14 @@ export function ChartView({
                 className="relative"
               >
                 <CodeBlockCommand
-                  __npm__={`npx ${addCommand}`}
-                  __pnpm__={`pnpm dlx ${addCommand}`}
-                  __yarn__={`yarn dlx ${addCommand}`}
-                  __bun__={`bunx --bun ${addCommand}`}
+                  {...(cliHighlighted
+                    ? toCodeBlockProps(cliHighlighted)
+                    : {
+                        __npm__: `npx ${addCommand}`,
+                        __pnpm__: `pnpm dlx ${addCommand}`,
+                        __yarn__: `yarn dlx ${addCommand}`,
+                        __bun__: `bunx --bun ${addCommand}`,
+                      })}
                 />
               </figure>
             </TabsContent>

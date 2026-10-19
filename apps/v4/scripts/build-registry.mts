@@ -1317,7 +1317,9 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {`
     const shard: ComponentShard = { key: baseName, entries: "", names: [] }
 
     for (const file of files) {
-      const name = file.replace(/\.tsx$/, "")
+      // Nested demos (e.g. examples/base/diff/diff-demo.tsx) keep a stable
+      // preview name from the basename so docs can still request "diff-demo".
+      const name = path.basename(file, ".tsx")
       const examplePath = path.join(examplesDir, baseName, file)
       const exampleSource = await fs.readFile(examplePath, "utf8")
       // Bake the same hook list ComponentPreview historically derived via

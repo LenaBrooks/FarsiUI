@@ -4,7 +4,7 @@
 import "server-only"
 
 export const ExamplesIndex: Record<string, Record<string, any>> = {
-  base: {
+  "base": {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/base/accordion-basic.tsx",
@@ -973,6 +973,16 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
     "dialog-sticky-footer": {
       name: "dialog-sticky-footer",
       filePath: "examples/base/dialog-sticky-footer.tsx",
+      hookDependencies: [],
+    },
+    "diff-demo": {
+      name: "diff-demo",
+      filePath: "examples/base/diff/diff-demo.tsx",
+      hookDependencies: [],
+    },
+    "diff-text": {
+      name: "diff-text",
+      filePath: "examples/base/diff/diff-text.tsx",
       hookDependencies: [],
     },
     "drag-scroll-demo": {
@@ -2701,7 +2711,7 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       hookDependencies: [],
     },
   },
-  aria: {
+  "aria": {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/aria/accordion-basic.tsx",
@@ -5213,7 +5223,7 @@ export const ExamplesIndex: Record<string, Record<string, any>> = {
       hookDependencies: [],
     },
   },
-  radix: {
+  "radix": {
     "accordion-basic": {
       name: "accordion-basic",
       filePath: "examples/radix/accordion-basic.tsx",

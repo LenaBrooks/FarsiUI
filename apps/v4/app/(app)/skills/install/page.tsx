@@ -2,6 +2,7 @@ import { type Metadata } from "next"
 import Link from "next/link"
 
 import { getSkills } from "@/lib/skills"
+import { highlightPackageManagerCommands } from "@/lib/highlight-code"
 import {
   SkillAgentPathRow,
   SkillCopyCommand,
@@ -17,8 +18,11 @@ export const metadata: Metadata = {
   },
 }
 
-export default function SkillsInstallPage() {
+export default async function SkillsInstallPage() {
   const example = getSkills()[0]
+  const installHighlighted = example
+    ? await highlightPackageManagerCommands(example.installCommand)
+    : null
 
   return (
     <div
@@ -43,7 +47,10 @@ export default function SkillsInstallPage() {
           <h2>نصب سریع با CLI</h2>
           <p>داخل ریشهٔ پروژه این دستور را بزنید:</p>
           {example ? (
-            <SkillCopyCommand command={example.installCommand} />
+            <SkillCopyCommand
+              command={example.installCommand}
+              highlighted={installHighlighted}
+            />
           ) : null}
 
           <h2>نصب دستی</h2>

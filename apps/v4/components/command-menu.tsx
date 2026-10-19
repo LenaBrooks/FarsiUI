@@ -4,7 +4,7 @@ import * as React from "react"
 import { useRouter } from "next/navigation"
 import { cn } from "cn"
 import { useDocsSearch } from "fumadocs-core/search/client"
-import { CornerDownLeftIcon } from "lucide-react"
+import { CornerDownLeftIcon, SearchIcon } from "lucide-react"
 import { Dialog as DialogPrimitive } from "radix-ui"
 
 import { type ColorPalette } from "@/lib/colors"
@@ -116,14 +116,15 @@ export function CommandMenu({
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
-          variant="outline"
-          className={cn(
-            "relative h-8 w-full justify-start rounded-lg border-none bg-muted ps-3 text-foreground shadow-none transition-colors hover:bg-muted/50 md:w-48 lg:w-40 xl:w-64 dark:bg-card"
-          )}
+          type="button"
+          variant="ghost"
+          size="icon"
+          className="size-8 shrink-0"
           onClick={() => setOpen(true)}
+          aria-label="جستجو در مستندات"
         >
-          <span className="hidden xl:inline-flex">جستجو در مستندات...</span>
-          <span className="inline-flex xl:hidden">جستجو...</span>
+          <SearchIcon className="size-4.5" />
+          <span className="sr-only">جستجو در مستندات</span>
         </Button>
       </DialogTrigger>
       <DialogContent className="rounded-xl border-none bg-clip-padding p-2 pb-11 shadow-2xl ring-4 ring-border/80 dark:bg-background dark:ring-border">

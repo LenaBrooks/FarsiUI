@@ -1,0 +1,163 @@
+---
+title: مقایسه (Diff)
+description: مقایسهٔ کنارهم دو تصویر یا محتوا با جداکنندهٔ کشیدنی
+featured: true
+base: base
+component: true
+---
+
+<ComponentVariantPreview
+  styleName="base-nova"
+  layout="switcher"
+  examples={[
+    { name: "diff-demo", label: "تصویر", sizeable: false },
+    { name: "diff-text", label: "متن", sizeable: false },
+  ]}
+/>
+
+## نصب
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">دستور</TabsTrigger>
+  <TabsTrigger value="manual">دستی</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx farsiui@latest add diff
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>کد زیر را در پروژه خود قرار دهید.</Step>
+
+<ComponentSource
+  name="diff"
+  title="components/ui/diff/diff.tsx"
+  styleName="base-nova"
+/>
+
+<Step>مسیرهای import را متناسب با ساختار پروژه خود تنظیم کنید.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## استفاده
+
+```tsx showLineNumbers
+import {
+  Diff,
+  DiffItem1,
+  DiffItem2,
+  DiffResizer,
+} from "@/components/ui/diff"
+```
+
+```tsx showLineNumbers
+<Diff className="aspect-video">
+  <DiffItem1>
+    <img alt="قبل" src="/before.webp" />
+  </DiffItem1>
+  <DiffItem2>
+    <img alt="بعد" src="/after.webp" />
+  </DiffItem2>
+  <DiffResizer />
+</Diff>
+```
+
+جداکننده را بکشید یا با فوکوس روی ظرف، کلیدهای جهت‌نما را بزنید.
+
+<div className="hidden">
+
+## متن
+
+</div>
+
+<DocsCollapsible title="متن">
+
+به‌جای تصویر می‌توانید هر محتوایی (مثلاً بلوک متنی رنگی) داخل `DiffItem1` و `DiffItem2` بگذارید.
+
+</DocsCollapsible>
+
+<div className="hidden">
+
+## مرجع API
+
+</div>
+
+<DocsCollapsible title="مرجع API">
+
+<DocsApiProps
+  title="Diff"
+  description="ظرف مقایسه با جداکنندهٔ افقی."
+  props={[
+    {
+      name: "defaultValue",
+      description: "موقعیت اولیهٔ جداکننده (۰ تا ۱۰۰)",
+      values: ["number"],
+    },
+    {
+      name: "value",
+      description: "موقعیت کنترل‌شدهٔ جداکننده (۰ تا ۱۰۰)",
+      values: ["number"],
+    },
+    {
+      name: "onValueChange",
+      description: "فراخوانی هنگام تغییر موقعیت",
+      values: ["(value: number) => void"],
+    },
+    {
+      name: "className",
+      description: "کلاس‌های اضافه (مثلاً aspect-video)",
+      values: ["string"],
+    },
+  ]}
+/>
+
+<DocsApiProps
+  title="DiffItem1"
+  description="لایهٔ اول (روی جداکننده؛ با کشیدن آشکار می‌شود)."
+  props={[
+    {
+      name: "className",
+      description: "کلاس‌های اضافه",
+      values: ["string"],
+    },
+  ]}
+/>
+
+<DocsApiProps
+  title="DiffItem2"
+  description="لایهٔ دوم (پس‌زمینهٔ کامل)."
+  props={[
+    {
+      name: "className",
+      description: "کلاس‌های اضافه",
+      values: ["string"],
+    },
+  ]}
+/>
+
+<DocsApiProps
+  title="DiffResizer"
+  description="دستگیرهٔ کشیدنی برای تنظیم نسبت نمایش."
+  props={[
+    {
+      name: "className",
+      description: "کلاس‌های اضافه",
+      values: ["string"],
+    },
+  ]}
+/>
+
+</DocsCollapsible>

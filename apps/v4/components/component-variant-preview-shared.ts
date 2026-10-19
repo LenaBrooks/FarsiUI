@@ -36,6 +36,20 @@ export type VariantPreviewItem = {
   sized?: Partial<Record<ButtonSizeId, VariantPreviewSizedCode>>
   /** Example-only registry hook dependencies (from real imports). */
   dependencies?: string[]
+  /** Pre-highlighted CLI install notes for documented hooks. */
+  highlightedCommands?: Record<
+    string,
+    {
+      npm: string
+      yarn: string
+      pnpm: string
+      bun: string
+      npmHtml: string
+      yarnHtml: string
+      pnpmHtml: string
+      bunHtml: string
+    }
+  >
 }
 
 export type VariantPreviewLayout = "gallery" | "switcher"

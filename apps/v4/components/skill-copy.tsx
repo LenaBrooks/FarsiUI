@@ -4,9 +4,13 @@ import { Check, Copy, Download } from "lucide-react"
 import * as React from "react"
 import { cn } from "cn"
 
-import { CodeBlockCommand } from "@/components/code-block-command"
+import {
+  CodeBlockCommand,
+  toCodeBlockProps,
+} from "@/components/code-block-command"
 import { copyToClipboardWithMeta } from "@/components/copy-button"
 import { Button } from "@/registry/new-york-v4/ui/button"
+import type { HighlightedPackageManagerCommands } from "@/lib/highlight-code"
 
 const TOOL_LOGOS: Record<string, string> = {
   "claude-code": "/farsiui/ai/claude.png",
@@ -14,12 +18,14 @@ const TOOL_LOGOS: Record<string, string> = {
   codex: "/farsiui/ai/codex.png",
 }
 
-/** Same npm/pnpm/yarn/bun command chrome as docs/installation. */
+/** Client-safe CLI chrome; pass pre-highlighted commands from a server parent. */
 export function SkillCopyCommand({
   command,
+  highlighted,
   className,
 }: {
   command: string
+  highlighted?: HighlightedPackageManagerCommands | null
   className?: string
 }) {
   const npm = command
@@ -33,18 +39,17 @@ export function SkillCopyCommand({
     ? command.replace("npx", "bunx --bun")
     : command
 
+  const commandProps = highlighted
+    ? toCodeBlockProps(highlighted)
+    : { __npm__: npm, __yarn__: yarn, __pnpm__: pnpm, __bun__: bun }
+
   return (
     <figure
       data-rehype-pretty-code-figure=""
       data-not-typeset=""
       className={cn("relative mx-0! mt-5 mb-0 md:mx-0!", className)}
     >
-      <CodeBlockCommand
-        __npm__={npm}
-        __yarn__={yarn}
-        __pnpm__={pnpm}
-        __bun__={bun}
-      />
+      <CodeBlockCommand {...commandProps} />
     </figure>
   )
 }

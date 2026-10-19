@@ -1364,6 +1364,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
   },
   {
+    name: "diff",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/diff/diff.tsx",
+        type: "registry:ui",
+        target: "components/ui/diff/diff.tsx",
+      },
+      {
+        path: "ui/diff/index.ts",
+        type: "registry:ui",
+        target: "components/ui/diff/index.ts",
+      },
+    ],
+    meta: {
+      links: {
+        docs: "https://farsiui.ir/docs/components/base/diff",
+      },
+    },
+  },
+  {
     name: "signature-pad",
     type: "registry:ui",
     registryDependencies: ["button"],

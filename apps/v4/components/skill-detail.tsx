@@ -4,6 +4,7 @@ import * as React from "react"
 import { BadgeCheck, Check, ChevronDown, Copy, Download } from "lucide-react"
 
 import { type Skill, type SkillSource } from "@/lib/skills-data"
+import type { HighlightedPackageManagerCommands } from "@/lib/highlight-code"
 import { copyToClipboardWithMeta } from "@/components/copy-button"
 import { SkillAgentPathRow, SkillCopyCommand } from "@/components/skill-copy"
 import { Button } from "@/registry/new-york-v4/ui/button"
@@ -23,9 +24,11 @@ export type SkillFileView = {
 export function SkillDetail({
   skill,
   files,
+  installHighlighted,
 }: {
   skill: Skill
   files: SkillFileView[]
+  installHighlighted?: HighlightedPackageManagerCommands | null
 }) {
   const [activePath, setActivePath] = React.useState(
     files[0]?.path ?? "SKILL.md"
@@ -178,7 +181,10 @@ export function SkillDetail({
               را می‌گذارد؛ برای کل مرجع‌ها از نصب دستی و ZIP استفاده کنید.
             </p>
           ) : null}
-          <SkillCopyCommand command={skill.installCommand} />
+          <SkillCopyCommand
+            command={skill.installCommand}
+            highlighted={installHighlighted}
+          />
 
           <h3>نصب دستی</h3>
           {bundleZipUrl ? (

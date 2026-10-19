@@ -16,6 +16,7 @@ export const FEATURED_COMPONENT_SLUGS = [
   "price-input",
   "address-form",
   "signature-pad",
+  "diff",
 ] as const
 
 /** Green nav bullet for featured / new docs pages. */

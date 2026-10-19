@@ -15,9 +15,5 @@ export function SiteHeaderActions({
   colors: ColorPalette[]
   navItems?: { href: string; label: string }[]
 }) {
-  return (
-    <div className="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
-      <CommandMenu tree={tree} colors={colors} navItems={navItems} />
-    </div>
-  )
+  return <CommandMenu tree={tree} colors={colors} navItems={navItems} />
 }

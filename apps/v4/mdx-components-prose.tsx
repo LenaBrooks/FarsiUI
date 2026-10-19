@@ -5,7 +5,7 @@ import { cn } from "cn"
 
 import { PERSIAN_RUN } from "@/lib/rehype-code-fa"
 import { Callout } from "@/components/callout"
-import { CodeBlockCommand } from "@/components/code-block-command"
+import { HighlightedCodeBlockCommand } from "@/components/highlighted-code-block-command"
 import { CodeCollapsibleWrapper } from "@/components/code-collapsible-wrapper"
 import { CodeTabs } from "@/components/code-tabs"
 import { SkillAgentPathRow } from "@/components/skill-copy"
@@ -251,14 +251,7 @@ export const mdxProseComponents = {
 
     const isNpmCommand = __npm__ && __yarn__ && __pnpm__ && __bun__
     if (isNpmCommand) {
-      return (
-        <CodeBlockCommand
-          __npm__={__npm__}
-          __yarn__={__yarn__}
-          __pnpm__={__pnpm__}
-          __bun__={__bun__}
-        />
-      )
+      return <HighlightedCodeBlockCommand command={__npm__} />
     }
 
     return (

@@ -10,6 +10,93 @@ const highlightCache = new LRUCache<string, string>({
   ttl: 1000 * 60 * 60, // 1 hour.
 })
 
+export type PackageManagerCommands = {
+  npm: string
+  yarn: string
+  pnpm: string
+  bun: string
+}
+
+export type HighlightedPackageManagerCommands = PackageManagerCommands & {
+  npmHtml: string
+  yarnHtml: string
+  pnpmHtml: string
+  bunHtml: string
+}
+
+/** Expand a single CLI string into npm / yarn / pnpm / bun variants. */
+export function expandPackageManagerCommands(
+  command: string
+): PackageManagerCommands | null {
+  const raw = command.trim()
+  if (!raw) return null
+
+  if (raw.startsWith("npm install")) {
+    return {
+      npm: raw,
+      yarn: raw.replace("npm install", "yarn add"),
+      pnpm: raw.replace("npm install", "pnpm add"),
+      bun: raw.replace("npm install", "bun add"),
+    }
+  }
+  if (raw.startsWith("npx create-")) {
+    return {
+      npm: raw,
+      yarn: raw.replace("npx create-", "yarn create "),
+      pnpm: raw.replace("npx create-", "pnpm create "),
+      bun: raw.replace("npx", "bunx --bun"),
+    }
+  }
+  if (raw.startsWith("npm create")) {
+    return {
+      npm: raw,
+      yarn: raw.replace("npm create", "yarn create"),
+      pnpm: raw.replace("npm create", "pnpm create"),
+      bun: raw.replace("npm create", "bun create"),
+    }
+  }
+  if (raw.startsWith("npx")) {
+    return {
+      npm: raw,
+      yarn: raw.replace("npx", "yarn dlx"),
+      pnpm: raw.replace("npx", "pnpm dlx"),
+      bun: raw.replace("npx", "bunx --bun"),
+    }
+  }
+  if (raw.startsWith("npm run")) {
+    return {
+      npm: raw,
+      yarn: raw.replace("npm run", "yarn"),
+      pnpm: raw.replace("npm run", "pnpm"),
+      bun: raw.replace("npm run", "bun"),
+    }
+  }
+
+  return null
+}
+
+export async function highlightPackageManagerCommands(
+  command: string
+): Promise<HighlightedPackageManagerCommands | null> {
+  const commands = expandPackageManagerCommands(command)
+  if (!commands) return null
+
+  const [npmHtml, yarnHtml, pnpmHtml, bunHtml] = await Promise.all([
+    highlightCode(commands.npm, "bash"),
+    highlightCode(commands.yarn, "bash"),
+    highlightCode(commands.pnpm, "bash"),
+    highlightCode(commands.bun, "bash"),
+  ])
+
+  return {
+    ...commands,
+    npmHtml,
+    yarnHtml,
+    pnpmHtml,
+    bunHtml,
+  }
+}
+
 export const transformers = [
   {
     code(node) {
@@ -17,40 +104,12 @@ export const transformers = [
         const raw = this.source
         node.properties["__raw__"] = raw
 
-        if (raw.startsWith("npm install")) {
-          node.properties["__npm__"] = raw
-          node.properties["__yarn__"] = raw.replace("npm install", "yarn add")
-          node.properties["__pnpm__"] = raw.replace("npm install", "pnpm add")
-          node.properties["__bun__"] = raw.replace("npm install", "bun add")
-        } else if (raw.startsWith("npx create-")) {
-          node.properties["__npm__"] = raw
-          node.properties["__yarn__"] = raw.replace(
-            "npx create-",
-            "yarn create "
-          )
-          node.properties["__pnpm__"] = raw.replace(
-            "npx create-",
-            "pnpm create "
-          )
-          node.properties["__bun__"] = raw.replace("npx", "bunx --bun")
-        } else if (raw.startsWith("npm create")) {
-          // npm create.
-          node.properties["__npm__"] = raw
-          node.properties["__yarn__"] = raw.replace("npm create", "yarn create")
-          node.properties["__pnpm__"] = raw.replace("npm create", "pnpm create")
-          node.properties["__bun__"] = raw.replace("npm create", "bun create")
-        } else if (raw.startsWith("npx")) {
-          // npx.
-          node.properties["__npm__"] = raw
-          node.properties["__yarn__"] = raw.replace("npx", "yarn dlx")
-          node.properties["__pnpm__"] = raw.replace("npx", "pnpm dlx")
-          node.properties["__bun__"] = raw.replace("npx", "bunx --bun")
-        } else if (raw.startsWith("npm run")) {
-          // npm run.
-          node.properties["__npm__"] = raw
-          node.properties["__yarn__"] = raw.replace("npm run", "yarn")
-          node.properties["__pnpm__"] = raw.replace("npm run", "pnpm")
-          node.properties["__bun__"] = raw.replace("npm run", "bun")
+        const expanded = expandPackageManagerCommands(raw)
+        if (expanded) {
+          node.properties["__npm__"] = expanded.npm
+          node.properties["__yarn__"] = expanded.yarn
+          node.properties["__pnpm__"] = expanded.pnpm
+          node.properties["__bun__"] = expanded.bun
         }
       }
     },

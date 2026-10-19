@@ -14,6 +14,7 @@ import {
 import { getChartDemoSourcePath } from "@/lib/chart-demos"
 import { ChartViewPanel } from "@/components/chart-view-panel"
 import { CodeFigure } from "@/components/code-figure"
+import { highlightPackageManagerCommands } from "@/lib/highlight-code"
 
 export const dynamic = "force-static"
 export const dynamicParams = true
@@ -72,9 +73,14 @@ export default async function ChartViewPage({ params }: PageProps) {
 }
 `
 
+  const cliHighlighted = await highlightPackageManagerCommands(
+    `npx farsiui@latest add ${example.id}`
+  )
+
   return (
     <ChartViewPanel
       example={example}
+      cliHighlighted={cliHighlighted}
       sourceFigure={
         <CodeFigure
           code={source}

@@ -2,6 +2,7 @@ import * as React from "react"
 import Image from "next/image"
 
 import { extractHookDependencies } from "@/lib/example-dependencies"
+import { highlightDocumentedHookCommands } from "@/lib/highlight-hook-commands"
 import { getDemoItem, getDemoMeta, getRegistryMeta } from "@/lib/registry"
 import { ComponentPreviewTabs } from "@/components/component-preview-tabs"
 import { PreviewThemeIframe } from "@/components/preview-theme-scope"
@@ -112,6 +113,8 @@ export async function ComponentPreview({
     dependencies = []
   }
 
+  const highlightedCommands = await highlightDocumentedHookCommands(dependencies)
+
   const content = (
     <ComponentPreviewTabs
       className={className}
@@ -120,6 +123,7 @@ export async function ComponentPreview({
       hideCode={hideCode}
       name={name}
       dependencies={dependencies}
+      highlightedCommands={highlightedCommands}
       chromeLessOnMobile={chromeLessOnMobile}
       direction={direction}
       styleName={styleName}

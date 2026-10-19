@@ -31,6 +31,7 @@ export function ComponentPreviewTabs({
   component,
   source,
   dependencies,
+  highlightedCommands,
   direction = "ltr",
   styleName,
   ...props
@@ -46,6 +47,9 @@ export function ComponentPreviewTabs({
   /** @deprecated Prefer lazy full source via `name` after expand. */
   source?: React.ReactNode
   dependencies?: string[]
+  highlightedCommands?: React.ComponentProps<
+    typeof ExampleDependencies
+  >["highlightedCommands"]
   direction?: "ltr" | "rtl"
   styleName?: string
 }) {
@@ -147,7 +151,10 @@ export function ComponentPreviewTabs({
           </div>
         )}
       </div>
-      <ExampleDependencies dependencies={dependencies} />
+      <ExampleDependencies
+        dependencies={dependencies}
+        highlightedCommands={highlightedCommands}
+      />
     </div>
   )
 }

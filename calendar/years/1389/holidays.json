@@ -1,0 +1,239 @@
+{
+  "year": 1389,
+  "schemaVersion": 1,
+  "dataVersion": "1389.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1389.pdf (official table; titles curated from extract)",
+  "coverage": "national+religious",
+  "notes": [
+    "Holiday list curated from UT Calendar-1389.pdf day table rows marked تعطیل."
+  ],
+  "items": [
+    {
+      "id": "1389-nowruz-1",
+      "date": "1389-01-01",
+      "ruleId": "nowruz-1",
+      "title": { "fa": "آغاز نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1389-nowruz-2",
+      "date": "1389-01-02",
+      "ruleId": "nowruz-2",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1389-nowruz-3",
+      "date": "1389-01-03",
+      "ruleId": "nowruz-3",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1389-nowruz-4",
+      "date": "1389-01-04",
+      "ruleId": "nowruz-4",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1389-islamic-republic-day",
+      "date": "1389-01-12",
+      "ruleId": "islamic-republic-day",
+      "title": {
+        "fa": "روز جمهوری اسلامی ایران",
+        "en": "Islamic Republic Day"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1389-sizdah-bedar",
+      "date": "1389-01-13",
+      "ruleId": "sizdah-bedar",
+      "title": {
+        "fa": "روز طبیعت (سیزده‌به‌در)",
+        "en": "Nature Day (Sizdah Bedar)"
+      },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1389-martyrdom-fatimah",
+      "date": "1389-01-27",
+      "title": {
+        "fa": "شهادت حضرت فاطمه زهرا",
+        "en": "Martyrdom of Fatimah"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-demise-imam-khomeini",
+      "date": "1389-03-14",
+      "ruleId": "demise-imam-khomeini",
+      "title": {
+        "fa": "رحلت امام خمینی",
+        "en": "Demise of Imam Khomeini"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1389-khordad-15",
+      "date": "1389-03-15",
+      "ruleId": "khordad-15",
+      "title": { "fa": "قیام ۱۵ خرداد", "en": "15 Khordad Uprising" },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1389-birthday-imam-ali",
+      "date": "1389-04-05",
+      "title": {
+        "fa": "ولادت امام علی و روز پدر",
+        "en": "Birthday of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-mabath",
+      "date": "1389-04-19",
+      "title": {
+        "fa": "مبعث رسول اکرم",
+        "en": "Mab'ath"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-mid-shaaban",
+      "date": "1389-05-05",
+      "title": {
+        "fa": "ولادت حضرت قائم و جشن نیمه شعبان",
+        "en": "Mid-Sha'ban"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-martyrdom-imam-ali",
+      "date": "1389-06-10",
+      "title": {
+        "fa": "شهادت حضرت علی",
+        "en": "Martyrdom of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-eid-fitr",
+      "date": "1389-06-19",
+      "title": { "fa": "عید سعید فطر", "en": "Eid al-Fitr" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-martyrdom-imam-sadiq",
+      "date": "1389-07-12",
+      "title": {
+        "fa": "شهادت امام جعفر صادق",
+        "en": "Martyrdom of Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-eid-adha",
+      "date": "1389-08-26",
+      "title": { "fa": "عید سعید قربان", "en": "Eid al-Adha" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-eid-ghadir",
+      "date": "1389-09-04",
+      "title": { "fa": "عید سعید غدیر خم", "en": "Eid al-Ghadir" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-tasua",
+      "date": "1389-09-24",
+      "title": { "fa": "تاسوعای حسینی", "en": "Tasua" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-ashura",
+      "date": "1389-09-25",
+      "title": { "fa": "عاشورای حسینی", "en": "Ashura" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-arbaeen",
+      "date": "1389-11-05",
+      "title": { "fa": "اربعین حسینی", "en": "Arbaeen" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-demise-prophet-imam-hassan",
+      "date": "1389-11-13",
+      "title": {
+        "fa": "رحلت رسول اکرم؛ شهادت امام حسن مجتبی",
+        "en": "Demise of the Prophet; Martyrdom of Imam Hassan"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-martyrdom-imam-reza",
+      "date": "1389-11-15",
+      "title": {
+        "fa": "شهادت امام رضا",
+        "en": "Martyrdom of Imam Reza"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-islamic-revolution",
+      "date": "1389-11-22",
+      "ruleId": "islamic-revolution",
+      "title": {
+        "fa": "پیروزی انقلاب اسلامی",
+        "en": "Victory of the Islamic Revolution"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1389-birthday-prophet-imam-sadiq",
+      "date": "1389-12-02",
+      "title": {
+        "fa": "میلاد رسول اکرم و امام جعفر صادق",
+        "en": "Birthday of the Prophet and Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1389-oil-nationalization",
+      "date": "1389-12-29",
+      "ruleId": "oil-nationalization",
+      "title": {
+        "fa": "روز ملی شدن صنعت نفت ایران",
+        "en": "Nationalization of the Oil Industry"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    }
+  ]
+}

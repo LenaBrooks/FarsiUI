@@ -101,6 +101,9 @@ const nextConfig = {
     "/docs/changelog": ["./examples/**/*", "./content/docs/**/*"],
     // Specimen preview serves woff2 from the monorepo `fonts/` tree.
     "/catalog-fonts/[...path]": ["../../fonts/**/*"],
+    // Iran calendar page imports holiday/event JSON from the monorepo root.
+    "/calendar": ["../../calendar/years/**/*"],
+    "/calendar/[year]": ["../../calendar/years/**/*"],
   },
   images: {
     remotePatterns: [

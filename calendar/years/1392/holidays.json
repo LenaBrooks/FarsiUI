@@ -1,0 +1,249 @@
+{
+  "year": 1392,
+  "schemaVersion": 1,
+  "dataVersion": "1392.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1392.pdf (official table; titles curated from extract)",
+  "coverage": "national+religious",
+  "notes": [
+    "Holiday list curated from UT Calendar-1392.pdf day table rows marked تعطیل."
+  ],
+  "items": [
+    {
+      "id": "1392-nowruz-1",
+      "date": "1392-01-01",
+      "ruleId": "nowruz-1",
+      "title": { "fa": "آغاز نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1392-nowruz-2",
+      "date": "1392-01-02",
+      "ruleId": "nowruz-2",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1392-nowruz-3",
+      "date": "1392-01-03",
+      "ruleId": "nowruz-3",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1392-nowruz-4",
+      "date": "1392-01-04",
+      "ruleId": "nowruz-4",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1392-islamic-republic-day",
+      "date": "1392-01-12",
+      "ruleId": "islamic-republic-day",
+      "title": {
+        "fa": "روز جمهوری اسلامی ایران",
+        "en": "Islamic Republic Day"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1392-sizdah-bedar",
+      "date": "1392-01-13",
+      "ruleId": "sizdah-bedar",
+      "title": {
+        "fa": "روز طبیعت (سیزده‌به‌در)",
+        "en": "Nature Day (Sizdah Bedar)"
+      },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1392-martyrdom-fatimah",
+      "date": "1392-01-25",
+      "title": {
+        "fa": "شهادت حضرت فاطمه زهرا",
+        "en": "Martyrdom of Fatimah"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-birthday-imam-ali",
+      "date": "1392-03-03",
+      "title": {
+        "fa": "ولادت امام علی و روز پدر",
+        "en": "Birthday of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-demise-imam-khomeini",
+      "date": "1392-03-14",
+      "ruleId": "demise-imam-khomeini",
+      "title": {
+        "fa": "رحلت امام خمینی",
+        "en": "Demise of Imam Khomeini"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1392-khordad-15",
+      "date": "1392-03-15",
+      "ruleId": "khordad-15",
+      "title": { "fa": "قیام ۱۵ خرداد", "en": "15 Khordad Uprising" },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1392-mabath",
+      "date": "1392-03-17",
+      "title": {
+        "fa": "مبعث رسول اکرم",
+        "en": "Mab'ath"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-mid-shaaban",
+      "date": "1392-04-03",
+      "title": {
+        "fa": "ولادت حضرت قائم و جشن نیمه شعبان",
+        "en": "Mid-Sha'ban"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-martyrdom-imam-ali",
+      "date": "1392-05-08",
+      "title": {
+        "fa": "شهادت حضرت علی",
+        "en": "Martyrdom of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-eid-fitr",
+      "date": "1392-05-18",
+      "title": { "fa": "عید سعید فطر", "en": "Eid al-Fitr" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-eid-fitr-2",
+      "date": "1392-05-19",
+      "title": {
+        "fa": "تعطیل به مناسبت عید سعید فطر",
+        "en": "Holiday for Eid al-Fitr"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-martyrdom-imam-sadiq",
+      "date": "1392-06-11",
+      "title": {
+        "fa": "شهادت امام جعفر صادق",
+        "en": "Martyrdom of Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-eid-adha",
+      "date": "1392-07-24",
+      "title": { "fa": "عید سعید قربان", "en": "Eid al-Adha" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-eid-ghadir",
+      "date": "1392-08-02",
+      "title": { "fa": "عید سعید غدیر خم", "en": "Eid al-Ghadir" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-tasua",
+      "date": "1392-08-22",
+      "title": { "fa": "تاسوعای حسینی", "en": "Tasua" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-ashura",
+      "date": "1392-08-23",
+      "title": { "fa": "عاشورای حسینی", "en": "Ashura" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-arbaeen",
+      "date": "1392-10-02",
+      "title": { "fa": "اربعین حسینی", "en": "Arbaeen" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-demise-prophet-imam-hassan",
+      "date": "1392-10-10",
+      "title": {
+        "fa": "رحلت رسول اکرم؛ شهادت امام حسن مجتبی",
+        "en": "Demise of the Prophet; Martyrdom of Imam Hassan"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-martyrdom-imam-reza",
+      "date": "1392-10-12",
+      "title": {
+        "fa": "شهادت امام رضا",
+        "en": "Martyrdom of Imam Reza"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-birthday-prophet-imam-sadiq",
+      "date": "1392-10-29",
+      "title": {
+        "fa": "میلاد رسول اکرم و امام جعفر صادق",
+        "en": "Birthday of the Prophet and Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1392-islamic-revolution",
+      "date": "1392-11-22",
+      "ruleId": "islamic-revolution",
+      "title": {
+        "fa": "پیروزی انقلاب اسلامی",
+        "en": "Victory of the Islamic Revolution"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1392-oil-nationalization",
+      "date": "1392-12-29",
+      "ruleId": "oil-nationalization",
+      "title": {
+        "fa": "روز ملی شدن صنعت نفت ایران",
+        "en": "Nationalization of the Oil Industry"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "year": 1405,
   "schemaVersion": 1,
-  "dataVersion": "1405.2.1",
-  "source": "pipe2time.ir api/1405/events.json (isHoliday:false only); holidays remain UT official",
-  "coverage": "observances-from-time-ir",
+  "dataVersion": "1405.2.3",
+  "source": "Official University of Tehran Calendar Center (calendar.ut.ac.ir).",
+  "coverage": "non-holiday-observances",
   "items": [
     {
       "id": "1405-evt-001",
@@ -32,7 +32,7 @@
       "id": "1405-evt-003",
       "date": "1405-01-07",
       "title": {
-        "fa": "روز جهانی تئاتر[27 March]"
+        "fa": "روز جهانی تئاتر"
       },
       "isHoliday": false,
       "categories": [
@@ -54,7 +54,7 @@
       "id": "1405-evt-005",
       "date": "1405-01-17",
       "title": {
-        "fa": "سروش روز،جشن سروشگان"
+        "fa": "سروش روز، جشن سروشگان"
       },
       "isHoliday": false,
       "categories": [
@@ -65,7 +65,7 @@
       "id": "1405-evt-006",
       "date": "1405-01-18",
       "title": {
-        "fa": "روز جهانی بهداشت[7 April]"
+        "fa": "روز جهانی بهداشت"
       },
       "isHoliday": false,
       "categories": [
@@ -76,7 +76,7 @@
       "id": "1405-evt-007",
       "date": "1405-01-19",
       "title": {
-        "fa": "فروردین روز،جشن فروردینگان"
+        "fa": "فروردین روز، جشن فروردینگان"
       },
       "isHoliday": false,
       "categories": [
@@ -120,7 +120,7 @@
       "id": "1405-evt-011",
       "date": "1405-01-29",
       "title": {
-        "fa": "ولادت حضرت معصومه سلام الله علیها و روز دختران[1 ذوالقعده]"
+        "fa": "ولادت حضرت معصومه سلام الله علیها و روز دختران"
       },
       "isHoliday": false,
       "categories": [
@@ -154,7 +154,7 @@
       "id": "1405-evt-014",
       "date": "1405-02-02",
       "title": {
-        "fa": "جشن گیاه آوری؛ روز زمین[22 April]"
+        "fa": "جشن گیاه آوری؛ روز زمین"
       },
       "isHoliday": false,
       "categories": [
@@ -177,7 +177,7 @@
       "id": "1405-evt-016",
       "date": "1405-02-08",
       "title": {
-        "fa": "ولادت امامرضا علیه السلام[11 ذوالقعده]"
+        "fa": "ولادت امامرضا علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -222,7 +222,7 @@
       "id": "1405-evt-020",
       "date": "1405-02-11",
       "title": {
-        "fa": "روزجهانیکارگر[1 May]"
+        "fa": "روزجهانیکارگر"
       },
       "isHoliday": false,
       "categories": [
@@ -257,7 +257,7 @@
       "id": "1405-evt-023",
       "date": "1405-02-15",
       "title": {
-        "fa": "روز جهانی ماما[5 May]"
+        "fa": "روز جهانی ماما"
       },
       "isHoliday": false,
       "categories": [
@@ -279,7 +279,7 @@
       "id": "1405-evt-025",
       "date": "1405-02-18",
       "title": {
-        "fa": "روز جهانی صلیب سرخ و هلال احمر[8 May]"
+        "fa": "روز جهانی صلیب سرخ و هلال احمر"
       },
       "isHoliday": false,
       "categories": [
@@ -312,7 +312,7 @@
       "id": "1405-evt-028",
       "date": "1405-02-27",
       "title": {
-        "fa": "شهادت امام محمد تقی علیه السلام[30 ذوالقعده]"
+        "fa": "شهادت امام محمد تقی علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -334,7 +334,7 @@
       "id": "1405-evt-030",
       "date": "1405-02-28",
       "title": {
-        "fa": "روز جهانی موزه و میراث فرهنگی[18 May]"
+        "fa": "روز جهانی موزه و میراث فرهنگی"
       },
       "isHoliday": false,
       "categories": [
@@ -378,7 +378,7 @@
       "id": "1405-evt-034",
       "date": "1405-03-03",
       "title": {
-        "fa": "شهادت امام محمد باقر علیه السلام[7 ذوالحجه]"
+        "fa": "شهادت امام محمد باقر علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -400,7 +400,7 @@
       "id": "1405-evt-036",
       "date": "1405-03-05",
       "title": {
-        "fa": "روز عرفه[9 ذوالحجه]"
+        "fa": "روز عرفه"
       },
       "isHoliday": false,
       "categories": [
@@ -412,7 +412,7 @@
       "id": "1405-evt-037",
       "date": "1405-03-06",
       "title": {
-        "fa": "خرداد روز،جشن خردادگان"
+        "fa": "خرداد روز، جشن خردادگان"
       },
       "isHoliday": false,
       "categories": [
@@ -423,7 +423,7 @@
       "id": "1405-evt-038",
       "date": "1405-03-11",
       "title": {
-        "fa": "ولادت امام علی النقی الهادی علیه السلام[15 ذوالحجه]"
+        "fa": "ولادت امام علی النقی الهادی علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -434,7 +434,7 @@
       "id": "1405-evt-039",
       "date": "1405-03-15",
       "title": {
-        "fa": "روز جهانی محیط زیست[5 June]"
+        "fa": "روز جهانی محیط زیست"
       },
       "isHoliday": false,
       "categories": [
@@ -445,7 +445,7 @@
       "id": "1405-evt-040",
       "date": "1405-03-16",
       "title": {
-        "fa": "ولادت امام موسی کاظم علیه السلام[20 ذوالحجه]"
+        "fa": "ولادت امام موسی کاظم علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -456,7 +456,7 @@
       "id": "1405-evt-041",
       "date": "1405-03-20",
       "title": {
-        "fa": "روز جهانی صنایع دستی[10 June]"
+        "fa": "روز جهانی صنایع دستی"
       },
       "isHoliday": false,
       "categories": [
@@ -467,7 +467,7 @@
       "id": "1405-evt-042",
       "date": "1405-03-22",
       "title": {
-        "fa": "روز جهانی مبارزه با کار کودکان[12 June]"
+        "fa": "روز جهانی مبارزه با کار کودکان"
       },
       "isHoliday": false,
       "categories": [
@@ -478,7 +478,7 @@
       "id": "1405-evt-043",
       "date": "1405-03-24",
       "title": {
-        "fa": "روز جهانی اهدای خون[14 June]"
+        "fa": "روز جهانی اهدای خون"
       },
       "isHoliday": false,
       "categories": [
@@ -511,7 +511,7 @@
       "id": "1405-evt-046",
       "date": "1405-03-27",
       "title": {
-        "fa": "روز جهانی بیابان زدایی[17 June]"
+        "fa": "روز جهانی بیابان زدایی"
       },
       "isHoliday": false,
       "categories": [
@@ -544,7 +544,7 @@
       "id": "1405-evt-049",
       "date": "1405-04-05",
       "title": {
-        "fa": "روز جهانی مبارزه با مواد مخدر[26 June]"
+        "fa": "روز جهانی مبارزه با مواد مخدر"
       },
       "isHoliday": false,
       "categories": [
@@ -555,7 +555,7 @@
       "id": "1405-evt-050",
       "date": "1405-04-06",
       "title": {
-        "fa": "شهادتامام زین العابدین علیه السلام[12 محرم]"
+        "fa": "شهادتامام زین العابدین علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -611,7 +611,7 @@
       "id": "1405-evt-055",
       "date": "1405-04-13",
       "title": {
-        "fa": "تیر روز،جشن تیرگان"
+        "fa": "تیر روز، جشن تیرگان"
       },
       "isHoliday": false,
       "categories": [
@@ -677,7 +677,7 @@
       "id": "1405-evt-061",
       "date": "1405-05-07",
       "title": {
-        "fa": "مرداد روز،جشن مردادگان"
+        "fa": "مرداد روز، جشن مردادگان"
       },
       "isHoliday": false,
       "categories": [
@@ -710,7 +710,7 @@
       "id": "1405-evt-064",
       "date": "1405-05-10",
       "title": {
-        "fa": "آغاز هفته جهانی شیردهی[1 August]"
+        "fa": "آغاز هفته جهانی شیردهی"
       },
       "isHoliday": false,
       "categories": [
@@ -743,7 +743,7 @@
       "id": "1405-evt-067",
       "date": "1405-05-22",
       "title": {
-        "fa": "روز جهانی چپ دست ها[13 August]"
+        "fa": "روز جهانی چپ دست ها"
       },
       "isHoliday": false,
       "categories": [
@@ -754,7 +754,7 @@
       "id": "1405-evt-068",
       "date": "1405-05-23",
       "title": {
-        "fa": "هجرت پیامبر اکرم از مکه به مدینه[1 ربيع الاول]"
+        "fa": "هجرت پیامبر اکرم از مکه به مدینه"
       },
       "isHoliday": false,
       "categories": [
@@ -798,7 +798,7 @@
       "id": "1405-evt-072",
       "date": "1405-05-28",
       "title": {
-        "fa": "روز جهانی عکاسی[19 August]"
+        "fa": "روز جهانی عکاسی"
       },
       "isHoliday": false,
       "categories": [
@@ -831,7 +831,7 @@
       "id": "1405-evt-075",
       "date": "1405-06-03",
       "title": {
-        "fa": "میلاد رسول اکرم به روایت اهل سنت[12 ربيع الاول]"
+        "fa": "میلاد رسول اکرم به روایت اهل سنت"
       },
       "isHoliday": false,
       "categories": [
@@ -854,7 +854,7 @@
       "id": "1405-evt-077",
       "date": "1405-06-04",
       "title": {
-        "fa": "شهریور روز،جشن شهریورگان"
+        "fa": "شهریور روز، جشن شهریورگان"
       },
       "isHoliday": false,
       "categories": [
@@ -953,7 +953,7 @@
       "id": "1405-evt-086",
       "date": "1405-06-19",
       "title": {
-        "fa": "روز جهانی پیشگیری از خودکشی[10 September]"
+        "fa": "روز جهانی پیشگیری از خودکشی"
       },
       "isHoliday": false,
       "categories": [
@@ -964,7 +964,7 @@
       "id": "1405-evt-087",
       "date": "1405-06-20",
       "title": {
-        "fa": "حمله به برج‌های دوقلوی مرکز تجارت جهانی[11 September]"
+        "fa": "حمله به برج‌های دوقلوی مرکز تجارت جهانی"
       },
       "isHoliday": false,
       "categories": [
@@ -986,7 +986,7 @@
       "id": "1405-evt-089",
       "date": "1405-06-21",
       "title": {
-        "fa": "روز گرامیداشت برنامه نویسان[12 September]"
+        "fa": "روز گرامیداشت برنامه نویسان"
       },
       "isHoliday": false,
       "categories": [
@@ -1008,7 +1008,7 @@
       "id": "1405-evt-091",
       "date": "1405-06-28",
       "title": {
-        "fa": "ولادت امام حسن عسکری علیه السلام[8 ربيع الثاني]"
+        "fa": "ولادت امام حسن عسکری علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -1030,7 +1030,7 @@
       "id": "1405-evt-093",
       "date": "1405-06-30",
       "title": {
-        "fa": "وفات حضرت معصومه سلام الله علیها[10 ربيع الثاني]"
+        "fa": "وفات حضرت معصومه سلام الله علیها"
       },
       "isHoliday": false,
       "categories": [
@@ -1041,7 +1041,7 @@
       "id": "1405-evt-094",
       "date": "1405-06-30",
       "title": {
-        "fa": "روز جهانی صلح[21 September]"
+        "fa": "روز جهانی صلح"
       },
       "isHoliday": false,
       "categories": [
@@ -1074,7 +1074,7 @@
       "id": "1405-evt-097",
       "date": "1405-07-05",
       "title": {
-        "fa": "روز جهانی جهانگردی[27 September]"
+        "fa": "روز جهانی جهانگردی"
       },
       "isHoliday": false,
       "categories": [
@@ -1118,7 +1118,7 @@
       "id": "1405-evt-101",
       "date": "1405-07-08",
       "title": {
-        "fa": "روز جهانی ناشنوایان[30 September]"
+        "fa": "روز جهانی ناشنوایان"
       },
       "isHoliday": false,
       "categories": [
@@ -1129,7 +1129,7 @@
       "id": "1405-evt-102",
       "date": "1405-07-08",
       "title": {
-        "fa": "روز جهانی ترجمه و مترجم[30 September]"
+        "fa": "روز جهانی ترجمه و مترجم"
       },
       "isHoliday": false,
       "categories": [
@@ -1140,7 +1140,7 @@
       "id": "1405-evt-103",
       "date": "1405-07-09",
       "title": {
-        "fa": "روز جهانی سالمندان[1 October]"
+        "fa": "روز جهانی سالمندان"
       },
       "isHoliday": false,
       "categories": [
@@ -1151,7 +1151,7 @@
       "id": "1405-evt-104",
       "date": "1405-07-10",
       "title": {
-        "fa": "مهر روز،جشن مهرگان"
+        "fa": "مهر روز، جشن مهرگان"
       },
       "isHoliday": false,
       "categories": [
@@ -1173,7 +1173,7 @@
       "id": "1405-evt-106",
       "date": "1405-07-13",
       "title": {
-        "fa": "روز جهانی معلم[5 October]"
+        "fa": "روز جهانی معلم"
       },
       "isHoliday": false,
       "categories": [
@@ -1206,7 +1206,7 @@
       "id": "1405-evt-109",
       "date": "1405-07-17",
       "title": {
-        "fa": "روز جهانی پست[9 October]"
+        "fa": "روز جهانی پست"
       },
       "isHoliday": false,
       "categories": [
@@ -1217,7 +1217,7 @@
       "id": "1405-evt-110",
       "date": "1405-07-18",
       "title": {
-        "fa": "روز جهانی مبارزه با حکم اعدام[10 October]"
+        "fa": "روز جهانی مبارزه با حکم اعدام"
       },
       "isHoliday": false,
       "categories": [
@@ -1228,7 +1228,7 @@
       "id": "1405-evt-111",
       "date": "1405-07-19",
       "title": {
-        "fa": "روز جهانی دختر[11 October]"
+        "fa": "روز جهانی دختر"
       },
       "isHoliday": false,
       "categories": [
@@ -1261,7 +1261,7 @@
       "id": "1405-evt-114",
       "date": "1405-07-22",
       "title": {
-        "fa": "روز جهانی استاندارد[14 October]"
+        "fa": "روز جهانی استاندارد"
       },
       "isHoliday": false,
       "categories": [
@@ -1272,7 +1272,7 @@
       "id": "1405-evt-115",
       "date": "1405-07-23",
       "title": {
-        "fa": "روز جهانی عصای سفید[15 October]"
+        "fa": "روز جهانی عصای سفید"
       },
       "isHoliday": false,
       "categories": [
@@ -1283,7 +1283,7 @@
       "id": "1405-evt-116",
       "date": "1405-07-24",
       "title": {
-        "fa": "ولادت حضرت زینب سلام الله علیها و روز پرستار و بهورز[5 جمادي الاولي]"
+        "fa": "ولادت حضرت زینب سلام الله علیها و روز پرستار و بهورز"
       },
       "isHoliday": false,
       "categories": [
@@ -1295,7 +1295,7 @@
       "id": "1405-evt-117",
       "date": "1405-07-24",
       "title": {
-        "fa": "روز جهانی غذا[16 October]"
+        "fa": "روز جهانی غذا"
       },
       "isHoliday": false,
       "categories": [
@@ -1306,7 +1306,7 @@
       "id": "1405-evt-118",
       "date": "1405-07-25",
       "title": {
-        "fa": "روز جهانی ریشه کنی فقر[17 October]"
+        "fa": "روز جهانی ریشه کنی فقر"
       },
       "isHoliday": false,
       "categories": [
@@ -1427,7 +1427,7 @@
       "id": "1405-evt-129",
       "date": "1405-08-23",
       "title": {
-        "fa": "روز جهانی دیابت[14 November]"
+        "fa": "روز جهانی دیابت"
       },
       "isHoliday": false,
       "categories": [
@@ -1449,7 +1449,7 @@
       "id": "1405-evt-131",
       "date": "1405-08-28",
       "title": {
-        "fa": "روز جهانی فلسفه[19 November]"
+        "fa": "روز جهانی فلسفه"
       },
       "isHoliday": false,
       "categories": [
@@ -1460,7 +1460,7 @@
       "id": "1405-evt-132",
       "date": "1405-08-28",
       "title": {
-        "fa": "روز جهانی آقایان[19 November]"
+        "fa": "روز جهانی آقایان"
       },
       "isHoliday": false,
       "categories": [
@@ -1471,7 +1471,7 @@
       "id": "1405-evt-133",
       "date": "1405-08-29",
       "title": {
-        "fa": "روز جهانی کودک[20 November]"
+        "fa": "روز جهانی کودک"
       },
       "isHoliday": false,
       "categories": [
@@ -1493,7 +1493,7 @@
       "id": "1405-evt-135",
       "date": "1405-09-04",
       "title": {
-        "fa": "روز جهانی مبارزه با خشونت علیه زنان[25 November]"
+        "fa": "روز جهانی مبارزه با خشونت علیه زنان"
       },
       "isHoliday": false,
       "categories": [
@@ -1526,7 +1526,7 @@
       "id": "1405-evt-138",
       "date": "1405-09-09",
       "title": {
-        "fa": "جشن آذرگان ،آذر روز"
+        "fa": "جشن آذرگان، آذر روز"
       },
       "isHoliday": false,
       "categories": [
@@ -1537,7 +1537,7 @@
       "id": "1405-evt-139",
       "date": "1405-09-09",
       "title": {
-        "fa": "ولادت حضرت فاطمه زهرا سلام الله علیها و روز مادر[20 جمادي الثانيه]"
+        "fa": "ولادت حضرت فاطمه زهرا سلام الله علیها و روز مادر"
       },
       "isHoliday": false,
       "categories": [
@@ -1560,7 +1560,7 @@
       "id": "1405-evt-141",
       "date": "1405-09-10",
       "title": {
-        "fa": "روز جهانی ایدز[1 December]"
+        "fa": "روز جهانی ایدز"
       },
       "isHoliday": false,
       "categories": [
@@ -1571,7 +1571,7 @@
       "id": "1405-evt-142",
       "date": "1405-09-12",
       "title": {
-        "fa": "روز جهانی معلولان[3 December]"
+        "fa": "روز جهانی معلولان"
       },
       "isHoliday": false,
       "categories": [
@@ -1615,7 +1615,7 @@
       "id": "1405-evt-146",
       "date": "1405-09-19",
       "title": {
-        "fa": "ولادتامام محمد باقر علیه السلام[1 رجب]"
+        "fa": "ولادتامام محمد باقر علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -1626,7 +1626,7 @@
       "id": "1405-evt-147",
       "date": "1405-09-20",
       "title": {
-        "fa": "روز جهانی کوه نوردی[11 December]"
+        "fa": "روز جهانی کوه نوردی"
       },
       "isHoliday": false,
       "categories": [
@@ -1637,7 +1637,7 @@
       "id": "1405-evt-148",
       "date": "1405-09-21",
       "title": {
-        "fa": "شهادت امام علی النقی الهادی علیه السلام[3 رجب]"
+        "fa": "شهادت امام علی النقی الهادی علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -1670,7 +1670,7 @@
       "id": "1405-evt-151",
       "date": "1405-09-28",
       "title": {
-        "fa": "ولادت امام محمد تقی علیه السلام[10 رجب]"
+        "fa": "ولادت امام محمد تقی علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -1704,7 +1704,7 @@
       "id": "1405-evt-154",
       "date": "1405-10-03",
       "title": {
-        "fa": "وفات حضرت زینب سلام الله علیها[15 رجب]"
+        "fa": "وفات حضرت زینب سلام الله علیها"
       },
       "isHoliday": false,
       "categories": [
@@ -1715,7 +1715,7 @@
       "id": "1405-evt-155",
       "date": "1405-10-04",
       "title": {
-        "fa": "جشن کریسمس[25 December]"
+        "fa": "جشن کریسمس"
       },
       "isHoliday": false,
       "categories": [
@@ -1761,7 +1761,7 @@
       "id": "1405-evt-159",
       "date": "1405-10-11",
       "title": {
-        "fa": "جشن آغاز سال نو میلادی[1 January]"
+        "fa": "جشن آغاز سال نو میلادی"
       },
       "isHoliday": false,
       "categories": [
@@ -1773,7 +1773,7 @@
       "id": "1405-evt-160",
       "date": "1405-10-13",
       "title": {
-        "fa": "شهادت امام موسی کاظم علیه السلام[25 رجب]"
+        "fa": "شهادت امام موسی کاظم علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -1817,7 +1817,7 @@
       "id": "1405-evt-164",
       "date": "1405-10-21",
       "title": {
-        "fa": "ولادت سالار شهیدان، امام حسین علیه السلام و روز پاسدار[3 شعبان]"
+        "fa": "ولادت سالار شهیدان، امام حسین علیه السلام و روز پاسدار"
       },
       "isHoliday": false,
       "categories": [
@@ -1829,7 +1829,7 @@
       "id": "1405-evt-165",
       "date": "1405-10-22",
       "title": {
-        "fa": "ولادت ابوالفضل العباس علیه السلام و روز جانباز[4 شعبان]"
+        "fa": "ولادت ابوالفضل العباس علیه السلام و روز جانباز"
       },
       "isHoliday": false,
       "categories": [
@@ -1852,7 +1852,7 @@
       "id": "1405-evt-167",
       "date": "1405-10-23",
       "title": {
-        "fa": "ولادت امام زین العابدین علیه السلام[5 شعبان]"
+        "fa": "ولادت امام زین العابدین علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -1863,7 +1863,7 @@
       "id": "1405-evt-168",
       "date": "1405-10-29",
       "title": {
-        "fa": "ولادت علی اکبر علیه السلام و روز جوان[11 شعبان]"
+        "fa": "ولادت علی اکبر علیه السلام و روز جوان"
       },
       "isHoliday": false,
       "categories": [
@@ -1953,7 +1953,7 @@
       "id": "1405-evt-176",
       "date": "1405-11-22",
       "title": {
-        "fa": "حمله به سفارت روسیه و قتل گریبایدوف سفیر روسیه تزاری در ایران[11 February]"
+        "fa": "حمله به سفارت روسیه و قتل گریبایدوف سفیر روسیه تزاری در ایران"
       },
       "isHoliday": false,
       "categories": [
@@ -1964,7 +1964,7 @@
       "id": "1405-evt-177",
       "date": "1405-11-23",
       "title": {
-        "fa": "زادروز چارلز داروین بنیانگذار نظریه‌ی فرگشت از طریق انتخاب طبیعی[12 February]"
+        "fa": "زادروز چارلز داروین بنیانگذار نظریه‌ی فرگشت از طریق انتخاب طبیعی"
       },
       "isHoliday": false,
       "categories": [
@@ -1976,7 +1976,7 @@
       "id": "1405-evt-178",
       "date": "1405-11-25",
       "title": {
-        "fa": "روز ولنتاین[14 February]"
+        "fa": "روز ولنتاین"
       },
       "isHoliday": false,
       "categories": [
@@ -1999,7 +1999,7 @@
       "id": "1405-evt-180",
       "date": "1405-12-02",
       "title": {
-        "fa": "روز جهانی زبان مادری[21 February]"
+        "fa": "روز جهانی زبان مادری"
       },
       "isHoliday": false,
       "categories": [
@@ -2010,7 +2010,7 @@
       "id": "1405-evt-181",
       "date": "1405-12-03",
       "title": {
-        "fa": "ولادت امام حسن مجتبی علیه السلام[15 رمضان]"
+        "fa": "ولادت امام حسن مجتبی علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -2043,7 +2043,7 @@
       "id": "1405-evt-184",
       "date": "1405-12-06",
       "title": {
-        "fa": "شب قدر[18 رمضان]"
+        "fa": "شب قدر"
       },
       "isHoliday": false,
       "categories": [
@@ -2054,7 +2054,7 @@
       "id": "1405-evt-185",
       "date": "1405-12-07",
       "title": {
-        "fa": "ضربت خوردن حضرت علی علیه السلام[19 رمضان]"
+        "fa": "ضربت خوردن حضرت علی علیه السلام"
       },
       "isHoliday": false,
       "categories": [
@@ -2087,7 +2087,7 @@
       "id": "1405-evt-188",
       "date": "1405-12-10",
       "title": {
-        "fa": "شب قدر[22 رمضان]"
+        "fa": "شب قدر"
       },
       "isHoliday": false,
       "categories": [
@@ -2109,7 +2109,7 @@
       "id": "1405-evt-190",
       "date": "1405-12-17",
       "title": {
-        "fa": "روزجهانی زنان[8 March]"
+        "fa": "روزجهانی زنان"
       },
       "isHoliday": false,
       "categories": [
@@ -2131,7 +2131,7 @@
       "id": "1405-evt-192",
       "date": "1405-12-29",
       "title": {
-        "fa": "روز جهانی شادی[20 March]"
+        "fa": "روز جهانی شادی"
       },
       "isHoliday": false,
       "categories": [
@@ -2140,8 +2140,7 @@
     }
   ],
   "notes": [
-    "Non-holiday observances curated from Time.ir via pipe2time. Official holidays stay in holidays.json (UT Holiday-1405.pdf).",
-    "Hijri-linked observances here may differ by ±1 day from the official UT Calendar PDF; verify critical lunar dates if needed.",
-    "Titles cleaned from upstream text; English titles omitted in this release."
+    "Non-holiday observances for Jalali 1405. Official holidays stay in holidays.json.",
+    "Hijri-linked observances may differ by ±1 day from printed calendar tables; verify critical lunar dates if needed."
   ]
 }

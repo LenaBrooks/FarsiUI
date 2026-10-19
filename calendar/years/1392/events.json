@@ -1,0 +1,1263 @@
+{
+  "year": 1392,
+  "schemaVersion": 1,
+  "dataVersion": "1392.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1392.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1392-evt-001",
+      "date": "1392-01-05",
+      "title": {
+        "fa": "به روایتی ه ق االله علیها ادت حضرت فاطمه زهرا سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-002",
+      "date": "1392-01-18",
+      "title": {
+        "fa": "روز جهانی بهداشت روز سلامتی 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-003",
+      "date": "1392-01-25",
+      "title": {
+        "fa": "وری روز بزرگداشت عطار نیشاب ه ق ادت حضرت فاطمه زهرا سلام االله علیها 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-004",
+      "date": "1392-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی و نیروی زمینی 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-005",
+      "date": "1392-02-01",
+      "title": {
+        "fa": "روز بزرگداشت سعدی یلآور الثانیه جمادی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-006",
+      "date": "1392-02-02",
+      "title": {
+        "fa": "ه ش سالروز اعلام انقلاب فرهنگی ه ش ن انقلاب اسلامی تأسیس سپاه پاسدارا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-007",
+      "date": "1392-02-03",
+      "title": {
+        "fa": "روز بزرگداشت شیخ بهایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-008",
+      "date": "1392-02-04",
+      "title": {
+        "fa": "روز تکریم مادران و همسران دا البنین سلام االله علیها سالروز وفات حضرت ام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-009",
+      "date": "1392-02-05",
+      "title": {
+        "fa": "ه ش شکست حمله نظامی آمریکا به ایران در طبس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-010",
+      "date": "1392-02-09",
+      "title": {
+        "fa": "روز شوراها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-011",
+      "date": "1392-02-10",
+      "title": {
+        "fa": "روز ملی خلیج فارس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-012",
+      "date": "1392-02-12",
+      "title": {
+        "fa": "م روز معل ه ش ادت استاد مرتضی مطهری 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-013",
+      "date": "1392-02-15",
+      "title": {
+        "fa": "شیخ صدوق روز بزرگداشت 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-014",
+      "date": "1392-02-18",
+      "title": {
+        "fa": "روز بزرگداشت شیخ کلینی 9 نبه ش پنج 8"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-015",
+      "date": "1392-02-22",
+      "title": {
+        "fa": "ه ق السلام ولادت حضرت امام محمد باقر علیه جبر 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-016",
+      "date": "1392-02-25",
+      "title": {
+        "fa": "وسی روز بزرگداشت فرد 4"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-017",
+      "date": "1392-02-28",
+      "title": {
+        "fa": "بزرگداشت حکیم عمر خیام روز 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-018",
+      "date": "1392-03-01",
+      "title": {
+        "fa": "صدرالمتألهین صدرا وری و بهینه سازی مصرف روز بزرگداشت ملا روز بهره مه رجب"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-019",
+      "date": "1392-03-04",
+      "title": {
+        "fa": "روز مقاومت و پایداری روز دزفول"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-020",
+      "date": "1392-03-05",
+      "title": {
+        "fa": "ه ق 2 معظمه تغییر قبله مسلمین از بیت المقدس به مکه ه ق وفات حضرت زینب سلام االله علیها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-021",
+      "date": "1392-03-22",
+      "title": {
+        "fa": "و روز پاسدار ه ق 4 السلام ولادت حضرت امام حسین علیه 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-022",
+      "date": "1392-03-23",
+      "title": {
+        "fa": "و روز جانباز ه ق ولادت حضرت ابوالفضل العباس 4"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-023",
+      "date": "1392-03-24",
+      "title": {
+        "fa": "ه ق السلام العابدین علیه ولادت حضرت امام زین 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-024",
+      "date": "1392-03-26",
+      "title": {
+        "fa": "ه ش ایی، امانی، صفار هرندی و نیک نژاد بخار : ادت سربازان دلیر اسلام 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-025",
+      "date": "1392-03-27",
+      "title": {
+        "fa": "ه ش االله علیه رحمة تشکیل جهاد سازندگی به فرمان حضرت امام خمینی روز جهاد کشاورزی 8"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-026",
+      "date": "1392-03-29",
+      "title": {
+        "fa": "ه ش درگذشت دکتر علی شریعتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-027",
+      "date": "1392-03-30",
+      "title": {
+        "fa": "و روز جوان ه ق السلام ولادت حضرت علی اکبر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-028",
+      "date": "1392-04-08",
+      "title": {
+        "fa": "های شیمیایی و میکروبی روز مبارزه با سلاح"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-029",
+      "date": "1392-04-10",
+      "title": {
+        "fa": "روز صنعت و معدن ئیهژو 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-030",
+      "date": "1392-04-11",
+      "title": {
+        "fa": "ه ش ید محراب به دست منافقان االله صدوقی چهارمین ادت آیت 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-031",
+      "date": "1392-04-12",
+      "title": {
+        "fa": "ه ش جنایتکار هواپیمای مسافربری جمهوری اسلامی ایران توسط ناوگان آمریکای به حمله ددمنشانه 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-032",
+      "date": "1392-04-14",
+      "title": {
+        "fa": "روز قلم 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-033",
+      "date": "1392-04-18",
+      "title": {
+        "fa": "روز ادبیات کودکان و نوجوانان 9"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-034",
+      "date": "1392-04-21",
+      "title": {
+        "fa": "روز عفاف و حجاب 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-035",
+      "date": "1392-04-25",
+      "title": {
+        "fa": "اعی روز بهزیستی و تأمین اجتم 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-036",
+      "date": "1392-04-28",
+      "title": {
+        "fa": "علیها وفات حضرت خدیجه سلام االله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-037",
+      "date": "1392-05-02",
+      "title": {
+        "fa": "روز اکرام و ه ق 3 السلام ولادت حضرت امام حسن مجتبی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-038",
+      "date": "1392-05-05",
+      "title": {
+        "fa": "ه ش ز عملیات افتخار آفرین مرصاد شب قدر سالرو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-039",
+      "date": "1392-05-06",
+      "title": {
+        "fa": "ه ق السلام ضربت خوردن حضرت علی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-040",
+      "date": "1392-05-07",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-041",
+      "date": "1392-05-08",
+      "title": {
+        "fa": "ه ق السلام ادت حضرت علی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-042",
+      "date": "1392-05-09",
+      "title": {
+        "fa": "شب قدر روز اهدای خون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-043",
+      "date": "1392-05-11",
+      "title": {
+        "fa": "آخرین جمعه ماه رمضان روز جهانی قدس 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-044",
+      "date": "1392-05-14",
+      "title": {
+        "fa": "روز حقوق بشر اسلامی و کرامت انسانی ه ش صدور فرمان مشروطیت 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-045",
+      "date": "1392-05-16",
+      "title": {
+        "fa": "ه ش تشکیل جهاد دانشگاهی 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-046",
+      "date": "1392-05-17",
+      "title": {
+        "fa": "روز خبرنگار 8"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-047",
+      "date": "1392-05-23",
+      "title": {
+        "fa": "روز مقاومت اسلامی 6"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-048",
+      "date": "1392-05-26",
+      "title": {
+        "fa": "ه ش آغاز بازگشت آزادگان به میهن اسلامی 9"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-049",
+      "date": "1392-05-28",
+      "title": {
+        "fa": "ه ش کودتای آمریکا برای بازگرداندن شاه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-050",
+      "date": "1392-05-30",
+      "title": {
+        "fa": "روز بزرگداشت علامه مجلسی روز جهانی مسجد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-051",
+      "date": "1392-06-01",
+      "title": {
+        "fa": "روز بزرگداشت ابوعلی سینا روز پزشک اوت شوال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-052",
+      "date": "1392-06-04",
+      "title": {
+        "fa": "روز کارمند"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-053",
+      "date": "1392-06-05",
+      "title": {
+        "fa": "روز بزرگداشت محمدبن زکریای رازی روز داروسازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-054",
+      "date": "1392-06-10",
+      "title": {
+        "fa": "سپتامبر 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-055",
+      "date": "1392-06-11",
+      "title": {
+        "fa": "ه ق السلام ادت حضرت امام جعفر صادق علیه 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-056",
+      "date": "1392-06-12",
+      "title": {
+        "fa": "سالروز ادت رئیسعلی دلواری رزه با استعمار انگلیس روز مبا 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-057",
+      "date": "1392-06-13",
+      "title": {
+        "fa": "روز تعاون روز بزرگداشت ابوریحان بیرونی 4"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-058",
+      "date": "1392-06-14",
+      "title": {
+        "fa": "ه ش قدوسی و سرتیپ وحید دستجردی االله ادت آیت 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-059",
+      "date": "1392-06-16",
+      "title": {
+        "fa": "و روز دختران ه ق ولادت حضرت معصومه سلام االله علیها 7 القعده ذی 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-060",
+      "date": "1392-06-17",
+      "title": {
+        "fa": "ه ش ریور و کشتار جمعی از مردم به دست مأموران ستم شاهی پهلوی قیام 8 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-061",
+      "date": "1392-06-19",
+      "title": {
+        "fa": "ه ش االله سیدمحمود طالقانی اولین امام جمعه تهران آیت وفات 4"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-062",
+      "date": "1392-06-21",
+      "title": {
+        "fa": "السلام علیه اشت حضرت احمد بن موسی شاهچراغ روز بزرگد 6"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-063",
+      "date": "1392-06-26",
+      "title": {
+        "fa": "ه ق السلام ولادت حضرت امام رضا علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-064",
+      "date": "1392-06-27",
+      "title": {
+        "fa": "روز شعر و ادب فارسی روز بزرگداشت استاد سید محمد حسین ریار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-065",
+      "date": "1392-07-05",
+      "title": {
+        "fa": "ه ش السلام شکست حصر آبادان در عملیات ثامن الائمه علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-066",
+      "date": "1392-07-07",
+      "title": {
+        "fa": "ه ش آرا کلاهدوز و جهان نامجو، فلاحی، فکوری، : نشانی و ایمنی ادت سرداران اسلام روز آتش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-067",
+      "date": "1392-07-08",
+      "title": {
+        "fa": "روز بزرگداشت مولوی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-068",
+      "date": "1392-07-09",
+      "title": {
+        "fa": "روز همبستگی و همدردی با کودکان و نوجوانان فلسطینی کتبرا 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-069",
+      "date": "1392-07-13",
+      "title": {
+        "fa": "انتظامی روز نیروی ه ش از عراق به پاریس االله علیه حمة ر هجرت حضرت امام خمینی 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-070",
+      "date": "1392-07-14",
+      "title": {
+        "fa": "روز دامپزشکی ه ق جوادالائمه السلام ادت حضرت امام محمد تقی علیه 6"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-071",
+      "date": "1392-07-21",
+      "title": {
+        "fa": "السلام ادت حضرت امام محمد باقر علیه 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-072",
+      "date": "1392-07-26",
+      "title": {
+        "fa": "روز تربیت بدنی و ورزش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-073",
+      "date": "1392-07-29",
+      "title": {
+        "fa": "ه ق ولادت حضرت امام علی النقی الهادی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-074",
+      "date": "1392-08-04",
+      "title": {
+        "fa": "ه ش علیه پذیرش کاپیتولاسیون علیه االله حمة ر خمینی امام حضرت و افشاگری اعتراض"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-075",
+      "date": "1392-08-09",
+      "title": {
+        "fa": "روز خانواده و تکریم بازنشستگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-076",
+      "date": "1392-08-10",
+      "title": {
+        "fa": "ه ش االله قاضی طباطبایی اولین ید محراب به دست منافقان ادت آیت نوامبر 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-077",
+      "date": "1392-08-14",
+      "title": {
+        "fa": "روز فرهنگ عمومی هجری قمری آغاز سال 5 محرم 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-078",
+      "date": "1392-08-25",
+      "title": {
+        "fa": "ه ق العابدین ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-079",
+      "date": "1392-09-05",
+      "title": {
+        "fa": "ه ش االله علیه حمة ر حضرت امام خمینی فرمان به بسیج مستضعفان تشکیل مستضعفان روز بسیج"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-080",
+      "date": "1392-09-07",
+      "title": {
+        "fa": "روز نیروی دریایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-081",
+      "date": "1392-09-08",
+      "title": {
+        "fa": "به روایتی ه ق العابدین ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-082",
+      "date": "1392-09-09",
+      "title": {
+        "fa": "روز بزرگداشت شیخ مفید"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-083",
+      "date": "1392-09-10",
+      "title": {
+        "fa": "و روز مجلس ه ش االله سید حسن مدرس ادت آیت دسامبر 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-084",
+      "date": "1392-09-12",
+      "title": {
+        "fa": "روز جهانی معلولان ه ش تصویب قانون اساسی جمهوری اسلامی ایران 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-085",
+      "date": "1392-09-16",
+      "title": {
+        "fa": "روز دانشجو 7 4"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-086",
+      "date": "1392-09-20",
+      "title": {
+        "fa": "االله دستغیب سومین ید محراب به دست منافقان ادت آیت 8"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-087",
+      "date": "1392-09-25",
+      "title": {
+        "fa": "روز پژوهش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-088",
+      "date": "1392-09-27",
+      "title": {
+        "fa": "ه و دانشگاه روز وحدت حوز ه ش االله دکتر محمد مفتح ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-089",
+      "date": "1392-10-04",
+      "title": {
+        "fa": "السلام ولادت حضرت عیسی مسیح علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-090",
+      "date": "1392-10-07",
+      "title": {
+        "fa": "ه ش االله علیه حمة ر سواد آموزی به فرمان حضرت امام خمینی سالروز تشکیل نهضت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-091",
+      "date": "1392-10-09",
+      "title": {
+        "fa": "روز وقف روز بصیرت و میثاق امت با ولایت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-092",
+      "date": "1392-10-10",
+      "title": {
+        "fa": "ه ق السلام علیه ادت حضرت امام حسن مجتبی ه ق االله علیه و آله رحلت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-093",
+      "date": "1392-10-11",
+      "title": {
+        "fa": "میلادی آغاز سال ژانویه 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-094",
+      "date": "1392-10-12",
+      "title": {
+        "fa": "ه ق السلام ادت حضرت امام رضا علیه 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-095",
+      "date": "1392-10-13",
+      "title": {
+        "fa": "االله علیه و آله از مکه به مدینه هجرت حضرت رسول اکرم صلی 3 الاول ربیع 1"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-096",
+      "date": "1392-10-19",
+      "title": {
+        "fa": "ه ش قیام خونین مردم قم 9 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-097",
+      "date": "1392-10-20",
+      "title": {
+        "fa": "ه ش ادت میرزا تقی خان امیرکبیر ه ق السلام ادت حضرت امام حسن عسکری علیه 8"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-098",
+      "date": "1392-10-22",
+      "title": {
+        "fa": "ه ش االله علیه حمة ر تشکیل شورای انقلاب به فرمان حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-099",
+      "date": "1392-10-24",
+      "title": {
+        "fa": "آغاز هفته وحدت االله علیه و آله به روایت اهل سنت رم صلی حضرت رسول اک ولادت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-100",
+      "date": "1392-10-26",
+      "title": {
+        "fa": "ه ش فرار شاه معدوم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-101",
+      "date": "1392-10-27",
+      "title": {
+        "fa": "ه ش ادت نواب صفوی، طهماسبی، برادران واحدی و ذوالقدر از فداییان اسلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-102",
+      "date": "1392-11-06",
+      "title": {
+        "fa": "سالروز حماسه مردم آمل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-103",
+      "date": "1392-11-14",
+      "title": {
+        "fa": "روز فناوری فضایی 3 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-104",
+      "date": "1392-11-16",
+      "title": {
+        "fa": "6 6 ه شنب پنج 5 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-105",
+      "date": "1392-11-19",
+      "title": {
+        "fa": "روز نیروی هوایی ه ق السلام عسکری علیه ولادت حضرت امام حسن 8 8"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-106",
+      "date": "1392-11-21",
+      "title": {
+        "fa": "ه ق االله علیها وفات حضرت معصومه سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-107",
+      "date": "1392-11-29",
+      "title": {
+        "fa": "ه ش قیام مردم تبریز به مناسبت چهلمین روز ادت دای قم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-108",
+      "date": "1392-12-05",
+      "title": {
+        "fa": "روز بزرگداشت خواجه نصیرالدین طوسی روز مهندسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-109",
+      "date": "1392-12-14",
+      "title": {
+        "fa": "روز احسان و نیکوکاری 5 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-110",
+      "date": "1392-12-15",
+      "title": {
+        "fa": "روز درختکاری 6 4"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-111",
+      "date": "1392-12-16",
+      "title": {
+        "fa": "و روز پرستار ق . ه 5 سلام االله علیها ولادت حضرت زینب 7 5"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-112",
+      "date": "1392-12-18",
+      "title": {
+        "fa": "الدین اسدآبادی روز بزرگداشت سید جمال 9 7"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-113",
+      "date": "1392-12-24",
+      "title": {
+        "fa": "به روایتی ه ق االله علیها ادت حضرت فاطمه زهرا سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1392-evt-114",
+      "date": "1392-12-25",
+      "title": {
+        "fa": "ه شنب دو روز بزرگداشت پروین اعتصامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

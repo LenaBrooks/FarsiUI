@@ -1,0 +1,1263 @@
+{
+  "year": 1393,
+  "schemaVersion": 1,
+  "dataVersion": "1393.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1393.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1393-evt-001",
+      "date": "1393-01-18",
+      "title": {
+        "fa": "روز سلامتی روز جهانی بهداشت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-002",
+      "date": "1393-01-20",
+      "title": {
+        "fa": "روز ملی فناوری هسته ای روز هنر انقلاب اسلامی سالروز شهادت سید مرتضی آوینی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-003",
+      "date": "1393-01-21",
+      "title": {
+        "fa": "شهادت امیر سپهبد علی صیاد شیرازی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-004",
+      "date": "1393-01-24",
+      "title": {
+        "fa": "سالروز وفات حضرت ام البنین سلام االله علیها روز تکریم مادران و همسران شهدا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-005",
+      "date": "1393-01-25",
+      "title": {
+        "fa": "روز بزرگداشت عطار نیشابوری سه شنب ه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-006",
+      "date": "1393-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی و نیروی زمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-007",
+      "date": "1393-02-02",
+      "title": {
+        "fa": "تأسیس سپاه پاسداران انقلاب اسلامی سالروز اعلام انقلاب فرهنگی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-008",
+      "date": "1393-02-03",
+      "title": {
+        "fa": "روز بزرگداشت شیخ بهایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-009",
+      "date": "1393-02-05",
+      "title": {
+        "fa": "شکست حمله نظامی آمریکا به ایران در طبس ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-010",
+      "date": "1393-02-09",
+      "title": {
+        "fa": "روز شوراها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-011",
+      "date": "1393-02-10",
+      "title": {
+        "fa": "روز ملی خلیج فارس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-012",
+      "date": "1393-02-12",
+      "title": {
+        "fa": "شهادت استاد مرتضی مطهری ه ش روز معلم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-013",
+      "date": "1393-02-13",
+      "title": {
+        "fa": "شهادت حضرت امام علی النقی الهادی ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-014",
+      "date": "1393-02-15",
+      "title": {
+        "fa": "روز بزرگداشت شیخ صدوق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-015",
+      "date": "1393-02-19",
+      "title": {
+        "fa": "روز بزرگداشت شیخ کلینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-016",
+      "date": "1393-02-20",
+      "title": {
+        "fa": "ولادت حضرت امام محمد تقی جواد الائمه ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-017",
+      "date": "1393-02-24",
+      "title": {
+        "fa": "لغو امتیاز تنباکو به فتوای آیت االله میرزا حسن شی رازی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-018",
+      "date": "1393-02-28",
+      "title": {
+        "fa": "روز بزرگداشت حکیم عمر خیام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-019",
+      "date": "1393-03-03",
+      "title": {
+        "fa": "فتح خرمشهر در عملیات بیت المقدس ه ش و روز مقاومت، ایثار و پیروزی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-020",
+      "date": "1393-03-04",
+      "title": {
+        "fa": "شهادت حضرت امام موسی ک اظم ه ق روز مقاومت و پایداری روز دزفول"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-021",
+      "date": "1393-03-11",
+      "title": {
+        "fa": "ژوئن ولادت حضرت امام حسین 4 ه ق و روز پاسدار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-022",
+      "date": "1393-03-12",
+      "title": {
+        "fa": "ولادت حضرت ابوالفضل العباس ه ق و روز جانباز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-023",
+      "date": "1393-03-13",
+      "title": {
+        "fa": "ولادت حضرت امام زین العابدین ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-024",
+      "date": "1393-03-19",
+      "title": {
+        "fa": "9 ولادت حضرت علی اکبر ه ق و روز جوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-025",
+      "date": "1393-03-26",
+      "title": {
+        "fa": "شهادت سربازان دلیر اسلام : بخارایی، امانی، صفار هرندی و نیک نژاد ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-026",
+      "date": "1393-03-27",
+      "title": {
+        "fa": "روز جهاد کشاورزی تشکیل جهاد سازندگی به فرمان حضرت امام خمینی \u0003\u0004\u0005\u0006 االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-027",
+      "date": "1393-03-29",
+      "title": {
+        "fa": "درگذشت دکتر علی شریعتی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-028",
+      "date": "1393-04-08",
+      "title": {
+        "fa": "رمضان روز مبارزه با سلاح های شیمیایی و میکروبی دو شن به 9 2"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-029",
+      "date": "1393-04-10",
+      "title": {
+        "fa": "ژوئیه روز صنعت و معدن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-030",
+      "date": "1393-04-11",
+      "title": {
+        "fa": "شهادت آیت االله صدوقی چهارمین شهید محراب به دست منافقان ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-031",
+      "date": "1393-04-12",
+      "title": {
+        "fa": "حمله ددمنشانه ناوگان آمریکای جنایتکار به هواپیمای مسافربری جمهوری اسلامی ایران ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-032",
+      "date": "1393-04-14",
+      "title": {
+        "fa": "روز قلم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-033",
+      "date": "1393-04-17",
+      "title": {
+        "fa": "8 وفات حضرت خدیجه سلام االله علیها 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-034",
+      "date": "1393-04-18",
+      "title": {
+        "fa": "9 روز ادبیات کودکان و نوجوا نان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-035",
+      "date": "1393-04-21",
+      "title": {
+        "fa": "روز عفاف و حجاب یک ش نبه ولادت حضرت امام حسن مجتبی 3 ه ق و روز اکرام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-036",
+      "date": "1393-04-25",
+      "title": {
+        "fa": "شب قدر روز بهزیستی و تأمین اجتماعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-037",
+      "date": "1393-04-26",
+      "title": {
+        "fa": "ضربت خوردن حضرت علی ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-038",
+      "date": "1393-04-27",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-039",
+      "date": "1393-04-29",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-040",
+      "date": "1393-05-01",
+      "title": {
+        "fa": "رمضان ژوئیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-041",
+      "date": "1393-05-03",
+      "title": {
+        "fa": "روز جهانی قدس آخرین جمعه ماه رمضان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-042",
+      "date": "1393-05-05",
+      "title": {
+        "fa": "سالروز عملیات افتخار آفرین مرصاد ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-043",
+      "date": "1393-05-09",
+      "title": {
+        "fa": "روز اهدای خون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-044",
+      "date": "1393-05-14",
+      "title": {
+        "fa": "صدور فرمان مشروطیت ه ش روز حقوق بشر اسلامی و کرامت انسانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-045",
+      "date": "1393-05-16",
+      "title": {
+        "fa": "7 تشکیل جهاد دانشگاهی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-046",
+      "date": "1393-05-23",
+      "title": {
+        "fa": "روز فرهنگ پهلوانی و ورزش زورخانه ای روز مقاومت اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-047",
+      "date": "1393-05-26",
+      "title": {
+        "fa": "آغاز بازگشت آزادگان به میه ن اسلامی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-048",
+      "date": "1393-05-28",
+      "title": {
+        "fa": "کودتای آمریکا برای بازگرداندن شاه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-049",
+      "date": "1393-05-30",
+      "title": {
+        "fa": "روز بزرگداشت علامه مجلسی روز جهانی مسجد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-050",
+      "date": "1393-06-02",
+      "title": {
+        "fa": "آغاز هفته دولت شهادت سید علی اندرزگو رمضان ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-051",
+      "date": "1393-06-04",
+      "title": {
+        "fa": "روز کارمند چهار ش نبه 5 روز بزرگداشت محمدبن زکریای رازی روز داروسازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-052",
+      "date": "1393-06-06",
+      "title": {
+        "fa": "ذی القعده ولادت حضرت معصومه سلام االله علیها ه ق و روز دختران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-053",
+      "date": "1393-06-10",
+      "title": {
+        "fa": "سپتامبر روز تجلیل از امام زادگان و بقاع متبرکه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-054",
+      "date": "1393-06-11",
+      "title": {
+        "fa": "روز بزرگداشت حضرت احمد بن موسی شاهچراغ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-055",
+      "date": "1393-06-12",
+      "title": {
+        "fa": "روز مبارزه با استعمار انگلیس سالروز شهادت رئیسعلی دلواری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-056",
+      "date": "1393-06-13",
+      "title": {
+        "fa": "روز تعاون روز بزرگداشت ابوریحان بیرونی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-057",
+      "date": "1393-06-14",
+      "title": {
+        "fa": "شهادت آیت االله قدوسی و سرتیپ وحید دستجردی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-058",
+      "date": "1393-06-16",
+      "title": {
+        "fa": "7 ولادت حضرت امام رضا ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-059",
+      "date": "1393-06-17",
+      "title": {
+        "fa": "8 قیام شهریور و کشتار جمعی از مردم به دست مأموران ستم شا هی پهلوی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-060",
+      "date": "1393-06-19",
+      "title": {
+        "fa": "وفات آیت االله سیدمحمود طالقانی اولین امام جمعه تهران ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-061",
+      "date": "1393-06-20",
+      "title": {
+        "fa": "شهادت دومین شهید محراب آیت االله مدنی به دست منافقان ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-062",
+      "date": "1393-06-27",
+      "title": {
+        "fa": "روز شعر و ادب فارسی روز بزرگداشت استاد سید محمد حسین شهریار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-063",
+      "date": "1393-07-01",
+      "title": {
+        "fa": "ذی القعده سپتامبر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-064",
+      "date": "1393-07-03",
+      "title": {
+        "fa": "شهادت حضرت امام محمد تقی جوادالائمه ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-065",
+      "date": "1393-07-05",
+      "title": {
+        "fa": "شکست حصر آبادان در عملیات ثامن الائمه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-066",
+      "date": "1393-07-07",
+      "title": {
+        "fa": "روز آتش نشانی و ایمنی شهادت سرداران اسلام : فلاحی، فکوری، نامجو، کلاهدوز و جهان آرا ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-067",
+      "date": "1393-07-08",
+      "title": {
+        "fa": "روز بزرگداشت مولوی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-068",
+      "date": "1393-07-10",
+      "title": {
+        "fa": "شهادت حضرت امام محمد باقر ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-069",
+      "date": "1393-07-12",
+      "title": {
+        "fa": "روز عرفه روز نیایش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-070",
+      "date": "1393-07-18",
+      "title": {
+        "fa": "ولادت حضرت امام علی النقی الهادی علیه ال سلام ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-071",
+      "date": "1393-07-20",
+      "title": {
+        "fa": "روز بزرگداشت حافظ روز ایمنی در برابر زلزله و بلایای طبیعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-072",
+      "date": "1393-07-26",
+      "title": {
+        "fa": "روز تربیت بدنی و ورزش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-073",
+      "date": "1393-07-27",
+      "title": {
+        "fa": "روز مباهله پیامبر اسلام صلی االله علیه و آله ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-074",
+      "date": "1393-07-28",
+      "title": {
+        "fa": "روز خانواده و تکریم بازنشستگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-075",
+      "date": "1393-08-01",
+      "title": {
+        "fa": "ذی الحجه اکتبر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-076",
+      "date": "1393-08-08",
+      "title": {
+        "fa": "شهادت محمدحسین فهمیده بسیجی ساله روز نوجوان و بسیج دانش آموزی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-077",
+      "date": "1393-08-10",
+      "title": {
+        "fa": "نوامبر شهادت آیت االله قاضی طباطبایی اولین شهید محراب به دست منافقان ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-078",
+      "date": "1393-08-14",
+      "title": {
+        "fa": "5 روز تجلیل از اسرا و مفقودان روز فرهنگ عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-079",
+      "date": "1393-08-15",
+      "title": {
+        "fa": "6 شهادت حضرت امام زی ن العابدین ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-080",
+      "date": "1393-08-24",
+      "title": {
+        "fa": "روزکتاب، کتاب خوانی و کتابدار روز بزرگداشت آیت االله علامه سیدمحمدحسین طباطبایی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-081",
+      "date": "1393-08-28",
+      "title": {
+        "fa": "شهادت حضرت امام زین العابدین ه ق به روایتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-082",
+      "date": "1393-09-05",
+      "title": {
+        "fa": "روز بسیج مستضعفان تشکیل بسیج مستضعفان به فرمان حضرت امام خمینی ر \u0003\u0004\u0005 االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-083",
+      "date": "1393-09-07",
+      "title": {
+        "fa": "روز نیروی دریایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-084",
+      "date": "1393-09-09",
+      "title": {
+        "fa": "ولادت حضرت امام موسی کاظم ه ق روز بزرگداشت شیخ مفید"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-085",
+      "date": "1393-09-10",
+      "title": {
+        "fa": "دسامبر شهادت آیت االله سید حسن مدرس ه ش و روز مجلس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-086",
+      "date": "1393-09-12",
+      "title": {
+        "fa": "3 تصویب قانون اساسی جمهوری اسلامی ایران ه ش روز جهانی معلولان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-087",
+      "date": "1393-09-19",
+      "title": {
+        "fa": "تشکیل شورای عالی انقلاب فرهنگی به فرمان حضرت امام خمینی ر \u0003\u0004\u0005 االله عل یه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-088",
+      "date": "1393-09-20",
+      "title": {
+        "fa": "شهادت آیت االله دستغیب سومین شهید محراب به دست منافقان ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-089",
+      "date": "1393-09-25",
+      "title": {
+        "fa": "روز پژوهش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-090",
+      "date": "1393-09-27",
+      "title": {
+        "fa": "شهادت آیت االله دکتر محمد مفتح ه ش روز وحدت حوزه و دانشگاه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-091",
+      "date": "1393-09-29",
+      "title": {
+        "fa": "روز وقف"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-092",
+      "date": "1393-10-03",
+      "title": {
+        "fa": "ربیع الاول هجرت حضرت رسول اکرم صلی االله علیه و آله از مکه به مدینه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-093",
+      "date": "1393-10-04",
+      "title": {
+        "fa": "ولادت حضرت عیسی مسیح"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-094",
+      "date": "1393-10-07",
+      "title": {
+        "fa": "سالروز تشکیل نهضت سواد آموزی به فرمان حضرت امام خمینی ر \u0003\u0004\u0005 االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-095",
+      "date": "1393-10-09",
+      "title": {
+        "fa": "روز بصیرت و میثاق امت با ولایت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-096",
+      "date": "1393-10-10",
+      "title": {
+        "fa": "شهادت حضرت امام حس ن عسکری ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-097",
+      "date": "1393-10-11",
+      "title": {
+        "fa": "ژانویه آغاز سال میلادی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-098",
+      "date": "1393-10-14",
+      "title": {
+        "fa": "4 ولادت حضرت رسول اکرم صلی االله علیه و آله به روایت اهل سنت آغاز هفته وحدت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-099",
+      "date": "1393-10-20",
+      "title": {
+        "fa": "شهادت میرزا تقی خان امیرکبیر ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-100",
+      "date": "1393-10-22",
+      "title": {
+        "fa": "تشکیل شورای انقلاب به فرمان حضرت امام خمینی ر \u0003\u0004\u0005 االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-101",
+      "date": "1393-10-26",
+      "title": {
+        "fa": "فرار شاه معدوم ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-102",
+      "date": "1393-10-27",
+      "title": {
+        "fa": "شهادت نواب صفوی، طهماسبی، برادران واحدی و ذوالقدر از فداییان اسلام ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-103",
+      "date": "1393-10-29",
+      "title": {
+        "fa": "روز غزه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-104",
+      "date": "1393-11-01",
+      "title": {
+        "fa": "ربیع الاول ژانویه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-105",
+      "date": "1393-11-02",
+      "title": {
+        "fa": "ربیع الثانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-106",
+      "date": "1393-11-06",
+      "title": {
+        "fa": "سالروز حماسه مردم آمل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-107",
+      "date": "1393-11-09",
+      "title": {
+        "fa": "ولادت حضرت امام حسن عسکری ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-108",
+      "date": "1393-11-11",
+      "title": {
+        "fa": "وفات حضرت معصومه سلام االله علیها ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-109",
+      "date": "1393-11-29",
+      "title": {
+        "fa": "قیام مردم تبریز به مناسبت چهلمین روز شهادت شهدای قم ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-110",
+      "date": "1393-12-01",
+      "title": {
+        "fa": "د 1 جمادی الاولی فوریه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-111",
+      "date": "1393-12-13",
+      "title": {
+        "fa": "4 شهادت حضرت فاطمه زهرا سلام االله علیها ه ق به روایتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-112",
+      "date": "1393-12-14",
+      "title": {
+        "fa": "5 روز احسان و نیکوکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-113",
+      "date": "1393-12-18",
+      "title": {
+        "fa": "9 روز بزرگداشت سید جمال الدین اسدآبادی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1393-evt-114",
+      "date": "1393-12-25",
+      "title": {
+        "fa": "روز بزرگداشت پروین اعتصامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

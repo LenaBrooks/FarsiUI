@@ -1,0 +1,257 @@
+{
+  "year": 1385,
+  "schemaVersion": 1,
+  "dataVersion": "1385.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1385.pdf (official table; titles curated from extract)",
+  "coverage": "national+religious",
+  "notes": [
+    "Holiday list curated from UT Calendar-1385.pdf day table rows marked تعطیل.",
+    "1 Farvardin carries both Nowruz and Arbaeen."
+  ],
+  "items": [
+    {
+      "id": "1385-arbaeen-early",
+      "date": "1385-01-01",
+      "title": { "fa": "اربعین حسینی", "en": "Arbaeen" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-nowruz-1",
+      "date": "1385-01-01",
+      "ruleId": "nowruz-1",
+      "title": { "fa": "آغاز نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1385-nowruz-2",
+      "date": "1385-01-02",
+      "ruleId": "nowruz-2",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1385-nowruz-3",
+      "date": "1385-01-03",
+      "ruleId": "nowruz-3",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1385-nowruz-4",
+      "date": "1385-01-04",
+      "ruleId": "nowruz-4",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1385-demise-prophet-imam-hassan",
+      "date": "1385-01-09",
+      "title": {
+        "fa": "رحلت رسول اکرم؛ شهادت امام حسن مجتبی",
+        "en": "Demise of the Prophet; Martyrdom of Imam Hassan"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-martyrdom-imam-reza",
+      "date": "1385-01-10",
+      "title": {
+        "fa": "شهادت امام رضا",
+        "en": "Martyrdom of Imam Reza"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-islamic-republic-day",
+      "date": "1385-01-12",
+      "ruleId": "islamic-republic-day",
+      "title": {
+        "fa": "روز جمهوری اسلامی ایران",
+        "en": "Islamic Republic Day"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1385-sizdah-bedar",
+      "date": "1385-01-13",
+      "ruleId": "sizdah-bedar",
+      "title": {
+        "fa": "روز طبیعت (سیزده‌به‌در)",
+        "en": "Nature Day (Sizdah Bedar)"
+      },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1385-birthday-prophet-imam-sadiq",
+      "date": "1385-01-27",
+      "title": {
+        "fa": "میلاد رسول اکرم و امام جعفر صادق",
+        "en": "Birthday of the Prophet and Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-demise-imam-khomeini",
+      "date": "1385-03-14",
+      "ruleId": "demise-imam-khomeini",
+      "title": {
+        "fa": "رحلت امام خمینی",
+        "en": "Demise of Imam Khomeini"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1385-khordad-15",
+      "date": "1385-03-15",
+      "ruleId": "khordad-15",
+      "title": { "fa": "قیام ۱۵ خرداد", "en": "15 Khordad Uprising" },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1385-martyrdom-fatimah",
+      "date": "1385-04-08",
+      "title": {
+        "fa": "شهادت حضرت فاطمه زهرا",
+        "en": "Martyrdom of Fatimah"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-birthday-imam-ali",
+      "date": "1385-05-17",
+      "title": {
+        "fa": "ولادت امام علی و روز پدر",
+        "en": "Birthday of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-mabath",
+      "date": "1385-05-31",
+      "title": {
+        "fa": "مبعث رسول اکرم",
+        "en": "Mab'ath"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-mid-shaaban",
+      "date": "1385-06-18",
+      "title": {
+        "fa": "ولادت حضرت قائم و جشن نیمه شعبان",
+        "en": "Mid-Sha'ban"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-martyrdom-imam-ali",
+      "date": "1385-07-23",
+      "title": {
+        "fa": "شهادت حضرت علی",
+        "en": "Martyrdom of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-eid-fitr",
+      "date": "1385-08-03",
+      "title": { "fa": "عید سعید فطر", "en": "Eid al-Fitr" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-martyrdom-imam-sadiq",
+      "date": "1385-08-27",
+      "title": {
+        "fa": "شهادت امام جعفر صادق",
+        "en": "Martyrdom of Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-eid-adha",
+      "date": "1385-10-10",
+      "title": { "fa": "عید سعید قربان", "en": "Eid al-Adha" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-eid-ghadir",
+      "date": "1385-10-18",
+      "title": { "fa": "عید سعید غدیر خم", "en": "Eid al-Ghadir" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-tasua",
+      "date": "1385-11-09",
+      "title": { "fa": "تاسوعای حسینی", "en": "Tasua" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-ashura",
+      "date": "1385-11-10",
+      "title": { "fa": "عاشورای حسینی", "en": "Ashura" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-islamic-revolution",
+      "date": "1385-11-22",
+      "ruleId": "islamic-revolution",
+      "title": {
+        "fa": "پیروزی انقلاب اسلامی",
+        "en": "Victory of the Islamic Revolution"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1385-arbaeen-late",
+      "date": "1385-12-19",
+      "title": { "fa": "اربعین حسینی", "en": "Arbaeen" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-demise-prophet-imam-hassan-late",
+      "date": "1385-12-27",
+      "title": {
+        "fa": "رحلت رسول اکرم؛ شهادت امام حسن مجتبی",
+        "en": "Demise of the Prophet; Martyrdom of Imam Hassan"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1385-oil-nationalization",
+      "date": "1385-12-29",
+      "ruleId": "oil-nationalization",
+      "title": {
+        "fa": "روز ملی شدن صنعت نفت ایران",
+        "en": "Nationalization of the Oil Industry"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    }
+  ]
+}

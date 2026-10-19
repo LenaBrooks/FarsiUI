@@ -1,0 +1,229 @@
+{
+  "year": 1384,
+  "schemaVersion": 1,
+  "dataVersion": "1384.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1384.pdf (official table; titles curated from extract)",
+  "coverage": "national+religious",
+  "notes": [
+    "Holiday list curated from UT Calendar-1384.pdf day table rows marked تعطیل."
+  ],
+  "items": [
+    {
+      "id": "1384-nowruz-1",
+      "date": "1384-01-01",
+      "ruleId": "nowruz-1",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1384-nowruz-2",
+      "date": "1384-01-02",
+      "ruleId": "nowruz-2",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1384-nowruz-3",
+      "date": "1384-01-03",
+      "ruleId": "nowruz-3",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1384-nowruz-4",
+      "date": "1384-01-04",
+      "ruleId": "nowruz-4",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1384-arbaeen",
+      "date": "1384-01-10",
+      "title": { "fa": "اربعین حسینی", "en": "Arbaeen" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-islamic-republic-day",
+      "date": "1384-01-12",
+      "ruleId": "islamic-republic-day",
+      "title": {
+        "fa": "روز جمهوری اسلامی ایران",
+        "en": "Islamic Republic Day"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1384-sizdah-bedar",
+      "date": "1384-01-13",
+      "ruleId": "sizdah-bedar",
+      "title": {
+        "fa": "روز طبیعت (سیزده‌به‌در)",
+        "en": "Nature Day (Sizdah Bedar)"
+      },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1384-demise-prophet-imam-hassan",
+      "date": "1384-01-19",
+      "title": {
+        "fa": "رحلت رسول اکرم؛ شهادت امام حسن مجتبی",
+        "en": "Demise of the Prophet; Martyrdom of Imam Hassan"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-martyrdom-imam-reza",
+      "date": "1384-01-20",
+      "title": {
+        "fa": "شهادت امام رضا",
+        "en": "Martyrdom of Imam Reza"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-birthday-prophet-imam-sadiq",
+      "date": "1384-02-06",
+      "title": {
+        "fa": "میلاد رسول اکرم و امام جعفر صادق",
+        "en": "Birthday of the Prophet and Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-demise-imam-khomeini",
+      "date": "1384-03-14",
+      "ruleId": "demise-imam-khomeini",
+      "title": {
+        "fa": "رحلت امام خمینی",
+        "en": "Demise of Imam Khomeini"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1384-khordad-15",
+      "date": "1384-03-15",
+      "ruleId": "khordad-15",
+      "title": { "fa": "قیام ۱۵ خرداد", "en": "15 Khordad Uprising" },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1384-martyrdom-fatimah",
+      "date": "1384-04-19",
+      "title": {
+        "fa": "شهادت حضرت فاطمه زهرا",
+        "en": "Martyrdom of Fatimah"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-birthday-imam-ali",
+      "date": "1384-05-28",
+      "title": {
+        "fa": "ولادت امام علی و روز پدر",
+        "en": "Birthday of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-mabath",
+      "date": "1384-06-11",
+      "title": {
+        "fa": "مبعث رسول اکرم",
+        "en": "Mab'ath"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-martyrdom-imam-ali",
+      "date": "1384-08-04",
+      "title": {
+        "fa": "شهادت حضرت علی",
+        "en": "Martyrdom of Imam Ali"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-eid-fitr",
+      "date": "1384-08-13",
+      "title": { "fa": "عید سعید فطر", "en": "Eid al-Fitr" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-martyrdom-imam-sadiq",
+      "date": "1384-09-07",
+      "title": {
+        "fa": "شهادت امام جعفر صادق",
+        "en": "Martyrdom of Imam Sadiq"
+      },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-eid-adha",
+      "date": "1384-10-20",
+      "title": { "fa": "عید سعید قربان", "en": "Eid al-Adha" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-eid-ghadir",
+      "date": "1384-10-29",
+      "title": { "fa": "عید سعید غدیر خم", "en": "Eid al-Ghadir" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-tasua",
+      "date": "1384-11-19",
+      "title": { "fa": "تاسوعای حسینی", "en": "Tasua" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-ashura",
+      "date": "1384-11-20",
+      "title": { "fa": "عاشورای حسینی", "en": "Ashura" },
+      "isHoliday": true,
+      "categories": ["religious"]
+    },
+    {
+      "id": "1384-islamic-revolution",
+      "date": "1384-11-22",
+      "ruleId": "islamic-revolution",
+      "title": {
+        "fa": "پیروزی انقلاب اسلامی",
+        "en": "Victory of the Islamic Revolution"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1384-oil-nationalization",
+      "date": "1384-12-29",
+      "ruleId": "oil-nationalization",
+      "title": {
+        "fa": "روز ملی شدن صنعت نفت ایران",
+        "en": "Nationalization of the Oil Industry"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    }
+  ]
+}

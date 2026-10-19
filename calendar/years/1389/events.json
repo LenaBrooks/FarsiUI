@@ -1,0 +1,779 @@
+{
+  "year": 1389,
+  "schemaVersion": 1,
+  "dataVersion": "1389.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1389.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1389-evt-001",
+      "date": "1389-03-01",
+      "title": {
+        "fa": "مه 22 1431 ثانیه ال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-002",
+      "date": "1389-03-20",
+      "title": {
+        "fa": "روز جهانی ه ش 1349 االله سعیدی به دست مأموران ستم شاهی پهلوی ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-003",
+      "date": "1389-03-22",
+      "title": {
+        "fa": "ه ق 57 السلام ولادت حضرت امام محمد باقر علیه 14 رجب 1 24 شنبه دو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-004",
+      "date": "1389-03-31",
+      "title": {
+        "fa": "ه ش 1360 ادت دکتر مصطفی چمران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-005",
+      "date": "1389-04-08",
+      "title": {
+        "fa": "های شیمیایی و میکروبی روز مبارزه با سلاح"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-006",
+      "date": "1389-04-10",
+      "title": {
+        "fa": "روز صنعت و معدن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-007",
+      "date": "1389-04-11",
+      "title": {
+        "fa": "ه ش 1361 االله صدوقی چهارمین ید محراب به دست منافقان ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-008",
+      "date": "1389-04-12",
+      "title": {
+        "fa": "هواپیمای مسافربری جمهوری اسلامی ایران توسط ناوگان آمریکای جنایتکار سرنگونی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-009",
+      "date": "1389-04-17",
+      "title": {
+        "fa": "ه ق 183 ادت حضرت امام موسی کاظم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-010",
+      "date": "1389-04-24",
+      "title": {
+        "fa": "و روز پاسدار ه ق 4 السلام ولادت حضرت امام حسین علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-011",
+      "date": "1389-04-25",
+      "title": {
+        "fa": "روز بهزیستی و تأمین و روز جانباز ه ق 26 ولادت حضرت ابوالفضل العباس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-012",
+      "date": "1389-04-26",
+      "title": {
+        "fa": "ه ق 38 السلام العابدین علیه ولادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-013",
+      "date": "1389-05-01",
+      "title": {
+        "fa": "و روز جوان ه ق 33 السلام ولادت حضرت علی اکبر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-014",
+      "date": "1389-05-09",
+      "title": {
+        "fa": "روز اهدای خون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-015",
+      "date": "1389-05-14",
+      "title": {
+        "fa": "روز حقوق بشر اسلامی و کرامت انسانی ه ش 1285 صدور فرمان مشروطیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-016",
+      "date": "1389-05-16",
+      "title": {
+        "fa": "ه ش 1359 تشکیل جهاد دانشگاهی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-017",
+      "date": "1389-05-23",
+      "title": {
+        "fa": "روز مقاومت اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-018",
+      "date": "1389-05-26",
+      "title": {
+        "fa": "ه ش 1369 آغاز بازگشت آزادگان به میهن اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-019",
+      "date": "1389-05-04",
+      "title": {
+        "fa": "روز کارمند و روز اکرام ه ق 3 السلام ولادت حضرت امام حسن مجتبی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-020",
+      "date": "1389-05-05",
+      "title": {
+        "fa": "روز داروسازی روز بزرگداشت محمدبن زکریای رازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-021",
+      "date": "1389-05-11",
+      "title": {
+        "fa": "روز صنعت چاپ شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-022",
+      "date": "1389-05-12",
+      "title": {
+        "fa": "روز بهورز آخرین جمعه ماه رمضان روز جهانی قدس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-023",
+      "date": "1389-05-20",
+      "title": {
+        "fa": "ه ش 1360 االله مدنی به دست منافقان ادت دومین ید محراب آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-024",
+      "date": "1389-05-27",
+      "title": {
+        "fa": "روز شعر و ادب فارسی روز بزرگداشت استاد سید محمد حسین ریار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-025",
+      "date": "1389-05-30",
+      "title": {
+        "fa": "ها روز گفت و گوی تمدن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-026",
+      "date": "1389-07-03",
+      "title": {
+        "fa": "روز جهانی ه ش 1360 السلام شکست حصر آبادان در عملیات ثامن الائمه علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-027",
+      "date": "1389-07-06",
+      "title": {
+        "fa": "آرا کلاهدوز و جهان نامجو، فلاحی، فکوری، : نشانی و ایمنی ادت سرداران اسلام روز آتش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-028",
+      "date": "1389-07-08",
+      "title": {
+        "fa": "روز جهانی ناشنوایان روز بزرگداشت مولوی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-029",
+      "date": "1389-07-09",
+      "title": {
+        "fa": "روز جهانی سالمندان روز همبستگی و همدردی با کودکان و نوجوانان فلسطینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-030",
+      "date": "1389-07-13",
+      "title": {
+        "fa": "روز نیروی انتظامی ه ش 1357 از عراق به پاریس ره هجرت حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-031",
+      "date": "1389-07-16",
+      "title": {
+        "fa": "روز جهانی کودک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-032",
+      "date": "1389-07-17",
+      "title": {
+        "fa": "و روز دختران ه ق 173 ولادت حضرت معصومه سلام االله علیها 9 ذی القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-033",
+      "date": "1389-07-20",
+      "title": {
+        "fa": "روز ملی کاهش اثرات بلایای طبیعی روز بزرگداشت حافظ روز اسکان معلولان و سالمندان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-034",
+      "date": "1389-07-22",
+      "title": {
+        "fa": "روز جهانی استاندارد ع روز بزرگداشت حضرت احمد بن موسی شاهچراغ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-035",
+      "date": "1389-07-23",
+      "title": {
+        "fa": "وز ر ه ش 1361 االله اشرفی اصفهانی به دست منافقان ادت پنجمین ید محراب آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-036",
+      "date": "1389-07-24",
+      "title": {
+        "fa": "روز پیوند اولیا و مربیان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-037",
+      "date": "1389-07-27",
+      "title": {
+        "fa": "ه ق 148 السلام ولادت حضرت امام رضا علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-038",
+      "date": "1389-07-29",
+      "title": {
+        "fa": "روز صادرات"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-039",
+      "date": "1389-08-01",
+      "title": {
+        "fa": "ریزی روز آمار و برنامه 2010 اکتبر 23 1431 القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-040",
+      "date": "1389-08-04",
+      "title": {
+        "fa": "ه ش 1343 علیه پذیرش کاپیتولاسیون ره اعتراض و افشاگری حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-041",
+      "date": "1389-08-14",
+      "title": {
+        "fa": "روز فرهنگ عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-042",
+      "date": "1389-08-18",
+      "title": {
+        "fa": "روز ملی کیفیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-043",
+      "date": "1389-08-05",
+      "title": {
+        "fa": "ه ش 1358 ره حضرت امام خمینی فرمان به بسیج مستضعفان تشکیل مستضعفان روزبسیج"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-044",
+      "date": "1389-08-11",
+      "title": {
+        "fa": "روز خانواده و تکریم بازنشستگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-045",
+      "date": "1389-08-12",
+      "title": {
+        "fa": "روز جهانی معلولان ه ش 1358 تصویب قانون اساسی جمهوری اسلامی ایران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-046",
+      "date": "1389-08-13",
+      "title": {
+        "fa": "روز بیمه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-047",
+      "date": "1389-08-16",
+      "title": {
+        "fa": "هجری قمری روز دانشجو 1432 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-048",
+      "date": "1389-08-18",
+      "title": {
+        "fa": "ه ش 1370 ق به عنوان مسؤول و آغازگر جنگ از سوی سازمان ملل معرفی عرا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-049",
+      "date": "1389-08-20",
+      "title": {
+        "fa": "االله دستغیب سومین ید محراب به دست منافقان ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-050",
+      "date": "1389-08-26",
+      "title": {
+        "fa": "روز تجلیل از اسرا و مفقودان روز حمل و نقل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-051",
+      "date": "1389-08-27",
+      "title": {
+        "fa": "االله دکتر محمد مفتح ادت آیت ه ق 95 العابدین دت حضرت امام زین ا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-052",
+      "date": "1389-08-30",
+      "title": {
+        "fa": "شب یلدا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-053",
+      "date": "1389-08-04",
+      "title": {
+        "fa": "السلام یه میلاد حضرت عیسی مسیح عل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-054",
+      "date": "1389-08-07",
+      "title": {
+        "fa": "ادت ه ش 1358 ره سواد آموزی به فرمان حضرت امام خمینی سالروز تشکیل نهضت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-055",
+      "date": "1389-08-10",
+      "title": {
+        "fa": "به روایتی ه ق 95 العابدین ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-056",
+      "date": "1389-08-11",
+      "title": {
+        "fa": "میلادی 2011 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-057",
+      "date": "1389-08-21",
+      "title": {
+        "fa": "تشکیل شورای انقلاب به فرمان ه ق 128 السلام ولادت حضرت امام موسی کاظم علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-058",
+      "date": "1389-11-01",
+      "title": {
+        "fa": "نویه ژا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-059",
+      "date": "1389-11-12",
+      "title": {
+        "fa": "ادت حضرت امام حسن مجتبی علیه ه ق 11 االله علیه و آله رحلت حضرت رسول اکرم صلی اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-060",
+      "date": "1389-11-14",
+      "title": {
+        "fa": "روز فناوری فضایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-061",
+      "date": "1389-11-16",
+      "title": {
+        "fa": "مدینه االله علیه و آله از مکه به هجرت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-062",
+      "date": "1389-11-19",
+      "title": {
+        "fa": "ایی روز نیروی هو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-063",
+      "date": "1389-11-23",
+      "title": {
+        "fa": "ه ق 260 السلام ادت حضرت امام حسن عسکری علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-064",
+      "date": "1389-11-26",
+      "title": {
+        "fa": "آغاز علیه و آله به روایت اهل سنت االله میلاد حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-065",
+      "date": "1389-11-29",
+      "title": {
+        "fa": "ه ش 1356 روز ادت دای قم قیام مردم تبریز به مناسبت چهلمین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-066",
+      "date": "1389-11-05",
+      "title": {
+        "fa": "روز بزرگداشت خواجه نصیرالدین طوسی روز مهندسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-067",
+      "date": "1389-11-08",
+      "title": {
+        "fa": "روز امور تربیتی و تربیت اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-068",
+      "date": "1389-11-09",
+      "title": {
+        "fa": "روز ملی حمایت از حقوق مصرف کنندگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-069",
+      "date": "1389-11-14",
+      "title": {
+        "fa": "ی روز احسان و نیکوکار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1389-evt-070",
+      "date": "1389-11-24",
+      "title": {
+        "fa": "ه ق 201 االله علیها لام وفات حضرت معصومه س"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

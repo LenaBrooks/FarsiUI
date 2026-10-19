@@ -68,6 +68,10 @@ export const siteConfig = {
       label: "فونت‌ها",
     },
     {
+      href: "/calendar",
+      label: "تقویم",
+    },
+    {
       href: "https://icons.farsiui.ir/",
       label: "آیکون‌ها",
       external: true,

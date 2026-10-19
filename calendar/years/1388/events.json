@@ -1,0 +1,933 @@
+{
+  "year": 1388,
+  "schemaVersion": 1,
+  "dataVersion": "1388.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1388.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1388-evt-001",
+      "date": "1388-01-08",
+      "title": {
+        "fa": "28 ثانی ال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-002",
+      "date": "1388-01-20",
+      "title": {
+        "fa": "ای روز ملی فناوری هسته"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-003",
+      "date": "1388-01-21",
+      "title": {
+        "fa": "ه ش 1378 ادت امیر سپهبد علی صیاد شیرازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-004",
+      "date": "1388-01-25",
+      "title": {
+        "fa": "روز بزرگداشت عطار نیشابوری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-005",
+      "date": "1388-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی و نیروی زمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-006",
+      "date": "1388-02-01",
+      "title": {
+        "fa": "سالروز اعلام انقلاب فرهنگی ه ش 1358 تأسیس سپاه پاسداران انقلاب اسلامی روز بزرگداشت سعدی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-007",
+      "date": "1388-02-03",
+      "title": {
+        "fa": "روز بزرگداشت شیخ بهایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-008",
+      "date": "1388-02-05",
+      "title": {
+        "fa": "ه ش 1359 شکست حمله نظامی آمریکا به ایران در طبس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-009",
+      "date": "1388-02-10",
+      "title": {
+        "fa": "و روز پرستار روز ملی خلیج فارس آغاز ولادت حضرت زینب سلام االله علیها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-010",
+      "date": "1388-02-11",
+      "title": {
+        "fa": "روز جهانی کار و کارگر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-011",
+      "date": "1388-02-12",
+      "title": {
+        "fa": "روز معلم ه ش 1358 ادت استاد مرتضی مطهری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-012",
+      "date": "1388-02-15",
+      "title": {
+        "fa": "روز بزرگداشت شیخ صدوق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-013",
+      "date": "1388-02-17",
+      "title": {
+        "fa": "روز اسناد ملی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-014",
+      "date": "1388-02-18",
+      "title": {
+        "fa": "وایتی روز جهانی صلیب سرخ و به ر ه ق 11 االله علیها ادت حضرت فاطمه زهرا سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-015",
+      "date": "1388-02-19",
+      "title": {
+        "fa": "روز بزرگداشت شیخ کلینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-016",
+      "date": "1388-02-24",
+      "title": {
+        "fa": "ه ش 1270 االله میرزا حسن شیرازی لغو امتیاز تنباکو به فتوای آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-017",
+      "date": "1388-02-25",
+      "title": {
+        "fa": "روز بزرگداشت فردوسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-018",
+      "date": "1388-03-05",
+      "title": {
+        "fa": "26 الثانیة"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-019",
+      "date": "1388-03-19",
+      "title": {
+        "fa": "روز جهانی ه ش 1349 به دست مأموران ستم شاهی پهلوی االله سعیدی ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-020",
+      "date": "1388-03-26",
+      "title": {
+        "fa": "ه ش 1344 بخارایی، امانی، صفار هرندی و نیک نژاد : ادت سربازان دلیر اسلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-021",
+      "date": "1388-03-29",
+      "title": {
+        "fa": "ه ش 1356 درگذشت دکتر علی شریعتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-022",
+      "date": "1388-03-02",
+      "title": {
+        "fa": "ه ق 57 السلام ولادت حضرت امام محمد باقر علیه 24 رجب 1 3 شنبه چهار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-023",
+      "date": "1388-03-05",
+      "title": {
+        "fa": "روز جهانی مبارزه با مواد مخدر ه ق 254 السلام نقی الهادی علیه ال ادت حضرت امام علی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-024",
+      "date": "1388-03-11",
+      "title": {
+        "fa": "ه ش 1361 االله صدوقی چهارمین ید محراب به دست منافقان ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-025",
+      "date": "1388-03-16",
+      "title": {
+        "fa": "ه ق 62 وفات حضرت زینب سلام االله علیها 8 15 17 شنبه چهار ت روز مالیا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-026",
+      "date": "1388-03-25",
+      "title": {
+        "fa": "روز بهزیستی و تأمین اجتماعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-027",
+      "date": "1388-05-06",
+      "title": {
+        "fa": "های فنی و روز کارآفرینی و آموز ق 38 السلام العابدین علیه ولادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-028",
+      "date": "1388-05-09",
+      "title": {
+        "fa": "روز اهدای خون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-029",
+      "date": "1388-05-10",
+      "title": {
+        "fa": "و روز جوان ه ق 33 السلام ولادت حضرت علی اکبر علیه 3 11 12 شنبه دو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-030",
+      "date": "1388-05-13",
+      "title": {
+        "fa": "روز حقوق بشر اسلامی و کرامت انسانی ه ش 1285 صدور فرمان مشروطیت 5 13 14 شنبه چهار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-031",
+      "date": "1388-05-17",
+      "title": {
+        "fa": "روز خبرنگار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-032",
+      "date": "1388-05-23",
+      "title": {
+        "fa": "روز مقاومت اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-033",
+      "date": "1388-05-24",
+      "title": {
+        "fa": "ه ش 1369 آغاز بازگشت آزادگان به میهن اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-034",
+      "date": "1388-05-30",
+      "title": {
+        "fa": "روز بزرگداشت علامه مجلسی روز جهانی مسجد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-035",
+      "date": "1388-06-01",
+      "title": {
+        "fa": "روز پزشک روز بزرگداشت ابوعلی سینا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-036",
+      "date": "1388-06-05",
+      "title": {
+        "fa": "روز داروسازی روز بزرگداشت محمدبن زکریای رازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-037",
+      "date": "1388-06-07",
+      "title": {
+        "fa": "وفات حضرت خدیجه سلام االله علیها 31 10 9 شنبه دو یدان وزیری به دست منافقان و ادت مظلومانه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-038",
+      "date": "1388-06-10",
+      "title": {
+        "fa": "ه ش 1362 الروز تصویب قانون عملیات بانکی بدون ربا س روز بانکداری اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-039",
+      "date": "1388-06-12",
+      "title": {
+        "fa": "روز بهورز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-040",
+      "date": "1388-06-13",
+      "title": {
+        "fa": "روز تعاون روز بزرگداشت ابوریحان بیرونی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-041",
+      "date": "1388-06-14",
+      "title": {
+        "fa": "االله قدوسی و و روز اکرام ادت آیت ه ق 3 السلام ولادت حضرت امام حسن مجتبی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-042",
+      "date": "1388-06-17",
+      "title": {
+        "fa": "ه ق 40 السلام ضربت خوردن حضرت علی علیه 9 19 18 شنبه چهار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-043",
+      "date": "1388-06-19",
+      "title": {
+        "fa": "ه ش 1358 االله سید محمود طالقانی اولین امام جمعه تهران شب قدر وفات آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-044",
+      "date": "1388-06-21",
+      "title": {
+        "fa": "شب قدر روز سینما"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-045",
+      "date": "1388-06-31",
+      "title": {
+        "fa": "مقدس آغاز هفته دفاع ه ش 1359 آغاز جنگ تحمیلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-046",
+      "date": "1388-06-04",
+      "title": {
+        "fa": "روز جهانی ه ش 1360 السلام شکست حصر آبادان در عملیات ثامن الائمه علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-047",
+      "date": "1388-06-07",
+      "title": {
+        "fa": "آرا کلاهدوز و جهان نامجو، فلاحی، فکوری، : نشانی و ایمنی ادت سرداران اسلام روز آتش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-048",
+      "date": "1388-06-09",
+      "title": {
+        "fa": "روز جهانی سالمندان روز همبستگی و همدردی با کودکان و نوجوانان فلسطینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-049",
+      "date": "1388-06-16",
+      "title": {
+        "fa": "ودک روز جهانی ک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-050",
+      "date": "1388-06-23",
+      "title": {
+        "fa": "روز ه ش 1361 منافقان االله اشرفی اصفهانی به دست ادت پنجمین ید محراب آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-051",
+      "date": "1388-06-24",
+      "title": {
+        "fa": "روز پیوند اولیا و مربیان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-052",
+      "date": "1388-06-28",
+      "title": {
+        "fa": "و روز دختران ه ق 173 االله علیها ولادت حضرت معصومه سلام 20 ذی القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-053",
+      "date": "1388-08-01",
+      "title": {
+        "fa": "ریزی روز آمار و برنامه 2009 اکتبر 23 1430 القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-054",
+      "date": "1388-08-02",
+      "title": {
+        "fa": "ه ش 1343 علیه پذیرش کاپیتولاسیون ره اعتراض و افشاگری حضرت امام خمینی 26 7 4 شنبه دو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-055",
+      "date": "1388-08-08",
+      "title": {
+        "fa": "بسیجی ادت محمدحسین فهمیده ه ق 148 السلام ولادت حضرت امام رضا علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-056",
+      "date": "1388-08-09",
+      "title": {
+        "fa": "ه ش 1358 اولین ید محراب به دست منافقان االله قاضی طباطبایی ادت آیت نوامبر 1 13 10 شنبه یک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-057",
+      "date": "1388-08-14",
+      "title": {
+        "fa": "روز فرهنگ عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-058",
+      "date": "1388-08-26",
+      "title": {
+        "fa": "ه ق 220 جوادالائمه السلام ادت حضرت امام محمد تقی علیه 18 30 27 شنبه چهار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-059",
+      "date": "1388-08-28",
+      "title": {
+        "fa": "روز ازدواج و ه ق 2 االله علیها السلام و حضرت فاطمه سلام سالروز ازدواج حضرت علی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-060",
+      "date": "1388-08-06",
+      "title": {
+        "fa": "روز عرفه روز نیایش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-061",
+      "date": "1388-08-10",
+      "title": {
+        "fa": "و روز مجلس ه ش 1316 االله سید حسن مدرس ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-062",
+      "date": "1388-08-13",
+      "title": {
+        "fa": "روز بیمه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-063",
+      "date": "1388-08-20",
+      "title": {
+        "fa": "االله دستغیب سومین ید محراب به دست منافقان ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-064",
+      "date": "1388-08-21",
+      "title": {
+        "fa": "ه ق 10 روز مباهله پیامبر اسلام صلی االله علیه و آله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-065",
+      "date": "1388-08-26",
+      "title": {
+        "fa": "روز حمل و نقل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-066",
+      "date": "1388-08-27",
+      "title": {
+        "fa": "روز وحدت ه ش 1358 االله دکتر محمد مفتح هجری قمری ادت آیت 1431 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-067",
+      "date": "1388-10-04",
+      "title": {
+        "fa": "السلام میلاد حضرت عیسی مسیح علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-068",
+      "date": "1388-10-08",
+      "title": {
+        "fa": "ه ق 95 العابدین ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-069",
+      "date": "1388-10-11",
+      "title": {
+        "fa": "میلادی 2010 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-070",
+      "date": "1388-10-22",
+      "title": {
+        "fa": "ه ش 1357 ره فرمان حضرت امام خمینی تشکیل شورای انقلاب به"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-071",
+      "date": "1388-10-29",
+      "title": {
+        "fa": "ه ق 57 السلام ولادت حضرت امام محمد باقر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-072",
+      "date": "1388-11-03",
+      "title": {
+        "fa": "ه ق 128 السلام ولادت حضرت امام موسی کاظم علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-073",
+      "date": "1388-11-06",
+      "title": {
+        "fa": "سالروز حماسه مردم آمل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-074",
+      "date": "1388-11-23",
+      "title": {
+        "fa": "روز وقف"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-075",
+      "date": "1388-11-24",
+      "title": {
+        "fa": "ادت حضرت امام حسن مجتبی علیه ه ق 11 االله علیه و آله رحلت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-076",
+      "date": "1388-11-27",
+      "title": {
+        "fa": "اول محرم سال هجرت، مبدأ گاه االله علیه و آله از مکه به مدینه هجرت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-077",
+      "date": "1388-11-29",
+      "title": {
+        "fa": "ه ش 1356 قیام مردم تبریز به مناسبت چهلمین روز ادت دای قم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-078",
+      "date": "1388-12-04",
+      "title": {
+        "fa": "ه ق 260 السلام ادت حضرت امام حسن عسکری علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-079",
+      "date": "1388-12-09",
+      "title": {
+        "fa": "روز ملی حمایت از حقوق مصرف کنندگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-080",
+      "date": "1388-12-14",
+      "title": {
+        "fa": "روز احسان و نیکوکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-081",
+      "date": "1388-12-15",
+      "title": {
+        "fa": "روز درختکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-082",
+      "date": "1388-12-18",
+      "title": {
+        "fa": "الدین اسدآبادی روز بزرگداشت سید جمال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-083",
+      "date": "1388-12-22",
+      "title": {
+        "fa": "ه ش 1358 انقلاب اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1388-evt-084",
+      "date": "1388-12-25",
+      "title": {
+        "fa": "روز بزرگداشت پروین اعتصامی ه ش 1366 عث عراق بمباران شیمیایی حلبچه توسط ارتش ب"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

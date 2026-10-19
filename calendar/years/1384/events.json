@@ -1,0 +1,2088 @@
+{
+  "year": 1384,
+  "schemaVersion": 1,
+  "dataVersion": "1384.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1384.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1384-evt-001",
+      "date": "1384-01-02",
+      "title": {
+        "fa": "شاهی پهلوی به مدرسه فیضیه قم ستم هجوم مأموران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-002",
+      "date": "1384-01-18",
+      "title": {
+        "fa": "روز جهانی بهداشت روز سلامتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-003",
+      "date": "1384-01-18",
+      "title": {
+        "fa": "روز وقف"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-004",
+      "date": "1384-01-19",
+      "title": {
+        "fa": "آله و علیه االله رحلت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-005",
+      "date": "1384-01-19",
+      "title": {
+        "fa": "باقر صدر و خواهرایشان االله سید محمد ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-006",
+      "date": "1384-01-21",
+      "title": {
+        "fa": "ادت امیر سپهبد علی صیاد شیرازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-007",
+      "date": "1384-01-25",
+      "title": {
+        "fa": "روز بزرگداشت عطار نیشابوری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-008",
+      "date": "1384-01-28",
+      "title": {
+        "fa": "السلام ادت حضرت امام حسن عسکری علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-009",
+      "date": "1384-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی و نیروی زمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-010",
+      "date": "1384-02-01",
+      "title": {
+        "fa": "االله علیه و آله به روایت اهل سنت میلاد حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-011",
+      "date": "1384-02-01",
+      "title": {
+        "fa": "آغاز هفته وحدت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-012",
+      "date": "1384-02-02",
+      "title": {
+        "fa": "تأسیس سپاه پاسداران انقلاب اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-013",
+      "date": "1384-02-02",
+      "title": {
+        "fa": "سالروز اعلام انقلاب فرهنگی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-014",
+      "date": "1384-02-03",
+      "title": {
+        "fa": "روز بزرگداشت شیخ بهایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-015",
+      "date": "1384-02-05",
+      "title": {
+        "fa": "شکست حملة نظامی امریکا به ایران در طبس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-016",
+      "date": "1384-02-06",
+      "title": {
+        "fa": "آله و علیه االله میلاد حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-017",
+      "date": "1384-02-09",
+      "title": {
+        "fa": "روز شوراها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-018",
+      "date": "1384-02-10",
+      "title": {
+        "fa": "المقدس آغاز عملیات بیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-019",
+      "date": "1384-02-11",
+      "title": {
+        "fa": "روز جهانی کار و کارگر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-020",
+      "date": "1384-02-12",
+      "title": {
+        "fa": "ادت استاد مرتضی مطهری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-021",
+      "date": "1384-02-12",
+      "title": {
+        "fa": "روز معلم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-022",
+      "date": "1384-02-15",
+      "title": {
+        "fa": "روز بزرگداشت شیخ صدوق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-023",
+      "date": "1384-02-17",
+      "title": {
+        "fa": "روز اسناد ملی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-024",
+      "date": "1384-02-18",
+      "title": {
+        "fa": "روز جهانی صلیب سرخ وهلال احمر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-025",
+      "date": "1384-02-24",
+      "title": {
+        "fa": "االله میرزا حسن شیرازی لغو امتیاز تنباکو به فتوای آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-026",
+      "date": "1384-02-25",
+      "title": {
+        "fa": "روز بزرگداشت فردوسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-027",
+      "date": "1384-02-25",
+      "title": {
+        "fa": "روز جهانی خانواده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-028",
+      "date": "1384-02-27",
+      "title": {
+        "fa": "السلام ولادت حضرت امام حسن عسکری علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-029",
+      "date": "1384-02-27",
+      "title": {
+        "fa": "روز جهانی ارتباطات"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-030",
+      "date": "1384-02-29",
+      "title": {
+        "fa": "االله علیها وفات حضرت معصومه سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-031",
+      "date": "1384-02-31",
+      "title": {
+        "fa": "روز جهانی توسعة فرهنگی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-032",
+      "date": "1384-03-01",
+      "title": {
+        "fa": "وری روز بهره"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-033",
+      "date": "1384-03-01",
+      "title": {
+        "fa": "صدرالمتألهین روز بزرگداشت ملاصدرا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-034",
+      "date": "1384-03-03",
+      "title": {
+        "fa": "و روز مقاومت و پیروزی المقدس فتح خرمر در عملیات بیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-035",
+      "date": "1384-03-14",
+      "title": {
+        "fa": "ای به رهبری االله خامنه انتخاب حضرت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-036",
+      "date": "1384-03-15",
+      "title": {
+        "fa": "روز جهانی محیط زیست"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-037",
+      "date": "1384-03-20",
+      "title": {
+        "fa": "شاهی پهلوی االله سعیدی به دست مأموران ستم ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-038",
+      "date": "1384-03-20",
+      "title": {
+        "fa": "روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-039",
+      "date": "1384-03-22",
+      "title": {
+        "fa": "و روز پرستار و بهورز االله علیها ولادت حضرت زینب سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-040",
+      "date": "1384-03-26",
+      "title": {
+        "fa": "نژاد بخارایی، امانی، صفار هرندی و نیک : ادت سربازان دلیر اسلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-041",
+      "date": "1384-03-27",
+      "title": {
+        "fa": "زدایی روز جهانی بیابان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-042",
+      "date": "1384-03-29",
+      "title": {
+        "fa": "علی شریعتی درگذشت دکتر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-043",
+      "date": "1384-03-30",
+      "title": {
+        "fa": "به روایتی االله علیها ادت حضرت فاطمه زهرا سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-044",
+      "date": "1384-03-31",
+      "title": {
+        "fa": "مصطفی چمران ادت دکتر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-045",
+      "date": "1384-04-01",
+      "title": {
+        "fa": "روز اصناف"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-046",
+      "date": "1384-04-05",
+      "title": {
+        "fa": "روز جهانی مبارزه با مواد مخدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-047",
+      "date": "1384-04-07",
+      "title": {
+        "fa": "روز قوه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-048",
+      "date": "1384-04-08",
+      "title": {
+        "fa": "روز مبارزه با سلاحهای شیمیایی و میکروبی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-049",
+      "date": "1384-04-10",
+      "title": {
+        "fa": "روز صنعت و معدن ه ژوئی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-050",
+      "date": "1384-04-11",
+      "title": {
+        "fa": "االله صدوقی چهارمین ید محراب به دست منافقین ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-051",
+      "date": "1384-04-12",
+      "title": {
+        "fa": "سقوط هواپیمای مسافربری جمهوری اسلامی ایران به توسط ناوگان آمریکای"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-052",
+      "date": "1384-04-13",
+      "title": {
+        "fa": "روز مبارزه با بیماریهای قابل انتقال بین انسان و حیوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-053",
+      "date": "1384-04-14",
+      "title": {
+        "fa": "روز قلم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-054",
+      "date": "1384-04-16",
+      "title": {
+        "fa": "روز مالیات"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-055",
+      "date": "1384-04-17",
+      "title": {
+        "fa": "8 ة نی الثا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-056",
+      "date": "1384-04-25",
+      "title": {
+        "fa": "روز بهزیستی و تأمین اجتماعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-057",
+      "date": "1384-04-27",
+      "title": {
+        "fa": "شورای امنیت از سوی ایران 598 امه اعلام پذیرش قطعن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-058",
+      "date": "1384-05-01",
+      "title": {
+        "fa": "ژوئیه 23 1426 ة نی جمادی الثا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-059",
+      "date": "1384-05-05",
+      "title": {
+        "fa": "و روز زن هشتم قبل از هجرت االله علیها ولادت حضرت فاطمه زهرا سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-060",
+      "date": "1384-05-05",
+      "title": {
+        "fa": "رهبر کبیر انقلاب اسلامی ره حضرت امام خمینی ولد ت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-061",
+      "date": "1384-05-05",
+      "title": {
+        "fa": "سالروز عملیات"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-062",
+      "date": "1384-05-06",
+      "title": {
+        "fa": "ای های فنی و حرفه روز ترویج آموزش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-063",
+      "date": "1384-05-08",
+      "title": {
+        "fa": "شیخ اشراق الدین سهروردی روز بزرگداشت شیخ اب"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-064",
+      "date": "1384-05-09",
+      "title": {
+        "fa": "خون روز اهدای"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-065",
+      "date": "1384-05-14",
+      "title": {
+        "fa": "صدور فرمان مشروطیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-066",
+      "date": "1384-05-16",
+      "title": {
+        "fa": "السلام ولادت حضرت امام محمد باقر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-067",
+      "date": "1384-05-16",
+      "title": {
+        "fa": "تشکیل جهاد دانشگاهی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-068",
+      "date": "1384-05-17",
+      "title": {
+        "fa": "روز خبرنگار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-069",
+      "date": "1384-05-18",
+      "title": {
+        "fa": "السلام النقی الهادی علیه ادت حضرت امام علی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-070",
+      "date": "1384-05-25",
+      "title": {
+        "fa": "ادالائمه جو السلام ولادت حضرت امام محمد تقی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-071",
+      "date": "1384-05-26",
+      "title": {
+        "fa": "آغاز بازگشت آزادگان به میهن اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-072",
+      "date": "1384-05-28",
+      "title": {
+        "fa": "آغاز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-073",
+      "date": "1384-05-30",
+      "title": {
+        "fa": "االله علیها وفات حضرت زینب سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-074",
+      "date": "1384-05-30",
+      "title": {
+        "fa": "روز بزرگداشت علامه مجلسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-075",
+      "date": "1384-05-30",
+      "title": {
+        "fa": "روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-076",
+      "date": "1384-06-01",
+      "title": {
+        "fa": "روز پزشک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-077",
+      "date": "1384-06-01",
+      "title": {
+        "fa": "روز بزرگداشت ابو علی سینا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-078",
+      "date": "1384-06-02",
+      "title": {
+        "fa": "آغاز هفته دولت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-079",
+      "date": "1384-06-04",
+      "title": {
+        "fa": "روز کارمند"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-080",
+      "date": "1384-06-05",
+      "title": {
+        "fa": "روز داروسازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-081",
+      "date": "1384-06-05",
+      "title": {
+        "fa": "روز بزرگداشت محمدبن زکریای رازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-082",
+      "date": "1384-06-08",
+      "title": {
+        "fa": "وزیری به دست منافقین و ادت انفجار دفتر نخست روز مبارزه با تروریسم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-083",
+      "date": "1384-06-09",
+      "title": {
+        "fa": "السلام ادت حضرت امام موسی کاظم علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-084",
+      "date": "1384-06-10",
+      "title": {
+        "fa": "سالروز تصویب قانون عملیات بانکی بدون ربا روز بانکداری اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-085",
+      "date": "1384-06-13",
+      "title": {
+        "fa": "روز تعاون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-086",
+      "date": "1384-06-13",
+      "title": {
+        "fa": "روز بزرگداشت ابوریحان بیرونی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-087",
+      "date": "1384-06-14",
+      "title": {
+        "fa": "االله قدوسی و سرتیپ وحید دستجردی ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-088",
+      "date": "1384-06-17",
+      "title": {
+        "fa": "السلام ولادت حضرت امام حسین علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-089",
+      "date": "1384-06-17",
+      "title": {
+        "fa": "روز پاسدار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-090",
+      "date": "1384-06-17",
+      "title": {
+        "fa": "ریور و 17 قیام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-091",
+      "date": "1384-06-18",
+      "title": {
+        "fa": "السلام العباس علیه ولادت حضرت ابوالفضل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-092",
+      "date": "1384-06-18",
+      "title": {
+        "fa": "روز جانباز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-093",
+      "date": "1384-06-19",
+      "title": {
+        "fa": "السلام العابدین علیه ولادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-094",
+      "date": "1384-06-19",
+      "title": {
+        "fa": "االله سید وفات آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-095",
+      "date": "1384-06-20",
+      "title": {
+        "fa": "االله مدنی به دست منافقین ادت دومین ید محراب آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-096",
+      "date": "1384-06-21",
+      "title": {
+        "fa": "روز سینما"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-097",
+      "date": "1384-06-25",
+      "title": {
+        "fa": "السلام ولادت حضرت علی اکبر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-098",
+      "date": "1384-06-25",
+      "title": {
+        "fa": "روز جوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-099",
+      "date": "1384-06-27",
+      "title": {
+        "fa": "روز شعر و ادب فارسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-100",
+      "date": "1384-06-27",
+      "title": {
+        "fa": "روز بزرگداشت استاد سید محمد حسین ریار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-101",
+      "date": "1384-06-29",
+      "title": {
+        "fa": "عطیل ت االله تعالی فرجه ولادت حضرت قائم عجل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-102",
+      "date": "1384-06-29",
+      "title": {
+        "fa": "روز جهانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-103",
+      "date": "1384-06-31",
+      "title": {
+        "fa": "آغاز جنگ تحمیلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-104",
+      "date": "1384-06-31",
+      "title": {
+        "fa": "س آغاز هفتة دفاع مقد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-105",
+      "date": "1384-07-05",
+      "title": {
+        "fa": "روز جهانی جهانگردی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-106",
+      "date": "1384-07-07",
+      "title": {
+        "fa": "نشانی و ایمنی روز آتش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-107",
+      "date": "1384-07-08",
+      "title": {
+        "fa": "آرا ن، نامجو، کلاهدوز و جها فلاحی، فکوری : ادت سرداران اسلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-108",
+      "date": "1384-07-09",
+      "title": {
+        "fa": "روز همبستگی و همدردی با کودکان و نوجوانان فلسطینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-109",
+      "date": "1384-07-09",
+      "title": {
+        "fa": "روز جهانی سالمندان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-110",
+      "date": "1384-07-13",
+      "title": {
+        "fa": "از عراق به پاریس ره هجرت حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-111",
+      "date": "1384-07-13",
+      "title": {
+        "fa": "روز نیروی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-112",
+      "date": "1384-07-14",
+      "title": {
+        "fa": "روز دامپزشکی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-113",
+      "date": "1384-07-16",
+      "title": {
+        "fa": "روز جهانی کودک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-114",
+      "date": "1384-07-20",
+      "title": {
+        "fa": "روز بزرگداشت حافظ"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-115",
+      "date": "1384-07-20",
+      "title": {
+        "fa": "روز اسکان معلولان و سالمندان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-116",
+      "date": "1384-07-20",
+      "title": {
+        "fa": "روز ملی کاهش اثرات"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-117",
+      "date": "1384-07-22",
+      "title": {
+        "fa": "روز جهانی استاندارد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-118",
+      "date": "1384-07-23",
+      "title": {
+        "fa": "االله علیها وفات حضرت خدیجه سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-119",
+      "date": "1384-07-23",
+      "title": {
+        "fa": "ادت پنجمین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-120",
+      "date": "1384-07-24",
+      "title": {
+        "fa": "روز پیوند اولیا و مربیان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-121",
+      "date": "1384-07-26",
+      "title": {
+        "fa": "روز تربیت بدنی و ورزش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-122",
+      "date": "1384-07-28",
+      "title": {
+        "fa": "السلام ولادت حضرت امام حسن مجتبی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-123",
+      "date": "1384-07-29",
+      "title": {
+        "fa": "روز صادرات"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-124",
+      "date": "1384-08-01",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-125",
+      "date": "1384-08-01",
+      "title": {
+        "fa": "ریزی روز آمار و برنامه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-126",
+      "date": "1384-08-02",
+      "title": {
+        "fa": "السلام علیه ضربت خوردن حضرت علی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-127",
+      "date": "1384-08-03",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-128",
+      "date": "1384-08-04",
+      "title": {
+        "fa": "علیه پذیرش کاپیتولاسیون ره خمینی امام اعتراض و افشاگری حضرت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-129",
+      "date": "1384-08-05",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-130",
+      "date": "1384-08-06",
+      "title": {
+        "fa": "ان آخرین جمعة ماه رمض روز جهانی قدس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-131",
+      "date": "1384-08-08",
+      "title": {
+        "fa": "ساله 13 بسیجی ادت محمدحسین فهمیده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-132",
+      "date": "1384-08-08",
+      "title": {
+        "fa": "روز نوجوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-133",
+      "date": "1384-08-08",
+      "title": {
+        "fa": "آموزی روز بسیج دانش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-134",
+      "date": "1384-08-10",
+      "title": {
+        "fa": "االله قاضی طباطبایی اولین ید محراب به دست منافقین ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-135",
+      "date": "1384-08-13",
+      "title": {
+        "fa": "ا به دست دانشجویان پیرو خط تسخیر لانة جاسوسی آمریک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-136",
+      "date": "1384-08-18",
+      "title": {
+        "fa": "ملی کیفیت روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-137",
+      "date": "1384-08-24",
+      "title": {
+        "fa": "روز کتاب و کتابخوانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-138",
+      "date": "1384-08-24",
+      "title": {
+        "fa": "االله علامه سید محمدحسین روز بزرگداشت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-139",
+      "date": "1384-09-05",
+      "title": {
+        "fa": "ره تشکیل بسیج مستضعفین به فرمان حضرت امام خمینی روز بسیج مستضعفین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-140",
+      "date": "1384-09-07",
+      "title": {
+        "fa": "روز نیروی دریایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-141",
+      "date": "1384-09-09",
+      "title": {
+        "fa": "روز بزرگداشت شیخ مفید"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-142",
+      "date": "1384-09-10",
+      "title": {
+        "fa": "االله سید حسن مدرس ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-143",
+      "date": "1384-09-10",
+      "title": {
+        "fa": "روز مجلس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-144",
+      "date": "1384-09-12",
+      "title": {
+        "fa": "تصویب قانون اساسی جمهوری اسلامی ایران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-145",
+      "date": "1384-09-12",
+      "title": {
+        "fa": "روز جهانی معلولان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-146",
+      "date": "1384-09-13",
+      "title": {
+        "fa": "االله علیها دت حضرت معصومه سلام ولا 4 ذی القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-147",
+      "date": "1384-09-13",
+      "title": {
+        "fa": "روز بیمه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-148",
+      "date": "1384-09-16",
+      "title": {
+        "fa": "روز دانشجو"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-149",
+      "date": "1384-09-18",
+      "title": {
+        "fa": "معرفی عراق به عنوان مسؤول و آغازگر جنگ از سوی سازمان ملل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-150",
+      "date": "1384-09-19",
+      "title": {
+        "fa": "ره تشکیل شورای عالی انقلاب فرهنگی به فرمان حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-151",
+      "date": "1384-09-20",
+      "title": {
+        "fa": "حراب به دست منافقین االله دستغیب سومین ید م ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-152",
+      "date": "1384-09-23",
+      "title": {
+        "fa": "السلام ولادت حضرت امام رضا علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-153",
+      "date": "1384-09-25",
+      "title": {
+        "fa": "روز پژوهش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-154",
+      "date": "1384-09-26",
+      "title": {
+        "fa": "روز حمل و نقل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-155",
+      "date": "1384-09-27",
+      "title": {
+        "fa": "االله دکتر محمد مفتح ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-156",
+      "date": "1384-09-27",
+      "title": {
+        "fa": "روز وحدت حوزه و دانشگاه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-157",
+      "date": "1384-10-01",
+      "title": {
+        "fa": "دسامبر 22 1426 ذی القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-158",
+      "date": "1384-10-04",
+      "title": {
+        "fa": "السلام میلاد حضرت عیسی مسیح علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-159",
+      "date": "1384-10-06",
+      "title": {
+        "fa": "هی پهلوی شا االله حسین غفاری به دست مأموران ستم ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-160",
+      "date": "1384-10-11",
+      "title": {
+        "fa": "میلادی 2006 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-161",
+      "date": "1384-10-11",
+      "title": {
+        "fa": "جوادالائمه السلام ادت حضرت امام محمد تقی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-162",
+      "date": "1384-10-17",
+      "title": {
+        "fa": "ادت مظلومانه زائران خانه خدا به دستور آمریکا به دست مأموران آل سعود"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-163",
+      "date": "1384-10-18",
+      "title": {
+        "fa": "السلام ادت حضرت امام محمد باقر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-164",
+      "date": "1384-10-19",
+      "title": {
+        "fa": "قیام خونین مردم قم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-165",
+      "date": "1384-10-20",
+      "title": {
+        "fa": "روز عرفه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-166",
+      "date": "1384-10-20",
+      "title": {
+        "fa": "روز نیایش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-167",
+      "date": "1384-10-22",
+      "title": {
+        "fa": "ره تشکیل شورای انقلاب به فرمان حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-168",
+      "date": "1384-10-26",
+      "title": {
+        "fa": "السلام النقی الهادی علیه ولادت حضرت امام علی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-169",
+      "date": "1384-10-26",
+      "title": {
+        "fa": "فرار شاه معدوم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-170",
+      "date": "1384-10-27",
+      "title": {
+        "fa": "ذوالقدر از فدائیان اسلام ادت نواب صفوی، طهماسبی، برادران واحدی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-171",
+      "date": "1384-11-05",
+      "title": {
+        "fa": "االله علیه و آله روز مباهلة پیامبر اسلام صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-172",
+      "date": "1384-11-06",
+      "title": {
+        "fa": "روز خانواده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-173",
+      "date": "1384-11-11",
+      "title": {
+        "fa": "هجری قمری 1427 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-174",
+      "date": "1384-11-12",
+      "title": {
+        "fa": "اسلامی و آغاز دهة مبارک فجر انقلاب به ایران ره بازگشت حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-175",
+      "date": "1384-11-19",
+      "title": {
+        "fa": "روز نیروی هوایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-176",
+      "date": "1384-11-20",
+      "title": {
+        "fa": "السلام به دست انفجار در حرم حضرت امام رضا علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-177",
+      "date": "1384-11-21",
+      "title": {
+        "fa": "روز تجلیل از اسرا و مفقودان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-178",
+      "date": "1384-11-22",
+      "title": {
+        "fa": "السلام العابدین علیه ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-179",
+      "date": "1384-11-28",
+      "title": {
+        "fa": "المقدس به مکه معظمه تغییر قبله مسلمین از بیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-180",
+      "date": "1384-12-05",
+      "title": {
+        "fa": "به روایتی السلام العابدین علیه ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-181",
+      "date": "1384-12-05",
+      "title": {
+        "fa": "روز بزرگداشت خواجه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-182",
+      "date": "1384-12-08",
+      "title": {
+        "fa": "و تربیت اسلامی روز امور تربیتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-183",
+      "date": "1384-12-09",
+      "title": {
+        "fa": "روز ملی حمایت از حقوق مصرف کنندگان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-184",
+      "date": "1384-12-13",
+      "title": {
+        "fa": "السلام ولادت حضرت امام محمد باقر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-185",
+      "date": "1384-12-14",
+      "title": {
+        "fa": "روز احسان و نیکوکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-186",
+      "date": "1384-12-15",
+      "title": {
+        "fa": "روز درختکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-187",
+      "date": "1384-12-17",
+      "title": {
+        "fa": "السلام ولادت حضرت امام موسی کاظم علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-188",
+      "date": "1384-12-22",
+      "title": {
+        "fa": "ید انقلاب اسلامی مبنی بر تأسیس بنیاد ره حضرت امام خمینی سالروز صدور فرمان روز بزرگداشت دا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1384-evt-189",
+      "date": "1384-12-25",
+      "title": {
+        "fa": "بمباران شیمیایی حلبچه به توسط ارتش بعث عراق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1219 @@
+{
+  "year": 1394,
+  "schemaVersion": 1,
+  "dataVersion": "1394.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1394.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1394-evt-001",
+      "date": "1394-01-14",
+      "title": {
+        "fa": "سالروز وفات حضرت ام البنین سلام االله علیها روز تکریم مادران و همسران شهدا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-002",
+      "date": "1394-01-18",
+      "title": {
+        "fa": "روز سلامتی روز جهانی بهداشت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-003",
+      "date": "1394-01-20",
+      "title": {
+        "fa": "روز ملی فناوری هسته ای روز هنر انقلاب اسلامی سالروز شهادت سید مرتض ی آوینی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-004",
+      "date": "1394-01-25",
+      "title": {
+        "fa": "روز بزرگداشت عطار نیشابوری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-005",
+      "date": "1394-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی و نیروی زمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-006",
+      "date": "1394-02-03",
+      "title": {
+        "fa": "روز بزرگداشت شیخ بهایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-007",
+      "date": "1394-02-05",
+      "title": {
+        "fa": "شکست حمله نظامی آمریکا به ایران در طبس ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-008",
+      "date": "1394-02-09",
+      "title": {
+        "fa": "روز شوراها ولادت حضرت امام محمد تقی جواد الائمه ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-009",
+      "date": "1394-02-10",
+      "title": {
+        "fa": "روز ملی خلیج فارس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-010",
+      "date": "1394-02-11",
+      "title": {
+        "fa": "مه روز جهانی کار و کارگر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-011",
+      "date": "1394-02-14",
+      "title": {
+        "fa": "وفات حضرت زینب سلام االله علیها ه ق تغییر قبله مسلمین از بیت المقدس به مکه معظمه 2 ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-012",
+      "date": "1394-02-15",
+      "title": {
+        "fa": "روز بزرگداشت شیخ صدوق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-013",
+      "date": "1394-02-18",
+      "title": {
+        "fa": "روز بیماری های خاص و صعب العلاج"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-014",
+      "date": "1394-02-19",
+      "title": {
+        "fa": "روز بزرگداشت شیخ کلی نی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-015",
+      "date": "1394-02-24",
+      "title": {
+        "fa": "لغو امتیاز تنباکو به فتوای آیت االله میرزا حسن شیرازی ه ش شهادت حضرت امام موسی کاظم ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-016",
+      "date": "1394-02-25",
+      "title": {
+        "fa": "روز بزرگداشت فردوسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-017",
+      "date": "1394-02-28",
+      "title": {
+        "fa": "روز بزرگداشت حکیم عمر خیام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-018",
+      "date": "1394-03-02",
+      "title": {
+        "fa": "ولادت حضرت ابوالفضل العباس ه ق و روز جانباز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-019",
+      "date": "1394-03-04",
+      "title": {
+        "fa": "روز مقاومت و پایداری روز دزفول"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-020",
+      "date": "1394-03-09",
+      "title": {
+        "fa": "ولادت حضرت علی اکبر ه ق و روز جوان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-021",
+      "date": "1394-03-20",
+      "title": {
+        "fa": "روز صنایع دستی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-022",
+      "date": "1394-03-26",
+      "title": {
+        "fa": "شهادت سربازان دلیر اسلام : بخارایی، امانی، صفار هرند ی و نیک نژاد ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-023",
+      "date": "1394-03-27",
+      "title": {
+        "fa": "روز جهاد کشاورزی تشکیل جهاد سازندگی به فرمان حضرت امام خمینی رحمة االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-024",
+      "date": "1394-03-29",
+      "title": {
+        "fa": "درگذشت دکتر علی شریعتی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-025",
+      "date": "1394-04-06",
+      "title": {
+        "fa": "وفات حضرت خدیجه سلام االله عل یها 3"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-026",
+      "date": "1394-04-08",
+      "title": {
+        "fa": "روز مبارزه با سلاح های شیمیایی و میکروبی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-027",
+      "date": "1394-04-10",
+      "title": {
+        "fa": "ژوئیه روز صنعت و معدن"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-028",
+      "date": "1394-04-12",
+      "title": {
+        "fa": "حمله ددمنشانه ناوگان آمریکای جنایتکار به هواپیمای مسافربری جمهوری اسلامی ایران ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-029",
+      "date": "1394-04-15",
+      "title": {
+        "fa": "ضربت خوردن حضرت علی ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-030",
+      "date": "1394-04-18",
+      "title": {
+        "fa": "شب قدر ر وز ادبیات کودکان و نوجوانان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-031",
+      "date": "1394-04-21",
+      "title": {
+        "fa": "روز عفاف و حجاب"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-032",
+      "date": "1394-04-25",
+      "title": {
+        "fa": "روز بهزیستی و تأمین اجتماعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-033",
+      "date": "1394-04-26",
+      "title": {
+        "fa": "روز جهانی قدس آخرین جمعه ماه رمضان سالروز تأسیس نهاد شورای نگه بان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-034",
+      "date": "1394-05-05",
+      "title": {
+        "fa": "سالروز عملیات افتخار آفرین مرصاد ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-035",
+      "date": "1394-05-09",
+      "title": {
+        "fa": "روز اهدای خون"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-036",
+      "date": "1394-05-12",
+      "title": {
+        "fa": "روز فرهنگ پهلوانی و ورزش زورخانه ای"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-037",
+      "date": "1394-05-14",
+      "title": {
+        "fa": "صدور فرمان مشروطیت ه ش روز حقوق بشر اسلامی و کرامت انسانی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-038",
+      "date": "1394-05-16",
+      "title": {
+        "fa": "تشکیل جهاد دانشگاهی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-039",
+      "date": "1394-05-21",
+      "title": {
+        "fa": "روز حمایت از صنایع کوچک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-040",
+      "date": "1394-05-23",
+      "title": {
+        "fa": "روز مقاومت اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-041",
+      "date": "1394-05-25",
+      "title": {
+        "fa": "ذی القعده ولادت حضرت معصومه سلام االله علیها ه ق و روز دختران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-042",
+      "date": "1394-05-26",
+      "title": {
+        "fa": "آغاز بازگشت آزادگان به میهن اسلامی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-043",
+      "date": "1394-05-28",
+      "title": {
+        "fa": "کودتای آمریکا برای بازگرداندن شاه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-044",
+      "date": "1394-05-29",
+      "title": {
+        "fa": "روز تجلیل از امام زادگان و بقاع متبرکه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-045",
+      "date": "1394-05-30",
+      "title": {
+        "fa": "روز بزرگداشت حضرت احمد بن موسی شاهچراغ ر وز بزرگداشت علامه مجلسی روز جهانی مسجد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-046",
+      "date": "1394-06-01",
+      "title": {
+        "fa": "ذی القعده اوت روز بزرگداشت ابوعلی سینا روز پزشک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-047",
+      "date": "1394-06-02",
+      "title": {
+        "fa": "آغاز هفته دولت شهادت سید علی اندرزگو رمضان - ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-048",
+      "date": "1394-06-04",
+      "title": {
+        "fa": "روز کارمند ولادت حضرت امام رضا ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-049",
+      "date": "1394-06-05",
+      "title": {
+        "fa": "روز بزرگداشت محمدبن زکریای رازی روز داروسازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-050",
+      "date": "1394-06-12",
+      "title": {
+        "fa": "روز مبارزه با استعمار انگلیس سالروز شهادت رئیسعلی دلواری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-051",
+      "date": "1394-06-13",
+      "title": {
+        "fa": "روز تعاون روز بزرگداشت ابوریحان بیرونی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-052",
+      "date": "1394-06-14",
+      "title": {
+        "fa": "شهادت آیت االله قدوسی و سرتیپ وحید دستجردی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-053",
+      "date": "1394-06-17",
+      "title": {
+        "fa": "قیام شهریور و کشتار جمعی از مردم به دست مأموران ستم ش اهی پهلوی ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-054",
+      "date": "1394-06-19",
+      "title": {
+        "fa": "وفات آیت االله سیدمحمود طالقانی اولین امام جمعه تهران ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-055",
+      "date": "1394-06-20",
+      "title": {
+        "fa": "شهادت دومین شهید محراب آیت االله مدنی به دست منافقان ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-056",
+      "date": "1394-06-21",
+      "title": {
+        "fa": "روز سینما"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-057",
+      "date": "1394-06-23",
+      "title": {
+        "fa": "شهادت حضرت امام محمد تقی جوادالائمه ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-058",
+      "date": "1394-06-27",
+      "title": {
+        "fa": "روز شعر و ادب فارسی روز بزرگداشت استاد سید محمد حسین شهریار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-059",
+      "date": "1394-06-29",
+      "title": {
+        "fa": "شهادت مظلوما نه زائران خانه خدا به دست مأموران آل سعود ش برابر با ه 6 ذی الحجه ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-060",
+      "date": "1394-06-30",
+      "title": {
+        "fa": "شهادت حضرت امام محمد باقر ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-061",
+      "date": "1394-07-01",
+      "title": {
+        "fa": "ذی ال حجه سپتامبر نیایش روز عرفه روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-062",
+      "date": "1394-07-04",
+      "title": {
+        "fa": "ی ک شنبه 5 علیه الائمه ثامن عملیات در آبادان حصر شکست السلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-063",
+      "date": "1394-07-06",
+      "title": {
+        "fa": "السلا علیه کاظم موسی امام ولادت م"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-064",
+      "date": "1394-07-08",
+      "title": {
+        "fa": "مولوی بزرگداشت روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-065",
+      "date": "1394-07-09",
+      "title": {
+        "fa": "اکتبر ب همدردی و همبستگی روز فلسطینی نوجوانان و کودکان ا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-066",
+      "date": "1394-07-13",
+      "title": {
+        "fa": "خمینی امام حضرت هجرت ر Êr علیه االله پاریس به عراق از نیروی روز انتظامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-067",
+      "date": "1394-07-16",
+      "title": {
+        "fa": "اسلا پیامبر مباهله روز آله و علیه االله صلی م"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-068",
+      "date": "1394-07-17",
+      "title": {
+        "fa": "بازنشستگان تکریم و خانواده روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-069",
+      "date": "1394-07-20",
+      "title": {
+        "fa": "حافظ بزرگداشت روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-070",
+      "date": "1394-07-22",
+      "title": {
+        "fa": "استاندارد جهانی روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-071",
+      "date": "1394-07-24",
+      "title": {
+        "fa": "پارالمپیک ملی روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-072",
+      "date": "1394-07-26",
+      "title": {
+        "fa": "ورزش و بدنی تربیت روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-073",
+      "date": "1394-07-29",
+      "title": {
+        "fa": "صادرات روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-074",
+      "date": "1394-08-08",
+      "title": {
+        "fa": "فهمیده محمدحسین شهادت بسیجی ساله دانش بسیج و نوجوان روز آموزی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-075",
+      "date": "1394-08-10",
+      "title": {
+        "fa": "نوامبر شهاد آیت ت منافقان دست به محراب شهید اولین طباطبایی قاضی االله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-076",
+      "date": "1394-08-17",
+      "title": {
+        "fa": "حضر شهادت زین امام ت السلام علیه العابدین روایتی به"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-077",
+      "date": "1394-08-19",
+      "title": {
+        "fa": "توسعه و صلح خدمت در علم جهانی روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-078",
+      "date": "1394-08-24",
+      "title": {
+        "fa": "کتاب روزکتاب، خوانی آیت بزرگداشت روز کتابدار و طباطبایی سیدمحمدحسین علامه االله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-079",
+      "date": "1394-08-28",
+      "title": {
+        "fa": "السلام علیه مجتبی حسن امام حضرت شهادت ه .ق معتبر قول بر بنا بزرگداشت روز فارسی سلمان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-080",
+      "date": "1394-09-05",
+      "title": {
+        "fa": "بسیج روز مستضعفان تشکیل مستضعفان بسیج به فرمان خمینی امام حضرت ر Êr علیه االله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-081",
+      "date": "1394-09-07",
+      "title": {
+        "fa": "دریایی نیروی روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-082",
+      "date": "1394-09-09",
+      "title": {
+        "fa": "مفید شیخ بزرگداشت روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-083",
+      "date": "1394-09-10",
+      "title": {
+        "fa": "دسامبر آیت شهادت مدرس حسن سید االله مجلس روز و"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-084",
+      "date": "1394-09-20",
+      "title": {
+        "fa": "آیت شهادت منافقان دست به محراب شهید سومین دستغیب االله ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-085",
+      "date": "1394-09-22",
+      "title": {
+        "fa": "ربیع الا ول صلی اکرم رسول حضرت هجرت مدینه به مکه از آله و علیه االله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-086",
+      "date": "1394-09-25",
+      "title": {
+        "fa": "پژوهش روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-087",
+      "date": "1394-09-29",
+      "title": {
+        "fa": "علیه عسکری حسن امام حضرت شهادت السلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-088",
+      "date": "1394-10-01",
+      "title": {
+        "fa": "ربیع الا ول دسامبر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-089",
+      "date": "1394-10-03",
+      "title": {
+        "fa": "ولادت حضرت رسول اکرم صلی االله علیه و آله به روایت اهل سنت آغاز هفته وحدت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-090",
+      "date": "1394-10-04",
+      "title": {
+        "fa": "ولادت حضرت عیسی مسیح"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-091",
+      "date": "1394-10-05",
+      "title": {
+        "fa": "روز ایمنی در برابر زلزله و کاهش اثرات بلایای طبیعی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-092",
+      "date": "1394-10-07",
+      "title": {
+        "fa": "سالروز تشکیل نهضت سواد آموزی به فرمان حضرت امام خمینی ر حمة االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-093",
+      "date": "1394-10-09",
+      "title": {
+        "fa": "روز بصیرت و میثاق امت با ولایت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-094",
+      "date": "1394-10-11",
+      "title": {
+        "fa": "ژانویه آغاز سال میلادی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-095",
+      "date": "1394-10-19",
+      "title": {
+        "fa": "قیام خونین مردم قم ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-096",
+      "date": "1394-10-20",
+      "title": {
+        "fa": "شهادت می رزا تقی خان امیرکبیر ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-097",
+      "date": "1394-10-22",
+      "title": {
+        "fa": "ربیع ال ثانی تشکیل شورای انقلاب به فرمان حضرت امام خمینی ر حمة االله علیه ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-098",
+      "date": "1394-10-26",
+      "title": {
+        "fa": "فرار شاه معدوم ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-099",
+      "date": "1394-10-27",
+      "title": {
+        "fa": "شهادت نواب صفوی، طهماسبی، برادران واحدی و ذوالقدر از فداییان اسلا م ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-100",
+      "date": "1394-10-29",
+      "title": {
+        "fa": "ولادت حضرت امام حسن عسکری ه ق روز غزه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-101",
+      "date": "1394-11-01",
+      "title": {
+        "fa": "ربیع ال ثانی ژانویه وفات حضرت معصومه سلام االله علیها ه ق"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-102",
+      "date": "1394-11-06",
+      "title": {
+        "fa": "سالروز حماسه مردم آمل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-103",
+      "date": "1394-11-25",
+      "title": {
+        "fa": "ولادت حضرت زینب سلام االله علیها 5 ه . ق و روز پرستار"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-104",
+      "date": "1394-11-29",
+      "title": {
+        "fa": "قیام مردم تبریز به من اسبت چهلمین روز شهادت شهدای قم ه ش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-105",
+      "date": "1394-12-03",
+      "title": {
+        "fa": "شهادت حضرت فاطمه زهرا سلام االله علیها ه ق به روایتی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-106",
+      "date": "1394-12-05",
+      "title": {
+        "fa": "روز بزرگداشت خواجه نصیرالدین طوسی روز مهندسی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-107",
+      "date": "1394-12-14",
+      "title": {
+        "fa": "روز احسان و نیکوکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-108",
+      "date": "1394-12-18",
+      "title": {
+        "fa": "روز بزرگداشت سید جمال الدین اسدآبادی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-109",
+      "date": "1394-12-20",
+      "title": {
+        "fa": "روز راهیان نور"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1394-evt-110",
+      "date": "1394-12-25",
+      "title": {
+        "fa": "روز بزرگداشت پروین اعتص امی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

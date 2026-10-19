@@ -1,68 +1,28 @@
 {
   "name": "farsiui-calendar",
   "schemaVersion": 1,
-  "dataVersion": "1405.2.1",
-  "description": "Official Iranian public holidays and optional events for Jalali years. Date conversion is not included — consumers use a Jalali library (e.g. @internationalized/date).",
-  "years": [1405],
+  "dataVersion": "1383.1.0+1384.1.0+1385.1.0+1386.1.0+1387.1.0+1388.1.0+1389.1.0+1390.1.0+1391.1.0+1392.1.0+1393.1.0+1394.1.0+1395.1.0+1396.1.0+1397.1.0+1398.1.0+1399.1.0+1400.1.0+1401.1.0+1402.1.0+1403.1.0+1404.1.0+1405.2.3",
+  "description": "Iranian public holidays and observances for Jalali years. Date conversion is not included — consumers use a Jalali library (e.g. @internationalized/date).",
+  "years": [1383, 1384, 1385, 1386, 1387, 1388, 1389, 1390, 1391, 1392, 1393, 1394, 1395, 1396, 1397, 1398, 1399, 1400, 1401, 1402, 1403, 1404, 1405],
   "coverage": {
     "holidays": "national+religious",
-    "events": "observances-from-time-ir",
-    "religiousLunar": "included-1405-from-ut-official"
+    "events": "non-holiday-observances",
+    "religiousLunar": "included-where-available"
   },
   "license": {
-    "data": "CC0-1.0",
-    "note": "Holiday rows for 1405 follow UT Holiday-1405.pdf. Non-holiday observances in events.json are curated from Time.ir via pipe2time (MIT); not a wholesale repo copy. Lunar observances in events may differ ±1 day from UT Calendar PDF."
+    "data": "CC0-1.0"
   },
-  "sources": [
-    {
-      "id": "ut-calendar-center",
-      "role": "authoritative-official-1405",
-      "description": "Institute of Geophysics, University of Tehran — Calendar Center. Official Holiday-1405.pdf and Calendar-1405.pdf (Council of Public Culture).",
-      "url": "https://calendar.ut.ac.ir/",
-      "documents": [
-        "https://calendar.ut.ac.ir/documents/2139738/7092644/Holiday-1405.pdf",
-        "https://calendar.ut.ac.ir/documents/2139738/7092644/Calendar-1405.pdf"
-      ]
-    },
-    {
-      "id": "known-national-fixed",
-      "role": "authoritative-rules",
-      "description": "Established fixed Jalali national public holidays (Nowruz period, 12 Farvardin, 13 Farvardin, 14–15 Khordad, 22 Bahman, 29 Esfand).",
-      "url": null
-    },
-    {
-      "id": "pipe2time.ir",
-      "role": "curated-source-1405-events",
-      "description": "MIT Time.ir scrape. holidays.json lunar dates were corrected from UT PDF (superseding pipe2time holidays). events.json uses isHoliday:false rows only.",
-      "url": "https://github.com/HMarzban/pipe2time.ir"
-    },
-    {
-      "id": "PersianHoliday",
-      "role": "cross-check-only",
-      "description": "Time.ir HTML dumps. Not imported; not authoritative vs UT official PDFs.",
-      "url": "https://github.com/samanzamani/PersianHoliday"
-    },
-    {
-      "id": "jalali_calendar",
-      "role": "rejected-for-official-data",
-      "description": "Per-day dumps with noise/duplicates and no clear license. Not used.",
-      "url": "https://github.com/alirezadesh/jalali_calendar"
-    }
-  ],
+  "source": "Official University of Tehran Calendar Center (calendar.ut.ac.ir).",
   "cdn": {
     "repo": "MiladJoodi/FarsiUI",
     "basePath": "calendar",
-    "jsdelivrTemplate": "https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@{ref}/calendar/{path}",
-    "recommendedRef": "main",
-    "pinnedRefNote": "Prefer @main or a git tag (e.g. calendar-1405.2.0). @latest may lag behind GitHub."
+    "provider": "github-raw",
+    "rawTemplate": "https://raw.githubusercontent.com/MiladJoodi/FarsiUI/{ref}/calendar/{path}",
+    "recommendedRef": "main"
   },
   "publishedAt": "2026-10-19",
   "notes": [
     "Friday is a weekend day in Iran but is not listed as a holiday item; clients should treat weekends separately.",
-    "1405 has 26 official holiday days per Holiday-1405.pdf (some days carry two occasion titles in our items array).",
-    "1405 events.json has non-holiday observances from Time.ir/pipe2time (see coverage.events).",
-    "1405 Esfand has 29 days (non-leap in the algorithmic 33-year cycle used by @internationalized/date PersianCalendar).",
-    "Do not publish future years' lunar holidays until that year's UT official PDF is available.",
-    "Schema is designed for FarsiUI calendar UI to import JSON statically or fetch via jsDelivr."
+    "Schema is designed for FarsiUI calendar UI to import JSON statically or fetch via GitHub Raw."
   ]
 }

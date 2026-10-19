@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import {
   BookOpenIcon,
   CaseSensitiveIcon,
+  CalendarDaysIcon,
   ChartAreaIcon,
   ExternalLinkIcon,
   LayoutGridIcon,
@@ -36,6 +37,7 @@ const NAV_ICONS: Record<string, LucideIcon> = {
   "/skills": WandSparklesIcon,
   "/charts": ChartAreaIcon,
   "/fonts": CaseSensitiveIcon,
+  "/calendar": CalendarDaysIcon,
   "/contact": MailIcon,
   "https://icons.farsiui.ir/": ShapesIcon,
   "https://tarhak.ir/": ExternalLinkIcon,

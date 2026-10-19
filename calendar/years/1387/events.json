@@ -1,0 +1,867 @@
+{
+  "year": 1387,
+  "schemaVersion": 1,
+  "dataVersion": "1387.1.0",
+  "source": "calendar.ut.ac.ir Calendar-1387.pdf non-holiday occasions auto-parsed",
+  "coverage": "observances-from-ut-calendar-pdf",
+  "items": [
+    {
+      "id": "1387-evt-001",
+      "date": "1387-01-20",
+      "title": {
+        "fa": "ادت امیر سپهبد علی صیاد شیرازی 9 2 21 شنبه چهار ای روز ملی فناوری هسته"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-002",
+      "date": "1387-01-27",
+      "title": {
+        "fa": "السلام ولادت حضرت امام حسن عسکری علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-003",
+      "date": "1387-01-29",
+      "title": {
+        "fa": "روز ارتش جمهوری اسلامی و نیروی زمینی االله علیها وفات حضرت معصومه سلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-004",
+      "date": "1387-01-31",
+      "title": {
+        "fa": "سالروز اعلام انقلاب فرهنگی تأسیس سپاه پاسداران انقلاب اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-005",
+      "date": "1387-01-03",
+      "title": {
+        "fa": "روز ملی کارآفرینی – روز بزرگداشت شیخ بهایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-006",
+      "date": "1387-01-05",
+      "title": {
+        "fa": "شکست حمله نظامی آمریکا به ایران در طبس"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-007",
+      "date": "1387-01-10",
+      "title": {
+        "fa": "المقدس روز ملی خلیج فارس آغاز عملیات بیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-008",
+      "date": "1387-01-12",
+      "title": {
+        "fa": "روز جهانی کار و کارگر روز معلم ادت استاد مرتضی مطهری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-009",
+      "date": "1387-01-17",
+      "title": {
+        "fa": "روز اسناد ملی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-010",
+      "date": "1387-01-19",
+      "title": {
+        "fa": "شت شیخ کلینی روز بزرگدا روز جهانی صلیب سرخ و هلال احمر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-011",
+      "date": "1387-01-21",
+      "title": {
+        "fa": "و روز پرستار و بهورز ت حضرت زینب سلام االله علیها ولاد 11 5 22 شنبه یک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-012",
+      "date": "1387-01-24",
+      "title": {
+        "fa": "میرزا حسن شیرازی االله لغو امتیاز تنباکو به فتوای آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-013",
+      "date": "1387-01-27",
+      "title": {
+        "fa": "روز ارتباطات و روابط عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-014",
+      "date": "1387-01-03",
+      "title": {
+        "fa": "و روز مقاومت، ایثار و پیروزی المقدس فتح خرمر در عملیات بیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-015",
+      "date": "1387-01-16",
+      "title": {
+        "fa": "روز جهانی محیط زیست 5 الثانیة"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-016",
+      "date": "1387-01-21",
+      "title": {
+        "fa": "روز جهانی صنایع دستی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-017",
+      "date": "1387-01-28",
+      "title": {
+        "fa": "زدایی روز جهانی بیابان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-018",
+      "date": "1387-01-30",
+      "title": {
+        "fa": "السلام به دست ایادی آمریکا رضا علیه انفجار در حرم حضرت امام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-019",
+      "date": "1387-01-31",
+      "title": {
+        "fa": "ادت دکتر مصطفی چمران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-020",
+      "date": "1387-04-01",
+      "title": {
+        "fa": "روز اصناف تأسیس سازمان تبلیغات اسلامی 2008 ژوئن 21 1429 الثانیة"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-021",
+      "date": "1387-04-08",
+      "title": {
+        "fa": "های شیمیایی و میکروبی روز مبارزه با سلاح"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-022",
+      "date": "1387-04-14",
+      "title": {
+        "fa": "روز قلم ه ق 57 السلام یه ولادت حضرت امام محمد باقر عل"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-023",
+      "date": "1387-04-15",
+      "title": {
+        "fa": "لیات روز ما ه ق 254 السلام النقی الهادی علیه ادت حضرت امام علی 6 3 16 شنبه یک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-024",
+      "date": "1387-04-22",
+      "title": {
+        "fa": "ه ق 195 جواد الائمه السلام ولادت حضرت امام محمد تقی علیه 13 10 23 شنبه یک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-025",
+      "date": "1387-04-27",
+      "title": {
+        "fa": "ه ش 1367 شورای امنیت از سوی ایران 598 اعلام پذیرش قطعنامه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-026",
+      "date": "1387-04-28",
+      "title": {
+        "fa": "ه ق 62 وفات حضرت زینب سلام االله علیها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-027",
+      "date": "1387-05-05",
+      "title": {
+        "fa": "ه ق 183 ادت حضرت امام موسی کاظم 28 25 7 شنبه دو ه ش 1367 سالروز عملیات افتخار آفرین مرصاد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-028",
+      "date": "1387-05-17",
+      "title": {
+        "fa": "روز خبرنگار ه ق 38 السلام العابدین علیه ولادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-029",
+      "date": "1387-05-22",
+      "title": {
+        "fa": "و روز جوان ه ق 33 السلام ولادت حضرت علی اکبر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-030",
+      "date": "1387-05-22",
+      "title": {
+        "fa": "مقاومت اسلامی مردم لبنان بر رژیم صهیونیستی پیروزی روز مقاومت اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-031",
+      "date": "1387-05-31",
+      "title": {
+        "fa": "روز جهانی مسجد"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-032",
+      "date": "1387-06-01",
+      "title": {
+        "fa": "روز پزشک روز بزرگداشت ابوعلی سینا"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-033",
+      "date": "1387-06-02",
+      "title": {
+        "fa": "آغاز هفته دولت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-034",
+      "date": "1387-06-05",
+      "title": {
+        "fa": "روز داروسازی روز بزرگداشت محمدبن زکریای رازی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-035",
+      "date": "1387-06-08",
+      "title": {
+        "fa": "وزیری به دست منافقان و ادت مظلومانه یدان انفجار دفتر نخست مبارزه با تروریسم روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-036",
+      "date": "1387-06-09",
+      "title": {
+        "fa": "ه ش 1362 سالروز تصویب قانون عملیات بانکی بدون ربا روز بانکداری اسلامی 31 29 10 شنبه یک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-037",
+      "date": "1387-06-14",
+      "title": {
+        "fa": "ه ش 1360 دوسی و سرتیپ وحید دستجردی االله ق ادت آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-038",
+      "date": "1387-06-21",
+      "title": {
+        "fa": "روز سینما وفات حضرت خدیجه سلام االله علیها"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-039",
+      "date": "1387-06-26",
+      "title": {
+        "fa": "کرام و روز ا ه ق 3 السلام ولادت حضرت امام حسن مجتبی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-040",
+      "date": "1387-06-29",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-041",
+      "date": "1387-06-02",
+      "title": {
+        "fa": "شب قدر"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-042",
+      "date": "1387-06-05",
+      "title": {
+        "fa": "ه ش 1360 السلام علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-043",
+      "date": "1387-06-13",
+      "title": {
+        "fa": "روز نیروی انتظامی ه ش 1357 از عراق به پاریس ره هجرت حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-044",
+      "date": "1387-06-20",
+      "title": {
+        "fa": "روز ملی کاهش اثرات بلایای طبیعی سالمندان روز بزرگداشت حافظ روز اسکان معلولان"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-045",
+      "date": "1387-06-23",
+      "title": {
+        "fa": "روز ه ش 1361 االله اشرفی اصفهانی به دست منافقان ادت پنجمین ید محراب آیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-046",
+      "date": "1387-06-26",
+      "title": {
+        "fa": "روز تربیت بدنی و ورزش"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-047",
+      "date": "1387-06-07",
+      "title": {
+        "fa": "آموزی روز نوجوان روز بسیج دانش ساله 13 بسیجی ادت محمدحسین فهمیده 29 29 8 شنبه ار چه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-048",
+      "date": "1387-06-10",
+      "title": {
+        "fa": "االله قاضی ادت آیت روز دختران ه ق 173 علیها ولادت حضرت معصومه سلام االله 31 ذی القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-049",
+      "date": "1387-06-14",
+      "title": {
+        "fa": "روز فرهنگ عمومی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-050",
+      "date": "1387-06-18",
+      "title": {
+        "fa": "ه ق 148 سلام ال ولادت حضرت امام رضا علیه 10 11 20 شنبه دو روز ملی کیفیت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-051",
+      "date": "1387-06-24",
+      "title": {
+        "fa": "ه ش 1360 االله علامه سید محمد حسین طباطبایی آیت روز بزرگداشت خوانی کتاب و کتاب روز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-052",
+      "date": "1387-09-01",
+      "title": {
+        "fa": "نوامبر 21 1429 ذی القعده"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-053",
+      "date": "1387-09-05",
+      "title": {
+        "fa": "ه ش 1358 ره حضرت امام خمینی فرمان به بسیج مستضعفان تشکیل مستضعفان روزبسیج"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-054",
+      "date": "1387-09-07",
+      "title": {
+        "fa": "روز نیروی دریایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-055",
+      "date": "1387-09-08",
+      "title": {
+        "fa": "ه ق 220 جوادالائمه السلام ادت حضرت امام محمد تقی علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-056",
+      "date": "1387-09-12",
+      "title": {
+        "fa": "ه ش 1358 تصویب قانون اساسی جمهوری اسلامی ایران"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-057",
+      "date": "1387-09-15",
+      "title": {
+        "fa": "ه ش 1366 ادت مظلومانه زائران خانه خدا به دستور آمریکا به دست مأموران آل سعود"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-058",
+      "date": "1387-09-16",
+      "title": {
+        "fa": "روز دانشجو السلام ادت حضرت امام محمد باقر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-059",
+      "date": "1387-09-23",
+      "title": {
+        "fa": "ه ق 212 السلام ولادت حضرت امام علی النقی الهادی علیه 14 15 24 شنبه یک"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-060",
+      "date": "1387-09-05",
+      "title": {
+        "fa": "روز ملی ایمنی در برابر زلزله"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-061",
+      "date": "1387-09-07",
+      "title": {
+        "fa": "ادت ه ش 1358 ره سواد آموزی به فرمان حضرت امام خمینی تشکیل نهضت سالروز"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-062",
+      "date": "1387-09-12",
+      "title": {
+        "fa": "میلادی 2009 آغاز سال"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-063",
+      "date": "1387-09-19",
+      "title": {
+        "fa": "روز تجلیل از اسرا و مفقودان ه ش 1356 قیام خونین مردم قم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-064",
+      "date": "1387-09-20",
+      "title": {
+        "fa": "ادت میرزا تقی خان امیرکبیر ه ق 95 العابدین ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-065",
+      "date": "1387-09-26",
+      "title": {
+        "fa": "ه ق 2 المقدس به مکه معظمه تغییر قبله مسلمین از بیت ه ش 1357 فرار شاه معدوم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-066",
+      "date": "1387-09-27",
+      "title": {
+        "fa": "ه ش 1334 ادت نواب صفوی، طهماسبی، برادران واحدی و ذوالقدر از فداییان اسلام"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-067",
+      "date": "1387-11-03",
+      "title": {
+        "fa": "به روایتی ه ق 95 السلام العابدین علیه ادت حضرت امام زین"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-068",
+      "date": "1387-11-11",
+      "title": {
+        "fa": "ه ق 57 السلام ولادت حضرت امام محمد باقر علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-069",
+      "date": "1387-11-12",
+      "title": {
+        "fa": "و آغاز دهه مبارک فجر انقلاب اسلامی ه ش 1357 به ایران ره بازگشت حضرت امام خمینی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-070",
+      "date": "1387-11-15",
+      "title": {
+        "fa": "ه ق 128 السلام ولادت حضرت امام موسی کاظم علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-071",
+      "date": "1387-11-19",
+      "title": {
+        "fa": "روز نیروی هوایی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-072",
+      "date": "1387-11-29",
+      "title": {
+        "fa": "ه ش 1356 قیام مردم تبریز به مناسبت چهلمین روز ادت دای قم"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-073",
+      "date": "1387-12-06",
+      "title": {
+        "fa": "ادت حضرت امام حسن مجتبی علیه ه ق 11 االله علیه و آله رحلت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-074",
+      "date": "1387-12-09",
+      "title": {
+        "fa": "اول محرم سال هجرت، مبدأ گاه االله علیه و آله از مکه به مدینه هجرت حضرت رسول اکرم صلی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-075",
+      "date": "1387-12-15",
+      "title": {
+        "fa": "روز درختکاری"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-076",
+      "date": "1387-12-16",
+      "title": {
+        "fa": "ه ق 260 السلام ادت حضرت امام حسن عسکری علیه"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-077",
+      "date": "1387-12-20",
+      "title": {
+        "fa": "میلاد حضرت رسول اکرم صلی االله علیه و آله به روایت اهل سنت آغاز هفته وحدت"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    },
+    {
+      "id": "1387-evt-078",
+      "date": "1387-12-22",
+      "title": {
+        "fa": "ه ش 1358 انقلاب اسلامی"
+      },
+      "isHoliday": false,
+      "categories": [
+        "observance"
+      ]
+    }
+  ]
+}

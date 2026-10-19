@@ -1,9 +1,13 @@
 {
   "year": 1405,
   "schemaVersion": 1,
-  "dataVersion": "1405.2.0",
-  "source": "calendar.ut.ac.ir Holiday-1405.pdf (official) + rules/fixed-jalali.json",
+  "dataVersion": "1405.2.2",
+  "source": "calendar.ut.ac.ir Holiday-1405.pdf + Calendar-1405_2.pdf (cross-checked)",
   "coverage": "national+religious",
+  "notes": [
+    "Holiday dates verified against UT Calendar-1405_2.pdf day table rows marked تعطیل.",
+    "01-01 and 01-02 each carry Eid al-Fitr and Nowruz; 03-14 carries غدیر and رحلت امام خمینی."
+  ],
   "items": [
     {
       "id": "1405-eid-fitr-1-early",
@@ -164,8 +168,8 @@
       "id": "1405-martyrdom-imam-hasan-askari",
       "date": "1405-05-30",
       "title": {
-        "fa": "شهادت امام حسن عسکری",
-        "en": "Martyrdom of Imam Hasan al-Askari"
+        "fa": "شهادت امام حسن عسکری و آغاز امامت حضرت ولی‌عصر",
+        "en": "Martyrdom of Imam Askari; Beginning of the Imamate of the Mahdi"
       },
       "isHoliday": true,
       "categories": ["religious"]

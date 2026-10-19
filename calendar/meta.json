@@ -1,17 +1,17 @@
 {
   "name": "farsiui-calendar",
   "schemaVersion": 1,
-  "dataVersion": "1405.0.0-draft",
+  "dataVersion": "1405.1.0",
   "description": "Official Iranian public holidays and optional events for Jalali years. Date conversion is not included — consumers use a Jalali library (e.g. @internationalized/date).",
   "years": [1405],
   "coverage": {
-    "holidays": "national-fixed-only",
+    "holidays": "national+religious",
     "events": "none-in-this-release",
-    "religiousLunar": "excluded-until-verified"
+    "religiousLunar": "included-1405-from-pipe2time"
   },
   "license": {
     "data": "CC0-1.0",
-    "note": "Only high-confidence national fixed holidays are published. This is not a complete official calendar. Hijri-based religious holidays are omitted until verified per year against an authoritative source."
+    "note": "Curated holiday rows for 1405 include national fixed Jalali days plus official religious/lunar holidays curated from Time.ir via pipe2time.ir (MIT). This is not a wholesale copy of any upstream repo. Non-holiday observances remain unpublished."
   },
   "sources": [
     {
@@ -22,14 +22,14 @@
     },
     {
       "id": "pipe2time.ir",
-      "role": "reference-only-not-imported",
-      "description": "MIT Time.ir-derived JSON/ICS. Useful for future seeding; not imported in this draft.",
+      "role": "curated-source-1405-religious",
+      "description": "MIT Time.ir-derived JSON. For 1405, only events with isHoliday:true were curated into years/1405/holidays.json (titles cleaned; no wholesale import). weeks.json was not used (marks Fridays as holidays).",
       "url": "https://github.com/HMarzban/pipe2time.ir"
     },
     {
       "id": "PersianHoliday",
-      "role": "reference-only-not-imported",
-      "description": "Broad SQLite archive from time.ir. Not imported; license unclear.",
+      "role": "cross-check-only",
+      "description": "Time.ir HTML dumps used only for spot-checking suspicious dates. Not imported into FarsiUI JSON.",
       "url": "https://github.com/samanzamani/PersianHoliday"
     },
     {
@@ -44,12 +44,13 @@
     "basePath": "calendar",
     "jsdelivrTemplate": "https://cdn.jsdelivr.net/gh/MiladJoodi/FarsiUI@{ref}/calendar/{path}",
     "recommendedRef": "latest",
-    "pinnedRefNote": "For production, pin a git tag (e.g. calendar-1405.0.0) instead of @latest."
+    "pinnedRefNote": "For production, pin a git tag (e.g. calendar-1405.1.0) instead of @latest."
   },
   "publishedAt": "2026-10-19",
   "notes": [
     "Friday is a weekend day in Iran but is not listed as a holiday item; clients should treat weekends separately.",
     "1405 Esfand has 29 days (non-leap in the algorithmic 33-year cycle used by @internationalized/date PersianCalendar).",
+    "Some Jalali dates carry two holiday items (e.g. 1405-01-01 Nowruz + Eid al-Fitr day 2; 1405-03-14 Khomeini demise + Eid al-Ghadir).",
     "Schema is designed for FarsiUI calendar UI to import JSON statically or fetch via jsDelivr."
   ]
 }

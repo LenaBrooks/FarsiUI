@@ -1,5 +1,6 @@
 import Link from "next/link"
 
+import { FontSpecimenPreview } from "@/components/font-specimen-preview"
 import {
   FontInstallTabs,
   type HighlightedFontSnippet,
@@ -60,10 +61,10 @@ export async function FontCatalogDetail({ font }: { font: FontCatalogItem }) {
   return (
     <div
       data-slot="docs"
-      data-docs-kind="docs"
+      data-docs-kind="component"
       dir="rtl"
       lang="fa"
-      className="mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-6 px-4 py-6 text-foreground md:px-0 lg:py-8"
+      className="mx-auto flex w-full max-w-160 min-w-0 flex-1 flex-col gap-6 px-4 py-6 text-foreground md:px-0 lg:gap-8 lg:py-8"
     >
       <header className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
@@ -75,25 +76,23 @@ export async function FontCatalogDetail({ font }: { font: FontCatalogItem }) {
           >
             {font.nameFa}
           </Link>
-          <p className="docs-page-description text-muted-foreground" dir="ltr">
+          <p
+            className="mt-0.5 text-[length:var(--docs-small)] leading-normal text-muted-foreground"
+            dir="ltr"
+          >
             {font.nameEn}
           </p>
         </div>
-        <div className="flex shrink-0 items-center gap-1.5">
-          <Button asChild size="sm">
-            <Link href={font.demoUrl} target="_blank" rel="noreferrer">
-              مشاهده دمو
-            </Link>
-          </Button>
-          <Button asChild size="sm" variant="outline">
-            <Link href={font.sourceUrl} target="_blank" rel="noreferrer">
-              منبع
-            </Link>
-          </Button>
-        </div>
+        <Button asChild size="sm" variant="outline" className="shrink-0">
+          <Link href={font.sourceUrl} target="_blank" rel="noreferrer">
+            منبع
+          </Link>
+        </Button>
       </header>
 
-      <div className="typeset w-full min-w-0 flex-1">
+      <FontSpecimenPreview key={font.id} font={font} />
+
+      <div className="typeset mt-6 w-full min-w-0 flex-1 sm:mt-10">
         <h2 id="نصب">نصب</h2>
         <div data-not-typeset="" className="not-typeset min-w-0">
           <FontInstallTabs snippets={snippets} />

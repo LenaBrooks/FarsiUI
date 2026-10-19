@@ -14,17 +14,18 @@ import {
 const docsTabsListClass =
   "justify-start gap-4 rounded-none bg-transparent px-0"
 
+/** Match docs chrome / default TabsTrigger — not body text-base. */
 const docsTabsTriggerClass =
-  "not-typeset rounded-none border-0 border-b-2 border-transparent bg-transparent px-0 pb-3 text-base text-muted-foreground hover:text-primary data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-foreground data-[state=active]:shadow-none! dark:data-[state=active]:border-primary dark:data-[state=active]:bg-transparent"
+  "not-typeset rounded-none border-0 border-b-2 border-transparent bg-transparent px-0 pb-2.5 text-[length:var(--docs-small)] font-medium text-muted-foreground hover:text-primary data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:text-foreground data-[state=active]:shadow-none! dark:data-[state=active]:border-primary dark:data-[state=active]:bg-transparent"
 
 const docsTabsContentClass =
-  "relative [&_h3.font-heading]:text-base [&_h3.font-heading]:font-medium *:[figure]:first:mt-0 [&>.steps]:mt-6"
+  "relative [&_h3.font-heading]:text-[length:var(--docs-h3)] [&_h3.font-heading]:font-medium [&_h3.font-heading]:leading-snug *:[figure]:first:mt-0 [&>.steps]:mt-6"
 
 const methodTabsListClass =
-  "mb-4 h-9 w-fit justify-start gap-0 rounded-lg bg-muted p-1"
+  "mb-4 h-8 w-fit justify-start gap-0 rounded-lg bg-muted p-0.5"
 
 const methodTabsTriggerClass =
-  "not-typeset h-7 rounded-md border-0 px-3 text-sm text-muted-foreground shadow-none data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
+  "not-typeset h-7 rounded-md border-0 px-2.5 text-[length:var(--docs-small)] font-medium text-muted-foreground shadow-none data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
 
 export type HighlightedFontStep = {
   instruction: string
@@ -92,7 +93,7 @@ function InstallSteps({
     <div className="steps relative mb-0 pt-2 [counter-reset:step] md:ms-4 md:border-s md:ps-8 [&>h3]:step">
       {steps.map((step) => (
         <Fragment key={`${id}-${step.title}-${step.instruction}`}>
-          <h3 className="font-heading text-base font-medium">
+          <h3 className="font-heading text-[length:var(--docs-h3)] font-medium leading-snug">
             {step.instruction}
           </h3>
           <CodeFigure
@@ -115,7 +116,7 @@ function SnippetBody({ snippet }: { snippet: HighlightedFontSnippet }) {
 
     return (
       <Tabs defaultValue={defaultVariant} dir="rtl" className="w-full">
-        <div className="mb-1 text-sm text-muted-foreground">
+        <div className="mb-1.5 text-[length:var(--docs-small)] leading-normal text-muted-foreground">
           روش نصب را انتخاب کنید
         </div>
         <TabsList className={methodTabsListClass}>

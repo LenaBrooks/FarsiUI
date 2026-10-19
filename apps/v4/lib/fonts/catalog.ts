@@ -143,6 +143,86 @@ export function getFontStylesheetUrl(font: FontCatalogItem) {
   return `https://fonts.googleapis.com/css2?family=${family}&display=swap`
 }
 
+/** Weight chips for specimen UI — empty means single Regular (no picker). */
+export function getFontSpecimenWeights(font: FontCatalogItem): number[] {
+  if (font.cliWeight?.includes(" ")) {
+    const [min, max] = font.cliWeight.split(/\s+/).map(Number)
+    return [300, 400, 500, 700].filter(
+      (w) => w >= (min ?? 400) && w <= (max ?? 400)
+    )
+  }
+  if (Array.isArray(font.nextWeight) && font.nextWeight.length > 1) {
+    return font.nextWeight.map(Number).sort((a, b) => a - b)
+  }
+  if (font.repoFiles?.length) {
+    const inferred = inferSpecimenWeightsFromFiles(font.repoFiles)
+    if (inferred.length > 1) return inferred
+  }
+  return []
+}
+
+function inferSpecimenWeightsFromFiles(files: string[]): number[] {
+  const weights = new Set<number>()
+  for (const file of files) {
+    if (!file.toLowerCase().endsWith(".woff2")) continue
+    const n = file.toLowerCase()
+    if (n.includes("thin")) weights.add(100)
+    else if (n.includes("extralight")) weights.add(200)
+    else if (n.includes("light")) weights.add(300)
+    else if (n.includes("medium")) weights.add(500)
+    else if (n.includes("semibold") || n.includes("demibold")) weights.add(600)
+    else if (n.includes("extrabold") || n.includes("ultrabold")) weights.add(800)
+    else if (n.includes("black") || n.includes("heavy")) weights.add(900)
+    else if (n.includes("bold")) weights.add(700)
+    else if (
+      n.includes("regular") ||
+      n.includes("normal") ||
+      /-(fd|regular)\.woff2$/i.test(file)
+    ) {
+      weights.add(400)
+    }
+  }
+  return [...weights].sort((a, b) => a - b)
+}
+
+/**
+ * Google specimen stylesheet — loads only the weights shown in the picker (or 400).
+ */
+export function getFontSpecimenStylesheetUrl(font: FontCatalogItem) {
+  if (isRepoFont(font)) return null
+  const weights = getFontSpecimenWeights(font)
+  const list = weights.length > 0 ? weights : [400]
+  return `https://fonts.googleapis.com/css2?family=${font.googleFamily}:wght@${list.join(";")}&display=swap`
+}
+
+/** Same-origin woff2 for variable repo specimen. */
+export function getFontSpecimenLocalWoff2Url(font: FontCatalogItem) {
+  if (!isRepoFont(font)) return null
+  const relative = font.repoDir.replace(/^fonts\//, "")
+  return `/catalog-fonts/${relative}/${font.repoWoff2}`
+}
+
+/** Same-origin font-face.css for static multi-weight repo faces. */
+export function getFontSpecimenLocalCssUrl(font: FontCatalogItem) {
+  if (!isRepoFont(font) || !font.repoCss) return null
+  const relative = font.repoCss.replace(/^fonts\//, "")
+  return `/catalog-fonts/${relative}`
+}
+
+/** True when repo face is a single variable file with a weight axis. */
+export function isFontSpecimenVariable(font: FontCatalogItem) {
+  return Boolean(font.cliWeight?.includes(" "))
+}
+
+/** Injected `@font-face` for variable repo specimen. */
+export function getFontSpecimenFaceCss(font: FontCatalogItem) {
+  if (!isRepoFont(font) || !isFontSpecimenVariable(font)) return null
+  const family = getCssFontFamily(font)
+  const src = getFontSpecimenLocalWoff2Url(font)
+  const weight = font.cliWeight ?? "400"
+  return `@font-face{font-family:"${family}";src:url("${src}") format("woff2");font-weight:${weight};font-style:normal;font-display:swap;}`
+}
+
 /** Direct woff2 URL (repo fonts) or null for Google. */
 export function getFontWoff2Url(font: FontCatalogItem) {
   if (!isRepoFont(font)) return null
@@ -224,6 +304,7 @@ export const FONT_FEATURED_IDS = new Set([
   "lalezar",
   "amiri",
   "unixel",
+  "nahid",
 ])
 
 export function isFeaturedFont(id: string) {
@@ -231,7 +312,7 @@ export function isFeaturedFont(id: string) {
 }
 
 /**
- * Catalog order: curated by usefulness / character for FA UI (top = strongest picks).
+ * Catalog order: curated for FA UI (top = strongest / most useful picks).
  */
 export const FONTS_CATALOG: FontCatalogItem[] = [
   {
@@ -384,6 +465,22 @@ export const FONTS_CATALOG: FontCatalogItem[] = [
     cliWeight: "100 900",
     sourceUrl: "https://github.com/AzadQalam/normal-sans",
     demoUrl: "https://azadqalam.github.io",
+  },
+  {
+    id: "nahid",
+    nameFa: "ناهید",
+    nameEn: "Nahid",
+    provider: "repo",
+    /** Not OFL — same family of license as Tanha (Bitstream Vera / Apache / PD). */
+    license: "bitstream-vera",
+    /** Persian digits (0–9 → فارسی) — better default for fa UI. */
+    cssFamily: "Nahid FD",
+    repoDir: "fonts/nahid/farsi-digits",
+    repoWoff2: "Nahid-FD.woff2",
+    repoCss: "fonts/nahid/farsi-digits/font-face.css",
+    repoFiles: ["Nahid-FD.woff2", "font-face.css", "LICENSE"],
+    sourceUrl: "https://github.com/rastikerdar/nahid-font",
+    demoUrl: "https://github.com/rastikerdar/nahid-font",
   },
   {
     id: "noto-sans-arabic",
@@ -697,22 +794,6 @@ export const FONTS_CATALOG: FontCatalogItem[] = [
     repoFiles: ["Tanha-FD.woff2", "font-face.css", "LICENSE"],
     sourceUrl: "https://github.com/rastikerdar/tanha-font",
     demoUrl: "https://github.com/rastikerdar/tanha-font",
-  },
-  {
-    id: "nahid",
-    nameFa: "ناهید",
-    nameEn: "Nahid",
-    provider: "repo",
-    /** Not OFL — same family of license as Tanha (Bitstream Vera / Apache / PD). */
-    license: "bitstream-vera",
-    /** Persian digits (0–9 → فارسی) — better default for fa UI. */
-    cssFamily: "Nahid FD",
-    repoDir: "fonts/nahid/farsi-digits",
-    repoWoff2: "Nahid-FD.woff2",
-    repoCss: "fonts/nahid/farsi-digits/font-face.css",
-    repoFiles: ["Nahid-FD.woff2", "font-face.css", "LICENSE"],
-    sourceUrl: "https://github.com/rastikerdar/nahid-font",
-    demoUrl: "https://github.com/rastikerdar/nahid-font",
   },
   {
     id: "gandom",

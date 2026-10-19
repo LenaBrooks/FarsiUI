@@ -29,7 +29,7 @@ const items: Item[] = [
   {
     name: "فضای-کار.png",
     meta: "PNG · ۸۲۰ کیلوبایت",
-    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/01.avif",
   },
   { name: "مشتریان.csv", meta: "CSV · ۱۸ کیلوبایت", icon: TableIcon },
   { name: "renderer.tsx", meta: "TSX · ۱۲ کیلوبایت", icon: FileCodeIcon },

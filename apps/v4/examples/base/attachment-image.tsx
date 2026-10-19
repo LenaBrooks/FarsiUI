@@ -16,19 +16,19 @@ const images = [
   {
     name: "فضای-کار.png",
     meta: "PNG · ۸۲۰ کیلوبایت",
-    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/01.avif",
     alt: "فضای کار",
   },
   {
     name: "میز-کار.jpg",
     meta: "JPG · ۱٫۱ مگابایت",
-    src: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/02.avif",
     alt: "میز کار",
   },
   {
     name: "دفتر.jpg",
     meta: "JPG · ۹۴۰ کیلوبایت",
-    src: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/03.avif",
     alt: "دفتر",
   },
 ]

@@ -601,7 +601,7 @@ function MessageAttachment() {
             <Attachment orientation="vertical">
               <AttachmentMedia variant="image">
                 <img
-                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                  src="/images/components/01.avif"
                   alt="Workspace"
                 />
               </AttachmentMedia>
@@ -678,7 +678,7 @@ function MessageAttachmentGroup() {
               <Attachment orientation="vertical">
                 <AttachmentMedia variant="image">
                   <img
-                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                    src="/images/components/01.avif"
                     alt="Workspace"
                   />
                 </AttachmentMedia>
@@ -686,7 +686,7 @@ function MessageAttachmentGroup() {
               <Attachment orientation="vertical">
                 <AttachmentMedia variant="image">
                   <img
-                    src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                    src="/images/components/02.avif"
                     alt="Desk"
                   />
                 </AttachmentMedia>
@@ -694,7 +694,7 @@ function MessageAttachmentGroup() {
               <Attachment orientation="vertical">
                 <AttachmentMedia variant="image">
                   <img
-                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                    src="/images/components/03.avif"
                     alt="Office"
                   />
                 </AttachmentMedia>

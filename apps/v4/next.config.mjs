@@ -33,6 +33,25 @@ if (process.env.NODE_ENV === "development") {
 const nextConfig = {
   allowedDevOrigins: ["127.0.0.1", "localhost"],
   devIndicators: false,
+  // Light security headers only — no CSP (would break previews / inline scripts).
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          {
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
+          },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
+        ],
+      },
+    ]
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -80,6 +99,8 @@ const nextConfig = {
       "./content/docs/**/*",
     ],
     "/docs/changelog": ["./examples/**/*", "./content/docs/**/*"],
+    // Specimen preview serves woff2 from the monorepo `fonts/` tree.
+    "/catalog-fonts/[...path]": ["../../fonts/**/*"],
   },
   images: {
     remotePatterns: [

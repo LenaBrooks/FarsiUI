@@ -694,7 +694,7 @@ function AttachmentImages() {
           <Attachment className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>
@@ -717,7 +717,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/01.avif"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open workspace.png"
@@ -728,7 +728,7 @@ function AttachmentImages() {
           <Attachment className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/02.avif"
                 alt="Desk"
               />
             </AttachmentMedia>
@@ -751,7 +751,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/02.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open desk-reference.jpg"
@@ -762,7 +762,7 @@ function AttachmentImages() {
           <Attachment className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/03.avif"
                 alt="Office"
               />
             </AttachmentMedia>
@@ -785,7 +785,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/03.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open office-reference.jpg"
@@ -803,7 +803,7 @@ function AttachmentImages() {
           <Attachment orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>
@@ -826,7 +826,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/01.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open workspace.png"
@@ -837,7 +837,7 @@ function AttachmentImages() {
           <Attachment orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/02.avif"
                 alt="Desk"
               />
             </AttachmentMedia>
@@ -860,7 +860,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/02.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open desk-reference.jpg"
@@ -871,7 +871,7 @@ function AttachmentImages() {
           <Attachment orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/03.avif"
                 alt="Office"
               />
             </AttachmentMedia>
@@ -894,7 +894,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/03.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open office-reference.jpg"
@@ -905,7 +905,7 @@ function AttachmentImages() {
           <Attachment orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Outdoor patio"
               />
             </AttachmentMedia>
@@ -928,7 +928,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/01.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open patio-reference.jpg"
@@ -939,7 +939,7 @@ function AttachmentImages() {
           <Attachment orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/02.avif"
                 alt="House exterior"
               />
             </AttachmentMedia>
@@ -962,7 +962,7 @@ function AttachmentImages() {
               render={(props) => (
                 <a
                   {...props}
-                  href="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&auto=format&fit=crop&q=80"
+                  href="/images/components/02.avif"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open house-exterior.jpg"
@@ -987,7 +987,7 @@ function AttachmentImageStates() {
           <Attachment state="idle" className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/03.avif"
                 alt="Office"
               />
             </AttachmentMedia>
@@ -1010,7 +1010,7 @@ function AttachmentImageStates() {
           <Attachment state="uploading" className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>
@@ -1033,7 +1033,7 @@ function AttachmentImageStates() {
           <Attachment state="processing" className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/02.avif"
                 alt="Desk"
               />
             </AttachmentMedia>
@@ -1056,7 +1056,7 @@ function AttachmentImageStates() {
           <Attachment state="error" className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/03.avif"
                 alt="Office"
               />
             </AttachmentMedia>
@@ -1088,7 +1088,7 @@ function AttachmentImageStates() {
           <Attachment state="done" className="w-full">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>
@@ -1118,7 +1118,7 @@ function AttachmentImageStates() {
           <Attachment state="idle" orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/03.avif"
                 alt="Office"
               />
             </AttachmentMedia>
@@ -1141,7 +1141,7 @@ function AttachmentImageStates() {
           <Attachment state="uploading" orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>
@@ -1164,7 +1164,7 @@ function AttachmentImageStates() {
           <Attachment state="processing" orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/02.avif"
                 alt="Desk"
               />
             </AttachmentMedia>
@@ -1187,7 +1187,7 @@ function AttachmentImageStates() {
           <Attachment state="error" orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/03.avif"
                 alt="Office"
               />
             </AttachmentMedia>
@@ -1219,7 +1219,7 @@ function AttachmentImageStates() {
           <Attachment state="done" orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>
@@ -1329,7 +1329,7 @@ function AttachmentScrollableGroup() {
         <Attachment className="w-64">
           <AttachmentMedia variant="image">
             <img
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+              src="/images/components/01.avif"
               alt="Workspace"
             />
           </AttachmentMedia>
@@ -1432,7 +1432,7 @@ function AttachmentScrollableGroup() {
         <Attachment orientation="vertical">
           <AttachmentMedia variant="image" className="aspect-square w-full">
             <img
-              src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80"
+              src="/images/components/02.avif"
               alt="Desk"
             />
           </AttachmentMedia>
@@ -1481,7 +1481,7 @@ function AttachmentScrollableGroup() {
         <Attachment orientation="vertical">
           <AttachmentMedia variant="image" className="aspect-square w-full">
             <img
-              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80"
+              src="/images/components/03.avif"
               alt="Office"
             />
           </AttachmentMedia>

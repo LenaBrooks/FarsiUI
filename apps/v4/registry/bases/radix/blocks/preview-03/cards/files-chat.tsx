@@ -41,7 +41,7 @@ const chat = createChat()
       {
         filename: "workspace.png",
         mediaType: "image/png",
-        url: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80",
+        url: "/images/components/01.avif",
       },
       {
         filename: "research-brief.pdf",
@@ -58,7 +58,7 @@ const chat = createChat()
     writer.file({
       filename: "annotated-workspace.png",
       mediaType: "image/png",
-      url: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80",
+      url: "/images/components/03.avif",
     })
     writer.file({
       filename: "file-review-notes.pdf",

@@ -22,7 +22,7 @@ export default function MessageAttachmentDemo() {
           <Attachment orientation="vertical">
             <AttachmentMedia variant="image">
               <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80"
+                src="/images/components/01.avif"
                 alt="Workspace"
               />
             </AttachmentMedia>

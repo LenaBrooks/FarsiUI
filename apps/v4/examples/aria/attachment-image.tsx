@@ -16,19 +16,19 @@ const images = [
   {
     name: "workspace.png",
     meta: "PNG · 820 KB",
-    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/01.avif",
     alt: "Workspace",
   },
   {
     name: "desk-reference.jpg",
     meta: "JPG · 1.1 MB",
-    src: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/02.avif",
     alt: "Desk",
   },
   {
     name: "office-reference.jpg",
     meta: "JPG · 940 KB",
-    src: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&auto=format&fit=crop&q=80",
+    src: "/images/components/03.avif",
     alt: "Office",
   },
 ]

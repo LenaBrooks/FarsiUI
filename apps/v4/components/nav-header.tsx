@@ -32,6 +32,16 @@ export function NavHeader() {
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <NavigationMenuLink
+            asChild
+            data-active={
+              pathname === "/fonts" || pathname.startsWith("/fonts/")
+            }
+          >
+            <Link href="/fonts">فونت‌ها</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <NavigationMenuLink asChild data-active={pathname === "/forms"}>
             <Link href="/forms">فرم‌ها</Link>
           </NavigationMenuLink>

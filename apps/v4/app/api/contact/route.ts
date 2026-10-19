@@ -5,10 +5,30 @@ import {
   contactFormSchema,
   flattenContactFieldErrors,
 } from "@/lib/contact"
+import {
+  checkContactRateLimit,
+  getClientIp,
+} from "@/lib/contact-rate-limit"
 
 const FROM_EMAIL = "FarsiUI <contact@farsiui.ir>"
 
 export async function POST(request: Request) {
+  const rate = checkContactRateLimit(getClientIp(request))
+  if (!rate.ok) {
+    return NextResponse.json(
+      {
+        ok: false,
+        message: "تعداد درخواست‌ها زیاد است. کمی بعد دوباره تلاش کنید.",
+      },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(rate.retryAfterSec ?? 60),
+        },
+      }
+    )
+  }
+
   let body: unknown
 
   try {

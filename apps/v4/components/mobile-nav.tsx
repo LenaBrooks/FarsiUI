@@ -5,6 +5,7 @@ import Link, { type LinkProps } from "next/link"
 import { usePathname } from "next/navigation"
 import {
   BookOpenIcon,
+  CaseSensitiveIcon,
   ChartAreaIcon,
   ExternalLinkIcon,
   LayoutGridIcon,
@@ -34,6 +35,7 @@ const NAV_ICONS: Record<string, LucideIcon> = {
   "/demos": SparklesIcon,
   "/skills": WandSparklesIcon,
   "/charts": ChartAreaIcon,
+  "/fonts": CaseSensitiveIcon,
   "/contact": MailIcon,
   "https://icons.farsiui.ir/": ShapesIcon,
   "https://tarhak.ir/": ExternalLinkIcon,

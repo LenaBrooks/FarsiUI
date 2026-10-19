@@ -1,0 +1,11 @@
+{
+  "year": 1405,
+  "schemaVersion": 1,
+  "dataVersion": "1405.0.0-draft",
+  "coverage": "none-in-this-release",
+  "items": [],
+  "notes": [
+    "Non-holiday observances and Hijri-based religious dates are intentionally empty until curated and verified.",
+    "Do not treat an empty list as 'no events exist in 1405'."
+  ]
+}

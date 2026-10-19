@@ -1,0 +1,104 @@
+{
+  "year": 1405,
+  "schemaVersion": 1,
+  "dataVersion": "1405.0.0-draft",
+  "source": "rules/fixed-jalali.json",
+  "coverage": "national-fixed-only",
+  "items": [
+    {
+      "id": "1405-nowruz-1",
+      "date": "1405-01-01",
+      "ruleId": "nowruz-1",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1405-nowruz-2",
+      "date": "1405-01-02",
+      "ruleId": "nowruz-2",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1405-nowruz-3",
+      "date": "1405-01-03",
+      "ruleId": "nowruz-3",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1405-nowruz-4",
+      "date": "1405-01-04",
+      "ruleId": "nowruz-4",
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1405-islamic-republic-day",
+      "date": "1405-01-12",
+      "ruleId": "islamic-republic-day",
+      "title": {
+        "fa": "روز جمهوری اسلامی ایران",
+        "en": "Islamic Republic Day"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1405-sizdah-bedar",
+      "date": "1405-01-13",
+      "ruleId": "sizdah-bedar",
+      "title": {
+        "fa": "روز طبیعت (سیزده‌به‌در)",
+        "en": "Nature Day (Sizdah Bedar)"
+      },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "1405-demise-imam-khomeini",
+      "date": "1405-03-14",
+      "ruleId": "demise-imam-khomeini",
+      "title": {
+        "fa": "رحلت امام خمینی",
+        "en": "Demise of Imam Khomeini"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1405-khordad-15",
+      "date": "1405-03-15",
+      "ruleId": "khordad-15",
+      "title": { "fa": "قیام ۱۵ خرداد", "en": "15 Khordad Uprising" },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1405-islamic-revolution",
+      "date": "1405-11-22",
+      "ruleId": "islamic-revolution",
+      "title": {
+        "fa": "پیروزی انقلاب اسلامی",
+        "en": "Victory of the Islamic Revolution"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "1405-oil-nationalization",
+      "date": "1405-12-29",
+      "ruleId": "oil-nationalization",
+      "title": {
+        "fa": "روز ملی شدن صنعت نفت ایران",
+        "en": "Nationalization of the Oil Industry"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    }
+  ]
+}

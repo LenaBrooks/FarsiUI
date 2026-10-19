@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "description": "Year-independent fixed Jalali national public holidays. Apply to any year by combining year + month + day.",
+  "items": [
+    {
+      "id": "nowruz-1",
+      "month": 1,
+      "day": 1,
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "nowruz-2",
+      "month": 1,
+      "day": 2,
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "nowruz-3",
+      "month": 1,
+      "day": 3,
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "nowruz-4",
+      "month": 1,
+      "day": 4,
+      "title": { "fa": "عید نوروز", "en": "Nowruz" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "islamic-republic-day",
+      "month": 1,
+      "day": 12,
+      "title": {
+        "fa": "روز جمهوری اسلامی ایران",
+        "en": "Islamic Republic Day"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "sizdah-bedar",
+      "month": 1,
+      "day": 13,
+      "title": { "fa": "روز طبیعت (سیزده‌به‌در)", "en": "Nature Day (Sizdah Bedar)" },
+      "isHoliday": true,
+      "categories": ["national", "nowruz"]
+    },
+    {
+      "id": "demise-imam-khomeini",
+      "month": 3,
+      "day": 14,
+      "title": {
+        "fa": "رحلت امام خمینی",
+        "en": "Demise of Imam Khomeini"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "khordad-15",
+      "month": 3,
+      "day": 15,
+      "title": { "fa": "قیام ۱۵ خرداد", "en": "15 Khordad Uprising" },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "islamic-revolution",
+      "month": 11,
+      "day": 22,
+      "title": {
+        "fa": "پیروزی انقلاب اسلامی",
+        "en": "Victory of the Islamic Revolution"
+      },
+      "isHoliday": true,
+      "categories": ["national"]
+    },
+    {
+      "id": "oil-nationalization",
+      "month": 12,
+      "day": 29,
+      "title": {
+        "fa": "روز ملی شدن صنعت نفت ایران",
+        "en": "Nationalization of the Oil Industry"
+      },
+      "isHoliday": true,
+      "categories": ["national"],
+      "notes": "Falls on the last day of a non-leap Esfand (29). In leap years Esfand has 30 days; this rule still uses day 29."
+    }
+  ]
+}

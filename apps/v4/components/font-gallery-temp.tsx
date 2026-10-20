@@ -26,25 +26,23 @@ export function FontGalleryTemp() {
           <li key={font.id}>
             <Link
               href={`/fonts/${font.id}`}
-              className="relative block rounded-xl border border-border bg-card px-4 py-6 transition-colors hover:border-primary/40 hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="relative block overflow-hidden rounded-xl border border-border bg-card px-4 py-6 transition-colors hover:border-primary/40 hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
-              <span className="pointer-events-none absolute top-3 left-3 text-xs text-muted-foreground/55">
+              <span className="pointer-events-none absolute top-3 left-3 z-10 text-xs text-muted-foreground/55">
                 {font.nameFa}
               </span>
               {/* eslint-disable-next-line @next/next/no-img-element -- local specimen thumbs */}
               <img
                 src={specimenSrc(font.id, "light")}
                 alt={font.nameFa}
-                className="mx-auto h-auto w-auto max-w-xl object-contain object-center dark:hidden"
+                className="ms-0 me-auto block h-auto w-auto max-w-xl object-contain dark:hidden"
               />
               {/* eslint-disable-next-line @next/next/no-img-element -- local specimen thumbs */}
               <img
                 src={specimenSrc(font.id, "dark")}
                 alt={font.nameFa}
-                className="mx-auto hidden h-auto w-auto max-w-xl object-contain object-center dark:block"
+                className="ms-0 me-auto hidden h-auto w-auto max-w-xl object-contain dark:block"
               />
-
-
             </Link>
           </li>
         ))}

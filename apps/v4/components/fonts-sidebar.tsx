@@ -13,9 +13,11 @@ import {
 import {
   SIDEBAR_EMPTY_CLASS,
   SIDEBAR_NESTED_ITEM_CLASS,
+  SIDEBAR_NESTED_LABEL_CLASS,
   SIDEBAR_SEARCH_INPUT_CLASS,
   SIDEBAR_SEARCH_WRAP_CLASS,
   SIDEBAR_SHELL_CLASS,
+  SIDEBAR_TOP_LINK_CLASS,
   SidebarNavBilingualLabel,
   SidebarNavBullet,
   sidebarItemStateClass,
@@ -40,6 +42,7 @@ function fontHref(id: string) {
 }
 
 function getFontsNavCurrent(pathname: string) {
+  if (pathname === "/fonts" || pathname === "/fonts/") return null
   const id = pathname.split("/").filter(Boolean).pop()
   const font = FONTS_CATALOG.find((item) => item.id === id)
   return font?.nameFa ?? null
@@ -71,6 +74,15 @@ function FontsNavBody({ showSearch = true }: { showSearch?: boolean }) {
     )
   }, [debouncedQuery])
 
+  const introVisible =
+    !debouncedQuery ||
+    matchesNavQuery("معرفی", debouncedQuery) ||
+    matchesNavQuery("fonts", debouncedQuery) ||
+    matchesNavQuery("فونت", debouncedQuery)
+
+  const hasResults = introVisible || filtered.length > 0
+  const introActive = pathname === "/fonts" || pathname === "/fonts/"
+
   return (
     <>
       {showSearch ? (
@@ -84,40 +96,54 @@ function FontsNavBody({ showSearch = true }: { showSearch?: boolean }) {
         </div>
       ) : null}
       <SidebarContent className="min-h-0 w-full scroll-fade scrollbar-soft overflow-x-hidden overflow-y-auto pe-1 [--scroll-fade-t-size:0px]">
-        {filtered.length === 0 ? (
-          <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
-        ) : (
-          <SidebarGroup className="pt-1">
-            <SidebarGroupContent>
-              <SidebarMenu className="gap-0.5">
-                {filtered.map((font) => {
-                  const href = fontHref(font.id)
-                  const active = pathname === href
+        <SidebarGroup className="pt-1">
+          <SidebarGroupContent>
+            {!hasResults ? (
+              <div className={SIDEBAR_EMPTY_CLASS}>نتیجه‌ای پیدا نشد.</div>
+            ) : null}
+            <SidebarMenu className="gap-0.5">
+              {introVisible ? (
+                <SidebarMenuItem>
+                  <Link
+                    href="/fonts"
+                    data-active={introActive ? "true" : undefined}
+                    className={cn(
+                      SIDEBAR_TOP_LINK_CLASS,
+                      sidebarItemStateClass(introActive)
+                    )}
+                  >
+                    <SidebarNavBullet featured />
+                    <span className={SIDEBAR_NESTED_LABEL_CLASS}>معرفی</span>
+                  </Link>
+                </SidebarMenuItem>
+              ) : null}
+              {filtered.map((font) => {
+                const href = fontHref(font.id)
+                const active = pathname === href
 
-                  return (
-                    <SidebarMenuItem key={font.id}>
-                      <Link
-                        href={href}
-                        data-active={active ? "true" : undefined}
-                        aria-label={`${font.nameFa} — ${font.nameEn}`}
-                        className={cn(
-                          SIDEBAR_NESTED_ITEM_CLASS,
-                          sidebarItemStateClass(active)
-                        )}
-                      >
-                        <SidebarNavBullet featured={isFeaturedFont(font.id)} />
-                        <SidebarNavBilingualLabel
-                          fa={font.nameFa}
-                          en={font.nameEn}
-                        />
-                      </Link>
-                    </SidebarMenuItem>
-                  )
-                })}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        )}
+                return (
+                  <SidebarMenuItem key={font.id}>
+                    <Link
+                      href={href}
+                      data-active={active ? "true" : undefined}
+                      aria-label={`${font.nameFa} — ${font.nameEn}`}
+                      className={cn(
+                        SIDEBAR_NESTED_ITEM_CLASS,
+                        sidebarItemStateClass(active)
+                      )}
+                    >
+                      <SidebarNavBullet featured={isFeaturedFont(font.id)} />
+                      <SidebarNavBilingualLabel
+                        fa={font.nameFa}
+                        en={font.nameEn}
+                      />
+                    </Link>
+                  </SidebarMenuItem>
+                )
+              })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
       </SidebarContent>
     </>
   )

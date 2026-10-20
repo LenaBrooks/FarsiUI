@@ -30,5 +30,20 @@ export const FONT_REGISTRY_SLUGS = new Set<string>([
   "font-shabnam",
   "font-tanha",
   "font-nahid",
-  "font-gandom"
+  "font-gandom",
+  "font-sepehr",
+  "font-xm-yekan",
+  "font-titr",
+  "font-shafigh",
+  "font-nazanin",
+  "font-xp-vosta",
+  "font-xb-sols",
+  "font-terafik",
+  "font-nazli",
+  "font-koodak",
+  "font-xp-ziba",
+  "font-xb-tabriz",
+  "font-xb-roya",
+  "font-xb-kayhan",
+  "font-irannastaliq"
 ])

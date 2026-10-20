@@ -30,8 +30,6 @@ export function MainNav({
       {items.map((item) => {
         const isExternal = "external" in item && item.external
         const isActive = !isExternal && item.href === activeHref
-        const linkClassName =
-          "relative inline-flex items-center font-medium"
 
         return (
           <Button
@@ -39,22 +37,30 @@ export function MainNav({
             variant="ghost"
             asChild
             size="sm"
-            className="px-2.5 text-muted-foreground hover:bg-transparent hover:text-foreground data-[active=true]:bg-transparent data-[active=true]:font-medium data-[active=true]:text-foreground data-[active=true]:hover:bg-transparent data-[active=true]:hover:text-foreground"
+            className={cn(
+              "h-auto rounded-none bg-transparent px-2.5 py-1 shadow-none hover:bg-transparent",
+              isActive
+                ? "text-primary hover:text-primary"
+                : "text-muted-foreground hover:text-foreground"
+            )}
           >
             {isExternal ? (
               <a
                 href={item.href}
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                className={linkClassName}
+                className="relative inline-flex items-center font-medium"
               >
                 {item.label}
               </a>
             ) : (
               <Link
                 href={item.href}
-                data-active={isActive || undefined}
-                className={linkClassName}
+                aria-current={isActive ? "page" : undefined}
+                className={cn(
+                  "relative inline-flex items-center font-medium",
+                  isActive && "underline decoration-primary decoration-2 underline-offset-8"
+                )}
               >
                 {item.label}
               </Link>

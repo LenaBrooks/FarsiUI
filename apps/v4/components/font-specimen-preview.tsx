@@ -29,12 +29,16 @@ const SPECIMEN_FRAME_CLASS = "h-64 sm:h-72"
 /** Keep spinner visible long enough to paint (cached fonts resolve in one tick). */
 const LOADING_MIN_MS = 240
 
-/** Discrete test sizes (px). Default matches docs body (16). */
+/** Discrete test sizes (px). SSR + first paint: 16; desktop bumped after mount. */
 const SPECIMEN_SIZES = [16, 18, 20, 24, 32] as const
-const SIZE_DEFAULT = 16
+const SIZE_DEFAULT_MOBILE = 16
+const SIZE_DEFAULT_DESKTOP = 20
 
-function defaultSpecimenSize() {
-  return SIZE_DEFAULT
+/** Client-only preferred size — never call during useState init (hydration). */
+function preferredSpecimenSize() {
+  return window.matchMedia("(min-width: 640px)").matches
+    ? SIZE_DEFAULT_DESKTOP
+    : SIZE_DEFAULT_MOBILE
 }
 
 const fieldClass = cn(
@@ -66,7 +70,7 @@ export function FontSpecimenPreview({ font }: { font: FontCatalogItem }) {
   const [sampleFa, setSampleFa] = React.useState(DEFAULT_FA)
   const [sampleEn, setSampleEn] = React.useState(DEFAULT_EN)
   const [weight, setWeight] = React.useState(() => defaultWeight(weights))
-  const [size, setSize] = React.useState(defaultSpecimenSize)
+  const [size, setSize] = React.useState(SIZE_DEFAULT_MOBILE)
   const [ready, setReady] = React.useState(false)
   const faRef = React.useRef<HTMLTextAreaElement>(null)
 
@@ -78,11 +82,15 @@ export function FontSpecimenPreview({ font }: { font: FontCatalogItem }) {
   })
 
   React.useEffect(() => {
+    setSize(preferredSpecimenSize())
+  }, [])
+
+  React.useEffect(() => {
     setReady(false)
     setSampleFa(DEFAULT_FA)
     setSampleEn(DEFAULT_EN)
     setWeight(defaultWeight(getFontSpecimenWeights(font)))
-    setSize(defaultSpecimenSize())
+    setSize(preferredSpecimenSize())
   }, [font])
 
   React.useEffect(() => {

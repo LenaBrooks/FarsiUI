@@ -247,10 +247,17 @@ export function getFontInstallSnippets(
     : null
 
   const licenseLabel = getFontLicenseLabel(font)
+  const licenseId = getFontLicenseId(font)
   const repoCssInstruction =
-    getFontLicenseId(font) === "bitstream-vera"
+    licenseId === "bitstream-vera"
       ? `فایل woff2 و LICENSE را از ریپو یا CDN کپی کنید و در public/fonts/${font.id}/ بگذارید. لایسنس Bitstream Vera است (نه OFL) — notice را نگه دارید؛ فروش جداگانهٔ فونت مجاز نیست.`
-      : `فایل woff2 و LICENSE (OFL) را از ریپو یا CDN کپی کنید و در public/fonts/${font.id}/ بگذارید.`
+      : licenseId === "gpl-2.0"
+        ? `فایل woff2 و LICENSE را از ریپو یا CDN کپی کنید و در public/fonts/${font.id}/ بگذارید. لایسنس GNU GPL v2 است (نه OFL) — متن COPYING/LICENSE را نگه دارید.`
+        : licenseId === "font-store-free"
+          ? `فایل woff2 و LICENSE را از ریپو یا CDN کپی کنید و در public/fonts/${font.id}/ بگذارید. لایسنس Free Licence خانه فونت است (نه OFL جدا) — notice را نگه دارید.`
+          : licenseId === "irannastaliq-free"
+            ? `فایل woff2 و LICENSE را از ریپو یا CDN کپی کنید و در public/fonts/${font.id}/ بگذارید. نسخهٔ رایگان ایران نستعلیق ۱/۲ است (نه نسخهٔ ۳ تجاری، نه OFL) — notice را نگه دارید.`
+            : `فایل woff2 و LICENSE (OFL) را از ریپو یا CDN کپی کنید و در public/fonts/${font.id}/ بگذارید.`
 
   const cssDownloadStep: FontInstallStep = google
     ? {

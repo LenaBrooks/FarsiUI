@@ -11,8 +11,16 @@ export const FONTS_CDN_REPO = "MiladJoodi/FarsiUI"
  * - `ofl-1.1` — SIL Open Font License 1.1 (Google Fonts + most Rastikerdar OFL faces)
  * - `bitstream-vera` — Bitstream Vera + Apache-2.0 (Roboto glyphs) + PD changes
  *   (Tanha, Nahid — see upstream LICENSE; not OFL)
+ * - `gpl-2.0` — GNU GPL v2 (e.g. Sharif FarsiWeb Titr)
+ * - `font-store-free` — خانه فونت (cdn.font-store.ir) Free Licence; no separate OFL file
+ * - `irannastaliq-free` — Iran Nastaliq v1/v2 free download (not v3 / not OFL)
  */
-export type FontLicenseId = "ofl-1.1" | "bitstream-vera"
+export type FontLicenseId =
+  | "ofl-1.1"
+  | "bitstream-vera"
+  | "gpl-2.0"
+  | "font-store-free"
+  | "irannastaliq-free"
 
 export type FontCatalogItem = {
   id: string
@@ -248,6 +256,12 @@ export function getFontLicenseLabel(font: FontCatalogItem) {
   switch (getFontLicenseId(font)) {
     case "bitstream-vera":
       return "Bitstream Vera (+ Apache-2.0 / public domain)"
+    case "gpl-2.0":
+      return "GNU General Public License v2"
+    case "font-store-free":
+      return "Font-store Free Licence (خانه فونت)"
+    case "irannastaliq-free":
+      return "Iran Nastaliq v1/v2 free download"
     case "ofl-1.1":
       return "SIL Open Font License 1.1"
   }
@@ -305,6 +319,13 @@ export const FONT_FEATURED_IDS = new Set([
   "amiri",
   "unixel",
   "nahid",
+  "koodak",
+  "terafik",
+  "nazanin",
+  "xm-yekan",
+  "titr",
+  "sepehr",
+  "tanha",
 ])
 
 export function isFeaturedFont(id: string) {
@@ -809,6 +830,318 @@ export const FONTS_CATALOG: FontCatalogItem[] = [
     repoFiles: ["Gandom-FD.woff2", "font-face.css", "LICENSE"],
     sourceUrl: "https://github.com/rastikerdar/gandom-font",
     demoUrl: "https://github.com/rastikerdar/gandom-font",
+  },
+  {
+    id: "sepehr",
+    nameFa: "سپهر",
+    nameEn: "Sepehr",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "Sepehr",
+    repoDir: "fonts/Sepehr",
+    repoWoff2: "Sepehr-Regular.woff2",
+    repoCss: "fonts/Sepehr/font-face.css",
+    repoFiles: [
+      "Sepehr-Thin.woff2",
+      "Sepehr-Light.woff2",
+      "Sepehr-Regular.woff2",
+      "Sepehr-Medium.woff2",
+      "Sepehr-Bold.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://github.com/googlefonts/sepehr-fonts",
+    demoUrl: "https://github.com/googlefonts/sepehr-fonts",
+  },
+  {
+    id: "xm-yekan",
+    nameFa: "یکان",
+    nameEn: "XM Yekan",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XM Yekan",
+    repoDir: "fonts/XMYekan",
+    repoWoff2: "XMYekan-Regular.woff2",
+    repoCss: "fonts/XMYekan/font-face.css",
+    repoFiles: [
+      "XMYekan-Regular.woff2",
+      "XMYekan-Bold.woff2",
+      "XMYekan-Italic.woff2",
+      "XMYekan-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xm-yekan",
+    demoUrl: "https://fontlibrary.org/en/font/xm-yekan",
+  },
+  {
+    id: "titr",
+    nameFa: "تیتر",
+    nameEn: "Titr",
+    provider: "repo",
+    /** Sharif FarsiWeb — GNU GPL v2 (not OFL). */
+    license: "gpl-2.0",
+    cssFamily: "Titr",
+    repoDir: "fonts/titr",
+    repoWoff2: "Titr-Bold.woff2",
+    repoCss: "fonts/titr/font-face.css",
+    repoFiles: ["Titr-Bold.woff2", "font-face.css", "LICENSE", "COPYING.txt"],
+    /** Single Bold face. */
+    cliWeight: "700",
+    sourceUrl: "https://fontlibrary.org/en/font/titr",
+    demoUrl: "https://fontlibrary.org/en/font/titr",
+  },
+  {
+    id: "shafigh",
+    nameFa: "شفیق",
+    nameEn: "XB Shafigh Uzbek",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XB Shafigh Uzbek",
+    repoDir: "fonts/Shafigh",
+    repoWoff2: "Shafigh-Regular.woff2",
+    repoCss: "fonts/Shafigh/font-face.css",
+    repoFiles: [
+      "Shafigh-Regular.woff2",
+      "Shafigh-Bold.woff2",
+      "Shafigh-Italic.woff2",
+      "Shafigh-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xb-shafigh-uzbek",
+    demoUrl: "https://fontlibrary.org/en/font/xb-shafigh-uzbek",
+  },
+  {
+    id: "nazanin",
+    nameFa: "نازنین",
+    nameEn: "Nazanin",
+    provider: "repo",
+    /** CDN خانه فونت — Free Licence claim; no OFL file beside faces. */
+    license: "font-store-free",
+    cssFamily: "Nazanin",
+    repoDir: "fonts/Nazanin",
+    repoWoff2: "Nazanin-Regular.woff2",
+    repoCss: "fonts/Nazanin/font-face.css",
+    repoFiles: [
+      "Nazanin-Regular.woff2",
+      "Nazanin-Bold.woff2",
+      "font-face.css",
+      "LICENSE",
+    ],
+    sourceUrl: "https://cdn.font-store.ir/nazanin.css",
+    demoUrl: "https://cdn.font-store.ir/",
+  },
+  {
+    id: "xp-vosta",
+    nameFa: "وسطا",
+    nameEn: "XP Vosta",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XP Vosta",
+    repoDir: "fonts/XPVosta",
+    repoWoff2: "XPVosta-Regular.woff2",
+    repoCss: "fonts/XPVosta/font-face.css",
+    repoFiles: [
+      "XPVosta-Regular.woff2",
+      "XPVosta-Bold.woff2",
+      "XPVosta-Italic.woff2",
+      "XPVosta-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xp-vosta",
+    demoUrl: "https://fontlibrary.org/en/font/xp-vosta",
+  },
+  {
+    id: "xb-sols",
+    nameFa: "سلس",
+    nameEn: "XB Sols",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XB Sols",
+    repoDir: "fonts/XBSols",
+    repoWoff2: "XBSols-Regular.woff2",
+    repoCss: "fonts/XBSols/font-face.css",
+    repoFiles: [
+      "XBSols-Regular.woff2",
+      "XBSols-Bold.woff2",
+      "XBSols-Italic.woff2",
+      "XBSols-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xb-sols",
+    demoUrl: "https://fontlibrary.org/en/font/xb-sols",
+  },
+  {
+    id: "terafik",
+    nameFa: "ترافیک",
+    nameEn: "Terafik",
+    provider: "repo",
+    /** Sharif FarsiWeb — Bitstream Vera (not OFL). */
+    license: "bitstream-vera",
+    cssFamily: "Terafik",
+    repoDir: "fonts/Terafik",
+    repoWoff2: "Terafik-Regular.woff2",
+    repoCss: "fonts/Terafik/font-face.css",
+    repoFiles: [
+      "Terafik-Regular.woff2",
+      "Terafik-Bold.woff2",
+      "font-face.css",
+      "LICENSE",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/terafik",
+    demoUrl: "https://fontlibrary.org/en/font/terafik",
+  },
+  {
+    id: "nazli",
+    nameFa: "نازلی",
+    nameEn: "Nazli",
+    provider: "repo",
+    /** Sharif FarsiWeb — GNU GPL v2 (FOSS Nazanin-based; not OFL). */
+    license: "gpl-2.0",
+    cssFamily: "Nazli",
+    repoDir: "fonts/Nazli",
+    repoWoff2: "Nazli-Regular.woff2",
+    repoCss: "fonts/Nazli/font-face.css",
+    repoFiles: [
+      "Nazli-Regular.woff2",
+      "Nazli-Bold.woff2",
+      "font-face.css",
+      "LICENSE",
+      "COPYING.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/nazli",
+    demoUrl: "https://fontlibrary.org/en/font/nazli",
+  },
+  {
+    id: "koodak",
+    nameFa: "کودک",
+    nameEn: "Koodak",
+    provider: "repo",
+    /** Sharif FarsiWeb — Bitstream Vera (not OFL). */
+    license: "bitstream-vera",
+    cssFamily: "Koodak",
+    repoDir: "fonts/Koodak",
+    repoWoff2: "Koodak-Regular.woff2",
+    repoCss: "fonts/Koodak/font-face.css",
+    repoFiles: ["Koodak-Regular.woff2", "font-face.css", "LICENSE"],
+    sourceUrl: "https://fontlibrary.org/en/font/koodak",
+    demoUrl: "https://fontlibrary.org/en/font/koodak",
+  },
+  {
+    id: "xp-ziba",
+    nameFa: "زیبا",
+    nameEn: "XP Ziba",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XP Ziba",
+    repoDir: "fonts/XPZiba",
+    repoWoff2: "XPZiba-Regular.woff2",
+    repoCss: "fonts/XPZiba/font-face.css",
+    repoFiles: [
+      "XPZiba-Regular.woff2",
+      "XPZiba-Bold.woff2",
+      "XPZiba-Italic.woff2",
+      "XPZiba-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xp-ziba",
+    demoUrl: "https://fontlibrary.org/en/font/xp-ziba",
+  },
+  {
+    id: "xb-tabriz",
+    nameFa: "تبریز",
+    nameEn: "XB Tabriz",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XB Tabriz",
+    repoDir: "fonts/XBTabriz",
+    repoWoff2: "XBTabriz-Regular.woff2",
+    repoCss: "fonts/XBTabriz/font-face.css",
+    repoFiles: [
+      "XBTabriz-Regular.woff2",
+      "XBTabriz-Bold.woff2",
+      "XBTabriz-Italic.woff2",
+      "XBTabriz-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xb-tabriz",
+    demoUrl: "https://fontlibrary.org/en/font/xb-tabriz",
+  },
+  {
+    id: "xb-roya",
+    nameFa: "رویا",
+    nameEn: "XB Roya",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XB Roya",
+    repoDir: "fonts/XBRoya",
+    repoWoff2: "XBRoya-Regular.woff2",
+    repoCss: "fonts/XBRoya/font-face.css",
+    repoFiles: [
+      "XBRoya-Regular.woff2",
+      "XBRoya-Bold.woff2",
+      "XBRoya-Italic.woff2",
+      "XBRoya-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xb-roya",
+    demoUrl: "https://fontlibrary.org/en/font/xb-roya",
+  },
+  {
+    id: "xb-kayhan",
+    nameFa: "کیهان",
+    nameEn: "XB Kayhan",
+    provider: "repo",
+    license: "ofl-1.1",
+    cssFamily: "XB Kayhan",
+    repoDir: "fonts/XBKayhan",
+    repoWoff2: "XBKayhan-Regular.woff2",
+    repoCss: "fonts/XBKayhan/font-face.css",
+    repoFiles: [
+      "XBKayhan-Regular.woff2",
+      "XBKayhan-Bold.woff2",
+      "XBKayhan-Italic.woff2",
+      "XBKayhan-BoldItalic.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://fontlibrary.org/en/font/xb-kayhan",
+    demoUrl: "https://fontlibrary.org/en/font/xb-kayhan",
+  },
+  {
+    id: "irannastaliq",
+    nameFa: "ایران نستعلیق",
+    nameEn: "Iran Nastaliq",
+    provider: "repo",
+    /** font-store optimized WebFont (OFL) — not Iran Nastaliq 3 commercial. */
+    license: "ofl-1.1",
+    cssFamily: "IranNastaliq",
+    repoDir: "fonts/IranNastaliq",
+    repoWoff2: "IranNastaliq-Regular.woff2",
+    repoCss: "fonts/IranNastaliq/font-face.css",
+    repoFiles: [
+      "IranNastaliq-Regular.woff2",
+      "font-face.css",
+      "LICENSE",
+      "OFL.txt",
+    ],
+    sourceUrl: "https://github.com/font-store/font-IranNastaliq",
+    demoUrl: "http://font-store.github.io/font-IranNastaliq/",
   },
   {
     id: "lateef",

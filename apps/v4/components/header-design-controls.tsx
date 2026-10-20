@@ -83,7 +83,7 @@ function DesignTriggerButton({
       type="button"
       variant="outline"
       size="sm"
-      aria-label={`انتخاب دیزاین سیستم · ${summary}`}
+      aria-label={`دیزاین سیستم · ${summary}`}
       aria-haspopup="dialog"
       aria-expanded={open}
       onPointerEnter={prefetchDesignStudioPanel}
@@ -97,7 +97,7 @@ function DesignTriggerButton({
     >
       <SlidersHorizontalIcon className="size-4 shrink-0 text-muted-foreground" />
       <span className="truncate sm:hidden">دیزاین سیستم</span>
-      <span className="hidden truncate sm:inline">انتخاب دیزاین سیستم</span>
+      <span className="hidden truncate sm:inline">دیزاین سیستم</span>
     </Button>
   )
 }

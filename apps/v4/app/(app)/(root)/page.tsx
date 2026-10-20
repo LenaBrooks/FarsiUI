@@ -119,19 +119,24 @@ export default function IndexPage() {
         <PageHeaderDescription>{description}</PageHeaderDescription>
         <PageActions>
           <Button asChild className="h-[35px]">
-            <Link href="/docs/installation">شروع کنید</Link>
+            <Link href="/docs/installation" prefetch={false}>
+              شروع کنید
+            </Link>
           </Button>
           <Button asChild variant="secondary" className="h-[35px]">
-            <Link href="/docs/components">کامپوننت‌ها</Link>
+            <Link href="/docs/components" prefetch={false}>
+              کامپوننت‌ها
+            </Link>
           </Button>
           <Button asChild variant="secondary" className="h-[35px]">
-            <Link href="/blocks">بلوک‌ها</Link>
+            <Link href="/blocks" prefetch={false}>
+              بلوک‌ها
+            </Link>
           </Button>
         </PageActions>
       </PageHeader>
       <div className="container-wrapper min-w-0 flex-1 overflow-x-clip bg-transparent p-0">
         <div className="container min-w-0 overflow-x-clip md:px-0 lg:max-w-none">
-          {/* Only one collage mounts — CSS hide still hydrated both and raced the header. */}
           <CardsCollage />
         </div>
       </div>

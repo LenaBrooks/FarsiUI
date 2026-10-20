@@ -35,13 +35,16 @@ export function CommandMenu({
   colors: _colors,
   blocks: _blocks,
   navItems: _navItems,
+  defaultOpen = false,
 }: {
   tree?: typeof source.pageTree
   colors?: ColorPalette[]
   blocks?: { name: string; description: string; categories: string[] }[]
   navItems?: { href: string; label: string }[]
+  /** Open immediately after lazy mount (e.g. user clicked the deferred trigger). */
+  defaultOpen?: boolean
 }) {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = React.useState(defaultOpen)
 
   const { search, setSearch, query } = useDocsSearch({
     type: "fetch",

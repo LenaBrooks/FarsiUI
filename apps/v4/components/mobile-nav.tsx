@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Link, { type LinkProps } from "next/link"
+import { type LinkProps } from "next/link"
 import { usePathname } from "next/navigation"
 import {
   BookOpenIcon,
@@ -22,6 +22,7 @@ import {
 import { cn } from "cn"
 
 import type { SiteNavItem } from "@/lib/config"
+import { PrefetchLink } from "@/components/prefetch-link"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {
   Popover,
@@ -168,7 +169,7 @@ function MobileLink({
   }
 
   return (
-    <Link
+    <PrefetchLink
       href={href}
       onClick={() => {
         onOpenChange?.(false)
@@ -176,6 +177,6 @@ function MobileLink({
       className={classNames}
     >
       {children}
-    </Link>
+    </PrefetchLink>
   )
 }

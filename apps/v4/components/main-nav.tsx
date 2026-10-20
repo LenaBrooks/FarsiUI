@@ -1,10 +1,10 @@
 "use client"
 
-import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "cn"
 
 import type { SiteNavItem } from "@/lib/config"
+import { PrefetchLink } from "@/components/prefetch-link"
 import { Button } from "@/registry/new-york-v4/ui/button"
 
 export function MainNav({
@@ -54,7 +54,7 @@ export function MainNav({
                 {item.label}
               </a>
             ) : (
-              <Link
+              <PrefetchLink
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
@@ -63,7 +63,7 @@ export function MainNav({
                 )}
               >
                 {item.label}
-              </Link>
+              </PrefetchLink>
             )}
           </Button>
         )

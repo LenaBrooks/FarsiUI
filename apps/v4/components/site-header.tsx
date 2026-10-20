@@ -31,6 +31,7 @@ export function SiteHeader() {
           />
           <Link
             href="/"
+            prefetch={false}
             className="me-1.5 flex shrink-0 items-center rounded-md outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
             <span
